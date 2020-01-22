@@ -27,10 +27,10 @@ public class CommonLib {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-			Log.info("Element Found");
+			Logs.info("Element Found");
 		} catch (Exception e) {
-			Log.info("Element Not Found");
-			Log.error(e);
+			Logs.info("Element Not Found");
+			Logs.error("e");
 			element = null;
 		}
 		return element;
@@ -63,11 +63,11 @@ public class CommonLib {
 				element = driver.findElement(By.partialLinkText(locatorString));
 				highlightElement(element);
 			} else {
-				Log.info("Element Not Found");
+				Logs.info("Element Not Found");
 			}
 		} catch (Exception e) {
-			Log.info("Something wrong with element data passed because of which element not Found.");
-			Log.error(e);
+			Logs.info("Something wrong with element data passed because of which element not Found.");
+			Logs.error("e");
 			element = null;
 		}
 		return element;
@@ -96,14 +96,14 @@ public class CommonLib {
 			screenShotPath = new File(base).toURI().relativize(new File(screenShotPath).toURI()).getPath();
 			
 		} catch (FileNotFoundException fnfe) {
-			Log.info("In takeScreenShot " + fnfe.getMessage());
+			Logs.info("In takeScreenShot " + fnfe.getMessage());
 			
-			Log.info("File not found" + fnfe);
+			Logs.info("File not found" + fnfe);
 		} catch (IOException e) {
-			Log.info("In takeScreenShot " + e.getMessage());
+			Logs.info("In takeScreenShot " + e.getMessage());
 			
 		} catch (Exception e) {
-			Log.info("In takeScreenShot " + e.getMessage());
+			Logs.info("In takeScreenShot " + e.getMessage());
 			
 		}
 		return screenShotPath;

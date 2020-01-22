@@ -1,10 +1,19 @@
 package com.tripmasters.framework.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import com.tripmasters.framework.utils.CommonLib;
 
 public class BookingLocators {
+	private By emailId = By.id("username");
+
+	/**
+	 * @return the emailId
+	 */
+	public By getEmailId() {
+		return emailId;
+	}
 
 	public static WebElement leavingTextbox() throws Exception {
 		return CommonLib.FindElementByXpath("//input[@id='qLeaveNA']");
