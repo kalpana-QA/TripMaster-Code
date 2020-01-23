@@ -9,18 +9,22 @@ import java.util.Date;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CommonLib {
+import com.tripmasters.framework.base.TestBase;
+
+
+public class CommonLib extends TestBase {
 
 
 	private static WebElement element = null;
-	public static WebDriver driver = null;
+	//public static WebDriver driver = null;
 	static String screenShotPath = "";
 	
 	public static WebElement FindElementByXpath(String xpath) throws Exception {
@@ -107,5 +111,49 @@ public class CommonLib {
 			
 		}
 		return screenShotPath;
+	}
+	
+	
+	public static void ClearAndSetValues(By FieldElement, String StringToBeEntered)throws Exception {
+		WebElement element=driver.findElement(FieldElement);
+		try {
+			highlightElement(element);
+			element.clear();
+			//element.sendKeys(StringToBeEntered);
+			element.sendKeys(StringToBeEntered);//Keys.TAB);
+			
+		} catch (Exception e) {
+			clickUsingJavaScript(FieldElement);
+			element.sendKeys(StringToBeEntered);
+			element.click();
+		}	
+	}
+
+	public static void clickUsingJavaScript(By FieldElement){
+		//WebElement element=
+				driver.findElement(FieldElement).click();
+		/*try {
+			JavascriptExecutor executor = (JavascriptExecutor) driver;
+			executor.executeScript("arguments[0].click();", element);
+		} catch (Exception e) {
+			System.out.println("Unable to click on element");
+		}*/
+	}
+	
+	public static void checkPageIsReady() throws Exception {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		long wt = 3000;
+		for (int i = 0; i < 30; i++) {
+			try {
+				Thread.sleep(wt);
+			} catch (InterruptedException e) {
+				
+			}
+
+			if (js.executeScript("return document.readyState").toString().equals("complete")) {
+				System.out.println("Page is ready to work with");
+				break;
+			}
+		}
 	}
 }

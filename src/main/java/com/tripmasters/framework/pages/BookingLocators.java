@@ -6,116 +6,124 @@ import org.openqa.selenium.WebElement;
 import com.tripmasters.framework.utils.CommonLib;
 
 public class BookingLocators {
-	private By emailId = By.id("username");
-
+	private static By emailId = By.id("username");
+    private static By leavingTextbox=By.xpath("//input[@id='qLeaveNA']");
+    private static By goingToTextbox=By.xpath("//input[contains(@id,'qNACity')]");
+    private By goingToTextboxSecond=By.xpath("//*[@id='qNACity2']");
+    private By addCityBtn=By.xpath("//span[contains(.,'Add City')]");
+    private static By noMoreCitiesBtn=By.xpath("//span[contains(.,'No more cities. Continue')]");
+    private static By continueBtn=By.xpath("//div[@class='dvContinueButton']//span[contains(.,'Continue')]");
+    private static By paymentContinueBtn=By.xpath("//a[contains(@id,'PriceValidation')]");
+    private By validatingPricesPopupText=By.xpath("//div[@id='divLoading']//div[contains(.,'Validating prices...')]");
+    private By tripInclusionDetailsHeader=By.xpath("//span[contains(.,'TRIP INCLUSION DETAILS')]");
+    private static By EditContinueBtn=By.xpath("//div[a[contains(.,'Edit Itinerary')]]//a[contains(@id,'Continue')]");
+    private By FirstTravelerFirstNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 1:')]]]//input[contains(@placeholder,'First and Middle Name')]");
+    private By FirstTravelerLastNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 1:')]]]//input[contains(@placeholder,'Last Name')]");
+    private By SecondTravelerFirstNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 2:')]]]//input[contains(@placeholder,'First and Middle Name')]");
+    private By SecondTravelerLastNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 2:')]]]//input[contains(@placeholder,'Last Name')]");
+    private By FirstTravelerGenderDropdown=By.xpath("//div[div[div[span[contains(.,'Traveler 1:')]]]]//div[contains(@class,'Gender')]//select");
+    private By FirstTravelerDOB=By.xpath("//div[div[div[span[contains(.,'Traveler 1:')]]]]//input[contains(@id,'txtPAX_DOB')]");
+    private By SecondTravelerGenderDropdown = By.xpath("//div[div[div[span[contains(.,'Traveler 2:')]]]]//div[contains(@class,'Gender')]//select");
+    private By SecondTravelerDOB = By.xpath("//div[div[div[span[contains(.,'Traveler 2:')]]]]//input[contains(@id,'txtPAX_DOB')]");
+    private By FormContinueBtn = By.xpath("//div[a[img[@name='continue_btn']]]//a");
+    private By USAndCanadaCreditCardsTxt = By.xpath("//strong[contains(.,'We only accept US and Canada credit cards')]");
+    private By europBestSellerslnk = By.xpath("//div[a[div[contains(@class,'dvEachHighImg')]/following-sibling::h3[contains(.,'European BestSellers')]]]//a");
+    private By europeanBestsellersHeader = By.xpath("//div[contains(@class,'pageTitle')]/div[contains(.,'Europe - European Bestsellers')]");
+    
 	/**
 	 * @return the emailId
 	 */
-	public By getEmailId() {
+	public static By getEmailId() {
 		return emailId;
 	}
-
-	public static WebElement leavingTextbox() throws Exception {
-		return CommonLib.FindElementByXpath("//input[@id='qLeaveNA']");
+	
+	public static By getLeavingTxtbox(){
+		return leavingTextbox;
 	}
 
-	public static WebElement goingToTextbox() throws Exception {
-		return CommonLib.FindElementByXpath("//input[contains(@id,'qNACity')]");
+	public static By getgoingToTextbox(){
+		return goingToTextbox;
 	}
 
-	public static WebElement goingToTextboxSecond() throws Exception {
-		return CommonLib.FindElementByXpath("//*[@id='qNACity2']");
+	public By getgoingToTextboxSecond(){
+		return goingToTextboxSecond;
 	}
 
-	public static WebElement addCityBtn() throws Exception {
-		return CommonLib.FindElementByXpath("//span[contains(.,'Add City')]");
+	public By getaddCityBtn(){
+		return addCityBtn;
 	}
 
-	public static WebElement noMoreCitiesBtn() throws Exception {
-		return CommonLib.FindElementByXpath("//span[contains(.,'No more cities. Continue')]");
+	public static By getnoMoreCitiesBtn(){
+		return noMoreCitiesBtn;
 	}
 
-	public static WebElement continueBtn() throws Exception {
-		return CommonLib.FindElementByXpath("//div[@class='dvContinueButton']//span[contains(.,'Continue')]");
+	public static By getcontinueBtn(){
+		return continueBtn;
 	}
 
-	public static WebElement paymentContinueBtn() throws Exception {
-		return CommonLib.FindElementByXpath("//a[contains(@id,'PriceValidation')]");
+	public static By getpaymentContinueBtn(){
+		return paymentContinueBtn;
 	}
 
-	public static WebElement validatingPricesPopupText() throws Exception {
-		return CommonLib.FindElementByXpath("//div[@id='divLoading']//div[contains(.,'Validating prices...')]");
+	public By getvalidatingPricesPopupText(){
+		return validatingPricesPopupText;
 	}
 
-	public static WebElement tripInclusionDetailsHeader() throws Exception {
-		return CommonLib.FindElementByXpath("//span[contains(.,'TRIP INCLUSION DETAILS')]");
+	public By gettripInclusionDetailsHeader(){
+		return tripInclusionDetailsHeader;
 	}
 
-	public static WebElement EditContinueBtn() throws Exception {
-		return CommonLib.FindElementByXpath("//div[a[contains(.,'Edit Itinerary')]]//a[contains(@id,'Continue')]");
+	public static By getEditContinueBtn(){
+		return EditContinueBtn;
 	}
 
-	public static WebElement FirstTravelerFirstNameTxtbox() throws Exception {
-		return CommonLib.FindElementByXpath(
-				"//div[div[span[contains(.,'Traveler 1:')]]]//input[contains(@placeholder,'First and Middle Name')]");
+	public By getFirstTravelerFirstNameTxtbox(){
+		return FirstTravelerFirstNameTxtbox;
 	}
 
-	public static WebElement FirstTravelerLastNameTxtbox() throws Exception {
-		return CommonLib.FindElementByXpath(
-				"//div[div[span[contains(.,'Traveler 1:')]]]//input[contains(@placeholder,'Last Name')]");
+	public By getFirstTravelerLastNameTxtbox(){
+		return FirstTravelerLastNameTxtbox;
 	}
 
-	public static WebElement SecondTravelerFirstNameTxtbox() throws Exception {
-		return CommonLib.FindElementByXpath(
-				"//div[div[span[contains(.,'Traveler 2:')]]]//input[contains(@placeholder,'First and Middle Name')]");
+	public By getSecondTravelerFirstNameTxtbox(){
+		return SecondTravelerFirstNameTxtbox;
 	}
 
-	public static WebElement SecondTravelerLastNameTxtbox() throws Exception {
-		return CommonLib.FindElementByXpath(
-				"//div[div[span[contains(.,'Traveler 2:')]]]//input[contains(@placeholder,'Last Name')]");
+	public By getSecondTravelerLastNameTxtbox(){
+		return SecondTravelerLastNameTxtbox;
 	}
 
-	public static WebElement FirstTravelerGenderDropdown() throws Exception {
-		return CommonLib.FindElementByXpath(
-				"//div[div[div[span[contains(.,'Traveler 1:')]]]]//div[contains(@class,'Gender')]//select");
+	public By getFirstTravelerGenderDropdown(){
+		return FirstTravelerGenderDropdown;
 	}
 
-	public static WebElement FirstTravelerDOB() throws Exception {
-		return CommonLib.FindElementByXpath(
-				"//div[div[div[span[contains(.,'Traveler 1:')]]]]//input[contains(@id,'txtPAX_DOB')]");
+	public By getFirstTravelerDOB(){
+		return FirstTravelerDOB;
 	}
 
-	public static WebElement SecondTravelerGenderDropdown() throws Exception {
-		return CommonLib.FindElementByXpath(
-				"//div[div[div[span[contains(.,'Traveler 2:')]]]]//div[contains(@class,'Gender')]//select");
+	public By getSecondTravelerGenderDropdown(){
+		return SecondTravelerGenderDropdown;
 	}
 
-	public static WebElement SecondTravelerDOB() throws Exception {
-		return CommonLib.FindElementByXpath(
-				"//div[div[div[span[contains(.,'Traveler 2:')]]]]//input[contains(@id,'txtPAX_DOB')]");
+	public By getSecondTravelerDOB(){
+		return SecondTravelerDOB;
 	}
 
-	public static WebElement FormContinueBtn() throws Exception {
-		return CommonLib.FindElementByXpath("//div[a[img[@name='continue_btn']]]//a");
+	public By getFormContinueBtn(){
+		return FormContinueBtn;
 	}
 
-	public static WebElement USAndCanadaCreditCardsTxt() throws Exception {
-		return CommonLib.FindElementByXpath("//strong[contains(.,'We only accept US and Canada credit cards')]");
+	public By getUSAndCanadaCreditCardsTxt(){
+		return USAndCanadaCreditCardsTxt;
 	}
 
-	public static WebElement europBestSellerslnk() throws Exception {
-		return CommonLib.FindElementByXpath(
-				"//div[a[div[contains(@class,'dvEachHighImg')]/following-sibling::h3[contains(.,'European BestSellers')]]]//a");
+	public By geteuropBestSellerslnk(){
+		return europBestSellerslnk;
 	}
 
-	public static WebElement europBestSellerslink() {
-		return CommonLib.findElement(
-				"//div[a[div[contains(@class,'dvEachHighImg')]/following-sibling::h3[contains(.,'European BestSellers')]]]//a",
-				"xpath");
+	public By geteuropeanBestsellersHeader(){
+		return europeanBestsellersHeader;
 	}
 
-	public static WebElement europeanBestsellersHeader() throws Exception {
-		return CommonLib.FindElementByXpath(
-				"//div[contains(@class,'pageTitle')]/div[contains(.,'Europe - European Bestsellers')]");
-	}
+	
 }
