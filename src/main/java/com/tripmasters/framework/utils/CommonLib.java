@@ -15,7 +15,9 @@ import org.openqa.selenium.TakesScreenshot;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 import com.tripmasters.framework.base.TestBase;
 
@@ -114,46 +116,41 @@ public class CommonLib extends TestBase {
 	}
 	
 	
-	public static void ClearAndSetValues(By FieldElement, String StringToBeEntered)throws Exception {
+	public static String ClearAndSetValues(By FieldElement, String StringToBeEntered)throws Exception {
 		WebElement element=driver.findElement(FieldElement);
 		try {
 			highlightElement(element);
 			element.clear();
 			//element.sendKeys(StringToBeEntered);
 			element.sendKeys(StringToBeEntered);//Keys.TAB);
-			
+			Thread.sleep(3000);
 		} catch (Exception e) {
-			clickUsingJavaScript(FieldElement);
-			element.sendKeys(StringToBeEntered);
-			element.click();
-		}	
+			e.printStackTrace();
+		}
+		return StringToBeEntered;
 	}
 
-	public static void clickUsingJavaScript(By FieldElement){
-		//WebElement element=
-				driver.findElement(FieldElement).click();
-		/*try {
+	public static void ClickUsingJavaScript(By FieldElement){
+		WebElement element=driver.findElement(FieldElement);;
+		try {
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", element);
+			Thread.sleep(2000);
 		} catch (Exception e) {
 			System.out.println("Unable to click on element");
-		}*/
-	}
-	
-	public static void checkPageIsReady() throws Exception {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		long wt = 3000;
-		for (int i = 0; i < 30; i++) {
-			try {
-				Thread.sleep(wt);
-			} catch (InterruptedException e) {
-				
-			}
-
-			if (js.executeScript("return document.readyState").toString().equals("complete")) {
-				System.out.println("Page is ready to work with");
-				break;
-			}
 		}
 	}
+	
+	public static String SelectOptionByValue(By element, String valueOfOption) {
+		WebElement selectField=driver.findElement(element);
+		try {
+			Select option = new Select(selectField);
+			option.selectByValue(valueOfOption);
+			Thread.sleep(2000);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return valueOfOption;
+	}
+	
 }

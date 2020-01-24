@@ -1,36 +1,49 @@
 package com.tripmasters.framework.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-
-import com.tripmasters.framework.utils.CommonLib;
 
 public class BookingLocators {
 	private static By emailId = By.id("username");
     private static By leavingTextbox=By.xpath("//input[@id='qLeaveNA']");
     private static By goingToTextbox=By.xpath("//input[contains(@id,'qNACity')]");
-    private By goingToTextboxSecond=By.xpath("//*[@id='qNACity2']");
-    private By addCityBtn=By.xpath("//span[contains(.,'Add City')]");
+    private static By stayingDrpdown=By.xpath("//select[@id='qSTCity1']");
+    private static By selectGuestDrpdown=By.xpath("//select[@id='xiRoomsAndPax']");
+    private static By cheaperFlightsLink=By.xpath("//a[contains(.,'Find cheaper flights')]");
+    private static By selectFlightOption=By.xpath("(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/Select1.png')])[1]");
+    private static By goingToTextboxSecond=By.xpath("//*[@id='qNACity2']");
+    private static By addCityBtn=By.xpath("//span[contains(.,'Add City')]");
     private static By noMoreCitiesBtn=By.xpath("//span[contains(.,'No more cities. Continue')]");
     private static By continueBtn=By.xpath("//div[@class='dvContinueButton']//span[contains(.,'Continue')]");
+    private static By continueLink=By.xpath("//a[@id='aContWithPriceValidation']");
+    private static By continueImage=By.xpath("//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/btn_continue.png')]");
     private static By paymentContinueBtn=By.xpath("//a[contains(@id,'PriceValidation')]");
-    private By validatingPricesPopupText=By.xpath("//div[@id='divLoading']//div[contains(.,'Validating prices...')]");
-    private By tripInclusionDetailsHeader=By.xpath("//span[contains(.,'TRIP INCLUSION DETAILS')]");
+    private static By validatingPricesPopupText=By.xpath("//div[@id='divLoading']//div[contains(.,'Validating prices...')]");
+    private static By tripInclusionDetailsHeader=By.xpath("//span[contains(.,'TRIP INCLUSION DETAILS')]");
     private static By EditContinueBtn=By.xpath("//div[a[contains(.,'Edit Itinerary')]]//a[contains(@id,'Continue')]");
-    private By FirstTravelerFirstNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 1:')]]]//input[contains(@placeholder,'First and Middle Name')]");
-    private By FirstTravelerLastNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 1:')]]]//input[contains(@placeholder,'Last Name')]");
-    private By SecondTravelerFirstNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 2:')]]]//input[contains(@placeholder,'First and Middle Name')]");
-    private By SecondTravelerLastNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 2:')]]]//input[contains(@placeholder,'Last Name')]");
-    private By FirstTravelerGenderDropdown=By.xpath("//div[div[div[span[contains(.,'Traveler 1:')]]]]//div[contains(@class,'Gender')]//select");
-    private By FirstTravelerDOB=By.xpath("//div[div[div[span[contains(.,'Traveler 1:')]]]]//input[contains(@id,'txtPAX_DOB')]");
-    private By SecondTravelerGenderDropdown = By.xpath("//div[div[div[span[contains(.,'Traveler 2:')]]]]//div[contains(@class,'Gender')]//select");
-    private By SecondTravelerDOB = By.xpath("//div[div[div[span[contains(.,'Traveler 2:')]]]]//input[contains(@id,'txtPAX_DOB')]");
-    private By FormContinueBtn = By.xpath("//div[a[img[@name='continue_btn']]]//a");
-    private By USAndCanadaCreditCardsTxt = By.xpath("//strong[contains(.,'We only accept US and Canada credit cards')]");
-    private By europBestSellerslnk = By.xpath("//div[a[div[contains(@class,'dvEachHighImg')]/following-sibling::h3[contains(.,'European BestSellers')]]]//a");
-    private By europeanBestsellersHeader = By.xpath("//div[contains(@class,'pageTitle')]/div[contains(.,'Europe - European Bestsellers')]");
-    
-	/**
+    private static By FirstTravelerFirstNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 1:')]]]//input[contains(@placeholder,'First and Middle Name')]");
+    private static By FirstTravelerLastNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 1:')]]]//input[contains(@placeholder,'Last Name')]");
+    private static By SecondTravelerFirstNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 2:')]]]//input[contains(@placeholder,'First and Middle Name')]");
+    private static By SecondTravelerLastNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 2:')]]]//input[contains(@placeholder,'Last Name')]");
+    private static By FirstTravelerGenderDropdown=By.xpath("//div[div[div[span[contains(.,'Traveler 1:')]]]]//div[contains(@class,'Gender')]//select");
+    private static By FirstTravelerDOB=By.xpath("//div[div[div[span[contains(.,'Traveler 1:')]]]]//input[contains(@id,'txtPAX_DOB')]");
+    private static By SecondTravelerGenderDropdown = By.xpath("//div[div[div[span[contains(.,'Traveler 2:')]]]]//div[contains(@class,'Gender')]//select");
+    private static By SecondTravelerDOB = By.xpath("//div[div[div[span[contains(.,'Traveler 2:')]]]]//input[contains(@id,'txtPAX_DOB')]");
+    private static By FormContinueBtn = By.xpath("//div[a[img[@name='continue_btn']]]//a");
+    private static By USAndCanadaCreditCardsTxt = By.xpath("//strong[contains(.,'We only accept US and Canada credit cards')]");
+    private static By europBestSellerslnk = By.xpath("//div[a[div[contains(@class,'dvEachHighImg')]/following-sibling::h3[contains(.,'European BestSellers')]]]//a");
+    private static By europeanBestsellersHeader = By.xpath("//div[contains(@class,'pageTitle')]/div[contains(.,'Europe - European Bestsellers')]");
+    private static By passportDrpdownFirstTraveller = By.xpath("//select[@id='txtPAX_Nationality1']");
+    private static By passportDrpdownSecondTraveller = By.xpath("//select[@id='txtPAX_Nationality2']");
+    private static By passportDrpdownThirdTraveller = By.xpath("//select[@id='txtPAX_Nationality3']");
+    private static By thirdTravelerFirstNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 3:')]]]//input[contains(@placeholder,'First and Middle Name')]");
+    private static By thirdTravelerLastNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 3:')]]]//input[contains(@placeholder,'Last Name')]");
+    private static By thirdTravelerGenderDropdown = By.xpath("//div[div[div[span[contains(.,'Traveler 3:')]]]]//div[contains(@class,'Gender')]//select");
+    private static By thirdTravelerDOB = By.xpath("//div[div[div[span[contains(.,'Traveler 3:')]]]]//input[contains(@id,'txtPAX_DOB')]");
+    private static By verifyTraveler1Name=By.xpath("//div[@id='TravelerR1']/div[@class='cel-name'][contains(.,'John')]");
+    private static By verifyTraveler2Name=By.xpath("//div[@id='TravelerR2']/div[@class='cel-name'][contains(.,'Marie')]");
+    private static By verifyTraveler3Name=By.xpath("//div[@id='TravelerR3']/div[@class='cel-name'][contains(.,'Elvin')]");
+
+    /**
 	 * @return the emailId
 	 */
 	public static By getEmailId() {
@@ -44,86 +57,146 @@ public class BookingLocators {
 	public static By getgoingToTextbox(){
 		return goingToTextbox;
 	}
-
-	public By getgoingToTextboxSecond(){
+	
+	public static By getstayingDrpdown(){
+		return stayingDrpdown;
+	}
+	
+	
+	public static By getselectGuestDrpdown(){
+		return selectGuestDrpdown;
+	}
+	
+	public static By getcheaperFlightsLink(){
+		return cheaperFlightsLink;
+	}
+	
+	public static By getselectFlightOption(){
+		return selectFlightOption;
+	}
+	
+	public static By getgoingToTextboxSecond(){
 		return goingToTextboxSecond;
 	}
 
-	public By getaddCityBtn(){
+	public static By getpassportDrpdownFirstTraveller(){
+		return passportDrpdownFirstTraveller;
+	}
+	
+	public static By getpassportDrpdownSecondTraveller(){
+		return passportDrpdownSecondTraveller;
+	}
+	
+	public static By getpassportDrpdownThirdTraveller(){
+		return passportDrpdownThirdTraveller;
+	}
+	public static By getaddCityBtn(){
 		return addCityBtn;
 	}
 
 	public static By getnoMoreCitiesBtn(){
 		return noMoreCitiesBtn;
 	}
+	
+	public static By getthirdTravelerFirstNameTxtbox(){
+		return thirdTravelerFirstNameTxtbox;
+	}
+	
+	public static By getthirdTravelerLastNameTxtbox(){
+		return thirdTravelerLastNameTxtbox;
+	}
+	
+	public static By getthirdTravelerGenderDropdown(){
+		return thirdTravelerGenderDropdown;
+	}
+	
+	public static By getthirdTravelerDOB(){
+		return thirdTravelerDOB;
+	}
+	public static By getcontinueImage(){
+		return continueImage;
+	}
 
 	public static By getcontinueBtn(){
 		return continueBtn;
 	}
-
+	
+	public static By getcontinueLink(){
+		return continueLink;
+	}
+	
 	public static By getpaymentContinueBtn(){
 		return paymentContinueBtn;
 	}
 
-	public By getvalidatingPricesPopupText(){
+	public static By getvalidatingPricesPopupText(){
 		return validatingPricesPopupText;
 	}
 
-	public By gettripInclusionDetailsHeader(){
-		return tripInclusionDetailsHeader;
+	public static By gettripInclusionDetailsHeader(){
+		return tripInclusionDetailsHeader; 
 	}
 
 	public static By getEditContinueBtn(){
 		return EditContinueBtn;
 	}
 
-	public By getFirstTravelerFirstNameTxtbox(){
+	public static By getFirstTravelerFirstNameTxtbox(){
 		return FirstTravelerFirstNameTxtbox;
 	}
 
-	public By getFirstTravelerLastNameTxtbox(){
+	public static By getFirstTravelerLastNameTxtbox(){
 		return FirstTravelerLastNameTxtbox;
 	}
 
-	public By getSecondTravelerFirstNameTxtbox(){
+	public static By getSecondTravelerFirstNameTxtbox(){
 		return SecondTravelerFirstNameTxtbox;
 	}
 
-	public By getSecondTravelerLastNameTxtbox(){
+	public static By getSecondTravelerLastNameTxtbox(){
 		return SecondTravelerLastNameTxtbox;
 	}
 
-	public By getFirstTravelerGenderDropdown(){
+	public static By getFirstTravelerGenderDropdown(){
 		return FirstTravelerGenderDropdown;
 	}
 
-	public By getFirstTravelerDOB(){
+	public static By getFirstTravelerDOB(){
 		return FirstTravelerDOB;
 	}
 
-	public By getSecondTravelerGenderDropdown(){
+	public static By getSecondTravelerGenderDropdown(){
 		return SecondTravelerGenderDropdown;
 	}
 
-	public By getSecondTravelerDOB(){
+	public static By getSecondTravelerDOB(){
 		return SecondTravelerDOB;
 	}
 
-	public By getFormContinueBtn(){
+	public static By getFormContinueBtn(){
 		return FormContinueBtn;
 	}
 
-	public By getUSAndCanadaCreditCardsTxt(){
+	public static By getUSAndCanadaCreditCardsTxt(){
 		return USAndCanadaCreditCardsTxt;
 	}
 
-	public By geteuropBestSellerslnk(){
+	public static By geteuropBestSellerslnk(){
 		return europBestSellerslnk;
 	}
 
-	public By geteuropeanBestsellersHeader(){
+	public static By geteuropeanBestsellersHeader(){
 		return europeanBestsellersHeader;
 	}
 
+	public static By getverifyTraveler1Name(){
+		return verifyTraveler1Name;
+	}
+	public static By getverifyTraveler2Name(){
+		return verifyTraveler2Name;
+	}
+	public static By getverifyTraveler3Name(){
+		return verifyTraveler3Name;
+	}
 	
 }
