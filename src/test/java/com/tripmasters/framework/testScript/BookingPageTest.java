@@ -5,9 +5,9 @@ import org.testng.annotations.Test;
 import com.tripmasters.framework.actions.BookingPageAction;
 import com.tripmasters.framework.actions.ConfirmationPageAction;
 import com.tripmasters.framework.actions.PassengerInfoPageAction;
-import com.tripmasters.framework.base.TestBase;
+import com.tripmasters.framework.base.TestBase2;
 
-public class BookingPageTest extends TestBase {
+public class BookingPageTest extends TestBase2 {
 	public static String firstTravellerName=null;
 	public static String secondTravellerName=null;
 	public static String thirdTravellerName=null;
@@ -18,6 +18,15 @@ public class BookingPageTest extends TestBase {
 	}
 	
 	@Test
+	public void bookingInitialise1() throws Exception
+	{
+		//generateReport.extent.createTest("bookingInitialise");
+		//boolean status=BookingPageAction.FillBasicBookingDetails();
+		System.out.println("hello");
+		//String title = driver.getCurrentUrl();
+		//Assert.assertEquals("Vacation Packages | Custom Vacation Packages | Tripmasters", title);
+	}
+	//@Test
 	public void bookingInitialise() throws Exception
 	{
 		BookingPageAction.FillBasicBookingDetails();
@@ -35,7 +44,7 @@ public class BookingPageTest extends TestBase {
 		ConfirmationPageAction.VerifyThirdTravellerDetails(thirdTravellerName);
 	}
 	
-	@Test
+	//@Test
 	public void bookingSingleRoomAdultChild(){
 		
 		

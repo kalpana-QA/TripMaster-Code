@@ -24,7 +24,7 @@ import com.tripmasters.framework.base.TestBase;
 
 public class CommonLib extends TestBase {
 
-
+	static Logs log;
 	private static WebElement element = null;
 	//public static WebDriver driver = null;
 	static String screenShotPath = "";
@@ -33,10 +33,10 @@ public class CommonLib extends TestBase {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-			Logs.info("Element Found");
+			log.info("Element Found");
 		} catch (Exception e) {
-			Logs.info("Element Not Found");
-			Logs.error("e");
+			log.info("Element Not Found");
+			log.error("e");
 			element = null;
 		}
 		return element;
@@ -69,11 +69,11 @@ public class CommonLib extends TestBase {
 				element = driver.findElement(By.partialLinkText(locatorString));
 				highlightElement(element);
 			} else {
-				Logs.info("Element Not Found");
+				log.info("Element Not Found");
 			}
 		} catch (Exception e) {
-			Logs.info("Something wrong with element data passed because of which element not Found.");
-			Logs.error("e");
+			log.info("Something wrong with element data passed because of which element not Found.");
+			log.error("e");
 			element = null;
 		}
 		return element;
@@ -102,14 +102,14 @@ public class CommonLib extends TestBase {
 			screenShotPath = new File(base).toURI().relativize(new File(screenShotPath).toURI()).getPath();
 			
 		} catch (FileNotFoundException fnfe) {
-			Logs.info("In takeScreenShot " + fnfe.getMessage());
+			log.info("In takeScreenShot " + fnfe.getMessage());
 			
-			Logs.info("File not found" + fnfe);
+			log.info("File not found" + fnfe);
 		} catch (IOException e) {
-			Logs.info("In takeScreenShot " + e.getMessage());
+			log.info("In takeScreenShot " + e.getMessage());
 			
 		} catch (Exception e) {
-			Logs.info("In takeScreenShot " + e.getMessage());
+			log.info("In takeScreenShot " + e.getMessage());
 			
 		}
 		return screenShotPath;

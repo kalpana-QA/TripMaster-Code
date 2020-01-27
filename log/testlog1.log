@@ -1,0 +1,20 @@
+2020-01-27 00:02:18,252 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-01-27 00:02:29,617 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-01-27 00:07:12,961 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-01-27 00:07:23,437 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-01-27 00:09:57,998 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-01-27 01:04:14,523 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-01-27 01:06:29,941 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-01-27 01:08:31,102 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-01-27 01:09:00,878 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-01-27 01:10:16,267 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-01-27 01:10:24,869 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-01-27 01:11:11,190 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-01-27 01:11:18,756 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-01-27 01:15:56,090 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-01-27 01:16:04,904 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-01-27 01:17:21,021 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-01-27 01:17:32,178 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-01-27 12:49:34,289 [main] ERROR com.tripmasters.framework.utils.Logs - browser doesn't found!!!!!!!!!!!
+2020-01-27 15:30:51,182 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-27 15:31:00,121 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!

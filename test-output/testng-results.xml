@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="124520" started-at="2020-01-27T05:49:00Z" finished-at="2020-01-27T05:51:04Z">
+  <suite name="Default suite" duration-ms="13975" started-at="2020-01-27T10:00:46Z" finished-at="2020-01-27T10:01:00Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="124520" started-at="2020-01-27T05:49:00Z" finished-at="2020-01-27T05:51:04Z">
+    <test name="Default test" duration-ms="13975" started-at="2020-01-27T10:00:46Z" finished-at="2020-01-27T10:01:00Z">
       <class name="com.tripmasters.framework.testScript.BookingPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@42d80b78]" name="setUp" is-config="true" duration-ms="18568" started-at="2020-01-27T05:49:00Z" finished-at="2020-01-27T05:49:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@7921b0a2]" name="setUp" is-config="true" duration-ms="13956" started-at="2020-01-27T15:30:46Z" finished-at="2020-01-27T15:31:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="bookingInitialise()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@42d80b78]" name="bookingInitialise" duration-ms="105905" started-at="2020-01-27T05:49:18Z" finished-at="2020-01-27T05:51:04Z">
+        <test-method status="PASS" signature="bookingInitialise1()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@7921b0a2]" name="bookingInitialise1" duration-ms="7" started-at="2020-01-27T15:31:00Z" finished-at="2020-01-27T15:31:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookingInitialise -->
+        </test-method> <!-- bookingInitialise1 -->
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
