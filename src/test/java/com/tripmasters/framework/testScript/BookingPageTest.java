@@ -11,6 +11,7 @@ public class BookingPageTest extends TestBase {
 	public static String firstTravellerName=null;
 	public static String secondTravellerName=null;
 	public static String thirdTravellerName=null;
+	
 	public void getTitle() {
 		String title = driver.getTitle();
 		System.out.println("title is: " + title);
@@ -20,6 +21,8 @@ public class BookingPageTest extends TestBase {
 	public void bookingInitialise() throws Exception
 	{
 		BookingPageAction.FillBasicBookingDetails();
+		//BookingPageAction.SelectGuestDetails("1 Room 3 Adults");
+		BookingPageAction.ClickonContinueButton();
 		BookingPageAction.SelectCheaperFlights();
 		BookingPageAction.ClicktoContinuePage();
 		//Put assertion before selecting continue image....
@@ -32,11 +35,9 @@ public class BookingPageTest extends TestBase {
 		ConfirmationPageAction.VerifyThirdTravellerDetails(thirdTravellerName);
 	}
 	
-	public void FillTravellerDetails() throws Exception{
-
-	}
-	
-	public void ValidateUserDetails(){
+	@Test
+	public void bookingSingleRoomAdultChild(){
+		
 		
 	}
 }

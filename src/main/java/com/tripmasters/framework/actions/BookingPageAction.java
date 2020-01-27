@@ -14,10 +14,28 @@ public class BookingPageAction extends TestBase{
 		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), "Berlin (Germany)");
 		CommonLib.SelectOptionByValue(BookingLocators.getstayingDrpdown(), "4");
 		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
-		CommonLib.SelectOptionByValue(BookingLocators.getselectGuestDrpdown(), "1|3");
+	}
+	
+	public static void SelectGuestDetails(String guestInfo){
+		switch(guestInfo)
+		{
+		case "1 Room 3 Adults":
+			CommonLib.SelectOptionByValue(BookingLocators.getselectGuestDrpdown(), "1|3");
+			break;
+		case "1 Adult 1Child":	
+			CommonLib.SelectOptionByValue(BookingLocators.getselectGuestDrpdown(), "1|Other");
+			//CommonLib.SelectOptionByValue(BookingLocators.getselectAdultDrpdownValueRoom1(), "1|Other");
+			//CommonLib.SelectOptionByValue(BookingLocators.getselectChildDrpdownValueRoom1(), "1|Other");
+			break;
+		}
+		
+	}
+	
+	public static void ClickonContinueButton(){
+		
 		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueBtn());
 	}
-
+	
 	public static void SelectCheaperFlights(){
 		CommonLib.ClickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
 		CommonLib.ClickUsingJavaScript(BookingLocators.getselectFlightOption());

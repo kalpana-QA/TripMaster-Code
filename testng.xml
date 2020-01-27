@@ -4,7 +4,6 @@
 	<test name="Test">
 		<parameter name="browser" value="Chrome" />
 		<classes>
-			<!-- <class name="com.tripmasters.framework.base.TestBase"/> -->
 			<class name="com.tripmasters.framework.testScript.BookingPageTest" />
 		</classes>
 	</test> <!-- Test -->

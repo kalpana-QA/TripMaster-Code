@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="116297" started-at="2020-01-24T10:24:41Z" finished-at="2020-01-24T10:26:37Z">
+  <suite name="Suite" duration-ms="124520" started-at="2020-01-27T05:49:00Z" finished-at="2020-01-27T05:51:04Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="116297" started-at="2020-01-24T10:24:41Z" finished-at="2020-01-24T10:26:37Z">
+    <test name="Test" duration-ms="124520" started-at="2020-01-27T05:49:00Z" finished-at="2020-01-27T05:51:04Z">
       <class name="com.tripmasters.framework.testScript.BookingPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@42d80b78]" name="setUp" is-config="true" duration-ms="12069" started-at="2020-01-24T10:24:41Z" finished-at="2020-01-24T10:24:53Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@42d80b78]" name="setUp" is-config="true" duration-ms="18568" started-at="2020-01-27T05:49:00Z" finished-at="2020-01-27T05:49:18Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="bookingInitialise()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@42d80b78]" name="bookingInitialise" duration-ms="104174" started-at="2020-01-24T10:24:53Z" finished-at="2020-01-24T10:26:37Z">
+        <test-method status="PASS" signature="bookingInitialise()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@42d80b78]" name="bookingInitialise" duration-ms="105905" started-at="2020-01-27T05:49:18Z" finished-at="2020-01-27T05:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookingInitialise -->
