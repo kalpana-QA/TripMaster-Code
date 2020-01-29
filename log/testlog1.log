@@ -18,3 +18,79 @@
 2020-01-27 12:49:34,289 [main] ERROR com.tripmasters.framework.utils.Logs - browser doesn't found!!!!!!!!!!!
 2020-01-27 15:30:51,182 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
 2020-01-27 15:31:00,121 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-27 16:06:27,396 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-27 16:06:38,136 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-27 16:14:49,923 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-27 16:15:29,176 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-27 16:19:08,072 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-27 16:19:17,006 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-27 16:42:05,621 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-27 16:42:12,430 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-27 16:44:11,942 [TestNG-test=Test-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-27 16:44:20,812 [TestNG-test=Test-1] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 11:09:15,115 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 11:09:20,550 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 12:01:41,243 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 12:01:46,176 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 12:15:15,052 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 12:15:20,538 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 12:24:57,800 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 12:25:03,436 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 12:29:52,764 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 12:29:59,696 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 12:49:08,384 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 12:49:14,253 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 13:19:12,404 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 13:19:17,472 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 13:24:14,903 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 13:24:20,923 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 13:29:42,614 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 13:29:49,117 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 14:28:50,416 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 14:28:55,491 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 14:39:52,442 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 14:39:59,632 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 14:48:57,191 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 14:49:02,481 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 14:54:22,641 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 14:54:27,715 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 14:59:50,693 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 14:59:55,305 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 15:25:02,706 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 15:25:09,775 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 15:48:03,214 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 15:48:08,322 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 16:16:39,140 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 16:16:44,349 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 16:50:53,278 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 16:50:58,829 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 16:52:12,511 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 16:52:17,276 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 16:54:42,800 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 16:54:47,187 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 16:58:30,328 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 16:58:35,557 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 17:08:10,362 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 17:08:15,624 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 17:19:22,919 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 17:19:27,957 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 17:21:37,526 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 17:21:41,817 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-28 17:28:47,312 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-28 17:28:51,874 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-29 08:17:59,437 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-29 08:18:12,737 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-29 08:20:02,621 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-29 08:20:11,056 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-29 09:45:07,698 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-29 09:45:17,122 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-29 09:53:52,958 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-29 09:53:57,139 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-29 10:44:06,224 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-29 10:44:11,168 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-29 10:55:40,759 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-29 10:55:47,509 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-29 11:29:36,560 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-29 11:29:43,144 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-29 11:36:42,222 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-29 11:36:47,396 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!

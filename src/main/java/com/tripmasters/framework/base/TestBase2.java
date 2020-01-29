@@ -26,12 +26,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase2 {
 	private static String chromeDriverFilePath = System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe";
-	public WebDriver driver;
+	public static WebDriver driver;
 	private DesiredCapabilities capabilities;
 	private URL url;
 	private boolean flag = false;
 	private Logs log = new Logs();
-	GenerateReport gn;
+	static GenerateReport gn;
 	
 	@BeforeMethod
 	// @Parameters(value = { "browser" })
@@ -46,6 +46,7 @@ public class TestBase2 {
 
 					WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver();
+					driver.manage().window().maximize();
 					log.info("ChromeDriver instantiated for " + platform + " platform.");
 					flag = true;
 
@@ -117,7 +118,7 @@ public class TestBase2 {
 				log.info("The given URL launch successfully for " + platform + " platform and " + browser
 						+ " browser!!!!!!!!!!!!");
 				System.out.println("browser launched with given url");
-				driver.quit();
+				//driver.quit();
 				int time = (int) System.nanoTime();
 				System.out.println("nano time is: " + time);
 			}

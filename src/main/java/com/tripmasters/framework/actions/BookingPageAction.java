@@ -1,34 +1,28 @@
 package com.tripmasters.framework.actions;
 
-
-import org.openqa.selenium.By;
 import com.tripmasters.framework.base.TestBase;
 import com.tripmasters.framework.pages.BookingLocators;
 import com.tripmasters.framework.utils.CommonLib;
 
 public class BookingPageAction extends TestBase{
 	
-	public static void FillBasicBookingDetails() throws Exception{
+	public static void FillBasicBookingDetails(String leavingFrom,String destination,String stayingTime,String guestInfo) throws Exception{
 		
-		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), "New York  La Guardia, NY");
-		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), "Berlin (Germany)");
-		CommonLib.SelectOptionByValue(BookingLocators.getstayingDrpdown(), "4");
+		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
+		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+		SelectStayingTime(stayingTime);
 		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+		SelectGuestDetails(guestInfo);
+	}
+	
+	public static void SelectStayingTime(String stayingTime){
+		
+		CommonLib.SelectOptionByValue(BookingLocators.getstayingDrpdown(), stayingTime);
 	}
 	
 	public static void SelectGuestDetails(String guestInfo){
-		switch(guestInfo)
-		{
-		case "1 Room 3 Adults":
-			CommonLib.SelectOptionByValue(BookingLocators.getselectGuestDrpdown(), "1|3");
-			break;
-		case "1 Adult 1Child":	
-			CommonLib.SelectOptionByValue(BookingLocators.getselectGuestDrpdown(), "1|Other");
-			//CommonLib.SelectOptionByValue(BookingLocators.getselectAdultDrpdownValueRoom1(), "1|Other");
-			//CommonLib.SelectOptionByValue(BookingLocators.getselectChildDrpdownValueRoom1(), "1|Other");
-			break;
-		}
-		
+
+		CommonLib.SelectOptionByValue(BookingLocators.getselectGuestDrpdown(), guestInfo);
 	}
 	
 	public static void ClickonContinueButton(){
@@ -43,10 +37,20 @@ public class BookingPageAction extends TestBase{
 	}
 	
 	public static void ClicktoContinuePage(){
-	
+
 		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueImage());
+	}
+	
+	public static void SelectNumberOfAdult(String numOfAdults){
+		
+		CommonLib.SelectOptionByValue(BookingLocators.getselectAdultDrpdown(), numOfAdults);
 		
 	}
-		
+	
+    public static void SelectNumberOfChild(String numOfChild,String ageOfChild){
+		CommonLib.SelectOptionByValue(BookingLocators.getselectChildDrpdown(), numOfChild);
+		CommonLib.SelectOptionByValue(BookingLocators.getselectChildAgeDrpdown(), ageOfChild);
+	}
+
 	
 }
