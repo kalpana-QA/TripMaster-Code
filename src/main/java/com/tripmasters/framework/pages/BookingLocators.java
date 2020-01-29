@@ -47,6 +47,9 @@ public class BookingLocators {
     private static By verifyTraveler3Name=By.xpath("//div[@id='TravelerR3']//div[@class='cel-name' or contains(text(),'Female') or contains(text(),'01/01/1996')]");
     private static By selectChildTravelerDOB=By.xpath("//div[div[div[span[contains(.,'Traveler 2:')]]]]//input[contains(@id,'txtCPAX_DOB2')]");
     private static By selectChildTraveleraPassport=By.xpath("//select[@id='txtCPAX_Nationality2']");
+    private static By selectWithoutAirButton=By.xpath("//*[@class='dvIntlFly']/child::span[text()='Without Air *']");
+    private static By browseHotelslink=By.xpath("//a[contains(.,' Browse ')]");
+    private static By selectFirstHotel=By.xpath("//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/ui-select-btn-95x25.png')][1]");
     /**
 	 * @return the emailId
 	 */
@@ -219,4 +222,16 @@ public class BookingLocators {
 	public static By getpassportDrpdownSecondChildTraveller(){
 		return selectChildTraveleraPassport;
 	}
+	
+
+	public static By getWithoutAirButton() {
+		return selectWithoutAirButton;
+	}
+	public static By getBrowseHotelsLink() {
+		return browseHotelslink;
+	}
+	public static By getselectFirstHotel() {
+		return selectFirstHotel;
+	}
+	
 }

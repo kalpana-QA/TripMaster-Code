@@ -1,5 +1,7 @@
 package com.tripmasters.framework.actions;
 
+import java.util.concurrent.TimeUnit;
+
 import com.tripmasters.framework.base.TestBase;
 import com.tripmasters.framework.pages.BookingLocators;
 import com.tripmasters.framework.utils.CommonLib;
@@ -50,6 +52,34 @@ public class BookingPageAction extends TestBase{
 		CommonLib.SelectOptionByValue(BookingLocators.getselectChildDrpdown(), numOfChild);
 		CommonLib.SelectOptionByValue(BookingLocators.getselectChildAgeDrpdown(), ageOfChild);
 	}
+    
+    public static void GetWithOutButton(){
+    	
+    	CommonLib.ClickUsingJavaScript(BookingLocators.getWithoutAirButton());
+    }
+    
+    public static void FillBasicBookingDetailWithOutAir(String destination,String stayingTime,String destination_second,String guestinfo) throws Exception{
+	
+		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+		
+		CommonLib.ClickUsingJavaScript(BookingLocators.getaddCityBtn());
+		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextboxSecond(), destination_second);
+		//Thread.sleep(2000);
+		SelectStayingTime(stayingTime);
+		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+	    //Thread.sleep(2000);
+		SelectGuestDetails(guestinfo);
+		
+	}
+    
+    public static void browseHotelsButton() {
+    	CommonLib.ClickUsingJavaScript(BookingLocators.getBrowseHotelsLink());
+    	CommonLib.ClickUsingJavaScript(BookingLocators.getselectFirstHotel());
+    	CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueLink());
+    }
+	
+	
+    
 
 	
 }
