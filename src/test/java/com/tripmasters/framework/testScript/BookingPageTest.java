@@ -33,9 +33,24 @@ public class BookingPageTest extends TestBase2 {
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler3Name(),expectedThirdTravellerInfo);
 	}
 	
-	@Test
+	//@Test
 	public void bookingSingleRoom1Adult1Child() throws Exception{
 		BookingPageAction.FillBasicBookingDetails("San Jose, CALIFORNIA","Osaka (Japan)","6","1|Other");
+		BookingPageAction.SelectNumberOfAdult("1");
+		BookingPageAction.SelectNumberOfChild("1","9");
+		BookingPageAction.ClickonContinueButton();
+		BookingPageAction.SelectCheaperFlights();
+		BookingPageAction.ClicktoContinuePage();
+		expectedFirstTravellerInfo=PassengerInfoPageAction.FillFirstTravellerDetails("Morris","Leo","Male","01/01/1992","237|US");
+		expectedSecondTravellerInfo=PassengerInfoPageAction.FillSecondTravellerDetails("Shally","Leo","Male","01/01/1994","237|US","Child");
+		BookingPageAction.ClicktoContinuePage();
+		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler1Name(),expectedFirstTravellerInfo);
+		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(),expectedSecondTravellerInfo);
+	}
+	
+	@Test
+	public void bookingTwoRoom2Adult() throws Exception{
+		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Berlin (Germany)","6","1|Other");
 		BookingPageAction.SelectNumberOfAdult("1");
 		BookingPageAction.SelectNumberOfChild("1","9");
 		BookingPageAction.ClickonContinueButton();

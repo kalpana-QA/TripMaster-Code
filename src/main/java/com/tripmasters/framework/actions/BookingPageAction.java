@@ -7,7 +7,6 @@ import com.tripmasters.framework.utils.CommonLib;
 public class BookingPageAction extends TestBase{
 	
 	public static void FillBasicBookingDetails(String leavingFrom,String destination,String stayingTime,String guestInfo) throws Exception{
-		
 		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
 		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
 		SelectStayingTime(stayingTime);

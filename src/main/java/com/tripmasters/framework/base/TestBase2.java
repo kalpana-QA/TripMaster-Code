@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.tripmasters.framework.utils.GenerateReport;
@@ -163,7 +164,7 @@ public class TestBase2 {
 
 	}
 
-	@AfterClass
+	@AfterMethod
 	void tearDown() {
 		gn.extent.flush();
 		driver.quit();

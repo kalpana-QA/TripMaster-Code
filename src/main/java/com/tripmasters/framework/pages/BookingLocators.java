@@ -42,9 +42,9 @@ public class BookingLocators {
     private static By thirdTravelerLastNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 3:')]]]//input[contains(@placeholder,'Last Name')]");
     private static By thirdTravelerGenderDropdown = By.xpath("//div[div[div[span[contains(.,'Traveler 3:')]]]]//div[contains(@class,'Gender')]//select");
     private static By thirdTravelerDOB = By.xpath("//div[div[div[span[contains(.,'Traveler 3:')]]]]//input[contains(@id,'txtPAX_DOB')]");
-    private static By verifyTraveler1Name=By.xpath("//div[@id='TravelerR1']//div[contains(text(),'John') or contains(text(),'Male') or contains(text(),'01/01/1992')]");
-    private static By verifyTraveler2Name=By.xpath("//div[@id='TravelerR2']//div[contains(text(),'Elvin') or contains(text(),'Male') or contains(text(),'01/01/1994')]");
-    private static By verifyTraveler3Name=By.xpath("//div[@id='TravelerR3']//div[contains(text(),'Marie') or contains(text(),'Female') or contains(text(),'01/01/1996')]");
+    private static By verifyTraveler1Name=By.xpath("//div[@id='TravelerR1']//div[@class='cel-name' or contains(text(),'Male') or contains(text(),'01/01/1992')]");
+    private static By verifyTraveler2Name=By.xpath("//div[@id='TravelerR2']//div[@class='cel-name' or contains(text(),'Male') or contains(text(),'01/01/1994')]");
+    private static By verifyTraveler3Name=By.xpath("//div[@id='TravelerR3']//div[@class='cel-name' or contains(text(),'Female') or contains(text(),'01/01/1996')]");
     private static By selectChildTravelerDOB=By.xpath("//div[div[div[span[contains(.,'Traveler 2:')]]]]//input[contains(@id,'txtCPAX_DOB2')]");
     private static By selectChildTraveleraPassport=By.xpath("//select[@id='txtCPAX_Nationality2']");
     /**
