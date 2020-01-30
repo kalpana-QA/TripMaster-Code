@@ -2,6 +2,9 @@ package com.tripmasters.framework.testScript;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.tripmasters.framework.actions.BookingPageAction;
@@ -64,11 +67,17 @@ public class BookingPageTest extends TestBase2 {
 	}
 	@Test
 	public void getWithoutAir() throws Exception  {
-		BookingPageAction.GetWithOutButton();
-		BookingPageAction.FillBasicBookingDetailWithOutAir("Delhi (India)","4","Mumbai (India)","1|3");
+		BookingPageAction.getWithoutButton();
+		BookingPageAction.fillBasicBookingDetailWithoutAir("Delhi (India)","4","Mumbai (India)","1|3");
 		
 		BookingPageAction.ClickonContinueButton();
-		BookingPageAction.browseHotelsButton();
+		String actualHotel = BookingPageAction.browseHotelsButton();
+		String expectedHotel = BookingPageAction.browseSelectHotel();
+		Assert.assertEquals(actualHotel, expectedHotel);
+		BookingPageAction.getContinueLink();
+		
+		
+		System.out.println("passed");
 		
 		
 	}

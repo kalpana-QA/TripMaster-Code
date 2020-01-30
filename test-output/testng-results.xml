@@ -1,28 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="225926" started-at="2020-01-29T06:52:43Z" finished-at="2020-01-29T06:56:29Z">
+  <suite name="Default suite" duration-ms="36211" started-at="2020-01-30T18:11:01 IST" finished-at="2020-01-30T18:11:37 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="225926" started-at="2020-01-29T06:52:43Z" finished-at="2020-01-29T06:56:29Z">
+    <test name="Default test" duration-ms="36211" started-at="2020-01-30T18:11:01 IST" finished-at="2020-01-30T18:11:37 IST">
       <class name="com.tripmasters.framework.testScript.BookingPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@61f8bee4]" name="setUp" is-config="true" duration-ms="15706" started-at="2020-01-29T12:22:43Z" finished-at="2020-01-29T12:22:58Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@69b0fd6f]" name="setUp" is-config="true" duration-ms="10693" started-at="2020-01-30T18:11:01 IST" finished-at="2020-01-30T18:11:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="bookingSingleRoom1Adult1Child()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@61f8bee4]" name="bookingSingleRoom1Adult1Child" duration-ms="94274" started-at="2020-01-29T12:22:58Z" finished-at="2020-01-29T12:24:33Z">
+        <test-method status="FAIL" signature="getWithoutAir()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@69b0fd6f]" name="getWithoutAir" duration-ms="25471" started-at="2020-01-30T18:11:12 IST" finished-at="2020-01-30T18:11:37 IST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.tripmasters.framework.actions.BookingPageAction.browseHotelsButton(BookingPageAction.java:77)
+at com.tripmasters.framework.testScript.BookingPageTest.getWithoutAir(BookingPageTest.java:74)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookingSingleRoom1Adult1Child -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@61f8bee4]" name="setUp" is-config="true" duration-ms="14291" started-at="2020-01-29T12:24:33Z" finished-at="2020-01-29T12:24:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="bookingSingleRoomWith3Adults()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@61f8bee4]" name="bookingSingleRoomWith3Adults" duration-ms="101634" started-at="2020-01-29T12:24:47Z" finished-at="2020-01-29T12:26:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bookingSingleRoomWith3Adults -->
+        </test-method> <!-- getWithoutAir -->
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

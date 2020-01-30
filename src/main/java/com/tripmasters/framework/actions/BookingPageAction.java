@@ -53,28 +53,37 @@ public class BookingPageAction extends TestBase{
 		CommonLib.SelectOptionByValue(BookingLocators.getselectChildAgeDrpdown(), ageOfChild);
 	}
     
-    public static void GetWithOutButton(){
+    public static void getWithoutButton(){
     	
     	CommonLib.ClickUsingJavaScript(BookingLocators.getWithoutAirButton());
     }
     
-    public static void FillBasicBookingDetailWithOutAir(String destination,String stayingTime,String destination_second,String guestinfo) throws Exception{
+    public static void fillBasicBookingDetailWithoutAir(String destination,String stayingTime,String destination_second,String guestinfo) throws Exception{
 	
 		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
 		
 		CommonLib.ClickUsingJavaScript(BookingLocators.getaddCityBtn());
 		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextboxSecond(), destination_second);
-		//Thread.sleep(2000);
+		
 		SelectStayingTime(stayingTime);
 		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
-	    //Thread.sleep(2000);
+	    
 		SelectGuestDetails(guestinfo);
 		
 	}
     
-    public static void browseHotelsButton() {
+    public static String browseHotelsButton() {
     	CommonLib.ClickUsingJavaScript(BookingLocators.getBrowseHotelsLink());
+    	String actualhotel= driver.findElement(BookingLocators.getFirstHotel()).getText();
+    	//System.out.println(actualhotel);
+    	return actualhotel;
+    }
+    public static String browseSelectHotel() {
     	CommonLib.ClickUsingJavaScript(BookingLocators.getselectFirstHotel());
+    	String expectedhotel = driver.findElement(BookingLocators.getExpectedHotel()).getText();
+    	return expectedhotel;
+    }
+    public static void getContinueLink() {
     	CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueLink());
     }
 	

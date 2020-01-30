@@ -50,6 +50,9 @@ public class BookingLocators {
     private static By selectWithoutAirButton=By.xpath("//*[@class='dvIntlFly']/child::span[text()='Without Air *']");
     private static By browseHotelslink=By.xpath("//a[contains(.,' Browse ')]");
     private static By selectFirstHotel=By.xpath("//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/ui-select-btn-95x25.png')][1]");
+    private static By verifyTripinclusionPage=By.xpath("//div[@class='mainDiv']//span[contains(text(),'TRIP INCLUSION DETAILS')]");
+    private static By firstHotel=By.xpath("(//a[@class='hotelHeadTitle'])[1]");
+    private static By verifyHotel=By.xpath("//div[@id='toResize440']//a");
     /**
 	 * @return the emailId
 	 */
@@ -233,5 +236,13 @@ public class BookingLocators {
 	public static By getselectFirstHotel() {
 		return selectFirstHotel;
 	}
-	
+	public static By toVerifyTripinclusionPage() {
+		return  verifyTripinclusionPage;
+	}
+	public static By getFirstHotel() {
+		return firstHotel;
+	}
+	public static By getExpectedHotel() {
+		return verifyHotel;
+	}
 }
