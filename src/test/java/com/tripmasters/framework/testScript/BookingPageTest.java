@@ -15,6 +15,7 @@ public class BookingPageTest extends TestBase2 {
 	List<String>expectedFirstTravellerInfo=new ArrayList<String>();
 	List<String>expectedSecondTravellerInfo=new ArrayList<String>();
 	List<String>expectedThirdTravellerInfo=new ArrayList<String>();
+	List<String>expectedFourthTravellerInfo=new ArrayList<String>();
    
 	//@Test
 	public void bookingSingleRoomWith3Adults() throws Exception
@@ -50,16 +51,20 @@ public class BookingPageTest extends TestBase2 {
 	
 	@Test
 	public void bookingTwoRoom2Adult() throws Exception{
-		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Berlin (Germany)","6","1|Other");
-		BookingPageAction.SelectNumberOfAdult("1");
-		BookingPageAction.SelectNumberOfChild("1","9");
+		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Berlin (Germany)","6","2|2-2");
 		BookingPageAction.ClickonContinueButton();
 		BookingPageAction.SelectCheaperFlights();
 		BookingPageAction.ClicktoContinuePage();
-		expectedFirstTravellerInfo=PassengerInfoPageAction.FillFirstTravellerDetails("Morris","Leo","Male","01/01/1992","237|US");
-		expectedSecondTravellerInfo=PassengerInfoPageAction.FillSecondTravellerDetails("Shally","Leo","Male","01/01/1994","237|US","Child");
+		expectedFirstTravellerInfo=PassengerInfoPageAction.FillTravellerDetailsForMultipleRooms("Room1Traveller1");
+		expectedSecondTravellerInfo=PassengerInfoPageAction.FillTravellerDetailsForMultipleRooms("Room1Traveller2");
+		expectedThirdTravellerInfo=PassengerInfoPageAction.FillTravellerDetailsForMultipleRooms("Room2Traveller1");
+		expectedFourthTravellerInfo=PassengerInfoPageAction.FillTravellerDetailsForMultipleRooms("Room2Traveller2");
 		BookingPageAction.ClicktoContinuePage();
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler1Name(),expectedFirstTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(),expectedSecondTravellerInfo);
+		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler3Name(),expectedThirdTravellerInfo);
+		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler4Name(),expectedFourthTravellerInfo);
+		
 	}
+	
 }

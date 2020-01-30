@@ -6,7 +6,7 @@
       <class name="com.tripmasters.framework.testScript.BookingPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="bookingSingleRoom1Adult1Child"/>
+          <include name="bookingTwoRoom2Adult"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTest -->
     </classes>

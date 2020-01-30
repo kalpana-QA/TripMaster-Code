@@ -67,6 +67,8 @@ public class TestBase2 {
 				if (browser.equalsIgnoreCase("Chrome")) {
 					capabilities = new DesiredCapabilities();
 
+					
+					System.out.println("chromeDriverFilePath : "+chromeDriverFilePath);
 					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
 					capabilities.setCapability("platformName", "Android");
 					capabilities.setCapability("deviceName", "One Plus");

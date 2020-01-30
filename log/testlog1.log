@@ -102,3 +102,15 @@
 2020-01-29 12:22:58,818 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
 2020-01-29 12:24:42,271 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
 2020-01-29 12:24:47,385 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-29 12:47:31,907 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-29 12:47:38,726 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-29 15:50:51,790 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-29 15:50:56,861 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-29 16:06:32,082 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-29 16:06:37,089 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-29 16:07:51,404 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-29 16:07:55,974 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-01-29 18:11:15,569 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-01-29 18:11:23,195 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-01-30 10:03:06,925 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-01-30 10:03:12,940 [main] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
