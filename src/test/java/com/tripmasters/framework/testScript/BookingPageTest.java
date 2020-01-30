@@ -1,5 +1,7 @@
 package com.tripmasters.framework.testScript;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 import org.testng.annotations.Test;
@@ -48,7 +50,7 @@ public class BookingPageTest extends TestBase2 {
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(),expectedSecondTravellerInfo);
 	}
 	
-	@Test
+	//@Test
 	public void bookingTwoRoom2Adult() throws Exception{
 		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Berlin (Germany)","6","1|Other");
 		BookingPageAction.SelectNumberOfAdult("1");
@@ -61,5 +63,14 @@ public class BookingPageTest extends TestBase2 {
 		BookingPageAction.ClicktoContinuePage();
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler1Name(),expectedFirstTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(),expectedSecondTravellerInfo);
+	}
+	
+	@Test
+	public void withoutAirBookingForSingleCity() throws Exception
+	{
+		BookingPageAction.SelectWithoutAir();
+		BookingPageAction. FillBasicBookingDetails2("San Francisco (USA)","5","1|3");
+		BookingPageAction.ClickonContinueButton();
+		BookingPageAction.BrowseHotels();
 	}
 }

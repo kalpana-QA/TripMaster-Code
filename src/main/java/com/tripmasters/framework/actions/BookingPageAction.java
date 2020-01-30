@@ -52,4 +52,24 @@ public class BookingPageAction extends TestBase{
 	}
 
 	
+
+	public static void SelectWithoutAir() {
+		CommonLib.ClickUsingJavaScript(BookingLocators.getwithoutAir());
+		
+	}
+	
+	public static void FillBasicBookingDetails2(String destination,String stayingTime,String guestInfo ) throws Exception
+	{
+		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+		SelectStayingTime(stayingTime);
+		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+		SelectGuestDetails(guestInfo);
+	}
+	
+	public static void BrowseHotels()
+	{
+		CommonLib.ClickUsingJavaScript(BookingLocators.getBrowseHotelLink());
+		CommonLib.ClickUsingJavaScript(BookingLocators.getSelectHotelOption());
+		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueLink());
+	}
 }
