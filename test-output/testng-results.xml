@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37941" started-at="2020-01-30T04:14:04Z" finished-at="2020-01-30T04:14:42Z">
+  <suite name="Default suite" duration-ms="55456" started-at="2020-01-31T11:59:59Z" finished-at="2020-01-31T12:00:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37941" started-at="2020-01-30T04:14:04Z" finished-at="2020-01-30T04:14:42Z">
+    <test name="Default test" duration-ms="55456" started-at="2020-01-31T11:59:59Z" finished-at="2020-01-31T12:00:54Z">
       <class name="com.tripmasters.framework.testScript.BookingPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@6c49835d]" name="setUp" is-config="true" duration-ms="9363" started-at="2020-01-30T04:14:04Z" finished-at="2020-01-30T04:14:14Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@6c49835d]" name="setUp" is-config="true" duration-ms="7148" started-at="2020-01-31T11:59:59Z" finished-at="2020-01-31T12:00:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="withoutAirBookingForSingleCity()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@6c49835d]" name="withoutAirBookingForSingleCity" duration-ms="28539" started-at="2020-01-30T04:14:14Z" finished-at="2020-01-30T04:14:42Z">
+        <test-method status="PASS" signature="dateChanging()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTest@6c49835d]" name="dateChanging" duration-ms="48279" started-at="2020-01-31T12:00:06Z" finished-at="2020-01-31T12:00:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- withoutAirBookingForSingleCity -->
+        </test-method> <!-- dateChanging -->
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

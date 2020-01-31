@@ -179,7 +179,10 @@ public class CommonLib extends TestBase2{
 		}
 		System.out.println("actual List:"+ actualTravellerInfo);
 		Assert.assertEquals(expectedTravellerInfo, actualTravellerInfo);
+		
      	//Assert.assertTrue(expectedTravellerInfo.contains(actualTravellerInfo));
 	}
+	
+	
 	
 }

@@ -1,10 +1,13 @@
 package com.tripmasters.framework.testScript;
 
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
-import org.testng.annotations.Test;
+
 
 import com.tripmasters.framework.actions.BookingPageAction;
 import com.tripmasters.framework.actions.PassengerInfoPageAction;
@@ -71,6 +74,39 @@ public class BookingPageTest extends TestBase2 {
 		BookingPageAction.SelectWithoutAir();
 		BookingPageAction. FillBasicBookingDetails2("San Francisco (USA)","5","1|3");
 		BookingPageAction.ClickonContinueButton();
+	   String Actualresult = BookingPageAction.BrowseHotels();
+	   String expectedresult =    BookingPageAction.SelectHotel();
+	   Assert.assertEquals(Actualresult,expectedresult) ;
+	    BookingPageAction.ClickonContinueLink();
+	}
+	
+	//@Test
+	public  void  dateChanging()  throws Exception
+	{
+		
+		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Berlin (Germany)","6","1|2");
+		BookingPageAction.SelectNumberOfAdult("1");
+		BookingPageAction.ClickonContinueButton();
+		BookingPageAction.ClickChangedArriveDate();
+		Assert.assertTrue(driver.findElement(BookingLocators.getChangedArriveDate()).isEnabled());
+		BookingPageAction.SelectCheaperFlights();
 		BookingPageAction.BrowseHotels();
+		BookingPageAction.SelectHotel();
+		BookingPageAction.ClickonContinueLink();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }

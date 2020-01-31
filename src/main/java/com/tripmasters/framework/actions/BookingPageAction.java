@@ -1,10 +1,13 @@
 package com.tripmasters.framework.actions;
 
+import org.openqa.selenium.By;
+
 import com.tripmasters.framework.base.TestBase;
+import com.tripmasters.framework.base.TestBase2;
 import com.tripmasters.framework.pages.BookingLocators;
 import com.tripmasters.framework.utils.CommonLib;
 
-public class BookingPageAction extends TestBase{
+public class BookingPageAction extends TestBase2{
 	
 	public static void FillBasicBookingDetails(String leavingFrom,String destination,String stayingTime,String guestInfo) throws Exception{
 		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
@@ -29,10 +32,15 @@ public class BookingPageAction extends TestBase{
 		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueBtn());
 	}
 	
+	public static void ClickonContinueLink()
+	{
+		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueLink());
+	}
+	
 	public static void SelectCheaperFlights(){
 		CommonLib.ClickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
 		CommonLib.ClickUsingJavaScript(BookingLocators.getselectFlightOption());
-		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueLink());
+	
 	}
 	
 	public static void ClicktoContinuePage(){
@@ -66,10 +74,24 @@ public class BookingPageAction extends TestBase{
 		SelectGuestDetails(guestInfo);
 	}
 	
-	public static void BrowseHotels()
-	{
+public static String BrowseHotels()	{
 		CommonLib.ClickUsingJavaScript(BookingLocators.getBrowseHotelLink());
-		CommonLib.ClickUsingJavaScript(BookingLocators.getSelectHotelOption());
-		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueLink());
+	    String actualhotel =driver.findElement(BookingLocators.getSelectHotelName()).getText();
+		return actualhotel;
+		
 	}
+	
+	public static String SelectHotel()
+	{
+		CommonLib.ClickUsingJavaScript(BookingLocators.getSelectHotelOption());
+		String expectedhotel = driver.findElement(BookingLocators.getVerifyHotelName()).getText();
+		return expectedhotel;
+	}
+	
+	public static void ClickChangedArriveDate()
+	{
+		CommonLib.ClickUsingJavaScript(BookingLocators.getChangedArriveDate());
+	}
+	
+
 }

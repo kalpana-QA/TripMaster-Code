@@ -10,6 +10,7 @@ public class BookingLocators {
     private static By selectGuestDrpdown=By.xpath("//select[@id='xiRoomsAndPax']");
     private static By selectChildDrpdown=By.xpath("//select[@id='xiChildren']");
     private static By selectAdultDrpdown=By.xpath("//select[@id='xiAdults']");
+    
     public static By selectChildAgeDrpdown=By.xpath("//select[@id='xiChild1']");
     private static By cheaperFlightsLink=By.xpath("//a[contains(.,'Find cheaper flights')]");
     private static By selectFlightOption=By.xpath("(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/Select1.png')])[1]");
@@ -50,6 +51,12 @@ public class BookingLocators {
     private static By selectWitoutAirOption =By.xpath("//form[@id='formBYO']//span[text()='Without Air *']");
     private static By browseHotelLink=By.xpath("//div[@class='changeHotel rbtn']//a");
     private static By selectHotelOption=By.xpath("(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/ui-select-btn-95x25.png')])[1]");
+    private static By verifyTripInclusionHeader =By.xpath("//span[text()='TRIP INCLUSION DETAILS']");
+    private static By selectHotelName =By.xpath("(//a[@class='hotelHeadTitle'])[1][1]");
+    private static By verifyHotelName =By.xpath("//div[@id='toResize440']//a");
+    private static By changedArriveDate =By.xpath("//div[text()='Wed 29-APR']");
+    private static By arriveDate =By.xpath("//div[text()='Thu 30-APR']");
+    
     /**
 	 * @return the emailId
 	 */
@@ -210,6 +217,7 @@ public class BookingLocators {
 	public static By getselectAdultDrpdown(){
 		return selectAdultDrpdown;
 	}
+	
 	public static By getselectChildDrpdown(){
 		return selectChildDrpdown;
 	}
@@ -237,5 +245,30 @@ public class BookingLocators {
 	public static By getSelectHotelOption()
 	{
 		return selectHotelOption;
+	}
+	
+	public static By getVerifyTripInclusionHeader()
+	{
+		return verifyTripInclusionHeader;
+	}
+	
+	public static By getSelectHotelName()
+	{
+		return selectHotelName;
+	}
+	
+	public static By getVerifyHotelName()
+	{
+		return verifyHotelName;
+	}
+	
+	public static By getChangedArriveDate()
+	{
+		return changedArriveDate;
+	}
+	
+	public static By getArriveDate()
+	{
+		return arriveDate;
 	}
 }

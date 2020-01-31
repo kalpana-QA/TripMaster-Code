@@ -5,7 +5,7 @@
     <classes>
       <class name="com.tripmasters.framework.testScript.BookingPageTest">
         <methods>
-          <include name="withoutAirBookingForSingleCity"/>
+          <include name="dateChanging"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTest -->
