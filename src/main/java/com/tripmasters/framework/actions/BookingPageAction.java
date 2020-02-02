@@ -34,9 +34,6 @@ public class BookingPageAction extends TestBase2{
 		
 		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueBtn());
 	}
-	
-
-	
 
 	public static void ClickonContinueLink()
 	{
@@ -126,12 +123,7 @@ public class BookingPageAction extends TestBase2{
 		}
 		 return actualFlightdetails;
     }
-    
-//    public static String GetExpectedFlight(){
-//    	String flightvalue=driver.findElement(BookingLocators.getexpectedFlight()).getText();
-//    	return flightvalue;
-//    }
-    
+ 
     public static String GetActualFlight(){
     	String flightvalue=driver.findElement(BookingLocators.getactualFlightDetails()).getText();
     	return flightvalue;
@@ -149,20 +141,6 @@ public class BookingPageAction extends TestBase2{
 		SelectStayingTime(stayingTime);
 		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
 		SelectGuestDetails(guestInfo);
-	}
-	
-public static String BrowseHotels()	{
-		CommonLib.ClickUsingJavaScript(BookingLocators.getBrowseHotelLink());
-	    String actualhotel =driver.findElement(BookingLocators.getSelectHotelName()).getText();
-		return actualhotel;
-		
-	}
-	
-	public static String SelectHotel()
-	{
-		CommonLib.ClickUsingJavaScript(BookingLocators.getSelectHotelOption());
-		String expectedhotel = driver.findElement(BookingLocators.getVerifyHotelName()).getText();
-		return expectedhotel;
 	}
 	
 	public static void ClickChangedArriveDate()

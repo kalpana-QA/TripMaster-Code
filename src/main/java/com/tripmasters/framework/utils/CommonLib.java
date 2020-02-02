@@ -183,6 +183,47 @@ public class CommonLib extends TestBase2{
      	//Assert.assertTrue(expectedTravellerInfo.contains(actualTravellerInfo));
 	}
 	
-	
-	
+	/**
+	 * 
+	 * Description :: object is present or not :: Input Parameters : String
+	 * String Return Type:: Void
+	 * 
+	 */
+
+	public static boolean isElementDisplayed(By element) {
+
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebElement waitElement = wait.until(ExpectedConditions.visibilityOf(driver.findElement((element))));
+
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');",
+				waitElement);
+		waitElement.isDisplayed();
+
+		return true;
+
+	}
+	/**
+	 * 
+	 * Description :: To click a Element using HTML method Input Parameters ::
+	 * Input Parameters : String String Return Type:: Void
+	 * 
+	 */
+
+	public void clickOnElement(By element) {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebElement waitElement = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(element)));
+		waitElement.click();
+	}
+
+	public static String getPageTitle() {
+		return driver.getTitle();
+	}
+
+	public static WebElement getText(By element) {
+
+		WebElement text = driver.findElement(element);
+		return text;
+		
+	}
 }
