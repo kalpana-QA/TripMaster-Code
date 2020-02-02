@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 27 16:44:07 IST 2020</td>
+<td>Started on:</td><td>Sat Feb 01 10:36:26 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14531 ms)</td>
+<tr><td>Total time:</td><td>61 seconds (61294 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,6 +68,70 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tripmasters.framework.testScript.BookingPageTest.setUp()'><b>setUp</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=79.0.3945.130)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LAPTOP-2MH85CIV&apos;, ip: &apos;192.168.43.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\pramo\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53655}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aa6a2e933a767f8a237c0a2be89b1c8c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.tripmasters.framework.base.TestBase2.setUp(TestBase2.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace920897444", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace920897444'><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=79.0.3945.130)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LAPTOP-2MH85CIV&apos;, ip: &apos;192.168.43.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\pramo\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53655}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: aa6a2e933a767f8a237c0a2be89b1c8c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.tripmasters.framework.base.TestBase2.setUp(TestBase2.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:143)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.tripmasters.framework.testScript.BookingPageTest@3701eaf6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -75,55 +139,237 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tripmasters.framework.testScript.BookingPageTest.bookingInitialise()'><b>bookingInitialise</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;IQA_DEEPAK-K&apos;, ip: &apos;192.168.15.139&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at com.tripmasters.framework.utils.CommonLib.ClearAndSetValues(CommonLib.java:120)
-	at com.tripmasters.framework.actions.BookingPageAction.FillBasicBookingDetails(BookingPageAction.java:11)
-	at com.tripmasters.framework.testScript.BookingPageTest.bookingInitialise(BookingPageTest.java:32)
+<td title='com.tripmasters.framework.testScript.BookingPageTest.booking2Room2Adult2Child()'><b>booking2Room2Adult2Child</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tripmasters.framework.Listeners.TestListener.onTestSkipped(TestListener.java:68)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1252986364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1252986364'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;IQA_DEEPAK-K&apos;, ip: &apos;192.168.15.139&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at com.tripmasters.framework.utils.CommonLib.ClearAndSetValues(CommonLib.java:120)
-	at com.tripmasters.framework.actions.BookingPageAction.FillBasicBookingDetails(BookingPageAction.java:11)
-	at com.tripmasters.framework.testScript.BookingPageTest.bookingInitialise(BookingPageTest.java:32)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace489279267", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace489279267'><pre>java.lang.NullPointerException
+	at com.tripmasters.framework.Listeners.TestListener.onTestSkipped(TestListener.java:68)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1653)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1645)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
 <td>0</td>
-<td>com.tripmasters.framework.testScript.BookingPageTest@3d99d22e</td></tr>
+<td>com.tripmasters.framework.testScript.BookingPageTest@3701eaf6</td></tr>
+<tr>
+<td title='com.tripmasters.framework.testScript.BookingPageTest.bookingFlightAndHotelForSingleCity()'><b>bookingFlightAndHotelForSingleCity</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tripmasters.framework.Listeners.TestListener.onTestSkipped(TestListener.java:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1596467899", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1596467899'><pre>java.lang.NullPointerException
+	at com.tripmasters.framework.Listeners.TestListener.onTestSkipped(TestListener.java:68)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1653)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1645)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.tripmasters.framework.testScript.BookingPageTest@3701eaf6</td></tr>
+<tr>
+<td title='com.tripmasters.framework.testScript.BookingPageTest.bookingFlightsWithmultipleCities()'><b>bookingFlightsWithmultipleCities</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tripmasters.framework.Listeners.TestListener.onTestSkipped(TestListener.java:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace377478451", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace377478451'><pre>java.lang.NullPointerException
+	at com.tripmasters.framework.Listeners.TestListener.onTestSkipped(TestListener.java:68)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1653)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1645)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.tripmasters.framework.testScript.BookingPageTest@3701eaf6</td></tr>
+<tr>
+<td title='com.tripmasters.framework.testScript.BookingPageTest.bookingSingleRoom1Adult1Child()'><b>bookingSingleRoom1Adult1Child</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tripmasters.framework.Listeners.TestListener.onTestSkipped(TestListener.java:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace513169028", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace513169028'><pre>java.lang.NullPointerException
+	at com.tripmasters.framework.Listeners.TestListener.onTestSkipped(TestListener.java:68)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1653)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1645)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.tripmasters.framework.testScript.BookingPageTest@3701eaf6</td></tr>
+<tr>
+<td title='com.tripmasters.framework.testScript.BookingPageTest.bookingSingleRoomWith3Adults()'><b>bookingSingleRoomWith3Adults</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tripmasters.framework.Listeners.TestListener.onTestSkipped(TestListener.java:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1301664418", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1301664418'><pre>java.lang.NullPointerException
+	at com.tripmasters.framework.Listeners.TestListener.onTestSkipped(TestListener.java:68)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1653)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1645)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.tripmasters.framework.testScript.BookingPageTest@3701eaf6</td></tr>
+<tr>
+<td title='com.tripmasters.framework.testScript.BookingPageTest.bookingTwoRoom2Adult()'><b>bookingTwoRoom2Adult</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tripmasters.framework.Listeners.TestListener.onTestSkipped(TestListener.java:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1408652377", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1408652377'><pre>java.lang.NullPointerException
+	at com.tripmasters.framework.Listeners.TestListener.onTestSkipped(TestListener.java:68)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1653)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1645)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.tripmasters.framework.testScript.BookingPageTest@3701eaf6</td></tr>
+<tr>
+<td title='com.tripmasters.framework.testScript.BookingPageTest.bookingTwoRoom3Adult1Child()'><b>bookingTwoRoom3Adult1Child</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tripmasters.framework.Listeners.TestListener.onTestSkipped(TestListener.java:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace990416209", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace990416209'><pre>java.lang.NullPointerException
+	at com.tripmasters.framework.Listeners.TestListener.onTestSkipped(TestListener.java:68)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1653)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1645)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.tripmasters.framework.testScript.BookingPageTest@3701eaf6</td></tr>
+<tr>
+<td title='com.tripmasters.framework.testScript.BookingPageTest.getWithoutAir()'><b>getWithoutAir</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tripmasters.framework.Listeners.TestListener.onTestSkipped(TestListener.java:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace394714818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace394714818'><pre>java.lang.NullPointerException
+	at com.tripmasters.framework.Listeners.TestListener.onTestSkipped(TestListener.java:68)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1653)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1645)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.tripmasters.framework.testScript.BookingPageTest@3701eaf6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tripmasters.framework.testScript.BookingPageTest.booking2Room2Adult2Child()'><b>booking2Room2Adult2Child</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTest.booking2Room2Adult2Child(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.tripmasters.framework.testScript.BookingPageTest@3701eaf6</td></tr>
+<tr>
+<td title='com.tripmasters.framework.testScript.BookingPageTest.bookingFlightAndHotelForSingleCity()'><b>bookingFlightAndHotelForSingleCity</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTest.bookingFlightAndHotelForSingleCity(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.tripmasters.framework.testScript.BookingPageTest@3701eaf6</td></tr>
+<tr>
+<td title='com.tripmasters.framework.testScript.BookingPageTest.bookingFlightsWithmultipleCities()'><b>bookingFlightsWithmultipleCities</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTest.bookingFlightsWithmultipleCities(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.tripmasters.framework.testScript.BookingPageTest@3701eaf6</td></tr>
+<tr>
+<td title='com.tripmasters.framework.testScript.BookingPageTest.bookingSingleRoom1Adult1Child()'><b>bookingSingleRoom1Adult1Child</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTest.bookingSingleRoom1Adult1Child(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.tripmasters.framework.testScript.BookingPageTest@3701eaf6</td></tr>
+<tr>
+<td title='com.tripmasters.framework.testScript.BookingPageTest.bookingSingleRoomWith3Adults()'><b>bookingSingleRoomWith3Adults</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTest.bookingSingleRoomWith3Adults(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.tripmasters.framework.testScript.BookingPageTest@3701eaf6</td></tr>
+<tr>
+<td title='com.tripmasters.framework.testScript.BookingPageTest.bookingTwoRoom2Adult()'><b>bookingTwoRoom2Adult</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTest.bookingTwoRoom2Adult(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.tripmasters.framework.testScript.BookingPageTest@3701eaf6</td></tr>
+<tr>
+<td title='com.tripmasters.framework.testScript.BookingPageTest.bookingTwoRoom3Adult1Child()'><b>bookingTwoRoom3Adult1Child</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTest.bookingTwoRoom3Adult1Child(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.tripmasters.framework.testScript.BookingPageTest@3701eaf6</td></tr>
+<tr>
+<td title='com.tripmasters.framework.testScript.BookingPageTest.getWithoutAir()'><b>getWithoutAir</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTest<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTest.getWithoutAir(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.tripmasters.framework.testScript.BookingPageTest@3701eaf6</td></tr>
 </table><p>
 </body>
 </html>

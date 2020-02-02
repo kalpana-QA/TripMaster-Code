@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <parameter name="browser" value="Chrome"/>
+  <listeners>
+    <listener class-name="com.tripmasters.framework.Listeners.TestListener"/>
+    <listener class-name="com.tripmasters.framework.Listeners.AnnotationTransformer"/>
+  </listeners>
+  <test name="Test(failed)" parallel="methods">
+    <parameter name="browser" value="Chrome"/>
     <classes>
       <class name="com.tripmasters.framework.testScript.BookingPageTest">
         <methods>
+          <include name="tearDown"/>
+          <include name="getWithoutAir" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="bookingTwoRoom2Adult"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

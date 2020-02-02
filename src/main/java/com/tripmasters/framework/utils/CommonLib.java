@@ -140,7 +140,7 @@ public class CommonLib extends TestBase2{
 		try {
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", element);
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 		} catch (Exception e) {
 			System.out.println("Unable to click on element");
 		}
@@ -179,6 +179,7 @@ public class CommonLib extends TestBase2{
 		}
 		System.out.println("actual List:"+ actualTravellerInfo);
 		Assert.assertEquals(expectedTravellerInfo, actualTravellerInfo);
+		
      	//Assert.assertTrue(expectedTravellerInfo.contains(actualTravellerInfo));
 	}
 	

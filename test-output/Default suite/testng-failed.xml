@@ -5,8 +5,8 @@
     <classes>
       <class name="com.tripmasters.framework.testScript.BookingPageTest">
         <methods>
+          <include name="bookingFlightAndHotelForSingleCity"/>
           <include name="setUp"/>
-          <include name="bookingTwoRoom2Adult"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTest -->
     </classes>

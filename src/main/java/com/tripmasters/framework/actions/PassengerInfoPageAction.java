@@ -90,6 +90,27 @@ public class PassengerInfoPageAction {
     		list.add(CommonLib.ClearAndSetValues(PassengerInformationLocators.getdobR2T2(), "01/01/2000"));
     		CommonLib.SelectOptionByValue(PassengerInformationLocators.getpassportR2T2(), "237|US");
 			break;
+			
+		case"Room1Child1":
+			String firstNameR1C1=CommonLib.ClearAndSetValues(PassengerInformationLocators.getfnameR1C1(), "Erwin");
+        	String secondNameR1C1=CommonLib.ClearAndSetValues(PassengerInformationLocators.getlnameR1C1(), "George");
+        	String fullNameR1C1=firstNameR1C1 +" "+ secondNameR1C1;
+        	list.add(fullNameR1C1);
+    	    list.add(CommonLib.SelectOptionByText(PassengerInformationLocators.getgenderR1C1(), "Male"));
+    		list.add(CommonLib.ClearAndSetValues(PassengerInformationLocators.getdobR1C1(), "01/01/2000"));
+    		CommonLib.SelectOptionByValue(PassengerInformationLocators.getpassportR1C1(), "237|US");
+			break;
+			
+		case"Room2Child1":
+			String firstNameR2C1=CommonLib.ClearAndSetValues(PassengerInformationLocators.getfnameR2C1(), "Erwin");
+        	String secondNameR2C1=CommonLib.ClearAndSetValues(PassengerInformationLocators.getlnameR2C1(), "George");
+        	String fullNameR2C1=firstNameR2C1 +" "+ secondNameR2C1;
+        	list.add(fullNameR2C1);
+    	    list.add(CommonLib.SelectOptionByText(PassengerInformationLocators.getgenderR2C1(), "Male"));
+    		list.add(CommonLib.ClearAndSetValues(PassengerInformationLocators.getdobR2C1(), "01/01/2000"));
+    		CommonLib.SelectOptionByValue(PassengerInformationLocators.getpassportR2C1(), "237|US");
+			break;
+			
 		}
 		return list;
 	}

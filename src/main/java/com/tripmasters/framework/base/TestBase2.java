@@ -13,9 +13,11 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
-import com.tripmasters.framework.utils.GenerateReport;
+
 import com.tripmasters.framework.utils.JsonDataReader;
 import com.tripmasters.framework.utils.Logs;
 
@@ -32,9 +34,10 @@ public class TestBase2 {
 	private URL url;
 	private boolean flag = false;
 	private Logs log = new Logs();
-	static GenerateReport gn;
 	
-	@BeforeMethod
+	
+	@BeforeClass
+	//@BeforeMethod
 	// @Parameters(value = { "browser" })
 	public void setUp() throws FileNotFoundException, IOException, ParseException {
 		//gn = new GenerateReport();
@@ -165,11 +168,22 @@ public class TestBase2 {
 		 */
 
 	}
+	
+	
 
-	@AfterMethod
-	void tearDown() {
-		gn.extent.flush();
-		driver.quit();
+	//@AfterMethod
+	@AfterClass(alwaysRun=true)
+	public void tearDown() {
+		//gn.extent.flush();
+		//driver.quit();
+		//GenerateReport2.startReport(null, null);
+		//GenerateReport2.getResult(null);
+		if(driver != null){
+			log.info("Closing browser after TestClass");
+            driver.close();
+        }else{
+        	log.error("Driver is null at AfterClass (TestBase)");
+        }
 		System.out.println("Driver quit");
 		log.info("driver instance down successfully!!!!!!!!!!!!");
 
