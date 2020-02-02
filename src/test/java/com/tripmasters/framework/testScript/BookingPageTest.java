@@ -6,7 +6,6 @@ import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.tripmasters.framework.actions.BookingPageAction;
 import com.tripmasters.framework.actions.PassengerInfoPageAction;
 import com.tripmasters.framework.base.TestBase2;
@@ -21,7 +20,7 @@ public class BookingPageTest extends TestBase2 {
 	List<String>expectedSecondTravellerInfo=new ArrayList<String>();
 	List<String>expectedThirdTravellerInfo=new ArrayList<String>();
 	List<String>expectedFourthTravellerInfo=new ArrayList<String>();
-	List<String>expectedFlightDetails=new ArrayList<>();
+	List<String>expectedFlightDetails=new ArrayList<String>();
 	
 	public static String actualHotel;
 	public static String expectedHotel;
@@ -61,6 +60,7 @@ public class BookingPageTest extends TestBase2 {
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(),expectedSecondTravellerInfo);
 	}
 	
+
 	@Test
 	public void bookingTwoRoom2Adult(Method method) throws Exception{
 		ExtentTestManager.startTest(method.getName(), "bookingTwoRoom2Adult");
@@ -146,6 +146,13 @@ public class BookingPageTest extends TestBase2 {
 		BookingPageAction.fillBasicBookingDetailForMultipleCities("WithAir","Berlin (Germany)","4","Augsburg (Germany)","1|Other");
 		BookingPageAction.SelectNumberOfAdult("1",BookingLocators.getselectAdultDrpdown());
 		BookingPageAction.SelectNumberOfChild("1","9","Child1");
+	}
+
+	//@Test
+	public void bookingTwoRoom2Adult() throws Exception{
+		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Berlin (Germany)","6","1|Other");
+		BookingPageAction.SelectNumberOfAdult("1",BookingLocators.getselectAdultDrpdown());
+		BookingPageAction.SelectNumberOfChild("1","9","Child1");
 		BookingPageAction.ClickonContinueButton();
 		BookingPageAction.SelectCheaperFlights();
 		BookingPageAction.ClicktoContinuePage();
@@ -176,4 +183,29 @@ public class BookingPageTest extends TestBase2 {
 		Assert.assertEquals(actualHotel, expectedHotel);
 	}
 	
+    @Test
+	public void withoutAirBookingForSingleCity() throws Exception
+	{
+		BookingPageAction.SelectWithoutAir();
+		BookingPageAction. FillBasicBookingDetails2("San Francisco (USA)","5","1|3");
+		BookingPageAction.ClickonContinueButton();
+	   String Actualresult = BookingPageAction.BrowseHotels();
+	   String expectedresult =    BookingPageAction.SelectHotel();
+	   Assert.assertEquals(Actualresult,expectedresult) ;
+	    BookingPageAction.ClickonContinueLink();
+	}
+	
+	//@Test
+	public  void  dateChanging()  throws Exception
+	{
+		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Berlin (Germany)","6","1|2");
+		BookingPageAction.SelectNumberOfAdult("1",BookingLocators.getselectAdultDrpdown());
+		BookingPageAction.ClickonContinueButton();
+		BookingPageAction.ClickChangedArriveDate();
+		Assert.assertTrue(driver.findElement(BookingLocators.getChangedArriveDate()).isEnabled());
+		BookingPageAction.SelectCheaperFlights();
+		BookingPageAction.BrowseHotels();
+		BookingPageAction.SelectHotel();
+		BookingPageAction.ClickonContinueLink();
+	}
 }

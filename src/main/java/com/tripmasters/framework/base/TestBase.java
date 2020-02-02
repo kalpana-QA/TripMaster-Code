@@ -5,15 +5,11 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
@@ -55,7 +51,7 @@ public class TestBase {
 			}
 			case "Firefox": {
 				WebDriverManager.firefoxdriver().setup();
-				driver = new FirefoxDriver();
+			//	driver = new FirefoxDriver();
 				break;
 			}
 			default: {

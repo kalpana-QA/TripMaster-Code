@@ -8,15 +8,11 @@ import java.util.concurrent.TimeUnit;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-
 
 import com.tripmasters.framework.utils.JsonDataReader;
 import com.tripmasters.framework.utils.Logs;
@@ -34,6 +30,9 @@ public class TestBase2 {
 	private URL url;
 	private boolean flag = false;
 	private Logs log = new Logs();
+
+	//GenerateReport gn;
+
 	
 	
 	@BeforeClass
@@ -47,17 +46,17 @@ public class TestBase2 {
 			switch (platform) {
 			case "Windows":
 				if (browser.equalsIgnoreCase(("Chrome"))) {
-
-					WebDriverManager.chromedriver().setup();
+					System.out.println("chromeDriverFilePath : "+ chromeDriverFilePath);
+					System.setProperty("webdriver.chrome.driver", chromeDriverFilePath);
+					//WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver();
-					driver.manage().window().maximize();
 					log.info("ChromeDriver instantiated for " + platform + " platform.");
 					flag = true;
 
 				} else if (browser.equalsIgnoreCase("Firefox")) {
 
 					WebDriverManager.firefoxdriver().setup();
-					driver = new FirefoxDriver();
+					//driver = new FirefoxDriver();
 					log.info("FirefoxDriver instantiated for " + platform + " platform.");
 					flag = true;
 
@@ -124,7 +123,7 @@ public class TestBase2 {
 				log.info("The given URL launch successfully for " + platform + " platform and " + browser
 						+ " browser!!!!!!!!!!!!");
 				System.out.println("browser launched with given url");
-				//driver.quit();
+			//	driver.quit();
 				int time = (int) System.nanoTime();
 				System.out.println("nano time is: " + time);
 			}
@@ -171,6 +170,7 @@ public class TestBase2 {
 	
 	
 
+
 	//@AfterMethod
 	@AfterClass(alwaysRun=true)
 	public void tearDown() {
@@ -184,8 +184,6 @@ public class TestBase2 {
         }else{
         	log.error("Driver is null at AfterClass (TestBase)");
         }
-		System.out.println("Driver quit");
-		log.info("driver instance down successfully!!!!!!!!!!!!");
 
 	}
 

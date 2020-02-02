@@ -13,7 +13,9 @@ public class BookingLocators {
     private static By  selectChildAgeRoom2Drpdown=By.xpath("//select[@id='xRoom2_iChild1']");
     
     private static By selectAdultDrpdown=By.xpath("//select[@id='xiAdults']");
+
     private static By selectAdultRoom2Drpdown=By.xpath("//select[@id='xRoom2_iAdults']");
+
     public static By selectChildAgeDrpdown=By.xpath("//select[@id='xiChild1']");
     private static By cheaperFlightsLink=By.xpath("//a[contains(.,'Find cheaper flights')]");
     private static By selectFlightOption=By.xpath("(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/Select1.png')])[1]");
@@ -52,6 +54,7 @@ public class BookingLocators {
     private static By verifyTraveler4Name=By.xpath("//div[@id='TravelerR4']//div[@class='cel-name' or @class='editvalgender' or @class='editvaldob']");
     private static By selectChildTravelerDOB=By.xpath("//div[div[div[span[contains(.,'Traveler 2:')]]]]//input[contains(@id,'txtCPAX_DOB2')]");
     private static By selectChildTraveleraPassport=By.xpath("//select[@id='txtCPAX_Nationality2']");
+
     private static By selectWithoutAirButton=By.xpath("//*[@class='dvIntlFly']/child::span[text()='Without Air *']");
     private static By browseHotelslink=By.xpath("//a[contains(.,' Browse ')]");
     private static By selectFirstHotel=By.xpath("(//td[@class='RoomTypeHotelListBottom m-srd-td1']//img)[1]");
@@ -61,6 +64,16 @@ public class BookingLocators {
     private static By firstFlightDetails=By.xpath("//div[@id='divSegmentDetails1']//tbody//td");
     private static By actualFlightDetails=By.xpath("//div[@id='seg1flight1']//div[@class='divFligth-Bottom-Left textGrey10']");
     private static By expectedFlight=By.xpath("(//div[@id='divSegmentDetails1']//td//span[@class='textGrey10'])[2]");
+
+    private static By selectWitoutAirOption =By.xpath("//form[@id='formBYO']//span[text()='Without Air *']");
+    private static By browseHotelLink=By.xpath("//div[@class='changeHotel rbtn']//a");
+    private static By selectHotelOption=By.xpath("(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/ui-select-btn-95x25.png')])[1]");
+    private static By verifyTripInclusionHeader =By.xpath("//span[text()='TRIP INCLUSION DETAILS']");
+    private static By selectHotelName =By.xpath("(//a[@class='hotelHeadTitle'])[1][1]");
+    private static By verifyHotelName =By.xpath("//div[@id='toResize440']//a");
+    private static By changedArriveDate =By.xpath("//div[text()='Wed 29-APR']");
+    private static By arriveDate =By.xpath("//div[text()='Thu 30-APR']");
+
     
     /**
 	 * @return the emailId
@@ -135,7 +148,8 @@ public class BookingLocators {
 		return continueImage;
 	}
 
-	public static By getcontinueBtn(){
+	public static By getcontinueBtn()
+	{
 		return continueBtn;
 	}
 	
@@ -220,6 +234,7 @@ public class BookingLocators {
 	public static By getselectAdultDrpdown(){
 		return selectAdultDrpdown;
 	}
+	
 	public static By getselectChildDrpdown(){
 		return selectChildDrpdown;
 	}
@@ -234,6 +249,7 @@ public class BookingLocators {
 		return selectChildTraveleraPassport;
 	}
 	
+
 	public static By getverifyTraveler4Name(){
 		return verifyTraveler4Name;
 	}
@@ -280,4 +296,45 @@ public class BookingLocators {
 		return expectedFlight;
 	}
 	
+
+	public static By getwithoutAir()
+	{
+		return selectWitoutAirOption;
+	}
+	
+	public static By getBrowseHotelLink()
+	{
+		return browseHotelLink;
+	}
+	
+	public static By getSelectHotelOption()
+	{
+		return selectHotelOption;
+	}
+	
+	public static By getVerifyTripInclusionHeader()
+	{
+		return verifyTripInclusionHeader;
+	}
+	
+	public static By getSelectHotelName()
+	{
+		return selectHotelName;
+	}
+	
+	public static By getVerifyHotelName()
+	{
+		return verifyHotelName;
+	}
+	
+	public static By getChangedArriveDate()
+	{
+		return changedArriveDate;
+	}
+	
+	public static By getArriveDate()
+	{
+		return arriveDate;
+	}
+
 }

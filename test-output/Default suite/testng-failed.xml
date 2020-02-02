@@ -5,8 +5,17 @@
     <classes>
       <class name="com.tripmasters.framework.testScript.BookingPageTest">
         <methods>
-          <include name="bookingFlightAndHotelForSingleCity"/>
+          <include name="bookingFlightsWithmultipleCities" invocation-numbers="0"/>
+          <include name="bookingSingleRoomWith3Adults" invocation-numbers="0"/>
+          <include name="bookingTwoRoom3Adult1Child" invocation-numbers="0"/>
+          <include name="withoutAirBookingForSingleCity"/>
+          <include name="bookingFlightAndHotelForSingleCity" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="getWithoutAir" invocation-numbers="0"/>
           <include name="setUp"/>
+          <include name="booking2Room2Adult2Child" invocation-numbers="0"/>
+          <include name="bookingSingleRoom1Adult1Child" invocation-numbers="0"/>
+          <include name="bookingTwoRoom2Adult" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTest -->
     </classes>

@@ -1,12 +1,11 @@
 package com.tripmasters.framework.actions;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
-import com.tripmasters.framework.base.TestBase;
 import com.tripmasters.framework.base.TestBase2;
 import com.tripmasters.framework.pages.BookingLocators;
 import com.tripmasters.framework.utils.CommonLib;
@@ -36,8 +35,16 @@ public class BookingPageAction extends TestBase2{
 		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueBtn());
 	}
 	
+
+	
+
+	public static void ClickonContinueLink()
+	{
+		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueLink());
+	}
+	
 	public static String SelectCheaperFlights(){
-	//	List<String>expectedFlightdetails=new ArrayList<String>();
+		//	List<String>expectedFlightdetails=new ArrayList<String>();
 		CommonLib.ClickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
 		
 		//List<WebElement> expectedFlight=driver.findElements(BookingLocators.getfirstFlightDetails());
@@ -47,9 +54,11 @@ public class BookingPageAction extends TestBase2{
 		String flightvalue=driver.findElement(BookingLocators.getexpectedFlight()).getText();
     	
 		CommonLib.ClickUsingJavaScript(BookingLocators.getselectFlightOption());
+
 		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueLink());
 		//return expectedFlightdetails;
 		return flightvalue;
+
 	}
 	
 	public static void ClicktoContinuePage(){
@@ -73,6 +82,7 @@ public class BookingPageAction extends TestBase2{
     	}
 	}
 	
+
     public static void getWithoutButton(){
     	
     	CommonLib.ClickUsingJavaScript(BookingLocators.getWithoutAirButton());
@@ -126,4 +136,39 @@ public class BookingPageAction extends TestBase2{
     	String flightvalue=driver.findElement(BookingLocators.getactualFlightDetails()).getText();
     	return flightvalue;
     }
+
+
+	public static void SelectWithoutAir() {
+		CommonLib.ClickUsingJavaScript(BookingLocators.getwithoutAir());
+		
+	}
+	
+	public static void FillBasicBookingDetails2(String destination,String stayingTime,String guestInfo ) throws Exception
+	{
+		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+		SelectStayingTime(stayingTime);
+		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+		SelectGuestDetails(guestInfo);
+	}
+	
+public static String BrowseHotels()	{
+		CommonLib.ClickUsingJavaScript(BookingLocators.getBrowseHotelLink());
+	    String actualhotel =driver.findElement(BookingLocators.getSelectHotelName()).getText();
+		return actualhotel;
+		
+	}
+	
+	public static String SelectHotel()
+	{
+		CommonLib.ClickUsingJavaScript(BookingLocators.getSelectHotelOption());
+		String expectedhotel = driver.findElement(BookingLocators.getVerifyHotelName()).getText();
+		return expectedhotel;
+	}
+	
+	public static void ClickChangedArriveDate()
+	{
+		CommonLib.ClickUsingJavaScript(BookingLocators.getChangedArriveDate());
+	}
+	
+
 }
