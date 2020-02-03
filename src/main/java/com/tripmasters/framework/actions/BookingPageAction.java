@@ -53,7 +53,6 @@ public class BookingPageAction extends TestBase2{
 		CommonLib.ClickUsingJavaScript(BookingLocators.getselectFlightOption());
 
 		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueLink());
-		//return expectedFlightdetails;
 		return flightvalue;
 
 	}
