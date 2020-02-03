@@ -10,7 +10,7 @@ public class HomePageLocators {
 	private static By romeFlorenceVeniceByTrainLnk = By.xpath("//div[div[contains(.,'other vacation packages')]]//h2/a[contains(.,'Rome - Florence - Venice by Train')]");
 	private static By romeFlorenceVeniceByTrainHeader = By.xpath("//h1[contains(.,'Rome - Florence - Venice by Train')]");
 	private static String europePageTitle = "Europe Vacations | European Vacation Packages | Tripmasters";
-	
+	private static By exploreLatinAmericaLnk = By.xpath("//section[h1[contains(.,'popular vacation packages')]]//h3/a[contains(.,'Explore Latin America')]");
 	public static By getmoreHighLightsBtn() {
 		return moreHighlightsBtn;
 	}

@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tripmasters.framework.testScript.BookingPageTest">
+      <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
-          <include name="bookingFlightsWithmultipleCities" invocation-numbers="0"/>
-          <include name="bookingSingleRoomWith3Adults" invocation-numbers="0"/>
-          <include name="bookingTwoRoom3Adult1Child" invocation-numbers="0"/>
-          <include name="withoutAirBookingForSingleCity"/>
-          <include name="bookingFlightAndHotelForSingleCity" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="getWithoutAir" invocation-numbers="0"/>
+          <include name="dateChanging_TC_18"/>
           <include name="setUp"/>
-          <include name="booking2Room2Adult2Child" invocation-numbers="0"/>
-          <include name="bookingSingleRoom1Adult1Child" invocation-numbers="0"/>
-          <include name="bookingTwoRoom2Adult" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.tripmasters.framework.testScript.BookingPageTest -->
+      </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

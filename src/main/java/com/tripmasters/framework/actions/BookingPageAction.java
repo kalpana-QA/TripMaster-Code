@@ -30,6 +30,24 @@ public class BookingPageAction extends TestBase2{
 		CommonLib.SelectOptionByValue(BookingLocators.getselectGuestDrpdown(), guestInfo);
 	}
 	
+/*	public static void SelectArriveDate()
+	{
+		// CommonLib.ClickUsingJavaScript(BookingLocators.getArriveDateCalender());
+		
+	WebElement dateWidget = driver.findElement(BookingLocators.getArriveDateCalender());
+		List<WebElement> columns=dateWidget.findElements(BookingLocators.getArriveDate());
+
+		for (WebElement cell: columns)
+		{
+		   //Select 13th Date 
+		   if (cell.getText().equals("20"))
+		   {
+		      cell.findElement(By.linkText("20")).click();
+		      break;
+		   }
+	    }
+		
+	}*/
 	public static void ClickonContinueButton(){
 		
 		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueBtn());
@@ -142,10 +160,42 @@ public class BookingPageAction extends TestBase2{
 		SelectGuestDetails(guestInfo);
 	}
 	
+
+	public static void BookingDetailswithPremiumEcomomy(String leavingFrom,String destination,String cabinclass,String stayingTime,String guestInfo) throws Exception
+	{
+		SelectCabinClass(cabinclass);
+		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
+		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+		SelectStayingTime(stayingTime);
+		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+		SelectGuestDetails(guestInfo);
+	
+	}
+	
+	
 	public static void ClickChangedArriveDate()
 	{
 		CommonLib.ClickUsingJavaScript(BookingLocators.getChangedArriveDate());
 	}
 	
+	public static void SelectCabinClass(String cabinclass)
+	{
+		CommonLib.SelectOptionByText(BookingLocators.getCabinClassDropdown(), cabinclass);
+	}
+	
+	 public static String selectedcabinAssert() {
+	    	
+	    	String selectedcabin=driver.findElement(BookingLocators.getFirstpremiumOption()).getText();
+	    	System.out.println(selectedcabin);
+	        return selectedcabin;
+	    }
+	 
+
+	 public static String verifycabinAssert() {
+	    	
+	    	String expectedcabin = driver.findElement(BookingLocators.getSecondpremiumOption()).getText();
+	    	System.out.println(expectedcabin);
+	    	return expectedcabin;
+	    }
 
 }
