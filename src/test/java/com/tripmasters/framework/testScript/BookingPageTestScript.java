@@ -202,4 +202,24 @@ public class BookingPageTestScript extends TestBase2 {
 		System.out.println("passed");
 	}
 	
+    @Test
+       public void verifyCity() throws Exception {
+    	BookingPageAction.clickSearch();
+    	BookingPageAction.fillSearch("Berlin");
+    	boolean actual = BookingPageAction.validateURL();
+    	Assert.assertTrue(actual);
+    	}
+    
+   	@Test
+    	public void removeAddedCity() throws Exception {
+    	BookingPageAction.fillBasicDetails("New York, Newark, NJ", "Delhi (India)", "4", "Mumbai (India)", "1", "Chennai -Madras (India)", "1");
+    	boolean actual = BookingPageAction.isremovecitydisplayed();
+    	Assert.assertTrue(actual);
+    	BookingPageAction.deleteAddedCities();
+    	boolean expected = BookingPageAction.validateremovedcity();
+    	Assert.assertTrue(expected);
+    	BookingPageAction.SelectGuestDetails("1|3");
+    	BookingPageAction.ClickonContinueButton();
+    	BookingPageAction.SelectCheaperFlights();
+    	}
 }

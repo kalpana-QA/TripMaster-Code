@@ -1,6 +1,5 @@
 package com.tripmasters.framework.actions;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -66,6 +65,13 @@ public class BookingPageAction extends TestBase2{
 		
 		CommonLib.SelectOptionByValue(element, numOfAdults);
 	}
+
+	public static void ClickOnWithoutAir() {
+	
+		BookingLocators.getWithoutAirButton();
+		
+	}
+
 	
     public static void SelectNumberOfChild(String numOfChild,String ageOfChild,String childType){
     	if(childType.equals("Child1")){
@@ -77,12 +83,6 @@ public class BookingPageAction extends TestBase2{
    		CommonLib.SelectOptionByValue(BookingLocators.getselectChildAgeRoom2Drpdown(), ageOfChild);
     	}
 	}
-	
-
-    public static void getWithoutButton(){
-    	
-    	CommonLib.ClickUsingJavaScript(BookingLocators.getWithoutAirButton());
-    }
     
      public static void fillBasicBookingDetailForMultipleCities(String flightType,String destination, String stayingTime,String destination_second, String guestinfo) throws Exception {
         if(flightType.equalsIgnoreCase("WithAir")){
@@ -96,21 +96,40 @@ public class BookingPageAction extends TestBase2{
 		SelectGuestDetails(guestinfo);
 	}
     
+
+    public static void getWithoutButton(){
+    	
+    	CommonLib.ClickUsingJavaScript(BookingLocators.getWithoutAirButton());
+    }
+    
+    public static void fillBasicBookingDetailWithoutAir(String destination,String stayingTime,String destination_second,String guestinfo) throws Exception{
+	
+		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+		
+		CommonLib.ClickUsingJavaScript(BookingLocators.getaddCityBtn());
+		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextboxSecond(), destination_second);
+		
+		SelectStayingTime(stayingTime);
+		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+	    
+		SelectGuestDetails(guestinfo);
+		
+	}
+    
     public static String browseHotelsButton() {
     	CommonLib.ClickUsingJavaScript(BookingLocators.getBrowseHotelsLink());
-    	String actualhotel=driver.findElement(BookingLocators.getFirstHotel()).getText();
-    	System.out.println(actualhotel);
+    	String actualhotel= driver.findElement(BookingLocators.getFirstHotel()).getText();
     	return actualhotel;
     }
     public static String browseSelectHotel() {
     	CommonLib.ClickUsingJavaScript(BookingLocators.getselectFirstHotel());
     	String expectedhotel = driver.findElement(BookingLocators.getExpectedHotel()).getText();
-    	System.out.println(expectedhotel);
     	return expectedhotel;
     }
     public static void getContinueLink() {
     	CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueLink());
     }
+
     
     public static List<String> GetSelectedFlightsDetails(){
     	List<String>actualFlightdetails=new ArrayList<String>();
@@ -147,5 +166,74 @@ public class BookingPageAction extends TestBase2{
 		CommonLib.ClickUsingJavaScript(BookingLocators.getChangedArriveDate());
 	}
 	
-
+	 public static void clickSearch() {
+	    	CommonLib.ClickUsingJavaScript(BookingLocators.getSearchBox());
+	    	}
+	    
+	    public static void fillSearch(String city) throws Exception {
+	    	CommonLib.ClearAndSetValues(BookingLocators.getSearchBox(), city);
+	    	CommonLib.ClickUsingJavaScript(BookingLocators.getGoButton());
+	    }
+	    public static boolean validateURL() {
+	    	boolean result = false;
+	    	if(driver.getCurrentUrl().contains("Berlin"))
+	    	{
+	    		result = true;
+	    	}
+	    	return result;
+	    	
+	    }
+	    public static void fillBasicDetails(String leavefrom,String firstdestination,String stayingTime,String seconddestination,String seconddrop,String thirddestination,String thirddrop) throws Exception {
+	    	
+	    	CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavefrom);
+			CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), firstdestination);
+			SelectStayingTime(stayingTime);
+			
+			CommonLib.ClickUsingJavaScript(BookingLocators.getaddCityBtn());
+			
+			CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextboxSecond(), seconddestination);
+			SelectStayingTimeTwo(seconddrop);
+			CommonLib.ClickUsingJavaScript(BookingLocators.getaddCityBtn());
+			
+			 CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextboxThird(), thirddestination);
+			SelectStayingTimeThree(thirddrop);
+			
+			
+			
+	    }
+	    public static void deleteAddedCities() {
+	    	CommonLib.ClickUsingJavaScript(BookingLocators.getthirdremoveCitylink());
+	    	CommonLib.ClickUsingJavaScript(BookingLocators.getsecondremovecitylink());
+			CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+		   
+	    }
+	    public static void selectguesdetatils(String guestinfo) {
+	    	SelectGuestDetails(guestinfo);
+	    }
+	    public static boolean isremovecitydisplayed() {
+	    	boolean result = false;
+	    	if(driver.findElement(BookingLocators.getsecondremovecitylink()).isDisplayed()){
+	    		result  = true;
+	    	}
+	    	return result;
+	    }
+	    public static boolean validateremovedcity() {
+	    	try {
+	    	driver.findElement(BookingLocators.getthirdremoveCitylink()).isEnabled();
+	    	return false;
+	    	}
+	    	catch(Exception NoSuchElementException) {
+	    		return true;
+	    	}
+	    	
+	    }
+	    public static void SelectStayingTimeTwo(String stayingTimeTwo){
+			
+			CommonLib.SelectOptionByValue(BookingLocators.getstayingDrpdowntwo(), stayingTimeTwo);
+		}
+	    public static void SelectStayingTimeThree(String stayingTimeThree){
+			
+			CommonLib.SelectOptionByValue(BookingLocators.getstayingDrpdownthree(), stayingTimeThree);
+		}
 }
+

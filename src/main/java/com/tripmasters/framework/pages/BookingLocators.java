@@ -48,6 +48,7 @@ public class BookingLocators {
     private static By thirdTravelerLastNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 3:')]]]//input[contains(@placeholder,'Last Name')]");
     private static By thirdTravelerGenderDropdown = By.xpath("//div[div[div[span[contains(.,'Traveler 3:')]]]]//div[contains(@class,'Gender')]//select");
     private static By thirdTravelerDOB = By.xpath("//div[div[div[span[contains(.,'Traveler 3:')]]]]//input[contains(@id,'txtPAX_DOB')]");
+
     private static By verifyTraveler1Name=By.xpath("//div[@id='TravelerR1']//div[@class='cel-name' or @class='editvalgender' or @class='editvaldob']");
     private static By verifyTraveler2Name=By.xpath("//div[@id='TravelerR2']//div[@class='cel-name' or @class='editvalgender' or @class='editvaldob']");
     private static By verifyTraveler3Name=By.xpath("//div[@id='TravelerR3']//div[@class='cel-name' or @class='editvalgender' or @class='editvaldob']");
@@ -74,7 +75,17 @@ public class BookingLocators {
     private static By changedArriveDate =By.xpath("//div[text()='Wed 29-APR']");
     private static By arriveDate =By.xpath("//div[text()='Thu 30-APR']");
 
-    
+
+    private static By withoutAirButton=By.xpath("//*[@class='dvIntlFly']/child::span[text()='Without Air *']");
+
+    private static By searchBox=By.xpath("//form[@id='frmSearch']//input[@id='q']");
+    private static By goButton=By.xpath("//input[@name='Go']");
+    private static By secondremovecitylink=By.xpath("//div//span[@id='cty2']");
+    private static By thirdremoveCitylink=By.xpath("//div//span[@id='cty3']");
+    private static By edititinerary=By.xpath("//div//a[contains(text(),'Edit Itinerary')]");
+    private static By goingToTextboxThird=By.xpath("//*[@id='qNACity3']");
+    private static By stayingDrpdowntwo=By.xpath("//select[@id='qSTCity2']");
+    private static By stayingDrpdownthree=By.xpath("//select[@id='qSTCity3']");
     /**
 	 * @return the emailId
 	 */
@@ -230,7 +241,11 @@ public class BookingLocators {
 	public static By getverifyTraveler3Name(){
 		return verifyTraveler3Name;
 	}
+	public static By getWithoutAirButton() {
+		return withoutAirButton;
+	}
 	
+
 	public static By getselectAdultDrpdown(){
 		return selectAdultDrpdown;
 	}
@@ -266,9 +281,7 @@ public class BookingLocators {
 		return selectChildAgeRoom2Drpdown;
 	}
 	
-	public static By getWithoutAirButton() {
-		return selectWithoutAirButton;
-	}
+
 	public static By getBrowseHotelsLink() {
 		return browseHotelslink;
 	}
@@ -284,6 +297,7 @@ public class BookingLocators {
 	public static By getExpectedHotel() {
 		return verifyHotel;
 	}
+
 	public static By getfirstFlightDetails(){
 		return firstFlightDetails;
 	}
@@ -336,5 +350,37 @@ public class BookingLocators {
 	{
 		return arriveDate;
 	}
-
+	
+	public static By getselectWithoutAirButton()
+	{
+		return selectWithoutAirButton;
+	}
+	 public static By getSearchBox() {
+	    	return searchBox;
+	    }
+	 
+	 public static By getGoButton() {
+	    	return goButton;
+	    }
+	 
+	 public static By getsecondremovecitylink() {
+			return secondremovecitylink;
+		}
+		public static By getedititinerary() {
+			return edititinerary;
+		}
+		public static By getthirdremoveCitylink() {
+			return thirdremoveCitylink;
+		}
+		
+		public static By getgoingToTextboxThird() {
+			return goingToTextboxThird;
+		}
+		public static By getstayingDrpdowntwo() {
+			return stayingDrpdowntwo;
+		}
+		
+		public static By getstayingDrpdownthree() {
+			return stayingDrpdownthree;
+		}
 }

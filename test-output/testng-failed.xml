@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.tripmasters.framework.testScript.BookingPageTest">
         <methods>
+<<<<<<< HEAD
           <include name="bookingFlightsWithmultipleCities" invocation-numbers="0"/>
           <include name="bookingSingleRoomWith3Adults" invocation-numbers="0"/>
           <include name="bookingTwoRoom3Adult1Child" invocation-numbers="0"/>
@@ -16,6 +17,15 @@
           <include name="booking2Room2Adult2Child" invocation-numbers="0"/>
           <include name="bookingSingleRoom1Adult1Child" invocation-numbers="0"/>
           <include name="bookingTwoRoom2Adult" invocation-numbers="0"/>
+=======
+<<<<<<< HEAD
+          <include name="setUp"/>
+          <include name="bookingMultipleCityWithoutAir"/>
+=======
+          <include name="getWithoutAir"/>
+          <include name="setUp"/>
+>>>>>>> 22e9ecc02be1c6f0a520a031d40368ff263c5368
+>>>>>>> 1ca0d8bf2a4347fe44357d5cd5c47cd789d0f1d0
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTest -->
     </classes>
