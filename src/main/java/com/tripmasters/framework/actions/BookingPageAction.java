@@ -47,6 +47,12 @@ public class BookingPageAction extends TestBase{
 		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueImage());
 		
 	}
-		
+		//satyam
+	public static void ClickOnWithoutAir() {
 	
-}
+		BookingLocators.getWithoutAirButton().c;
+		
+	}
+	}
+	
+

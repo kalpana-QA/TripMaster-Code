@@ -117,7 +117,7 @@ public class TestBase2 {
 				log.info("The given URL launch successfully for " + platform + " platform and " + browser
 						+ " browser!!!!!!!!!!!!");
 				System.out.println("browser launched with given url");
-				driver.quit();
+				//driver.quit();
 				int time = (int) System.nanoTime();
 				System.out.println("nano time is: " + time);
 			}

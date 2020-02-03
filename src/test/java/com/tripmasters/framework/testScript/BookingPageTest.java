@@ -1,5 +1,6 @@
 package com.tripmasters.framework.testScript;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import com.tripmasters.framework.actions.BookingPageAction;
@@ -17,7 +18,7 @@ public class BookingPageTest extends TestBase2 {
 		System.out.println("title is: " + title);
 	}
 	
-	@Test
+	//@Test
 	public void bookingInitialise1() throws Exception
 	{
 		//generateReport.extent.createTest("bookingInitialise");
@@ -49,4 +50,10 @@ public class BookingPageTest extends TestBase2 {
 		
 		
 	}
+	@Test
+	public void bookingMultipleCityWithoutAir()
+		{
+		BookingPageAction.ClickOnWithoutAir();                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+		}
+	
 }

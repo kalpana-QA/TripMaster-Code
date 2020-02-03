@@ -42,7 +42,7 @@ public class BookingLocators {
     private static By verifyTraveler1Name=By.xpath("//div[@id='TravelerR1']/div[@class='cel-name'][contains(.,'John')]");
     private static By verifyTraveler2Name=By.xpath("//div[@id='TravelerR2']/div[@class='cel-name'][contains(.,'Marie')]");
     private static By verifyTraveler3Name=By.xpath("//div[@id='TravelerR3']/div[@class='cel-name'][contains(.,'Elvin')]");
-
+    private static By withoutAirButton=By.xpath("//*[@class='dvIntlFly']/child::span[text()='Without Air *']");
     /**
 	 * @return the emailId
 	 */
@@ -198,5 +198,10 @@ public class BookingLocators {
 	public static By getverifyTraveler3Name(){
 		return verifyTraveler3Name;
 	}
+	public static By getWithoutAirButton() {
+		return withoutAirButton;
+	}
 	
-}
+	}
+	
+
