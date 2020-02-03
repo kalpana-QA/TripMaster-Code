@@ -10,6 +10,10 @@ public class HomePageLocators {
 	private static By romeFlorenceVeniceByTrainLnk = By.xpath("//div[div[contains(.,'other vacation packages')]]//h2/a[contains(.,'Rome - Florence - Venice by Train')]");
 	private static By romeFlorenceVeniceByTrainHeader = By.xpath("//h1[contains(.,'Rome - Florence - Venice by Train')]");
 	private static String europePageTitle = "Europe Vacations | European Vacation Packages | Tripmasters";
+	private static By searchBox=By.xpath("//form[@id='frmSearch']//input[@id='q']");
+    private static By goButton=By.xpath("//input[@name='Go']");
+    private static By startagain=By.xpath("(//div[@class='dvtranspMainContainer']//span[@class='goToStartAgain']//u)[2]");
+    private static By footer=By.xpath("//div[@class='dvCopy']//b");
 	
 	public static By getmoreHighLightsBtn() {
 		return moreHighlightsBtn;
@@ -36,5 +40,18 @@ public class HomePageLocators {
 	public static String getEuropePageTitle(){
 		return europePageTitle;
 	}
+	public static By getSearchBox() {
+    	return searchBox;
+    }
+ 
+ public static By getGoButton() {
+    	return goButton;
+    }
+ public static By getStartAgain() {
+	 return startagain;
+ }
+ public static By getFooter() {
+	 return footer;
+ }
 	
 }
