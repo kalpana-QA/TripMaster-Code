@@ -1,34 +1,29 @@
 package com.tripmasters.framework.actions;
 
+import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import com.tripmasters.framework.base.TestBase;
 import com.tripmasters.framework.pages.BookingLocators;
 import com.tripmasters.framework.utils.CommonLib;
 
 public class BookingPageAction extends TestBase{
 	
-	public static void FillBasicBookingDetails() throws Exception{
-		
-		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), "New York  La Guardia, NY");
-		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), "Berlin (Germany)");
-		CommonLib.SelectOptionByValue(BookingLocators.getstayingDrpdown(), "4");
+	public static void FillBasicBookingDetails(String leavingFrom,String destination,String stayingTime,String guestInfo) throws Exception{
+		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
+		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+		SelectStayingTime(stayingTime);
 		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+		SelectGuestDetails(guestInfo);
+	}
+	
+	public static void SelectStayingTime(String stayingTime){
+		
+		CommonLib.SelectOptionByValue(BookingLocators.getstayingDrpdown(), stayingTime);
 	}
 	
 	public static void SelectGuestDetails(String guestInfo){
-		switch(guestInfo)
-		{
-		case "1 Room 3 Adults":
-			CommonLib.SelectOptionByValue(BookingLocators.getselectGuestDrpdown(), "1|3");
-			break;
-		case "1 Adult 1Child":	
-			CommonLib.SelectOptionByValue(BookingLocators.getselectGuestDrpdown(), "1|Other");
-			//CommonLib.SelectOptionByValue(BookingLocators.getselectAdultDrpdownValueRoom1(), "1|Other");
-			//CommonLib.SelectOptionByValue(BookingLocators.getselectChildDrpdownValueRoom1(), "1|Other");
-			break;
-		}
-		
+
+		CommonLib.SelectOptionByValue(BookingLocators.getselectGuestDrpdown(), guestInfo);
 	}
 	
 	public static void ClickonContinueButton(){
@@ -43,10 +38,16 @@ public class BookingPageAction extends TestBase{
 	}
 	
 	public static void ClicktoContinuePage(){
-	
+
 		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueImage());
+	}
+	
+	public static void SelectNumberOfAdult(String numOfAdults){
+		
+		CommonLib.SelectOptionByValue(BookingLocators.getselectAdultDrpdown(), numOfAdults);
 		
 	}
+<<<<<<< HEAD
 		//satyam
 	public static void ClickOnWithoutAir() {
 	
@@ -54,5 +55,50 @@ public class BookingPageAction extends TestBase{
 		
 	}
 	}
+=======
+	
+    public static void SelectNumberOfChild(String numOfChild,String ageOfChild){
+		CommonLib.SelectOptionByValue(BookingLocators.getselectChildDrpdown(), numOfChild);
+		CommonLib.SelectOptionByValue(BookingLocators.getselectChildAgeDrpdown(), ageOfChild);
+	}
+    
+    public static void getWithoutButton(){
+    	
+    	CommonLib.ClickUsingJavaScript(BookingLocators.getWithoutAirButton());
+    }
+    
+    public static void fillBasicBookingDetailWithoutAir(String destination,String stayingTime,String destination_second,String guestinfo) throws Exception{
+	
+		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+		
+		CommonLib.ClickUsingJavaScript(BookingLocators.getaddCityBtn());
+		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextboxSecond(), destination_second);
+		
+		SelectStayingTime(stayingTime);
+		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+	    
+		SelectGuestDetails(guestinfo);
+		
+	}
+    
+    public static String browseHotelsButton() {
+    	CommonLib.ClickUsingJavaScript(BookingLocators.getBrowseHotelsLink());
+    	String actualhotel= driver.findElement(BookingLocators.getFirstHotel()).getText();
+    	//System.out.println(actualhotel);
+    	return actualhotel;
+    }
+    public static String browseSelectHotel() {
+    	CommonLib.ClickUsingJavaScript(BookingLocators.getselectFirstHotel());
+    	String expectedhotel = driver.findElement(BookingLocators.getExpectedHotel()).getText();
+    	return expectedhotel;
+    }
+    public static void getContinueLink() {
+    	CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueLink());
+    }
+	
+	
+    
+
+>>>>>>> 22e9ecc02be1c6f0a520a031d40368ff263c5368
 	
 

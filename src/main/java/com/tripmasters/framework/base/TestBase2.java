@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.tripmasters.framework.utils.GenerateReport;
@@ -26,12 +27,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase2 {
 	private static String chromeDriverFilePath = System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe";
-	public WebDriver driver;
+	public static WebDriver driver;
 	private DesiredCapabilities capabilities;
 	private URL url;
 	private boolean flag = false;
 	private Logs log = new Logs();
-	GenerateReport gn;
+	static GenerateReport gn;
 	
 	@BeforeMethod
 	// @Parameters(value = { "browser" })
@@ -46,6 +47,7 @@ public class TestBase2 {
 
 					WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver();
+					driver.manage().window().maximize();
 					log.info("ChromeDriver instantiated for " + platform + " platform.");
 					flag = true;
 
@@ -162,7 +164,7 @@ public class TestBase2 {
 
 	}
 
-	@AfterClass
+	@AfterMethod
 	void tearDown() {
 		gn.extent.flush();
 		driver.quit();

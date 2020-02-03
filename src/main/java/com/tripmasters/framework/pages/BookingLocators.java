@@ -8,6 +8,9 @@ public class BookingLocators {
     private static By goingToTextbox=By.xpath("//input[contains(@id,'qNACity')]");
     private static By stayingDrpdown=By.xpath("//select[@id='qSTCity1']");
     private static By selectGuestDrpdown=By.xpath("//select[@id='xiRoomsAndPax']");
+    private static By selectChildDrpdown=By.xpath("//select[@id='xiChildren']");
+    private static By selectAdultDrpdown=By.xpath("//select[@id='xiAdults']");
+    public static By selectChildAgeDrpdown=By.xpath("//select[@id='xiChild1']");
     private static By cheaperFlightsLink=By.xpath("//a[contains(.,'Find cheaper flights')]");
     private static By selectFlightOption=By.xpath("(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/Select1.png')])[1]");
     private static By goingToTextboxSecond=By.xpath("//*[@id='qNACity2']");
@@ -39,10 +42,24 @@ public class BookingLocators {
     private static By thirdTravelerLastNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 3:')]]]//input[contains(@placeholder,'Last Name')]");
     private static By thirdTravelerGenderDropdown = By.xpath("//div[div[div[span[contains(.,'Traveler 3:')]]]]//div[contains(@class,'Gender')]//select");
     private static By thirdTravelerDOB = By.xpath("//div[div[div[span[contains(.,'Traveler 3:')]]]]//input[contains(@id,'txtPAX_DOB')]");
+<<<<<<< HEAD
     private static By verifyTraveler1Name=By.xpath("//div[@id='TravelerR1']/div[@class='cel-name'][contains(.,'John')]");
     private static By verifyTraveler2Name=By.xpath("//div[@id='TravelerR2']/div[@class='cel-name'][contains(.,'Marie')]");
     private static By verifyTraveler3Name=By.xpath("//div[@id='TravelerR3']/div[@class='cel-name'][contains(.,'Elvin')]");
     private static By withoutAirButton=By.xpath("//*[@class='dvIntlFly']/child::span[text()='Without Air *']");
+=======
+    private static By verifyTraveler1Name=By.xpath("//div[@id='TravelerR1']//div[@class='cel-name' or contains(text(),'Male') or contains(text(),'01/01/1992')]");
+    private static By verifyTraveler2Name=By.xpath("//div[@id='TravelerR2']//div[@class='cel-name' or contains(text(),'Male') or contains(text(),'01/01/1994')]");
+    private static By verifyTraveler3Name=By.xpath("//div[@id='TravelerR3']//div[@class='cel-name' or contains(text(),'Female') or contains(text(),'01/01/1996')]");
+    private static By selectChildTravelerDOB=By.xpath("//div[div[div[span[contains(.,'Traveler 2:')]]]]//input[contains(@id,'txtCPAX_DOB2')]");
+    private static By selectChildTraveleraPassport=By.xpath("//select[@id='txtCPAX_Nationality2']");
+    private static By selectWithoutAirButton=By.xpath("//*[@class='dvIntlFly']/child::span[text()='Without Air *']");
+    private static By browseHotelslink=By.xpath("//a[contains(.,' Browse ')]");
+    private static By selectFirstHotel=By.xpath("//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/ui-select-btn-95x25.png')][1]");
+    private static By verifyTripinclusionPage=By.xpath("//div[@class='mainDiv']//span[contains(text(),'TRIP INCLUSION DETAILS')]");
+    private static By firstHotel=By.xpath("(//a[@class='hotelHeadTitle'])[1]");
+    private static By verifyHotel=By.xpath("//div[@id='toResize440']//a");
+>>>>>>> 22e9ecc02be1c6f0a520a031d40368ff263c5368
     /**
 	 * @return the emailId
 	 */
@@ -202,6 +219,46 @@ public class BookingLocators {
 		return withoutAirButton;
 	}
 	
+<<<<<<< HEAD
 	}
 	
 
+=======
+	public static By getselectAdultDrpdown(){
+		return selectAdultDrpdown;
+	}
+	public static By getselectChildDrpdown(){
+		return selectChildDrpdown;
+	}
+	public static By getselectChildAgeDrpdown(){
+		return selectChildAgeDrpdown;
+	}
+	public static By getselectChildTravelerDOB(){
+		return selectChildTravelerDOB;
+	}
+	
+	public static By getpassportDrpdownSecondChildTraveller(){
+		return selectChildTraveleraPassport;
+	}
+	
+
+	public static By getWithoutAirButton() {
+		return selectWithoutAirButton;
+	}
+	public static By getBrowseHotelsLink() {
+		return browseHotelslink;
+	}
+	public static By getselectFirstHotel() {
+		return selectFirstHotel;
+	}
+	public static By toVerifyTripinclusionPage() {
+		return  verifyTripinclusionPage;
+	}
+	public static By getFirstHotel() {
+		return firstHotel;
+	}
+	public static By getExpectedHotel() {
+		return verifyHotel;
+	}
+}
+>>>>>>> 22e9ecc02be1c6f0a520a031d40368ff263c5368

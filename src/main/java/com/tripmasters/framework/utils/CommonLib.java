@@ -4,12 +4,13 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -19,10 +20,14 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-import com.tripmasters.framework.base.TestBase;
+
+import com.tripmasters.framework.base.TestBase2;
+import com.tripmasters.framework.pages.BookingLocators;
+
+import junit.framework.Assert;
 
 
-public class CommonLib extends TestBase {
+public class CommonLib extends TestBase2{
 
 	static Logs log;
 	private static WebElement element = null;
@@ -151,6 +156,30 @@ public class CommonLib extends TestBase {
 			e.printStackTrace();
 		}
 		return valueOfOption;
+	}
+	
+	public static String SelectOptionByText(By element, String optionText) {
+		WebElement selectField=driver.findElement(element);
+		try {
+			Select option = new Select(selectField);
+			option.selectByVisibleText(optionText);
+			Thread.sleep(2000);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return optionText;
+	}
+	
+	public static void VerifyTravellerDetails(By element,List<String> expectedTravellerInfo){
+		List<String>actualTravellerInfo=new ArrayList<String>();
+		List<WebElement>tempList=driver.findElements(element);
+		for(WebElement list:tempList){
+			String text=list.getText();
+			actualTravellerInfo.add(text);
+		}
+		System.out.println("actual List:"+ actualTravellerInfo);
+		Assert.assertEquals(expectedTravellerInfo, actualTravellerInfo);
+     	//Assert.assertTrue(expectedTravellerInfo.contains(actualTravellerInfo));
 	}
 	
 }

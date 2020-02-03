@@ -1,38 +1,53 @@
 package com.tripmasters.framework.actions;
 
 import java.util.ArrayList;
-
+import java.util.List;
 import com.tripmasters.framework.pages.BookingLocators;
 import com.tripmasters.framework.utils.CommonLib;
 
 public class PassengerInfoPageAction {
 
-	public static String FillFirstTravellerDetails() throws Exception{
-
-		String firstTravlrActualName =CommonLib.ClearAndSetValues(BookingLocators.getFirstTravelerFirstNameTxtbox(), "John");
-		String firstTravlrActuallstName =CommonLib.ClearAndSetValues(BookingLocators.getFirstTravelerLastNameTxtbox(), "Leo");
-	    CommonLib.SelectOptionByValue(BookingLocators.getFirstTravelerGenderDropdown(), "M");
-		CommonLib.ClearAndSetValues(BookingLocators.getFirstTravelerDOB(), "01/01/1992");
-		CommonLib.SelectOptionByValue(BookingLocators.getpassportDrpdownFirstTraveller(), "237|US");
-		return firstTravlrActualName +" "+ firstTravlrActuallstName;
+	public static  List<String> FillFirstTravellerDetails(String fname,String lname,String gender,String dateOfBirth,String passportInfo) throws Exception{
+            List<String>list=new ArrayList<String>();
+        	String firstName=CommonLib.ClearAndSetValues(BookingLocators.getFirstTravelerFirstNameTxtbox(), fname);
+        	String secondName=CommonLib.ClearAndSetValues(BookingLocators.getFirstTravelerLastNameTxtbox(), lname);
+        	String fullName=firstName +" "+ secondName;
+        	list.add(fullName);
+    	    list.add(CommonLib.SelectOptionByText(BookingLocators.getFirstTravelerGenderDropdown(), gender));
+    		list.add(CommonLib.ClearAndSetValues(BookingLocators.getFirstTravelerDOB(), dateOfBirth));
+    		CommonLib.SelectOptionByValue(BookingLocators.getpassportDrpdownFirstTraveller(), passportInfo);
+	    	return list;
 	}
 	
-	public static String FillSecondTravellerDetails() throws Exception{
-		String secondTravlrActualName =CommonLib.ClearAndSetValues(BookingLocators.getSecondTravelerFirstNameTxtbox(), "Marie");
-		String secondTravlrActuallstName =CommonLib.ClearAndSetValues(BookingLocators.getSecondTravelerLastNameTxtbox(), "Leo");
-		CommonLib.SelectOptionByValue(BookingLocators.getSecondTravelerGenderDropdown(), "F");
-		CommonLib.ClearAndSetValues(BookingLocators.getSecondTravelerDOB(), "01/01/1993");
-		CommonLib.SelectOptionByValue(BookingLocators.getpassportDrpdownSecondTraveller(), "237|US");
-		return secondTravlrActualName +" "+secondTravlrActuallstName;
+	public static List<String> FillSecondTravellerDetails(String fname,String lname,String gender,String dateOfBirth,String passportInfo,String travelerType) throws Exception{
+		 List<String>list=new ArrayList<String>();
+		 String firstName=CommonLib.ClearAndSetValues(BookingLocators.getSecondTravelerFirstNameTxtbox(), fname);
+		 String secondName=CommonLib.ClearAndSetValues(BookingLocators.getSecondTravelerLastNameTxtbox(), lname);
+		 String fullName=firstName +" "+ secondName;
+		 list.add(fullName);
+		 list.add(CommonLib.SelectOptionByText(BookingLocators.getSecondTravelerGenderDropdown(), gender));
+		if(travelerType.equals("Child")){
+			list.add(CommonLib.ClearAndSetValues(BookingLocators.getselectChildTravelerDOB(), dateOfBirth));
+			CommonLib.SelectOptionByValue(BookingLocators.getpassportDrpdownSecondChildTraveller(), passportInfo);
+		}
+	    else{
+		   list.add(CommonLib.ClearAndSetValues(BookingLocators.getSecondTravelerDOB(), dateOfBirth));
+		   CommonLib.SelectOptionByValue(BookingLocators.getpassportDrpdownSecondTraveller(), passportInfo);
+		}
+		
+		return list;
 	}
 	
-	public static String FillThirdTravellerDetails() throws Exception{
-		String thirdTravlrActualName=CommonLib.ClearAndSetValues(BookingLocators.getthirdTravelerFirstNameTxtbox(), "Elvin");
-		String thirdTravlrActuallstName=CommonLib.ClearAndSetValues(BookingLocators.getthirdTravelerLastNameTxtbox(), "Leo");
-		CommonLib.SelectOptionByValue(BookingLocators.getthirdTravelerGenderDropdown(), "M");
-		CommonLib.ClearAndSetValues(BookingLocators.getthirdTravelerDOB(), "01/01/1994");
-		CommonLib.SelectOptionByValue(BookingLocators.getpassportDrpdownThirdTraveller(), "237|US");
-		return thirdTravlrActualName +" " + thirdTravlrActuallstName;
+	public static List<String> FillThirdTravellerDetails(String fname,String lname,String gender,String dateOfBirth,String passportInfo) throws Exception{
+		List<String>list=new ArrayList<String>();
+		String firstName=CommonLib.ClearAndSetValues(BookingLocators.getthirdTravelerFirstNameTxtbox(), fname);
+		String secondName=CommonLib.ClearAndSetValues(BookingLocators.getthirdTravelerLastNameTxtbox(), lname);
+		String fullName=firstName +" "+ secondName;
+		list.add(fullName);
+		list.add(CommonLib.SelectOptionByText(BookingLocators.getthirdTravelerGenderDropdown(), gender));
+		list.add(CommonLib.ClearAndSetValues(BookingLocators.getthirdTravelerDOB(), dateOfBirth));
+		CommonLib.SelectOptionByValue(BookingLocators.getpassportDrpdownThirdTraveller(), passportInfo);
+		return list;
 	}
 	
 }
