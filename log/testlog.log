@@ -598,3 +598,88 @@
 2020-02-04 10:48:36,295 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
 2020-02-04 10:48:41,622 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
 2020-02-04 10:48:48,616 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 11:38:56,479 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 11:39:03,072 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 11:39:10,377 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 12:06:24,029 - com.tripmasters.framework.utils.Logs -ERROR - Driver is null at AfterClass (TestBase)
+2020-02-04 12:40:00,068 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 12:40:06,161 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 12:40:06,819 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 12:41:02,718 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 12:41:09,681 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 12:41:25,551 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 12:49:02,845 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 12:49:08,860 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 12:49:23,985 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 12:54:48,671 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 12:54:53,778 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 12:55:08,953 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 12:57:22,721 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 12:57:27,791 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 12:57:43,713 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 12:59:02,357 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 12:59:08,700 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 12:59:23,835 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 13:02:25,673 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 13:02:32,021 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 13:02:46,997 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 13:11:12,460 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 13:11:17,484 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 13:11:32,494 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 13:17:42,954 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 13:17:49,669 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 13:18:10,878 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 13:18:54,073 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 13:18:59,128 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 13:19:59,982 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 14:27:07,956 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 14:27:13,857 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 14:27:57,129 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 14:47:04,741 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 14:47:12,552 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 14:47:57,095 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 14:57:09,455 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 14:57:14,599 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 14:57:56,429 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 15:01:09,374 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 15:01:14,641 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 15:01:59,479 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 15:04:07,156 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 15:04:12,550 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 15:04:56,847 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 15:06:40,778 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 15:06:46,638 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 15:07:29,995 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 15:09:38,607 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 15:09:45,986 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 15:10:30,724 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 15:11:14,106 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 15:11:19,196 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 15:12:00,676 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 15:25:28,135 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 15:25:34,399 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 15:26:50,503 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 15:32:58,063 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 15:33:03,609 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 15:34:03,567 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 15:34:17,589 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 15:34:25,939 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 15:35:52,445 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 15:35:54,171 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 15:35:59,875 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 15:37:06,302 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 15:41:22,914 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 15:41:29,502 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 15:42:44,253 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 15:44:25,185 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 15:44:30,073 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 15:45:26,581 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 15:54:45,742 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 15:54:51,240 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 15:56:05,166 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 16:17:55,370 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 16:18:04,029 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 16:18:10,932 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-04 16:41:01,524 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-04 16:41:08,365 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-04 16:41:15,215 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass

@@ -210,7 +210,7 @@ public class CommonLib extends TestBase2{
 	 * 
 	 */
 
-	public void clickOnElement(By element) {
+	public static void clickOnElement(By element) {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement waitElement = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(element)));
 		waitElement.click();

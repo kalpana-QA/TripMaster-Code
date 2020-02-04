@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17058" started-at="2020-02-04T05:18:33Z" finished-at="2020-02-04T05:18:50Z">
+  <suite name="Default suite" duration-ms="18466" started-at="2020-02-04T11:10:58Z" finished-at="2020-02-04T11:11:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17058" started-at="2020-02-04T05:18:33Z" finished-at="2020-02-04T05:18:50Z">
+    <test name="Default test" duration-ms="18466" started-at="2020-02-04T11:10:58Z" finished-at="2020-02-04T11:11:17Z">
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@6c49835d]" name="setUp" is-config="true" duration-ms="7940" started-at="2020-02-04T05:18:33Z" finished-at="2020-02-04T05:18:41Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@6c49835d]" name="setUp" is-config="true" duration-ms="9514" started-at="2020-02-04T11:10:58Z" finished-at="2020-02-04T11:11:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySpotlightLink_TC_14()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@6c49835d]" name="verifySpotlightLink_TC_14" duration-ms="6969" started-at="2020-02-04T05:18:41Z" finished-at="2020-02-04T05:18:48Z">
+        <test-method status="PASS" signature="verifySpotlightLink_TC_14()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@6c49835d]" name="verifySpotlightLink_TC_14" duration-ms="6838" started-at="2020-02-04T11:11:08Z" finished-at="2020-02-04T11:11:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySpotlightLink_TC_14 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@6c49835d]" name="tearDown" is-config="true" duration-ms="2116" started-at="2020-02-04T05:18:48Z" finished-at="2020-02-04T05:18:50Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@6c49835d]" name="tearDown" is-config="true" duration-ms="2094" started-at="2020-02-04T11:11:15Z" finished-at="2020-02-04T11:11:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

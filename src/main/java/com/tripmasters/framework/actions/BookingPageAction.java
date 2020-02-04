@@ -6,6 +6,8 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
 import com.tripmasters.framework.base.TestBase2;
 import com.tripmasters.framework.pages.BookingLocators;
 import com.tripmasters.framework.pages.HomePageLocators;
@@ -16,6 +18,14 @@ public class BookingPageAction extends TestBase2{
 	public static void FillBasicBookingDetails(String leavingFrom,String destination,String stayingTime,String guestInfo) throws Exception{
 		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
 		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+		SelectStayingTime(stayingTime);
+		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+		SelectGuestDetails(guestInfo);
+	}
+	public static void FillBasicBookingDetails9(String leavingFrom,String destination,String stayingTime,String guestInfo) throws Exception{
+		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
+		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+		SelectValueFromCalendar();
 		SelectStayingTime(stayingTime);
 		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
 		SelectGuestDetails(guestInfo);
@@ -31,24 +41,6 @@ public class BookingPageAction extends TestBase2{
 		CommonLib.SelectOptionByValue(BookingLocators.getselectGuestDrpdown(), guestInfo);
 	}
 	
-/*	public static void SelectArriveDate()
-	{
-		// CommonLib.ClickUsingJavaScript(BookingLocators.getArriveDateCalender());
-		
-	WebElement dateWidget = driver.findElement(BookingLocators.getArriveDateCalender());
-		List<WebElement> columns=dateWidget.findElements(BookingLocators.getArriveDate());
-
-		for (WebElement cell: columns)
-		{
-		   //Select 13th Date 
-		   if (cell.getText().equals("20"))
-		   {
-		      cell.findElement(By.linkText("20")).click();
-		      break;
-		   }
-	    }
-		
-	}*/
 	public static void ClickonContinueButton(){
 		
 		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueBtn());
@@ -173,11 +165,7 @@ public class BookingPageAction extends TestBase2{
 	
 	}
 	
-	
-	public static void ClickChangedArriveDate()
-	{
-		CommonLib.ClickUsingJavaScript(BookingLocators.getChangedArriveDate());
-	}
+
 	
 	public static void SelectCabinClass(String cabinclass)
 	{
@@ -203,12 +191,43 @@ public class BookingPageAction extends TestBase2{
 	 {
 		 CommonLib.ClickUsingJavaScript(HomePageLocators.getExploreLatinAmericaLnk());
 		 boolean actuallink = (HomePageLocators.getHomePageTitle()).contains("Vacation Packages");
-		 
+		 Assert.assertTrue(actuallink);
 	 }
 	 
 	 public static void verifyLatinAmericPage()
 	 {
 		 boolean expectedlink = (HomePageLocators.getLatinAmericaPageTitle()).contains("Latin America Vacations");
+		 Assert.assertTrue(expectedlink);
 	 }
+	 
+	 
+	 public static void SelectValueFromCalendar(){
+		    CommonLib.clickOnElement(BookingLocators.getArriveDateDropdown());
+		    List<WebElement> columns=driver.findElements(BookingLocators.getArriveDateCalender());
+		    for (WebElement cell: columns){
+		     
+		      if (cell.getText().equals("3"))
+		      {
+		         cell.findElement(By.linkText("3")).click();
+		         break;
+		       }
+		     }  
+	 }
+	 public static void OldArriveDate()
+		{
+			boolean actualdate = driver.findElement(BookingLocators.getArriveDate()).isEnabled();
+			//System.out.println(actualdate);
+			Assert.assertTrue(actualdate);
+		}
+	
+		public static void ClickChangedArriveDate()
+		{
+			CommonLib.ClickUsingJavaScript(BookingLocators.getChangedArriveDate());
+			boolean expecteddate =driver.findElement(BookingLocators.getChangedArriveDate()).isEnabled();
+			// System.out.println(expecteddate);
+			Assert.assertTrue(expecteddate);
+		}
+		
+		
 
 }

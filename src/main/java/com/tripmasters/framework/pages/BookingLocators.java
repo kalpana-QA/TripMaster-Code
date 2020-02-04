@@ -71,9 +71,10 @@ public class BookingLocators {
     private static By verifyTripInclusionHeader =By.xpath("//span[text()='TRIP INCLUSION DETAILS']");
     private static By selectHotelName =By.xpath("(//a[@class='hotelHeadTitle'])[1][1]");
     private static By verifyHotelName =By.xpath("//div[@id='toResize440']//a");
-    private static By changedArriveDate =By.xpath("//div[text()='Wed 29-APR']");
-    private static By arriveDate =By.xpath(".//*[@id='ui-datepicker-div']//div[1]//tr[4]//td[4]");
-    private static By arriveDateCalender =By.xpath("//input[@id='qArrDate']");
+    private static By arriveDate =By.xpath("//div[@id='divDayOpt3']//div[2]//div[2]");
+    private static By changedArriveDate =By.xpath("//div[@id='divDayOpt4']//div[2]//div[2]");
+    private static By arriveDateDropdown =By.xpath("//input[contains(@id,'qArrDate')]");
+    private static By arriveDateCalender =By.xpath("//table[@class='ui-datepicker-calendar']//tbody//td");
     private static By cabinClassDropdown =By.xpath("//select[@id='qCabinOpt']");
     private static By verifycabinClassDropdown =By.xpath("//select[@id='xCabin']");
     private static By firstpremiumoption =By.xpath("//select[@id='qCabinOpt']//option[2]");
@@ -335,9 +336,9 @@ public class BookingLocators {
 		return changedArriveDate;
 	}
 	
-	public static By getArriveDate()
+	public static By getArriveDateDropdown()
 	{
-		return arriveDate;
+		return  arriveDateDropdown ;
 	}
 
 	public static By getArriveDateCalender()
@@ -361,5 +362,10 @@ public class BookingLocators {
 	public static By getSecondpremiumOption()
 	{
 		return verifypremiumoption;
+	}
+	
+	public static By getArriveDate()
+	{
+		return arriveDate;
 	}
 }

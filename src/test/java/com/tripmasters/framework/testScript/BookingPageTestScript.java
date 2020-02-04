@@ -164,20 +164,28 @@ public class BookingPageTestScript extends TestBase2 {
 		Assert.assertEquals(actualHotel, expectedHotel);
 	}
 	
-	//@Test
- //  public  void  dateChanging_TC_9()  throws Exception
-//	{
-//	BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Berlin (Germany)","6","1|2");
-//		BookingPageAction.SelectNumberOfAdult("1",BookingLocators.getselectAdultDrpdown());
-//		BookingPageAction.ClickonContinueButton();
-//		BookingPageAction.ClickChangedArriveDate();
-//		Assert.assertTrue(driver.findElement(BookingLocators.getChangedArriveDate()).isEnabled());
-//		BookingPageAction.SelectCheaperFlights();
-//		BookingPageAction.browseHotelsButton();
-//		BookingPageAction.browseSelectHotel();
-//		BookingPageAction.ClickonContinueLink();
-//	}
-   // @Test
+	@Test
+  public  void  dateChanging_TC_9()  throws Exception
+	{
+		
+        BookingPageAction.FillBasicBookingDetails9("New York, Newark, NJ","Berlin (Germany)","12","1|2");
+       
+		BookingPageAction.SelectNumberOfAdult("2",BookingLocators.getselectAdultDrpdown());
+	    BookingPageAction.ClickonContinueButton();
+	    BookingPageAction.ClickChangedArriveDate();
+	    BookingPageAction.OldArriveDate();
+	    actualHotel = BookingPageAction.browseHotelsButton();
+	    expectedHotel = BookingPageAction.browseSelectHotel();
+		Assert.assertEquals(actualHotel, expectedHotel);
+		BookingPageAction.ClickonContinueLink();
+		expectedFirstTravellerInfo=PassengerInfoPageAction.FillFirstTravellerDetails("Morris","Leo","Male","01/01/1992","237|US");
+		expectedSecondTravellerInfo=PassengerInfoPageAction.FillSecondTravellerDetails("Shally","Leo","Male","01/01/1994","237|US","Child");
+		BookingPageAction.ClicktoContinuePage();
+		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler1Name(),expectedFirstTravellerInfo);
+		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(),expectedSecondTravellerInfo);
+		
+	}
+	// @Test
 	public void withoutAirBookingForSingleCity_TC_19() throws Exception
 	{
 		BookingPageAction.SelectWithoutAir();
@@ -189,7 +197,7 @@ public class BookingPageTestScript extends TestBase2 {
 	    BookingPageAction.ClickonContinueLink();
 	}
     
-  //  @Test
+ //  @Test
 	public void getWithoutAir_TC_20(Method method) throws Exception  {
 		ExtentTestManager.startTest(method.getName(), "getWithoutAir");
 		BookingPageAction.getWithoutButton();
@@ -214,12 +222,14 @@ public class BookingPageTestScript extends TestBase2 {
 		BookingPageAction.ClicktoContinuePage();
     	
      }
-    @Test
+  // @Test
     public void verifySpotlightLink_TC_14()  throws Exception
     {
     	BookingPageAction.selectLatinAmericaLink();
     	BookingPageAction.verifyLatinAmericPage();
     }
+    
+    
     
     
 	
