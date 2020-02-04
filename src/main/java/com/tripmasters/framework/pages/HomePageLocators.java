@@ -11,6 +11,9 @@ public class HomePageLocators {
 	private static By romeFlorenceVeniceByTrainHeader = By.xpath("//h1[contains(.,'Rome - Florence - Venice by Train')]");
 	private static String europePageTitle = "Europe Vacations | European Vacation Packages | Tripmasters";
 	private static By exploreLatinAmericaLnk = By.xpath("//section[h1[contains(.,'popular vacation packages')]]//h3/a[contains(.,'Explore Latin America')]");
+	private static String latinAmericaPageTitle = "Latin America Vacations | Latin America Vacation Packages| Tripmasters";
+	
+	
 	public static By getmoreHighLightsBtn() {
 		return moreHighlightsBtn;
 	}
@@ -37,4 +40,14 @@ public class HomePageLocators {
 		return europePageTitle;
 	}
 	
+	public static By getExploreLatinAmericaLnk()
+	{
+		return exploreLatinAmericaLnk;
+	}
+	
+	
+	public static String  getLatinAmericaPageTitle()
+    {
+		return  latinAmericaPageTitle;
+	}
 }

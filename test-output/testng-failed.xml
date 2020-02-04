@@ -6,8 +6,8 @@
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
           <include name="tearDown"/>
-          <include name="dateChanging_TC_18"/>
           <include name="setUp"/>
+          <include name="verifySpotlightLink_TC_14"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>

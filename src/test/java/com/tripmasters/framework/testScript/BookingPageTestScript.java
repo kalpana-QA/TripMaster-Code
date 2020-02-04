@@ -202,8 +202,8 @@ public class BookingPageTestScript extends TestBase2 {
 		System.out.println("passed");
 	}
     
-    @Test
-    public void dateChanging_TC_18() throws Exception
+   // @Test
+    public void premiumEconimy_TC_18() throws Exception
     {
     	BookingPageAction.BookingDetailswithPremiumEcomomy("New York City (all Airports),  NY","Delhi (India)","Premium Economy","4","1|1");
     	String actualcabin = BookingPageAction.selectedcabinAssert();
@@ -213,7 +213,14 @@ public class BookingPageTestScript extends TestBase2 {
     	BookingPageAction.SelectCheaperFlights();
 		BookingPageAction.ClicktoContinuePage();
     	
-    	
+     }
+    @Test
+    public void verifySpotlightLink_TC_14()  throws Exception
+    {
+    	BookingPageAction.selectLatinAmericaLink();
+    	BookingPageAction.verifyLatinAmericPage();
     }
+    
+    
 	
 }

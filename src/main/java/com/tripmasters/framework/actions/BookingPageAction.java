@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import com.tripmasters.framework.base.TestBase2;
 import com.tripmasters.framework.pages.BookingLocators;
+import com.tripmasters.framework.pages.HomePageLocators;
 import com.tripmasters.framework.utils.CommonLib;
 
 public class BookingPageAction extends TestBase2{
@@ -197,5 +198,17 @@ public class BookingPageAction extends TestBase2{
 	    	System.out.println(expectedcabin);
 	    	return expectedcabin;
 	    }
+	 
+	 public static void selectLatinAmericaLink()
+	 {
+		 CommonLib.ClickUsingJavaScript(HomePageLocators.getExploreLatinAmericaLnk());
+		 boolean actuallink = (HomePageLocators.getHomePageTitle()).contains("Vacation Packages");
+		 
+	 }
+	 
+	 public static void verifyLatinAmericPage()
+	 {
+		 boolean expectedlink = (HomePageLocators.getLatinAmericaPageTitle()).contains("Latin America Vacations");
+	 }
 
 }
