@@ -67,13 +67,15 @@ public class BookingLocators {
     private static By selectWitoutAirOption =By.xpath("//form[@id='formBYO']//span[text()='Without Air *']");
     private static By browseHotelLink=By.xpath("//div[@class='changeHotel rbtn']//a");
     private static By selectHotelOption=By.xpath("(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/ui-select-btn-95x25.png')])[1]");
-    private static By verifyTripInclusionHeader =By.xpath("//span[text()='TRIP INCLUSION DETAILS']");
+    private static By verifyTripInclusionHeader =By.xpath("//div[@class='mainDiv']//span[@class='spanMainTitle']");
     private static By selectHotelName =By.xpath("(//a[@class='hotelHeadTitle'])[1][1]");
     private static By verifyHotelName =By.xpath("//div[@id='toResize440']//a");
     private static By arriveDate =By.xpath("//div[text()='Thu 30-APR']");
     private static By withoutAirButton=By.xpath("//*[@class='dvIntlFly']/child::span[text()='Without Air *']");
+
     private static By searchBox=By.xpath("//form[@id='frmSearch']//input[@id='q']");
     private static By goButton=By.xpath("//input[@name='Go']");
+
     private static By secondremovecitylink=By.xpath("//div//span[@id='cty2']");
     private static By thirdremoveCitylink=By.xpath("//div//span[@id='cty3']");
     private static By edititinerary=By.xpath("//div//a[contains(text(),'Edit Itinerary')]");
@@ -351,32 +353,13 @@ public class BookingLocators {
 	{
 		return selectWithoutAirButton;
 	}
+
 	 public static By getSearchBox() {
 	    	return searchBox;
 	    }
 	 
 	public static By getGoButton() {
 		return goButton;
-	}
-
-	public static By getsecondremovecitylink() {
-		return secondremovecitylink;
-	}
-
-	public static By getedititinerary() {
-		return edititinerary;
-	}
-
-	public static By getthirdremoveCitylink() {
-		return thirdremoveCitylink;
-	}
-
-	public static By getgoingToTextboxThird() {
-		return goingToTextboxThird;
-	}
-
-	public static By getstayingDrpdowntwo() {
-		return stayingDrpdowntwo;
 	}
 
 	public static By getstayingDrpdownthree() {
@@ -386,5 +369,23 @@ public class BookingLocators {
 	public static By getpickCalendarData() {
 		return pickCalendarData;
 	}
+
+	 public static By getsecondremovecitylink() {
+			return secondremovecitylink;
+		}
+		public static By getedititinerary() {
+			return edititinerary;
+		}
+		public static By getthirdremoveCitylink() {
+			return thirdremoveCitylink;
+		}
+		
+		public static By getgoingToTextboxThird() {
+			return goingToTextboxThird;
+		}
+		public static By getstayingDrpdowntwo() {
+			return stayingDrpdowntwo;
+		}
+
 		
 }

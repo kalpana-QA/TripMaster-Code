@@ -4,6 +4,8 @@ import java.lang.reflect.Method;
 
 import org.testng.annotations.Test;
 
+import com.tripmasters.framework.actions.BookingPageAction;
+import com.tripmasters.framework.actions.HomePageAction;
 import com.tripmasters.framework.base.TestBase2;
 import com.tripmasters.framework.pages.HomePageLocators;
 import com.tripmasters.framework.utils.CommonLib;
@@ -17,9 +19,11 @@ public class HomePageTestScript extends TestBase2 {
 	// HomePageLocators homePageLocatos=null;
 	static Logs log;
 
+
 	@Test(priority=0)
 	public void verifyMoreHighlightAndAttractionLinks_TC_11(Method method) throws Exception {
 		ExtentTestManager.startTest(method.getName(), "verifyMoreHighlightAndAttractionLinks_TC_11");
+
 		String homePageTitle = CommonLib.getPageTitle();
 
 		CommonLib.ClickUsingJavaScript(HomePageLocators.getmoreHighLightsBtn());
@@ -54,7 +58,7 @@ public class HomePageTestScript extends TestBase2 {
 		Assert.assertTrue(romeFlorenceVeniceByTrainHeader);
 		//log.info("verifyOtherVacationPackages is Passed.");
 	}//section[h1[contains(.,'popular vacation packages')]]//a[contains(.,'London')]
-	
+
 	@Test(priority=1)
 	public void VerifyPopularVacationPackages_TC_13(Method method){
 		ExtentTestManager.startTest(method.getName(), "VerifyPopularVacationPackages_TC_13");
@@ -64,7 +68,29 @@ public class HomePageTestScript extends TestBase2 {
 		Assert.assertEquals(HomePageLocators.getEuropePageTitle(), europePageTitle);
 		//log.info("VerifyPopularVacationPackages_TC_13 is Passed.");
 	}
-	
+	//@Test
+	public void verifyCity_TC_10() throws Exception {
+		String verifyhomepage = CommonLib.getPageTitle();   
+    	Assert.assertEquals(HomePageLocators.getHomePageTitle(), verifyhomepage);
+    	HomePageAction.clickSearch();
+    	HomePageAction.fillSearch("Berlin");
+    	boolean actual = HomePageAction.validateURL();
+    	Assert.assertTrue(actual);
+	}
+	//@Test
+	public void verifyStartAgainLink_TC_15() throws Exception {
+		String verifyhomepage = CommonLib.getPageTitle();   
+    	
+		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Delhi (India)","4","1|2");
+		HomePageAction.getStartAgain();
+		Assert.assertEquals(HomePageLocators.getHomePageTitle(), verifyhomepage);
+		
+	}
+	@Test
+	public void footerText() {
+		boolean validatefooter = HomePageAction.validateFooterText();
+		Assert.assertTrue(validatefooter);
+	}
 	
 	
 }

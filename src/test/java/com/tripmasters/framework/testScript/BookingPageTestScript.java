@@ -7,9 +7,11 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.tripmasters.framework.actions.BookingPageAction;
+import com.tripmasters.framework.actions.HomePageAction;
 import com.tripmasters.framework.actions.PassengerInfoPageAction;
 import com.tripmasters.framework.base.TestBase2;
 import com.tripmasters.framework.pages.BookingLocators;
+import com.tripmasters.framework.pages.HomePageLocators;
 import com.tripmasters.framework.utils.CommonLib;
 import com.tripmasters.framework.utils.ExtentTestManager;
 
@@ -25,6 +27,7 @@ public class BookingPageTestScript extends TestBase2 {
 	public static String actualHotel;
 	public static String expectedHotel;
    
+
 	//@Test(priority=0)
 	public void bookingSingleRoomWith3Adults_TC_1(Method method) throws Exception
 	{
@@ -44,6 +47,7 @@ public class BookingPageTestScript extends TestBase2 {
 		
   }
 	
+
 	//@Test(priority=1)
 	public void bookingSingleRoom1Adult1Child_TC_2(Method method) throws Exception{
 		
@@ -81,6 +85,7 @@ public class BookingPageTestScript extends TestBase2 {
 		
 	}
 	
+
 	//@Test(priority=3)
 	public void bookingTwoRoom3Adult1Child_TC_4(Method method) throws Exception{
 		ExtentTestManager.startTest(method.getName(), "bookingTwoRoom3Adult1Child");
@@ -105,6 +110,7 @@ public class BookingPageTestScript extends TestBase2 {
 		
 	}
 	
+
 	//@Test(priority=4)
 	public void booking2Room2Adult2Child_TC_5(Method method) throws Exception{
 		ExtentTestManager.startTest(method.getName(), "booking2Room2Adult2Child");
@@ -129,6 +135,7 @@ public class BookingPageTestScript extends TestBase2 {
 		
 	}
 	
+
 	//@Test(priority=5)
 	public void bookingFlightsWithmultipleCities_TC_6(Method method) throws Exception{
 		ExtentTestManager.startTest(method.getName(), "bookingFlightsWithmultipleCities");
@@ -147,6 +154,7 @@ public class BookingPageTestScript extends TestBase2 {
 		
 	}
 	
+
 	//@Test(priority=6)
 	public void bookingFlightAndHotelForSingleCity_TC_7(Method method) throws Exception{
 		ExtentTestManager.startTest(method.getName(), "bookingFlightAndHotelForSingleCity");
@@ -167,6 +175,7 @@ public class BookingPageTestScript extends TestBase2 {
 		
 	}
 	
+
 	//@Test(priority=7)
 	public void bookingFlightAndHotelForMultipleCity_TC_8(Method method) throws Exception{
 		ExtentTestManager.startTest(method.getName(), "bookingFlightAndHotelForMultipleCity");
@@ -184,9 +193,11 @@ public class BookingPageTestScript extends TestBase2 {
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(),expectedSecondTravellerInfo);
 		
 	}
+
 	
 	//@Test
 	public  void  dateChanging_TC_9()  throws Exception
+
 	{
 		BookingPageAction.SelectValueFromCalendar();
 //      BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Berlin (Germany)","6","1|2");
@@ -199,6 +210,7 @@ public class BookingPageTestScript extends TestBase2 {
 //		BookingPageAction.browseSelectHotel();
 //		BookingPageAction.ClickonContinueLink();
 	}
+	
     //@Test(priority=11)
 	public void withoutAirBookingForSingleCity_TC_19(Method method) throws Exception
 	{
@@ -224,19 +236,19 @@ public class BookingPageTestScript extends TestBase2 {
 		Assert.assertEquals(actualHotel, expectedHotel);
 		BookingPageAction.getContinueLink();
 		System.out.println("passed");
-		
 	}
 	
 	//@Test(priority=9)
        public void verifyCity_TC_10() throws Exception {
-    	BookingPageAction.clickSearch();
-    	BookingPageAction.fillSearch("Berlin");
-    	boolean actual = BookingPageAction.validateURL();
+    	HomePageAction.clickSearch();
+    	HomePageAction.fillSearch("Berlin");
+    	boolean actual = HomePageAction.validateURL();
     	Assert.assertTrue(actual);
-    	
-    	}
+		boolean tripinclusion = BookingPageAction.validateTripIncluisonPage();
+    	Assert.assertTrue(tripinclusion);
+	}
     
-	//@Test(priority=10)
+      //@Test(priority=10)
     	public void removeAddedCity_TC_17() throws Exception {
     	BookingPageAction.fillBasicDetails("New York, Newark, NJ", "Delhi (India)", "4", "Mumbai (India)", "1", "Chennai -Madras (India)", "1");
     	boolean actual = BookingPageAction.isremovecitydisplayed();
@@ -244,9 +256,12 @@ public class BookingPageTestScript extends TestBase2 {
     	BookingPageAction.deleteAddedCities();
     	boolean expected = BookingPageAction.validateremovedcity();
     	Assert.assertTrue(expected);
-    	BookingPageAction.SelectGuestDetails("1|3");
+    	BookingPageAction.getNoMoreCitiesButton();
+    	BookingPageAction.SelectGuestDetails("1|1");
     	BookingPageAction.ClickonContinueButton();
     	BookingPageAction.SelectCheaperFlights();
+    	boolean tripinclusion = BookingPageAction.validateTripIncluisonPage();
+    	Assert.assertTrue(tripinclusion);
     	}
    	
 }
