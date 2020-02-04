@@ -1,10 +1,13 @@
 package com.tripmasters.framework.testScript;
 
+import java.lang.reflect.Method;
+
 import org.testng.annotations.Test;
 
 import com.tripmasters.framework.base.TestBase2;
 import com.tripmasters.framework.pages.HomePageLocators;
 import com.tripmasters.framework.utils.CommonLib;
+import com.tripmasters.framework.utils.ExtentTestManager;
 import com.tripmasters.framework.utils.Logs;
 
 import junit.framework.Assert;
@@ -14,9 +17,9 @@ public class HomePageTestScript extends TestBase2 {
 	// HomePageLocators homePageLocatos=null;
 	static Logs log;
 
-	@Test
-	public void verifyMoreHighlightAndAttractionLinks_TC_11() throws Exception {
-
+	@Test(priority=0)
+	public void verifyMoreHighlightAndAttractionLinks_TC_11(Method method) throws Exception {
+		ExtentTestManager.startTest(method.getName(), "verifyMoreHighlightAndAttractionLinks_TC_11");
 		String homePageTitle = CommonLib.getPageTitle();
 
 		CommonLib.ClickUsingJavaScript(HomePageLocators.getmoreHighLightsBtn());
@@ -42,9 +45,9 @@ public class HomePageTestScript extends TestBase2 {
 		
 	}
 	
-	//@Test
-	public void verifyOtherVacationPackages_TC_12(){
-		
+	@Test(priority=3)
+	public void verifyOtherVacationPackages_TC_12(Method method){
+		ExtentTestManager.startTest(method.getName(), "verifyOtherVacationPackages_TC_12");
 		CommonLib.ClickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
 		CommonLib.ClickUsingJavaScript(HomePageLocators.getRomeFlorenceVeniceByTrainLnk());
 		boolean romeFlorenceVeniceByTrainHeader = CommonLib.isElementDisplayed(HomePageLocators.getRomeFlorenceVeniceByTrainHeader());
@@ -52,9 +55,9 @@ public class HomePageTestScript extends TestBase2 {
 		//log.info("verifyOtherVacationPackages is Passed.");
 	}//section[h1[contains(.,'popular vacation packages')]]//a[contains(.,'London')]
 	
-	@Test
-	public void VerifyPopularVacationPackages_TC_13(){
-		
+	@Test(priority=1)
+	public void VerifyPopularVacationPackages_TC_13(Method method){
+		ExtentTestManager.startTest(method.getName(), "VerifyPopularVacationPackages_TC_13");
 		CommonLib.ClickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
 		String europePageTitle = CommonLib.getPageTitle();
 		

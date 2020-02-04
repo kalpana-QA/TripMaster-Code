@@ -15,8 +15,8 @@ public class BookingPageAction extends TestBase2{
 		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
 		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
 		SelectStayingTime(stayingTime);
-		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
-		SelectGuestDetails(guestInfo);
+		//CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+		//SelectGuestDetails(guestInfo);
 	}
 	
 	public static void SelectStayingTime(String stayingTime){
@@ -235,5 +235,17 @@ public class BookingPageAction extends TestBase2{
 			
 			CommonLib.SelectOptionByValue(BookingLocators.getstayingDrpdownthree(), stayingTimeThree);
 		}
+	    
+	    public static void SelectValueFromCalendar(){
+	    	CommonLib.clickOnElement(BookingLocators.getChangedArriveDate());
+	    	List<WebElement> columns=driver.findElements(BookingLocators.getpickCalendarData());
+	    	for (WebElement cell: columns){
+	    	  
+	    	   if (cell.getText().equals("10")){
+	    	      cell.findElement(By.linkText("10")).click();
+	    	      break;
+	    	 }
+	    }	    	
+    }
 }
 

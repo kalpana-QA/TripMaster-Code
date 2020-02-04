@@ -13,9 +13,7 @@ public class BookingLocators {
     private static By  selectChildAgeRoom2Drpdown=By.xpath("//select[@id='xRoom2_iChild1']");
     
     private static By selectAdultDrpdown=By.xpath("//select[@id='xiAdults']");
-
     private static By selectAdultRoom2Drpdown=By.xpath("//select[@id='xRoom2_iAdults']");
-
     public static By selectChildAgeDrpdown=By.xpath("//select[@id='xiChild1']");
     private static By cheaperFlightsLink=By.xpath("//a[contains(.,'Find cheaper flights')]");
     private static By selectFlightOption=By.xpath("(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/Select1.png')])[1]");
@@ -72,12 +70,8 @@ public class BookingLocators {
     private static By verifyTripInclusionHeader =By.xpath("//span[text()='TRIP INCLUSION DETAILS']");
     private static By selectHotelName =By.xpath("(//a[@class='hotelHeadTitle'])[1][1]");
     private static By verifyHotelName =By.xpath("//div[@id='toResize440']//a");
-    private static By changedArriveDate =By.xpath("//div[text()='Wed 29-APR']");
     private static By arriveDate =By.xpath("//div[text()='Thu 30-APR']");
-
-
     private static By withoutAirButton=By.xpath("//*[@class='dvIntlFly']/child::span[text()='Without Air *']");
-
     private static By searchBox=By.xpath("//form[@id='frmSearch']//input[@id='q']");
     private static By goButton=By.xpath("//input[@name='Go']");
     private static By secondremovecitylink=By.xpath("//div//span[@id='cty2']");
@@ -86,6 +80,8 @@ public class BookingLocators {
     private static By goingToTextboxThird=By.xpath("//*[@id='qNACity3']");
     private static By stayingDrpdowntwo=By.xpath("//select[@id='qSTCity2']");
     private static By stayingDrpdownthree=By.xpath("//select[@id='qSTCity3']");
+    private static By changedArriveDate =By.xpath("//input[contains(@id,'qArrDate')]");
+    private static By pickCalendarData=By.xpath("//table[@class='ui-datepicker-calendar']//tbody//td");
     /**
 	 * @return the emailId
 	 */
@@ -359,28 +355,36 @@ public class BookingLocators {
 	    	return searchBox;
 	    }
 	 
-	 public static By getGoButton() {
-	    	return goButton;
-	    }
-	 
-	 public static By getsecondremovecitylink() {
-			return secondremovecitylink;
-		}
-		public static By getedititinerary() {
-			return edititinerary;
-		}
-		public static By getthirdremoveCitylink() {
-			return thirdremoveCitylink;
-		}
+	public static By getGoButton() {
+		return goButton;
+	}
+
+	public static By getsecondremovecitylink() {
+		return secondremovecitylink;
+	}
+
+	public static By getedititinerary() {
+		return edititinerary;
+	}
+
+	public static By getthirdremoveCitylink() {
+		return thirdremoveCitylink;
+	}
+
+	public static By getgoingToTextboxThird() {
+		return goingToTextboxThird;
+	}
+
+	public static By getstayingDrpdowntwo() {
+		return stayingDrpdowntwo;
+	}
+
+	public static By getstayingDrpdownthree() {
+		return stayingDrpdownthree;
+	}
+
+	public static By getpickCalendarData() {
+		return pickCalendarData;
+	}
 		
-		public static By getgoingToTextboxThird() {
-			return goingToTextboxThird;
-		}
-		public static By getstayingDrpdowntwo() {
-			return stayingDrpdowntwo;
-		}
-		
-		public static By getstayingDrpdownthree() {
-			return stayingDrpdownthree;
-		}
 }
