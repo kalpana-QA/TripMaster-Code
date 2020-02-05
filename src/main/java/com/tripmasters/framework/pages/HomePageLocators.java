@@ -14,6 +14,8 @@ public class HomePageLocators {
     private static By goButton=By.xpath("//input[@name='Go']");
     private static By startagain=By.xpath("(//div[@class='dvtranspMainContainer']//span[@class='goToStartAgain']//u)[2]");
     private static By footer=By.xpath("//div[@class='dvCopy']//b");
+	private static By exploreLatinAmericaLnk = By.xpath("//section[h1[contains(.,'popular vacation packages')]]//h3/a[contains(.,'Explore Latin America')]");
+	private static String latinAmericaPageTitle = "Latin America Vacations | Latin America Vacation Packages| Tripmasters";
 	
 	public static By getmoreHighLightsBtn() {
 		return moreHighlightsBtn;
@@ -53,5 +55,14 @@ public class HomePageLocators {
  public static By getFooter() {
 	 return footer;
  }
-	
+ public static By getExploreLatinAmericaLnk()
+	{
+		return exploreLatinAmericaLnk;
+	}
+
+
+	public static String  getLatinAmericaPageTitle()
+ {
+		return  latinAmericaPageTitle;
+	}
 }

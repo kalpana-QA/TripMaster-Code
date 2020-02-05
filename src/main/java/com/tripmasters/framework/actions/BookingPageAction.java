@@ -5,8 +5,11 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
 import com.tripmasters.framework.base.TestBase2;
 import com.tripmasters.framework.pages.BookingLocators;
+import com.tripmasters.framework.pages.HomePageLocators;
 import com.tripmasters.framework.utils.CommonLib;
 
 public class BookingPageAction extends TestBase2{
@@ -14,6 +17,7 @@ public class BookingPageAction extends TestBase2{
 	public static void FillBasicBookingDetails(String leavingFrom,String destination,String stayingTime,String guestInfo) throws Exception{
 		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
 		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+		SelectValueFromCalendar();
 		SelectStayingTime(stayingTime);
 		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
 		SelectGuestDetails(guestInfo);
@@ -164,6 +168,8 @@ public class BookingPageAction extends TestBase2{
 	public static void ClickChangedArriveDate()
 	{
 		CommonLib.ClickUsingJavaScript(BookingLocators.getChangedArriveDate());
+		boolean expecteddate =driver.findElement(BookingLocators.getChangedArriveDate()).isEnabled();
+		Assert.assertTrue(expecteddate);
 	}
 	
 	 
@@ -246,5 +252,51 @@ public class BookingPageAction extends TestBase2{
 	    	}
 	    }
 
+	    
+	    public static void BookingDetailswithPremiumEcomomy(String leavingFrom,String destination,String cabinclass,String stayingTime,String guestInfo) throws Exception
+		{
+			SelectCabinClass(cabinclass);
+			CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
+			CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+			SelectStayingTime(stayingTime);
+			CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+			SelectGuestDetails(guestInfo);
+
+		}
+	    public static void SelectCabinClass(String cabinclass)
+		{
+			CommonLib.SelectOptionByText(BookingLocators.getCabinClassDropdown(), cabinclass);
+		}
+
+		 public static String selectedcabinAssert() {
+
+		    	String selectedcabin=driver.findElement(BookingLocators.getFirstpremiumOption()).getText();
+		        return selectedcabin;
+		    }
+		 
+		 public static String verifycabinAssert() {
+
+		    	String expectedcabin = driver.findElement(BookingLocators.getSecondpremiumOption()).getText();
+		    	return expectedcabin;
+		    }
+		 
+		 public static void selectLatinAmericaLink()
+		 {
+			 CommonLib.ClickUsingJavaScript(HomePageLocators.getExploreLatinAmericaLnk());
+			 boolean actuallink = (HomePageLocators.getHomePageTitle()).contains("Vacation Packages");
+			 Assert.assertTrue(actuallink);
+		 }
+
+		 public static void verifyLatinAmericPage()
+		 {
+			 boolean expectedlink = (HomePageLocators.getLatinAmericaPageTitle()).contains("Latin America Vacations");
+			 Assert.assertTrue(expectedlink);
+		 }
+		 
+		 public static void OldArriveDate()
+		{
+				boolean actualdate = driver.findElement(BookingLocators.getArriveDate()).isEnabled();
+				Assert.assertTrue(actualdate);
+		}
 }
 
