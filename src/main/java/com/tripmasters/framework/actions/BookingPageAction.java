@@ -171,22 +171,16 @@ public class BookingPageAction extends TestBase2{
 		boolean expecteddate =driver.findElement(BookingLocators.getChangedArriveDate()).isEnabled();
 		Assert.assertTrue(expecteddate);
 	}
-	
-	 
-	    
 	    public static void fillBasicDetails(String leavefrom,String firstdestination,String stayingTime,String seconddestination,String seconddrop,String thirddestination,String thirddrop) throws Exception {
 	    	
 	    	CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavefrom);
 			CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), firstdestination);
 			SelectStayingTime(stayingTime);
-			
 			CommonLib.ClickUsingJavaScript(BookingLocators.getaddCityBtn());
-			
 			CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextboxSecond(), seconddestination);
 			SelectStayingTimeTwo(seconddrop);
 			CommonLib.ClickUsingJavaScript(BookingLocators.getaddCityBtn());
-			
-			 CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextboxThird(), thirddestination);
+		    CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextboxThird(), thirddestination);
 			SelectStayingTimeThree(thirddrop);
 			
 			

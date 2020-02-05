@@ -7,11 +7,9 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.tripmasters.framework.actions.BookingPageAction;
-import com.tripmasters.framework.actions.HomePageAction;
 import com.tripmasters.framework.actions.PassengerInfoPageAction;
 import com.tripmasters.framework.base.TestBase2;
 import com.tripmasters.framework.pages.BookingLocators;
-import com.tripmasters.framework.pages.HomePageLocators;
 import com.tripmasters.framework.utils.CommonLib;
 import com.tripmasters.framework.utils.ExtentTestManager;
 
@@ -28,7 +26,7 @@ public class BookingPageTestScript extends TestBase2 {
 	public static String expectedHotel;
    
 
-	//@Test(priority=0)
+	@Test(priority=0)
 	public void bookingSingleRoomWith3Adults_TC_1(Method method) throws Exception
 	{
 		ExtentTestManager.startTest(method.getName(), "bookingSingleRoomWith3Adults");
@@ -48,7 +46,7 @@ public class BookingPageTestScript extends TestBase2 {
   }
 	
 
-	//@Test(priority=1)
+	@Test(priority=1)
 	public void bookingSingleRoom1Adult1Child_TC_2(Method method) throws Exception{
 		
 		ExtentTestManager.startTest(method.getName(), "bookingSingleRoom1Adult1Child");
@@ -66,7 +64,7 @@ public class BookingPageTestScript extends TestBase2 {
 	}
 	
 
-	//@Test(priority=2)
+	@Test(priority=2)
 	public void bookingTwoRoom2Adult_TC_3(Method method) throws Exception{
 		ExtentTestManager.startTest(method.getName(), "bookingTwoRoom2Adult");
 		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Berlin (Germany)","6","2|2-2");
@@ -86,7 +84,7 @@ public class BookingPageTestScript extends TestBase2 {
 	}
 	
 
-	//@Test(priority=3)
+	@Test(priority=3)
 	public void bookingTwoRoom3Adult1Child_TC_4(Method method) throws Exception{
 		ExtentTestManager.startTest(method.getName(), "bookingTwoRoom3Adult1Child");
 		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Berlin (Germany)","6","2|Other");
@@ -111,7 +109,7 @@ public class BookingPageTestScript extends TestBase2 {
 	}
 	
 
-	//@Test(priority=4)
+	@Test(priority=4)
 	public void booking2Room2Adult2Child_TC_5(Method method) throws Exception{
 		ExtentTestManager.startTest(method.getName(), "booking2Room2Adult2Child");
 		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Berlin (Germany)","6","2|Other");
@@ -136,7 +134,7 @@ public class BookingPageTestScript extends TestBase2 {
 	}
 	
 
-	//@Test(priority=5)
+	@Test(priority=5)
 	public void bookingFlightsWithmultipleCities_TC_6(Method method) throws Exception{
 		ExtentTestManager.startTest(method.getName(), "bookingFlightsWithmultipleCities");
 		BookingPageAction.fillBasicBookingDetailForMultipleCities("WithAir","Berlin (Germany)","4","Augsburg (Germany)","1|Other");
@@ -155,7 +153,7 @@ public class BookingPageTestScript extends TestBase2 {
 	}
 	
 
-	//@Test(priority=6)
+	@Test(priority=6)
 	public void bookingFlightAndHotelForSingleCity_TC_7(Method method) throws Exception{
 		ExtentTestManager.startTest(method.getName(), "bookingFlightAndHotelForSingleCity");
 		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Berlin (Germany)","6","2|Other");
@@ -176,7 +174,7 @@ public class BookingPageTestScript extends TestBase2 {
 	}
 	
 
-	//@Test(priority=7)
+	@Test(priority=7)
 	public void bookingFlightAndHotelForMultipleCity_TC_8(Method method) throws Exception{
 		ExtentTestManager.startTest(method.getName(), "bookingFlightAndHotelForMultipleCity");
 		BookingPageAction.fillBasicBookingDetailForMultipleCities("WithAir","Berlin (Germany)","4","Augsburg (Germany)","1|Other");
@@ -195,7 +193,7 @@ public class BookingPageTestScript extends TestBase2 {
 	}
 
 	
-    //@Test
+    @Test(priority=8)
 	public void withoutAirBookingForSingleCity_TC_19(Method method) throws Exception
 	{
     	ExtentTestManager.startTest(method.getName(), "withoutAirBookingForSingleCity_TC_19");
@@ -209,7 +207,7 @@ public class BookingPageTestScript extends TestBase2 {
 	   
 	}
     
-	//@Test(priority=8)
+	@Test(priority=9)
 	public void getWithoutAir_TC_20(Method method) throws Exception  {
 		ExtentTestManager.startTest(method.getName(), "getWithoutAir");
 		BookingPageAction.getWithoutButton();
@@ -222,8 +220,9 @@ public class BookingPageTestScript extends TestBase2 {
 		System.out.println("passed");
 	}
     
-      //@Test(priority=10)
-    	public void removeAddedCity_TC_17() throws Exception {
+      @Test(priority=10)
+    	public void removeAddedCity_TC_17(Method method) throws Exception {
+    	ExtentTestManager.startTest(method.getName(), "removeAddedCity");  
     	BookingPageAction.fillBasicDetails("New York, Newark, NJ", "Delhi (India)", "4", "Mumbai (India)", "1", "Chennai -Madras (India)", "1");
     	boolean actual = BookingPageAction.isremovecitydisplayed();
     	Assert.assertTrue(actual);
@@ -238,7 +237,7 @@ public class BookingPageTestScript extends TestBase2 {
     	Assert.assertTrue(tripinclusion);
     	}
    	
-    	//@Test
+    	@Test(priority=11)
         public void dateChanging_TC_18(Method method) throws Exception
         {
     		ExtentTestManager.startTest(method.getName(), "dateChanging_TC_18");
@@ -251,14 +250,15 @@ public class BookingPageTestScript extends TestBase2 {
     		BookingPageAction.ClicktoContinuePage();
         }
     	
-    	//@Test
-        public void verifySpotlightLink_TC_14()  throws Exception
+    	@Test(priority=12)
+        public void verifySpotlightLink_TC_14(Method method)  throws Exception
         {
+    		ExtentTestManager.startTest(method.getName(), "verifySpotlightLink");
         	BookingPageAction.selectLatinAmericaLink();
         	BookingPageAction.verifyLatinAmericPage();
         }
         
-        @Test
+       // @Test
         public  void  dateChanging_TC_9()  throws Exception
       	{
             BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Berlin (Germany)","12","1|2");
