@@ -13,9 +13,7 @@ public class BookingLocators {
     private static By  selectChildAgeRoom2Drpdown=By.xpath("//select[@id='xRoom2_iChild1']");
     
     private static By selectAdultDrpdown=By.xpath("//select[@id='xiAdults']");
-
     private static By selectAdultRoom2Drpdown=By.xpath("//select[@id='xRoom2_iAdults']");
-
     public static By selectChildAgeDrpdown=By.xpath("//select[@id='xiChild1']");
     private static By cheaperFlightsLink=By.xpath("//a[contains(.,'Find cheaper flights')]");
     private static By selectFlightOption=By.xpath("(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/Select1.png')])[1]");
@@ -48,6 +46,7 @@ public class BookingLocators {
     private static By thirdTravelerLastNameTxtbox=By.xpath("//div[div[span[contains(.,'Traveler 3:')]]]//input[contains(@placeholder,'Last Name')]");
     private static By thirdTravelerGenderDropdown = By.xpath("//div[div[div[span[contains(.,'Traveler 3:')]]]]//div[contains(@class,'Gender')]//select");
     private static By thirdTravelerDOB = By.xpath("//div[div[div[span[contains(.,'Traveler 3:')]]]]//input[contains(@id,'txtPAX_DOB')]");
+
     private static By verifyTraveler1Name=By.xpath("//div[@id='TravelerR1']//div[@class='cel-name' or @class='editvalgender' or @class='editvaldob']");
     private static By verifyTraveler2Name=By.xpath("//div[@id='TravelerR2']//div[@class='cel-name' or @class='editvalgender' or @class='editvaldob']");
     private static By verifyTraveler3Name=By.xpath("//div[@id='TravelerR3']//div[@class='cel-name' or @class='editvalgender' or @class='editvaldob']");
@@ -57,7 +56,7 @@ public class BookingLocators {
 
     private static By selectWithoutAirButton=By.xpath("//*[@class='dvIntlFly']/child::span[text()='Without Air *']");
     private static By browseHotelslink=By.xpath("//a[contains(.,' Browse ')]");
-    private static By selectFirstHotel=By.xpath("(//td[@class='RoomTypeHotelListBottom m-srd-td1']//img)[1]");
+    private static By selectFirstHotel=By.xpath("(//td[contains(@class,'RoomTypeHotelList')]//img[contains(@class,'m-srd-img1')])[1]");
     private static By verifyTripinclusionPage=By.xpath("//div[@class='mainDiv']//span[contains(text(),'TRIP INCLUSION DETAILS')]");
     private static By firstHotel=By.xpath("(//a[@class='hotelHeadTitle'])[1]");
     private static By verifyHotel=By.xpath("(//a[@class='m-hotel-a1'])[1]");
@@ -68,13 +67,29 @@ public class BookingLocators {
     private static By selectWitoutAirOption =By.xpath("//form[@id='formBYO']//span[text()='Without Air *']");
     private static By browseHotelLink=By.xpath("//div[@class='changeHotel rbtn']//a");
     private static By selectHotelOption=By.xpath("(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/ui-select-btn-95x25.png')])[1]");
-    private static By verifyTripInclusionHeader =By.xpath("//span[text()='TRIP INCLUSION DETAILS']");
+    private static By verifyTripInclusionHeader =By.xpath("//div[@class='mainDiv']//span[@class='spanMainTitle']");
     private static By selectHotelName =By.xpath("(//a[@class='hotelHeadTitle'])[1][1]");
     private static By verifyHotelName =By.xpath("//div[@id='toResize440']//a");
-    private static By arriveDate =By.xpath("//div[@id='divDayOpt3']//div[2]//div[2]");
-    private static By changedArriveDate =By.xpath("//div[@id='divDayOpt4']//div[2]//div[2]");
+
+    
     private static By arriveDateDropdown =By.xpath("//input[contains(@id,'qArrDate')]");
     private static By arriveDateCalender =By.xpath("//table[@class='ui-datepicker-calendar']//tbody//td");
+
+    private static By arriveDate =By.xpath("//div[text()='Thu 30-APR']");
+    private static By withoutAirButton=By.xpath("//*[@class='dvIntlFly']/child::span[text()='Without Air *']");
+
+    private static By searchBox=By.xpath("//form[@id='frmSearch']//input[@id='q']");
+    private static By goButton=By.xpath("//input[@name='Go']");
+
+    private static By secondremovecitylink=By.xpath("//div//span[@id='cty2']");
+    private static By thirdremoveCitylink=By.xpath("//div//span[@id='cty3']");
+    private static By edititinerary=By.xpath("//div//a[contains(text(),'Edit Itinerary')]");
+    private static By goingToTextboxThird=By.xpath("//*[@id='qNACity3']");
+    private static By stayingDrpdowntwo=By.xpath("//select[@id='qSTCity2']");
+    private static By stayingDrpdownthree=By.xpath("//select[@id='qSTCity3']");
+    private static By changedArriveDate =By.xpath("//input[contains(@id,'qArrDate')]");
+    private static By pickCalendarData=By.xpath("//table[@class='ui-datepicker-calendar']//tbody//td");
+
     private static By cabinClassDropdown =By.xpath("//select[@id='qCabinOpt']");
     private static By verifycabinClassDropdown =By.xpath("//select[@id='xCabin']");
     private static By firstpremiumoption =By.xpath("//select[@id='qCabinOpt']//option[2]");
@@ -234,7 +249,11 @@ public class BookingLocators {
 	public static By getverifyTraveler3Name(){
 		return verifyTraveler3Name;
 	}
+	public static By getWithoutAirButton() {
+		return withoutAirButton;
+	}
 	
+
 	public static By getselectAdultDrpdown(){
 		return selectAdultDrpdown;
 	}
@@ -270,9 +289,7 @@ public class BookingLocators {
 		return selectChildAgeRoom2Drpdown;
 	}
 	
-	public static By getWithoutAirButton() {
-		return selectWithoutAirButton;
-	}
+
 	public static By getBrowseHotelsLink() {
 		return browseHotelslink;
 	}
@@ -288,6 +305,7 @@ public class BookingLocators {
 	public static By getExpectedHotel() {
 		return verifyHotel;
 	}
+
 	public static By getfirstFlightDetails(){
 		return firstFlightDetails;
 	}
@@ -368,4 +386,43 @@ public class BookingLocators {
 	{
 		return arriveDate;
 	}
+
+	public static By getselectWithoutAirButton()
+	{
+		return selectWithoutAirButton;
+	}
+
+	 public static By getSearchBox() {
+	    	return searchBox;
+	    }
+	 
+	public static By getGoButton() {
+		return goButton;
+	}
+
+	public static By getstayingDrpdownthree() {
+		return stayingDrpdownthree;
+	}
+
+	public static By getpickCalendarData() {
+		return pickCalendarData;
+	}
+
+	 public static By getsecondremovecitylink() {
+			return secondremovecitylink;
+		}
+		public static By getedititinerary() {
+			return edititinerary;
+		}
+		public static By getthirdremoveCitylink() {
+			return thirdremoveCitylink;
+		}
+		
+		public static By getgoingToTextboxThird() {
+			return goingToTextboxThird;
+		}
+		public static By getstayingDrpdowntwo() {
+			return stayingDrpdowntwo;
+		}
+		
 }

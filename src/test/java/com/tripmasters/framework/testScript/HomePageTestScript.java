@@ -1,10 +1,15 @@
 package com.tripmasters.framework.testScript;
 
+import java.lang.reflect.Method;
+
 import org.testng.annotations.Test;
 
+import com.tripmasters.framework.actions.BookingPageAction;
+import com.tripmasters.framework.actions.HomePageAction;
 import com.tripmasters.framework.base.TestBase2;
 import com.tripmasters.framework.pages.HomePageLocators;
 import com.tripmasters.framework.utils.CommonLib;
+import com.tripmasters.framework.utils.ExtentTestManager;
 import com.tripmasters.framework.utils.Logs;
 
 import junit.framework.Assert;
@@ -14,8 +19,10 @@ public class HomePageTestScript extends TestBase2 {
 	// HomePageLocators homePageLocatos=null;
 	static Logs log;
 
-	@Test
-	public void verifyMoreHighlightAndAttractionLinks_TC_11() throws Exception {
+
+	@Test(priority=0)
+	public void verifyMoreHighlightAndAttractionLinks_TC_11(Method method) throws Exception {
+		ExtentTestManager.startTest(method.getName(), "verifyMoreHighlightAndAttractionLinks_TC_11");
 
 		String homePageTitle = CommonLib.getPageTitle();
 
@@ -42,26 +49,50 @@ public class HomePageTestScript extends TestBase2 {
 		
 	}
 	
-	//@Test
-	public void verifyOtherVacationPackages_TC_12(){
-		
+	@Test(priority=1)
+	public void verifyOtherVacationPackages_TC_12(Method method){
+		ExtentTestManager.startTest(method.getName(), "verifyOtherVacationPackages_TC_12");
 		CommonLib.ClickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
 		CommonLib.ClickUsingJavaScript(HomePageLocators.getRomeFlorenceVeniceByTrainLnk());
 		boolean romeFlorenceVeniceByTrainHeader = CommonLib.isElementDisplayed(HomePageLocators.getRomeFlorenceVeniceByTrainHeader());
 		Assert.assertTrue(romeFlorenceVeniceByTrainHeader);
 		//log.info("verifyOtherVacationPackages is Passed.");
-	}//section[h1[contains(.,'popular vacation packages')]]//a[contains(.,'London')]
-	
-	@Test
-	public void VerifyPopularVacationPackages_TC_13(){
-		
+	}
+
+	@Test(priority=2)
+	public void VerifyPopularVacationPackages_TC_13(Method method){
+		ExtentTestManager.startTest(method.getName(), "VerifyPopularVacationPackages_TC_13");
 		CommonLib.ClickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
 		String europePageTitle = CommonLib.getPageTitle();
 		
 		Assert.assertEquals(HomePageLocators.getEuropePageTitle(), europePageTitle);
 		//log.info("VerifyPopularVacationPackages_TC_13 is Passed.");
 	}
-	
+	@Test(priority=3)
+	public void verifyCity_TC_10(Method method) throws Exception {
+		ExtentTestManager.startTest(method.getName(), "verifyCity_TC_10");
+		String verifyhomepage = CommonLib.getPageTitle();   
+    	Assert.assertEquals(HomePageLocators.getHomePageTitle(), verifyhomepage);
+    	HomePageAction.clickSearch();
+    	HomePageAction.fillSearch("Berlin");
+    	boolean actual = HomePageAction.validateURL();
+    	Assert.assertTrue(actual);
+	}
+	@Test(priority=4)
+	public void verifyStartAgainLink_TC_15(Method method) throws Exception {
+		ExtentTestManager.startTest(method.getName(), "verifyStartAgainLink_TC_15");
+		String verifyhomepage = CommonLib.getPageTitle();   
+		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Delhi (India)","4","1|2");
+		HomePageAction.getStartAgain();
+		Assert.assertEquals(HomePageLocators.getHomePageTitle(), verifyhomepage);
+		
+	}
+	@Test(priority=5)
+	public void verifyFooterText_TC_16(Method method) {
+		ExtentTestManager.startTest(method.getName(), "verifyFooterText_TC_16");
+		boolean validatefooter = HomePageAction.validateFooterText();
+		Assert.assertTrue(validatefooter);
+	}
 	
 	
 }

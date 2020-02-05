@@ -12,7 +12,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 
 import com.tripmasters.framework.utils.JsonDataReader;
 import com.tripmasters.framework.utils.Logs;
@@ -29,14 +32,14 @@ public class TestBase2 {
 	private DesiredCapabilities capabilities;
 	private URL url;
 	private boolean flag = false;
-	private Logs log = new Logs();
+	private static Logs log = new Logs();
 
 	//GenerateReport gn;
 
 	
 	
-	@BeforeClass
-	//@BeforeMethod
+	//@BeforeClass
+	@BeforeMethod
 	// @Parameters(value = { "browser" })
 	public void setUp() throws FileNotFoundException, IOException, ParseException {
 		//gn = new GenerateReport();
@@ -50,6 +53,7 @@ public class TestBase2 {
 					System.setProperty("webdriver.chrome.driver", chromeDriverFilePath);
 					//WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver();
+					driver.manage().window().maximize();
 					log.info("ChromeDriver instantiated for " + platform + " platform.");
 					flag = true;
 
@@ -171,9 +175,8 @@ public class TestBase2 {
 	
 
 
-	//@AfterMethod
-	@AfterClass(alwaysRun=true)
-	public void tearDown() {
+	@AfterMethod(alwaysRun=true)
+	public static  void tearDown() {
 		//gn.extent.flush();
 		//driver.quit();
 		//GenerateReport2.startReport(null, null);

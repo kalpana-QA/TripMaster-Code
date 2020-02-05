@@ -10,6 +10,10 @@
 	<test name="Test">
 		<parameter name="browser" value="Chrome" />
 		<classes>
+<<<<<<< HEAD
+=======
+<!-- 		<class name="com.tripmasters.framework.testScript.HomePageTestScript" />  -->
+>>>>>>> 54ac9c9c29430627d3fcbd46bedd58f12b4f3cad
  			<class name="com.tripmasters.framework.testScript.BookingPageTestScript" /> 
 <!--  			<class name="com.tripmasters.framework.utils.GenerateReport2" />  -->
 		</classes>
