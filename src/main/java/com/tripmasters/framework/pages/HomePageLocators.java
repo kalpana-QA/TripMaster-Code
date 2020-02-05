@@ -16,7 +16,7 @@ public class HomePageLocators {
     private static By footer=By.xpath("//div[@class='dvCopy']//b");
 	private static By exploreLatinAmericaLnk = By.xpath("//section[h1[contains(.,'popular vacation packages')]]//h3/a[contains(.,'Explore Latin America')]");
 	private static String latinAmericaPageTitle = "Latin America Vacations | Latin America Vacation Packages| Tripmasters";
-	
+
 	public static By getmoreHighLightsBtn() {
 		return moreHighlightsBtn;
 	}
@@ -42,6 +42,7 @@ public class HomePageLocators {
 	public static String getEuropePageTitle(){
 		return europePageTitle;
 	}
+
 	public static By getSearchBox() {
     	return searchBox;
     }

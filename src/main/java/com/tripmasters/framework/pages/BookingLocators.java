@@ -70,6 +70,11 @@ public class BookingLocators {
     private static By verifyTripInclusionHeader =By.xpath("//div[@class='mainDiv']//span[@class='spanMainTitle']");
     private static By selectHotelName =By.xpath("(//a[@class='hotelHeadTitle'])[1][1]");
     private static By verifyHotelName =By.xpath("//div[@id='toResize440']//a");
+
+    
+    private static By arriveDateDropdown =By.xpath("//input[contains(@id,'qArrDate')]");
+    private static By arriveDateCalender =By.xpath("//table[@class='ui-datepicker-calendar']//tbody//td");
+
     private static By arriveDate =By.xpath("//div[text()='Thu 30-APR']");
     private static By withoutAirButton=By.xpath("//*[@class='dvIntlFly']/child::span[text()='Without Air *']");
 
@@ -84,6 +89,7 @@ public class BookingLocators {
     private static By stayingDrpdownthree=By.xpath("//select[@id='qSTCity3']");
     private static By changedArriveDate =By.xpath("//input[contains(@id,'qArrDate')]");
     private static By pickCalendarData=By.xpath("//table[@class='ui-datepicker-calendar']//tbody//td");
+
     private static By cabinClassDropdown =By.xpath("//select[@id='qCabinOpt']");
     private static By verifycabinClassDropdown =By.xpath("//select[@id='xCabin']");
     private static By firstpremiumoption =By.xpath("//select[@id='qCabinOpt']//option[2]");
@@ -348,11 +354,39 @@ public class BookingLocators {
 		return changedArriveDate;
 	}
 	
+	public static By getArriveDateDropdown()
+	{
+		return  arriveDateDropdown ;
+	}
+
+	public static By getArriveDateCalender()
+	{
+		return arriveDateCalender;
+	}
+	
+	public static By getCabinClassDropdown()
+	{
+		return cabinClassDropdown;
+	}
+	
+	public static By getVerifycabinClassDropdown()
+	{
+		return verifycabinClassDropdown ;
+	}
+	public static By getFirstpremiumOption()
+	{
+		return firstpremiumoption;
+	}
+	public static By getSecondpremiumOption()
+	{
+		return verifypremiumoption;
+	}
+	
 	public static By getArriveDate()
 	{
 		return arriveDate;
 	}
-	
+
 	public static By getselectWithoutAirButton()
 	{
 		return selectWithoutAirButton;
@@ -389,23 +423,6 @@ public class BookingLocators {
 		}
 		public static By getstayingDrpdowntwo() {
 			return stayingDrpdowntwo;
-		}
-		public static By getCabinClassDropdown()
-		{
-			return cabinClassDropdown;
-		}
-
-		public static By getVerifycabinClassDropdown()
-		{
-			return verifycabinClassDropdown ;
-		}
-		public static By getFirstpremiumOption()
-		{
-			return firstpremiumoption;
-		}
-		public static By getSecondpremiumOption()
-		{
-			return verifypremiumoption;
 		}
 		
 }

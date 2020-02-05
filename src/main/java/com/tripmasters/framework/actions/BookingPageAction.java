@@ -22,6 +22,14 @@ public class BookingPageAction extends TestBase2{
 		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
 		SelectGuestDetails(guestInfo);
 	}
+	public static void FillBasicBookingDetails9(String leavingFrom,String destination,String stayingTime,String guestInfo) throws Exception{
+		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
+		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+		SelectValueFromCalendar();
+		SelectStayingTime(stayingTime);
+		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+		SelectGuestDetails(guestInfo);
+	}
 	
 	public static void SelectStayingTime(String stayingTime){
 		
@@ -165,12 +173,15 @@ public class BookingPageAction extends TestBase2{
 		SelectGuestDetails(guestInfo);
 	}
 	
+
 	public static void ClickChangedArriveDate()
 	{
 		CommonLib.ClickUsingJavaScript(BookingLocators.getChangedArriveDate());
 		boolean expecteddate =driver.findElement(BookingLocators.getChangedArriveDate()).isEnabled();
 		Assert.assertTrue(expecteddate);
 	}
+
+		
 	    public static void fillBasicDetails(String leavefrom,String firstdestination,String stayingTime,String seconddestination,String seconddrop,String thirddestination,String thirddrop) throws Exception {
 	    	
 	    	CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavefrom);
@@ -224,6 +235,7 @@ public class BookingPageAction extends TestBase2{
 			CommonLib.SelectOptionByValue(BookingLocators.getstayingDrpdownthree(), stayingTimeThree);
 		}
 	    
+
 
 	    public static void SelectValueFromCalendar(){
 	    	CommonLib.clickOnElement(BookingLocators.getChangedArriveDate());
