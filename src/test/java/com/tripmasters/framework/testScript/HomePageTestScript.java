@@ -49,7 +49,7 @@ public class HomePageTestScript extends TestBase2 {
 		
 	}
 	
-	@Test(priority=3)
+	@Test(priority=1)
 	public void verifyOtherVacationPackages_TC_12(Method method){
 		ExtentTestManager.startTest(method.getName(), "verifyOtherVacationPackages_TC_12");
 		CommonLib.ClickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
@@ -57,9 +57,9 @@ public class HomePageTestScript extends TestBase2 {
 		boolean romeFlorenceVeniceByTrainHeader = CommonLib.isElementDisplayed(HomePageLocators.getRomeFlorenceVeniceByTrainHeader());
 		Assert.assertTrue(romeFlorenceVeniceByTrainHeader);
 		//log.info("verifyOtherVacationPackages is Passed.");
-	}//section[h1[contains(.,'popular vacation packages')]]//a[contains(.,'London')]
+	}
 
-	@Test(priority=1)
+	@Test(priority=2)
 	public void VerifyPopularVacationPackages_TC_13(Method method){
 		ExtentTestManager.startTest(method.getName(), "VerifyPopularVacationPackages_TC_13");
 		CommonLib.ClickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
@@ -68,8 +68,9 @@ public class HomePageTestScript extends TestBase2 {
 		Assert.assertEquals(HomePageLocators.getEuropePageTitle(), europePageTitle);
 		//log.info("VerifyPopularVacationPackages_TC_13 is Passed.");
 	}
-	//@Test
-	public void verifyCity_TC_10() throws Exception {
+	@Test(priority=3)
+	public void verifyCity_TC_10(Method method) throws Exception {
+		ExtentTestManager.startTest(method.getName(), "verifyCity_TC_10");
 		String verifyhomepage = CommonLib.getPageTitle();   
     	Assert.assertEquals(HomePageLocators.getHomePageTitle(), verifyhomepage);
     	HomePageAction.clickSearch();
@@ -77,17 +78,18 @@ public class HomePageTestScript extends TestBase2 {
     	boolean actual = HomePageAction.validateURL();
     	Assert.assertTrue(actual);
 	}
-	//@Test
-	public void verifyStartAgainLink_TC_15() throws Exception {
+	@Test(priority=4)
+	public void verifyStartAgainLink_TC_15(Method method) throws Exception {
+		ExtentTestManager.startTest(method.getName(), "verifyStartAgainLink_TC_15");
 		String verifyhomepage = CommonLib.getPageTitle();   
-    	
 		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Delhi (India)","4","1|2");
 		HomePageAction.getStartAgain();
 		Assert.assertEquals(HomePageLocators.getHomePageTitle(), verifyhomepage);
 		
 	}
-	@Test
-	public void footerText() {
+	@Test(priority=5)
+	public void verifyFooterText_TC_16(Method method) {
+		ExtentTestManager.startTest(method.getName(), "verifyFooterText_TC_16");
 		boolean validatefooter = HomePageAction.validateFooterText();
 		Assert.assertTrue(validatefooter);
 	}

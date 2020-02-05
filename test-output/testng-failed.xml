@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <parameter name="browser" value="Chrome"/>
+  <listeners>
+    <listener class-name="com.tripmasters.framework.Listeners.TestListener"/>
+    <listener class-name="com.tripmasters.framework.Listeners.AnnotationTransformer"/>
+  </listeners>
+  <test name="Test(failed)" parallel="methods">
+    <parameter name="browser" value="Chrome"/>
     <classes>
-<<<<<<< HEAD
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
-          <include name="dateChanging_TC_9"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
-=======
-      <class name="com.tripmasters.framework.testScript.HomePageTestScript">
-        <methods>
-          <include name="footerText"/>
+          <include name="withoutAirBookingForSingleCity_TC_19" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
->>>>>>> 90b88cf114695b5050cbdff0832ce74da4d23dec
+      </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

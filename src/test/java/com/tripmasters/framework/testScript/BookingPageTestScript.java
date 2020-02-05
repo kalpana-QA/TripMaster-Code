@@ -211,7 +211,7 @@ public class BookingPageTestScript extends TestBase2 {
 //		BookingPageAction.ClickonContinueLink();
 	}
 	
-    //@Test(priority=11)
+    @Test
 	public void withoutAirBookingForSingleCity_TC_19(Method method) throws Exception
 	{
     	ExtentTestManager.startTest(method.getName(), "withoutAirBookingForSingleCity_TC_19");
@@ -236,16 +236,6 @@ public class BookingPageTestScript extends TestBase2 {
 		Assert.assertEquals(actualHotel, expectedHotel);
 		BookingPageAction.getContinueLink();
 		System.out.println("passed");
-	}
-	
-	//@Test(priority=9)
-       public void verifyCity_TC_10() throws Exception {
-    	HomePageAction.clickSearch();
-    	HomePageAction.fillSearch("Berlin");
-    	boolean actual = HomePageAction.validateURL();
-    	Assert.assertTrue(actual);
-		boolean tripinclusion = BookingPageAction.validateTripIncluisonPage();
-    	Assert.assertTrue(tripinclusion);
 	}
     
       //@Test(priority=10)

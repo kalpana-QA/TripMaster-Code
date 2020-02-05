@@ -15,8 +15,8 @@ public class BookingPageAction extends TestBase2{
 		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
 		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
 		SelectStayingTime(stayingTime);
-		//CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
-		//SelectGuestDetails(guestInfo);
+		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+		SelectGuestDetails(guestInfo);
 	}
 	
 	public static void SelectStayingTime(String stayingTime){

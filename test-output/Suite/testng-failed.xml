@@ -11,14 +11,9 @@
     <classes>
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
-          <include name="booking2Room2Adult2Child_TC_5" invocation-numbers="0"/>
-          <include name="getWithoutAir_TC_20" invocation-numbers="0"/>
-          <include name="bookingFlightAndHotelForSingleCity_TC_7" invocation-numbers="0"/>
           <include name="withoutAirBookingForSingleCity_TC_19" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="bookingSingleRoomWith3Adults_TC_1" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="bookingFlightsWithmultipleCities_TC_6" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>
