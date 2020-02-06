@@ -230,12 +230,12 @@ public class BookingPageAction extends TestBase2{
 
 
 	    public static void SelectValueFromCalendar(){
-	    	CommonLib.clickOnElement(BookingLocators.getChangedArriveDate());
-	    	List<WebElement> columns=driver.findElements(BookingLocators.getpickCalendarData());
+	    	CommonLib.clickOnElement(BookingLocators.getArriveDateDropdown());
+	    	List<WebElement> columns=driver.findElements(BookingLocators.getArriveDateCalender());
 	    	for (WebElement cell: columns){
 	    	  
-	    	   if (cell.getText().equals("10")){
-	    	      cell.findElement(By.linkText("10")).click();
+	    	   if (cell.getText().equals("3")){
+	    	      cell.findElement(By.linkText("3")).click();
 	    	      break;
 	    	 }
 	    }	    	
@@ -296,5 +296,10 @@ public class BookingPageAction extends TestBase2{
 				boolean actualdate = driver.findElement(BookingLocators.getArriveDate()).isEnabled();
 				Assert.assertTrue(actualdate);
 		}
+		 
+		 public static void TripSummary()
+		 {
+			 CommonLib.ClickUsingJavaScript(BookingLocators.getTripSummaryButton());
+		 }
 }
 

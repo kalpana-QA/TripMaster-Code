@@ -196,7 +196,7 @@ public class BookingPageTestScript extends TestBase2 {
 	}
 
 
-    @Test(priority=8)
+    //@Test(priority=8)
 
 	public void withoutAirBookingForSingleCity_TC_19(Method method) throws Exception
 
@@ -254,8 +254,8 @@ public class BookingPageTestScript extends TestBase2 {
         	BookingPageAction.SelectCheaperFlights();
     		BookingPageAction.ClicktoContinuePage();
         }
-    	
-    	//@Test(priority=12)
+        
+        @Test
         public void verifySpotlightLink_TC_14(Method method)  throws Exception
         {
     		ExtentTestManager.startTest(method.getName(), "verifySpotlightLink");
@@ -263,7 +263,7 @@ public class BookingPageTestScript extends TestBase2 {
         	BookingPageAction.verifyLatinAmericPage();
         }
         
-       // @Test
+       @Test
         public  void  dateChanging_TC_9()  throws Exception
       	{
             BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Berlin (Germany)","12","1|2");
@@ -275,12 +275,13 @@ public class BookingPageTestScript extends TestBase2 {
       	    expectedHotel = BookingPageAction.browseSelectHotel();
       		Assert.assertEquals(actualHotel, expectedHotel);
       		BookingPageAction.ClickonContinueLink();
+      		BookingPageAction.ClicktoContinuePage();
       		expectedFirstTravellerInfo=PassengerInfoPageAction.FillFirstTravellerDetails("Morris","Leo","Male","01/01/1992","237|US");
-      		expectedSecondTravellerInfo=PassengerInfoPageAction.FillSecondTravellerDetails("Shally","Leo","Male","01/01/1994","237|US","Child");
+      		expectedSecondTravellerInfo=PassengerInfoPageAction.FillSecondTravellerDetails("Shally","Leo","Male","01/01/1994","237|US","Adult");
       		BookingPageAction.ClicktoContinuePage();
       		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler1Name(),expectedFirstTravellerInfo);
       		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(),expectedSecondTravellerInfo);
-
+            BookingPageAction.TripSummary();
       	}
 
 }

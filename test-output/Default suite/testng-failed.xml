@@ -5,8 +5,12 @@
     <classes>
       <class name="com.tripmasters.framework.testScript.HomePageTestScript">
         <methods>
+<<<<<<< HEAD
           <include name="verifyMoreHighlightAndAttractionLinks_TC_11" invocation-numbers="0"/>
           <include name="tearDown"/>
+=======
+          <include name="dateChanging_TC_9"/>
+>>>>>>> 809dc1012df87ae4db2b86e78d22d47e0d004609
           <include name="setUp"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
