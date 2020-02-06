@@ -11,8 +11,8 @@
     <classes>
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
-          <include name="withoutAirBookingForSingleCity_TC_19" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="dateChanging_TC_18" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->

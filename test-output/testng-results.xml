@@ -1,61 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="18466" started-at="2020-02-04T11:10:58Z" finished-at="2020-02-04T11:11:17Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="18466" started-at="2020-02-04T11:10:58Z" finished-at="2020-02-04T11:11:17Z">
-      <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@6c49835d]" name="setUp" is-config="true" duration-ms="9514" started-at="2020-02-04T11:10:58Z" finished-at="2020-02-04T11:11:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySpotlightLink_TC_14()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@6c49835d]" name="verifySpotlightLink_TC_14" duration-ms="6838" started-at="2020-02-04T11:11:08Z" finished-at="2020-02-04T11:11:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySpotlightLink_TC_14 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@6c49835d]" name="tearDown" is-config="true" duration-ms="2094" started-at="2020-02-04T11:11:15Z" finished-at="2020-02-04T11:11:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-=======
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="79893" started-at="2020-02-05T03:36:51Z" finished-at="2020-02-05T03:38:11Z">
+  <suite name="Default suite" duration-ms="45773" started-at="2020-02-05T09:31:36Z" finished-at="2020-02-05T09:32:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="79893" started-at="2020-02-05T03:36:51Z" finished-at="2020-02-05T03:38:11Z">
-      <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@4f970963]" name="setUp" is-config="true" duration-ms="20542" started-at="2020-02-05T09:06:51Z" finished-at="2020-02-05T09:07:11Z">
+    <test name="Default test" duration-ms="45773" started-at="2020-02-05T09:31:36Z" finished-at="2020-02-05T09:32:22Z">
+      <class name="com.tripmasters.framework.testScript.HomePageTestScript">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@61f8bee4]" name="setUp" is-config="true" duration-ms="25331" started-at="2020-02-05T15:01:36Z" finished-at="2020-02-05T15:02:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="dateChanging_TC_9()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@4f970963]" name="dateChanging_TC_9" duration-ms="59328" started-at="2020-02-05T09:07:11Z" finished-at="2020-02-05T09:08:11Z">
+        <test-method status="FAIL" signature="verifyMoreHighlightAndAttractionLinks_TC_11(java.lang.reflect.Method)[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@61f8bee4]" name="verifyMoreHighlightAndAttractionLinks_TC_11" duration-ms="20192" started-at="2020-02-05T15:02:01Z" finished-at="2020-02-05T15:02:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tripmasters.framework.testScript.HomePageTestScript.verifyMoreHighlightAndAttractionLinks_TC_11(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[contains(@id,'qArrDate')]"}
-  (Session info: chrome=79.0.3945.130)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='Explore Europe'])[1]"}
+  (Session info: chrome=79.0.3945.136)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'LAPTOP-2MH85CIV', ip: '192.168.43.170', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\pramo\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50397}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f7dd5c0dc6af2247f7c891809f3cf65
-*** Element info: {Using=xpath, value=//input[contains(@id,'qArrDate')]}]]>
+System info: host: 'LAPTOP-2MH85CIV', ip: '192.168.15.195', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromedriverExecutable: E:\Cdata\workspace\TripMast..., databaseEnabled: false, desired: {browserName: Chrome, chromedriverExecutable: E:\Cdata\workspace\TripMast..., deviceName: One Plus, platformName: android}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: GM1901, deviceName: f75b7d5c, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: f75b7d5c, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2054, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: f363d776-06a1-4c97-b4ae-07793428ae76
+*** Element info: {Using=xpath, value=(//a[text()='Explore Europe'])[1]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[contains(@id,'qArrDate')]"}
-  (Session info: chrome=79.0.3945.130)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='Explore Europe'])[1]"}
+  (Session info: chrome=79.0.3945.136)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'LAPTOP-2MH85CIV', ip: '192.168.43.170', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\pramo\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50397}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0f7dd5c0dc6af2247f7c891809f3cf65
-*** Element info: {Using=xpath, value=//input[contains(@id,'qArrDate')]}
+System info: host: 'LAPTOP-2MH85CIV', ip: '192.168.15.195', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromedriverExecutable: E:\Cdata\workspace\TripMast..., databaseEnabled: false, desired: {browserName: Chrome, chromedriverExecutable: E:\Cdata\workspace\TripMast..., deviceName: One Plus, platformName: android}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: GM1901, deviceName: f75b7d5c, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: f75b7d5c, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2054, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: f363d776-06a1-4c97-b4ae-07793428ae76
+*** Element info: {Using=xpath, value=(//a[text()='Explore Europe'])[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -64,15 +49,26 @@ Session ID: 0f7dd5c0dc6af2247f7c891809f3cf65
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
 	at com.tripmasters.framework.utils.CommonLib.ClickUsingJavaScript(CommonLib.java:139)
-	at com.tripmasters.framework.actions.BookingPageAction.ClickChangedArriveDate(BookingPageAction.java:170)
-	at com.tripmasters.framework.testScript.BookingPageTestScript.dateChanging_TC_9(BookingPageTestScript.java:267)
+	at com.tripmasters.framework.testScript.HomePageTestScript.verifyMoreHighlightAndAttractionLinks_TC_11(HomePageTestScript.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -103,9 +99,12 @@ Session ID: 0f7dd5c0dc6af2247f7c891809f3cf65
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dateChanging_TC_9 -->
->>>>>>> 54ac9c9c29430627d3fcbd46bedd58f12b4f3cad
-      </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
+        </test-method> <!-- verifyMoreHighlightAndAttractionLinks_TC_11 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@61f8bee4]" name="tearDown" is-config="true" duration-ms="235" started-at="2020-02-05T15:02:22Z" finished-at="2020-02-05T15:02:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

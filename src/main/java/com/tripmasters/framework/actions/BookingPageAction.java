@@ -22,14 +22,6 @@ public class BookingPageAction extends TestBase2{
 		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
 		SelectGuestDetails(guestInfo);
 	}
-	public static void FillBasicBookingDetails9(String leavingFrom,String destination,String stayingTime,String guestInfo) throws Exception{
-		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
-		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
-		SelectValueFromCalendar();
-		SelectStayingTime(stayingTime);
-		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
-		SelectGuestDetails(guestInfo);
-	}
 	
 	public static void SelectStayingTime(String stayingTime){
 		
