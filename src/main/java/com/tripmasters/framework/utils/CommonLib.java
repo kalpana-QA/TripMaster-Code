@@ -138,17 +138,19 @@ public class CommonLib extends TestBase2{
 	public static void ClickUsingJavaScript(By FieldElement){
 		WebElement element=driver.findElement(FieldElement);;
 		try {
+			highlightElement(element);
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", element);
 			Thread.sleep(4000);
 		} catch (Exception e) {
-			System.out.println("Unable to click on element");
+			System.out.println("Unable to click on element using Javascript Executor");
 		}
 	}
 	
 	public static String SelectOptionByValue(By element, String valueOfOption) {
 		WebElement selectField=driver.findElement(element);
 		try {
+			highlightElement(selectField);
 			Select option = new Select(selectField);
 			option.selectByValue(valueOfOption);
 			Thread.sleep(2000);
@@ -161,26 +163,29 @@ public class CommonLib extends TestBase2{
 	public static String SelectOptionByText(By element, String optionText) {
 		WebElement selectField=driver.findElement(element);
 		try {
+			highlightElement(selectField);
 			Select option = new Select(selectField);
 			option.selectByVisibleText(optionText);
 			Thread.sleep(2000);
 		} catch (Exception e) {
-			e.printStackTrace();
+			log.error("Unable to select element by text");
 		}
 		return optionText;
 	}
 	
 	public static void VerifyTravellerDetails(By element,List<String> expectedTravellerInfo){
-		List<String>actualTravellerInfo=new ArrayList<String>();
-		List<WebElement>tempList=driver.findElements(element);
-		for(WebElement list:tempList){
-			String text=list.getText();
-			actualTravellerInfo.add(text);
+		try {
+			List<String>actualTravellerInfo=new ArrayList<String>();
+			List<WebElement>tempList=driver.findElements(element);
+			for(WebElement list:tempList){
+				String text=list.getText();
+				actualTravellerInfo.add(text);
+			}
+			System.out.println("actual List:"+ actualTravellerInfo);
+			Assert.assertEquals(expectedTravellerInfo, actualTravellerInfo);
+		} catch (Exception e) {
+			log.error("Traveller Details are not same as expected");
 		}
-		System.out.println("actual List:"+ actualTravellerInfo);
-		Assert.assertEquals(expectedTravellerInfo, actualTravellerInfo);
-		
-     	//Assert.assertTrue(expectedTravellerInfo.contains(actualTravellerInfo));
 	}
 	
 	/**
@@ -191,18 +196,22 @@ public class CommonLib extends TestBase2{
 	 */
 
 	public static boolean isElementDisplayed(By element) {
+       try {
+    	   WebDriverWait wait = new WebDriverWait(driver, 20);
+   		WebElement waitElement = wait.until(ExpectedConditions.visibilityOf(driver.findElement((element))));
+   		highlightElement(waitElement);
+   		JavascriptExecutor executor = (JavascriptExecutor) driver;
+   		executor.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');",
+   				waitElement);
+   		waitElement.isDisplayed();
 
-		WebDriverWait wait = new WebDriverWait(driver, 20);
-		WebElement waitElement = wait.until(ExpectedConditions.visibilityOf(driver.findElement((element))));
-
-		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		executor.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');",
-				waitElement);
-		waitElement.isDisplayed();
-
-		return true;
-
+   		return true;
+		
+	} catch (Exception e) {
+		log.error("Element is not displayed");
+		return false;
 	}
+}
 	/**
 	 * 
 	 * Description :: To click a Element using HTML method Input Parameters ::
@@ -211,10 +220,15 @@ public class CommonLib extends TestBase2{
 	 */
 
 	public static void clickOnElement(By element) {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		WebElement waitElement = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(element)));
-		waitElement.click();
-	}
+	   try {
+		   WebDriverWait wait = new WebDriverWait(driver, 10);
+			WebElement waitElement = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(element)));
+			highlightElement(waitElement);
+			waitElement.click();
+	} catch (Exception e) {
+		log.error("Unable to click on element even after specified time");
+	}	
+}
 
 	public static String getPageTitle() {
 		return driver.getTitle();
@@ -223,6 +237,13 @@ public class CommonLib extends TestBase2{
 	public static WebElement getText(By element) {
 
 		WebElement text = driver.findElement(element);
+		try {
+			highlightElement(text);
+			
+		} catch (Exception e) {
+			
+			log.error("Unable to find element");
+		}
 		return text;
 		
 	}

@@ -3,9 +3,11 @@ package com.tripmasters.framework.utils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-public class Logs {
-	private Logger Log;
+import com.relevantcodes.extentreports.LogStatus;
 
+public class Logs {
+	private static Logger Log;
+	// static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(" ");
 	// Initialize Log4j logs
 	public Logs() {
 		Log = Logger.getLogger(Logs.class.getName());
@@ -44,11 +46,9 @@ public class Logs {
 
 	// Need to create these methods, so that they can be called
 
-	public void info(String message) {
-		
+	public static void info(String message) {
 		 Log.info(message);
-		
-
+		 //ExtentTestManager.getTest().log(LogStatus.INFO, message);
 	}
 
 	public void warn(String message) {

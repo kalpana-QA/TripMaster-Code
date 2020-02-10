@@ -35,11 +35,8 @@ public class TestBase2 {
 	private static Logs log = new Logs();
 
 	//GenerateReport gn;
-
-	
-	
 	//@BeforeClass
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	// @Parameters(value = { "browser" })
 	public void setUp() throws FileNotFoundException, IOException, ParseException {
 		//gn = new GenerateReport();
