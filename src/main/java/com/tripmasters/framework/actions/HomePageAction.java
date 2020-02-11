@@ -1,11 +1,10 @@
 package com.tripmasters.framework.actions;
 
-
-import com.tripmasters.framework.base.TestBase2;
+import com.tripmasters.framework.base.TestBase;
 import com.tripmasters.framework.pages.HomePageLocators;
 import com.tripmasters.framework.utils.CommonLib;
 
-public class HomePageAction extends TestBase2 {
+public class HomePageAction extends TestBase {
 	public static void clickSearch() {
 		CommonLib.ClickUsingJavaScript(HomePageLocators.getSearchBox());
 	}

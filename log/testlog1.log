@@ -1531,3 +1531,23 @@
 2020-02-11 12:42:22,764 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User fills all the 3 passenger details
 2020-02-11 12:42:29,521 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Flights & passenger details verified successfully on PaymentPage
 2020-02-11 12:42:29,524 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-11 13:54:22,789 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-11 13:54:29,200 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-11 13:54:44,432 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-11 13:55:18,045 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User select cheaper flight option
+2020-02-11 13:56:11,908 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-11 13:56:16,708 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-11 13:57:14,747 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-11 13:59:41,239 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-11 13:59:48,012 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-11 14:00:03,257 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-11 14:23:03,630 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-11 14:23:09,543 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL '+https://www.tripmasters.com+' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-11 14:23:24,776 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-11 14:23:57,419 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User select cheaper flight option
+2020-02-11 14:24:55,870 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User fills all the 3 passenger details
+2020-02-11 14:25:02,617 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Flights & passenger details verified successfully on PaymentPage
+2020-02-11 14:25:02,619 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-11 14:25:32,015 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-11 14:25:38,765 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL '+https://www.tripmasters.com+' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-11 14:25:59,746 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
