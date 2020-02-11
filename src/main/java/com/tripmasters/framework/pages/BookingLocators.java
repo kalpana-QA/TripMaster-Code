@@ -4,30 +4,19 @@ import org.openqa.selenium.By;
 
 public class BookingLocators {
 	private static By emailId = By.id("username");
-	private static By leavingTextbox = By.xpath("//input[@id='qLeaveNA']");
-	private static By goingToTextbox = By.xpath("//input[contains(@id,'qNACity')]");
-	private static By stayingDrpdown = By.xpath("//select[@id='qSTCity1']");
-	private static By selectGuestDrpdown = By.xpath("//select[@id='xiRoomsAndPax']");
+
 	private static By selectGuestRoomOptions = By.cssSelector("input[id='xcabinRoomPax']");
 	private static By selectGuestRoomOptionsDrpdown = By.cssSelector("div[id='dvpaxRoom']");
 
 	private static By optionListForGuestsAndRooms = By.cssSelector("div[id='dvpxroomlst'][style='display: block;']");
 	private static By doneButton = By.xpath("//div[@class='dvMdialogDone']/p[text()='Done']");
 
-	private static By selectChildDrpdown = By.xpath("//select[@id='xiChildren']");
-	private static By selectChildRoom2Drpdown = By.xpath("//select[@id='xRoom2_iChildren']");
-	private static By selectChildAgeRoom2Drpdown = By.xpath("//select[@id='xRoom2_iChild1']");
-
-	private static By selectAdultDrpdown = By.xpath("//select[@id='xiAdults']");
-	private static By selectAdultRoom2Drpdown = By.xpath("//select[@id='xRoom2_iAdults']");
-	public static By selectChildAgeDrpdown = By.xpath("//select[@id='xiChild1']");
-	private static By cheaperFlightsLink = By.xpath("//a[contains(.,'Find cheaper flights')]");
 	private static By selectFlightOption = By.xpath(
 			"(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/Select1.png')])[1] | (//a[@name='chkFlight'])[1]");
 
 	private static By selectbutton = By.xpath("//div/a[contains(text(),'Select')]");
 
-	private static By goingToTextboxSecond = By.xpath("//*[@id='qNACity2']");
+	// private static By goingToTextboxSecond = By.xpath("//*[@id='qNACity2']");
 	private static By addCityBtn = By.xpath("//span[contains(.,'Add City')] | //p[@id='pMaddcity']");
 	private static By noMoreCitiesBtn = By
 			.xpath("//span[contains(.,'No more cities. Continue')] | //span[@class = 'spMnextbutt']");
@@ -123,6 +112,29 @@ public class BookingLocators {
 	private static By pickCalendarData = By.xpath("//table[@class='ui-datepicker-calendar']//tbody//td");
 
 	private static By buildYourVacation_DropDown = By.xpath("//img[contains(@src,'createitinarary_')]/parent::p");
+
+	private static By leavingTextbox = By.xpath("//input[@id='qLeaveNA']");
+	private static By goingToTextbox = By.xpath("//input[contains(@id,'qNACity')]");
+	private static By stayingDrpdown = By.xpath("//select[@id='qSTCity1']");
+	private static By selectGuestDrpdown = By.xpath("//select[@id='xiRoomsAndPax']");
+	private static By selectChildDrpdown = By.xpath("//select[@id='xiChildren']");
+	private static By selectChildRoom2Drpdown = By.xpath("//select[@id='xRoom2_iChildren']");
+	private static By selectChildAgeRoom2Drpdown = By.xpath("//select[@id='xRoom2_iChild1']");
+
+	private static By selectAdultDrpdown = By.xpath("//select[@id='xiAdults']");
+	private static By selectAdultRoom2Drpdown = By.xpath("//select[@id='xRoom2_iAdults']");
+	public static By selectChildAgeDrpdown = By.xpath("//select[@id='xiChild1']");
+	private static By cheaperFlightsLink = By.xpath("//a[contains(.,'Find cheaper flights')]");
+	private static By goingToTextboxSecond = By.xpath("//*[@id='qNACity2']");
+
+	private static By arriveDateDropdown = By.xpath("//input[contains(@id,'qArrDate')]");
+	private static By arriveDateCalender = By.xpath("//table[@class='ui-datepicker-calendar']//tbody//td");
+
+	private static By cabinClassDropdown = By.xpath("//select[@id='qCabinOpt']");
+	private static By verifycabinClassDropdown = By.xpath("//select[@id='xCabin']");
+	private static By firstpremiumoption = By.xpath("//select[@id='qCabinOpt']//option[2]");
+	private static By verifypremiumoption = By.xpath("//select[@id='xCabin']//option[2]");
+	private static By tripSummaryButton = By.xpath("//span[text()='Trip Summary']");
 
 	/**
 	 * @return the emailId
@@ -383,6 +395,30 @@ public class BookingLocators {
 		return changedArriveDate;
 	}
 
+	public static By getArriveDateDropdown() {
+		return arriveDateDropdown;
+	}
+
+	public static By getArriveDateCalender() {
+		return arriveDateCalender;
+	}
+
+	public static By getCabinClassDropdown() {
+		return cabinClassDropdown;
+	}
+
+	public static By getVerifycabinClassDropdown() {
+		return verifycabinClassDropdown;
+	}
+
+	public static By getFirstpremiumOption() {
+		return firstpremiumoption;
+	}
+
+	public static By getSecondpremiumOption() {
+		return verifypremiumoption;
+	}
+
 	public static By getArriveDate() {
 		return arriveDate;
 	}
@@ -449,6 +485,10 @@ public class BookingLocators {
 
 	public static By getselectbutton() {
 		return selectbutton;
+	}
+
+	public static By getTripSummaryButton() {
+		return tripSummaryButton;
 	}
 
 }

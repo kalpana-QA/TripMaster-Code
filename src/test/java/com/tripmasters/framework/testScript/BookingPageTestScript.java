@@ -6,12 +6,12 @@ import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import com.tripmasters.framework.actions.BookingPageAction;
 import com.tripmasters.framework.actions.HomePageAction;
 import com.tripmasters.framework.actions.PassengerInfoPageAction;
 import com.tripmasters.framework.base.TestBase2;
 import com.tripmasters.framework.pages.BookingLocators;
-import com.tripmasters.framework.pages.HomePageLocators;
 import com.tripmasters.framework.utils.CommonLib;
 import com.tripmasters.framework.utils.ExtentTestManager;
 
@@ -195,25 +195,11 @@ public class BookingPageTestScript extends TestBase2 {
 
 	}
 
-	// @Test
-	public void dateChanging_TC_9() throws Exception
+	// @Test(priority=8)
+
+	public void withoutAirBookingForSingleCity_TC_19(Method method) throws Exception
 
 	{
-		BookingPageAction.SelectValueFromCalendar();
-		// BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ","Berlin
-		// (Germany)","6","1|2");
-		// BookingPageAction.SelectNumberOfAdult("1",BookingLocators.getselectAdultDrpdown());
-		// BookingPageAction.ClickonContinueButton();
-		// BookingPageAction.ClickChangedArriveDate();
-		// Assert.assertTrue(driver.findElement(BookingLocators.getChangedArriveDate()).isEnabled());
-		// BookingPageAction.SelectCheaperFlights();
-		// BookingPageAction.browseHotelsButton();
-		// BookingPageAction.browseSelectHotel();
-		// BookingPageAction.ClickonContinueLink();
-	}
-
-	// @Test(priority=11)
-	public void withoutAirBookingForSingleCity_TC_19(Method method) throws Exception {
 		ExtentTestManager.startTest(method.getName(), "withoutAirBookingForSingleCity_TC_19");
 		BookingPageAction.SelectWithoutAir();
 		BookingPageAction.FillBasicBookingDetails2("San Francisco (USA)", "5", "1|3");
@@ -225,7 +211,8 @@ public class BookingPageTestScript extends TestBase2 {
 
 	}
 
-	// @Test(priority=8)
+	// @Test(priority=9)
+
 	public void getWithoutAir_TC_20(Method method) throws Exception {
 		ExtentTestManager.startTest(method.getName(), "getWithoutAir");
 		BookingPageAction.getWithoutButton();
@@ -261,6 +248,48 @@ public class BookingPageTestScript extends TestBase2 {
 		BookingPageAction.ClickonContinueButton();
 		BookingPageAction.SelectCheaperFlights_Mob();
 		BookingPageAction.validateTripIncluisonPage();
+	}
+
+	// @Test(priority=11)
+	public void dateChanging_TC_18(Method method) throws Exception {
+		ExtentTestManager.startTest(method.getName(), "dateChanging_TC_18");
+		BookingPageAction.BookingDetailswithPremiumEcomomy("New York City (all Airports),  NY", "Delhi (India)",
+				"Premium Economy", "4", "1|1");
+		String actualcabin = BookingPageAction.selectedcabinAssert();
+		String expectedcabin = BookingPageAction.verifycabinAssert();
+		Assert.assertEquals(expectedcabin, actualcabin);
+		BookingPageAction.ClickonContinueButton();
+		BookingPageAction.SelectCheaperFlights();
+		BookingPageAction.ClicktoContinuePage();
+	}
+
+	@Test
+	public void verifySpotlightLink_TC_14(Method method) throws Exception {
+		ExtentTestManager.startTest(method.getName(), "verifySpotlightLink");
+		BookingPageAction.selectLatinAmericaLink();
+		BookingPageAction.verifyLatinAmericPage();
+	}
+
+	@Test
+	public void dateChanging_TC_9() throws Exception {
+		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ", "Berlin (Germany)", "12", "1|2");
+		BookingPageAction.SelectNumberOfAdult("2", BookingLocators.getselectAdultDrpdown());
+		BookingPageAction.ClickonContinueButton();
+		BookingPageAction.ClickChangedArriveDate();
+		BookingPageAction.OldArriveDate();
+		actualHotel = BookingPageAction.browseHotelsButton();
+		expectedHotel = BookingPageAction.browseSelectHotel();
+		Assert.assertEquals(actualHotel, expectedHotel);
+		BookingPageAction.ClickonContinueLink();
+		BookingPageAction.ClicktoContinuePage();
+		expectedFirstTravellerInfo = PassengerInfoPageAction.FillFirstTravellerDetails("Morris", "Leo", "Male",
+				"01/01/1992", "237|US");
+		expectedSecondTravellerInfo = PassengerInfoPageAction.FillSecondTravellerDetails("Shally", "Leo", "Male",
+				"01/01/1994", "237|US", "Adult");
+		BookingPageAction.ClicktoContinuePage();
+		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
+		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
+		BookingPageAction.TripSummary();
 	}
 
 }

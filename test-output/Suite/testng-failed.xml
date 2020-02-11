@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
-  <parameter name="browser" value="Chrome"/>
   <listeners>
     <listener class-name="com.tripmasters.framework.Listeners.TestListener"/>
     <listener class-name="com.tripmasters.framework.Listeners.AnnotationTransformer"/>
   </listeners>
   <test name="Test(failed)" parallel="methods">
-    <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="regression"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
+      <class name="com.tripmasters.framework.testScript.HomePageTestScript">
         <methods>
-          <include name="booking2Room2Adult2Child_TC_5" invocation-numbers="0"/>
-          <include name="getWithoutAir_TC_20" invocation-numbers="0"/>
-          <include name="bookingFlightAndHotelForSingleCity_TC_7" invocation-numbers="0"/>
-          <include name="withoutAirBookingForSingleCity_TC_19" invocation-numbers="0"/>
+          <include name="verifyMoreHighlightAndAttractionLinks_TC_11" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="bookingSingleRoomWith3Adults_TC_1" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="bookingFlightsWithmultipleCities_TC_6" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
+      </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

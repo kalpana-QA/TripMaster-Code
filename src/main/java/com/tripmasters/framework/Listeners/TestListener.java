@@ -7,6 +7,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.tripmasters.framework.base.TestBase2;
 import com.tripmasters.framework.utils.ExtentManager;
@@ -14,6 +15,8 @@ import com.tripmasters.framework.utils.ExtentTestManager;
 
 public class TestListener extends TestBase2 implements ITestListener {
 
+	   public static ExtentTest test;
+	   
 	private static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
     }

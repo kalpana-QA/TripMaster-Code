@@ -9,6 +9,7 @@ import org.testng.Assert;
 
 import com.tripmasters.framework.base.TestBase2;
 import com.tripmasters.framework.pages.BookingLocators;
+import com.tripmasters.framework.pages.HomePageLocators;
 import com.tripmasters.framework.utils.CommonLib;
 
 public class BookingPageAction extends TestBase2 {
@@ -17,9 +18,10 @@ public class BookingPageAction extends TestBase2 {
 			String guestInfo) throws Exception {
 		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
 		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+		SelectValueFromCalendar();
 		SelectStayingTime(stayingTime);
-		// CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
-		// SelectGuestDetails(guestInfo);
+		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+		SelectGuestDetails(guestInfo);
 	}
 
 	public static void SelectStayingTime(String stayingTime) {
@@ -77,7 +79,7 @@ public class BookingPageAction extends TestBase2 {
 
 	}
 
-	public static void SelectCheaperFlights_Mob() {
+	public static void SelectCheaperFlights_Mob() throws Exception {
 		CommonLib.isElementDisplayed(BookingLocators.getcheaperFlightsLink());
 		CommonLib.scrollDown();
 		CommonLib.ClickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
@@ -195,6 +197,8 @@ public class BookingPageAction extends TestBase2 {
 
 	public static void ClickChangedArriveDate() {
 		CommonLib.ClickUsingJavaScript(BookingLocators.getChangedArriveDate());
+		boolean expecteddate = driver.findElement(BookingLocators.getChangedArriveDate()).isEnabled();
+		Assert.assertTrue(expecteddate);
 	}
 
 	public static void fillBasicDetails(String leavefrom, String firstdestination, String stayingTime,
@@ -203,13 +207,10 @@ public class BookingPageAction extends TestBase2 {
 		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavefrom);
 		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), firstdestination);
 		SelectStayingTime(stayingTime);
-
 		CommonLib.ClickUsingJavaScript(BookingLocators.getaddCityBtn());
-
 		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextboxSecond(), seconddestination);
 		SelectStayingTimeTwo(seconddrop);
 		CommonLib.ClickUsingJavaScript(BookingLocators.getaddCityBtn());
-
 		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextboxThird(), thirddestination);
 		SelectStayingTimeThree(thirddrop);
 
@@ -229,12 +230,12 @@ public class BookingPageAction extends TestBase2 {
 		SelectGuestDetails(guestinfo);
 	}
 
-	public static void isremovecitydisplayed() {
+	public static boolean isremovecitydisplayed() {
 		boolean result = false;
 		if (driver.findElement(BookingLocators.getsecondremovecitylink()).isDisplayed()) {
 			result = true;
 		}
-		Assert.assertTrue(result);
+		return result;
 	}
 
 	public static void validateremovedcity() {
@@ -253,32 +254,78 @@ public class BookingPageAction extends TestBase2 {
 		CommonLib.SelectOptionByValue(BookingLocators.getstayingDrpdowntwo(), stayingTimeTwo);
 	}
 
-	public static void SelectStayingTimeThree(String stayingTimeThree) {
-
-		CommonLib.SelectOptionByValue(BookingLocators.getstayingDrpdownthree(), stayingTimeThree);
-	}
-
 	public static void SelectValueFromCalendar() {
-		CommonLib.clickOnElement(BookingLocators.getChangedArriveDate());
-		List<WebElement> columns = driver.findElements(BookingLocators.getpickCalendarData());
+		CommonLib.clickOnElement(BookingLocators.getArriveDateDropdown());
+		List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
 		for (WebElement cell : columns) {
 
-			if (cell.getText().equals("10")) {
-				cell.findElement(By.linkText("10")).click();
+			if (cell.getText().equals("3")) {
+				cell.findElement(By.linkText("3")).click();
 				break;
 			}
 		}
 	}
 
+	public static void BookingDetailswithPremiumEcomomy(String leavingFrom, String destination, String cabinclass,
+			String stayingTime, String guestInfo) throws Exception {
+		SelectCabinClass(cabinclass);
+		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
+		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+		SelectStayingTime(stayingTime);
+		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+		SelectGuestDetails(guestInfo);
+
+	}
+
+	public static void SelectCabinClass(String cabinclass) {
+		CommonLib.SelectOptionByText(BookingLocators.getCabinClassDropdown(), cabinclass);
+	}
+
+	public static String selectedcabinAssert() {
+
+		String selectedcabin = driver.findElement(BookingLocators.getFirstpremiumOption()).getText();
+		return selectedcabin;
+	}
+
+	public static String verifycabinAssert() {
+
+		String expectedcabin = driver.findElement(BookingLocators.getSecondpremiumOption()).getText();
+		return expectedcabin;
+	}
+
+	public static void selectLatinAmericaLink() {
+		CommonLib.ClickUsingJavaScript(HomePageLocators.getExploreLatinAmericaLnk());
+		boolean actuallink = (HomePageLocators.getHomePageTitle()).contains("Vacation Packages");
+		Assert.assertTrue(actuallink);
+	}
+
+	public static void verifyLatinAmericPage() {
+		boolean expectedlink = (HomePageLocators.getLatinAmericaPageTitle()).contains("Latin America Vacations");
+		Assert.assertTrue(expectedlink);
+	}
+
+	public static void OldArriveDate() {
+		boolean actualdate = driver.findElement(BookingLocators.getArriveDate()).isEnabled();
+		Assert.assertTrue(actualdate);
+	}
+
+	public static void TripSummary() {
+		CommonLib.ClickUsingJavaScript(BookingLocators.getTripSummaryButton());
+	}
+
 	public static void validateTripIncluisonPage() {
 		boolean flag = false;
 		if (driver.getTitle().contains("Itinerary - Review"))
-			// findElement(BookingLocators.getVerifyTripInclusionHeader()).isDisplayed()) {
 			flag = true;
 		else
 			flag = false;
 
 		Assert.assertTrue(flag);
+	}
+
+	public static void SelectStayingTimeThree(String stayingTimeThree) {
+
+		CommonLib.SelectOptionByValue(BookingLocators.getstayingDrpdownthree(), stayingTimeThree);
 	}
 
 	/**
