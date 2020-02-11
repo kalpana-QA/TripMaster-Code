@@ -1,5 +1,6 @@
 package com.tripmasters.framework.utils;
 
+import java.awt.Toolkit;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -10,30 +11,28 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
-
 import com.tripmasters.framework.base.TestBase2;
-import com.tripmasters.framework.pages.BookingLocators;
 
+import io.appium.java_client.PerformsTouchActions;
+import io.appium.java_client.TouchAction;
 import junit.framework.Assert;
 
-
-public class CommonLib extends TestBase2{
+public class CommonLib extends TestBase2 {
 
 	static Logs log;
 	private static WebElement element = null;
-	//public static WebDriver driver = null;
+	// public static WebDriver driver = null;
 	static String screenShotPath = "";
-	
+
 	public static WebElement FindElementByXpath(String xpath) throws Exception {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -46,7 +45,7 @@ public class CommonLib extends TestBase2{
 		}
 		return element;
 	}
-	
+
 	public static WebElement findElement(String locatorString, String typeOfLocator) {
 		try {
 			if (typeOfLocator.equalsIgnoreCase("xpath")) {
@@ -83,18 +82,17 @@ public class CommonLib extends TestBase2{
 		}
 		return element;
 	}
-	
+
 	public static void highlightElement(WebElement element) throws Exception {
 		try {
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("arguments[0].setAttribute('style', arguments[1]);", element,
 					"color: black; border: 2px solid red;");
 		} catch (Exception e) {
-			
+
 		}
 	}
 
-	
 	public static String TakeScreenShot() throws IOException {
 		Date date = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy-h-mm-ss");
@@ -105,29 +103,28 @@ public class CommonLib extends TestBase2{
 			FileUtils.copyFile(scrFile, new File(screenShotPath));
 			String base = System.getProperty("user.dir") + "/defectScreenShots";
 			screenShotPath = new File(base).toURI().relativize(new File(screenShotPath).toURI()).getPath();
-			
+
 		} catch (FileNotFoundException fnfe) {
 			log.info("In takeScreenShot " + fnfe.getMessage());
-			
+
 			log.info("File not found" + fnfe);
 		} catch (IOException e) {
 			log.info("In takeScreenShot " + e.getMessage());
-			
+
 		} catch (Exception e) {
 			log.info("In takeScreenShot " + e.getMessage());
-			
+
 		}
 		return screenShotPath;
 	}
-	
-	
-	public static String ClearAndSetValues(By FieldElement, String StringToBeEntered)throws Exception {
-		WebElement element=driver.findElement(FieldElement);
+
+	public static String ClearAndSetValues(By FieldElement, String StringToBeEntered) throws Exception {
+		WebElement element = driver.findElement(FieldElement);
 		try {
 			highlightElement(element);
 			element.clear();
-			//element.sendKeys(StringToBeEntered);
-			element.sendKeys(StringToBeEntered);//Keys.TAB);
+			// element.sendKeys(StringToBeEntered);
+			element.sendKeys(StringToBeEntered);// Keys.TAB);
 			Thread.sleep(3000);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -135,8 +132,8 @@ public class CommonLib extends TestBase2{
 		return StringToBeEntered;
 	}
 
-	public static void ClickUsingJavaScript(By FieldElement){
-		WebElement element=driver.findElement(FieldElement);;
+	public static void ClickUsingJavaScript(By FieldElement) {
+		WebElement element = driver.findElement(FieldElement);
 		try {
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", element);
@@ -145,9 +142,19 @@ public class CommonLib extends TestBase2{
 			System.out.println("Unable to click on element");
 		}
 	}
-	
+
+	public static void ClickUsingJavaScript(WebElement element) {
+		try {
+			JavascriptExecutor executor = (JavascriptExecutor) driver;
+			executor.executeScript("arguments[0].click();", element);
+			Thread.sleep(4000);
+		} catch (Exception e) {
+			System.out.println("Unable to click on element");
+		}
+	}
+
 	public static String SelectOptionByValue(By element, String valueOfOption) {
-		WebElement selectField=driver.findElement(element);
+		WebElement selectField = driver.findElement(element);
 		try {
 			Select option = new Select(selectField);
 			option.selectByValue(valueOfOption);
@@ -157,9 +164,9 @@ public class CommonLib extends TestBase2{
 		}
 		return valueOfOption;
 	}
-	
+
 	public static String SelectOptionByText(By element, String optionText) {
-		WebElement selectField=driver.findElement(element);
+		WebElement selectField = driver.findElement(element);
 		try {
 			Select option = new Select(selectField);
 			option.selectByVisibleText(optionText);
@@ -169,24 +176,24 @@ public class CommonLib extends TestBase2{
 		}
 		return optionText;
 	}
-	
-	public static void VerifyTravellerDetails(By element,List<String> expectedTravellerInfo){
-		List<String>actualTravellerInfo=new ArrayList<String>();
-		List<WebElement>tempList=driver.findElements(element);
-		for(WebElement list:tempList){
-			String text=list.getText();
+
+	public static void VerifyTravellerDetails(By element, List<String> expectedTravellerInfo) {
+		List<String> actualTravellerInfo = new ArrayList<String>();
+		List<WebElement> tempList = driver.findElements(element);
+		for (WebElement list : tempList) {
+			String text = list.getText();
 			actualTravellerInfo.add(text);
 		}
-		System.out.println("actual List:"+ actualTravellerInfo);
+		System.out.println("actual List:" + actualTravellerInfo);
 		Assert.assertEquals(expectedTravellerInfo, actualTravellerInfo);
-		
-     	//Assert.assertTrue(expectedTravellerInfo.contains(actualTravellerInfo));
+
+		// Assert.assertTrue(expectedTravellerInfo.contains(actualTravellerInfo));
 	}
-	
+
 	/**
 	 * 
-	 * Description :: object is present or not :: Input Parameters : String
-	 * String Return Type:: Void
+	 * Description :: object is present or not :: Input Parameters : String String
+	 * Return Type:: Void
 	 * 
 	 */
 
@@ -203,10 +210,11 @@ public class CommonLib extends TestBase2{
 		return true;
 
 	}
+
 	/**
 	 * 
-	 * Description :: To click a Element using HTML method Input Parameters ::
-	 * Input Parameters : String String Return Type:: Void
+	 * Description :: To click a Element using HTML method Input Parameters :: Input
+	 * Parameters : String String Return Type:: Void
 	 * 
 	 */
 
@@ -224,6 +232,20 @@ public class CommonLib extends TestBase2{
 
 		WebElement text = driver.findElement(element);
 		return text;
-		
+
 	}
+
+	/** Scroll page down 250 pixel */
+	public static void scrollDown() {
+		try {
+			Thread.sleep(3000);
+			java.awt.Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
+			jse.executeScript("window.scrollBy(0," + screenSize.height + ")", "");
+			System.out.println("scrolled down");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
 }

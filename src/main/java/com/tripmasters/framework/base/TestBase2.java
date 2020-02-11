@@ -33,6 +33,7 @@ public class TestBase2 {
 	private URL url;
 	private boolean flag = false;
 	private static Logs log = new Logs();
+	protected static String platform;
 
 	//GenerateReport gn;
 
@@ -43,7 +44,7 @@ public class TestBase2 {
 	// @Parameters(value = { "browser" })
 	public void setUp() throws FileNotFoundException, IOException, ParseException {
 		//gn = new GenerateReport();
-		String platform = JsonDataReader.getJSONData("Platform");
+		 platform = JsonDataReader.getJSONData("Platform");
 		String browser = JsonDataReader.getJSONData("Browser");
 		try {
 			switch (platform) {
@@ -77,6 +78,7 @@ public class TestBase2 {
 					System.out.println("chromeDriverFilePath : "+chromeDriverFilePath);
 					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
 					capabilities.setCapability("platformName", "Android");
+					capabilities.setCapability("platformVersion", "9");
 					capabilities.setCapability("deviceName", "One Plus");
 					capabilities.setCapability("browserName", "Chrome");
 
@@ -183,7 +185,7 @@ public class TestBase2 {
 		//GenerateReport2.getResult(null);
 		if(driver != null){
 			log.info("Closing browser after TestClass");
-            driver.close();
+//            driver.close();
         }else{
         	log.error("Driver is null at AfterClass (TestBase)");
         }
