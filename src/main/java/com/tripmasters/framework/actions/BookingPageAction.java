@@ -1,6 +1,10 @@
 package com.tripmasters.framework.actions;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -231,11 +235,11 @@ public class BookingPageAction extends TestBase2{
 
 	    public static void SelectValueFromCalendar(){
 	    	CommonLib.clickOnElement(BookingLocators.getArriveDateDropdown());
+	    	String newDate=CommonLib.selectNewDateFromCalendar();
 	    	List<WebElement> columns=driver.findElements(BookingLocators.getArriveDateCalender());
 	    	for (WebElement cell: columns){
-	    	  
-	    	   if (cell.getText().equals("3")){
-	    	      cell.findElement(By.linkText("3")).click();
+	    	   if (cell.getText().equals(newDate)){
+	    	      cell.findElement(By.linkText(newDate)).click();
 	    	      break;
 	    	 }
 	    }	    	
