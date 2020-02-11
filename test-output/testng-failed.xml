@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
-  <listeners>
-    <listener class-name="com.tripmasters.framework.Listeners.TestListener"/>
-    <listener class-name="com.tripmasters.framework.Listeners.AnnotationTransformer"/>
-  </listeners>
-  <test name="Test">
-    <groups>
-      <run>
-        <include name="smoke"/>
-        <include name="regression"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
     <classes>
-      <class name="com.tripmasters.framework.testScript.HomePageTestScript"/>
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test -->
+</suite> <!-- Failed suite [Default suite] -->

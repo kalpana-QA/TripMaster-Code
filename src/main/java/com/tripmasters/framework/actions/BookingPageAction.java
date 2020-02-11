@@ -11,14 +11,17 @@ import com.tripmasters.framework.base.TestBase;
 import com.tripmasters.framework.pages.BookingLocators;
 import com.tripmasters.framework.pages.HomePageLocators;
 import com.tripmasters.framework.utils.CommonLib;
+import com.tripmasters.framework.utils.Logs;
 
 public class BookingPageAction extends TestBase {
 	
-
+	static Logs log = new Logs();
 	public static void FillBasicBookingDetails(String leavingFrom, String destination, String stayingTime,
 			String guestInfo) throws Exception {
 		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
+		log.info("User entered '"+leavingFrom+"' into leaving from feild");
 		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+		log.info("User entered '"+destination+"' into Going to from feild");
 		SelectValueFromCalendar();
 		SelectStayingTime(stayingTime);
 		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());

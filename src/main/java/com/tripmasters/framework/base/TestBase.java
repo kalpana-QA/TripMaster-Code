@@ -42,9 +42,9 @@ public class TestBase {
 			switch (platform) {
 			case "Windows":
 				if (browser.equalsIgnoreCase(("Chrome"))) {
-					// System.setProperty("webdriver.chrome.driver",
-					// chromeDriverFilePath);
-					WebDriverManager.chromedriver().setup();
+					 System.setProperty("webdriver.chrome.driver",
+					 chromeDriverFilePath);
+					//WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver();
 					driver.manage().window().maximize();
 					log.info("ChromeDriver instantiated for " + platform + " platform.");
@@ -117,7 +117,7 @@ public class TestBase {
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				String url = JsonDataReader.getJSONData("URL");
 				driver.get(url);
-				log.info("The given URL '+" + url + "+' launch successfully for " + platform + " platform and "
+				log.info("The given URL '" + url + "' launch successfully for " + platform + " platform and "
 						+ browser + " browser!!!!!!!!!!!!");
 				int time = (int) System.nanoTime();
 				System.out.println("nano time is: " + time);

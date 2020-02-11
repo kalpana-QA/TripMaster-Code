@@ -1,244 +1,28 @@
-2020-02-10 11:50:31,882 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 11:50:39,453 - com.tripmasters.framework.utils.Logs -INFO - User clicked on Explore Europe Link
-2020-02-10 11:50:47,498 - com.tripmasters.framework.utils.Logs -INFO - User clicked on particular vacation package
-2020-02-10 11:50:47,658 - com.tripmasters.framework.utils.Logs -INFO - Verified User is redirected  to the particular vacation packages
-2020-02-10 11:50:47,660 - com.tripmasters.framework.utils.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-02-10 11:50:47,662 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 12:31:59,650 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 12:32:00,283 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 12:36:24,793 -   -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 12:36:25,337 -   -INFO - Closing browser after TestClass
-2020-02-10 12:36:59,971 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 12:37:00,520 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 12:42:26,919 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 12:42:33,133 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 12:42:49,418 - com.tripmasters.framework.utils.Logs -INFO - User clicked on particular vacation package
-2020-02-10 12:42:49,525 - com.tripmasters.framework.utils.Logs -INFO - Verified User is redirected  to the particular vacation packages
-2020-02-10 12:42:49,528 - com.tripmasters.framework.utils.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-02-10 12:42:49,533 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 12:46:34,165 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 12:46:40,269 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 12:46:56,562 - com.tripmasters.framework.utils.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-02-10 12:46:56,563 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 12:51:34,584 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 12:51:39,896 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 12:51:56,003 - com.tripmasters.framework.utils.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-02-10 12:51:56,007 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 13:15:02,461 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 13:15:08,248 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 13:15:12,630 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 13:15:25,904 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 13:15:32,088 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 13:15:40,487 - com.tripmasters.framework.utils.Logs -INFO - User clicked on Explore Europe Link
-2020-02-10 13:15:40,488 - com.tripmasters.framework.utils.Logs -INFO - User clicked on particular vacation package
-2020-02-10 13:16:01,368 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 13:53:32,869 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 13:53:38,536 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 13:53:43,003 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 13:53:56,390 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 13:54:01,239 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 13:54:09,305 - com.tripmasters.framework.utils.Logs -INFO - User clicked on Explore Europe Link
-2020-02-10 13:54:09,305 - com.tripmasters.framework.utils.Logs -INFO - User clicked on particular vacation package
-2020-02-10 13:54:30,285 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 15:07:25,932 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 15:07:31,236 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 15:07:35,777 - com.tripmasters.framework.utils.Logs -INFO - Home Page Title Verified.
-2020-02-10 15:07:35,777 - com.tripmasters.framework.utils.Logs -INFO - The Amazon Link is displayed.
-2020-02-10 15:07:35,777 - com.tripmasters.framework.utils.Logs -INFO - Best Of Middle East Link is displayed.
-2020-02-10 15:07:35,777 - com.tripmasters.framework.utils.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-02-10 15:07:35,777 - com.tripmasters.framework.utils.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
-2020-02-10 15:07:35,779 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 15:07:49,181 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 15:07:54,044 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 15:08:01,857 - com.tripmasters.framework.utils.Logs -INFO - User clicked on Explore Europe Link
-2020-02-10 15:08:01,857 - com.tripmasters.framework.utils.Logs -INFO - User clicked on particular vacation package
-2020-02-10 15:08:22,924 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 15:50:12,852 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 15:50:20,230 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 15:50:30,061 - com.tripmasters.framework.utils.Logs -INFO - User clicked on Explore Europe Link
-2020-02-10 15:50:30,062 - com.tripmasters.framework.utils.Logs -INFO - User clicked on particular vacation package
-2020-02-10 15:50:50,135 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 15:51:03,528 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 15:51:09,810 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 15:51:14,131 - com.tripmasters.framework.utils.Logs -INFO - Home Page Title Verified.
-2020-02-10 15:51:14,131 - com.tripmasters.framework.utils.Logs -INFO - The Amazon Link is displayed.
-2020-02-10 15:51:14,132 - com.tripmasters.framework.utils.Logs -INFO - Best Of Middle East Link is displayed.
-2020-02-10 15:51:14,132 - com.tripmasters.framework.utils.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-02-10 15:51:14,132 - com.tripmasters.framework.utils.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
-2020-02-10 15:51:14,133 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 16:11:22,184 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 16:11:29,600 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 16:11:34,085 - com.tripmasters.framework.utils.Logs -INFO - Home Page Title Verified.
-2020-02-10 16:11:34,085 - com.tripmasters.framework.utils.Logs -INFO - The Amazon Link is displayed.
-2020-02-10 16:11:34,085 - com.tripmasters.framework.utils.Logs -INFO - Best Of Middle East Link is displayed.
-2020-02-10 16:11:34,085 - com.tripmasters.framework.utils.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-02-10 16:11:34,086 - com.tripmasters.framework.utils.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
-2020-02-10 16:11:34,087 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 16:15:42,649 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 16:19:33,893 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 16:19:41,635 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 16:19:46,204 - com.tripmasters.framework.utils.Logs -INFO - Home Page Title Verified.
-2020-02-10 16:19:46,205 - com.tripmasters.framework.utils.Logs -INFO - The Amazon Link is displayed.
-2020-02-10 16:19:46,205 - com.tripmasters.framework.utils.Logs -INFO - Best Of Middle East Link is displayed.
-2020-02-10 16:19:46,206 - com.tripmasters.framework.utils.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-02-10 16:19:46,207 - com.tripmasters.framework.utils.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
-2020-02-10 16:19:46,211 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 16:48:35,781 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 16:48:41,194 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 16:48:45,677 - com.tripmasters.framework.utils.Logs -INFO - Home Page Title Verified.
-2020-02-10 16:48:45,678 - com.tripmasters.framework.utils.Logs -INFO - The Amazon Link is displayed.
-2020-02-10 16:48:45,678 - com.tripmasters.framework.utils.Logs -INFO - Best Of Middle East Link is displayed.
-2020-02-10 16:48:45,678 - com.tripmasters.framework.utils.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-02-10 16:48:45,678 - com.tripmasters.framework.utils.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
-2020-02-10 16:48:45,680 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 16:54:02,854 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 16:54:09,450 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 16:54:18,086 - com.tripmasters.framework.utils.Logs -INFO - User clicked on Explore Europe Link
-2020-02-10 16:54:18,088 - com.tripmasters.framework.utils.Logs -INFO - User clicked on particular vacation package
-2020-02-10 16:54:39,060 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 16:55:13,124 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 16:55:18,843 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 16:55:26,643 - com.tripmasters.framework.utils.Logs -INFO - User clicked on Explore Europe Link
-2020-02-10 16:55:34,488 - com.tripmasters.framework.utils.Logs -INFO - User clicked on particular vacation package
-2020-02-10 16:55:34,940 - com.tripmasters.framework.utils.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-02-10 16:55:34,942 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 17:10:07,782 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 17:10:12,936 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 17:10:23,538 - com.tripmasters.framework.utils.Logs -INFO - User clicked on Explore Europe Link
-2020-02-10 17:10:31,277 - com.tripmasters.framework.utils.Logs -INFO - User clicked on particular vacation package
-2020-02-10 17:10:31,494 - com.tripmasters.framework.utils.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-02-10 17:10:31,497 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 17:51:58,912 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 17:52:05,292 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 17:52:09,837 - com.tripmasters.framework.utils.Logs -INFO - Home Page Title Verified.
-2020-02-10 17:52:09,837 - com.tripmasters.framework.utils.Logs -INFO - The Amazon Link is displayed.
-2020-02-10 17:52:09,837 - com.tripmasters.framework.utils.Logs -INFO - Best Of Middle East Link is displayed.
-2020-02-10 17:52:09,837 - com.tripmasters.framework.utils.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-02-10 17:52:09,838 - com.tripmasters.framework.utils.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
-2020-02-10 17:52:09,839 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 17:52:23,192 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 17:52:30,010 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 17:52:39,963 - com.tripmasters.framework.utils.Logs -INFO - User clicked on Explore Europe Link
-2020-02-10 17:52:49,462 - com.tripmasters.framework.utils.Logs -INFO - User clicked on particular vacation package
-2020-02-10 17:52:49,550 - com.tripmasters.framework.utils.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-02-10 17:52:49,551 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 17:55:05,825 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 17:55:11,947 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 17:55:16,453 - com.tripmasters.framework.utils.Logs -INFO - Home Page Title Verified.
-2020-02-10 17:55:16,453 - com.tripmasters.framework.utils.Logs -INFO - The Amazon Link is displayed.
-2020-02-10 17:55:16,454 - com.tripmasters.framework.utils.Logs -INFO - Best Of Middle East Link is displayed.
-2020-02-10 17:55:16,454 - com.tripmasters.framework.utils.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-02-10 17:55:16,454 - com.tripmasters.framework.utils.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
-2020-02-10 17:55:16,455 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 17:56:53,153 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 17:56:53,153 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 17:56:59,953 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 17:57:02,547 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 17:57:11,939 - com.tripmasters.framework.utils.Logs -INFO - User clicked on Explore Europe Link
-2020-02-10 17:57:28,978 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 17:57:37,834 - com.tripmasters.framework.utils.Logs -INFO - User clicked on particular vacation package
-2020-02-10 17:58:03,710 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 17:58:11,139 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 17:58:15,672 - com.tripmasters.framework.utils.Logs -INFO - Home Page Title Verified.
-2020-02-10 17:58:15,672 - com.tripmasters.framework.utils.Logs -INFO - The Amazon Link is displayed.
-2020-02-10 17:58:15,672 - com.tripmasters.framework.utils.Logs -INFO - Best Of Middle East Link is displayed.
-2020-02-10 17:58:15,672 - com.tripmasters.framework.utils.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-02-10 17:58:15,673 - com.tripmasters.framework.utils.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
-2020-02-10 17:58:15,674 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-10 17:58:29,209 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-10 17:58:35,113 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-10 17:58:43,864 - com.tripmasters.framework.utils.Logs -INFO - User clicked on Explore Europe Link
-2020-02-10 17:58:52,406 - com.tripmasters.framework.utils.Logs -INFO - User clicked on particular vacation package
-2020-02-10 17:58:52,498 - com.tripmasters.framework.utils.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-02-10 17:58:52,500 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-11 10:31:39,587 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 10:31:39,587 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 10:31:48,319 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 10:31:51,630 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 10:31:56,436 - com.tripmasters.framework.utils.Logs -INFO - Home Page Title Verified.
-2020-02-11 10:31:56,437 - com.tripmasters.framework.utils.Logs -INFO - The Amazon Link is displayed.
-2020-02-11 10:31:56,437 - com.tripmasters.framework.utils.Logs -INFO - Best Of Middle East Link is displayed.
-2020-02-11 10:31:56,437 - com.tripmasters.framework.utils.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-02-11 10:31:56,437 - com.tripmasters.framework.utils.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
-2020-02-11 10:31:56,438 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-11 10:32:06,075 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 10:32:12,242 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 10:32:21,637 - com.tripmasters.framework.utils.Logs -INFO - User clicked on Explore Europe Link
-2020-02-11 10:32:32,970 - com.tripmasters.framework.utils.Logs -INFO - User clicked on particular vacation package
-2020-02-11 10:32:33,888 - com.tripmasters.framework.utils.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-02-11 10:32:33,890 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-11 10:32:55,842 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 10:33:03,157 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 10:33:07,908 - com.tripmasters.framework.utils.Logs -INFO - Home Page Title Verified.
-2020-02-11 10:33:07,909 - com.tripmasters.framework.utils.Logs -INFO - The Amazon Link is displayed.
-2020-02-11 10:33:07,909 - com.tripmasters.framework.utils.Logs -INFO - Best Of Middle East Link is displayed.
-2020-02-11 10:33:07,910 - com.tripmasters.framework.utils.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-02-11 10:33:07,910 - com.tripmasters.framework.utils.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
-2020-02-11 10:33:07,913 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-11 10:33:21,305 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 10:33:27,252 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 10:33:36,162 - com.tripmasters.framework.utils.Logs -INFO - User clicked on Explore Europe Link
-2020-02-11 10:33:42,613 - com.tripmasters.framework.utils.Logs -INFO - User clicked on particular vacation package
-2020-02-11 10:33:42,863 - com.tripmasters.framework.utils.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-02-11 10:33:42,867 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-11 10:33:52,413 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 10:33:58,560 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 10:35:11,243 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-11 10:46:03,336 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 10:46:09,758 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 10:47:07,893 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-11 10:56:22,292 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 10:56:28,538 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 10:57:39,145 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 10:57:45,584 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 10:58:50,194 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 10:58:56,872 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 10:59:47,891 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-11 11:00:06,221 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-11 11:10:53,717 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 11:10:59,387 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 11:12:56,874 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-11 11:16:22,643 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 11:16:29,087 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 11:17:41,346 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-11 11:18:39,025 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 11:18:48,408 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 11:19:58,883 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-11 11:20:24,652 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 11:20:34,138 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 11:22:32,834 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-11 11:23:58,360 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 11:24:05,679 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 11:26:02,888 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-11 11:28:02,240 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 11:28:10,018 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 11:30:18,258 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 11:30:28,345 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 11:32:24,049 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-11 12:40:28,396 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 12:40:35,347 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 12:40:50,833 - com.tripmasters.framework.utils.Logs -INFO - Booking details Source & Destination filled successfully for 3 Adults_4nights
-2020-02-11 12:41:23,440 - com.tripmasters.framework.utils.Logs -INFO - User select cheaper flight option
-2020-02-11 12:42:22,764 - com.tripmasters.framework.utils.Logs -INFO - User fills all the 3 passenger details
-2020-02-11 12:42:29,521 - com.tripmasters.framework.utils.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-02-11 12:42:29,524 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-11 13:54:22,789 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 13:54:29,200 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 13:54:44,432 - com.tripmasters.framework.utils.Logs -INFO - Booking details Source & Destination filled successfully for 3 Adults_4nights
-2020-02-11 13:55:18,045 - com.tripmasters.framework.utils.Logs -INFO - User select cheaper flight option
-2020-02-11 13:56:11,908 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 13:56:16,708 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 13:57:14,747 - com.tripmasters.framework.utils.Logs -INFO - Booking details Source & Destination filled successfully for 3 Adults_4nights
-2020-02-11 13:59:41,239 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 13:59:48,012 - com.tripmasters.framework.utils.Logs -INFO - The given URL launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 14:00:03,257 - com.tripmasters.framework.utils.Logs -INFO - Booking details Source & Destination filled successfully for 3 Adults_4nights
-2020-02-11 14:23:03,630 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 14:23:09,543 - com.tripmasters.framework.utils.Logs -INFO - The given URL '+https://www.tripmasters.com+' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 14:23:24,776 - com.tripmasters.framework.utils.Logs -INFO - Booking details Source & Destination filled successfully for 3 Adults_4nights
-2020-02-11 14:23:57,419 - com.tripmasters.framework.utils.Logs -INFO - User select cheaper flight option
-2020-02-11 14:24:55,870 - com.tripmasters.framework.utils.Logs -INFO - User fills all the 3 passenger details
-2020-02-11 14:25:02,617 - com.tripmasters.framework.utils.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-02-11 14:25:02,619 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
-2020-02-11 14:25:32,015 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-02-11 14:25:38,765 - com.tripmasters.framework.utils.Logs -INFO - The given URL '+https://www.tripmasters.com+' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
-2020-02-11 14:25:59,746 - com.tripmasters.framework.utils.Logs -INFO - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-11 15:34:08,800 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-11 15:34:14,229 - com.tripmasters.framework.utils.Logs -INFO - The given URL '+https://www.tripmasters.com+' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-11 15:34:24,935 - com.tripmasters.framework.utils.Logs -INFO - User entered <b>'New York  La Guardia, NY'</b> into leaving from feild
+2020-02-11 15:34:28,134 - com.tripmasters.framework.utils.Logs -INFO - User entered 'Berlin (Germany)' into Going to from feild
+2020-02-11 15:34:36,934 - com.tripmasters.framework.utils.Logs -INFO - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-11 15:35:09,459 - com.tripmasters.framework.utils.Logs -INFO - User select cheaper flight option
+2020-02-11 15:35:51,247 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-11 15:35:57,227 - com.tripmasters.framework.utils.Logs -INFO - The given URL '+https://www.tripmasters.com+' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-11 15:36:00,531 - com.tripmasters.framework.utils.Logs -INFO - User entered <b>'New York  La Guardia, NY'</b> into leaving from feild
+2020-02-11 15:36:03,690 - com.tripmasters.framework.utils.Logs -INFO - User entered 'Berlin (Germany)' into Going to from feild
+2020-02-11 15:36:12,674 - com.tripmasters.framework.utils.Logs -INFO - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-11 15:36:46,797 - com.tripmasters.framework.utils.Logs -INFO - User select cheaper flight option
+2020-02-11 15:37:51,824 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-11 15:37:56,771 - com.tripmasters.framework.utils.Logs -INFO - The given URL '+https://www.tripmasters.com+' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-11 15:38:00,068 - com.tripmasters.framework.utils.Logs -INFO - User entered <b>'New York  La Guardia, NY'</b> into leaving from feild
+2020-02-11 15:38:03,223 - com.tripmasters.framework.utils.Logs -INFO - User entered 'Berlin (Germany)' into Going to from feild
+2020-02-11 15:38:11,962 - com.tripmasters.framework.utils.Logs -INFO - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-11 15:38:44,644 - com.tripmasters.framework.utils.Logs -INFO - User select cheaper flight option
+2020-02-11 15:39:18,542 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass
+2020-02-11 15:50:51,870 - com.tripmasters.framework.utils.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-11 15:50:57,729 - com.tripmasters.framework.utils.Logs -INFO - The given URL '+https://www.tripmasters.com+' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-11 15:51:06,182 - com.tripmasters.framework.utils.Logs -INFO - User entered 'New York  La Guardia, NY' into leaving from feild
+2020-02-11 15:51:09,401 - com.tripmasters.framework.utils.Logs -INFO - User entered 'Berlin (Germany)' into Going to from feild
+2020-02-11 15:51:18,438 - com.tripmasters.framework.utils.Logs -INFO - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-11 15:55:40,554 - com.tripmasters.framework.utils.Logs -INFO - User select cheaper flight option
+2020-02-11 15:57:28,403 - com.tripmasters.framework.utils.Logs -INFO - User fills all the 3 passenger details
+2020-02-11 15:57:46,950 - com.tripmasters.framework.utils.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-02-11 15:57:46,952 - com.tripmasters.framework.utils.Logs -INFO - Closing browser after TestClass

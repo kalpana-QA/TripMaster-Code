@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="125891" started-at="2020-02-11T08:52:59Z" finished-at="2020-02-11T08:55:04Z">
+  <suite name="Default suite" duration-ms="422507" started-at="2020-02-11T10:20:46Z" finished-at="2020-02-11T10:27:49Z">
     <groups>
       <group name="smoke">
-        <method signature="BookingPageTestScript.bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.BookingPageTestScript@50c87b21]" name="bookingSingleRoomWithThreeAdults_TC_1" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
+        <method signature="BookingPageTestScript.bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.BookingPageTestScript@6f96c77]" name="bookingSingleRoomWithThreeAdults_TC_1" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Test" duration-ms="125891" started-at="2020-02-11T08:52:59Z" finished-at="2020-02-11T08:55:04Z">
+    <test name="Default test" duration-ms="422507" started-at="2020-02-11T10:20:46Z" finished-at="2020-02-11T10:27:49Z">
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@50c87b21]" name="setUp" is-config="true" duration-ms="10461" started-at="2020-02-11T14:22:59Z" finished-at="2020-02-11T14:23:09Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@6f96c77]" name="setUp" is-config="true" duration-ms="11008" started-at="2020-02-11T15:50:46Z" finished-at="2020-02-11T15:50:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.BookingPageTestScript@50c87b21]" name="bookingSingleRoomWithThreeAdults_TC_1" duration-ms="113074" started-at="2020-02-11T14:23:09Z" finished-at="2020-02-11T14:25:02Z">
+        <test-method status="PASS" signature="bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.BookingPageTestScript@6f96c77]" name="bookingSingleRoomWithThreeAdults_TC_1" duration-ms="409221" started-at="2020-02-11T15:50:57Z" finished-at="2020-02-11T15:57:46Z">
           <params>
             <param index="0">
               <value>
@@ -25,11 +25,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookingSingleRoomWithThreeAdults_TC_1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@50c87b21]" name="tearDown" is-config="true" duration-ms="2342" started-at="2020-02-11T14:25:02Z" finished-at="2020-02-11T14:25:04Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@6f96c77]" name="tearDown" is-config="true" duration-ms="2263" started-at="2020-02-11T15:57:46Z" finished-at="2020-02-11T15:57:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

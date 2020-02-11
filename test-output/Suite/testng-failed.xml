@@ -17,4 +17,21 @@
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript"/>
     </classes>
   </test> <!-- Test -->
+  <test name="Test(failed)" parallel="methods">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
+        <methods>
+          <include name="bookingSingleRoomWithThreeAdults_TC_1" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
