@@ -13,13 +13,13 @@
       </run>
     </groups>
     <classes>
-      <class name="com.tripmasters.framework.testScript.HomePageTestScript">
+      <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
-          <include name="verifyMoreHighlightAndAttractionLinks_TC_11" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="bookingSingleRoomWith3Adults_TC_1" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
+      </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

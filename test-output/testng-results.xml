@@ -1,57 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="62878" started-at="2020-02-10T12:27:53Z" finished-at="2020-02-10T12:28:56Z">
+  <suite name="Suite" duration-ms="136406" started-at="2020-02-11T07:10:17Z" finished-at="2020-02-11T07:12:33Z">
     <groups>
-      <group name="regression">
-        <method signature="HomePageTestScript.verifyOtherVacationPackages_TC_12(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.HomePageTestScript@3701eaf6]" name="verifyOtherVacationPackages_TC_12" class="com.tripmasters.framework.testScript.HomePageTestScript"/>
-      </group> <!-- regression -->
       <group name="smoke">
-        <method signature="HomePageTestScript.verifyMoreHighlightAndAttractionLinks_TC_11(java.lang.reflect.Method)[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@3701eaf6]" name="verifyMoreHighlightAndAttractionLinks_TC_11" class="com.tripmasters.framework.testScript.HomePageTestScript"/>
+        <method signature="BookingPageTestScript.bookingSingleRoomWith3Adults_TC_1(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.BookingPageTestScript@627551fb]" name="bookingSingleRoomWith3Adults_TC_1" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Test" duration-ms="62878" started-at="2020-02-10T12:27:53Z" finished-at="2020-02-10T12:28:56Z">
-      <class name="com.tripmasters.framework.testScript.HomePageTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@3701eaf6]" name="setUp" is-config="true" duration-ms="17426" started-at="2020-02-10T17:57:53Z" finished-at="2020-02-10T17:58:11Z">
+    <test name="Test" duration-ms="136406" started-at="2020-02-11T07:10:17Z" finished-at="2020-02-11T07:12:33Z">
+      <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@627551fb]" name="setUp" is-config="true" duration-ms="17870" started-at="2020-02-11T12:40:17Z" finished-at="2020-02-11T12:40:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyMoreHighlightAndAttractionLinks_TC_11(java.lang.reflect.Method)[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@3701eaf6]" name="verifyMoreHighlightAndAttractionLinks_TC_11" duration-ms="4534" started-at="2020-02-10T17:58:11Z" finished-at="2020-02-10T17:58:15Z">
+        <test-method status="PASS" signature="bookingSingleRoomWith3Adults_TC_1(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.BookingPageTestScript@627551fb]" name="bookingSingleRoomWith3Adults_TC_1" duration-ms="114173" started-at="2020-02-11T12:40:35Z" finished-at="2020-02-11T12:42:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.tripmasters.framework.testScript.HomePageTestScript.verifyMoreHighlightAndAttractionLinks_TC_11(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomWith3Adults_TC_1(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMoreHighlightAndAttractionLinks_TC_11 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@3701eaf6]" name="tearDown" is-config="true" duration-ms="4320" started-at="2020-02-10T17:58:15Z" finished-at="2020-02-10T17:58:19Z">
+        </test-method> <!-- bookingSingleRoomWith3Adults_TC_1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@627551fb]" name="tearDown" is-config="true" duration-ms="4337" started-at="2020-02-11T12:42:29Z" finished-at="2020-02-11T12:42:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@3701eaf6]" name="setUp" is-config="true" duration-ms="15118" started-at="2020-02-10T17:58:19Z" finished-at="2020-02-10T17:58:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyOtherVacationPackages_TC_12(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.HomePageTestScript@3701eaf6]" name="verifyOtherVacationPackages_TC_12" duration-ms="17384" started-at="2020-02-10T17:58:35Z" finished-at="2020-02-10T17:58:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.tripmasters.framework.testScript.HomePageTestScript.verifyOtherVacationPackages_TC_12(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyOtherVacationPackages_TC_12 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@3701eaf6]" name="tearDown" is-config="true" duration-ms="4075" started-at="2020-02-10T17:58:52Z" finished-at="2020-02-10T17:58:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
+      </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
