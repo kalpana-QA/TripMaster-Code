@@ -10,11 +10,13 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.tripmasters.framework.actions.BookingPageAction;
+import com.tripmasters.framework.actions.HomePageAction;
 import com.tripmasters.framework.actions.PassengerInfoPageAction;
 import com.tripmasters.framework.base.TestBase;
 import com.tripmasters.framework.pages.BookingLocators;
 import com.tripmasters.framework.utils.CommonLib;
 import com.tripmasters.framework.utils.ExtentTestManager;
+
 import com.tripmasters.framework.utils.Logs;
 
 public class BookingPageTestScript extends TestBase {
@@ -24,6 +26,7 @@ public class BookingPageTestScript extends TestBase {
 	List<String> expectedThirdTravellerInfo = new ArrayList<String>();
 	List<String> expectedFourthTravellerInfo = new ArrayList<String>();
 	List<String> expectedFlightDetails = new ArrayList<String>();
+
 
 	private static String actualHotel;
 	private static String expectedHotel;
@@ -38,8 +41,6 @@ public class BookingPageTestScript extends TestBase {
 		log.info("Booking details Source & Destination filled successfully for 3 Adults_4nights");
 		BookingPageAction.ClickonContinueButton();
 		BookingPageAction.SelectCheaperFlights();
-		test.log(LogStatus.INFO, "User select cheaper flight option");
-		log.info("User select cheaper flight option");
 		BookingPageAction.ClicktoContinuePage();
 		// Put assertion before selecting continue image...
 		expectedFirstTravellerInfo = PassengerInfoPageAction.FillFirstTravellerDetails("John", "Leo", "Male",
@@ -48,12 +49,14 @@ public class BookingPageTestScript extends TestBase {
 				"01/01/1994", "237|US", "Adult");
 		expectedThirdTravellerInfo = PassengerInfoPageAction.FillThirdTravellerDetails("Marie", "Leo", "Female",
 				"01/01/1996", "237|US");
+
 		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
 		log.info("User fills all the 3 passenger details");
 		BookingPageAction.ClicktoContinuePage();
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler3Name(), expectedThirdTravellerInfo);
+
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
 		log.info("Flights & passenger details verified successfully on PaymentPage");
 	}
@@ -70,13 +73,13 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "No.of Child & Age of Child got selected successfully");
 		BookingPageAction.ClickonContinueButton();
 		BookingPageAction.SelectCheaperFlights();
-		test.log(LogStatus.INFO, "User select cheaper flight option");
 		BookingPageAction.ClicktoContinuePage();
 		expectedFirstTravellerInfo = PassengerInfoPageAction.FillFirstTravellerDetails("Morris", "Leo", "Male",
 				"01/01/1992", "237|US");
 		expectedSecondTravellerInfo = PassengerInfoPageAction.FillSecondTravellerDetails("Shally", "Leo", "Male",
 				"01/01/1994", "237|US", "Child");
 		BookingPageAction.ClicktoContinuePage();
+
 		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
@@ -99,6 +102,7 @@ public class BookingPageTestScript extends TestBase {
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler3Name(), expectedThirdTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler4Name(), expectedFourthTravellerInfo);
+
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
 	}
 
@@ -150,6 +154,7 @@ public class BookingPageTestScript extends TestBase {
 
 	}
 
+
 	// @Test(groups= {"smoke"},priority=6)
 	public void bookingFlightsWithmultipleCities_TC_6(Method method) throws Exception {
 		ExtentTestManager.startTest(method.getName(), "bookingFlightsWithmultipleCities");
@@ -171,6 +176,7 @@ public class BookingPageTestScript extends TestBase {
 
 	}
 
+
 	// @Test(groups= {"smoke"},priority=7)
 	public void bookingFlightAndHotelForSingleCity_TC_7(Method method) throws Exception {
 		ExtentTestManager.startTest(method.getName(), "bookingFlightAndHotelForSingleCity");
@@ -190,6 +196,7 @@ public class BookingPageTestScript extends TestBase {
 		Assert.assertEquals(actualHotel, expectedHotel);
 
 	}
+
 
 	// @Test(groups= {"smoke"},priority=8)
 	public void bookingFlightAndHotelForMultipleCity_TC_8(Method method) throws Exception {
@@ -225,6 +232,7 @@ public class BookingPageTestScript extends TestBase {
 
 	}
 
+
 	// @Test(groups= {"regression"},priority=10)
 	public void getWithoutAir_TC_20(Method method) throws Exception {
 		ExtentTestManager.startTest(method.getName(), "getWithoutAir");
@@ -239,6 +247,7 @@ public class BookingPageTestScript extends TestBase {
 		System.out.println("passed");
 	}
 
+
 	// @Test(groups= {"regression"},priority=11)
 	public void removeAddedCity_TC_17(Method method) throws Exception {
 		BookingPageAction.fillBasicDetails("New York, Newark, NJ", "Delhi (India)", "4", "Mumbai (India)", "1",
@@ -246,17 +255,40 @@ public class BookingPageTestScript extends TestBase {
 		boolean actual = BookingPageAction.isremovecitydisplayed();
 		Assert.assertTrue(actual);
 		BookingPageAction.deleteAddedCities();
-		boolean expected = BookingPageAction.validateremovedcity();
-		Assert.assertTrue(expected);
+	   BookingPageAction.validateremovedcity();
 		BookingPageAction.getNoMoreCitiesButton();
 		BookingPageAction.SelectGuestDetails("1|1");
 		BookingPageAction.ClickonContinueButton();
 		BookingPageAction.SelectCheaperFlights();
-		boolean tripinclusion = BookingPageAction.validateTripIncluisonPage();
-		Assert.assertTrue(tripinclusion);
+	   BookingPageAction.validateTripIncluisonPage();
 	}
 
 	// @Test(groups= {"regression"},priority=12)
+
+	public void verifyCity_TC_10() throws Exception {
+		HomePageAction.clickSearch();
+		HomePageAction.fillSearch("Berlin");
+		boolean actual = HomePageAction.validateURL();
+		Assert.assertTrue(actual);
+		BookingPageAction.validateTripIncluisonPage();
+	}
+
+	@Test(priority = 10)
+	public void removeAddedCity_TC_17() throws Exception {
+		BookingPageAction.clickOnBuildYourVacationDropDown();
+		BookingPageAction.fillBasicDetails("New York, Newark, NJ", "Delhi (India)", "4", "Mumbai (India)", "1",
+				"Chennai -Madras (India)", "1");
+		BookingPageAction.isremovecitydisplayed();
+		BookingPageAction.deleteAddedCities();
+		BookingPageAction.validateremovedcity();
+		BookingPageAction.getNoMoreCitiesButton();
+		BookingPageAction.SelectGuestDetails("1|1");
+		BookingPageAction.ClickonContinueButton();
+		BookingPageAction.SelectCheaperFlights_Mob();
+		BookingPageAction.validateTripIncluisonPage();
+	}
+
+	// @Test(priority=11)
 	public void dateChanging_TC_18(Method method) throws Exception {
 		ExtentTestManager.startTest(method.getName(), "dateChanging_TC_18");
 		BookingPageAction.BookingDetailswithPremiumEcomomy("New York City (all Airports),  NY", "Delhi (India)",
@@ -275,6 +307,7 @@ public class BookingPageTestScript extends TestBase {
 		BookingPageAction.selectLatinAmericaLink();
 		BookingPageAction.verifyLatinAmericPage();
 	}
+
 
 	// @Test(groups= {"regression"},priority=14)
 	public void dateChanging_TC_9() throws Exception {

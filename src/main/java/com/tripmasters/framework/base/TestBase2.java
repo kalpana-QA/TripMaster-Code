@@ -8,9 +8,13 @@ import java.util.concurrent.TimeUnit;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import com.tripmasters.framework.utils.JsonDataReader;
@@ -22,7 +26,7 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TestBase {
+public class TestBase2 {
 	private static String chromeDriverFilePath = System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe";
 	public static WebDriver driver;
 	private DesiredCapabilities capabilities;
@@ -30,21 +34,21 @@ public class TestBase {
 	private boolean flag = false;
 	private static Logs log = new Logs();
 	protected static String platform;
-	
-	// GenerateReport gn;
-	// @BeforeClass
-	@BeforeMethod(alwaysRun = true)
+
+	//GenerateReport gn;
+	//@BeforeClass
+	@BeforeMethod(alwaysRun=true)
 	// @Parameters(value = { "browser" })
 	public void setUp() throws FileNotFoundException, IOException, ParseException {
-		// gn = new GenerateReport();
+		//gn = new GenerateReport();
 		 platform = JsonDataReader.getJSONData("Platform");
 		String browser = JsonDataReader.getJSONData("Browser");
 		try {
 			switch (platform) {
 			case "Windows":
 				if (browser.equalsIgnoreCase(("Chrome"))) {
-					 System.setProperty("webdriver.chrome.driver",
-					 chromeDriverFilePath);
+					System.out.println("chromeDriverFilePath : "+ chromeDriverFilePath);
+					System.setProperty("webdriver.chrome.driver", chromeDriverFilePath);
 					//WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver();
 					driver.manage().window().maximize();
@@ -54,7 +58,7 @@ public class TestBase {
 				} else if (browser.equalsIgnoreCase("Firefox")) {
 
 					WebDriverManager.firefoxdriver().setup();
-					// driver = new FirefoxDriver();
+					//driver = new FirefoxDriver();
 					log.info("FirefoxDriver instantiated for " + platform + " platform.");
 					flag = true;
 
@@ -67,16 +71,18 @@ public class TestBase {
 				if (browser.equalsIgnoreCase("Chrome")) {
 					capabilities = new DesiredCapabilities();
 
-					System.out.println("chromeDriverFilePath : " + chromeDriverFilePath);
+					
+					System.out.println("chromeDriverFilePath : "+chromeDriverFilePath);
 					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
 					capabilities.setCapability("platformName", "Android");
+					capabilities.setCapability("platformVersion", "9");
 					capabilities.setCapability("deviceName", "One Plus");
 					capabilities.setCapability("browserName", "Chrome");
 
 					url = new URL("http:127.0.1.1:4723/wd/hub");
 
 					driver = new AndroidDriver<MobileElement>(url, capabilities);
-
+					
 					log.info(browser + " AndroidDriver instantiated for " + platform + " platform.");
 					flag = true;
 
@@ -92,11 +98,11 @@ public class TestBase {
 					capabilities.setCapability("platformName", "iOS");
 					capabilities.setCapability("platfromVersion", "9.1");
 					capabilities.setCapability(CapabilityType.BROWSER_NAME, "Safari");
-					// IOSDriver
+					//IOSDriver
 					url = new URL("http:127.0.1.1:4723/wd/hub");
-					driver = new IOSDriver<IOSElement>(url, capabilities);
+					driver = new IOSDriver<IOSElement> (url,capabilities);
 					System.out.println("Safari browser launched on iOS");
-					flag = true;
+					flag=true;
 
 				} else {
 					log.error("browser doesn't found!!!!!!!!!!!");
@@ -116,10 +122,11 @@ public class TestBase {
 				driver.manage().deleteAllCookies();
 				driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-				String url = JsonDataReader.getJSONData("URL");
-				driver.get(url);
-				log.info("The given URL '" + url + "' launch successfully for " + platform + " platform and "
-						+ browser + " browser!!!!!!!!!!!!");
+				driver.get(JsonDataReader.getJSONData("URL"));
+				log.info("The given URL launch successfully for " + platform + " platform and " + browser
+						+ " browser!!!!!!!!!!!!");
+				System.out.println("browser launched with given url");
+			//	driver.quit();
 				int time = (int) System.nanoTime();
 				System.out.println("nano time is: " + time);
 			}
@@ -163,19 +170,22 @@ public class TestBase {
 		 */
 
 	}
+	
+	
 
-	@AfterMethod(alwaysRun = true)
-	public static void tearDown() {
-		// gn.extent.flush();
-		// driver.quit();
-		// GenerateReport2.startReport(null, null);
-		// GenerateReport2.getResult(null);
-		if (driver != null) {
+
+	@AfterMethod(alwaysRun=true)
+	public static  void tearDown() {
+		//gn.extent.flush();
+		//driver.quit();
+		//GenerateReport2.startReport(null, null);
+		//GenerateReport2.getResult(null);
+		if(driver != null){
 			log.info("Closing browser after TestClass");
-			driver.close();
-		} else {
-			log.error("Driver is null at AfterClass (TestBase)");
-		}
+//            driver.close();
+        }else{
+        	log.error("Driver is null at AfterClass (TestBase)");
+        }
 
 	}
 

@@ -1,5 +1,6 @@
 package com.tripmasters.framework.utils;
 
+import java.awt.Toolkit;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -20,11 +21,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 import com.tripmasters.framework.base.TestBase;
 
 import junit.framework.Assert;
 
 public class CommonLib extends TestBase {
+
 
 	static Logs log;
 	private static WebElement element = null;
@@ -132,7 +135,18 @@ public class CommonLib extends TestBase {
 
 	public static void ClickUsingJavaScript(By FieldElement) {
 		WebElement element = driver.findElement(FieldElement);
-		;
+
+		try {
+			JavascriptExecutor executor = (JavascriptExecutor) driver;
+			executor.executeScript("arguments[0].click();", element);
+			Thread.sleep(4000);
+		} catch (Exception e) {
+			System.out.println("Unable to click on element");
+		}
+	}
+
+	public static void ClickUsingJavaScript(WebElement element) {
+
 		try {
 			highlightElement(element);
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
@@ -186,8 +200,8 @@ public class CommonLib extends TestBase {
 
 	/**
 	 * 
-	 * Description :: object is present or not :: Input Parameters : String
-	 * String Return Type:: Void
+	 * Description :: object is present or not :: Input Parameters : String String
+	 * Return Type:: Void
 	 * 
 	 */
 
@@ -211,8 +225,8 @@ public class CommonLib extends TestBase {
 
 	/**
 	 * 
-	 * Description :: To click a Element using HTML method Input Parameters ::
-	 * Input Parameters : String String Return Type:: Void
+	 * Description :: To click a Element using HTML method Input Parameters :: Input
+	 * Parameters : String String Return Type:: Void
 	 * 
 	 */
 
@@ -255,4 +269,24 @@ public class CommonLib extends TestBase {
 		String[] newDateDay = newDate.split("/");
 		return newDateDay[1];
 	}
+
+
+	/**
+	 * Scroll page down to full of its hight
+	 * 
+	 * @author Mrinal
+	 * @throws Exception
+	 **/
+	public static void scrollDown() throws Exception {
+		try {
+			Thread.sleep(3000);
+			java.awt.Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
+			jse.executeScript("window.scrollBy(0," + screenSize.height + ")", "");
+			System.out.println("scrolled down");
+		} catch (Exception e) {
+			throw new Exception("Unable to scroll page");
+		}
+	}
+
 }
