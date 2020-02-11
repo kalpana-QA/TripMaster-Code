@@ -254,18 +254,20 @@ public class BookingPageAction extends TestBase2 {
 		CommonLib.SelectOptionByValue(BookingLocators.getstayingDrpdowntwo(), stayingTimeTwo);
 	}
 
-	public static void SelectValueFromCalendar() {
-		CommonLib.clickOnElement(BookingLocators.getArriveDateDropdown());
-		List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
-		for (WebElement cell : columns) {
+	 public static void SelectValueFromCalendar(){
+	    	CommonLib.clickOnElement(BookingLocators.getArriveDateDropdown());
+	    	String newDate=CommonLib.selectNewDateFromCalendar();
+	    	List<WebElement> columns=driver.findElements(BookingLocators.getArriveDateCalender());
+	    	for (WebElement cell: columns){
 
-			if (cell.getText().equals("3")) {
-				cell.findElement(By.linkText("3")).click();
-				break;
-			}
-		}
-	}
-
+	    	   if (cell.getText().equals("3")){
+	    	      cell.findElement(By.linkText("3")).click();
+	    	   if (cell.getText().equals(newDate)){
+	    	      cell.findElement(By.linkText(newDate)).click();
+	    	      break;
+	    	 }
+	    }
+	    	   
 	public static void BookingDetailswithPremiumEcomomy(String leavingFrom, String destination, String cabinclass,
 			String stayingTime, String guestInfo) throws Exception {
 		SelectCabinClass(cabinclass);

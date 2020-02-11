@@ -4,8 +4,10 @@ import java.awt.Toolkit;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -251,6 +253,17 @@ public class CommonLib extends TestBase2 {
 		}
 		return text;
 
+	}
+
+	public static String selectNewDateFromCalendar() {
+		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(new Date());
+		System.out.println(cal.getTime());
+		cal.add(Calendar.DATE, 90);
+		String newDate = dateFormat.format(cal.getTime());
+		String[] newDateDay = newDate.split("/");
+		return newDateDay[1];
 	}
 
 	/**
