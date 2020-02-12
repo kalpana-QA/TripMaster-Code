@@ -31,7 +31,13 @@ public class CommonLib extends TestBase {
 	private static WebElement element = null;
 	// public static WebDriver driver = null;
 	static String screenShotPath = "";
-
+	
+	/**
+	 * Scroll page down to full of its height.
+	 * 
+	 * @author Shivam Kashyap
+	 * @throws Exception
+	 **/
 	public static WebElement FindElementByXpath(String xpath) throws Exception {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -45,6 +51,14 @@ public class CommonLib extends TestBase {
 		return element;
 	}
 
+	
+	/**
+	 * It's find the element on current page.
+	 * 
+	 * @author Shivam Kashyap
+	 * @throws Exception
+	 * @version 1
+	 **/
 	public static WebElement findElement(String locatorString, String typeOfLocator) {
 		try {
 			if (typeOfLocator.equalsIgnoreCase("xpath")) {
@@ -91,6 +105,14 @@ public class CommonLib extends TestBase {
 
 		}
 	}
+	
+	/**
+	 * Description: It's take the screenshot of current page.
+	 * 
+	 * @author Kalpana
+	 * @throws IOException
+	 * @Version 1
+	 **/
 
 	public static String TakeScreenShot() throws IOException {
 
@@ -126,7 +148,7 @@ public class CommonLib extends TestBase {
 			element.clear();
 			// element.sendKeys(StringToBeEntered);
 			element.sendKeys(StringToBeEntered);// Keys.TAB);
-			Thread.sleep(3000);
+			waitForElement(3);
 		} catch (Exception e) {
 			Logs.error("Unable to find the element on Page");
 
@@ -134,14 +156,21 @@ public class CommonLib extends TestBase {
 		}
 		return StringToBeEntered;
 	}
-
+	
+	/**
+	 * It's click on the web element using JavascriptExecutor.
+	 * 
+	 * @author Shivam Kashyap
+	 * @throws Exception
+	 * @version 1
+	 **/
 	public static void ClickUsingJavaScript(By FieldElement) {
 
 		try {
 			WebElement element = driver.findElement(FieldElement);
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", element);
-			Thread.sleep(4000);
+			waitForElement(3);
 		} catch (Exception e) {
 			System.out.println("Unable to click on element");
 		}
@@ -153,7 +182,7 @@ public class CommonLib extends TestBase {
 			highlightElement(element);
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", element);
-			Thread.sleep(4000);
+			waitForElement(3);
 		} catch (Exception e) {
 			System.out.println("Unable to click on element using Javascript Executor");
 		}
@@ -166,7 +195,7 @@ public class CommonLib extends TestBase {
 			highlightElement(selectField);
 			Select option = new Select(selectField);
 			option.selectByValue(valueOfOption);
-			Thread.sleep(2000);
+			waitForElement(2);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -180,7 +209,7 @@ public class CommonLib extends TestBase {
 			highlightElement(selectField);
 			Select option = new Select(selectField);
 			option.selectByVisibleText(optionText);
-			Thread.sleep(2000);
+			waitForElement(2);
 		} catch (Exception e) {
 			Logs.error("Unable to select element by text");
 		}
@@ -282,7 +311,7 @@ public class CommonLib extends TestBase {
 	 **/
 	public static void scrollDown() throws Exception {
 		try {
-			Thread.sleep(3000);
+			waitForElement(3);
 			java.awt.Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 			JavascriptExecutor jse = (JavascriptExecutor) driver;
 			jse.executeScript("window.scrollBy(0," + screenSize.height + ")", "");
@@ -291,5 +320,17 @@ public class CommonLib extends TestBase {
 			throw new Exception("Unable to scroll page");
 		}
 	}
+	
+	/**
+	 * It will wait for specific time.
+	 * 
+	 * @author Kalpana
+	 * @throws Exception
+	 * @version 1
+	 **/
+	
+	public static void waitForElement(int time)throws Exception{
+		Thread.sleep(time * 1000);
+		}
 
 }

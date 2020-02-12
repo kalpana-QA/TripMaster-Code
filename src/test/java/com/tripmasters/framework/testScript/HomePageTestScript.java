@@ -18,7 +18,6 @@ import junit.framework.Assert;
 
 public class HomePageTestScript extends TestBase {
 
-	//private static Logs log;
 
 
 	 @Test(groups = {"regression"},priority=15)

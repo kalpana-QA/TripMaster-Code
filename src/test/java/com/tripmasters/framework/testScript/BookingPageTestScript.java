@@ -28,13 +28,13 @@ public class BookingPageTestScript extends TestBase {
 	List<String> expectedFlightDetails = new ArrayList<String>();
 
 
-	private static String actualHotel;
-	private static String expectedHotel;
+	private static String ActualHotel;
+	private static String ExpectedHotel;
 
 
-	@Test(groups = { "smoke" }, priority = 1)
+	//@Test(groups = { "smoke" }, priority = 1)
 	public void bookingSingleRoomWithThreeAdults_TC_1(Method method) throws Exception {
-		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoomWith3Adults");
+		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoomWith3Adults"); 
 		BookingPageAction.FillBasicBookingDetails("New York  La Guardia, NY", "Berlin (Germany)", "4", "1|3");
 		test.log(LogStatus.INFO, "Booking details Source & Destination filled successfully for 3 Adults_4nights");
 		Logs.info("Booking details Source & Destination filled successfully for 3 Adults_4nights");
@@ -43,13 +43,9 @@ public class BookingPageTestScript extends TestBase {
 		BookingPageAction.SelectCheaperFlights();
 		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
 		BookingPageAction.ClicktoContinuePage();
-		test.log(LogStatus.INFO, "Booking details Source & Destination filled successfully for 3 Adults_4nights");
-		expectedFirstTravellerInfo = PassengerInfoPageAction.FillFirstTravellerDetails("John", "Leo", "Male",
-				"01/01/1992", "237|US");
-		expectedSecondTravellerInfo = PassengerInfoPageAction.FillSecondTravellerDetails("Elvin", "Leo", "Male",
-				"01/01/1994", "237|US", "Adult");
-		expectedThirdTravellerInfo = PassengerInfoPageAction.FillThirdTravellerDetails("Marie", "Leo", "Female",
-				"01/01/1996", "237|US");
+		expectedFirstTravellerInfo = PassengerInfoPageAction.FillFirstTravellerDetails("John", "Leo", "Male","01/01/1992", "237|US");
+		expectedSecondTravellerInfo = PassengerInfoPageAction.FillSecondTravellerDetails("Elvin", "Leo", "Male","01/01/1994", "237|US", "Adult");
+		expectedThirdTravellerInfo = PassengerInfoPageAction.FillThirdTravellerDetails("Marie", "Leo", "Female","01/01/1996", "237|US");
 		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
 		Logs.info("User fills all the 3 passenger details");
 		BookingPageAction.ClicktoContinuePage();
@@ -62,58 +58,77 @@ public class BookingPageTestScript extends TestBase {
 
 	 //@Test(groups= {"smoke"},priority=2)
 	public void bookingSingleRoomOneAdultOneChild_TC_2(Method method) throws Exception {
-
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoom1Adult1Child");
 		BookingPageAction.FillBasicBookingDetails("San Jose, CALIFORNIA", "Osaka (Japan)", "4", "1|Other");
-		test.log(LogStatus.INFO,
-				"Booking details Source & Destination filled successfully for 1 Adults_1Child_6nights");
+		test.log(LogStatus.INFO,"Booking details Source & Destination filled successfully for 1 Adults_1Child_4nights");
+		Logs.info("Booking details Source & Destination filled successfully for 1 Adults_1Child_4nights");
 		BookingPageAction.SelectNumberOfAdult("1", BookingLocators.getselectAdultDrpdown());
 		BookingPageAction.SelectNumberOfChild("1", "9", "Child1");
 		test.log(LogStatus.INFO, "No.of Child & Age of Child got selected successfully");
+		Logs.info("No.of Child & Age of Child got selected successfully");
 		BookingPageAction.ClickonContinueButton();
+		test.log(LogStatus.INFO, "Click on Continue Button");
+		Logs.info("Click on Continue Button");
 		BookingPageAction.SelectCheaperFlights();
+		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
+		Logs.info("Select Cheaper flights from flight options");
 		BookingPageAction.ClicktoContinuePage();
-		expectedFirstTravellerInfo = PassengerInfoPageAction.FillFirstTravellerDetails("Morris", "Leo", "Male",
-				"01/01/1992", "237|US");
-		expectedSecondTravellerInfo = PassengerInfoPageAction.FillSecondTravellerDetails("Shally", "Leo", "Male",
-				"01/01/1994", "237|US", "Child");
+		expectedFirstTravellerInfo = PassengerInfoPageAction.FillFirstTravellerDetails("Morris", "Leo", "Male","01/01/1992", "237|US");
+		expectedSecondTravellerInfo = PassengerInfoPageAction.FillSecondTravellerDetails("Shally", "Leo", "Male","01/01/1994", "237|US", "Child");
 		BookingPageAction.ClicktoContinuePage();
 		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
+		Logs.info("User filled all the passenger details successfully");
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
+		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 
 	//@Test(groups= {"smoke"},priority=3)
 	public void bookingTwoRoomTwoAdult_TC_3(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom2Adult");
 		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ", "Berlin (Germany)", "6", "2|2-2");
+		test.log(LogStatus.INFO,"Booking details Source & Destination filled successfully for Two Adults");
+		Logs.info("Booking details Source & Destination filled successfully for Two Adults");
 		BookingPageAction.ClickonContinueButton();
+		test.log(LogStatus.INFO, "Click on Continue Button");
+		Logs.info("Click on Continue Button");
 		BookingPageAction.SelectCheaperFlights();
+		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
+		Logs.info("Select Cheaper flights from flight options");
 		BookingPageAction.ClicktoContinuePage();
 		expectedFirstTravellerInfo = PassengerInfoPageAction.FillTravellerDetailsForMultipleRooms("Room1Traveller1");
 		expectedSecondTravellerInfo = PassengerInfoPageAction.FillTravellerDetailsForMultipleRooms("Room1Traveller2");
 		expectedThirdTravellerInfo = PassengerInfoPageAction.FillTravellerDetailsForMultipleRooms("Room2Traveller1");
 		expectedFourthTravellerInfo = PassengerInfoPageAction.FillTravellerDetailsForMultipleRooms("Room2Traveller2");
 		BookingPageAction.ClicktoContinuePage();
+		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
+		Logs.info("User filled all the passenger details successfully");
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler3Name(), expectedThirdTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler4Name(), expectedFourthTravellerInfo);
-
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
+		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 
 	// @Test(groups= {"smoke"},priority=4)
 	public void bookingTwoRoomThreeAdultOneChild_TC_4(Method method) throws Exception {
-		ExtentTestManager.startTest(method.getName(), "bookingTwoRoom3Adult1Child");
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "bookingTwoRoom3Adult1Child");
 		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ", "Berlin (Germany)", "4", "2|Other");
+		test.log(LogStatus.INFO,"Booking details filled successfully for Three Adults & One Child");
+		Logs.info("Booking details filled successfully for Three Adults & One Child");
 		BookingPageAction.SelectNumberOfAdult("2", BookingLocators.getselectAdultDrpdown());
 		BookingPageAction.SelectNumberOfChild("1", "9", "Child1");
+		test.log(LogStatus.INFO, "No.of Child & Age of Child got selected successfully");
+		Logs.info("No.of Child & Age of Child got selected successfully");
 		BookingPageAction.SelectNumberOfAdult("1", BookingLocators.getselectAdultRoom2Drpdown());
 		BookingPageAction.ClickonContinueButton();
+		test.log(LogStatus.INFO, "Click on Continue Button");
+		Logs.info("Click on Continue Button");
 		BookingPageAction.SelectCheaperFlights();
-		BookingPageAction.ClicktoContinuePage();
+		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
+		Logs.info("Select Cheaper flights from flight options");
 		BookingPageAction.ClicktoContinuePage();
 		expectedFirstTravellerInfo = PassengerInfoPageAction.FillTravellerDetailsForMultipleRooms("Room1Traveller1");
 		expectedSecondTravellerInfo = PassengerInfoPageAction.FillTravellerDetailsForMultipleRooms("Room1Traveller2");
@@ -121,47 +136,69 @@ public class BookingPageTestScript extends TestBase {
 		expectedThirdTravellerInfo = PassengerInfoPageAction.FillTravellerDetailsForMultipleRooms("Room1Child1");
 		expectedFourthTravellerInfo = PassengerInfoPageAction.FillTravellerDetailsForMultipleRooms("Room2Traveller1");
 		BookingPageAction.ClicktoContinuePage();
+		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
+		Logs.info("User filled all the passenger details successfully");
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler3Name(), expectedThirdTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler4Name(), expectedFourthTravellerInfo);
-
+		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
+		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 
 	// @Test(groups= {"smoke"},priority=5)
 	public void bookingTwoRoomTwoAdultTwoChild_TC_5(Method method) throws Exception {
-		ExtentTestManager.startTest(method.getName(), "booking2Room2Adult2Child");
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "booking2Room2Adult2Child");
 		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ", "Berlin (Germany)", "6", "2|Other");
+		test.log(LogStatus.INFO, "Booking details filled successfully for Two Adults & Two Child");
+		Logs.info("Booking details filled successfully for Two Adults & Two Child");
 		BookingPageAction.SelectNumberOfAdult("1", BookingLocators.getselectAdultDrpdown());
 		BookingPageAction.SelectNumberOfChild("1", "9", "Child1");
+		test.log(LogStatus.INFO, "No.of Child & Age of Child got selected successfully");
+		Logs.info("No.of Child & Age of Child got selected successfully");
 		BookingPageAction.SelectNumberOfAdult("1", BookingLocators.getselectAdultRoom2Drpdown());
 		BookingPageAction.SelectNumberOfChild("1", "9", "Child2");
 		BookingPageAction.ClickonContinueButton();
+		test.log(LogStatus.INFO, "Click on Continue Button");
+		Logs.info("Click on Continue Button");
 		BookingPageAction.SelectCheaperFlights();
+		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
+		Logs.info("Select Cheaper flights from flight options");
 		BookingPageAction.ClicktoContinuePage();
 		BookingPageAction.ClicktoContinuePage();
 		expectedFirstTravellerInfo = PassengerInfoPageAction.FillTravellerDetailsForMultipleRooms("Room1Traveller1");
 		expectedSecondTravellerInfo = PassengerInfoPageAction.FillTravellerDetailsForMultipleRooms("Room1Child1");
 		expectedThirdTravellerInfo = PassengerInfoPageAction.FillTravellerDetailsForMultipleRooms("Room2Traveller1");
 		expectedFourthTravellerInfo = PassengerInfoPageAction.FillTravellerDetailsForMultipleRooms("Room2Child1");
+		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
+		Logs.info("User filled all the passenger details successfully");
 		BookingPageAction.ClicktoContinuePage();
+		test.log(LogStatus.INFO, "Click on Continue Button & User redirected to the Payment Page");
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler3Name(), expectedThirdTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler4Name(), expectedFourthTravellerInfo);
-
+		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
+		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 
 
 	// @Test(groups= {"smoke"},priority=6)
 	public void bookingFlightsWithmultipleCities_TC_6(Method method) throws Exception {
-		ExtentTestManager.startTest(method.getName(), "bookingFlightsWithmultipleCities");
-		BookingPageAction.fillBasicBookingDetailForMultipleCities("WithAir", "Berlin (Germany)", "4",
-				"Augsburg (Germany)", "1|Other");
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "bookingFlightsWithmultipleCities");
+		BookingPageAction.fillBasicBookingDetailForMultipleCities("WithAir", "Berlin (Germany)", "4","Augsburg (Germany)", "1|Other");
+		test.log(LogStatus.INFO,"Booking details filled successfully for multiple cities");
+		Logs.info("Booking details filled successfully for multiple cities");
 		BookingPageAction.SelectNumberOfAdult("1", BookingLocators.getselectAdultDrpdown());
 		BookingPageAction.SelectNumberOfChild("1", "9", "Child1");
+		test.log(LogStatus.INFO, "No.of Child & Age of Child got selected successfully");
+		Logs.info("No.of Child & Age of Child got selected successfully");
 		BookingPageAction.ClickonContinueButton();
+		test.log(LogStatus.INFO, "Click on Continue Button");
+		Logs.info("Click on Continue Button");
 		BookingPageAction.SelectCheaperFlights();
+		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
+		Logs.info("Select Cheaper flights from flight options");
 		BookingPageAction.ClicktoContinuePage();
 		BookingPageAction.ClicktoContinuePage();
 		expectedFirstTravellerInfo = PassengerInfoPageAction.FillFirstTravellerDetails("Morris", "Leo", "Male",
@@ -171,7 +208,8 @@ public class BookingPageTestScript extends TestBase {
 		BookingPageAction.ClicktoContinuePage();
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
-
+		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
+		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 
 
@@ -183,15 +221,15 @@ public class BookingPageTestScript extends TestBase {
 		BookingPageAction.SelectNumberOfChild("1", "9", "Child1");
 		BookingPageAction.SelectNumberOfAdult("1", BookingLocators.getselectAdultRoom2Drpdown());
 		BookingPageAction.ClickonContinueButton();
-		actualHotel = BookingPageAction.browseHotelsButton();
-		expectedHotel = BookingPageAction.browseSelectHotel();
+		ActualHotel = BookingPageAction.browseHotelsButton();
+		ExpectedHotel = BookingPageAction.browseSelectHotel();
 		BookingPageAction.getContinueLink();
 		String expected = BookingPageAction.SelectCheaperFlights();
 		String actualFlightDetails = BookingPageAction.GetActualFlight();
 		System.out.println(expected);
 		System.out.println(actualFlightDetails);
 		Assert.assertTrue(expected.contains(actualFlightDetails));
-		Assert.assertEquals(actualHotel, expectedHotel);
+		Assert.assertEquals(ActualHotel, ExpectedHotel);
 
 	}
 
@@ -238,9 +276,9 @@ public class BookingPageTestScript extends TestBase {
 		BookingPageAction.fillBasicBookingDetailForMultipleCities("WithOutAir", "Delhi (India)", "4", "Mumbai (India)",
 				"1|3");
 		BookingPageAction.ClickonContinueButton();
-		actualHotel = BookingPageAction.browseHotelsButton();
-		expectedHotel = BookingPageAction.browseSelectHotel();
-		Assert.assertEquals(actualHotel, expectedHotel);
+		ActualHotel = BookingPageAction.browseHotelsButton();
+		ExpectedHotel = BookingPageAction.browseSelectHotel();
+		Assert.assertEquals(ActualHotel, ExpectedHotel);
 		BookingPageAction.getContinueLink();
 		System.out.println("passed");
 	}
@@ -314,9 +352,9 @@ public class BookingPageTestScript extends TestBase {
 		BookingPageAction.ClickonContinueButton();
 		BookingPageAction.ClickChangedArriveDate();
 		BookingPageAction.OldArriveDate();
-		actualHotel = BookingPageAction.browseHotelsButton();
-		expectedHotel = BookingPageAction.browseSelectHotel();
-		Assert.assertEquals(actualHotel, expectedHotel);
+		ActualHotel = BookingPageAction.browseHotelsButton();
+		ExpectedHotel = BookingPageAction.browseSelectHotel();
+		Assert.assertEquals(ActualHotel, ExpectedHotel);
 		BookingPageAction.ClickonContinueLink();
 		BookingPageAction.ClicktoContinuePage();
 		expectedFirstTravellerInfo = PassengerInfoPageAction.FillFirstTravellerDetails("Morris", "Leo", "Male",

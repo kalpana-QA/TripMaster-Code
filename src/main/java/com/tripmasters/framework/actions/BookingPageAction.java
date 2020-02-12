@@ -16,7 +16,6 @@ import com.tripmasters.framework.utils.Logs;
 
 public class BookingPageAction extends TestBase {
 
-	//static Logss Logs = new Logss();
 
 	public static void FillBasicBookingDetails(String leavingFrom, String destination, String stayingTime,
 			String guestInfo) throws Exception {
