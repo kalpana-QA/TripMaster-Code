@@ -17,6 +17,13 @@ import junit.framework.Assert;
 public class HomePageTestScript extends TestBase {
 
 	private static Logs log;
+	
+	/**
+	* @author Shivam Kashyap
+	* * @method verifyMoreHighlightAndAttractionLinks_TC_11
+	* @description To verify "More Highlight and Attraction" link 
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	// @Test(groups = {"smoke"},priority=15)
 	public void verifyMoreHighlightAndAttractionLinks_TC_11(Method method) throws Exception {
@@ -55,6 +62,13 @@ public class HomePageTestScript extends TestBase {
 		log.info("verifyMoreHighlightAndAttractionLinks is Passed.");
 
 	}
+	
+	/**
+	* @author Shivam Kashyap
+	* * @method verifyOtherVacationPackages_TC_12
+	* @description To verify "Other vacation packages" link
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	// @Test(groups = {"smoke"},priority=16)
 	public void verifyOtherVacationPackages_TC_12(Method method) {
@@ -72,6 +86,13 @@ public class HomePageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "verifyOtherVacationPackages is displayed & testcase passed successfully.");
 		log.info("verifyOtherVacationPackages is displayed & testcase passed successfully.");
 	}
+	
+	/**
+	* @author Shivam Kashyap
+	* * @method VerifyPopularVacationPackages_TC_13
+	* @description To verify "Popular Vacation Packages" link
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	// @Test(groups = {"smoke"},priority=17)
 	public void VerifyPopularVacationPackages_TC_13(Method method) {
@@ -86,6 +107,13 @@ public class HomePageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "VerifyPopularVacationPackages displayed");
 		log.info("VerifyPopularVacationPackages displayed");
 	}
+	
+	/**
+	* @author Satyam Sharma
+	* * @method verifyCity_TC_10
+	* @description Using search option to search any city with city name or keyword
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	// @Test(groups = {"smoke"},priority=18)
 	public void verifyCity_TC_10(Method method) throws Exception {
@@ -106,6 +134,13 @@ public class HomePageTestScript extends TestBase {
 		log.info("User is able to get the particular city");
 		log.info("VerifyPopularVacationPackages displayed");
 	}
+	
+	/**
+	* @author Satyam Sharma
+	* * @method verifyStartAgainLink_TC_15
+	* @description To verify "Start Again" link.
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	// @Test(groups = {"smoke"},priority=19)
 	public void verifyStartAgainLink_TC_15(Method method) throws Exception {
@@ -121,6 +156,13 @@ public class HomePageTestScript extends TestBase {
 		log.info("verifyStartAgainLink is displayed");
 		log.info("verifyStartAgainLink is displayed");
 	}
+	
+	/**
+	* @author Satyam Sharma
+	* * @method verifyFooterText_TC_16
+	* @description To verify "Footer" text on the page.
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	// @Test(groups = {"smoke"},priority=20)
 	public void verifyFooterText_TC_16(Method method) {

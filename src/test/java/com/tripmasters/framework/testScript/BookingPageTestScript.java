@@ -29,6 +29,13 @@ public class BookingPageTestScript extends TestBase {
 	private static String expectedHotel;
 
 	private final Logs log = new Logs();
+	
+	/**
+	* @author Kalpana Kaushik
+	* * @method bookingSingleRoomWithThreeAdults_TC_1
+	* @description Flight booking journey without multiple cities with Single Room for 3 Adults.
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	@Test(groups = { "smoke" }, priority = 1)
 	public void bookingSingleRoomWithThreeAdults_TC_1(Method method) throws Exception {
@@ -57,6 +64,14 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
 		log.info("Flights & passenger details verified successfully on PaymentPage");
 	}
+	
+	
+	/**
+	* @author Kalpana Kaushik
+	* * @method bookingSingleRoom1AdultOneChild_TC_2
+	* @description Flight booking journey without multiple cities with Single Room with 1 Adult and 1 Child
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	// @Test(groups= {"smoke"},priority=2)
 	public void bookingSingleRoom1AdultOneChild_TC_2(Method method) throws Exception {
@@ -82,6 +97,14 @@ public class BookingPageTestScript extends TestBase {
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
 	}
+	
+
+	/**
+	* @author Kalpana Kaushik
+	* * @method bookingTwoRoomTwoAdult_TC_3
+	* @description Flight booking journey without multiple cities, with 2 Rooms for 2 and 2 Adults 
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	// @Test(groups= {"smoke"},priority=3)
 	public void bookingTwoRoomTwoAdult_TC_3(Method method) throws Exception {
@@ -101,6 +124,13 @@ public class BookingPageTestScript extends TestBase {
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler4Name(), expectedFourthTravellerInfo);
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
 	}
+	
+	/**
+	* @author Kalpana Kaushik
+	* * @method bookingTwoRoom3Adult1Child_TC_4
+	* @description Flight booking journey without multiple cities, with 2 Rooms for 3 Adults and 1 Child 
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	// @Test(groups= {"smoke"},priority=4)
 	public void bookingTwoRoom3Adult1Child_TC_4(Method method) throws Exception {
@@ -125,6 +155,14 @@ public class BookingPageTestScript extends TestBase {
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler4Name(), expectedFourthTravellerInfo);
 
 	}
+	
+
+	/**
+	* @author Kalpana Kaushik
+	* * @method booking2Room2Adult2Child_TC_5
+	* @description Flight booking journey without multiple cities, with Two Room for 1 Adult and 1 Child in each Room
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	// @Test(groups= {"smoke"},priority=5)
 	public void booking2Room2Adult2Child_TC_5(Method method) throws Exception {
@@ -149,7 +187,15 @@ public class BookingPageTestScript extends TestBase {
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler4Name(), expectedFourthTravellerInfo);
 
 	}
-
+	
+	
+	/**
+	* @author Kalpana Kaushik
+	* * @method bookingFlightsWithmultipleCities_TC_6
+	* @description Flight booking journey with multiple cities, with one Room for one Adult and one Child
+	* * @param (method)we are using this parameter to getting the method name
+	*/
+	
 	// @Test(groups= {"smoke"},priority=6)
 	public void bookingFlightsWithmultipleCities_TC_6(Method method) throws Exception {
 		ExtentTestManager.startTest(method.getName(), "bookingFlightsWithmultipleCities");
@@ -170,6 +216,13 @@ public class BookingPageTestScript extends TestBase {
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
 
 	}
+	
+	/**
+	* @author Kalpana Kaushik
+	* * @method bookingFlightAndHotelForSingleCity_TC_7
+	* @description Flight and Hotel booking journey with single city ,with two Room for two Adult and one Child
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	// @Test(groups= {"smoke"},priority=7)
 	public void bookingFlightAndHotelForSingleCity_TC_7(Method method) throws Exception {
@@ -190,6 +243,13 @@ public class BookingPageTestScript extends TestBase {
 		Assert.assertEquals(actualHotel, expectedHotel);
 
 	}
+	
+	/**
+	* @author Kalpana Kaushik
+	* * @method bookingFlightAndHotelForMultipleCity_TC_8
+	* @description Flight and Hotel booking journey with multiple cities, with one Room for one Adult and one Child
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	// @Test(groups= {"smoke"},priority=8)
 	public void bookingFlightAndHotelForMultipleCity_TC_8(Method method) throws Exception {
@@ -211,6 +271,14 @@ public class BookingPageTestScript extends TestBase {
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
 
 	}
+	
+
+	/**
+	* @author Vaishali Saini
+	* * @method withoutAirBookingForSingleCity_TC_19
+	* @description To verify WithoutAir booking journey for Single City and Hotel name
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	// @Test(groups= {"regression"},priority=9)
 	public void withoutAirBookingForSingleCity_TC_19(Method method) throws Exception {
@@ -224,6 +292,13 @@ public class BookingPageTestScript extends TestBase {
 		BookingPageAction.ClickonContinueLink();
 
 	}
+	
+	/**
+	* @author Satyam Sharma
+	* * @method getWithoutAir_TC_20
+	* @description To verify WithoutAir booking journey for Multiple Cities and Hotel name
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	// @Test(groups= {"regression"},priority=10)
 	public void getWithoutAir_TC_20(Method method) throws Exception {
@@ -238,6 +313,13 @@ public class BookingPageTestScript extends TestBase {
 		BookingPageAction.getContinueLink();
 		System.out.println("passed");
 	}
+	
+	/**
+	* @author Satyam Sharma
+	* * @method removeAddedCity_TC_17
+	* @description To verify user is able to Remove Added Cities and redirecetd to the "Trip Inclusion Details" page
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	// @Test(groups= {"regression"},priority=11)
 	public void removeAddedCity_TC_17(Method method) throws Exception {
@@ -255,10 +337,17 @@ public class BookingPageTestScript extends TestBase {
 		boolean tripinclusion = BookingPageAction.validateTripIncluisonPage();
 		Assert.assertTrue(tripinclusion);
 	}
+	
+	/**
+	* @author Vaishali Saini
+	* * @method premiumEconomy_TC_18
+	* @description To verify Flight booking journey form Premium Economy Class and verify Cabin class is selected as "Premium Economy".
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
-	// @Test(groups= {"regression"},priority=12)
-	public void dateChanging_TC_18(Method method) throws Exception {
-		ExtentTestManager.startTest(method.getName(), "dateChanging_TC_18");
+	 @Test(groups= {"regression"},priority=12)
+	public void premiumEconomy_TC_18(Method method) throws Exception {
+		ExtentTestManager.startTest(method.getName(), "premiumEconomy_TC_18");
 		BookingPageAction.BookingDetailswithPremiumEcomomy("New York City (all Airports),  NY", "Delhi (India)",
 				"Premium Economy", "4", "1|1");
 		String actualcabin = BookingPageAction.selectedcabinAssert();
@@ -268,6 +357,13 @@ public class BookingPageTestScript extends TestBase {
 		BookingPageAction.SelectCheaperFlights();
 		BookingPageAction.ClicktoContinuePage();
 	}
+	
+	/**
+	* @author Vaishali Saini
+	* * @method verifySpotlightLink_TC_14
+	* @description To verify "In the Spotlight" link.
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	// @Test(groups= {"regression"},priority=13)
 	public void verifySpotlightLink_TC_14(Method method) throws Exception {
@@ -275,6 +371,13 @@ public class BookingPageTestScript extends TestBase {
 		BookingPageAction.selectLatinAmericaLink();
 		BookingPageAction.verifyLatinAmericPage();
 	}
+	
+	/**
+	* @author Vaishali Saini
+	* * @method dateChanging_TC_9
+	* @description Flight booking by Changing Date,verify Hotel name and booking details
+	* * @param (method)we are using this parameter to getting the method name
+	*/
 
 	// @Test(groups= {"regression"},priority=14)
 	public void dateChanging_TC_9() throws Exception {
