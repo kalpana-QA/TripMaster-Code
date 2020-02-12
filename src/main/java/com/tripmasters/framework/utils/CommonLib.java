@@ -21,15 +21,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
 import com.tripmasters.framework.base.TestBase;
 
 import junit.framework.Assert;
 
 public class CommonLib extends TestBase {
 
-
-	static Logs log;
+	// static Logs log;
 	private static WebElement element = null;
 	// public static WebDriver driver = null;
 	static String screenShotPath = "";
@@ -38,11 +36,11 @@ public class CommonLib extends TestBase {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-			log.info("Element Found");
+			Logs.info("Element Found");
 		} catch (Exception e) {
-			log.info("Element Not Found");
-			log.error("e");
-			element = null;
+			Logs.error("Element Not Found");
+			//Logs.error("e");
+		//	element = null;
 		}
 		return element;
 	}
@@ -74,12 +72,12 @@ public class CommonLib extends TestBase {
 				element = driver.findElement(By.partialLinkText(locatorString));
 				highlightElement(element);
 			} else {
-				log.info("Element Not Found");
+				Logs.info("Element Not Found");
 			}
 		} catch (Exception e) {
-			log.info("Something wrong with element data passed because of which element not Found.");
-			log.error("e");
-			element = null;
+			Logs.error("Something wrong with element data passed because of which element not Found.");
+			//Logs.error("e");
+		//	element = null;
 		}
 		return element;
 	}
@@ -95,10 +93,11 @@ public class CommonLib extends TestBase {
 	}
 
 	public static String TakeScreenShot() throws IOException {
-		Date date = new Date();
-		SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy-h-mm-ss");
-		String CurrentDate = sdf.format(date);
+
 		try {
+			Date date = new Date();
+			SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy-h-mm-ss");
+			String CurrentDate = sdf.format(date);
 			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			screenShotPath = System.getProperty("user.dir") + "\\" + "defectScreenShots\\" + CurrentDate + ".jpeg";
 			FileUtils.copyFile(scrFile, new File(screenShotPath));
@@ -106,37 +105,40 @@ public class CommonLib extends TestBase {
 			screenShotPath = new File(base).toURI().relativize(new File(screenShotPath).toURI()).getPath();
 
 		} catch (FileNotFoundException fnfe) {
-			log.info("In takeScreenShot " + fnfe.getMessage());
+			Logs.info("In takeScreenShot " + fnfe.getMessage());
 
-			log.info("File not found" + fnfe);
+			Logs.info("File not found" + fnfe);
 		} catch (IOException e) {
-			log.info("In takeScreenShot " + e.getMessage());
+			Logs.info("In takeScreenShot " + e.getMessage());
 
 		} catch (Exception e) {
-			log.info("In takeScreenShot " + e.getMessage());
+			Logs.info("In takeScreenShot " + e.getMessage());
 
 		}
 		return screenShotPath;
 	}
 
 	public static String ClearAndSetValues(By FieldElement, String StringToBeEntered) throws Exception {
-		WebElement element = driver.findElement(FieldElement);
+
 		try {
+			WebElement element = driver.findElement(FieldElement);
 			highlightElement(element);
 			element.clear();
 			// element.sendKeys(StringToBeEntered);
 			element.sendKeys(StringToBeEntered);// Keys.TAB);
 			Thread.sleep(3000);
 		} catch (Exception e) {
-			e.printStackTrace();
+			Logs.error("Unable to find the element on Page");
+
+			// e.printStackTrace();
 		}
 		return StringToBeEntered;
 	}
 
 	public static void ClickUsingJavaScript(By FieldElement) {
-		WebElement element = driver.findElement(FieldElement);
 
 		try {
+			WebElement element = driver.findElement(FieldElement);
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", element);
 			Thread.sleep(4000);
@@ -158,8 +160,9 @@ public class CommonLib extends TestBase {
 	}
 
 	public static String SelectOptionByValue(By element, String valueOfOption) {
-		WebElement selectField = driver.findElement(element);
+
 		try {
+			WebElement selectField = driver.findElement(element);
 			highlightElement(selectField);
 			Select option = new Select(selectField);
 			option.selectByValue(valueOfOption);
@@ -171,14 +174,15 @@ public class CommonLib extends TestBase {
 	}
 
 	public static String SelectOptionByText(By element, String optionText) {
-		WebElement selectField = driver.findElement(element);
+
 		try {
+			WebElement selectField = driver.findElement(element);
 			highlightElement(selectField);
 			Select option = new Select(selectField);
 			option.selectByVisibleText(optionText);
 			Thread.sleep(2000);
 		} catch (Exception e) {
-			log.error("Unable to select element by text");
+			Logs.error("Unable to select element by text");
 		}
 		return optionText;
 	}
@@ -194,14 +198,14 @@ public class CommonLib extends TestBase {
 			System.out.println("actual List:" + actualTravellerInfo);
 			Assert.assertEquals(expectedTravellerInfo, actualTravellerInfo);
 		} catch (Exception e) {
-			log.error("Traveller Details are not same as expected");
+			Logs.error("Traveller Details are not same as expected");
 		}
 	}
 
 	/**
 	 * 
-	 * Description :: object is present or not :: Input Parameters : String String
-	 * Return Type:: Void
+	 * Description :: object is present or not :: Input Parameters : String
+	 * String Return Type:: Void
 	 * 
 	 */
 
@@ -218,15 +222,15 @@ public class CommonLib extends TestBase {
 			return true;
 
 		} catch (Exception e) {
-			log.error("Element is not displayed");
+			Logs.error("Element is not displayed");
 			return false;
 		}
 	}
 
 	/**
 	 * 
-	 * Description :: To click a Element using HTML method Input Parameters :: Input
-	 * Parameters : String String Return Type:: Void
+	 * Description :: To click a Element using HTML method Input Parameters ::
+	 * Input Parameters : String String Return Type:: Void
 	 * 
 	 */
 
@@ -237,7 +241,7 @@ public class CommonLib extends TestBase {
 			highlightElement(waitElement);
 			waitElement.click();
 		} catch (Exception e) {
-			log.error("Unable to click on element even after specified time");
+			Logs.error("Unable to click on element even after specified time");
 		}
 	}
 
@@ -253,7 +257,7 @@ public class CommonLib extends TestBase {
 
 		} catch (Exception e) {
 
-			log.error("Unable to find element");
+			Logs.error("Unable to find element");
 		}
 		return text;
 
@@ -264,12 +268,11 @@ public class CommonLib extends TestBase {
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(new Date());
 		System.out.println(cal.getTime());
-		cal.add(Calendar.DATE, 90);
+		cal.add(Calendar.DATE, 100);
 		String newDate = dateFormat.format(cal.getTime());
 		String[] newDateDay = newDate.split("/");
 		return newDateDay[1];
 	}
-
 
 	/**
 	 * Scroll page down to full of its hight

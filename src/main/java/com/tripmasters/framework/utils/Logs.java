@@ -44,7 +44,7 @@ public class Logs {
 
 	// Need to create these methods, so that they can be called
 
-	public void info(String message) {
+	public static void info(String message) {
 		 Log.info(message);
 		 //ExtentTestManager.getTest().log(LogStatus.INFO, message);
 	}
@@ -55,7 +55,7 @@ public class Logs {
 
 	}
 
-	public void error(String message) {
+	public static void error(String message) {
 
 		Log.error(message);
 

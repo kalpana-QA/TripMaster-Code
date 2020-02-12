@@ -18,18 +18,13 @@ import junit.framework.Assert;
 
 public class HomePageTestScript extends TestBase {
 
-	private static Logs log;
+	//private static Logs log;
 
 
-	// @Test(groups = {"smoke"},priority=15)
-
+	 @Test(groups = {"regression"},priority=15)
 	public void verifyMoreHighlightAndAttractionLinks_TC_11(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyMoreHighlightAndAttractionLinks_TC_11");
 		String homePageTitle = CommonLib.getPageTitle();
-		// if(JsonDataReader.getJSONData("Platform").equalsIgnoreCase("Mobile")){
-		// CommonLib.ClickUsingJavaScript(By.xpath("(//a[text()='Explore
-		// Europe'])[1]"));
-		// }
 		CommonLib.ClickUsingJavaScript(HomePageLocators.getmoreHighLightsBtn());
 		test.log(LogStatus.INFO, "User clicked on More HighLights & Attraction Links");
 		boolean amazonLinkDisplayed = CommonLib.isElementDisplayed(HomePageLocators.getTheLink("The Amazon"));
@@ -40,43 +35,42 @@ public class HomePageTestScript extends TestBase {
 
 		Assert.assertEquals(HomePageLocators.getHomePageTitle(), homePageTitle);
 		test.log(LogStatus.INFO, "Home Page Title Verified.");
-		log.info("Home Page Title Verified.");
+		Logs.info("Home Page Title Verified.");
 		Assert.assertTrue(amazonLinkDisplayed);
 		test.log(LogStatus.INFO, "The Amazon Link is displayed.");
-		log.info("The Amazon Link is displayed.");
+		Logs.info("The Amazon Link is displayed.");
 
 		Assert.assertTrue(middleEastDisplayed);
 		test.log(LogStatus.INFO, "Best Of Middle East Link is displayed.");
-		log.info("Best Of Middle East Link is displayed.");
+		Logs.info("Best Of Middle East Link is displayed.");
 
 		Assert.assertTrue(londonDisplayed);
 		test.log(LogStatus.INFO, "London - Paris and Beyond Link is displayed.");
-		log.info("London - Paris and Beyond Link is displayed.");
+		Logs.info("London - Paris and Beyond Link is displayed.");
 
 		Assert.assertTrue(europeDisplayed);
 		test.log(LogStatus.INFO, "London - Paris and Beyond Link is displayed.");
 		test.log(LogStatus.INFO, "HightLights and Attraction Links Verified");
-		log.info("verifyMoreHighlightAndAttractionLinks is Passed.");
+		Logs.info("verifyMoreHighlightAndAttractionLinks is Passed.");
 
 	}
 
 
-	// @Test(groups = {"smoke"},priority=16)
-
+	 @Test(groups = {"regression"},priority=16)
 	public void verifyOtherVacationPackages_TC_12(Method method) {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyOtherVacationPackages_TC_12");
 		CommonLib.ClickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
 		test.log(LogStatus.INFO, "User clicked on Explore Europe Link");
-		log.info("User clicked on Explore Europe Link");
+		Logs.info("User clicked on Explore Europe Link");
 		CommonLib.ClickUsingJavaScript(HomePageLocators.getRomeFlorenceVeniceByTrainLnk());
 		test.log(LogStatus.INFO, "User clicked on particular vacation package");
-		log.info("User clicked on particular vacation package");
+		Logs.info("User clicked on particular vacation package");
 		boolean romeFlorenceVeniceByTrainHeader = CommonLib
 				.isElementDisplayed(HomePageLocators.getRomeFlorenceVeniceByTrainHeader());
 		test.log(LogStatus.INFO, "Verified User is redirected  to the particular vacation packages");
 		Assert.assertTrue(romeFlorenceVeniceByTrainHeader);
 		test.log(LogStatus.INFO, "verifyOtherVacationPackages is displayed & testcase passed successfully.");
-		log.info("verifyOtherVacationPackages is displayed & testcase passed successfully.");
+		Logs.info("verifyOtherVacationPackages is displayed & testcase passed successfully.");
 	}
 
 	// @Test(groups = {"smoke"},priority=17)
@@ -86,13 +80,13 @@ public class HomePageTestScript extends TestBase {
 		CommonLib.ClickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
 		test.log(LogStatus.INFO, "Clicked on Popular Vacation Packages");
 
-		log.info("Clicked on Popular Vacation Packages");
+		Logs.info("Clicked on Popular Vacation Packages");
 		String europePageTitle = CommonLib.getPageTitle();
 		Assert.assertEquals(HomePageLocators.getEuropePageTitle(), europePageTitle);
 		test.log(LogStatus.INFO, "User is able to see all existing popular vacation packages");
 
 		test.log(LogStatus.INFO, "VerifyPopularVacationPackages displayed");
-		log.info("VerifyPopularVacationPackages displayed");
+		Logs.info("VerifyPopularVacationPackages displayed");
 	}
 
 
@@ -110,7 +104,7 @@ public class HomePageTestScript extends TestBase {
 		boolean actual = HomePageAction.validateURL();
 		Assert.assertTrue(actual);
 		test.log(LogStatus.INFO, "User is able to get the particular city");
-		log.info("VerifyPopularVacationPackages displayed");
+		Logs.info("VerifyPopularVacationPackages displayed");
 	}
 
 
@@ -121,7 +115,7 @@ public class HomePageTestScript extends TestBase {
 		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ", "Delhi (India)", "4", "1|2");
 		HomePageAction.getStartAgain();
 		Assert.assertEquals(HomePageLocators.getHomePageTitle(), verifyhomepage);
-		log.info("verifyStartAgainLink is displayed");
+		Logs.info("verifyStartAgainLink is displayed");
 	}
 
 
@@ -130,7 +124,7 @@ public class HomePageTestScript extends TestBase {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyFooterText_TC_16");
 		boolean validatefooter = HomePageAction.validateFooterText();
 		Assert.assertTrue(validatefooter);
-		log.info("verifyFooterText is displayed");
+		Logs.info("verifyFooterText is displayed");
 	}
 
 }

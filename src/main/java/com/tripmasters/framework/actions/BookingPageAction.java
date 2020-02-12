@@ -15,24 +15,26 @@ import com.tripmasters.framework.utils.Logs;
 
 
 public class BookingPageAction extends TestBase {
-	
-	static Logs log = new Logs();
+
+	//static Logss Logs = new Logss();
 
 	public static void FillBasicBookingDetails(String leavingFrom, String destination, String stayingTime,
 			String guestInfo) throws Exception {
 		CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
-		log.info("User entered '"+leavingFrom+"' into leaving from feild");
+		Logs.info("User entered '" + leavingFrom + "' into leaving from field");
 		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
-		log.info("User entered '"+destination+"' into Going to from feild");
+		Logs.info("User entered '" + destination + "' into Going to from field");
 		SelectValueFromCalendar();
 		SelectStayingTime(stayingTime);
 		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
 		SelectGuestDetails(guestInfo);
+		Logs.info("User entered guest info '" + guestInfo + "'");
 	}
 
 	public static void SelectStayingTime(String stayingTime) {
 
 		CommonLib.SelectOptionByValue(BookingLocators.getstayingDrpdown(), stayingTime);
+		Logs.info("User entered '" + stayingTime + "' nights staying time");
 	}
 
 	public static void SelectGuestDetails(String guestInfo) {
@@ -44,8 +46,10 @@ public class BookingPageAction extends TestBase {
 					.findElement(By.xpath(".//li[@id='" + guestInfo + "']"));
 			CommonLib.ClickUsingJavaScript(wb);
 			CommonLib.ClickUsingJavaScript(BookingLocators.getdoneButton());
+			Logs.info("User select '" + guestInfo + "' from Guest list");
 		} else {
 			CommonLib.SelectOptionByValue(BookingLocators.getselectGuestDrpdown(), guestInfo);
+			Logs.info("User select '" + guestInfo + "' from Guest list");
 		}
 	}
 
@@ -55,6 +59,7 @@ public class BookingPageAction extends TestBase {
 	 */
 	public static void SelectGuestDetailsOnMob(String guestInfo) {
 		CommonLib.SelectOptionByValue(BookingLocators.getselectGuestDrpdown(), guestInfo);
+		Logs.info("User select '" + guestInfo + "' from Guest list");
 	}
 
 	public static void ClickonContinueButton() {
@@ -66,25 +71,25 @@ public class BookingPageAction extends TestBase {
 		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueLink());
 	}
 
-	public static String SelectCheaperFlights() {
-		// List<String>expectedFlightdetails=new ArrayList<String>();
+	public static String SelectCheaperFlights() throws Exception {
+		String flightvalue = null;
+		if (platform.equalsIgnoreCase("Mobile")) {
+			SelectCheaperFlights_Mob();
+		} else {
 
-		CommonLib.ClickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
+			CommonLib.ClickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
 
-		// List<WebElement>
-		// expectedFlight=driver.findElements(BookingLocators.getfirstFlightDetails());
-		// for(WebElement details:expectedFlight){
-		// expectedFlightdetails.add(details.getText());
-		// }
-		String flightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
+			flightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
 
-		CommonLib.ClickUsingJavaScript(BookingLocators.getselectFlightOption());
+			CommonLib.ClickUsingJavaScript(BookingLocators.getselectFlightOption());
+			CommonLib.ClickUsingJavaScript(BookingLocators.getselectButtonInFlightOption1());
 
-		CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueLink());
+			CommonLib.ClickUsingJavaScript(BookingLocators.getcontinueLink());
+
+		}
 		return flightvalue;
 
 	}
-
 
 	public static void SelectCheaperFlights_Mob() throws Exception {
 		CommonLib.isElementDisplayed(BookingLocators.getcheaperFlightsLink());
@@ -117,10 +122,14 @@ public class BookingPageAction extends TestBase {
 	public static void SelectNumberOfChild(String numOfChild, String ageOfChild, String childType) {
 		if (childType.equals("Child1")) {
 			CommonLib.SelectOptionByValue(BookingLocators.getselectChildDrpdown(), numOfChild);
+			Logs.info("User entered number of child'" + numOfChild + "' ");
 			CommonLib.SelectOptionByValue(BookingLocators.getselectChildAgeDrpdown(), ageOfChild);
+			Logs.info("User entered number of child'" + ageOfChild + "' ");
 		} else {
 			CommonLib.SelectOptionByValue(BookingLocators.getselectChildRoom2Drpdown(), numOfChild);
+			Logs.info("User entered number of child'" + numOfChild + "' ");
 			CommonLib.SelectOptionByValue(BookingLocators.getselectChildAgeRoom2Drpdown(), ageOfChild);
+			Logs.info("User entered number of child'" + numOfChild + "' ");
 		}
 	}
 
@@ -128,10 +137,13 @@ public class BookingPageAction extends TestBase {
 			String stayingTime, String destination_second, String guestinfo) throws Exception {
 		if (flightType.equalsIgnoreCase("WithAir")) {
 			CommonLib.ClearAndSetValues(BookingLocators.getLeavingTxtbox(), "New York, Newark, NJ");
+			Logs.info("User entered New York, Newark, NJ into leaving from field");
 		}
 		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+		Logs.info("User entered '" + destination + "' into Going to from field");
 		CommonLib.ClickUsingJavaScript(BookingLocators.getaddCityBtn());
 		CommonLib.ClearAndSetValues(BookingLocators.getgoingToTextboxSecond(), destination_second);
+		Logs.info("User entered '" + destination_second + "' into Second Going to field");
 		SelectStayingTime(stayingTime);
 		CommonLib.ClickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
 		SelectGuestDetails(guestinfo);
@@ -251,8 +263,6 @@ public class BookingPageAction extends TestBase {
 		CommonLib.SelectOptionByValue(BookingLocators.getstayingDrpdowntwo(), stayingTimeTwo);
 	}
 
-	
-
 	public static void SelectValueFromCalendar() {
 		CommonLib.clickOnElement(BookingLocators.getArriveDateDropdown());
 		String newDate = CommonLib.selectNewDateFromCalendar();
@@ -264,7 +274,6 @@ public class BookingPageAction extends TestBase {
 			}
 		}
 	}
-
 
 	public static void SelectCabinClass(String cabinclass) {
 		CommonLib.SelectOptionByText(BookingLocators.getCabinClassDropdown(), cabinclass);
@@ -281,8 +290,6 @@ public class BookingPageAction extends TestBase {
 		Assert.assertTrue(flag);
 	}
 
-
-	    	   
 	public static void BookingDetailswithPremiumEcomomy(String leavingFrom, String destination, String cabinclass,
 			String stayingTime, String guestInfo) throws Exception {
 		SelectCabinClass(cabinclass);
@@ -293,8 +300,6 @@ public class BookingPageAction extends TestBase {
 		SelectGuestDetails(guestInfo);
 
 	}
-
-	
 
 	public static String selectedcabinAssert() {
 
@@ -330,7 +335,7 @@ public class BookingPageAction extends TestBase {
 
 	public static void validateTripIncluisonPage() {
 		boolean flag = false;
-		if (driver.getTitle().contains("Itinerary - Review"))
+		if (driver.getTitle().contains("ItineraryDetails"))
 			flag = true;
 		else
 			flag = false;

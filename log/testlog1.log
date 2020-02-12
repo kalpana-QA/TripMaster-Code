@@ -26,3 +26,270 @@
 2020-02-11 15:57:28,403 [main] INFO com.tripmasters.framework.utils.Logs - User fills all the 3 passenger details
 2020-02-11 15:57:46,950 [main] INFO com.tripmasters.framework.utils.Logs - Flights & passenger details verified successfully on PaymentPage
 2020-02-11 15:57:46,952 [main] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 10:23:01,723 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 10:23:06,915 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 10:23:10,511 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'New York  La Guardia, NY' into leaving from feild
+2020-02-12 10:23:13,716 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from feild
+2020-02-12 10:23:23,138 [main] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-12 10:23:47,282 [main] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 10:24:01,603 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 10:24:06,100 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 10:25:32,399 [main] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 11:06:05,483 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 11:06:11,119 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 11:06:14,663 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'New York  La Guardia, NY' into leaving from field
+2020-02-12 11:06:17,865 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-02-12 11:06:26,924 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-12 11:06:51,741 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 11:08:38,285 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 11:08:43,163 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 11:08:46,602 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'New York  La Guardia, NY' into leaving from field
+2020-02-12 11:08:49,829 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-02-12 11:08:58,947 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-12 11:09:23,785 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 11:40:45,664 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 11:40:51,136 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 11:41:00,311 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 11:41:22,621 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 11:41:27,290 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 11:41:34,889 [main] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 11:42:29,662 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 11:42:35,220 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 11:42:42,299 [main] INFO com.tripmasters.framework.utils.Logs - User clicked on Explore Europe Link
+2020-02-12 11:42:51,354 [main] INFO com.tripmasters.framework.utils.Logs - User clicked on particular vacation package
+2020-02-12 11:42:51,748 [main] INFO com.tripmasters.framework.utils.Logs - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-02-12 11:42:51,750 [main] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 11:44:12,254 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 11:44:17,390 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 11:44:26,138 [main] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 11:45:19,572 [main] INFO com.tripmasters.framework.utils.Logs - User select '1|1' from Guest list
+2020-02-12 11:45:43,703 [main] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 11:47:57,689 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 11:48:02,858 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 11:48:11,544 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 11:49:04,955 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User select '1|1' from Guest list
+2020-02-12 11:51:34,698 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 11:51:39,647 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 11:51:43,045 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'New York  La Guardia, NY' into leaving from field
+2020-02-12 11:51:46,304 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-02-12 11:51:49,038 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 11:51:55,300 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User select '1|3' from Guest list
+2020-02-12 11:51:55,301 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered guest info '1|3'
+2020-02-12 11:51:55,304 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-12 11:52:43,156 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 12:03:43,069 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 12:03:48,012 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 12:03:51,467 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'New York  La Guardia, NY' into leaving from field
+2020-02-12 12:03:54,700 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-02-12 12:03:57,553 [main] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 12:04:03,794 [main] INFO com.tripmasters.framework.utils.Logs - User select '1|3' from Guest list
+2020-02-12 12:04:03,795 [main] INFO com.tripmasters.framework.utils.Logs - User entered guest info '1|3'
+2020-02-12 12:04:03,799 [main] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-12 12:04:50,664 [main] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 12:08:07,571 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 12:08:11,959 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 12:08:15,424 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'New York  La Guardia, NY' into leaving from field
+2020-02-12 12:08:18,672 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-02-12 12:08:21,492 [main] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 12:08:27,736 [main] INFO com.tripmasters.framework.utils.Logs - User select '1|3' from Guest list
+2020-02-12 12:08:27,738 [main] INFO com.tripmasters.framework.utils.Logs - User entered guest info '1|3'
+2020-02-12 12:08:27,741 [main] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-12 12:09:14,415 [main] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 12:10:44,071 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 12:10:49,894 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 12:10:53,248 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'New York  La Guardia, NY' into leaving from field
+2020-02-12 12:10:56,455 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-02-12 12:10:59,138 [main] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 12:11:05,312 [main] INFO com.tripmasters.framework.utils.Logs - User select '1|3' from Guest list
+2020-02-12 12:11:05,313 [main] INFO com.tripmasters.framework.utils.Logs - User entered guest info '1|3'
+2020-02-12 12:11:05,316 [main] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-12 12:22:31,008 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 12:22:37,434 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 12:22:41,168 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'New York  La Guardia, NY' into leaving from field
+2020-02-12 12:22:44,401 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-02-12 12:22:47,276 [main] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 12:22:53,499 [main] INFO com.tripmasters.framework.utils.Logs - User select '1|3' from Guest list
+2020-02-12 12:22:53,500 [main] INFO com.tripmasters.framework.utils.Logs - User entered guest info '1|3'
+2020-02-12 12:22:53,502 [main] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-12 12:26:51,399 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 12:26:55,877 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 12:26:59,273 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'New York  La Guardia, NY' into leaving from field
+2020-02-12 12:27:02,515 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-02-12 12:27:05,340 [main] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 12:27:11,581 [main] INFO com.tripmasters.framework.utils.Logs - User select '1|3' from Guest list
+2020-02-12 12:27:11,582 [main] INFO com.tripmasters.framework.utils.Logs - User entered guest info '1|3'
+2020-02-12 12:27:11,585 [main] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-12 12:43:29,985 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 12:43:36,042 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 12:43:39,659 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'New York  La Guardia, NY' into leaving from field
+2020-02-12 12:43:42,819 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-02-12 12:43:45,660 [main] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 12:43:51,837 [main] INFO com.tripmasters.framework.utils.Logs - User select '1|3' from Guest list
+2020-02-12 12:43:51,837 [main] INFO com.tripmasters.framework.utils.Logs - User entered guest info '1|3'
+2020-02-12 12:43:51,838 [main] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-12 12:45:29,824 [main] INFO com.tripmasters.framework.utils.Logs - User fills all the 3 passenger details
+2020-02-12 12:45:37,543 [main] INFO com.tripmasters.framework.utils.Logs - Flights & passenger details verified successfully on PaymentPage
+2020-02-12 12:49:15,078 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 12:49:20,348 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 12:49:23,797 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'San Jose, CALIFORNIA' into leaving from field
+2020-02-12 12:49:26,982 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'Osaka (Japan)' into Going to from field
+2020-02-12 12:49:29,813 [main] INFO com.tripmasters.framework.utils.Logs - User entered '6' nights staying time
+2020-02-12 12:49:36,091 [main] INFO com.tripmasters.framework.utils.Logs - User select '1|Other' from Guest list
+2020-02-12 12:49:36,091 [main] INFO com.tripmasters.framework.utils.Logs - User entered guest info '1|Other'
+2020-02-12 12:49:40,432 [main] INFO com.tripmasters.framework.utils.Logs - User entered number of child'1' 
+2020-02-12 12:49:40,634 [main] INFO com.tripmasters.framework.utils.Logs - User entered number of child'9' 
+2020-02-12 12:50:04,725 [main] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 12:51:11,150 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 12:51:16,524 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 12:51:20,055 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'San Jose, CALIFORNIA' into leaving from field
+2020-02-12 12:51:23,307 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'Osaka (Japan)' into Going to from field
+2020-02-12 12:51:26,256 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 12:51:32,510 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User select '1|Other' from Guest list
+2020-02-12 12:51:32,512 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered guest info '1|Other'
+2020-02-12 12:51:36,866 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered number of child'1' 
+2020-02-12 12:51:37,079 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered number of child'9' 
+2020-02-12 12:52:24,435 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 12:52:29,449 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 12:52:32,961 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-12 12:52:36,257 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-02-12 12:52:39,053 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered '6' nights staying time
+2020-02-12 12:52:45,304 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User select '2|2-2' from Guest list
+2020-02-12 12:52:45,305 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered guest info '2|2-2'
+2020-02-12 12:54:36,053 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 12:55:46,726 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 12:55:52,077 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 12:55:55,498 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-12 12:55:58,714 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-02-12 12:56:01,500 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered '6' nights staying time
+2020-02-12 12:56:07,771 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User select '2|Other' from Guest list
+2020-02-12 12:56:07,772 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered guest info '2|Other'
+2020-02-12 12:56:12,157 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered number of child'1' 
+2020-02-12 12:56:12,315 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered number of child'9' 
+2020-02-12 12:56:39,001 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 12:56:52,598 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 12:56:59,523 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 12:57:02,795 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-12 12:57:06,056 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-02-12 12:57:08,801 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - User entered '6' nights staying time
+2020-02-12 12:57:15,012 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - User select '2|Other' from Guest list
+2020-02-12 12:57:15,015 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - User entered guest info '2|Other'
+2020-02-12 12:57:19,409 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - User entered number of child'1' 
+2020-02-12 12:57:19,571 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - User entered number of child'9' 
+2020-02-12 12:57:23,867 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - User entered number of child'1' 
+2020-02-12 12:57:24,025 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - User entered number of child'1' 
+2020-02-12 12:57:48,662 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 13:00:31,366 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 13:00:36,997 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 13:00:40,462 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-12 13:00:43,669 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-02-12 13:00:46,739 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered '6' nights staying time
+2020-02-12 13:00:53,002 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User select '2|Other' from Guest list
+2020-02-12 13:00:53,003 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered guest info '2|Other'
+2020-02-12 13:00:57,364 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered number of child'1' 
+2020-02-12 13:00:57,551 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered number of child'9' 
+2020-02-12 13:01:24,805 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 13:01:50,740 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 13:01:58,690 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 13:02:02,181 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-12 13:02:05,393 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-02-12 13:02:08,433 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 13:02:14,692 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User select '2|Other' from Guest list
+2020-02-12 13:02:14,693 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered guest info '2|Other'
+2020-02-12 13:02:19,053 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered number of child'1' 
+2020-02-12 13:02:19,263 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered number of child'9' 
+2020-02-12 13:03:40,474 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 13:03:46,057 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 13:03:53,464 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-12 13:04:00,732 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'Mumbai (India)' into Second Going to field
+2020-02-12 13:04:02,949 [main] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 13:04:09,202 [main] INFO com.tripmasters.framework.utils.Logs - User select '1|3' from Guest list
+2020-02-12 13:04:41,214 [main] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 13:04:54,567 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 13:04:59,995 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 13:05:08,798 [main] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 13:06:02,160 [main] INFO com.tripmasters.framework.utils.Logs - User select '1|1' from Guest list
+2020-02-12 13:06:40,117 [main] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 13:08:56,940 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 13:09:01,928 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 13:09:10,635 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 13:10:04,021 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User select '1|1' from Guest list
+2020-02-12 13:13:47,969 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 13:13:53,358 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 13:14:02,101 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 13:14:55,601 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User select '1|1' from Guest list
+2020-02-12 13:16:43,355 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 13:16:48,278 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 13:16:56,999 [main] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 13:17:50,456 [main] INFO com.tripmasters.framework.utils.Logs - User select '1|1' from Guest list
+2020-02-12 13:18:28,475 [main] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 13:23:18,766 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 13:23:24,679 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 13:23:29,421 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Home Page Title Verified.
+2020-02-12 13:23:29,422 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The Amazon Link is displayed.
+2020-02-12 13:23:29,422 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Best Of Middle East Link is displayed.
+2020-02-12 13:23:29,423 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - London - Paris and Beyond Link is displayed.
+2020-02-12 13:23:29,424 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - verifyMoreHighlightAndAttractionLinks is Passed.
+2020-02-12 13:23:29,426 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 13:24:23,051 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 13:24:27,775 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 13:24:31,113 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'New York  La Guardia, NY' into leaving from field
+2020-02-12 13:24:34,337 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-02-12 13:24:37,538 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 13:24:43,747 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User select '1|3' from Guest list
+2020-02-12 13:24:43,749 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered guest info '1|3'
+2020-02-12 13:24:43,753 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-12 13:26:20,226 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User fills all the 3 passenger details
+2020-02-12 13:26:26,663 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Flights & passenger details verified successfully on PaymentPage
+2020-02-12 13:26:26,665 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 13:26:40,268 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 13:26:46,687 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 13:26:51,192 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - Home Page Title Verified.
+2020-02-12 13:26:51,193 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - The Amazon Link is displayed.
+2020-02-12 13:26:51,193 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - Best Of Middle East Link is displayed.
+2020-02-12 13:26:51,195 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - London - Paris and Beyond Link is displayed.
+2020-02-12 13:26:51,195 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - verifyMoreHighlightAndAttractionLinks is Passed.
+2020-02-12 13:26:51,197 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 13:45:26,559 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 13:45:32,019 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 13:45:35,461 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'New York  La Guardia, NY' into leaving from field
+2020-02-12 13:45:38,713 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-02-12 13:45:41,787 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 13:45:48,073 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User select '1|3' from Guest list
+2020-02-12 13:45:48,074 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered guest info '1|3'
+2020-02-12 13:45:48,076 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-12 13:47:24,158 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User fills all the 3 passenger details
+2020-02-12 13:47:30,357 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Flights & passenger details verified successfully on PaymentPage
+2020-02-12 13:47:30,361 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 13:47:43,695 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 13:47:52,223 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 13:47:56,739 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - Home Page Title Verified.
+2020-02-12 13:47:56,739 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - The Amazon Link is displayed.
+2020-02-12 13:47:56,740 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - Best Of Middle East Link is displayed.
+2020-02-12 13:47:56,742 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - London - Paris and Beyond Link is displayed.
+2020-02-12 13:47:56,742 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - verifyMoreHighlightAndAttractionLinks is Passed.
+2020-02-12 13:47:56,745 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 14:01:15,761 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 14:01:21,123 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 14:01:24,623 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'New York  La Guardia, NY' into leaving from field
+2020-02-12 14:01:27,850 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-02-12 14:01:30,947 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-12 14:01:37,245 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User select '1|3' from Guest list
+2020-02-12 14:01:37,245 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User entered guest info '1|3'
+2020-02-12 14:01:37,246 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Booking details Source & Destination filled successfully for 3 Adults_4nights
+2020-02-12 14:03:14,433 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - User fills all the 3 passenger details
+2020-02-12 14:03:20,874 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Flights & passenger details verified successfully on PaymentPage
+2020-02-12 14:03:20,877 [pool-1-thread-1] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 14:03:34,248 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 14:03:39,530 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 14:03:44,108 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - Home Page Title Verified.
+2020-02-12 14:03:44,109 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - The Amazon Link is displayed.
+2020-02-12 14:03:44,109 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - Best Of Middle East Link is displayed.
+2020-02-12 14:03:44,111 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - London - Paris and Beyond Link is displayed.
+2020-02-12 14:03:44,112 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - verifyMoreHighlightAndAttractionLinks is Passed.
+2020-02-12 14:03:44,114 [pool-1-thread-2] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-12 14:03:57,588 [pool-1-thread-3] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-12 14:04:02,596 [pool-1-thread-3] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-12 14:04:10,771 [pool-1-thread-3] INFO com.tripmasters.framework.utils.Logs - User clicked on Explore Europe Link
+2020-02-12 14:04:18,772 [pool-1-thread-3] INFO com.tripmasters.framework.utils.Logs - User clicked on particular vacation package
+2020-02-12 14:04:18,913 [pool-1-thread-3] INFO com.tripmasters.framework.utils.Logs - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-02-12 14:04:18,915 [pool-1-thread-3] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass

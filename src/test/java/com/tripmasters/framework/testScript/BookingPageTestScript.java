@@ -31,41 +31,40 @@ public class BookingPageTestScript extends TestBase {
 	private static String actualHotel;
 	private static String expectedHotel;
 
-	private final Logs log = new Logs();
 
 	@Test(groups = { "smoke" }, priority = 1)
 	public void bookingSingleRoomWithThreeAdults_TC_1(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoomWith3Adults");
 		BookingPageAction.FillBasicBookingDetails("New York  La Guardia, NY", "Berlin (Germany)", "4", "1|3");
 		test.log(LogStatus.INFO, "Booking details Source & Destination filled successfully for 3 Adults_4nights");
-		log.info("Booking details Source & Destination filled successfully for 3 Adults_4nights");
+		Logs.info("Booking details Source & Destination filled successfully for 3 Adults_4nights");
 		BookingPageAction.ClickonContinueButton();
+		test.log(LogStatus.INFO, "Click on Continue Button");
 		BookingPageAction.SelectCheaperFlights();
+		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
 		BookingPageAction.ClicktoContinuePage();
-		// Put assertion before selecting continue image...
+		test.log(LogStatus.INFO, "Booking details Source & Destination filled successfully for 3 Adults_4nights");
 		expectedFirstTravellerInfo = PassengerInfoPageAction.FillFirstTravellerDetails("John", "Leo", "Male",
 				"01/01/1992", "237|US");
 		expectedSecondTravellerInfo = PassengerInfoPageAction.FillSecondTravellerDetails("Elvin", "Leo", "Male",
 				"01/01/1994", "237|US", "Adult");
 		expectedThirdTravellerInfo = PassengerInfoPageAction.FillThirdTravellerDetails("Marie", "Leo", "Female",
 				"01/01/1996", "237|US");
-
 		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
-		log.info("User fills all the 3 passenger details");
+		Logs.info("User fills all the 3 passenger details");
 		BookingPageAction.ClicktoContinuePage();
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler3Name(), expectedThirdTravellerInfo);
-
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
-		log.info("Flights & passenger details verified successfully on PaymentPage");
+		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 
-	// @Test(groups= {"smoke"},priority=2)
-	public void bookingSingleRoom1AdultOneChild_TC_2(Method method) throws Exception {
+	 //@Test(groups= {"smoke"},priority=2)
+	public void bookingSingleRoomOneAdultOneChild_TC_2(Method method) throws Exception {
 
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoom1Adult1Child");
-		BookingPageAction.FillBasicBookingDetails("San Jose, CALIFORNIA", "Osaka (Japan)", "6", "1|Other");
+		BookingPageAction.FillBasicBookingDetails("San Jose, CALIFORNIA", "Osaka (Japan)", "4", "1|Other");
 		test.log(LogStatus.INFO,
 				"Booking details Source & Destination filled successfully for 1 Adults_1Child_6nights");
 		BookingPageAction.SelectNumberOfAdult("1", BookingLocators.getselectAdultDrpdown());
@@ -79,14 +78,13 @@ public class BookingPageTestScript extends TestBase {
 		expectedSecondTravellerInfo = PassengerInfoPageAction.FillSecondTravellerDetails("Shally", "Leo", "Male",
 				"01/01/1994", "237|US", "Child");
 		BookingPageAction.ClicktoContinuePage();
-
 		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
 		CommonLib.VerifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
 	}
 
-	// @Test(groups= {"smoke"},priority=3)
+	//@Test(groups= {"smoke"},priority=3)
 	public void bookingTwoRoomTwoAdult_TC_3(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom2Adult");
 		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ", "Berlin (Germany)", "6", "2|2-2");
@@ -107,9 +105,9 @@ public class BookingPageTestScript extends TestBase {
 	}
 
 	// @Test(groups= {"smoke"},priority=4)
-	public void bookingTwoRoom3Adult1Child_TC_4(Method method) throws Exception {
+	public void bookingTwoRoomThreeAdultOneChild_TC_4(Method method) throws Exception {
 		ExtentTestManager.startTest(method.getName(), "bookingTwoRoom3Adult1Child");
-		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ", "Berlin (Germany)", "6", "2|Other");
+		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ", "Berlin (Germany)", "4", "2|Other");
 		BookingPageAction.SelectNumberOfAdult("2", BookingLocators.getselectAdultDrpdown());
 		BookingPageAction.SelectNumberOfChild("1", "9", "Child1");
 		BookingPageAction.SelectNumberOfAdult("1", BookingLocators.getselectAdultRoom2Drpdown());
@@ -131,7 +129,7 @@ public class BookingPageTestScript extends TestBase {
 	}
 
 	// @Test(groups= {"smoke"},priority=5)
-	public void booking2Room2Adult2Child_TC_5(Method method) throws Exception {
+	public void bookingTwoRoomTwoAdultTwoChild_TC_5(Method method) throws Exception {
 		ExtentTestManager.startTest(method.getName(), "booking2Room2Adult2Child");
 		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ", "Berlin (Germany)", "6", "2|Other");
 		BookingPageAction.SelectNumberOfAdult("1", BookingLocators.getselectAdultDrpdown());
@@ -248,7 +246,7 @@ public class BookingPageTestScript extends TestBase {
 	}
 
 
-	// @Test(groups= {"regression"},priority=11)
+	//@Test(groups= {"regression"},priority=11)
 	public void removeAddedCity_TC_17(Method method) throws Exception {
 		BookingPageAction.fillBasicDetails("New York, Newark, NJ", "Delhi (India)", "4", "Mumbai (India)", "1",
 				"Chennai -Madras (India)", "1");
@@ -273,7 +271,7 @@ public class BookingPageTestScript extends TestBase {
 		BookingPageAction.validateTripIncluisonPage();
 	}
 
-	@Test(priority = 10)
+	//@Test(priority = 10)
 	public void removeAddedCity_TC_17() throws Exception {
 		BookingPageAction.clickOnBuildYourVacationDropDown();
 		BookingPageAction.fillBasicDetails("New York, Newark, NJ", "Delhi (India)", "4", "Mumbai (India)", "1",
