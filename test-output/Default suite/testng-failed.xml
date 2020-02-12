@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.tripmasters.framework.testScript.HomePageTestScript">
+      <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
-          <include name="verifyOtherVacationPackages_TC_12" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="removeAddedCity_TC_17" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
+      </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

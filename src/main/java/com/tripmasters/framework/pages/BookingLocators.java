@@ -11,8 +11,9 @@ public class BookingLocators {
 	private static By optionListForGuestsAndRooms = By.cssSelector("div[id='dvpxroomlst'][style='display: block;']");
 	private static By doneButton = By.xpath("//div[@class='dvMdialogDone']/p[text()='Done']");
 
-	private static By selectFlightOption = By.xpath(
-			"(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/Select1.png')])[1] | (//a[@name='chkFlight'])[1]");
+	private static By selectFlightOption = By.xpath("(//a[@name='chkFlight'])[1]");
+	private static By selectButtonInFlightOption1 = By.xpath(
+			"(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/Select1.png')])[1]");
 
 	private static By selectbutton = By.xpath("//div/a[contains(text(),'Select')]");
 
@@ -20,8 +21,8 @@ public class BookingLocators {
 	private static By addCityBtn = By.xpath("//span[contains(.,'Add City')] | //p[@id='pMaddcity']");
 	private static By noMoreCitiesBtn = By
 			.xpath("//span[contains(.,'No more cities. Continue')] | //span[@class = 'spMnextbutt']");
-	private static By continueBtn = By
-			.xpath("//div[@class='dvContinueButton']//span[contains(.,'Continue')] | //p[@id='pMcont']/span[contains(.,'Continue')]");
+	private static By continueBtn = By.xpath(
+			"//div[@class='dvContinueButton']//span[contains(.,'Continue')] | //p[@id='pMcont']/span[contains(.,'Continue')]");
 	private static By continueLink = By.xpath("//a[@id='aContWithPriceValidation']");
 	private static By continueImage = By.xpath(
 			"//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/btn_continue.png')]");
@@ -136,6 +137,8 @@ public class BookingLocators {
 	private static By verifypremiumoption = By.xpath("//select[@id='xCabin']//option[2]");
 	private static By tripSummaryButton = By.xpath("//span[text()='Trip Summary']");
 
+	// ========
+
 	/**
 	 * @return the emailId
 	 */
@@ -165,6 +168,10 @@ public class BookingLocators {
 
 	public static By getselectFlightOption() {
 		return selectFlightOption;
+	}
+
+	public static By getselectButtonInFlightOption1() {
+		return selectButtonInFlightOption1;
 	}
 
 	public static By getgoingToTextboxSecond() {

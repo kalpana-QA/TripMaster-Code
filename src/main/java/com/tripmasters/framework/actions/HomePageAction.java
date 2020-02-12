@@ -3,11 +3,11 @@ package com.tripmasters.framework.actions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import com.tripmasters.framework.base.TestBase2;
+import com.tripmasters.framework.base.TestBase;
 import com.tripmasters.framework.pages.HomePageLocators;
 import com.tripmasters.framework.utils.CommonLib;
 
-public class HomePageAction extends TestBase2 {
+public class HomePageAction extends TestBase {
 	public static void clickSearch() {
 		CommonLib.ClickUsingJavaScript(HomePageLocators.getSearchBox());
 	}
@@ -69,10 +69,8 @@ public class HomePageAction extends TestBase2 {
 		} else {
 			Text = CommonLib.getText(HomePageLocators.getRomeFlorenceVeniceByTrainLnk());
 			CommonLib.ClickUsingJavaScript(HomePageLocators.getRomeFlorenceVeniceByTrainLnk());
-			}
+		}
 		return Text;
 	}
-	
-	
 
 }

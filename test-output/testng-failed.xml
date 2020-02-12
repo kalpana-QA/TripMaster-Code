@@ -16,10 +16,16 @@
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
           <include name="tearDown"/>
-          <include name="bookingSingleRoomWith3Adults_TC_1" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
+      <class name="com.tripmasters.framework.testScript.HomePageTestScript">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyOtherVacationPackages_TC_12" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

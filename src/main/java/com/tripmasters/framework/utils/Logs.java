@@ -3,8 +3,6 @@ package com.tripmasters.framework.utils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-import com.relevantcodes.extentreports.LogStatus;
-
 public class Logs {
 	private static Logger Log;
 	// static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(" ");
@@ -57,7 +55,7 @@ public class Logs {
 
 	}
 
-	public void error(String message) {
+	public static void error(String message) {
 
 		Log.error(message);
 
