@@ -12,6 +12,8 @@ import com.tripmasters.framework.pages.BookingLocators;
 import com.tripmasters.framework.pages.HomePageLocators;
 import com.tripmasters.framework.utils.CommonLib;
 
+import okhttp3.internal.platform.Platform;
+
 public class BookingPageAction extends TestBase2 {
 
 	public static void FillBasicBookingDetails(String leavingFrom, String destination, String stayingTime,
@@ -254,20 +256,22 @@ public class BookingPageAction extends TestBase2 {
 		CommonLib.SelectOptionByValue(BookingLocators.getstayingDrpdowntwo(), stayingTimeTwo);
 	}
 
-	 public static void SelectValueFromCalendar(){
-	    	CommonLib.clickOnElement(BookingLocators.getArriveDateDropdown());
-	    	String newDate=CommonLib.selectNewDateFromCalendar();
-	    	List<WebElement> columns=driver.findElements(BookingLocators.getArriveDateCalender());
-	    	for (WebElement cell: columns){
+	public static void SelectValueFromCalendar() {
+		CommonLib.clickOnElement(BookingLocators.getArriveDateDropdown());
+		String newDate = CommonLib.selectNewDateFromCalendar();
+		List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
+		for (WebElement cell : columns) {
 
-	    	   if (cell.getText().equals("3")){
-	    	      cell.findElement(By.linkText("3")).click();
-	    	   if (cell.getText().equals(newDate)){
-	    	      cell.findElement(By.linkText(newDate)).click();
-	    	      break;
-	    	 }
-	    }
-	    	   
+			if (cell.getText().equals("3")) {
+				cell.findElement(By.linkText("3")).click();
+				if (cell.getText().equals(newDate)) {
+					cell.findElement(By.linkText(newDate)).click();
+					break;
+				}
+			}
+		}
+	}
+
 	public static void BookingDetailswithPremiumEcomomy(String leavingFrom, String destination, String cabinclass,
 			String stayingTime, String guestInfo) throws Exception {
 		SelectCabinClass(cabinclass);
@@ -297,13 +301,52 @@ public class BookingPageAction extends TestBase2 {
 
 	public static void selectLatinAmericaLink() {
 		CommonLib.ClickUsingJavaScript(HomePageLocators.getExploreLatinAmericaLnk());
-		boolean actuallink = (HomePageLocators.getHomePageTitle()).contains("Vacation Packages");
+		boolean actuallink = (CommonLib.getPageTitle().contains("Vacation Packages"));
 		Assert.assertTrue(actuallink);
 	}
 
 	public static void verifyLatinAmericPage() {
-		boolean expectedlink = (HomePageLocators.getLatinAmericaPageTitle()).contains("Latin America Vacations");
+		boolean expectedlink = (CommonLib.getPageTitle().contains("Latin America Vacations"));
 		Assert.assertTrue(expectedlink);
+	}
+
+	/**
+	 * click On Spot light On DrpDwn for mobile
+	 * 
+	 * @throws Exception
+	 * @author Mrinal
+	 */
+	public static void clickOnSpotlightOnDrpDwnForMob() throws Exception {
+		if (platform.equalsIgnoreCase("Mobile")) {
+			CommonLib.scrollDownForMob(4);
+			CommonLib.ClickUsingJavaScript(HomePageLocators.getSpotlightOnDrpDwn());
+		}
+	}
+
+	/**
+	 * click On First Option Under Spot light On DrpDwn for mobile
+	 * 
+	 * @throws Exception
+	 * @author Mrinal
+	 * @return
+	 */
+	public static String clickOnFirstOptionUnderSpotlightForMob() throws Exception {
+		String title = null;
+		if (platform.equalsIgnoreCase("Mobile")) {
+			title = CommonLib.getText(HomePageLocators.getfirstOptionUnderSpotlightDrpDwn());
+			CommonLib.ClickUsingJavaScript(HomePageLocators.getfirstOptionUnderSpotlightDrpDwn());
+		}
+		return title;
+	}
+
+	/**
+	 * verify Page Displayed
+	 * 
+	 * @throws Exception
+	 * @author Mrinal
+	 */
+	public static void verifyPageDisplayed(String PageTitle) {
+		Assert.assertTrue(CommonLib.getPageTitle().contains(PageTitle.trim()));
 	}
 
 	public static void OldArriveDate() {

@@ -226,16 +226,15 @@ public class BookingPageTestScript extends TestBase2 {
 		System.out.println("passed");
 	}
 
-	// @Test(priority=9)
+//	 @Test(priority=9)
 	public void verifyCity_TC_10() throws Exception {
 		HomePageAction.clickSearch();
 		HomePageAction.fillSearch("Berlin");
 		boolean actual = HomePageAction.validateURL();
 		Assert.assertTrue(actual);
-		BookingPageAction.validateTripIncluisonPage();
 	}
 
-	@Test(priority = 10)
+	// @Test(priority = 10)
 	public void removeAddedCity_TC_17() throws Exception {
 		BookingPageAction.clickOnBuildYourVacationDropDown();
 		BookingPageAction.fillBasicDetails("New York, Newark, NJ", "Delhi (India)", "4", "Mumbai (India)", "1",
@@ -263,14 +262,18 @@ public class BookingPageTestScript extends TestBase2 {
 		BookingPageAction.ClicktoContinuePage();
 	}
 
-	@Test
+//	@Test
 	public void verifySpotlightLink_TC_14(Method method) throws Exception {
 		ExtentTestManager.startTest(method.getName(), "verifySpotlightLink");
 		BookingPageAction.selectLatinAmericaLink();
 		BookingPageAction.verifyLatinAmericPage();
+		BookingPageAction.clickOnSpotlightOnDrpDwnForMob();
+		String PageTitle = BookingPageAction.clickOnFirstOptionUnderSpotlightForMob();
+		BookingPageAction.verifyPageDisplayed(PageTitle.split("\n")[0]);
+
 	}
 
-	@Test
+	// @Test
 	public void dateChanging_TC_9() throws Exception {
 		BookingPageAction.FillBasicBookingDetails("New York, Newark, NJ", "Berlin (Germany)", "12", "1|2");
 		BookingPageAction.SelectNumberOfAdult("2", BookingLocators.getselectAdultDrpdown());

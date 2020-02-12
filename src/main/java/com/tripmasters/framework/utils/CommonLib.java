@@ -142,6 +142,12 @@ public class CommonLib extends TestBase2 {
 		}
 	}
 
+	/**
+	 * Click on webelement Using JavaScript
+	 * 
+	 * @param element
+	 * @author Mrinal
+	 */
 	public static void ClickUsingJavaScript(WebElement element) {
 		try {
 			highlightElement(element);
@@ -241,11 +247,21 @@ public class CommonLib extends TestBase2 {
 		return driver.getTitle();
 	}
 
-	public static WebElement getText(By element) {
+	/**
+	 * get Text by locator
+	 * 
+	 * @param element
+	 * @return
+	 * @author Mrinal
+	 * @version 1
+	 */
+	public static String getText(By locator) {
 
-		WebElement text = driver.findElement(element);
+		WebElement Wb = driver.findElement(locator);
+		String text = null;
 		try {
-			highlightElement(text);
+			highlightElement(Wb);
+			text = 	Wb.getText();
 
 		} catch (Exception e) {
 
@@ -282,6 +298,47 @@ public class CommonLib extends TestBase2 {
 		} catch (Exception e) {
 			throw new Exception("Unable to scroll page");
 		}
+	}
+
+	/**
+	 * Scroll page down to full of its hight on mobile with defined repeatation
+	 * 
+	 * @author Mrinal
+	 * @throws Exception
+	 * @param enterNumberofRepetaion
+	 **/
+	public static void scrollDownForMob(int enterNumberofRepetaion) throws Exception {
+		if (platform.equalsIgnoreCase("Mobile")) {
+			while (enterNumberofRepetaion > 0) {
+				try {
+					Thread.sleep(3000);
+					java.awt.Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+					JavascriptExecutor jse = (JavascriptExecutor) driver;
+					jse.executeScript("window.scrollBy(0," + screenSize.height + ")", "");
+					System.out.println("scrolled down");
+				} catch (Exception e) {
+					throw new Exception("Unable to scroll page");
+				}
+				Thread.sleep(1000);
+				enterNumberofRepetaion--;
+			}
+		}
+	}
+
+	/**
+	 * Get text of a webelement
+	 * 
+	 * @param element
+	 * @return
+	 * @throws Exception
+	 * @author Mrinal
+	 */
+	public static String getText(WebElement element) throws Exception {
+		String text;
+		highlightElement(element);
+		text = element.getText();
+		return text;
+
 	}
 
 }

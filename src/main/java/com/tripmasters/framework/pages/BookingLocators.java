@@ -21,7 +21,7 @@ public class BookingLocators {
 	private static By noMoreCitiesBtn = By
 			.xpath("//span[contains(.,'No more cities. Continue')] | //span[@class = 'spMnextbutt']");
 	private static By continueBtn = By
-			.xpath("//div[@class='dvContinueButton']//span[contains(.,'Continue')] | //span[contains(.,'Continue')]");
+			.xpath("//div[@class='dvContinueButton']//span[contains(.,'Continue')] | //p[@id='pMcont']/span[contains(.,'Continue')]");
 	private static By continueLink = By.xpath("//a[@id='aContWithPriceValidation']");
 	private static By continueImage = By.xpath(
 			"//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/btn_continue.png')]");
