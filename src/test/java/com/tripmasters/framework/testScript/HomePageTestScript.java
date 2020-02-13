@@ -95,6 +95,7 @@ public class HomePageTestScript extends TestBase {
 		String verifyhomepage = CommonLib.getPageTitle();
 		Assert.assertEquals(HomePageLocators.getHomePageTitle(), verifyhomepage);
 		test.log(LogStatus.INFO, "Verified User is on homepage");
+		Logs.info("Verified User is on homepage");
 		HomePageAction.clickSearch();
 		test.log(LogStatus.INFO, "User clicked on Search Box");
 		HomePageAction.fillSearch("Berlin");
