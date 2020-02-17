@@ -1,59 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="170075" started-at="2020-02-12T09:50:45Z" finished-at="2020-02-12T09:53:36Z">
+  <suite name="Default suite" duration-ms="31655" started-at="2020-02-14T13:24:00Z" finished-at="2020-02-14T13:24:32Z">
     <groups>
       <group name="regression">
-        <method signature="HomePageTestScript.verifyOtherVacationPackages_TC_12(java.lang.reflect.Method)[pri:16, instance:com.tripmasters.framework.testScript.HomePageTestScript@627551fb]" name="verifyOtherVacationPackages_TC_12" class="com.tripmasters.framework.testScript.HomePageTestScript"/>
+        <method signature="HomePageTestScript.verifyOtherVacationPackages_TC_12(java.lang.reflect.Method)[pri:16, instance:com.tripmasters.framework.testScript.HomePageTestScript@6737fd8f]" name="verifyOtherVacationPackages_TC_12" class="com.tripmasters.framework.testScript.HomePageTestScript"/>
       </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="BookingPageTestScript.bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.BookingPageTestScript@2b552920]" name="bookingSingleRoomWithThreeAdults_TC_1" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
-      </group> <!-- smoke -->
     </groups>
-    <test name="Test" duration-ms="170075" started-at="2020-02-12T09:50:45Z" finished-at="2020-02-12T09:53:36Z">
+    <test name="Default test" duration-ms="31655" started-at="2020-02-14T13:24:00Z" finished-at="2020-02-14T13:24:32Z">
       <class name="com.tripmasters.framework.testScript.HomePageTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@627551fb]" name="setUp" is-config="true" duration-ms="14252" started-at="2020-02-12T15:23:01Z" finished-at="2020-02-12T15:23:15Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@6737fd8f]" name="setUp" is-config="true" duration-ms="17293" started-at="2020-02-14T13:24:00Z" finished-at="2020-02-14T13:24:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyOtherVacationPackages_TC_12(java.lang.reflect.Method)[pri:16, instance:com.tripmasters.framework.testScript.HomePageTestScript@627551fb]" name="verifyOtherVacationPackages_TC_12" duration-ms="16173" started-at="2020-02-12T15:23:15Z" finished-at="2020-02-12T15:23:31Z">
+        <test-method status="PASS" signature="verifyOtherVacationPackages_TC_12(java.lang.reflect.Method)[pri:16, instance:com.tripmasters.framework.testScript.HomePageTestScript@6737fd8f]" name="verifyOtherVacationPackages_TC_12" duration-ms="14337" started-at="2020-02-14T13:24:17Z" finished-at="2020-02-14T13:24:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.tripmasters.framework.testScript.HomePageTestScript.verifyOtherVacationPackages_TC_12(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.tripmasters.framework.testScript.HomePageTestScript.verifyOtherVacationPackages_TC_12(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOtherVacationPackages_TC_12 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@627551fb]" name="tearDown" is-config="true" duration-ms="4116" started-at="2020-02-12T15:23:31Z" finished-at="2020-02-12T15:23:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@6737fd8f]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-14T13:24:32Z" finished-at="2020-02-14T13:24:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
-      <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@2b552920]" name="setUp" is-config="true" duration-ms="15366" started-at="2020-02-12T15:20:45Z" finished-at="2020-02-12T15:21:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.BookingPageTestScript@2b552920]" name="bookingSingleRoomWithThreeAdults_TC_1" duration-ms="115795" started-at="2020-02-12T15:21:01Z" finished-at="2020-02-12T15:22:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bookingSingleRoomWithThreeAdults_TC_1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@2b552920]" name="tearDown" is-config="true" duration-ms="4346" started-at="2020-02-12T15:22:57Z" finished-at="2020-02-12T15:23:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
