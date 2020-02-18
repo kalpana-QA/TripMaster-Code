@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -30,7 +31,7 @@ public class TestBase {
 	private boolean flag = false;
 	private static Logs log = new Logs();
 	protected static String platform;
-	
+	public static WebDriverWait wait;
 	// GenerateReport gn;
 	// @BeforeClass
 	@BeforeMethod(alwaysRun = true)

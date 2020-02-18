@@ -28,6 +28,16 @@ public class PassengerInformationLocators {
      private static By passportR2T1=By.xpath("//select[@id='2_txtPAX_Nationality1']");
      private static By passportR2T2=By.xpath("//select[@id='2_txtPAX_Nationality2']");
      
+     private static By fnameR1C1SingleTrvlr=By.xpath("(//div[div[span[contains(.,'Room 1')]]]//input[contains(@placeholder,'First and Middle Name')])[2]");
+     private static By lnameR1C1SingleTrvlr=By.xpath("(//div[div[span[contains(.,'Room 1')]]]//input[contains(@placeholder,'Last Name')])[2]");
+     private static By genderR1C1SingleTrvlr=By.xpath("(//div[div[div[span[contains(.,'Room 1')]]]]//div[contains(@class,'Gender')]//select)[2]");
+  
+     private static By fnameR2C1SingleTrvlr=By.xpath("(//div[div[span[contains(.,'Room 2')]]]//input[contains(@placeholder,'First and Middle Name')])[2]");
+     private static By lnameR2C1SingleTrvlr=By.xpath("(//div[div[span[contains(.,'Room 2')]]]//input[contains(@placeholder,'Last Name')])[2]");
+     private static By genderR2C1SingleTrvlr=By.xpath("(//div[div[div[span[contains(.,'Room 2')]]]]//div[contains(@class,'Gender')]//select)[2]");
+     private static By dobR2C1SingleTrvlr=By.xpath("//input[@id='2_txtCPAX_DOB1']");
+     private static By passportR2C1SingleTrvlr=By.xpath("//select[@id='2_txtCPAX_Nationality1']");
+     
      private static By fnameR1C1=By.xpath("(//div[div[span[contains(.,'Room 1')]]]//input[contains(@placeholder,'First and Middle Name')])[3]");
      private static By lnameR1C1=By.xpath("(//div[div[span[contains(.,'Room 1')]]]//input[contains(@placeholder,'Last Name')])[3]");
      private static By genderR1C1=By.xpath("(//div[div[div[span[contains(.,'Room 1')]]]]//div[contains(@class,'Gender')]//select)[3]");
@@ -163,4 +173,44 @@ public class PassengerInformationLocators {
 		return passportR2C1;
 	}
 	
+	
+	public static By getfnameR1C1SingleTrvlr(){
+		
+	return fnameR1C1SingleTrvlr;
+	}
+	
+	public static By getlnameR1C1SingleTrvlr(){
+		
+		return lnameR1C1SingleTrvlr;
+		}
+	
+	public static By getgenderR1C1SingleTrvlr(){
+		
+		return genderR1C1SingleTrvlr;
+		}
+	
+	public static By getfnameR2C1SingleTrvlr(){
+		
+		return fnameR2C1SingleTrvlr;
+		}
+		
+		public static By getlnameR2C1SingleTrvlr(){
+			
+			return lnameR2C1SingleTrvlr;
+			}
+		
+		public static By getgenderR2C1SingleTrvlr(){
+			
+			return genderR2C1SingleTrvlr;
+			}
+		
+
+		public static By getdobR2C1SingleTrvlr() {
+			return dobR2C1SingleTrvlr;
+		}
+		
+		public static By getpassportR2C1SingleTrvlr() {
+			return passportR2C1SingleTrvlr;
+		}
+		
 }

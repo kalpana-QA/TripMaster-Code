@@ -2,6 +2,7 @@ package com.tripmasters.framework.actions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import com.tripmasters.framework.base.TestBase;
 import com.tripmasters.framework.pages.HomePageLocators;
@@ -9,25 +10,27 @@ import com.tripmasters.framework.utils.CommonLib;
 
 public class HomePageAction extends TestBase {
 	public static void clickSearch() {
-		CommonLib.ClickUsingJavaScript(HomePageLocators.getSearchBox());
+		CommonLib.clickUsingJavaScript(HomePageLocators.getSearchBox());
 	}
 
 	public static void fillSearch(String city) throws Exception {
-		CommonLib.ClearAndSetValues(HomePageLocators.getSearchBox(), city);
-		CommonLib.ClickUsingJavaScript(HomePageLocators.getGoButton());
+		CommonLib.clearAndSetValues(HomePageLocators.getSearchBox(), city);
+		CommonLib.clickUsingJavaScript(HomePageLocators.getGoButton());
 	}
 
-	public static boolean validateURL() {
+	public static void validateURL() {
 		boolean result = false;
 		if (driver.getCurrentUrl().contains("Berlin")) {
 			result = true;
 		}
-		return result;
-
+		else{ 
+				result=false;
+			}
+		Assert.assertTrue(result);
 	}
 
 	public static void getStartAgain() {
-		CommonLib.ClickUsingJavaScript(HomePageLocators.getStartAgain());
+		CommonLib.clickUsingJavaScript(HomePageLocators.getStartAgain());
 	}
 
 	public static boolean validateFooterText() {
@@ -47,7 +50,7 @@ public class HomePageAction extends TestBase {
 	public static void clickOnExploreEuropeLinkOnMob() throws Exception {
 		if (platform.equalsIgnoreCase("Mobile")) {
 			CommonLib.scrollDown();
-			CommonLib.ClickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
+			CommonLib.clickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
 		}
 	}
 
@@ -65,10 +68,10 @@ public class HomePageAction extends TestBase {
 			wbEl = driver.findElement(HomePageLocators.getpackageDisplayedUnderOtherVacationPackageOption())
 					.findElement(By.xpath("./span[contains(@class,'Title')]"));
 			Text = CommonLib.getText(wbEl);
-			CommonLib.ClickUsingJavaScript(HomePageLocators.getpackageDisplayedUnderOtherVacationPackageOption());
+			CommonLib.clickUsingJavaScript(HomePageLocators.getpackageDisplayedUnderOtherVacationPackageOption());
 		} else {
 			Text = CommonLib.getText(HomePageLocators.getRomeFlorenceVeniceByTrainLnk());
-			CommonLib.ClickUsingJavaScript(HomePageLocators.getRomeFlorenceVeniceByTrainLnk());
+			CommonLib.clickUsingJavaScript(HomePageLocators.getRomeFlorenceVeniceByTrainLnk());
 		}
 		return Text;
 	}

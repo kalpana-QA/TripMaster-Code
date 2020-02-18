@@ -38,7 +38,7 @@ public class CommonLib extends TestBase {
 	 * @author Shivam Kashyap
 	 * @throws Exception
 	 **/
-	public static WebElement FindElementByXpath(String xpath) throws Exception {
+	public static WebElement findElementByXpath(String xpath) throws Exception {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
@@ -107,14 +107,14 @@ public class CommonLib extends TestBase {
 	}
 	
 	/**
-	 * Description: It's take the screenshot of current page.
+	 * Description: This method will take the screenshot of current page.
 	 * 
-	 * @author Kalpana
+	 * @author Kalpana Kaushik
 	 * @throws IOException
 	 * @Version 1
 	 **/
 
-	public static String TakeScreenShot() throws IOException {
+	public static String takeScreenShot() throws IOException {
 
 		try {
 			Date date = new Date();
@@ -139,8 +139,17 @@ public class CommonLib extends TestBase {
 		}
 		return screenShotPath;
 	}
+	
+	/**
+	 * Description: This method will clear and set the value.
+	 * @param element(By FieldElement contains the xpath for field in which the value to be entered.;
+	 * String parameters is the value to be entered in the field.)
+	 * @author Kalpana Kaushik
+	 * @throws IOException
+	 * @Version 1
+	 **/
 
-	public static String ClearAndSetValues(By FieldElement, String StringToBeEntered) throws Exception {
+	public static String clearAndSetValues(By FieldElement, String StringToBeEntered) throws Exception {
 
 		try {
 			WebElement element = driver.findElement(FieldElement);
@@ -164,7 +173,7 @@ public class CommonLib extends TestBase {
 	 * @throws Exception
 	 * @version 1
 	 **/
-	public static void ClickUsingJavaScript(By FieldElement) {
+	public static void clickUsingJavaScript(By FieldElement) {
 
 		try {
 			WebElement element = driver.findElement(FieldElement);
@@ -182,7 +191,7 @@ public class CommonLib extends TestBase {
 	 * @param element
 	 * @author Mrinal
 	 */
-	public static void ClickUsingJavaScript(WebElement element) {
+	public static void clickUsingJavaScript(WebElement element) {
 
 		try {
 			highlightElement(element);
@@ -193,22 +202,37 @@ public class CommonLib extends TestBase {
 			System.out.println("Unable to click on element using Javascript Executor");
 		}
 	}
+	
+	/**
+	 * Description: This method will select the element by value from the dropdown.
+	 * @param element(By FieldElement contains the xpath for field in which the value to be entered.;
+	 * String parameters is the value to be entered in the field.)
+	 * @author Kalpana Kaushik
+	 * @Version 1
+	 **/
 
-	public static String SelectOptionByValue(By element, String valueOfOption) {
+	public static String selectOptionByValue(By element, String valueOfOption) {
 
 		try {
 			WebElement selectField = driver.findElement(element);
+			//wait.until(ExpectedConditions.elementToBeClickable(selectField));
 			highlightElement(selectField);
 			Select option = new Select(selectField);
 			option.selectByValue(valueOfOption);
-			waitForElement(2);
+			waitForElement(1);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return valueOfOption;
 	}
-
-	public static String SelectOptionByText(By element, String optionText) {
+	/**
+	 * Description: This method will select the element by text from the dropdown.
+	 * @param element(By FieldElement contains the xpath for field in which the value to be entered.;
+	 * String parameters is the value to be entered in the field.)
+	 * @author Kalpana Kaushik
+	 * @Version 1
+	 **/
+	public static String selectOptionByText(By element, String optionText) {
 
 		try {
 			WebElement selectField = driver.findElement(element);
@@ -221,8 +245,14 @@ public class CommonLib extends TestBase {
 		}
 		return optionText;
 	}
-
-	public static void VerifyTravellerDetails(By element, List<String> expectedTravellerInfo) {
+	/**
+	 * Description: This method will verify the traveller details.
+	 * @param element(By FieldElement fetch the list of all actual elements present in the DOM;
+	 *List<String>expectedTravellerInfo contains the list of expected elements.)
+	 * @author Kalpana Kaushik
+	 * @Version 1
+	 **/
+	public static void verifyTravellerDetails(By element, List<String> expectedTravellerInfo) {
 		try {
 			List<String> actualTravellerInfo = new ArrayList<String>();
 			List<WebElement> tempList = driver.findElements(element);
@@ -240,8 +270,8 @@ public class CommonLib extends TestBase {
 	/**
 	 * 
 	 * Description :: object is present or not :: Input Parameters : String
-	 * String Return Type:: Void
-	 * 
+	 * String Return Type:: boolean
+	 * @author Kalpana Kaushik
 	 */
 
 	public static boolean isElementDisplayed(By element) {
@@ -307,20 +337,25 @@ public class CommonLib extends TestBase {
 		return text;
 
 	}
-
+	/**
+	 * 
+	 * Description :: Select a date from Calendar,100 days from today's date.
+	 * String Return Type:: 
+	 * @author Kalpana Kaushik
+	 */
 	public static String selectNewDateFromCalendar() {
 		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(new Date());
 		System.out.println(cal.getTime());
-		cal.add(Calendar.DATE, 100);
+		cal.add(Calendar.DATE, 200);
 		String newDate = dateFormat.format(cal.getTime());
 		String[] newDateDay = newDate.split("/");
 		return newDateDay[1];
 	}
 
 	/**
-	 * Scroll page down to full of its hight
+	 * Scroll page down to full of its height
 	 * 
 	 * @author Mrinal
 	 * @throws Exception
@@ -340,7 +375,7 @@ public class CommonLib extends TestBase {
 	/**
 	 * It will wait for specific time.
 	 * 
-	 * @author Kalpana
+	 * @author Kalpana Kaushik
 	 * @throws Exception
 	 * @version 1
 	 **/

@@ -8,24 +8,17 @@
   <test name="Test(failed)" parallel="methods">
     <groups>
       <run>
-        <include name="smoke"/>
-        <include name="regression"/>
+        <include name="testdemo"/>
       </run>
     </groups>
     <classes>
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
           <include name="tearDown"/>
+          <include name="bookingTwoRoomTwoAdultTwoChild_TC_5" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
-      <class name="com.tripmasters.framework.testScript.HomePageTestScript">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="verifyOtherVacationPackages_TC_12" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

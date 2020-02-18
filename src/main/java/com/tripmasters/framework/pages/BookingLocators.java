@@ -80,11 +80,12 @@ public class BookingLocators {
 
 	private static By selectWithoutAirButton = By.xpath("//*[@class='dvIntlFly']/child::span[text()='Without Air *']");
 	private static By browseHotelslink = By.xpath("//a[contains(.,' Browse ')]");
+	
 	private static By selectFirstHotel = By.xpath("(//td[@class='RoomTypeHotelListBottom m-srd-td1']//img)[1]");
 	private static By verifyTripinclusionPage = By
 			.xpath("//div[@class='mainDiv']//span[contains(text(),'TRIP INCLUSION DETAILS')]");
 	private static By firstHotel = By.xpath("(//a[@class='hotelHeadTitle'])[1]");
-	private static By verifyHotel = By.xpath("(//a[@class='m-hotel-a1'])[1]");
+	private static By verifyHotel = By.xpath("(//a[contains(@class,'hotel')])[1]");
 	private final static By firstFlightDetails = By.xpath("//div[@id='divSegmentDetails1']//tbody//td");
 	private final static By actualFlightDetails = By
 			.xpath("//div[@id='seg1flight1']//div[@class='divFligth-Bottom-Left textGrey10']");
@@ -97,7 +98,7 @@ public class BookingLocators {
 	private static By verifyTripInclusionHeader = By.xpath("//div[@class='mainDiv']//span[@class='spanMainTitle']");
 	private static By selectHotelName = By.xpath("(//a[@class='hotelHeadTitle'])[1][1]");
 	private static By verifyHotelName = By.xpath("//div[@id='toResize440']//a");
-	private static By arriveDate = By.xpath("//div[text()='Thu 30-APR']");
+	private static By arriveDate = By.xpath("//div[contains(@id,'divDayOpt3')]//div[contains(@class,'divDayOptionDate')]");
 	private static By withoutAirButton = By.xpath("//*[@class='dvIntlFly']/child::span[text()='Without Air *']");
 
 	private static By searchBox = By.xpath("//form[@id='frmSearch']//input[@id='q']");
@@ -109,7 +110,7 @@ public class BookingLocators {
 	private static By goingToTextboxThird = By.xpath("//*[@id='qNACity3']");
 	private static By stayingDrpdowntwo = By.xpath("//select[@id='qSTCity2']");
 	private static By stayingDrpdownthree = By.xpath("//select[@id='qSTCity3']");
-	private static By changedArriveDate = By.xpath("//input[contains(@id,'qArrDate')]");
+	private static By changedArriveDate = By.xpath("//div[contains(@id,'divDayOpt4')]//div[contains(@class,'divDayOptionDate')]");
 	private static By pickCalendarData = By.xpath("//table[@class='ui-datepicker-calendar']//tbody//td");
 
 	private static By buildYourVacation_DropDown = By.xpath("//img[contains(@src,'createitinarary_')]/parent::p");
