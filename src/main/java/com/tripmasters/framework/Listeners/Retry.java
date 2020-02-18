@@ -7,7 +7,7 @@ import org.testng.ITestResult;
 
 import com.relevantcodes.extentreports.LogStatus;
 import com.tripmasters.framework.base.TestBase;
-import com.tripmasters.framework.utils.ExtentTestManager;
+import com.tripmasters.framework.reports.ExtentTestManager;
 
 public class Retry {
 

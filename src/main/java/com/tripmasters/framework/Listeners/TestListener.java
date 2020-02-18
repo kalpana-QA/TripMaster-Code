@@ -10,8 +10,8 @@ import org.testng.ITestResult;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.tripmasters.framework.base.TestBase;
-import com.tripmasters.framework.utils.ExtentManager;
-import com.tripmasters.framework.utils.ExtentTestManager;
+import com.tripmasters.framework.reports.ExtentManager;
+import com.tripmasters.framework.reports.ExtentTestManager;
 
 public class TestListener extends TestBase implements ITestListener {
 

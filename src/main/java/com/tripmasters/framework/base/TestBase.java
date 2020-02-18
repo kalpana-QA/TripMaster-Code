@@ -14,8 +14,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import com.tripmasters.framework.utils.JsonDataReader;
-import com.tripmasters.framework.utils.Logs;
+import com.tripmasters.framework.fileReaders.JsonDataReader;
+import com.tripmasters.framework.pageActions.BookingPageAction;
+import com.tripmasters.framework.pageActions.HomePageAction;
+import com.tripmasters.framework.pageActions.PassengerInfoPageAction;
+import com.tripmasters.framework.reports.Logs;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -24,7 +27,8 @@ import io.appium.java_client.ios.IOSElement;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
-	private static String chromeDriverFilePath = System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe";
+	private static String chromeDriverFilePath = System.getProperty("user.dir")
+			+ "/src/test/resources/webdriver/chromedriver.exe";
 	public static WebDriver driver;
 	private DesiredCapabilities capabilities;
 	private URL url;
@@ -32,21 +36,27 @@ public class TestBase {
 	private static Logs log = new Logs();
 	protected static String platform;
 	public static WebDriverWait wait;
+	public static boolean flag_Mob;
+
+	protected BookingPageAction bookingPage;
+	protected HomePageAction homePage;
+	protected PassengerInfoPageAction passengerInfoPage;
+
+
 	// GenerateReport gn;
 	// @BeforeClass
 	@BeforeMethod(alwaysRun = true)
 	// @Parameters(value = { "browser" })
 	public void setUp() throws FileNotFoundException, IOException, ParseException {
 		// gn = new GenerateReport();
-		 platform = JsonDataReader.getJSONData("Platform");
+		platform = JsonDataReader.getJSONData("Platform");
 		String browser = JsonDataReader.getJSONData("Browser");
 		try {
 			switch (platform) {
 			case "Windows":
 				if (browser.equalsIgnoreCase(("Chrome"))) {
-					 System.setProperty("webdriver.chrome.driver",
-					 chromeDriverFilePath);
-					//WebDriverManager.chromedriver().setup();
+					System.setProperty("webdriver.chrome.driver", chromeDriverFilePath);
+					// WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver();
 					driver.manage().window().maximize();
 					log.info("ChromeDriver instantiated for " + platform + " platform.");
@@ -85,24 +95,26 @@ public class TestBase {
 					log.error("Browser doesn't found!!!! for mobile platform");
 					System.err.println("Browser doesn't found!!!! for mobile platform");
 				}
+				flag_Mob = true;
 				break;
 			case "iOS":
 				if (browser.equalsIgnoreCase("Safari")) {
 					capabilities = new DesiredCapabilities();
-					capabilities.setCapability("deviceName", "iPhone");
+					capabilities.setCapability("deviceName", "iPhone 11 Pro Max");
 					capabilities.setCapability("platformName", "iOS");
-					capabilities.setCapability("platfromVersion", "9.1");
+					capabilities.setCapability("platformVersion", "13.3");
 					capabilities.setCapability(CapabilityType.BROWSER_NAME, "Safari");
 					// IOSDriver
-					url = new URL("http:127.0.1.1:4723/wd/hub");
+					url = new URL("http://127.0.0.1:4723/wd/hub");
 					driver = new IOSDriver<IOSElement>(url, capabilities);
+					DesiredCapabilities capabilities = new DesiredCapabilities();
 					System.out.println("Safari browser launched on iOS");
 					flag = true;
-
 				} else {
 					log.error("browser doesn't found!!!!!!!!!!!");
 					System.err.println("browser doesn't found!!!!!!!!");
 				}
+				flag_Mob = true;
 				break;
 
 			default:
@@ -119,8 +131,8 @@ public class TestBase {
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				String url = JsonDataReader.getJSONData("URL");
 				driver.get(url);
-				log.info("The given URL '" + url + "' launch successfully for " + platform + " platform and "
-						+ browser + " browser!!!!!!!!!!!!");
+				log.info("The given URL '" + url + "' launch successfully for " + platform + " platform and " + browser
+						+ " browser!!!!!!!!!!!!");
 				int time = (int) System.nanoTime();
 				System.out.println("nano time is: " + time);
 			}
@@ -134,14 +146,13 @@ public class TestBase {
 		 * 
 		 * } else if (browser.equals("Firefox")) {
 		 * 
-		 * WebDriverManager.firefoxdriver().setup(); driver = new
-		 * FirefoxDriver();
+		 * WebDriverManager.firefoxdriver().setup(); driver = new FirefoxDriver();
 		 * 
 		 * } else { System.out.println("Browser doesn't found!!!!"); } } else if
 		 * (platform.equals("Mobile")) {
 		 * 
-		 * if (browser.equals("Chrome")) { DesiredCapabilities capabilities =
-		 * new DesiredCapabilities();
+		 * if (browser.equals("Chrome")) { DesiredCapabilities capabilities = new
+		 * DesiredCapabilities();
 		 * 
 		 * capabilities.setCapability("chromedriverExecutable",
 		 * "/TripMasters/Drivers/chromedriver.exe");
@@ -163,6 +174,9 @@ public class TestBase {
 		 * } } else { System.out.println("Platform doesn't found!!!!!!!!"); }
 		 */
 
+		homePage = new HomePageAction(driver);
+		bookingPage = new BookingPageAction(driver);
+		passengerInfoPage = new PassengerInfoPageAction(driver);
 	}
 
 	@AfterMethod(alwaysRun = true)
@@ -173,7 +187,7 @@ public class TestBase {
 		// GenerateReport2.getResult(null);
 		if (driver != null) {
 			log.info("Closing browser after TestClass");
-			driver.close();
+			// driver.close();
 		} else {
 			log.error("Driver is null at AfterClass (TestBase)");
 		}

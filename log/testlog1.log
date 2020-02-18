@@ -357,6 +357,7 @@
 2020-02-12 16:57:28,044 [pool-1-thread-4] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
 2020-02-12 18:04:12,699 [pool-1-thread-4] INFO com.tripmasters.framework.utils.Logs - User clicked on Explore Europe Link
 2020-02-12 18:04:26,785 [pool-1-thread-4] INFO com.tripmasters.framework.utils.Logs - User clicked on particular vacation package
+<<<<<<< HEAD
 2020-02-13 12:43:18,106 [main] INFO com.tripmasters.framework.utils.Logs - ChromeDriver instantiated for Windows platform.
 2020-02-13 12:43:23,994 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
 2020-02-13 12:43:27,415 [main] INFO com.tripmasters.framework.utils.Logs - User entered 'New York  La Guardia, NY' into leaving from field
@@ -3430,3 +3431,67 @@
 2020-02-17 19:10:43,524 [pool-1-thread-5] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
 2020-02-17 19:10:43,559 [pool-1-thread-5] INFO com.tripmasters.framework.utils.Logs - verifyFooterText is displayed
 2020-02-17 19:10:43,560 [pool-1-thread-5] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+=======
+2020-02-13 12:06:58,326 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-13 12:07:06,770 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-13 12:07:26,957 [main] ERROR com.tripmasters.framework.utils.Logs - Unable to select element by text
+2020-02-13 12:07:47,222 [main] ERROR com.tripmasters.framework.utils.Logs - Unable to find the element on Page
+2020-02-13 12:08:07,432 [main] ERROR com.tripmasters.framework.utils.Logs - Unable to find the element on Page
+2020-02-13 12:08:07,844 [main] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-13 12:08:23,895 [main] INFO com.tripmasters.framework.utils.Logs - User select '1|1' from Guest list
+2020-02-13 12:08:44,013 [main] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-13 12:16:02,272 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-13 12:16:08,916 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-13 12:16:29,487 [main] ERROR com.tripmasters.framework.utils.Logs - Unable to select element by text
+2020-02-13 12:16:40,116 [main] INFO com.tripmasters.framework.utils.Logs - User entered '4' nights staying time
+2020-02-13 12:16:56,342 [main] INFO com.tripmasters.framework.utils.Logs - User select '1|1' from Guest list
+2020-02-13 12:17:16,491 [main] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-13 15:21:02,902 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-13 15:21:10,013 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-13 15:21:50,304 [main] ERROR com.tripmasters.framework.utils.Logs - Element is not displayed
+2020-02-13 15:22:25,423 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-13 15:22:31,204 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-13 15:23:11,593 [main] ERROR com.tripmasters.framework.utils.Logs - Element is not displayed
+2020-02-13 15:23:31,759 [main] ERROR com.tripmasters.framework.utils.Logs - Element is not displayed
+2020-02-13 15:23:51,852 [main] ERROR com.tripmasters.framework.utils.Logs - Element is not displayed
+2020-02-13 15:24:11,924 [main] ERROR com.tripmasters.framework.utils.Logs - Element is not displayed
+2020-02-13 15:24:11,935 [main] INFO com.tripmasters.framework.utils.Logs - Home Page Title Verified.
+2020-02-13 15:24:11,935 [main] INFO com.tripmasters.framework.utils.Logs - Closing browser after TestClass
+2020-02-13 15:25:48,927 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-13 15:25:54,297 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-13 15:26:54,618 [main] INFO com.tripmasters.framework.utils.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-13 15:27:00,304 [main] INFO com.tripmasters.framework.utils.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-14 16:27:17,699 [main] ERROR com.tripmasters.framework.reports.Logs - Driver is null at AfterClass (TestBase)
+2020-02-14 16:29:18,130 [main] INFO com.tripmasters.framework.reports.Logs - User clicked on Explore Europe Link
+2020-02-14 16:29:18,136 [main] ERROR com.tripmasters.framework.reports.Logs - Driver is null at AfterClass (TestBase)
+2020-02-14 17:43:55,074 [main] INFO com.tripmasters.framework.reports.Logs - User clicked on Explore Europe Link
+2020-02-14 17:43:55,074 [main] ERROR com.tripmasters.framework.reports.Logs - Driver is null at AfterClass (TestBase)
+2020-02-14 18:09:28,162 [main] INFO com.tripmasters.framework.reports.Logs - User clicked on Explore Europe Link
+2020-02-14 18:09:28,178 [main] ERROR com.tripmasters.framework.reports.Logs - Driver is null at AfterClass (TestBase)
+2020-02-14 18:10:42,130 [main] INFO com.tripmasters.framework.reports.Logs - User clicked on Explore Europe Link
+2020-02-14 18:10:42,130 [main] ERROR com.tripmasters.framework.reports.Logs - Driver is null at AfterClass (TestBase)
+2020-02-14 18:12:09,153 [main] INFO com.tripmasters.framework.reports.Logs - User clicked on Explore Europe Link
+2020-02-14 18:12:09,168 [main] ERROR com.tripmasters.framework.reports.Logs - Driver is null at AfterClass (TestBase)
+2020-02-14 18:12:41,798 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-14 18:12:52,154 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-14 18:12:52,334 [main] INFO com.tripmasters.framework.reports.Logs - User clicked on Explore Europe Link
+2020-02-14 18:12:52,350 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-14 18:16:37,057 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-14 18:16:45,886 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-14 18:16:45,989 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-14 18:16:45,990 [main] INFO com.tripmasters.framework.reports.Logs - User entered '5' nights staying time
+2020-02-14 18:16:45,991 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|3' from Guest list
+2020-02-14 18:16:45,994 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-14 18:16:55,702 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-14 18:17:03,680 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-14 18:17:03,905 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-14 18:51:50,534 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-14 18:51:57,340 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-14 18:51:57,417 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-14 18:54:10,630 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-14 18:54:17,710 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-14 18:54:25,357 [main] INFO com.tripmasters.framework.reports.Logs - User clicked on Explore Europe Link
+2020-02-14 18:54:32,032 [main] INFO com.tripmasters.framework.reports.Logs - User clicked on particular vacation package
+2020-02-14 18:54:32,052 [main] INFO com.tripmasters.framework.reports.Logs - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-02-14 18:54:32,058 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+>>>>>>> 47e4303e7c629d9e5f679e9c1e2f36e37a385aab

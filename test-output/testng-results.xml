@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="20" passed="20">
   <reporter-output>
   </reporter-output>
@@ -58,6 +59,27 @@
           <params>
             <param index="0">
               <value>
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="31655" started-at="2020-02-14T13:24:00Z" finished-at="2020-02-14T13:24:32Z">
+    <groups>
+      <group name="regression">
+        <method signature="HomePageTestScript.verifyOtherVacationPackages_TC_12(java.lang.reflect.Method)[pri:16, instance:com.tripmasters.framework.testScript.HomePageTestScript@6737fd8f]" name="verifyOtherVacationPackages_TC_12" class="com.tripmasters.framework.testScript.HomePageTestScript"/>
+      </group> <!-- regression -->
+    </groups>
+    <test name="Default test" duration-ms="31655" started-at="2020-02-14T13:24:00Z" finished-at="2020-02-14T13:24:32Z">
+      <class name="com.tripmasters.framework.testScript.HomePageTestScript">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@6737fd8f]" name="setUp" is-config="true" duration-ms="17293" started-at="2020-02-14T13:24:00Z" finished-at="2020-02-14T13:24:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyOtherVacationPackages_TC_12(java.lang.reflect.Method)[pri:16, instance:com.tripmasters.framework.testScript.HomePageTestScript@6737fd8f]" name="verifyOtherVacationPackages_TC_12" duration-ms="14337" started-at="2020-02-14T13:24:17Z" finished-at="2020-02-14T13:24:32Z">
+          <params>
+            <param index="0">
+              <value>
+>>>>>>> 47e4303e7c629d9e5f679e9c1e2f36e37a385aab
                 <![CDATA[public void com.tripmasters.framework.testScript.HomePageTestScript.verifyOtherVacationPackages_TC_12(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
@@ -65,6 +87,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOtherVacationPackages_TC_12 -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@2b552920]" name="tearDown" is-config="true" duration-ms="4102" started-at="2020-02-17T19:08:51Z" finished-at="2020-02-17T19:08:55Z">
           <reporter-output>
           </reporter-output>
@@ -142,10 +165,14 @@
           </reporter-output>
         </test-method> <!-- verifyFooterText_TC_16 -->
         <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@2b552920]" name="tearDown" is-config="true" duration-ms="4076" started-at="2020-02-17T19:10:43Z" finished-at="2020-02-17T19:10:47Z">
+=======
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@6737fd8f]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-14T13:24:32Z" finished-at="2020-02-14T13:24:32Z">
+>>>>>>> 47e4303e7c629d9e5f679e9c1e2f36e37a385aab
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
+<<<<<<< HEAD
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@2758fe70]" name="setUp" is-config="true" duration-ms="16582" started-at="2020-02-17T18:41:56Z" finished-at="2020-02-17T18:42:13Z">
           <reporter-output>
@@ -416,4 +443,8 @@
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
+=======
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> 47e4303e7c629d9e5f679e9c1e2f36e37a385aab
 </testng-results>
