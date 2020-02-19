@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
   <listeners>
     <listener class-name="com.tripmasters.framework.Listeners.TestListener"/>
@@ -11,12 +12,21 @@
         <include name="testdemo"/>
       </run>
     </groups>
+=======
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+>>>>>>> f172852406c50f74aa2ebf3a7eb533794d81463d
     <classes>
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
           <include name="tearDown"/>
+<<<<<<< HEAD
           <include name="bookingSingleRoomOneAdultOneChild_TC_2" invocation-numbers="0"/>
           <include name="setUp"/>
+=======
+          <include name="setUp"/>
+          <include name="removeAddedCity_TC_17_mobile"/>
+>>>>>>> f172852406c50f74aa2ebf3a7eb533794d81463d
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>

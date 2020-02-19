@@ -10,6 +10,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import com.tripmasters.framework.base.PageBase;
 import com.tripmasters.framework.pageLocators.BookingLocators;
 import com.tripmasters.framework.pageLocators.PassengerInformationLocators;
+//import com.tripmasters.framework.utils.CommonLib;
 
 public class PassengerInfoPageAction extends PageBase {
 
@@ -36,6 +37,45 @@ public class PassengerInfoPageAction extends PageBase {
 		//test.log(LogStatus.INFO, "User selects Passport details as:'"+ passportInfo +"' for First Traveller");
 		return list;
 	}
+	//satyam
+	public static List<String> FillfirstTravelerDetailsiOS(String fname,String lname,String gender,String dateOfBirth,String passportInfo) throws Exception{		
+		List<String>list=new ArrayList<String>();
+    	String firstName=clearAndSetValues(BookingLocators.getfirstTravelerFirstNameTextBoxiOS(), fname);
+    	String secondName=clearAndSetValues(BookingLocators.getfirstTravelerLastNameTxtboxiOS(), lname);
+    	String fullName=firstName +" "+ secondName;
+    	list.add(fullName);
+	    list.add(selectOptionByText(BookingLocators.getfirstTravelerGenderDropdowniOS(), gender));
+	    scrollDown();
+		list.add(clearAndSetValues(BookingLocators.getfirstTravelerDOBiOS(), dateOfBirth));
+		selectOptionByValue(BookingLocators.getpassportDrpdownFirstTraveller(), passportInfo);
+    	return list;
+	}
+	//satyam
+	public static List<String> FillSecondTravellerDetailsiOS(String fname,String lname,String gender,String dateOfBirth,String passportInfo) throws Exception{
+		 List<String>list=new ArrayList<String>();
+		 String firstName=clearAndSetValues(BookingLocators.getsecondTravelerFirstNameTextBoxiOS(), fname);
+		 String secondName=clearAndSetValues(BookingLocators.getsecondTravelerLastNameTxtboxiOS(), lname);
+		 String fullName=firstName +" "+ secondName;
+		 list.add(fullName);
+		 list.add(selectOptionByText(BookingLocators.getsecondTravelerGenderDropdowniOS(), gender));
+		
+		   list.add(clearAndSetValues(BookingLocators.getsecondTravelerDOBiOS(), dateOfBirth));
+		   selectOptionByValue(BookingLocators.getpassportDrpdownSecondTraveller(), passportInfo);
+		
+		
+		return list;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	public List<String> fillSecondTravellerDetails(String fname, String lname, String gender, String dateOfBirth,
 			String passportInfo, String travelerType) throws Exception {

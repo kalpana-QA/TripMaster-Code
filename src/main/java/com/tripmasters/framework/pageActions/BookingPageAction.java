@@ -17,6 +17,7 @@ import com.tripmasters.framework.pageLocators.BookingLocators;
 import com.tripmasters.framework.pageLocators.HomePageLocators;
 import com.tripmasters.framework.reports.Logs;
 
+
 public class BookingPageAction extends PageBase {
 
 	ExtentTest test;
@@ -170,6 +171,29 @@ public class BookingPageAction extends PageBase {
 		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
 		selectGuestDetails(guestinfo);
 	}
+	
+	public  void fillBasicDetatilsForMultipleCities(String leavefrom, String firstdestination,String stayingTime,String seconddestination,
+			String seconddrop) throws Exception {
+		clearAndSetValues(BookingLocators.getLeavingTxtbox(), leavefrom);
+		clearAndSetValues(BookingLocators.getgoingToTextbox(), firstdestination);
+		selectStayingTime(stayingTime);
+		clickUsingJavaScript(BookingLocators.getaddCityBtn());
+		clearAndSetValues(BookingLocators.getgoingToTextboxSecond(), seconddestination);
+		selectStayingTimeTwo(seconddrop);
+		
+	}
+	public void getTripinclusionContinueButton() throws Exception {
+		scrollDown();
+		scrollDown();
+		clickUsingJavaScript(BookingLocators.getTripInclusionContinueButtonmob());
+	}
+	
+	
+	
+	
+	
+	
+	
 
 	public  void getWithoutButton() {
 
