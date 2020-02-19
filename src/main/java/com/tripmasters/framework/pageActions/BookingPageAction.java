@@ -28,12 +28,6 @@ public class BookingPageAction extends PageBase {
 	}
 
 	public  void fillBasicBookingDetails(String leavingFrom, String destination, String stayingTime,String guestInfo) throws Exception {
-		clearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
-		Logs.info("User entered '" + leavingFrom + "' into leaving from field");
-		//test.log(LogStatus.INFO, "User entered '" + leavingFrom + "' into leaving from field");
-		clearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
-		Logs.info("User entered '" + destination + "' into Going to from field");
-		//test.log(LogStatus.INFO, "User entered '" + destination + "' into Going to from field");
 		selectValueFromCalendar();
 		selectStayingTime(stayingTime);
 		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
@@ -42,6 +36,18 @@ public class BookingPageAction extends PageBase {
 		Logs.info("User entered guest info '" + guestInfo + "'");
 	}
 
+	public void fillLeavingFromDetails(String leavingFrom) throws Exception{
+		clearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
+		Logs.info("User entered '" + leavingFrom + "' into leaving from field");
+		//test.log(LogStatus.INFO, "User entered '" + leavingFrom + "' into leaving from field");
+	}
+	
+	public void fillGoingToCityDetails(String destination) throws Exception{
+		clearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+		Logs.info("User entered '" + destination + "' into Going to from field");
+		//test.log(LogStatus.INFO, "User entered '" + destination + "' into Going to from field");
+	}
+	
 	public  void selectStayingTime(String stayingTime) {
 		selectOptionByValue(BookingLocators.getstayingDrpdown(), stayingTime);
 		Logs.info("User entered '" + stayingTime + "' nights staying time");
