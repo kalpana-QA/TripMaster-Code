@@ -141,10 +141,37 @@ public class BookingLocators {
 	// ======== Locators for Mobile ======================
 
 	private static By cabinSectionMob = By.cssSelector("div[id='dvMcabin']");
+	//satyam
+	private static By tripInclusionContinueButtonmob=By.xpath("//a[@id='aContWithPriceValidationReview']");
+	private static By firstTravelerFirstNameTextBoxiOS=By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtPFName1' ]");
+	private static By secondTravelerFirstNameTextBoxiOS=By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtPFName2' ]");
+	private static By firstTravelerLastNameTxtboxiOS = By.xpath("//input[contains(@placeholder,'Last Name') and @id='txtPLName1']");
+	private static By secondTravelerLastNameTxtboxiOS = By.xpath("//input[contains(@placeholder,'Last Name') and @id='txtPLName2']");
+	private static By firstTravelerGenderDropdowniOS = By.xpath("//select[@id='txtPAX_Gender1']");
+	private static By secondTravelerGenderDropdowniOS = By.xpath("//select[@id='txtPAX_Gender2']");
+	private static By firstTravelerDOBiOS = By.xpath("//input[@id='txtPAX_DOB1']");
+	private static By secondTravelerDOBiOS = By.xpath("//input[@id='txtPAX_DOB2']");
+	private static By verifyTraveler1NameiOS = By
+			.xpath("//div[@id='TravelerR1']//div[@class='editvaldob' or @class='cel-name col-6 mt-2' or @class='editvalgender font-weight-bold']");
+	private static By verifyTraveler2NameiOS = By
+			.xpath("//div[@id='TravelerR2']//div[@class='editvaldob' or @class='editvalgender font-weight-bold' or @class='cel-name col-6 mt-2']");
+	
 
 	/**
 	 * @return the emailId
 	 */
+	public static By getverifyTraveler1NameiOS() {
+		return verifyTraveler1NameiOS;
+		
+	}
+	
+	public static By getverifyTraveler2NameiOS() {
+		return verifyTraveler2NameiOS;
+		
+	}
+	
+	
+	
 	public static By getEmailId() {
 		return emailId;
 	}
@@ -503,6 +530,51 @@ public class BookingLocators {
 
 	public static By getcabinSectionMob() {
 		return cabinSectionMob;
+	}
+
+	public static By getTripInclusionContinueButtonmob() {
+		
+		return tripInclusionContinueButtonmob;
+	}
+
+	public static By getfirstTravelerFirstNameTextBoxiOS() {
+		
+		return firstTravelerFirstNameTextBoxiOS;
+	}
+
+	public static By getfirstTravelerLastNameTxtboxiOS() {
+		
+		return firstTravelerLastNameTxtboxiOS;
+	}
+
+	public static By getfirstTravelerGenderDropdowniOS() {
+		
+		return firstTravelerGenderDropdowniOS;
+	}
+
+	public static By getfirstTravelerDOBiOS() {
+		
+		return firstTravelerDOBiOS;
+	}
+
+	public static By getsecondTravelerFirstNameTextBoxiOS() {
+		
+		return secondTravelerFirstNameTextBoxiOS;
+	}
+
+	public static By getsecondTravelerLastNameTxtboxiOS() {
+	
+		return secondTravelerLastNameTxtboxiOS;
+	}
+
+	public static By getsecondTravelerGenderDropdowniOS() {
+		
+		return secondTravelerGenderDropdowniOS;
+	}
+
+	public static By getsecondTravelerDOBiOS() {
+		
+		return secondTravelerDOBiOS;
 	}
 
 }

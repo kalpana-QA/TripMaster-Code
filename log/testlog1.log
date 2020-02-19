@@ -3495,3 +3495,39 @@
 2020-02-14 18:54:32,052 [main] INFO com.tripmasters.framework.reports.Logs - verifyOtherVacationPackages is displayed & testcase passed successfully.
 2020-02-14 18:54:32,058 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
 >>>>>>> 47e4303e7c629d9e5f679e9c1e2f36e37a385aab
+2020-02-18 22:44:47,505 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-18 22:44:52,899 [main] INFO com.tripmasters.framework.reports.Logs - Verified User is on homepage
+2020-02-18 22:44:59,699 [main] INFO com.tripmasters.framework.reports.Logs - Click on Search textBox avialable on HomePage
+2020-02-18 22:45:06,164 [main] INFO com.tripmasters.framework.reports.Logs - Search for a particular city & Click on Go Button
+2020-02-18 22:45:06,820 [main] INFO com.tripmasters.framework.reports.Logs - User redirected to that particular city.Verified!
+2020-02-18 22:45:06,828 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-18 22:52:56,933 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-18 22:53:08,514 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-18 22:53:08,944 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-18 22:53:11,063 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-18 22:53:14,425 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-18 22:53:17,738 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-18 22:53:17,990 [main] INFO com.tripmasters.framework.reports.Logs - Fill all the basic details for multiple cities
+2020-02-18 22:53:17,991 [main] INFO com.tripmasters.framework.reports.Logs - Adding multiple cities in destinations
+2020-02-18 22:53:18,071 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-18 23:46:25,221 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-18 23:46:25,248 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-18 23:57:46,634 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-18 23:58:11,436 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-18 23:59:13,185 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-18 23:59:59,206 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-19 01:11:13,557 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-19 01:11:40,288 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-19 01:12:41,435 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-19 01:13:28,802 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-19 01:48:05,170 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-19 01:48:18,452 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-19 01:48:44,238 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-19 01:49:08,501 [main] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-02-19 01:50:26,547 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-19 01:50:46,931 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-19 01:51:07,537 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-19 01:51:28,998 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-19 01:58:40,015 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-19 01:59:06,047 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-19 01:59:31,734 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list

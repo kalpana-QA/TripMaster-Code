@@ -50,7 +50,7 @@ public class HomePageTestScript extends TestBase {
 
 	}
 
-	@Test(groups = { "regression" }, priority = 16)
+	//@Test(groups = { "regression" }, priority = 16)
 	public void verifyOtherVacationPackages_TC_12(Method method) throws Exception {
 		String PackageTitle;
 		System.out.println("flag_Mob = " + flag_Mob);
@@ -70,7 +70,7 @@ public class HomePageTestScript extends TestBase {
 		Logs.info("verifyOtherVacationPackages is displayed & testcase passed successfully.");
 	}
 
-	 @Test(groups = {"smoke"},priority=17)
+	 //@Test(groups = {"smoke"},priority=17)
 	public void verifyPopularVacationPackages_TC_13(Method method) {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "VerifyPopularVacationPackages_TC_13");
 		homePage.clickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
@@ -103,7 +103,7 @@ public class HomePageTestScript extends TestBase {
 	    Logs.info("User redirected to that particular city.Verified!");
 }
 
-	@Test(groups = {"smoke"},priority=19)
+	//@Test(groups = {"smoke"},priority=19)
 	public void verifyStartAgainLink_TC_15(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyStartAgainLink_TC_15");
 		String verifyhomepage = homePage.getPageTitle();
@@ -119,7 +119,7 @@ public class HomePageTestScript extends TestBase {
 
 	}
 
-	@Test(groups = {"smoke"},priority=20)
+	//@Test(groups = {"smoke"},priority=20)
 	public void verifyFooterText_TC_16(Method method) {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyFooterText_TC_16");
 		boolean validatefooter = homePage.validateFooterText();

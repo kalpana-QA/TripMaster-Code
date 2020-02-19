@@ -9,6 +9,8 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
+//import com.tripmasters.framework.actions.BookingPageAction;
 import com.tripmasters.framework.base.PageBase;
 import com.tripmasters.framework.base.TestBase;
 
@@ -16,6 +18,7 @@ import com.tripmasters.framework.pageActions.PassengerInfoPageAction;
 import com.tripmasters.framework.pageLocators.BookingLocators;
 import com.tripmasters.framework.reports.ExtentTestManager;
 import com.tripmasters.framework.reports.Logs;
+
 
 
 public class BookingPageTestScript extends TestBase {
@@ -31,7 +34,7 @@ public class BookingPageTestScript extends TestBase {
 	private static String ActualHotel;
 	private static String ExpectedHotel;
 
-	@Test(groups = { "smoke" }, priority = 1)
+	//@Test(groups = { "smoke" }, priority = 1)
 	public void bookingSingleRoomWithThreeAdults_TC_1(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoomWith3Adults");
 		bookingPage.fillBasicBookingDetails("New York, Newark, NJ", "Berlin (Germany)", "4", "1|3");
@@ -55,7 +58,7 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 
-	@Test(groups= {"regression"},priority=2)
+	//@Test(groups= {"regression"},priority=2)
 	public void bookingSingleRoomOneAdultOneChild_TC_2(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoom1Adult1Child");
         bookingPage.fillBasicBookingDetails("Philadelphia, PA", "Berlin (Germany)", "4", "1|Other");
@@ -85,7 +88,7 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 
-    @Test(groups= {"smoke"},priority=3)
+   // @Test(groups= {"smoke"},priority=3)
 	public void bookingTwoRoomTwoAdult_TC_3(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom2Adult");
 		bookingPage.fillBasicBookingDetails("New York, Newark, NJ", "Berlin (Germany)", "6", "2|2-2");
@@ -113,7 +116,7 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 
-	@Test(groups= {"smoke"},priority=4)
+	//@Test(groups= {"smoke"},priority=4)
 	public void bookingTwoRoomThreeAdultOneChild_TC_4(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom3Adult1Child");
         bookingPage.fillBasicBookingDetails("New York, Newark, NJ", "Berlin (Germany)", "4", "2|Other");
@@ -146,7 +149,7 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 
-	@Test(groups= {"smoke"},priority=5)
+	//@Test(groups= {"smoke"},priority=5)
 	public void bookingTwoRoomTwoAdultTwoChild_TC_5(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "booking2Room2Adult2Child");
 		bookingPage.fillBasicBookingDetails("New York, Newark, NJ", "Berlin (Germany)", "6", "2|Other");
@@ -182,7 +185,7 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 
-	@Test(groups= {"smoke"},priority=6)
+	//@Test(groups= {"smoke"},priority=6)
 	public void bookingFlightsWithmultipleCities_TC_6(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingFlightsWithmultipleCities");
 		bookingPage.fillBasicBookingDetailForMultipleCities("WithAir", "Berlin (Germany)", "4", "Augsburg (Germany)","1|Other");
@@ -213,7 +216,7 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 
-	@Test(groups= {"smoke"},priority=7)
+	//@Test(groups= {"smoke"},priority=7)
 	public void bookingFlightAndHotelForSingleCity_TC_7(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "bookingFlightAndHotelForSingleCity");
 		bookingPage.fillBasicBookingDetails("New York, Newark, NJ", "Delhi (India)", "6", "2|Other");
@@ -247,7 +250,7 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Verify that only particular selected hotel appears along with passenger details");
 	}
 
-	@Test(groups= {"smoke"},priority=8)
+	//@Test(groups= {"smoke"},priority=8)
 	public void bookingFlightAndHotelForMultipleCity_TC_8(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "bookingFlightAndHotelForMultipleCity");
 		bookingPage.fillBasicBookingDetailForMultipleCities("WithAir", "Berlin (Germany)", "4","Augsburg (Germany)", "1|Other");
@@ -275,8 +278,33 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
+	
+	@Test 
+		public void bookingFlightAndHotelForMultipleCity_TC_8_iOS(Method method) throws Exception {
+			//ExtentTestManager.startTest(method.getName(), "bookingFlightAndHotelForMultipleCity_TC_8_iOS");
+			bookingPage.clickOnBuildYourVacationDropDown();
+			bookingPage.fillBasicDetatilsForMultipleCities("New York, Newark, NJ", "Delhi (India)", "4", "Mumbai (India)", "1");
+			bookingPage.getNoMoreCitiesButton();
+			bookingPage.selectGuestDetails("1|1");
+			bookingPage.clickonContinueButton();
+			bookingPage.selectCheaperFlights_Mob();
+			bookingPage.getTripinclusionContinueButton();
+			expectedFirstTravellerInfo = PassengerInfoPageAction.FillfirstTravelerDetailsiOS("Morris", "Leo", "Male",
+					"01/01/1992", "237|US");
+			expectedSecondTravellerInfo = PassengerInfoPageAction.FillSecondTravellerDetailsiOS("Shally", "Leo", "Male",
+					"01/01/1992", "237|US");
+			bookingPage.getTripinclusionContinueButton();
+			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1NameiOS(), expectedFirstTravellerInfo);
+			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler2NameiOS(), expectedSecondTravellerInfo);
+			
+		}
+	
+	
+	
+	
+	
 
-	 @Test(groups= {"regression"},priority=9)
+	 //@Test(groups= {"regression"},priority=9)
 	public void withoutAirBookingForSingleCity_TC_19(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "withoutAirBookingForSingleCity_TC_19");
 		bookingPage.selectWithoutAir();
@@ -299,7 +327,7 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Verify that only particular selected hotel appears along with passenger details");
 	}
 
-	@Test(groups= {"regression"},priority=10)
+	//@Test(groups= {"regression"},priority=10)
 	public void getWithoutAir_TC_20(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "getWithoutAir");
 		bookingPage.getWithoutButton();
@@ -321,7 +349,7 @@ public class BookingPageTestScript extends TestBase {
 
 	}
 
-	@Test(groups= {"regression"},priority=11)
+	//@Test(groups= {"regression"},priority=11)
 	public void removeAddedCity_TC_17(Method method) throws Exception {
 
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "removeAddedCity");
@@ -353,8 +381,31 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Validate that user is on TripInclusion Page");
 		Logs.info("Validate that user is on TripInclusion Page");
 	}
+	@Test
+	public void removeAddedCity_TC_17_mobile() throws Exception {
+		bookingPage.clickOnBuildYourVacationDropDown();
+		
+		bookingPage.fillBasicDetails("New York, Newark, NJ", "Delhi (India)", "4", "Mumbai (India)", "1",
+				"Chennai -Madras (India)", "1");
+		bookingPage.isremovecitydisplayed();
+		bookingPage.deleteAddedCities();
+		bookingPage.validateremovedcity();
+		bookingPage.getNoMoreCitiesButton();
+		bookingPage.selectGuestDetails("1|1");
+		bookingPage.clickonContinueButton();
+		bookingPage.selectCheaperFlights_Mob();
+		bookingPage.validateTripIncluisonPage();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 
-	@Test(groups= {"smoke"},priority=12)
+	//@Test(groups= {"smoke"},priority=12)
 	public void bookingDetailswithPremiumEcomomy_TC_18(Method method) throws Exception {
 		ExtentTest test =ExtentTestManager.startTest(method.getName(), "bookingDetailswithPremiumEcomomy");
 		bookingPage.bookingDetailswithPremiumEcomomy("New York City (all Airports),  NY", "Delhi (India)","Premium Economy", "4", "1|1");
@@ -380,7 +431,7 @@ public class BookingPageTestScript extends TestBase {
 	
 
 
-	 @Test(priority = 11)
+	// @Test(priority = 11)
 	public void dateChanging_TC_18(Method method) throws Exception {
 		ExtentTestManager.startTest(method.getName(), "dateChanging_TC_18");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -400,7 +451,7 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.clicktoContinuePage();
 	}
 
-    @Test(groups= {"regression"},priority=13)
+    //@Test(groups= {"regression"},priority=13)
 	public void verifySpotlightLink_TC_14(Method method) throws Exception {
 
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "verifySpotlightLink");
@@ -422,7 +473,7 @@ public class BookingPageTestScript extends TestBase {
 	}
 
 	
-    @Test(groups= {"regression"},priority=14)
+    //@Test(groups= {"regression"},priority=14)
 	public void dateChanging_TC_9(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "verify DateChanging functionality");
 		bookingPage.fillBasicBookingDetails("New York, Newark, NJ", "Berlin (Germany)", "12", "1|2");
