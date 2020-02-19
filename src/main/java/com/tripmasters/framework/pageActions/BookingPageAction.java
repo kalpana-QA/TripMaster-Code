@@ -63,7 +63,7 @@ public class BookingPageAction extends PageBase {
 			Logs.info("User select '" + guestInfo + "' from Guest list");
 		}
 	}
-	
+//	-----------------Method for Android--------------
 	public static boolean verifyCabin()
 	{
 		clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
