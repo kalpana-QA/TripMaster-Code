@@ -456,25 +456,6 @@ public class BookingPageTestScript extends TestBase {
 
 	}
 
-	 @Test(priority = 11)
-	public void bookingDetailswithPremiumEcomomy_Mob_TC_18(Method method) throws Exception {
-		ExtentTestManager.startTest(method.getName(), "dateChanging_TC_18");
-		bookingPage.clickOnBuildYourVacationDropDown();
-		bookingPage.bookingDetailswithPremiumEcomomy("New York City (all Airports),  NY", "Delhi (India)","Premium Economy", "4", "1|1");
-
-		/**
-		 * TODO Verification method is not correct (verifying index of one table with
-		 * another table not the selected value)
-		 */
-		String actualcabin = bookingPage.selectedcabinAssert();
-		String expectedcabin = bookingPage.verifycabinAssert();
-		Assert.assertEquals(expectedcabin, actualcabin);
-		// =======================================================================
-
-		bookingPage.clickonContinueButton();
-		bookingPage.selectCheaperFlights();
-		bookingPage.clicktoContinuePage();
-	}
 
     //@Test(groups= {"regression"},priority=13)
 	public void verifySpotlightLink_TC_14(Method method) throws Exception {
@@ -523,4 +504,32 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 		bookingPage.tripSummary();
 	}
+	
+	 @Test(priority = 11)
+	public void bookingDetailswithPremiumEcomomy_Mob_TC_18(Method method) throws Exception {
+		ExtentTestManager.startTest(method.getName(), "dateChanging_TC_18");
+		bookingPage.clickOnBuildYourVacationDropDown();
+		bookingPage.bookingDetailswithPremiumEcomomy("New York City (all Airports),  NY", "Delhi (India)","Premium Economy", "4", "1|1");
+		String actualcabin = bookingPage.selectedcabinAssert();
+		   System.out.println(actualcabin);
+		   boolean cabinVerify =  bookingPage.verifyCabin();
+		   Assert.assertTrue(cabinVerify);
+		   System.out.println("Cabin class is selected as 'Premium economy'");
+		/**
+		 * TODO Verification method is not correct (verifying index of one table with
+		 * another table not the selected value)
+		 */
+//		String actualcabin = bookingPage.selectedcabinAssert();
+//		String expectedcabin = bookingPage.verifycabinAssert();
+//		Assert.assertEquals(expectedcabin, actualcabin);
+		// =======================================================================
+		bookingPage.clickonContinueButton();
+		bookingPage.selectCheaperFlights();
+		String expectedcabin = bookingPage.verifycabinAssert();
+		System.out.println(expectedcabin);
+		Assert.assertEquals(actualcabin,expectedcabin);
+		bookingPage.validateTripIncluisonPage();
+	}
+
+	
 }

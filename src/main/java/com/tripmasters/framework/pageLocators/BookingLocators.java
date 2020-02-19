@@ -156,7 +156,7 @@ public class BookingLocators {
 	private static By verifyTraveler2NameiOS = By
 			.xpath("//div[@id='TravelerR2']//div[@class='editvaldob' or @class='editvalgender font-weight-bold' or @class='cel-name col-6 mt-2']");
 	
-
+	private static By verifyPremiumEconomy =By.xpath("//div[text()='Premium Economy']");
 	/**
 	 * @return the emailId
 	 */
@@ -577,4 +577,9 @@ public class BookingLocators {
 		return secondTravelerDOBiOS;
 	}
 
+	
+	public static By getVerifyPremiumEconomy() {
+
+	return verifyPremiumEconomy;
+	}
 }
