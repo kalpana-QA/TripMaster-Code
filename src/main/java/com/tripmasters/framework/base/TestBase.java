@@ -12,8 +12,10 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
+import com.relevantcodes.extentreports.ExtentTest;
 import com.tripmasters.framework.fileReaders.JsonDataReader;
 import com.tripmasters.framework.pageActions.BookingPageAction;
 import com.tripmasters.framework.pageActions.HomePageAction;
@@ -38,10 +40,10 @@ public class TestBase {
 	public static WebDriverWait wait;
 	public static boolean flag_Mob;
 
-	protected BookingPageAction bookingPage;
-	protected HomePageAction homePage;
-	protected PassengerInfoPageAction passengerInfoPage;
-
+	public BookingPageAction bookingPage;
+	public HomePageAction homePage;
+	public PassengerInfoPageAction passengerInfoPage;
+	public ExtentTest test;
 
 	// GenerateReport gn;
 	// @BeforeClass
@@ -187,7 +189,7 @@ public class TestBase {
 		// GenerateReport2.getResult(null);
 		if (driver != null) {
 			log.info("Closing browser after TestClass");
-			// driver.close();
+			 driver.close();
 		} else {
 			log.error("Driver is null at AfterClass (TestBase)");
 		}

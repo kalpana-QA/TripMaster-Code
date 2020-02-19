@@ -126,7 +126,7 @@ public class BookingLocators {
 	private static By selectAdultDrpdown = By.xpath("//select[@id='xiAdults']");
 	private static By selectAdultRoom2Drpdown = By.xpath("//select[@id='xRoom2_iAdults']");
 	public static By selectChildAgeDrpdown = By.xpath("//select[@id='xiChild1']");
-	private static By cheaperFlightsLink = By.xpath("//a[contains(.,'Find cheaper flights')]");
+	private static By cheaperFlightsLink = By.xpath("(//a[contains(.,'Find cheaper flights')])[1]");
 	private static By goingToTextboxSecond = By.xpath("//*[@id='qNACity2']");
 
 	private static By arriveDateDropdown = By.xpath("//input[contains(@id,'qArrDate')]");

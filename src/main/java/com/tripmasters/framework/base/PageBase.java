@@ -22,6 +22,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.relevantcodes.extentreports.ExtentTest;
 import com.tripmasters.framework.reports.Logs;
 
 import junit.framework.Assert;
@@ -33,7 +34,8 @@ public class PageBase {
 	// public static WebDriver driver = null;
 	static String screenShotPath = "";
 	protected static WebDriver driver;
-
+    ExtentTest test;
+	
 	@SuppressWarnings("static-access")
 	public PageBase(WebDriver driver) {
 		this.driver = driver;
@@ -175,7 +177,6 @@ public class PageBase {
 			waitForElement(3);
 		} catch (Exception e) {
 			Logs.error("Unable to find the element on Page");
-
 			// e.printStackTrace();
 		}
 		return StringToBeEntered;
@@ -195,7 +196,7 @@ public class PageBase {
 			WebElement element = driver.findElement(FieldElement);
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", element);
-			waitForElement(3);
+			waitForElement(5);
 		} catch (Exception e) {
 			System.out.println("Unable to click on element");
 		}
@@ -290,15 +291,11 @@ public class PageBase {
 
 	/**
 	 * 
-<<<<<<< HEAD:src/main/java/com/tripmasters/framework/utils/CommonLib.java
+
 	 * Description :: object is present or not :: Input Parameters : String
 	 * String Return Type:: boolean
 	 * @author Kalpana Kaushik
-=======
-	 * Description :: object is present or not :: Input Parameters : String String
-	 * Return Type:: Void
-	 * 
->>>>>>> 47e4303e7c629d9e5f679e9c1e2f36e37a385aab:src/main/java/com/tripmasters/framework/base/PageBase.java
+
 	 */
 
 	public boolean isElementDisplayed(By element) {

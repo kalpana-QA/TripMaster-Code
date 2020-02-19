@@ -5,27 +5,35 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import com.tripmasters.framework.base.PageBase;
 import com.tripmasters.framework.pageLocators.BookingLocators;
 import com.tripmasters.framework.pageLocators.PassengerInformationLocators;
 
 public class PassengerInfoPageAction extends PageBase {
 
+	
+	ExtentTest test;
 	public PassengerInfoPageAction(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
 
-	public List<String> fillFirstTravellerDetails(String fname, String lname, String gender, String dateOfBirth,
-			String passportInfo) throws Exception {
+	public List<String> fillFirstTravellerDetails(String fname, String lname, String gender, String dateOfBirth,String passportInfo) throws Exception {
 		List<String> list = new ArrayList<String>();
 		String firstName = clearAndSetValues(BookingLocators.getFirstTravelerFirstNameTxtbox(), fname);
+		//test.log(LogStatus.INFO, "User enters '"+ fname +"' as First Traveller First Name");
 		String secondName = clearAndSetValues(BookingLocators.getFirstTravelerLastNameTxtbox(), lname);
+		//test.log(LogStatus.INFO, "User enters '"+ lname +"' as First Traveller Last Name");
 		String fullName = firstName + " " + secondName;
 		list.add(fullName);
 		list.add(selectOptionByText(BookingLocators.getFirstTravelerGenderDropdown(), gender));
+		//test.log(LogStatus.INFO, "User selects Gender:'"+ gender +"' for First Traveller Last Name");
 		list.add(clearAndSetValues(BookingLocators.getFirstTravelerDOB(), dateOfBirth));
+		//test.log(LogStatus.INFO, "User selects Gender:'"+ dateOfBirth +"' for First Traveller's Date of Birth");
 		selectOptionByValue(BookingLocators.getpassportDrpdownFirstTraveller(), passportInfo);
+		//test.log(LogStatus.INFO, "User selects Passport details as:'"+ passportInfo +"' for First Traveller");
 		return list;
 	}
 
@@ -33,16 +41,23 @@ public class PassengerInfoPageAction extends PageBase {
 			String passportInfo, String travelerType) throws Exception {
 		List<String> list = new ArrayList<String>();
 		String firstName = clearAndSetValues(BookingLocators.getSecondTravelerFirstNameTxtbox(), fname);
+		//test.log(LogStatus.INFO, "User enters '"+ fname +"' as Second Traveller First Name");
 		String secondName = clearAndSetValues(BookingLocators.getSecondTravelerLastNameTxtbox(), lname);
+		//test.log(LogStatus.INFO, "User enters '"+ lname +"' as Second Traveller Last Name");
 		String fullName = firstName + " " + secondName;
 		list.add(fullName);
 		list.add(selectOptionByText(BookingLocators.getSecondTravelerGenderDropdown(), gender));
+		//test.log(LogStatus.INFO, "User selects Gender:'"+ gender +"' for Second Traveller Last Name");
 		if (travelerType.equals("Child")) {
 			list.add(clearAndSetValues(BookingLocators.getselectChildTravelerDOB(), dateOfBirth));
+			//test.log(LogStatus.INFO, "User selects Gender:'"+ dateOfBirth +"' for Second Traveller's Date of Birth");
 			selectOptionByValue(BookingLocators.getpassportDrpdownSecondChildTraveller(), passportInfo);
+			//test.log(LogStatus.INFO, "User selects Passport details as:'"+ passportInfo +"' for Second Traveller");
 		} else {
 			list.add(clearAndSetValues(BookingLocators.getSecondTravelerDOB(), dateOfBirth));
+			//test.log(LogStatus.INFO, "User selects Gender:'"+ dateOfBirth +"' for Second Traveller's Date of Birth");
 			selectOptionByValue(BookingLocators.getpassportDrpdownSecondTraveller(), passportInfo);
+			//test.log(LogStatus.INFO, "User selects Passport details as:'"+ passportInfo +"' for Second Traveller");
 		}
 
 		return list;
@@ -52,12 +67,17 @@ public class PassengerInfoPageAction extends PageBase {
 			String passportInfo) throws Exception {
 		List<String> list = new ArrayList<String>();
 		String firstName = clearAndSetValues(BookingLocators.getthirdTravelerFirstNameTxtbox(), fname);
+		//test.log(LogStatus.INFO, "User enters '"+ fname +"' as Third Traveller First Name");
 		String secondName = clearAndSetValues(BookingLocators.getthirdTravelerLastNameTxtbox(), lname);
+		//test.log(LogStatus.INFO, "User enters '"+ lname +"' as Third Traveller Last Name");
 		String fullName = firstName + " " + secondName;
 		list.add(fullName);
 		list.add(selectOptionByText(BookingLocators.getthirdTravelerGenderDropdown(), gender));
+		//test.log(LogStatus.INFO, "User selects Gender:'"+ gender +"' for Third Traveller Last Name");
 		list.add(clearAndSetValues(BookingLocators.getthirdTravelerDOB(), dateOfBirth));
+		//test.log(LogStatus.INFO, "User selects Gender:'"+ dateOfBirth +"' for Third Traveller's Date of Birth");
 		selectOptionByValue(BookingLocators.getpassportDrpdownThirdTraveller(), passportInfo);
+		//test.log(LogStatus.INFO, "User selects Passport details as:'"+ passportInfo +"' for Third Traveller");
 		return list;
 	}
 

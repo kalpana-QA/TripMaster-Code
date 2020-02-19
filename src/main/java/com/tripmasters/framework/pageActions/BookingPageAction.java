@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import com.tripmasters.framework.base.PageBase;
 import com.tripmasters.framework.base.TestBase;
 import com.tripmasters.framework.pageLocators.BookingLocators;
@@ -17,28 +19,32 @@ import com.tripmasters.framework.reports.Logs;
 
 public class BookingPageAction extends PageBase {
 
+	ExtentTest test;
+	
 	public BookingPageAction(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
 
-	public  void fillBasicBookingDetails(String leavingFrom, String destination, String stayingTime,
-			String guestInfo) throws Exception {
+	public  void fillBasicBookingDetails(String leavingFrom, String destination, String stayingTime,String guestInfo) throws Exception {
 		clearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
 		Logs.info("User entered '" + leavingFrom + "' into leaving from field");
+		//test.log(LogStatus.INFO, "User entered '" + leavingFrom + "' into leaving from field");
 		clearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
 		Logs.info("User entered '" + destination + "' into Going to from field");
+		//test.log(LogStatus.INFO, "User entered '" + destination + "' into Going to from field");
 		selectValueFromCalendar();
 		selectStayingTime(stayingTime);
 		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+		//test.log(LogStatus.INFO, "User clicks to the Continue Button on HomePage");
 		selectGuestDetails(guestInfo);
 		Logs.info("User entered guest info '" + guestInfo + "'");
 	}
 
 	public  void selectStayingTime(String stayingTime) {
-
 		selectOptionByValue(BookingLocators.getstayingDrpdown(), stayingTime);
 		Logs.info("User entered '" + stayingTime + "' nights staying time");
+		//test.log(LogStatus.INFO, "User entered '" + stayingTime + "' nights staying time");
 	}
 
 	/**
@@ -57,9 +63,11 @@ public class BookingPageAction extends PageBase {
 			clickUsingJavaScript(wb);
 			clickUsingJavaScript(BookingLocators.getdoneButton());
 			Logs.info("User select '" + guestInfo + "' from Guest list");
+			//test.log(LogStatus.INFO, "User select '" + guestInfo + "' from Guest list");
 		} else {
 			selectOptionByValue(BookingLocators.getselectGuestDrpdown(), guestInfo);
 			Logs.info("User select '" + guestInfo + "' from Guest list");
+			//test.log(LogStatus.INFO, "User select '" + guestInfo + "' from Guest list");
 		}
 	}
 
@@ -88,14 +96,13 @@ public class BookingPageAction extends PageBase {
 		} else {
 
 			clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
-
+            //test.log(LogStatus.INFO, "User clicks on Select Cheaper Flights Link");
 			flightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
-
 			clickUsingJavaScript(BookingLocators.getselectFlightOption());
 			clickUsingJavaScript(BookingLocators.getselectButtonInFlightOption1());
-
+			//test.log(LogStatus.INFO, "User selects a particular flight from existing options");
 			clickUsingJavaScript(BookingLocators.getcontinueLink());
-
+            //test.log(LogStatus.INFO, "User clicks on Continue Link");
 		}
 		return flightvalue;
 
@@ -285,6 +292,7 @@ public class BookingPageAction extends PageBase {
 		for (WebElement cell : columns) {
 			if (cell.getText().equals(newDate)) {
 				cell.findElement(By.linkText(newDate)).click();
+				//test.log(LogStatus.INFO, "User selects '" + newDate + "' as Arriving_On Date");
 				break;
 			}
 		}

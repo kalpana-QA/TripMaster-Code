@@ -25,8 +25,7 @@ public class BookingPageTestScript extends TestBase {
 	List<String> expectedThirdTravellerInfo = new ArrayList<String>();
 	List<String> expectedFourthTravellerInfo = new ArrayList<String>();
 	List<String> expectedFlightDetails = new ArrayList<String>();
-
-	PassengerInfoPageAction passengerInfoPage=new PassengerInfoPageAction(driver);
+	
 	
 	private static String ActualHotel;
 	private static String ExpectedHotel;
@@ -35,19 +34,44 @@ public class BookingPageTestScript extends TestBase {
 	public void bookingSingleRoomWithThreeAdults_TC_1(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoomWith3Adults");
 		bookingPage.fillBasicBookingDetails("New York, Newark, NJ", "Berlin (Germany)", "4", "1|3");
-		test.log(LogStatus.INFO, "Booking details Source & Destination filled successfully for 3 Adults_4nights");
-		Logs.info("Booking details Source & Destination filled successfully for 3 Adults_4nights");
+		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
+		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
+		test.log(LogStatus.INFO, "User entered \"4\" nights staying time");	
+		test.log(LogStatus.INFO, "User clicks to the Continue Button on HomePage");
+		test.log(LogStatus.INFO, "User select \"1 Room With 3 Adults\" from Guest list");
+		test.log(LogStatus.INFO, "All the basic booking details Source & Destination filled successfully for 3 Adults_4nights");
+		Logs.info("All the basic booking details Source & Destination filled successfully for 3 Adults_4nights");
 		bookingPage.clickonContinueButton();
-		test.log(LogStatus.INFO, "Click on Continue Button");
+		test.log(LogStatus.INFO, "Click on \"Continue\" Button");
 		bookingPage.selectCheaperFlights();
-		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
+		test.log(LogStatus.INFO, "User clicks on Select Cheaper Flights Link");
+		test.log(LogStatus.INFO, "User selects a particular flight from existing options");
+		test.log(LogStatus.INFO, "User clicks on Continue Link");
+		Logs.info("Select Cheaper flights from flight options");
 		bookingPage.clicktoContinuePage();
+		test.log(LogStatus.INFO, "Click to Continue & User redirected to Fill Passenger Details Page");
 		expectedFirstTravellerInfo = passengerInfoPage.fillFirstTravellerDetails("John", "Leo", "Male","01/01/1992", "237|US");
+		test.log(LogStatus.INFO, "User enters \"John\" as First Traveller First Name");
+		test.log(LogStatus.INFO, "User enters \"Leo\" as First Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for First Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1992\" for First Traveller's Date of Birth");
+		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for First Traveller");
 		expectedSecondTravellerInfo = passengerInfoPage.fillSecondTravellerDetails("Elvin", "Leo", "Male","01/01/1994", "237|US", "Adult");
+		test.log(LogStatus.INFO, "User enters \"Elvin\" as Second Traveller First Name");
+		test.log(LogStatus.INFO, "User enters \"Leo\" as Second Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Second Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1994\" for Second Traveller's Date of Birth");
+		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Second Traveller");
 		expectedThirdTravellerInfo = passengerInfoPage.fillThirdTravellerDetails("Marie", "Leo", "Female","01/01/1996", "237|US");
+		test.log(LogStatus.INFO, "User enters \"Marie\" as Third Traveller First Name");
+		test.log(LogStatus.INFO, "User enters \"Leo\" as Third Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Third Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1996\" for Third Traveller's Date of Birth");
+		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Third Traveller");
 		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
 		Logs.info("User fills all the 3 passenger details");
 		bookingPage.clicktoContinuePage();
+		test.log(LogStatus.INFO, "Click to Continue & User redirected to Payment Page");
 		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
 		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
 		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler3Name(), expectedThirdTravellerInfo);
@@ -55,27 +79,44 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 
-	@Test(groups= {"regression"},priority=2)
+	@Test(groups= {"testdemo"},priority=2)
 	public void bookingSingleRoomOneAdultOneChild_TC_2(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoom1Adult1Child");
-        bookingPage.fillBasicBookingDetails("Philadelphia, PA", "Berlin (Germany)", "4", "1|Other");
-		test.log(LogStatus.INFO,"Booking details Source & Destination filled successfully for 1 Adults_1Child_4nights");
-		Logs.info("Booking details Source & Destination filled successfully for 1 Adults_1Child_4nights");
+        bookingPage.fillBasicBookingDetails("Philadelphia, PA", "Berlin (Germany)", "6", "1|Other");
+        test.log(LogStatus.INFO, "User entered \"Philadelphia, PA\" into leaving from field");
+		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
+		test.log(LogStatus.INFO, "User entered \"6\" nights staying time");	
+		test.log(LogStatus.INFO, "User clicks to the Continue Button on HomePage");
+		test.log(LogStatus.INFO, "User select \"1 Room With Other Options\" from Guest list");
+		test.log(LogStatus.INFO, "All the basic booking details Source & Destination filled successfully for 1_Adult_1Child_With_SingleRoom");
+		Logs.info("All the basic booking details Source & Destination filled successfully for 1_Adult_1Child_With_SingleRoom");
 		bookingPage.selectNumberOfAdult("1", BookingLocators.getselectAdultDrpdown());
+		test.log(LogStatus.INFO, "User selects \"1\" Adult from Adult Drpdown");
 		bookingPage.selectNumberOfChild("1", "9", "Child1");
+		test.log(LogStatus.INFO, "User selects \"1\" Child,\"Age of Child:9\"");
 		test.log(LogStatus.INFO, "No.of Child & Age of Child got selected successfully");
 		Logs.info("No.of Child & Age of Child got selected successfully");
 		bookingPage.clickonContinueButton();
 		test.log(LogStatus.INFO, "Click on Continue Button");
 		Logs.info("Click on Continue Button");
 		bookingPage.selectCheaperFlights();
-		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
+		test.log(LogStatus.INFO, "User clicks on Select Cheaper Flights Link");
+		test.log(LogStatus.INFO, "User selects a particular flight from existing options");
+		test.log(LogStatus.INFO, "User clicks on Continue Link");
 		Logs.info("Select Cheaper flights from flight options");
 		bookingPage.clicktoContinuePage();
-		expectedFirstTravellerInfo = passengerInfoPage.fillFirstTravellerDetails("Morris", "Leo", "Male",
-				"01/01/1992", "237|US");
-		expectedSecondTravellerInfo = passengerInfoPage.fillSecondTravellerDetails("Shally", "Leo", "Male",
-				"01/01/1994", "237|US", "Child");
+		expectedFirstTravellerInfo = passengerInfoPage.fillFirstTravellerDetails("Morris", "Mano", "Male","01/01/1992", "237|US");
+		test.log(LogStatus.INFO, "User enters \"Morris\" as First Traveller First Name");
+		test.log(LogStatus.INFO, "User enters \"Mano\" as First Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for First Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1992\" for First Traveller's Date of Birth");
+		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for First Traveller");
+		expectedSecondTravellerInfo = passengerInfoPage.fillSecondTravellerDetails("Shally", "Mano", "Female","01/01/1994", "237|US", "Child");
+		test.log(LogStatus.INFO, "User enters \"Shally\" as Second Traveller First Name");
+		test.log(LogStatus.INFO, "User enters \"Mano\" as Second Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"Female\" for Second Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1994\" for Second Traveller's Date of Birth");
+		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Second Traveller");
 		bookingPage.clicktoContinuePage();
 		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
 		Logs.info("User filled all the passenger details successfully");
@@ -377,11 +418,8 @@ public class BookingPageTestScript extends TestBase {
 
 	}
 
-	
-
-
 	 @Test(priority = 11)
-	public void dateChanging_TC_18(Method method) throws Exception {
+	public void bookingDetailswithPremiumEcomomy_Mob_TC_18(Method method) throws Exception {
 		ExtentTestManager.startTest(method.getName(), "dateChanging_TC_18");
 		bookingPage.clickOnBuildYourVacationDropDown();
 		bookingPage.bookingDetailswithPremiumEcomomy("New York City (all Airports),  NY", "Delhi (India)","Premium Economy", "4", "1|1");
