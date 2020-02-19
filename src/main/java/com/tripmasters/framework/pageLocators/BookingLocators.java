@@ -137,7 +137,7 @@ public class BookingLocators {
 	private static By firstpremiumoption = By.xpath("//select[@id='qCabinOpt']//option[2]");
 	private static By verifypremiumoption = By.xpath("//select[@id='xCabin']//option[2]");
 	private static By tripSummaryButton = By.xpath("//span[text()='Trip Summary']");
-
+   private static By verifyPremiumEconomy =By.xpath("//div[text()='Premium Economy']");
 	// ======== Locators for Mobile ======================
 
 	private static By cabinSectionMob = By.cssSelector("div[id='dvMcabin']");
@@ -503,6 +503,11 @@ public class BookingLocators {
 
 	public static By getcabinSectionMob() {
 		return cabinSectionMob;
+	}
+
+public static By getVerifyPremiumEconomy() {
+		
+		return verifyPremiumEconomy;
 	}
 
 }

@@ -55,6 +55,7 @@ public class BookingPageAction extends PageBase {
 			WebElement wb = driver.findElement(BookingLocators.getoptionListForGuestsAndRooms())
 					.findElement(By.xpath(".//li[@id='" + guestInfo + "']"));
 			clickUsingJavaScript(wb);
+			clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
 			clickUsingJavaScript(BookingLocators.getdoneButton());
 			Logs.info("User select '" + guestInfo + "' from Guest list");
 		} else {
@@ -62,7 +63,13 @@ public class BookingPageAction extends PageBase {
 			Logs.info("User select '" + guestInfo + "' from Guest list");
 		}
 	}
-
+	
+	public static boolean verifyCabin()
+	{
+		clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
+		boolean verifycabin = driver.findElement(HomePageLocators.getSelectPremiumEconomy()).isEnabled();
+		return verifycabin;
+	}
 	/**
 	 * 
 	 * @param guestInfo
@@ -72,7 +79,7 @@ public class BookingPageAction extends PageBase {
 		Logs.info("User select '" + guestInfo + "' from Guest list");
 	}
 
-	public  void clickonContinueButton() {
+	public void clickonContinueButton() {
 
 		clickUsingJavaScript(BookingLocators.getcontinueBtn());
 	}
@@ -81,7 +88,7 @@ public class BookingPageAction extends PageBase {
 		clickUsingJavaScript(BookingLocators.getcontinueLink());
 	}
 
-	public  String selectCheaperFlights() throws Exception {
+	public String selectCheaperFlights() throws Exception {
 		String flightvalue = null;
 		if (TestBase.flag_Mob) {
 			selectCheaperFlights_Mob();
@@ -333,16 +340,30 @@ public class BookingPageAction extends PageBase {
 
 	}
 
-	public  String selectedcabinAssert() {
+	public static String selectedcabinAssert() {
 
-		String selectedcabin = driver.findElement(BookingLocators.getFirstpremiumOption()).getText();
-		return selectedcabin;
+		if (TestBase.flag_Mob)
+		{
+			String expectedcabin = driver.findElement(HomePageLocators.getSelectPremiumEconomy()).getText();
+			return expectedcabin;
+		}
+		else
+		{ 
+			String selectedcabin = driver.findElement(BookingLocators.getFirstpremiumOption()).getText();
+		    return selectedcabin;
+		}
 	}
-
-	public  String verifycabinAssert() {
-
-		String expectedcabin = driver.findElement(BookingLocators.getSecondpremiumOption()).getText();
-		return expectedcabin;
+	public static String verifycabinAssert() {
+		if(TestBase.flag_Mob)
+		{
+			String expectedcabin = driver.findElement(BookingLocators.getVerifyPremiumEconomy()).getText();
+			return expectedcabin;
+		}
+		else
+		{
+		     String expectedcabin = driver.findElement(BookingLocators.getSecondpremiumOption()).getText();
+		      return expectedcabin;
+		}
 	}
 
 	public  void selectLatinAmericaLink() {

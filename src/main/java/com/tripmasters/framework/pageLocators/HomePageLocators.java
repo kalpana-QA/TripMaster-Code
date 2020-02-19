@@ -29,7 +29,7 @@ public class HomePageLocators {
 	private static By exploreLatinAmericaLnk = By.xpath(
 			"//section[h1[contains(.,'popular vacation packages')]]//h3/a[contains(.,'Explore Latin America')] | //div[text()='Explore Latin America']");
 	private static String latinAmericaPageTitle = "Latin America Vacations | Latin America Vacation Packages| Tripmasters";
-
+    private static By selectPremiumEconomy = By.xpath("//p[@class='pMdialogCabin']//span[text()='Premium Economy']");
 	// ============= Locators for mobile ================
 
 	private static By SpotlightOnDrpDwn = By.cssSelector("div[id='dvSpot']");
@@ -98,6 +98,11 @@ public class HomePageLocators {
 
 	public static By getfirstOptionUnderSpotlightDrpDwn() {
 		return firstOptionUnderSpotlightDrpDwn;
+	}
+
+	public static By getSelectPremiumEconomy() {
+		
+		return selectPremiumEconomy;
 	}
 
 }
