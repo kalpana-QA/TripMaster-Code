@@ -11,7 +11,7 @@ public class BookingLocators {
 	private static By optionListForGuestsAndRooms = By.cssSelector("div[id='dvpxroomlst'][style='display: block;']");
 	private static By doneButton = By.xpath("//div[@class='dvMdialogDone']/p[text()='Done']");
 
-	private static By selectFlightOption = By.xpath("(//a[@name='chkFlight'])[1]");
+	private static By selectFlightOption = By.xpath("(//a[@name='chkFlight'])[1] | //a[@id='chkFlightOpt1_UA|48|1']");
 	private static By selectButtonInFlightOption1 = By.xpath(
 			"(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/Select1.png')])[1]");
 
@@ -79,17 +79,17 @@ public class BookingLocators {
 	private static By selectChildTraveleraPassport = By.xpath("//select[@id='txtCPAX_Nationality2']");
 
 	private static By selectWithoutAirButton = By.xpath("//*[@class='dvIntlFly']/child::span[text()='Without Air *']");
-	private static By browseHotelslink = By.xpath("//a[contains(.,' Browse ')]");
+	private static By browseHotelslink = By.xpath("//a[contains(.,' Browse ')] | //a[@class='componentSSlink btnyellowcont mb-2 ml-auto mr-auto']");
 	
-	private static By selectFirstHotel = By.xpath("(//td[@class='RoomTypeHotelListBottom m-srd-td1']//img)[1]");
+	private static By selectFirstHotel = By.xpath("(//td[@class='RoomTypeHotelListBottom m-srd-td1']//img)[1] | //a[@class='h-100 btnyellowcont pb-1 font-weight-bold'][1]");
 	private static By verifyTripinclusionPage = By
 			.xpath("//div[@class='mainDiv']//span[contains(text(),'TRIP INCLUSION DETAILS')]");
-	private static By firstHotel = By.xpath("(//a[@class='hotelHeadTitle'])[1]");
-	private static By verifyHotel = By.xpath("(//a[contains(@class,'hotel')])[1]");
+	private static By firstHotel = By.xpath("//a[@class='hotelHeadTitle'][1])");
+	private static By verifyHotel = By.xpath("(//a[contains(@class,'hotel')])[1] | //a[@id='Prod_173668' and @class='m-hotel']");
 	private final static By firstFlightDetails = By.xpath("//div[@id='divSegmentDetails1']//tbody//td");
 	private final static By actualFlightDetails = By
-			.xpath("//div[@id='seg1flight1']//div[@class='divFligth-Bottom-Left textGrey10']");
-	private static By expectedFlight = By.xpath("(//div[@id='divSegmentDetails1']//td//span[@class='textGrey10'])[2]");
+			.xpath("//div[@id='seg1flight1']//div[@class='divFligth-Bottom-Left textGrey10'] | //div[@id='segBottomInfo']//div[@class='col-12'][1]");
+	private static By expectedFlight = By.xpath("(//div[@id='divSegmentDetails1']//td//span[@class='textGrey10'])[2] | //div[@class='col-12 pl-2 pt-1 pb-2']//span[@class='textGrey11 fontSize10'][1]");
 
 	private static By selectWitoutAirOption = By.xpath("//form[@id='formBYO']//span[text()='Without Air *']");
 	private static By browseHotelLink = By.xpath("//div[@class='changeHotel rbtn']//a");
@@ -155,7 +155,7 @@ public class BookingLocators {
 			.xpath("//div[@id='TravelerR1']//div[@class='editvaldob' or @class='cel-name col-6 mt-2' or @class='editvalgender font-weight-bold']");
 	private static By verifyTraveler2NameiOS = By
 			.xpath("//div[@id='TravelerR2']//div[@class='editvaldob' or @class='editvalgender font-weight-bold' or @class='cel-name col-6 mt-2']");
-	
+	private static By firstHoteliOS = By.xpath("//div[@id='tblPrd173668']/div/a/h5");//inside dom id and dom structure changes frequently.
 	private static By verifyPremiumEconomy =By.xpath("//div[text()='Premium Economy']");
 	/**
 	 * @return the emailId
@@ -167,7 +167,10 @@ public class BookingLocators {
 	
 	public static By getverifyTraveler2NameiOS() {
 		return verifyTraveler2NameiOS;
-		
+	}
+
+	public static By getfirstHoteliOS() {
+		return firstHoteliOS;
 	}
 	
 	public static By getEmailId() {
@@ -580,4 +583,6 @@ public class BookingLocators {
 
 	return verifyPremiumEconomy;
 	}
+
+	
 }

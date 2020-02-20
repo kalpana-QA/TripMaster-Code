@@ -3678,6 +3678,7 @@
 2020-02-19 01:59:06,047 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
 2020-02-19 01:59:31,734 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
 >>>>>>> f172852406c50f74aa2ebf3a7eb533794d81463d
+<<<<<<< HEAD
 2020-02-20 11:24:43,563 [pool-1-thread-1] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
 2020-02-20 11:24:43,566 [pool-1-thread-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
 2020-02-20 11:24:43,567 [pool-1-thread-1] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
@@ -3798,3 +3799,108 @@
 2020-02-20 14:57:26,551 [pool-1-thread-1] INFO com.tripmasters.framework.reports.Logs - User entered age of child'9' 
 2020-02-20 14:57:26,551 [pool-1-thread-1] INFO com.tripmasters.framework.reports.Logs - No.of Child & Age of Child got selected successfully
 2020-02-20 14:57:32,723 [pool-1-thread-1] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+=======
+2020-02-19 05:33:55,237 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-19 05:34:13,369 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-19 05:34:18,175 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-19 05:34:20,433 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-19 05:36:23,543 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-19 21:47:37,104 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-19 21:47:57,388 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-19 21:48:02,178 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-19 21:48:04,057 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-19 21:48:14,219 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-19 22:23:34,519 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-19 22:23:58,671 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-19 22:24:03,455 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-19 22:24:05,369 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-19 22:24:37,777 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-19 23:28:05,678 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-19 23:28:27,904 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-19 23:28:32,715 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-19 23:28:34,689 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-19 23:29:08,953 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-19 23:34:40,880 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-19 23:35:02,452 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-19 23:35:07,473 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-19 23:35:09,417 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-19 23:35:50,630 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-19 23:44:38,078 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-19 23:44:55,973 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-19 23:45:00,590 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-19 23:45:02,513 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-19 23:45:47,711 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 01:10:17,035 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-20 01:10:37,526 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-02-20 01:10:53,867 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-20 01:11:14,868 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 01:11:19,804 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-20 01:11:21,751 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 01:12:15,241 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 01:20:41,039 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-20 01:20:41,040 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 01:20:41,322 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-20 01:20:41,323 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-20 01:20:41,420 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 01:20:45,579 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 01:20:53,171 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-20 01:21:12,173 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 01:21:16,966 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-20 01:21:18,833 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 01:22:02,576 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 01:44:46,993 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-20 01:45:05,944 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 01:45:10,925 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-20 01:45:12,905 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 01:46:31,499 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 01:57:29,358 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-20 01:57:50,612 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 01:57:55,781 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-20 01:57:57,688 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 01:59:12,527 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 02:01:17,067 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-20 02:01:38,212 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 02:01:43,044 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-20 02:01:44,919 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 02:03:02,023 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 02:05:12,550 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-20 02:05:32,705 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 02:05:37,684 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-20 02:05:39,517 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 02:06:30,639 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 02:07:09,595 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-20 02:07:31,250 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 02:07:36,026 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-20 02:07:37,975 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 02:08:57,561 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 02:12:49,331 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-20 02:12:57,782 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 02:13:02,646 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-20 02:13:04,486 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 02:14:21,862 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 02:15:38,629 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-20 02:15:58,619 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 02:16:03,520 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-20 02:16:05,398 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 02:17:25,833 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 02:20:43,978 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-20 02:21:05,025 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 02:21:09,784 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-20 02:21:11,670 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 02:22:29,246 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 02:31:08,084 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-20 02:31:28,915 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 02:31:33,705 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-20 02:31:35,616 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 02:32:27,111 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 03:07:18,971 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-20 03:07:39,299 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 03:07:44,098 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-20 03:07:45,772 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 03:08:38,017 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 03:12:51,332 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-20 03:12:58,219 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 03:13:03,102 [main] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-02-20 03:13:05,010 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 03:14:24,039 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+>>>>>>> 870550fc3d897700b95b171e476e89a07b8f3c2c

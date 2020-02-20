@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
   <listeners>
     <listener class-name="com.tripmasters.framework.Listeners.TestListener"/>
@@ -16,8 +17,18 @@
         <methods>
           <include name="bookingTwoRoomTwoAdultTwoChild_TC_5" invocation-numbers="0"/>
           <include name="setUp"/>
+=======
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="bookingFlightAndHotelForSingleCity_TC_7_iOS"/>
+>>>>>>> 870550fc3d897700b95b171e476e89a07b8f3c2c
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
