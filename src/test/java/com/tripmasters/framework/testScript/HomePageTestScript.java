@@ -85,7 +85,7 @@ public class HomePageTestScript extends TestBase {
 		Logs.info("VerifyPopularVacationPackages displayed");
 	}
 
-	@Test(groups = {"smoke"},priority=18)
+	//@Test(groups = {"smoke"},priority=18)
 	public void verifyCity_TC_10(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "Verify Search City Button on homepage");
 		String verifyhomepage = homePage.getPageTitle();
@@ -103,7 +103,7 @@ public class HomePageTestScript extends TestBase {
 	    Logs.info("User redirected to that particular city.Verified!");
 }
 
-	//@Test(groups = {"smoke"},priority=19)
+	@Test(groups = {"smoke"},priority=19)
 	public void verifyStartAgainLink_TC_15(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyStartAgainLink_TC_15");
 		String verifyhomepage = homePage.getPageTitle();
