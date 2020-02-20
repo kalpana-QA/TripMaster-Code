@@ -539,7 +539,7 @@ public class BookingPageTestScript extends TestBase {
 
 	}
 	
-	//    @Test(priority = 11)
+	  @Test(priority = 11)
 	public void bookingDetailswithPremiumEcomomy_Mob_TC_18(Method method) throws Exception {
 		// ExtentTestManager.startTest(method.getName(), "dateChanging_TC_18");
 		bookingPage.clickOnBuildYourVacationDropDown();
