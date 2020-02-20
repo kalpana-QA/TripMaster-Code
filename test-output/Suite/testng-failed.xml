@@ -14,8 +14,7 @@
     <classes>
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
-          <include name="tearDown"/>
-          <include name="bookingSingleRoomOneAdultOneChild_TC_2" invocation-numbers="0"/>
+          <include name="bookingTwoRoomTwoAdultTwoChild_TC_5" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->

@@ -170,8 +170,6 @@ public class BookingLocators {
 		
 	}
 	
-	
-	
 	public static By getEmailId() {
 		return emailId;
 	}

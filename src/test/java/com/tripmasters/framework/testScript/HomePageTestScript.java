@@ -110,7 +110,12 @@ public class HomePageTestScript extends TestBase {
 		bookingPage.clickOnBuildYourVacationDropDown();
 		test.log(LogStatus.INFO, "Click on Build Your Vacation Dropdown");
 		Logs.info("Click on Build Your Vacation Dropdown");
-		bookingPage.fillBasicBookingDetails("New York, Newark, NJ", "Delhi (India)", "4", "1|2");
+		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
+		bookingPage.fillGoingToCityDetails("Delhi (India)");
+		bookingPage.selectStayingTime("4");
+		bookingPage.selectNoMoreCitiesBtn();
+		bookingPage.selectGuestDetails("1|2");
+		//bookingPage.fillBasicBookingDetails("New York, Newark, NJ", "Delhi (India)", "4", "1|2");
 		test.log(LogStatus.INFO, "User fills all the basic booking details");
 		Logs.info("User fills all the basic booking details");
 		homePage.getStartAgain();

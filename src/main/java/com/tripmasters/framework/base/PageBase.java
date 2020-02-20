@@ -374,7 +374,7 @@ public class PageBase {
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(new Date());
 		System.out.println(cal.getTime());
-		cal.add(Calendar.DATE, 200);
+		cal.add(Calendar.DATE, 100);
 		String newDate = dateFormat.format(cal.getTime());
 		String[] newDateDay = newDate.split("/");
 		return newDateDay[1];

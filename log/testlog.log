@@ -688,3 +688,123 @@
 2020-02-19 01:59:06,047 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
 2020-02-19 01:59:31,734 - com.tripmasters.framework.reports.Logs -INFO - User select '1|1' from Guest list
 >>>>>>> f172852406c50f74aa2ebf3a7eb533794d81463d
+2020-02-20 11:24:43,563 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-20 11:24:43,566 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 11:24:43,567 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-20 11:24:43,567 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-20 11:24:43,577 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-02-20 11:26:44,118 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-20 11:26:44,120 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 11:26:44,121 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-20 11:26:44,121 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-20 11:26:44,131 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-02-20 11:28:20,881 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-20 11:28:27,303 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 11:28:30,547 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 11:28:33,668 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-20 11:28:35,952 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-02-20 11:28:42,070 - com.tripmasters.framework.reports.Logs -INFO - User select '1|3' from Guest list
+2020-02-20 11:29:31,897 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-02-20 11:30:16,969 - com.tripmasters.framework.reports.Logs -INFO - User fills all the 3 passenger details
+2020-02-20 11:30:24,313 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-02-20 11:30:24,315 - com.tripmasters.framework.reports.Logs -INFO - Closing browser after TestClass
+2020-02-20 11:36:37,996 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-20 11:36:44,647 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 11:36:47,849 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Philadelphia, PA' into leaving from field
+2020-02-20 11:36:50,979 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-20 11:36:53,235 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-20 11:36:59,369 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-20 11:36:59,370 - com.tripmasters.framework.reports.Logs -INFO - All the basic booking details Source & Destination filled successfully for 1_Adult_1Child_With_SingleRoom
+2020-02-20 11:37:01,548 - com.tripmasters.framework.reports.Logs -INFO - User entered number of child'1' 
+2020-02-20 11:37:01,621 - com.tripmasters.framework.reports.Logs -INFO - User entered number of child'9' 
+2020-02-20 11:37:01,621 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-02-20 11:37:06,646 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-02-20 11:37:52,209 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-02-20 11:38:41,471 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-02-20 11:38:41,565 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-02-20 11:38:41,567 - com.tripmasters.framework.reports.Logs -INFO - Closing browser after TestClass
+2020-02-20 12:20:16,290 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-20 12:20:22,380 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 12:20:25,667 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
+2020-02-20 12:20:28,810 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
+2020-02-20 12:20:30,628 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-20 12:20:36,763 - com.tripmasters.framework.reports.Logs -INFO - User select '2|2-2' from Guest list
+2020-02-20 12:20:36,763 - com.tripmasters.framework.reports.Logs -INFO - All the Basic Booking details Source & Destination filled successfully for Two Adults
+2020-02-20 12:20:41,789 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-02-20 12:21:22,665 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-02-20 12:22:38,811 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-02-20 12:22:39,016 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-02-20 12:22:39,018 - com.tripmasters.framework.reports.Logs -INFO - Closing browser after TestClass
+2020-02-20 12:45:48,478 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-20 12:45:54,799 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 12:45:58,018 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Francisco', CA' into leaving from field
+2020-02-20 12:45:58,039 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-20 12:45:58,039 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Munich (Germany)' into Going to from field
+2020-02-20 12:45:58,053 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-02-20 12:51:39,464 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-20 12:51:45,264 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 12:51:48,488 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Francisco, CA' into leaving from field
+2020-02-20 12:51:51,620 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Munich (Germany)' into Going to from field
+2020-02-20 12:51:53,457 - com.tripmasters.framework.reports.Logs -INFO - User entered '5' nights staying time
+2020-02-20 12:51:59,613 - com.tripmasters.framework.reports.Logs -INFO - User select '2|Other' from Guest list
+2020-02-20 12:51:59,613 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for Two Adults & Two Child
+2020-02-20 12:52:01,809 - com.tripmasters.framework.reports.Logs -INFO - User entered number of child'1' 
+2020-02-20 12:52:01,879 - com.tripmasters.framework.reports.Logs -INFO - User entered number of child'9' 
+2020-02-20 12:52:01,880 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-02-20 12:52:04,041 - com.tripmasters.framework.reports.Logs -INFO - User entered number of child'1' 
+2020-02-20 12:52:04,111 - com.tripmasters.framework.reports.Logs -INFO - User entered number of child'1' 
+2020-02-20 12:52:09,134 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-02-20 12:52:49,616 - com.tripmasters.framework.reports.Logs -INFO - Closing browser after TestClass
+2020-02-20 12:56:49,219 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-20 12:56:55,321 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 12:56:58,568 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Francisco, CA' into leaving from field
+2020-02-20 12:57:01,696 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Munich (Germany)' into Going to from field
+2020-02-20 12:57:03,473 - com.tripmasters.framework.reports.Logs -INFO - User entered '5' nights staying time
+2020-02-20 12:57:09,600 - com.tripmasters.framework.reports.Logs -INFO - User select '2|Other' from Guest list
+2020-02-20 12:57:09,600 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for Two Adults & Two Child
+2020-02-20 12:57:11,782 - com.tripmasters.framework.reports.Logs -INFO - User entered number of child'1' 
+2020-02-20 12:57:11,851 - com.tripmasters.framework.reports.Logs -INFO - User entered age of child'9' 
+2020-02-20 12:57:11,851 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-02-20 12:57:14,013 - com.tripmasters.framework.reports.Logs -INFO - User entered number of child'1' 
+2020-02-20 12:57:14,105 - com.tripmasters.framework.reports.Logs -INFO - User entered age of child'1' 
+2020-02-20 12:57:19,133 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-02-20 13:00:14,531 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-20 13:00:24,149 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 13:00:27,377 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Francisco, CA' into leaving from field
+2020-02-20 13:00:30,494 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Munich (Germany)' into Going to from field
+2020-02-20 13:00:32,259 - com.tripmasters.framework.reports.Logs -INFO - User entered '5' nights staying time
+2020-02-20 13:00:38,395 - com.tripmasters.framework.reports.Logs -INFO - User select '2|Other' from Guest list
+2020-02-20 13:00:38,396 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for Two Adults & Two Child
+2020-02-20 13:00:40,602 - com.tripmasters.framework.reports.Logs -INFO - User entered number of child'1' 
+2020-02-20 13:00:40,671 - com.tripmasters.framework.reports.Logs -INFO - User entered age of child'9' 
+2020-02-20 13:00:40,671 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-02-20 13:00:42,852 - com.tripmasters.framework.reports.Logs -INFO - User entered number of child'1' 
+2020-02-20 13:00:42,925 - com.tripmasters.framework.reports.Logs -INFO - User entered age of child'9' 
+2020-02-20 13:00:42,927 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-02-20 13:05:17,899 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-20 13:05:23,304 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 13:05:26,576 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Francisco, CA' into leaving from field
+2020-02-20 13:05:29,697 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Munich (Germany)' into Going to from field
+2020-02-20 13:05:31,450 - com.tripmasters.framework.reports.Logs -INFO - User entered '5' nights staying time
+2020-02-20 13:05:37,590 - com.tripmasters.framework.reports.Logs -INFO - User select '2|Other' from Guest list
+2020-02-20 13:05:37,590 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for Two Adults & Two Child
+2020-02-20 13:05:39,787 - com.tripmasters.framework.reports.Logs -INFO - User entered number of child'1' 
+2020-02-20 13:05:39,850 - com.tripmasters.framework.reports.Logs -INFO - User entered age of child'9' 
+2020-02-20 13:05:39,850 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-02-20 13:05:42,002 - com.tripmasters.framework.reports.Logs -INFO - User entered number of child'1' 
+2020-02-20 13:05:42,075 - com.tripmasters.framework.reports.Logs -INFO - User entered age of child'9' 
+2020-02-20 13:05:50,101 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-02-20 13:06:32,539 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-02-20 13:07:33,030 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-02-20 13:07:40,515 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-02-20 14:57:02,787 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-02-20 14:57:09,137 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 14:57:12,455 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-20 14:57:15,618 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
+2020-02-20 14:57:17,918 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-20 14:57:24,134 - com.tripmasters.framework.reports.Logs -INFO - User select '2|Other' from Guest list
+2020-02-20 14:57:24,136 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
+2020-02-20 14:57:26,423 - com.tripmasters.framework.reports.Logs -INFO - User entered number of child'1' 
+2020-02-20 14:57:26,551 - com.tripmasters.framework.reports.Logs -INFO - User entered age of child'9' 
+2020-02-20 14:57:26,551 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-02-20 14:57:32,723 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
