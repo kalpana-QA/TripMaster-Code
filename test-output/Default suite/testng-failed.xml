@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="removeAddedCity_TC_17_mobile"/>
+          <include name="bookingFlightAndHotelForSingleCity_TC_7_iOS"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>

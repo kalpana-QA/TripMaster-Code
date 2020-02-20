@@ -83,7 +83,7 @@ public class BookingPageTestScript extends TestBase {
 	}
 
 
-	@Test(groups= {"testdemo"},priority=2)
+	//@Test(groups= {"testdemo"},priority=2)
 	public void bookingSingleRoomOneAdultOneChild_TC_2(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoom1Adult1Child");
         bookingPage.fillBasicBookingDetails("Philadelphia, PA", "Berlin (Germany)", "6", "1|Other");
@@ -257,6 +257,33 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
+	
+	public void bookingFlightsWithMultipleCities_TC_6_iOS() throws Exception {
+		
+		bookingPage.clickOnBuildYourVacationDropDown();
+		bookingPage.fillBasicDetatilsForMultipleCities("New York, Newark, NJ", "Delhi (India)", "4", "Mumbai (India)", "1");
+		bookingPage.getNoMoreCitiesButton();
+		bookingPage.selectGuestDetails("1|1");
+		bookingPage.clickonContinueButton();
+		bookingPage.selectCheaperFlights_Mob();
+		bookingPage.getTripinclusionContinueButton();
+		expectedFirstTravellerInfo = PassengerInfoPageAction.FillfirstTravelerDetailsiOS("Morris", "Leo", "Male",
+				"01/01/1992", "237|US");
+		expectedSecondTravellerInfo = PassengerInfoPageAction.FillSecondTravellerDetailsiOS("Shally", "Leo", "Male",
+				"01/01/1992", "237|US");
+		bookingPage.getTripinclusionContinueButton();
+		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1NameiOS(), expectedFirstTravellerInfo);
+		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler2NameiOS(), expectedSecondTravellerInfo);
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 
 	//@Test(groups= {"smoke"},priority=7)
 	public void bookingFlightAndHotelForSingleCity_TC_7(Method method) throws Exception {
@@ -291,6 +318,29 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Verify that only particular selected hotel appears along with passenger details");
 		Logs.info("Verify that only particular selected hotel appears along with passenger details");
 	}
+		
+	//@Test
+	public void bookingFlightAndHotelForSingleCity_TC_7_iOS() throws Exception {
+		bookingPage.clickOnBuildYourVacationDropDown();
+		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
+		bookingPage.fillGoingToCityDetails("Delhi (India)");
+		bookingPage.selectStayingTime("4");bookingPage.getNoMoreCitiesButton();
+		//bookingPage.selectGuestDetails("1|1");
+		bookingPage.clickonContinueButton();
+		ActualHotel=bookingPage.browseHoteliOS();
+		ExpectedHotel = bookingPage.browseSelectHoteliOS();
+		Assert.assertEquals(ActualHotel, ExpectedHotel);
+		String expected = bookingPage.selectCheaperFlights_Mob();
+		System.out.println(expected);
+		String actualFlight = bookingPage.getActualFlight();
+		System.out.println("Actual is:" +actualFlight  + " "+ "Expected is :"+expected);
+		Assert.assertTrue(expected.contains(actualFlight));
+	
+		
+	}
+	
+	
+	
 
 	//@Test(groups= {"smoke"},priority=8)
 	public void bookingFlightAndHotelForMultipleCity_TC_8(Method method) throws Exception {
@@ -305,6 +355,15 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.clickonContinueButton();
 		test.log(LogStatus.INFO, "Click on Continue Button");
 		Logs.info("Click on Continue Button");
+		ActualHotel = bookingPage.browseHotelsButton();
+		test.log(LogStatus.INFO, "Click on Browse Hotels Button");
+		Logs.info("Click on Browse Hotels Button");
+		ExpectedHotel = bookingPage.browseSelectHotel();
+		test.log(LogStatus.INFO, "Select particular hotel from Hotel Options");
+		Logs.info("Select particular hotel from Hotel Options");
+		Assert.assertEquals(ActualHotel, ExpectedHotel);
+		
+		
 		bookingPage.selectCheaperFlights();
 		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
 		Logs.info("Select Cheaper flights from flight options");
@@ -321,7 +380,7 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 	
-	@Test 
+	//@Test 
 		public void bookingFlightAndHotelForMultipleCity_TC_8_iOS(Method method) throws Exception {
 			//ExtentTestManager.startTest(method.getName(), "bookingFlightAndHotelForMultipleCity_TC_8_iOS");
 			bookingPage.clickOnBuildYourVacationDropDown();
@@ -329,6 +388,9 @@ public class BookingPageTestScript extends TestBase {
 			bookingPage.getNoMoreCitiesButton();
 			bookingPage.selectGuestDetails("1|1");
 			bookingPage.clickonContinueButton();
+			ActualHotel=bookingPage.browseHoteliOS();
+			ExpectedHotel = bookingPage.browseSelectHoteliOS();
+			Assert.assertEquals(ActualHotel, ExpectedHotel);
 			bookingPage.selectCheaperFlights_Mob();
 			bookingPage.getTripinclusionContinueButton();
 			expectedFirstTravellerInfo = PassengerInfoPageAction.FillfirstTravelerDetailsiOS("Morris", "Leo", "Male",
@@ -417,7 +479,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Validate that user is on TripInclusion Page");
 		Logs.info("Validate that user is on TripInclusion Page");
 	}
-	@Test
+	//@Test
 	public void removeAddedCity_TC_17_mobile() throws Exception {
 		bookingPage.clickOnBuildYourVacationDropDown();
 		
@@ -505,7 +567,7 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.tripSummary();
 	}
 	
-	 @Test(priority = 11)
+	// @Test(priority = 11)
 	public void bookingDetailswithPremiumEcomomy_Mob_TC_18(Method method) throws Exception {
 		ExtentTestManager.startTest(method.getName(), "dateChanging_TC_18");
 		bookingPage.clickOnBuildYourVacationDropDown();

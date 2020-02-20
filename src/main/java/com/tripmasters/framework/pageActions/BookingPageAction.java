@@ -116,16 +116,20 @@ public class BookingPageAction extends PageBase {
 
 	}
 
-	public  void selectCheaperFlights_Mob() throws Exception {
+	public  String selectCheaperFlights_Mob() throws Exception {
+		
 		isElementDisplayed(BookingLocators.getcheaperFlightsLink());
 		scrollDown();
 		clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
+		String expectflightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
+		System.out.println(expectflightvalue);
 		clickUsingJavaScript(BookingLocators.getselectFlightOption());
 		clickUsingJavaScript(BookingLocators.getselectbutton());
 		isElementDisplayed(BookingLocators.getcontinueLink());
 		scrollDown();
 		scrollDown();
 		clickUsingJavaScript(BookingLocators.getcontinueLink());
+		return expectflightvalue;
 	}
 
 	public  void clicktoContinuePage() {
@@ -227,12 +231,33 @@ public class BookingPageAction extends PageBase {
 		String actualhotel = driver.findElement(BookingLocators.getFirstHotel()).getText();
 		return actualhotel;
 	}
+	//satyam
+	public String browseHoteliOS() throws Exception {
+		//scrollDown();
+		//scrollDown();
+		clickUsingJavaScript(BookingLocators.getBrowseHotelsLink());
+		String actualhotel = driver.findElement(BookingLocators.getfirstHoteliOS()).getText();
+		System.out.println(actualhotel);
+		return actualhotel;
+	}
+	
+	
 
 	public  String browseSelectHotel() {
 		clickUsingJavaScript(BookingLocators.getselectFirstHotel());
 		String expectedhotel = driver.findElement(BookingLocators.getExpectedHotel()).getText();
 		return expectedhotel;
 	}
+	
+	public String browseSelectHoteliOS() throws Exception {
+		clickUsingJavaScript(BookingLocators.getselectFirstHotel());
+		scrollDown();
+		String expectedhotel = driver.findElement(BookingLocators.getExpectedHotel()).getText();
+		System.out.println(expectedhotel);
+		return expectedhotel;
+	}
+	
+	
 
 	public  void getContinueLink() {
 		clickUsingJavaScript(BookingLocators.getcontinueLink());
