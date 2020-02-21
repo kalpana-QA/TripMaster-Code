@@ -85,7 +85,7 @@ public class HomePageTestScript extends TestBase {
 		Logs.info("VerifyPopularVacationPackages displayed");
 	}
 
-	@Test(groups = {"smoke"},priority=18)
+	//@Test(groups = {"smoke"},priority=18)
 	public void verifyCity_TC_10(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "Verify Search City Button on homepage");
 		String verifyhomepage = homePage.getPageTitle();
@@ -103,14 +103,19 @@ public class HomePageTestScript extends TestBase {
 	    Logs.info("User redirected to that particular city.Verified!");
 }
 
-	//@Test(groups = {"smoke"},priority=19)
+	@Test(groups = {"smoke"},priority=19)
 	public void verifyStartAgainLink_TC_15(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyStartAgainLink_TC_15");
 		String verifyhomepage = homePage.getPageTitle();
 		bookingPage.clickOnBuildYourVacationDropDown();
 		test.log(LogStatus.INFO, "Click on Build Your Vacation Dropdown");
 		Logs.info("Click on Build Your Vacation Dropdown");
-		bookingPage.fillBasicBookingDetails("New York, Newark, NJ", "Delhi (India)", "4", "1|2");
+		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
+		bookingPage.fillGoingToCityDetails("Delhi (India)");
+		bookingPage.selectStayingTime("4");
+		bookingPage.selectNoMoreCitiesBtn();
+		bookingPage.selectGuestDetails("1|2");
+		//bookingPage.fillBasicBookingDetails("New York, Newark, NJ", "Delhi (India)", "4", "1|2");
 		test.log(LogStatus.INFO, "User fills all the basic booking details");
 		Logs.info("User fills all the basic booking details");
 		homePage.getStartAgain();

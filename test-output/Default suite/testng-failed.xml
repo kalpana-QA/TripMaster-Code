@@ -6,7 +6,7 @@
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
           <include name="setUp"/>
-          <include name="bookingFlightsWithMultipleCities_TC_6_iOS"/>
+          <include name="bookingTwoRoomTwoAdult_TC_3" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>

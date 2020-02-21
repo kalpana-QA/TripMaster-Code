@@ -3,25 +3,25 @@ package com.tripmasters.framework.pageLocators;
 import org.openqa.selenium.By;
 
 public class PassengerInformationLocators {
-	 private static By fnameR1T1=By.xpath("(//div[div[span[contains(.,'Room 1')]]]//input[contains(@placeholder,'First and Middle Name')])[1]");
-	 private static By fnameR1T2=By.xpath("(//div[div[span[contains(.,'Room 1')]]]//input[contains(@placeholder,'First and Middle Name')])[2]");
-	 private static By fnameR2T1=By.xpath("(//div[div[span[contains(.,'Room 2')]]]//input[contains(@placeholder,'First and Middle Name')])[1]");
-	 private static By fnameR2T2=By.xpath("(//div[div[span[contains(.,'Room 2')]]]//input[contains(@placeholder,'First and Middle Name')])[2]");
+	 private static By fnameR1T1=By.xpath("(//div[div[*[contains(.,'Room 1')]]]//input[contains(@placeholder,'First and Middle Name')])[1]");
+	 private static By fnameR1T2=By.xpath("(//div[div[*[contains(.,'Room 1')]]]//input[contains(@placeholder,'First and Middle Name')])[2]");
+	 private static By fnameR2T1=By.xpath("(//div[div[*[contains(.,'Room 2')]]]//input[contains(@placeholder,'First and Middle Name')])[1]");
+	 private static By fnameR2T2=By.xpath("(//div[div[*[contains(.,'Room 2')]]]//input[contains(@placeholder,'First and Middle Name')])[2]");
 	
-	 private static By lnameR1T1=By.xpath("(//div[div[span[contains(.,'Room 1')]]]//input[contains(@placeholder,'Last Name')])[1]");
-	 private static By lnameR1T2=By.xpath("(//div[div[span[contains(.,'Room 1')]]]//input[contains(@placeholder,'Last Name')])[2]");
-	 private static By lnameR2T1=By.xpath("(//div[div[span[contains(.,'Room 2')]]]//input[contains(@placeholder,'Last Name')])[1]");
-	 private static By lnameR2T2=By.xpath("(//div[div[span[contains(.,'Room 2')]]]//input[contains(@placeholder,'Last Name')])[2]");
+	 private static By lnameR1T1=By.xpath("(//div[div[*[contains(.,'Room 1')]]]//input[contains(@placeholder,'Last Name')])[1]");
+	 private static By lnameR1T2=By.xpath("(//div[div[*[contains(.,'Room 1')]]]//input[contains(@placeholder,'Last Name')])[2]");
+	 private static By lnameR2T1=By.xpath("(//div[div[*[contains(.,'Room 2')]]]//input[contains(@placeholder,'Last Name')])[1]");
+	 private static By lnameR2T2=By.xpath("(//div[div[*[contains(.,'Room 2')]]]//input[contains(@placeholder,'Last Name')])[2]");
      
 	 private static By genderR1T1=By.xpath("(//div[div[div[span[contains(.,'Room 1')]]]]//div[contains(@class,'Gender')]//select)[1]");
      private static By genderR1T2=By.xpath("(//div[div[div[span[contains(.,'Room 1')]]]]//div[contains(@class,'Gender')]//select)[2]");
      private static By genderR2T1=By.xpath("(//div[div[div[span[contains(.,'Room 2')]]]]//div[contains(@class,'Gender')]//select)[1]");
      private static By genderR2T2=By.xpath("(//div[div[div[span[contains(.,'Room 2')]]]]//div[contains(@class,'Gender')]//select)[2]");
 
-     private static By dobR1T1=By.xpath("(//div[div[div[span[contains(.,'Room 1')]]]]//input[contains(@id,'txtPAX_DOB')])[1]");
-     private static By dobR1T2=By.xpath("(//div[div[div[span[contains(.,'Room 1')]]]]//input[contains(@id,'txtPAX_DOB')])[2]");
-     private static By dobR2T1=By.xpath("(//div[div[div[span[contains(.,'Room 2')]]]]//input[contains(@id,'txtPAX_DOB')])[1]");
-     private static By dobR2T2=By.xpath("(//div[div[div[span[contains(.,'Room 2')]]]]//input[contains(@id,'txtPAX_DOB')])[2]");
+     private static By dobR1T1=By.xpath("(//div[div[div[*[contains(.,'Room 1')]]]]//input[contains(@id,'txtPAX_DOB')])[1]");
+     private static By dobR1T2=By.xpath("(//div[div[div[*[contains(.,'Room 1')]]]]//input[contains(@id,'txtPAX_DOB')])[2]");
+     private static By dobR2T1=By.xpath("(//div[div[div[*[contains(.,'Room 2')]]]]//input[contains(@id,'txtPAX_DOB')])[1]");
+     private static By dobR2T2=By.xpath("(//div[div[div[*[contains(.,'Room 2')]]]]//input[contains(@id,'txtPAX_DOB')])[2]");
 
      private static By passportR1T1=By.xpath("//select[@id='1_txtPAX_Nationality1']");
      private static By passportR1T2=By.xpath("//select[@id='1_txtPAX_Nationality2']");
@@ -50,7 +50,22 @@ public class PassengerInformationLocators {
      private static By dobR2C1=By.xpath("//input[@id='2_txtCPAX_DOB2']");
      private static By passportR2C1=By.xpath("//select[@id='2_txtCPAX_Nationality2']");
      
-
+//================================Mobile Locators========================================================================================
+     private static By R1T1genderiOS=By.xpath("//select[@id='1_txtPAX_Gender1']");
+     private static By R1T2genderiOS=By.xpath("//select[@id='1_txtPAX_Gender2']");
+     private static By R2T1genderiOS=By.xpath("//select[@id='2_txtPAX_Gender1']");
+     private static By R2T2genderiOS=By.xpath("//select[@id='2_txtPAX_Gender2']");
+     
+     private static By fnameR2T1iOS=By.xpath("//input[@id='2_txtPFName1']");
+     private static By lnameR2T1iOS=By.xpath("//input[@id='2_txtPLName1']");	 
+     
+     private static By fnameR2T2iOS=By.xpath("//input[@id='2_txtPFName2']");
+    	 private static By lnameR2T2iOS=By.xpath("//input[@id='2_txtPLName2']"); 
+    	 
+    	 private static By dobR2T1iOS=By.xpath("//input[@id='2_txtPAX_DOB1']");
+    	 private static By dobR2T2iOS=By.xpath("//input[@id='2_txtPAX_DOB2']");
+    			 
+    	 
 	public static By getfnameR1T1() {
 		return fnameR1T1;
 	}
@@ -212,5 +227,39 @@ public class PassengerInformationLocators {
 		public static By getpassportR2C1SingleTrvlr() {
 			return passportR2C1SingleTrvlr;
 		}
+		public static By getR1T1genderiOS() {
+			return R1T1genderiOS;
+		}
+		public static By getR1T2genderiOS() {
+			return R1T2genderiOS;
+		}
+		public static By getR2T1genderiOS() {
+			return R2T1genderiOS;
+		}
+		public static By getR2T2genderiOS() {
+			return R2T2genderiOS;
+		}
 		
+		public static By getfnameR2T1iOS() {
+			
+			return fnameR2T1iOS;
+		}
+		public static By getlnameR2T1iOS() {
+			
+			return lnameR2T1iOS;
+		}
+		public static By getfnameR2T2iOS() {
+			
+			return fnameR2T2iOS;
+		}
+		public static By getlnameR2T2iOS() {
+			
+			return lnameR2T2iOS;
+		}
+		public static By getdobR2T1iOS() {
+        	return dobR2T1iOS;
+        }
+		public static By getdobR2T2iOS() {
+        	return dobR2T2iOS;
+        }
 }

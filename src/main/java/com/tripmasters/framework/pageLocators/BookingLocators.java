@@ -135,7 +135,7 @@ public class BookingLocators {
 	private static By cabinClassDropdown = By.xpath("//select[@id='qCabinOpt']");
 	private static By verifycabinClassDropdown = By.xpath("//select[@id='xCabin']");
 	private static By firstpremiumoption = By.xpath("//select[@id='qCabinOpt']//option[2]");
-	private static By verifypremiumoption = By.xpath("//select[@id='xCabin']//option[2]");
+	private static By verifypremiumoption = By.xpath("//div[text()='Premium Economy']");
 	private static By tripSummaryButton = By.xpath("//span[text()='Trip Summary']");
 
 	// ======== Locators for Mobile ======================
@@ -155,6 +155,10 @@ public class BookingLocators {
 			.xpath("//div[@id='TravelerR1']//div[@class='editvaldob' or @class='cel-name col-6 mt-2' or @class='editvalgender font-weight-bold']");
 	private static By verifyTraveler2NameiOS = By
 			.xpath("//div[@id='TravelerR2']//div[@class='editvaldob' or @class='editvalgender font-weight-bold' or @class='cel-name col-6 mt-2']");
+	private static By verifyTraveler3NameiOS = By
+			.xpath("//div[@id='TravelerR3']//div[@class='editvaldob' or @class='editvalgender font-weight-bold' or @class='cel-name col-6 mt-2']");
+	private static By verifyTraveler4NameiOS = By
+			.xpath("//div[@id='TravelerR4']//div[@class='editvaldob' or @class='editvalgender font-weight-bold' or @class='cel-name col-6 mt-2']");
 	private static By firstHoteliOS = By.xpath("(//a[contains(@class,'hotelHeadTitle')]//h5)[1]");//inside dom id and dom structure changes frequently.
 	private static By verifyPremiumEconomy =By.xpath("//div[text()='Premium Economy']");
 	/**
@@ -167,13 +171,11 @@ public class BookingLocators {
 	
 	public static By getverifyTraveler2NameiOS() {
 		return verifyTraveler2NameiOS;
-		
 	}
+
 	public static By getfirstHoteliOS() {
 		return firstHoteliOS;
-		
 	}
-	
 	
 	public static By getEmailId() {
 		return emailId;
@@ -585,6 +587,14 @@ public class BookingLocators {
 
 	return verifyPremiumEconomy;
 	}
-
 	
+     public static By getverifyTraveler3NameiOS() {
+    	 
+    	  return verifyTraveler3NameiOS;
+     }
+     
+	public static By getverifyTraveler4NameiOS() {
+		
+		return verifyTraveler4NameiOS;
+	}
 }

@@ -374,7 +374,7 @@ public class PageBase {
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(new Date());
 		System.out.println(cal.getTime());
-		cal.add(Calendar.DATE, 200);
+		cal.add(Calendar.DATE, 100);
 		String newDate = dateFormat.format(cal.getTime());
 		String[] newDateDay = newDate.split("/");
 		return newDateDay[1];
@@ -387,6 +387,7 @@ public class PageBase {
 	 * @throws Exception
 	 **/
 	public static void scrollDown() throws Exception {
+		if(TestBase.flag_Mob) {
 		try {
 			waitForElement(3);
 			java.awt.Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -396,6 +397,7 @@ public class PageBase {
 		} catch (Exception e) {
 			throw new Exception("Unable to scroll page");
 		}
+	}
 	}
 
 	/**

@@ -27,15 +27,6 @@ public class BookingPageAction extends PageBase {
 		// TODO Auto-generated constructor stub
 	}
 
-	public  void fillBasicBookingDetails(String leavingFrom, String destination, String stayingTime,String guestInfo) throws Exception {
-		selectValueFromCalendar();
-		selectStayingTime(stayingTime);
-		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
-		//test.log(LogStatus.INFO, "User clicks to the Continue Button on HomePage");
-		selectGuestDetails(guestInfo);
-		Logs.info("User entered guest info '" + guestInfo + "'");
-	}
-
 	public void fillLeavingFromDetails(String leavingFrom) throws Exception{
 		clearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
 		Logs.info("User entered '" + leavingFrom + "' into leaving from field");
@@ -52,6 +43,10 @@ public class BookingPageAction extends PageBase {
 		selectOptionByValue(BookingLocators.getstayingDrpdown(), stayingTime);
 		Logs.info("User entered '" + stayingTime + "' nights staying time");
 		//test.log(LogStatus.INFO, "User entered '" + stayingTime + "' nights staying time");
+	}
+	
+	public void selectNoMoreCitiesBtn(){
+		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
 	}
 
 	/**
@@ -78,6 +73,17 @@ public class BookingPageAction extends PageBase {
 			//test.log(LogStatus.INFO, "User select '" + guestInfo + "' from Guest list");
 		}
 	}
+	
+	/*
+	 * public void selectGuestDetailsForOneandOther(String guestInfo) {
+	 * clickUsingJavaScript(BookingLocators.getselectGuestRoomOptions());
+	 * clickUsingJavaScript(BookingLocators.getselectGuestRoomOptionsDrpdown());
+	 * WebElement wb =
+	 * driver.findElement(BookingLocators.getoptionListForGuestsAndRooms())
+	 * .findElement(By.xpath(".//li[@id='" + guestInfo + "']"));
+	 * clickUsingJavaScript(wb);
+	 * clickUsingJavaScript(BookingLocators.getselectNumberOfAdults) }
+	 */
 
 	/**
 	 * 
@@ -93,8 +99,15 @@ public class BookingPageAction extends PageBase {
 		clickUsingJavaScript(BookingLocators.getcontinueBtn());
 	}
 
-	public  void clickonContinueLink() {
+	public  void clickonContinueLink() throws Exception {
+		if(TestBase.flag_Mob) {
+			scrollDown();
+			scrollDown();
+			clickUsingJavaScript(BookingLocators.getcontinueLink());
+		}
+		else {
 		clickUsingJavaScript(BookingLocators.getcontinueLink());
+		}
 	}
 
 	public  String selectCheaperFlights() throws Exception {
@@ -102,15 +115,11 @@ public class BookingPageAction extends PageBase {
 		if (TestBase.flag_Mob) {
 			selectCheaperFlights_Mob();
 		} else {
-
 			clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
-            //test.log(LogStatus.INFO, "User clicks on Select Cheaper Flights Link");
 			flightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
 			clickUsingJavaScript(BookingLocators.getselectFlightOption());
 			clickUsingJavaScript(BookingLocators.getselectButtonInFlightOption1());
-			//test.log(LogStatus.INFO, "User selects a particular flight from existing options");
 			clickUsingJavaScript(BookingLocators.getcontinueLink());
-            //test.log(LogStatus.INFO, "User clicks on Continue Link");
 		}
 		return flightvalue;
 
@@ -133,8 +142,9 @@ public class BookingPageAction extends PageBase {
 	}
 
 	public  void clicktoContinuePage() {
-
-		clickUsingJavaScript(BookingLocators.getcontinueImage());
+     if(!TestBase.flag_Mob){
+			clickUsingJavaScript(BookingLocators.getcontinueImage());
+     }
 	}
 
 	public  void selectNumberOfAdult(String numOfAdults, By element) {
@@ -156,68 +166,68 @@ public class BookingPageAction extends PageBase {
 			Select option = new Select(driver.findElement(By.xpath("//select[@id='xiChild1']")));
 			option.selectByValue(ageOfChild);
 			//selectOptionByValue(BookingLocators.getselectChildAgeDrpdown(), ageOfChild);
-			Logs.info("User entered number of child'" + ageOfChild + "' ");
+			Logs.info("User entered age of child'" + ageOfChild + "' ");
 		} else {
 			selectOptionByValue(BookingLocators.getselectChildRoom2Drpdown(), numOfChild);
 			Logs.info("User entered number of child'" + numOfChild + "' ");
 			Select option = new Select(driver.findElement(By.xpath("//select[@id='xRoom2_iChild1']")));
 			option.selectByValue(ageOfChild);
 			//selectOptionByValue(BookingLocators.getselectChildAgeRoom2Drpdown(), ageOfChild);
-			Logs.info("User entered number of child'" + numOfChild + "' ");
+			Logs.info("User entered age of child'" + ageOfChild + "' ");
 		}
 	}
 
-	public  void fillBasicBookingDetailForMultipleCities(String flightType, String destination,
-			String stayingTime, String destination_second, String guestinfo) throws Exception {
-		if (flightType.equalsIgnoreCase("WithAir")) {
-			clearAndSetValues(BookingLocators.getLeavingTxtbox(), "New York, Newark, NJ");
-			Logs.info("User entered New York, Newark, NJ into leaving from field");
-		}
-		clearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
-		Logs.info("User entered '" + destination + "' into Going to from field");
-		clickUsingJavaScript(BookingLocators.getaddCityBtn());
-		clearAndSetValues(BookingLocators.getgoingToTextboxSecond(), destination_second);
-		Logs.info("User entered '" + destination_second + "' into Second Going to field");
-		selectStayingTime(stayingTime);
-		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
-		selectGuestDetails(guestinfo);
-	}
+//	public  void fillBasicBookingDetailForMultipleCities(String flightType, String destination,String stayingTime, String destination_second, String guestinfo) throws Exception {
+//		if (flightType.equalsIgnoreCase("WithAir")) {
+//			clearAndSetValues(BookingLocators.getLeavingTxtbox(), "New York, Newark, NJ");
+//			Logs.info("User entered New York, Newark, NJ into leaving from field");
+//		}
+//		clearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+//		Logs.info("User entered '" + destination + "' into Going to from field");
+//		clickUsingJavaScript(BookingLocators.getaddCityBtn());
+//		clearAndSetValues(BookingLocators.getgoingToTextboxSecond(), destination_second);
+//		Logs.info("User entered '" + destination_second + "' into Second Going to field");
+//		selectStayingTime(stayingTime);
+//		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+//		selectGuestDetails(guestinfo);
+//	}
 	
-	public  void fillBasicDetatilsForMultipleCities(String leavefrom, String firstdestination,String stayingTime,String seconddestination,
-			String seconddrop) throws Exception {
-		clearAndSetValues(BookingLocators.getLeavingTxtbox(), leavefrom);
-		clearAndSetValues(BookingLocators.getgoingToTextbox(), firstdestination);
-		selectStayingTime(stayingTime);
-		clickUsingJavaScript(BookingLocators.getaddCityBtn());
-		clearAndSetValues(BookingLocators.getgoingToTextboxSecond(), seconddestination);
-		selectStayingTimeTwo(seconddrop);
-		
-	}
+//	public  void fillBasicDetatilsForMultipleCities(String leavefrom, String firstdestination,String stayingTime,String seconddestination,String seconddrop) throws Exception {
+//		clearAndSetValues(BookingLocators.getLeavingTxtbox(), leavefrom);
+//		clearAndSetValues(BookingLocators.getgoingToTextbox(), firstdestination);
+//		selectStayingTime(stayingTime);
+//		clickUsingJavaScript(BookingLocators.getaddCityBtn());
+//		clearAndSetValues(BookingLocators.getgoingToTextboxSecond(), seconddestination);
+//		selectStayingTimeTwo(seconddrop);
+//		
+//	}
 	public void getTripinclusionContinueButton() throws Exception {
+		if(TestBase.flag_Mob){
 		scrollDown();
 		scrollDown();
 		clickUsingJavaScript(BookingLocators.getTripInclusionContinueButtonmob());
+		}
 	}
-	
+
 	public  void getWithoutButton() {
 
 		clickUsingJavaScript(BookingLocators.getWithoutAirButton());
 	}
 
-	public  void fillBasicBookingDetailWithoutAir(String destination, String stayingTime,
-			String destination_second, String guestinfo) throws Exception {
-
-		clearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
-
-		clickUsingJavaScript(BookingLocators.getaddCityBtn());
-		clearAndSetValues(BookingLocators.getgoingToTextboxSecond(), destination_second);
-
-		selectStayingTime(stayingTime);
-		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
-
-		selectGuestDetails(guestinfo);
-
-	}
+//	public  void fillBasicBookingDetailWithoutAir(String destination, String stayingTime,
+//			String destination_second, String guestinfo) throws Exception {
+//
+//		clearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+//
+//		clickUsingJavaScript(BookingLocators.getaddCityBtn());
+//		clearAndSetValues(BookingLocators.getgoingToTextboxSecond(), destination_second);
+//
+//		selectStayingTime(stayingTime);
+//		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+//
+//		selectGuestDetails(guestinfo);
+//
+//	}
 
 	public  String browseHotelsButton() {
 		clickUsingJavaScript(BookingLocators.getBrowseHotelsLink());
@@ -277,34 +287,26 @@ public class BookingPageAction extends PageBase {
 
 	}
 
-	public  void fillBasicBookingDetails2(String destination, String stayingTime, String guestInfo)
-			throws Exception {
-		clearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
-		selectStayingTime(stayingTime);
-		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
-		selectGuestDetails(guestInfo);
-	}
-
 	public  void clickChangedArriveDate() {
 		clickUsingJavaScript(BookingLocators.getChangedArriveDate());
 		boolean expecteddate = driver.findElement(BookingLocators.getChangedArriveDate()).isEnabled();
 		Assert.assertTrue(expecteddate);
 	}
 
-	public  void fillBasicDetails(String leavefrom, String firstdestination, String stayingTime,
-			String seconddestination, String seconddrop, String thirddestination, String thirddrop) throws Exception {
-
-		clearAndSetValues(BookingLocators.getLeavingTxtbox(), leavefrom);
-		clearAndSetValues(BookingLocators.getgoingToTextbox(), firstdestination);
-		selectStayingTime(stayingTime);
-		clickUsingJavaScript(BookingLocators.getaddCityBtn());
-		clearAndSetValues(BookingLocators.getgoingToTextboxSecond(), seconddestination);
-		selectStayingTimeTwo(seconddrop);
-		clickUsingJavaScript(BookingLocators.getaddCityBtn());
-		clearAndSetValues(BookingLocators.getgoingToTextboxThird(), thirddestination);
-		selectStayingTimeThree(thirddrop);
-
-	}
+//	public  void fillBasicDetails(String leavefrom, String firstdestination, String stayingTime,
+//			String seconddestination, String seconddrop, String thirddestination, String thirddrop) throws Exception {
+//
+//		clearAndSetValues(BookingLocators.getLeavingTxtbox(), leavefrom);
+//		clearAndSetValues(BookingLocators.getgoingToTextbox(), firstdestination);
+//		selectStayingTime(stayingTime);
+//		clickUsingJavaScript(BookingLocators.getaddCityBtn());
+//		clearAndSetValues(BookingLocators.getgoingToTextboxSecond(), seconddestination);
+//		selectStayingTimeTwo(seconddrop);
+//		clickUsingJavaScript(BookingLocators.getaddCityBtn());
+//		clearAndSetValues(BookingLocators.getgoingToTextboxThird(), thirddestination);
+//		selectStayingTimeThree(thirddrop);
+//
+//	}
 
 	public  void deleteAddedCities() {
 		clickUsingJavaScript(BookingLocators.getthirdremoveCitylink());
@@ -379,16 +381,14 @@ public class BookingPageAction extends PageBase {
 		Assert.assertTrue(flag);
 	}
 
-	public  void bookingDetailswithPremiumEcomomy(String leavingFrom, String destination, String cabinclass,
-			String stayingTime, String guestInfo) throws Exception {
-		selectCabinClass(cabinclass);
-		clearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
-		clearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
-		selectStayingTime(stayingTime);
-		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
-		selectGuestDetails(guestInfo);
-
-	}
+//	public  void bookingDetailswithPremiumEcomomy(String leavingFrom, String destination, String cabinclass,String stayingTime, String guestInfo) throws Exception {
+//		selectCabinClass(cabinclass);
+//		clearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
+//		clearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
+//		selectStayingTime(stayingTime);
+//		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
+//		selectGuestDetails(guestInfo);
+//	}
 
 	public  String selectedcabinAssert() {
 
@@ -404,9 +404,10 @@ public class BookingPageAction extends PageBase {
 		}
 		}
 	
-	    public static String verifycabinAssert() {
+	    public String verifycabinAssert() {
 		if(TestBase.flag_Mob)
 		{
+		   
 		String expectedcabin = driver.findElement(BookingLocators.getVerifyPremiumEconomy()).getText();
 		return expectedcabin;
 		}
@@ -415,6 +416,13 @@ public class BookingPageAction extends PageBase {
 		    String expectedcabin = driver.findElement(BookingLocators.getSecondpremiumOption()).getText();
 		     return expectedcabin;
 		}
+		}
+	    
+	    public  static boolean verifyCabin()
+		{
+		clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
+		boolean verifycabin = driver.findElement(HomePageLocators.getSelectPremiumEconomy()).isEnabled();
+		return verifycabin;
 		}
 
 	public  void selectLatinAmericaLink() {
@@ -472,8 +480,18 @@ public class BookingPageAction extends PageBase {
 		Assert.assertTrue(actualdate);
 	}
 
-	public  void tripSummary() {
-		clickUsingJavaScript(BookingLocators.getTripSummaryButton());
+	public  void tripSummary() throws Exception 
+	{
+		if(TestBase.flag_Mob)
+		{
+			scrollDownForMob(4);
+			clickUsingJavaScript(BookingLocators.getTripSummaryButton());
+		   
+         }
+		else
+		{
+			clickUsingJavaScript(BookingLocators.getTripSummaryButton());
+		}
 	}
 
 	public  void validateTripIncluisonPage() {
@@ -501,10 +519,19 @@ public class BookingPageAction extends PageBase {
 			clickOnElement(BookingLocators.getBuildYourVacationDropDown());
 	}
 
-	public  boolean verifyCabin()
-	{
-	clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
-	boolean verifycabin = driver.findElement(HomePageLocators.getSelectPremiumEconomy()).isEnabled();
-	return verifycabin;
+	
+	
+	public void clickOnAddCityBtn(){
+		clickUsingJavaScript(BookingLocators.getaddCityBtn());
+	}
+
+	public void fillSecndAddedCityDetails(String destination_second) throws Exception {
+		clearAndSetValues(BookingLocators.getgoingToTextboxSecond(), destination_second);
+		Logs.info("User entered '" + destination_second + "' into Second Going to field");
+	}
+
+	public void fillThirdAddedCityDetails(String destination_third) throws Exception {
+		clearAndSetValues(BookingLocators.getgoingToTextboxThird(), destination_third);
+		Logs.info("User entered '" + destination_third + "' into Second Going to field");
 	}
 }

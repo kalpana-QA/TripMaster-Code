@@ -1,34 +1,139 @@
-2020-02-20 23:04:00,496 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-02-20 23:04:32,764 - com.tripmasters.framework.reports.Logs -INFO - User select '1|1' from Guest list
-2020-02-20 23:09:06,966 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
-2020-02-20 23:09:15,553 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-02-20 23:09:21,642 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
-2020-02-20 23:09:24,761 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-02-20 23:09:56,272 - com.tripmasters.framework.reports.Logs -INFO - User select '1|1' from Guest list
-2020-02-20 23:28:22,634 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
-2020-02-20 23:31:03,356 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
-2020-02-20 23:33:03,060 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
-2020-02-20 23:33:08,472 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-02-20 23:33:12,649 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
-2020-02-20 23:33:14,390 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-02-20 23:33:42,914 - com.tripmasters.framework.reports.Logs -INFO - User select '1|1' from Guest list
-2020-02-20 23:48:35,821 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
-2020-02-20 23:48:48,489 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-02-20 23:48:52,739 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
-2020-02-20 23:48:54,544 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-02-20 23:49:23,112 - com.tripmasters.framework.reports.Logs -INFO - User select '1|1' from Guest list
-2020-02-20 23:53:55,908 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
-2020-02-20 23:54:08,407 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-02-20 23:54:12,924 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
-2020-02-20 23:54:14,578 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-02-20 23:54:43,500 - com.tripmasters.framework.reports.Logs -INFO - User select '1|1' from Guest list
-2020-02-20 23:56:55,314 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
-2020-02-20 23:57:16,657 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-02-20 23:57:58,035 - com.tripmasters.framework.reports.Logs -INFO - User select '1|1' from Guest list
-2020-02-20 23:59:47,164 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-02-21 00:00:07,399 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-02-21 00:00:28,347 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
-2020-02-21 00:00:48,804 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-02-21 00:10:16,789 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
-2020-02-21 00:10:36,342 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-02-21 00:11:15,988 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-21 00:32:03,534 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-21 00:32:07,992 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
+2020-02-21 00:32:09,692 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-02-21 00:32:38,504 - com.tripmasters.framework.reports.Logs -INFO - User select '1|1' from Guest list
+2020-02-21 00:48:52,208 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-21 00:49:05,476 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-21 00:49:09,908 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-21 00:49:11,751 - com.tripmasters.framework.reports.Logs -INFO - User entered '12' nights staying time
+2020-02-21 00:49:40,420 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-21 00:49:40,422 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
+2020-02-21 00:50:00,705 - com.tripmasters.framework.reports.Logs -INFO - Select number of Adults
+2020-02-21 00:50:52,715 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-21 00:51:13,267 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-21 00:51:33,705 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-02-21 00:52:02,983 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-21 00:52:43,320 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-21 00:53:04,201 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-21 00:53:24,242 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-02-21 00:53:24,243 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-02-21 01:04:33,895 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-21 01:04:40,503 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-21 01:04:44,856 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-21 01:04:46,823 - com.tripmasters.framework.reports.Logs -INFO - User entered '12' nights staying time
+2020-02-21 01:05:15,593 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-21 01:05:15,600 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
+2020-02-21 01:06:38,195 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-02-21 01:15:32,905 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-21 01:15:46,716 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-21 01:15:51,075 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-21 01:15:52,874 - com.tripmasters.framework.reports.Logs -INFO - User entered '12' nights staying time
+2020-02-21 01:16:21,383 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-21 01:16:21,385 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
+2020-02-21 01:17:48,461 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-02-21 01:20:39,646 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-21 01:20:51,578 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-21 01:20:55,685 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-21 01:20:57,599 - com.tripmasters.framework.reports.Logs -INFO - User entered '12' nights staying time
+2020-02-21 01:21:26,086 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-21 01:21:26,088 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
+2020-02-21 01:22:53,659 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-02-21 01:25:20,514 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-21 01:25:33,726 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-21 01:25:38,135 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-21 01:25:39,993 - com.tripmasters.framework.reports.Logs -INFO - User entered '12' nights staying time
+2020-02-21 01:26:09,653 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-21 01:26:09,654 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
+2020-02-21 01:27:39,357 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-02-21 01:27:51,325 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-02-21 01:39:08,108 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-21 01:42:00,040 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-21 01:42:07,210 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
+2020-02-21 01:42:11,440 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
+2020-02-21 01:42:15,631 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-21 01:42:44,461 - com.tripmasters.framework.reports.Logs -INFO - User select '2|2-2' from Guest list
+2020-02-21 01:42:44,467 - com.tripmasters.framework.reports.Logs -INFO - All the Basic Booking details Source & Destination filled successfully for Two Adults
+2020-02-21 01:42:49,514 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-02-21 01:43:41,757 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-02-21 01:44:22,488 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-21 01:44:42,957 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-21 01:45:11,612 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-02-21 01:45:38,791 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-21 01:46:02,514 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-21 01:46:22,997 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-21 01:46:47,095 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-02-21 02:58:45,583 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-21 02:58:58,318 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
+2020-02-21 03:02:27,798 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-21 03:02:33,936 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
+2020-02-21 03:02:38,105 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
+2020-02-21 03:02:42,322 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-21 03:03:10,774 - com.tripmasters.framework.reports.Logs -INFO - User select '2|2-2' from Guest list
+2020-02-21 03:03:10,781 - com.tripmasters.framework.reports.Logs -INFO - All the Basic Booking details Source & Destination filled successfully for Two Adults
+2020-02-21 03:03:15,852 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-02-21 03:03:37,158 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
+2020-02-21 03:04:11,178 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-02-21 03:05:40,216 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-02-21 03:05:40,223 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-02-21 03:22:18,782 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-21 03:22:24,992 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
+2020-02-21 03:22:29,340 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
+2020-02-21 03:22:33,538 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-21 03:23:02,370 - com.tripmasters.framework.reports.Logs -INFO - User select '2|2-2' from Guest list
+2020-02-21 03:23:02,375 - com.tripmasters.framework.reports.Logs -INFO - All the Basic Booking details Source & Destination filled successfully for Two Adults
+2020-02-21 03:23:07,437 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-02-21 03:23:55,231 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-02-21 03:25:33,025 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-02-21 03:25:33,031 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-02-21 03:42:01,022 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-21 03:42:11,931 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
+2020-02-21 03:42:16,471 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
+2020-02-21 03:42:20,307 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-21 03:42:49,183 - com.tripmasters.framework.reports.Logs -INFO - User select '2|2-2' from Guest list
+2020-02-21 03:42:49,184 - com.tripmasters.framework.reports.Logs -INFO - All the Basic Booking details Source & Destination filled successfully for Two Adults
+2020-02-21 03:42:54,239 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-02-21 03:43:41,794 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-02-21 03:45:11,780 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-02-21 03:45:11,781 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-02-21 04:41:31,939 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-21 04:41:38,660 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
+2020-02-21 04:41:42,709 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
+2020-02-21 04:41:46,915 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-21 04:42:15,532 - com.tripmasters.framework.reports.Logs -INFO - User select '2|2-2' from Guest list
+2020-02-21 04:42:15,533 - com.tripmasters.framework.reports.Logs -INFO - All the Basic Booking details Source & Destination filled successfully for Two Adults
+2020-02-21 04:42:20,608 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-02-21 04:43:08,688 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-02-21 04:44:39,144 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-21 04:44:58,809 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-02-21 04:44:58,810 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-02-21 04:51:35,621 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-21 04:51:43,156 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
+2020-02-21 04:51:47,283 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
+2020-02-21 04:51:51,485 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-21 04:52:20,531 - com.tripmasters.framework.reports.Logs -INFO - User select '2|2-2' from Guest list
+2020-02-21 04:52:20,531 - com.tripmasters.framework.reports.Logs -INFO - All the Basic Booking details Source & Destination filled successfully for Two Adults
+2020-02-21 04:52:25,600 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-02-21 04:53:13,608 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-02-21 04:54:27,836 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-21 04:54:40,258 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-21 04:54:59,644 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-02-21 05:00:30,523 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-21 05:00:43,390 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
+2020-02-21 05:00:47,629 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
+2020-02-21 05:00:51,770 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-21 05:01:20,351 - com.tripmasters.framework.reports.Logs -INFO - User select '2|2-2' from Guest list
+2020-02-21 05:01:20,352 - com.tripmasters.framework.reports.Logs -INFO - All the Basic Booking details Source & Destination filled successfully for Two Adults
+2020-02-21 05:01:25,418 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-02-21 05:02:13,026 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-02-21 05:03:22,641 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-21 05:03:42,071 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-02-21 05:07:58,809 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for iOS platform and Safari browser!!!!!!!!!!!!
+2020-02-21 05:08:11,294 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
+2020-02-21 05:08:15,581 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
+2020-02-21 05:08:20,120 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-21 05:08:48,604 - com.tripmasters.framework.reports.Logs -INFO - User select '2|2-2' from Guest list
+2020-02-21 05:08:48,604 - com.tripmasters.framework.reports.Logs -INFO - All the Basic Booking details Source & Destination filled successfully for Two Adults
+2020-02-21 05:08:53,664 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-02-21 05:09:41,248 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-02-21 05:11:14,081 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-02-21 05:11:14,549 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage

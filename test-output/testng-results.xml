@@ -2,19 +2,29 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="185939" started-at="2020-02-21T08:10:04Z" finished-at="2020-02-21T08:13:10Z">
+  <suite name="Default suite" duration-ms="207512" started-at="2020-02-21T13:07:47Z" finished-at="2020-02-21T13:11:14Z">
     <groups>
+      <group name="smoke">
+        <method signature="BookingPageTestScript.bookingTwoRoomTwoAdult_TC_3(java.lang.reflect.Method)[pri:3, instance:com.tripmasters.framework.testScript.BookingPageTestScript@4bbfb90a]" name="bookingTwoRoomTwoAdult_TC_3" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
+      </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="185939" started-at="2020-02-21T08:10:04Z" finished-at="2020-02-21T08:13:10Z">
+    <test name="Default test" duration-ms="207512" started-at="2020-02-21T13:07:47Z" finished-at="2020-02-21T13:11:14Z">
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@4bbfb90a]" name="setUp" is-config="true" duration-ms="12339" started-at="2020-02-21T08:10:04Z" finished-at="2020-02-21T08:10:16Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@4bbfb90a]" name="setUp" is-config="true" duration-ms="11725" started-at="2020-02-21T13:07:47Z" finished-at="2020-02-21T13:07:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="bookingFlightsWithMultipleCities_TC_6_iOS()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@4bbfb90a]" name="bookingFlightsWithMultipleCities_TC_6_iOS" duration-ms="173554" started-at="2020-02-21T08:10:16Z" finished-at="2020-02-21T08:13:10Z">
+        <test-method status="PASS" signature="bookingTwoRoomTwoAdult_TC_3(java.lang.reflect.Method)[pri:3, instance:com.tripmasters.framework.testScript.BookingPageTestScript@4bbfb90a]" name="bookingTwoRoomTwoAdult_TC_3" duration-ms="195729" started-at="2020-02-21T13:07:58Z" finished-at="2020-02-21T13:11:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingTwoRoomTwoAdult_TC_3(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookingFlightsWithMultipleCities_TC_6_iOS -->
+        </test-method> <!-- bookingTwoRoomTwoAdult_TC_3 -->
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
