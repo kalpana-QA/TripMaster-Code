@@ -2,35 +2,37 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="146943" started-at="2020-02-20T17:26:09 IST" finished-at="2020-02-20T17:28:36 IST">
+  <suite name="Default suite" duration-ms="91941" started-at="2020-02-21T12:44:01 IST" finished-at="2020-02-21T12:45:33 IST">
     <groups>
+      <group name="smoke">
+        <method signature="BookingPageTestScript.bookingDetailswithPremiumEcomomy_TC_18(java.lang.reflect.Method)[pri:12, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingDetailswithPremiumEcomomy_TC_18" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
+      </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="146943" started-at="2020-02-20T17:26:09 IST" finished-at="2020-02-20T17:28:36 IST">
+    <test name="Default test" duration-ms="91941" started-at="2020-02-21T12:44:01 IST" finished-at="2020-02-21T12:45:33 IST">
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@757942a1]" name="setUp" is-config="true" duration-ms="24035" started-at="2020-02-20T17:26:09 IST" finished-at="2020-02-20T17:26:33 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="setUp" is-config="true" duration-ms="22209" started-at="2020-02-21T12:44:01 IST" finished-at="2020-02-21T12:44:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="bookingDetailswithPremiumEcomomy_Mob_TC_18(java.lang.reflect.Method)[pri:11, instance:com.tripmasters.framework.testScript.BookingPageTestScript@757942a1]" name="bookingDetailswithPremiumEcomomy_Mob_TC_18" duration-ms="122667" started-at="2020-02-20T17:26:33 IST" finished-at="2020-02-20T17:28:36 IST">
+        <test-method status="FAIL" signature="bookingDetailswithPremiumEcomomy_TC_18(java.lang.reflect.Method)[pri:12, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingDetailswithPremiumEcomomy_TC_18" duration-ms="69662" started-at="2020-02-21T12:44:23 IST" finished-at="2020-02-21T12:45:33 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcomomy_Mob_TC_18(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcomomy_TC_18(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Premium Economy] but found []]]>
+              <![CDATA[did not expect to find [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Premium Economy] but found []
+              <![CDATA[java.lang.AssertionError: did not expect to find [true] but found [false]
 at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at org.testng.Assert.assertEquals(Assert.java:585)
-at com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcomomy_Mob_TC_18(BookingPageTestScript.java:555)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcomomy_TC_18(BookingPageTestScript.java:780)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -64,11 +66,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookingDetailswithPremiumEcomomy_Mob_TC_18 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@757942a1]" name="tearDown" is-config="true" duration-ms="195" started-at="2020-02-20T17:28:36 IST" finished-at="2020-02-20T17:28:36 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- bookingDetailswithPremiumEcomomy_TC_18 -->
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

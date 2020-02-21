@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\91807\AppData\Local\Temp\testng-eclipse-1195844843\testng-customsuite.xml</span>
+                    <span>C:\Users\91807\AppData\Local\Temp\testng-eclipse--1509395379\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Default_suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.tripmasters.framework.testScript.BookingPageTestScript" hash-for-method="bookingDetailswithPremiumEcomomy_Mob_TC_18(public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcom...)">bookingDetailswithPremiumEcomomy_Mob_TC_18(public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcom...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.tripmasters.framework.testScript.BookingPageTestScript" hash-for-method="bookingDetailswithPremiumEcomomy_TC_18(public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcom...)">bookingDetailswithPremiumEcomomy_TC_18(public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcom...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -125,17 +125,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="bookingDetailswithPremiumEcomomy_Mob_TC_18(public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcom...)">
-                  </a> <!-- bookingDetailswithPremiumEcomomy_Mob_TC_18(public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcom...) -->
-                  <span class="method-name">bookingDetailswithPremiumEcomomy_Mob_TC_18</span>
-                  <span class="parameters">(public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcomomy_Mob_TC_18(java.lang.reflect.Method) throws java.lang.Exception)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Premium Economy] but found []
+                  <a name="bookingDetailswithPremiumEcomomy_TC_18(public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcom...)">
+                  </a> <!-- bookingDetailswithPremiumEcomomy_TC_18(public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcom...) -->
+                  <span class="method-name">bookingDetailswithPremiumEcomomy_TC_18</span>
+                  <span class="parameters">(public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcomomy_TC_18(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect to find [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcomomy_Mob_TC_18(BookingPageTestScript.java:555)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcomomy_TC_18(BookingPageTestScript.java:780)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -173,7 +172,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\91807\AppData\Local\Temp\testng-eclipse-1195844843\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\91807\AppData\Local\Temp\testng-eclipse--1509395379\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -206,6 +205,14 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">bookingDetailswithPremiumEcomomy_TC_18</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -224,14 +231,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'bookingDetailswithPremiumEcomomy_Mob_TC_18')
+data.setCell(0, 1, 'bookingDetailswithPremiumEcomomy_TC_18')
 data.setCell(0, 2, 'com.tripmasters.framework.testScript.BookingPageTestScript')
-data.setCell(0, 3, 122667);
+data.setCell(0, 3, 69662);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -265,13 +272,9 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">bookingDetailswithPremiumEcomomy_Mob_TC_18(public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcom...)</span>
-                <span class="method-start">24037 ms</span>
+                <span class="method-name">bookingDetailswithPremiumEcomomy_TC_18(public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcom...)</span>
+                <span class="method-start">22211 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">146712 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
