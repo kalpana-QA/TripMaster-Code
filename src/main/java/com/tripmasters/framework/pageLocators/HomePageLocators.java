@@ -35,7 +35,7 @@ public class HomePageLocators {
 	private static By SpotlightOnDrpDwn = By.cssSelector("div[id='dvSpot']");
 	private static By firstOptionUnderSpotlightDrpDwn = By
 			.xpath("(//div[@id='ContdvSpot'][@style='display: block;']//a)[1]");
-	 private static By selectPremiumEconomy = By.xpath("//p[@class='pMdialogCabin']//span[text()='Premium Economy']");
+	 private static By selectPremiumEconomy = By.xpath("//span[text()='Premium Economy']");
 	 
 	public static By getmoreHighLightsBtn() {
 		return moreHighlightsBtn;

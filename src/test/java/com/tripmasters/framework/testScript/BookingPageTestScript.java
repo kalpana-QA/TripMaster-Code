@@ -1,4 +1,4 @@
-package com.tripmasters.framework.testScript;
+	package com.tripmasters.framework.testScript;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -34,6 +34,7 @@ public class BookingPageTestScript extends TestBase {
 	//@Test(groups = { "smoke" }, priority = 1)
 	public void bookingSingleRoomWithThreeAdults_TC_1(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoomWith3Adults");
+		bookingPage.clickOnBuildYourVacationDropDown();
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
@@ -53,6 +54,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User selects a particular flight from existing options");
 		test.log(LogStatus.INFO, "User clicks on Continue Link");
 		Logs.info("Select Cheaper flights from flight options");
+		bookingPage.getTripinclusionContinueButton();
 		bookingPage.clicktoContinuePage();
 		test.log(LogStatus.INFO, "Click to Continue & User redirected to Fill Passenger Details Page");
 		expectedFirstTravellerInfo = passengerInfoPage.fillFirstTravellerDetails("John", "Leo", "Male","01/01/1992", "237|US");
@@ -75,17 +77,22 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Third Traveller");
 		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
 		Logs.info("User fills all the 3 passenger details");
+		bookingPage.getTripinclusionContinueButton();
 		bookingPage.clicktoContinuePage();
 		test.log(LogStatus.INFO, "Click to Continue & User redirected to Payment Page");
+		if(TestBase.flag_Mob){
+			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1NameiOS(), expectedFirstTravellerInfo);
+			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler2NameiOS(), expectedSecondTravellerInfo);
+		}else{
 		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
 		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
 		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler3Name(), expectedThirdTravellerInfo);
+		}
+		bookingPage.tripSummary();
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
-
-
-
+	
 	//@Test(groups= {"smoke"},priority=2)
 	public void bookingSingleRoomOneAdultOneChild_TC_2(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoom1Adult1Child");
@@ -137,7 +144,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
-
+	
   //@Test(groups= {"smoke"},priority=3)
 	public void bookingTwoRoomTwoAdult_TC_3(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom2Adult");
@@ -446,13 +453,8 @@ public class BookingPageTestScript extends TestBase {
 		String actualFlight = bookingPage.getActualFlight();
 		System.out.println("Actual is:" +actualFlight  + " "+ "Expected is :"+expected);
 		Assert.assertTrue(expected.contains(actualFlight));
-	
-		
 	}
 	
-	
-	
-
 	//@Test(groups= {"smoke"},priority=8)
 	public void bookingFlightAndHotelForMultipleCity_TC_8(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "bookingFlightAndHotelForMultipleCity");
@@ -478,8 +480,6 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Select particular hotel from Hotel Options");
 		Logs.info("Select particular hotel from Hotel Options");
 		Assert.assertEquals(ActualHotel, ExpectedHotel);
-		
-		
 		bookingPage.selectCheaperFlights();
 		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
 		Logs.info("Select Cheaper flights from flight options");
@@ -503,8 +503,7 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 	
-	
-	 //@Test(groups= {"regression"},priority=9)
+	// @Test(groups= {"regression"},priority=9)
 	public void withoutAirBookingForSingleCity_TC_19(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "withoutAirBookingForSingleCity_TC_19");
 		bookingPage.selectWithoutAir();
@@ -530,6 +529,8 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Verify that only particular selected hotel appears along with passenger details");
 	}
 
+	
+	 
 	//@Test(groups= {"regression"},priority=10)
 	public void getWithoutAir_TC_20(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "getWithoutAir");
@@ -601,7 +602,6 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Validate that user is on TripInclusion Page");
 	}
 
-
 	//@Test(groups= {"smoke"},priority=12)
 	public void bookingDetailswithPremiumEcomomy_TC_18(Method method) throws Exception {
 		ExtentTest test =ExtentTestManager.startTest(method.getName(), "bookingDetailswithPremiumEcomomy");
@@ -634,32 +634,6 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "bookingDetailswithPremiumEcomomy passed");
 		Logs.info("bookingDetailswithPremiumEcomomy passed");
 	}
-	
-//	 @Test(priority = 11)
-//		public void bookingDetailswithPremiumEcomomy_Mob_TC_18(Method method) throws Exception {
-//			ExtentTestManager.startTest(method.getName(), "dateChanging_TC_18");
-//			bookingPage.clickOnBuildYourVacationDropDown();
-//			//bookingPage.bookingDetailswithPremiumEcomomy("New York City (all Airports),  NY", "Delhi (India)","Premium Economy", "4", "1|1");
-//			String actualcabin = bookingPage.selectedcabinAssert();
-//			   System.out.println(actualcabin);
-//			   boolean cabinVerify = bookingPage.verifyCabin();
-//			   Assert.assertTrue(cabinVerify);
-//			   System.out.println("Cabin class is selected as 'Premium economy'");
-//			/**
-//			 * TODO Verification method is not correct (verifying index of one table with
-//			 * another table not the selected value)
-//			 */
-////			String actualcabin = bookingPage.selectedcabinAssert();
-////			String expectedcabin = bookingPage.verifycabinAssert();
-////			Assert.assertEquals(expectedcabin, actualcabin);
-//			// =======================================================================
-//			bookingPage.clickonContinueButton();
-//			bookingPage.selectCheaperFlights();
-//			String expectedcabin = bookingPage.verifycabinAssert();
-//			System.out.println(expectedcabin);
-//			Assert.assertEquals(actualcabin,expectedcabin);
-//			bookingPage.validateTripIncluisonPage();
-//		}
 
     //@Test(groups= {"regression"},priority=13)
 	public void verifySpotlightLink_TC_14(Method method) throws Exception {
@@ -723,4 +697,21 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.tripSummary();
 	}
 
-}
+//	  @Test(priority = 11)
+//	public void bookingDetailswithPremiumEcomomy_Mob_TC_18(Method method) throws Exception {
+//		// ExtentTestManager.startTest(method.getName(), "dateChanging_TC_18");
+//		bookingPage.clickOnBuildYourVacationDropDown();
+//		bookingPage.bookingDetailswithPremiumEcomomy("New York City (all Airports),  NY", "Delhi (India)","Premium Economy", "4", "1|1");
+//		String actualcabin = bookingPage.selectedcabinAssert();
+//		System.out.println(actualcabin);
+//	    boolean cabinVerify =  bookingPage.verifyCabin();
+//		Assert.assertTrue(cabinVerify);
+//	    bookingPage.clickonContinueButton();
+//		bookingPage.selectCheaperFlights();
+//		String expectedcabin = bookingPage.verifycabinAssert();
+//		System.out.println(expectedcabin);
+//		Assert.assertEquals(actualcabin,expectedcabin);
+//		bookingPage.validateTripIncluisonPage();
+//	}
+
+	}

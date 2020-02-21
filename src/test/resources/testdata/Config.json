@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "Platform": "Windows",
+=======
+    "Platform": "Mobile",
+>>>>>>> 7792a67070e4967b6c5fa9c124d85f5070e8c647
     "Browser": "Chrome",
     "URL": "https://www.tripmasters.com"
 }

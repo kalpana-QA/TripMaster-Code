@@ -73,6 +73,17 @@ public class BookingPageAction extends PageBase {
 			//test.log(LogStatus.INFO, "User select '" + guestInfo + "' from Guest list");
 		}
 	}
+	
+	/*
+	 * public void selectGuestDetailsForOneandOther(String guestInfo) {
+	 * clickUsingJavaScript(BookingLocators.getselectGuestRoomOptions());
+	 * clickUsingJavaScript(BookingLocators.getselectGuestRoomOptionsDrpdown());
+	 * WebElement wb =
+	 * driver.findElement(BookingLocators.getoptionListForGuestsAndRooms())
+	 * .findElement(By.xpath(".//li[@id='" + guestInfo + "']"));
+	 * clickUsingJavaScript(wb);
+	 * clickUsingJavaScript(BookingLocators.getselectNumberOfAdults) }
+	 */
 
 	/**
 	 * 
@@ -124,9 +135,9 @@ public class BookingPageAction extends PageBase {
 	}
 
 	public  void clicktoContinuePage() {
-
+     if(!TestBase.flag_Mob){
 			clickUsingJavaScript(BookingLocators.getcontinueImage());
-			
+     }
 	}
 
 	public  void selectNumberOfAdult(String numOfAdults, By element) {
@@ -386,7 +397,7 @@ public class BookingPageAction extends PageBase {
 		}
 		}
 	
-	    public static String verifycabinAssert() {
+	    public String verifycabinAssert() {
 		if(TestBase.flag_Mob)
 		{
 		   
@@ -462,8 +473,18 @@ public class BookingPageAction extends PageBase {
 		Assert.assertTrue(actualdate);
 	}
 
-	public  void tripSummary() {
-		clickUsingJavaScript(BookingLocators.getTripSummaryButton());
+	public  void tripSummary() throws Exception 
+	{
+		if(TestBase.flag_Mob)
+		{
+			scrollDownForMob(4);
+			clickUsingJavaScript(BookingLocators.getTripSummaryButton());
+		   
+         }
+		else
+		{
+			clickUsingJavaScript(BookingLocators.getTripSummaryButton());
+		}
 	}
 
 	public  void validateTripIncluisonPage() {

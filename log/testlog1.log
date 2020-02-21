@@ -3679,6 +3679,7 @@
 2020-02-19 01:59:31,734 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
 >>>>>>> f172852406c50f74aa2ebf3a7eb533794d81463d
 <<<<<<< HEAD
+<<<<<<< HEAD
 2020-02-20 11:24:43,563 [pool-1-thread-1] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
 2020-02-20 11:24:43,566 [pool-1-thread-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
 2020-02-20 11:24:43,567 [pool-1-thread-1] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
@@ -3904,3 +3905,273 @@
 2020-02-20 03:13:05,010 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
 2020-02-20 03:14:24,039 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
 >>>>>>> 870550fc3d897700b95b171e476e89a07b8f3c2c
+=======
+2020-02-20 11:02:01,242 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-20 11:02:01,250 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-20 11:02:01,256 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 11:02:01,257 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-20 11:02:01,270 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-20 11:02:01,323 [main] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-02-20 11:02:04,377 [main] ERROR com.tripmasters.framework.reports.Logs - Driver is null at AfterClass (TestBase)
+2020-02-20 11:02:04,434 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-20 11:02:04,434 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-20 11:02:04,436 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 11:02:04,437 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-20 11:02:04,438 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-20 11:02:04,445 [main] ERROR com.tripmasters.framework.reports.Logs - Driver is null at AfterClass (TestBase)
+2020-02-20 11:02:04,640 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-02-20 11:02:04,643 [main] ERROR com.tripmasters.framework.reports.Logs - Driver is null at AfterClass (TestBase)
+2020-02-20 11:04:54,000 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 11:05:01,950 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 11:05:02,477 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-20 11:05:07,426 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 11:05:46,917 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-20 11:05:52,136 [main] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-02-20 11:07:15,525 [main] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-02-20 11:08:27,972 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-20 11:08:48,031 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-20 11:09:08,089 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 11:09:31,237 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-20 11:17:27,461 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-20 11:17:47,571 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 11:17:53,044 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-20 11:18:13,140 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 11:18:18,496 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-20 11:18:24,100 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 11:18:24,119 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 11:19:52,598 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-20 11:19:57,331 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 11:20:02,517 [main] INFO com.tripmasters.framework.reports.Logs - Select withOut Air Option on HomePage
+2020-02-20 11:20:06,873 [main] INFO com.tripmasters.framework.reports.Logs - User entered '5' nights staying time
+2020-02-20 11:20:13,067 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|3' from Guest list
+2020-02-20 11:20:13,067 [main] INFO com.tripmasters.framework.reports.Logs - User fills all the basic details of journey:Source,Destination & Staying Time
+2020-02-20 11:20:18,116 [main] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-02-20 11:20:33,346 [main] INFO com.tripmasters.framework.reports.Logs - Click on Browse Hotels Button
+2020-02-20 11:20:53,471 [main] INFO com.tripmasters.framework.reports.Logs - Select particular hotel from Hotel Options
+2020-02-20 11:20:53,491 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 11:23:41,437 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 11:23:48,100 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 11:24:08,296 [main] INFO com.tripmasters.framework.reports.Logs - Select withOut Air Option on HomePage
+2020-02-20 11:24:08,497 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-20 11:24:08,865 [main] INFO com.tripmasters.framework.reports.Logs - User entered '5' nights staying time
+2020-02-20 11:24:38,039 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|3' from Guest list
+2020-02-20 11:24:38,040 [main] INFO com.tripmasters.framework.reports.Logs - User fills all the basic details of journey:Source,Destination & Staying Time
+2020-02-20 11:24:43,214 [main] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-02-20 11:24:43,277 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 11:39:42,886 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 11:39:48,568 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 11:39:53,595 [main] INFO com.tripmasters.framework.reports.Logs - User entered '6' nights staying time
+2020-02-20 11:40:22,680 [main] INFO com.tripmasters.framework.reports.Logs - User select '2|Other' from Guest list
+2020-02-20 11:40:22,681 [main] INFO com.tripmasters.framework.reports.Logs - User entered guest info '2|Other'
+2020-02-20 11:40:22,687 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 11:40:38,186 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 11:40:43,886 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 11:41:04,083 [main] INFO com.tripmasters.framework.reports.Logs - Select withOut Air Option on HomePage
+2020-02-20 11:41:04,296 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-20 11:41:04,656 [main] INFO com.tripmasters.framework.reports.Logs - User entered '5' nights staying time
+2020-02-20 11:49:20,285 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 11:49:28,305 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 11:49:33,136 [main] INFO com.tripmasters.framework.reports.Logs - User entered '6' nights staying time
+2020-02-20 11:50:02,307 [main] INFO com.tripmasters.framework.reports.Logs - User select '2|Other' from Guest list
+2020-02-20 11:50:02,308 [main] INFO com.tripmasters.framework.reports.Logs - User entered guest info '2|Other'
+2020-02-20 11:50:02,315 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 11:58:35,734 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 11:58:42,572 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 11:58:47,447 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 11:59:16,573 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|3' from Guest list
+2020-02-20 11:59:16,573 [main] INFO com.tripmasters.framework.reports.Logs - User entered guest info '1|3'
+2020-02-20 11:59:16,581 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 12:01:12,979 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 12:01:20,080 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 12:01:40,589 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 12:01:49,664 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 12:02:19,112 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-20 12:02:19,119 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 12:10:26,031 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 12:10:33,662 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 12:10:54,177 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 12:11:03,312 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 12:11:32,552 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|2' from Guest list
+2020-02-20 12:12:51,968 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 12:21:15,999 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 12:21:22,960 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 12:21:43,498 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 12:21:52,592 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 12:22:22,123 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|2' from Guest list
+2020-02-20 12:24:25,444 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 12:28:04,146 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 12:28:10,235 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 12:28:30,617 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 12:28:39,569 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 12:29:08,859 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|2' from Guest list
+2020-02-20 12:31:10,883 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 12:33:20,749 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 12:33:27,677 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 12:33:48,167 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 12:33:57,077 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 12:34:26,788 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|2' from Guest list
+2020-02-20 12:36:44,884 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 12:41:45,137 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 12:41:51,500 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 12:42:11,969 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 12:42:20,980 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 12:42:50,670 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|2' from Guest list
+2020-02-20 12:45:12,950 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 12:54:54,727 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 12:55:01,769 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 12:55:22,232 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 12:55:31,120 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 12:56:00,852 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|2' from Guest list
+2020-02-20 12:58:42,728 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 12:59:33,895 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 12:59:41,180 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 13:00:01,606 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 13:00:10,546 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 13:00:39,998 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|2' from Guest list
+2020-02-20 13:03:25,604 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 13:05:04,427 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 13:05:10,998 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 13:05:31,522 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 13:05:40,562 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 13:06:09,924 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|2' from Guest list
+2020-02-20 13:08:34,894 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 13:12:09,991 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 13:12:15,912 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 13:12:36,412 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 13:12:45,483 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 13:13:15,189 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|2' from Guest list
+2020-02-20 13:16:07,380 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 13:19:45,970 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 13:19:52,805 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 13:20:13,256 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 13:20:22,239 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 13:20:52,189 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|2' from Guest list
+2020-02-20 13:23:50,587 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 13:26:32,471 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 13:26:39,043 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 13:26:59,576 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 13:27:08,857 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 13:27:38,424 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|2' from Guest list
+2020-02-20 13:30:19,925 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 13:38:00,006 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 13:38:07,320 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 13:40:07,006 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 13:40:15,959 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 13:40:36,502 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 13:40:45,544 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 13:41:07,045 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|2' from Guest list
+2020-02-20 13:41:09,712 [main] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-02-20 13:41:37,035 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 13:41:37,441 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 13:41:57,535 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-02-20 13:42:17,617 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 14:53:52,576 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 14:53:58,568 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 14:54:18,983 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 14:54:28,022 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 14:54:57,470 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|Other' from Guest list
+2020-02-20 14:54:57,476 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 15:02:39,102 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 15:02:46,753 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 15:03:07,188 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 15:03:16,126 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 15:03:45,509 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|Other' from Guest list
+2020-02-20 15:04:25,641 [main] INFO com.tripmasters.framework.reports.Logs - User entered number of child'1' 
+2020-02-20 15:04:45,717 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 16:25:40,344 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-20 16:25:46,310 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 16:25:56,089 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 16:26:02,260 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-20 16:26:02,262 [main] INFO com.tripmasters.framework.reports.Logs - Filled flights details with premium economy
+2020-02-20 16:26:02,319 [main] INFO com.tripmasters.framework.reports.Logs - Select Cabin class
+2020-02-20 16:26:02,351 [main] INFO com.tripmasters.framework.reports.Logs - Selected Cabin class verified
+2020-02-20 16:26:47,433 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 16:29:16,286 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-20 16:29:22,184 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 16:29:32,015 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 16:29:38,200 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-20 16:29:38,201 [main] INFO com.tripmasters.framework.reports.Logs - Filled flights details with premium economy
+2020-02-20 16:29:38,254 [main] INFO com.tripmasters.framework.reports.Logs - Select Cabin class
+2020-02-20 16:29:38,285 [main] INFO com.tripmasters.framework.reports.Logs - Selected Cabin class verified
+2020-02-20 16:30:23,414 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 16:36:51,245 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-20 16:37:00,699 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 16:37:10,471 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 16:37:16,655 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-20 16:37:16,657 [main] INFO com.tripmasters.framework.reports.Logs - Filled flights details with premium economy
+2020-02-20 16:37:16,712 [main] INFO com.tripmasters.framework.reports.Logs - Select Cabin class
+2020-02-20 16:37:16,770 [main] INFO com.tripmasters.framework.reports.Logs - Selected Cabin class verified
+2020-02-20 16:38:01,892 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 16:42:41,059 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-20 16:42:46,955 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 16:42:56,781 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 16:43:02,949 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-20 16:43:02,951 [main] INFO com.tripmasters.framework.reports.Logs - Filled flights details with premium economy
+2020-02-20 16:43:03,002 [main] INFO com.tripmasters.framework.reports.Logs - Select Cabin class
+2020-02-20 16:43:03,033 [main] INFO com.tripmasters.framework.reports.Logs - Selected Cabin class verified
+2020-02-20 16:43:48,103 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 16:49:38,242 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-20 16:49:43,770 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 16:49:53,528 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 16:49:59,726 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-20 16:49:59,728 [main] INFO com.tripmasters.framework.reports.Logs - Filled flights details with premium economy
+2020-02-20 16:49:59,771 [main] INFO com.tripmasters.framework.reports.Logs - Select Cabin class
+2020-02-20 16:49:59,803 [main] INFO com.tripmasters.framework.reports.Logs - Selected Cabin class verified
+2020-02-20 16:50:04,830 [main] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-02-20 16:50:44,670 [main] INFO com.tripmasters.framework.reports.Logs - bookingDetailswithPremiumEcomomy passed
+2020-02-20 16:50:44,678 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 16:51:35,134 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-20 16:51:40,556 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 16:51:50,373 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 16:51:56,554 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-20 16:51:56,556 [main] INFO com.tripmasters.framework.reports.Logs - Filled flights details with premium economy
+2020-02-20 16:51:56,608 [main] INFO com.tripmasters.framework.reports.Logs - Select Cabin class
+2020-02-20 16:51:56,642 [main] INFO com.tripmasters.framework.reports.Logs - Selected Cabin class verified
+2020-02-20 16:52:01,671 [main] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-02-20 16:52:21,695 [main] INFO com.tripmasters.framework.reports.Logs - bookingDetailswithPremiumEcomomy passed
+2020-02-20 16:52:21,699 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 16:53:49,170 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-20 16:53:54,802 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 16:54:04,679 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 16:54:10,860 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-20 16:54:10,862 [main] INFO com.tripmasters.framework.reports.Logs - Filled flights details with premium economy
+2020-02-20 16:54:10,910 [main] INFO com.tripmasters.framework.reports.Logs - Select Cabin class
+2020-02-20 16:54:10,948 [main] INFO com.tripmasters.framework.reports.Logs - Selected Cabin class verified
+2020-02-20 16:54:15,980 [main] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-02-20 16:54:36,013 [main] INFO com.tripmasters.framework.reports.Logs - bookingDetailswithPremiumEcomomy passed
+2020-02-20 16:54:36,018 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 16:56:00,247 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-20 16:56:05,929 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 16:56:15,567 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 16:56:21,753 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-20 16:56:26,877 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 16:58:09,812 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-02-20 16:58:15,419 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Windows platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 16:58:25,077 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 16:58:31,259 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-20 16:59:21,834 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 17:17:29,694 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 17:17:42,954 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 17:18:08,586 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 17:18:18,278 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 17:18:47,635 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-20 17:19:54,770 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 17:22:08,923 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 17:22:19,522 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 17:22:45,222 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 17:22:54,572 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 17:23:23,795 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-20 17:24:28,909 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+2020-02-20 17:25:09,677 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 17:25:15,929 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 17:25:30,689 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 17:25:32,026 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-20 17:25:33,361 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-02-20 17:25:34,713 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 17:26:27,832 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-20 17:26:33,841 [main] INFO com.tripmasters.framework.reports.Logs - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-20 17:26:54,364 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-02-20 17:27:03,355 [main] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-02-20 17:27:33,231 [main] INFO com.tripmasters.framework.reports.Logs - User select '1|1' from Guest list
+2020-02-20 17:28:36,525 [main] INFO com.tripmasters.framework.reports.Logs - Closing browser after TestClass
+>>>>>>> 7792a67070e4967b6c5fa9c124d85f5070e8c647

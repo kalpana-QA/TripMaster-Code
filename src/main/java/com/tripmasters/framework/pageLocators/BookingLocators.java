@@ -135,7 +135,7 @@ public class BookingLocators {
 	private static By cabinClassDropdown = By.xpath("//select[@id='qCabinOpt']");
 	private static By verifycabinClassDropdown = By.xpath("//select[@id='xCabin']");
 	private static By firstpremiumoption = By.xpath("//select[@id='qCabinOpt']//option[2]");
-	private static By verifypremiumoption = By.xpath("//select[@id='xCabin']//option[2]");
+	private static By verifypremiumoption = By.xpath("//div[text()='Premium Economy']");
 	private static By tripSummaryButton = By.xpath("//span[text()='Trip Summary']");
 
 	// ======== Locators for Mobile ======================
