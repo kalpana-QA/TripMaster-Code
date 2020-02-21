@@ -199,13 +199,6 @@ public class BookingPageAction extends PageBase {
 		clickUsingJavaScript(BookingLocators.getTripInclusionContinueButtonmob());
 	}
 	
-	
-	
-	
-	
-	
-	
-
 	public  void getWithoutButton() {
 
 		clickUsingJavaScript(BookingLocators.getWithoutAirButton());
@@ -233,8 +226,8 @@ public class BookingPageAction extends PageBase {
 	}
 	//satyam
 	public String browseHoteliOS() throws Exception {
-		//scrollDown();
-		//scrollDown();
+		scrollDown();
+		scrollDown();
 		clickUsingJavaScript(BookingLocators.getBrowseHotelsLink());
 		String actualhotel = driver.findElement(BookingLocators.getfirstHoteliOS()).getText();
 		System.out.println(actualhotel);

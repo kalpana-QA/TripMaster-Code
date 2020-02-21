@@ -258,12 +258,13 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 	
+	//@Test
 	public void bookingFlightsWithMultipleCities_TC_6_iOS() throws Exception {
 		
 		bookingPage.clickOnBuildYourVacationDropDown();
 		bookingPage.fillBasicDetatilsForMultipleCities("New York, Newark, NJ", "Delhi (India)", "4", "Mumbai (India)", "1");
 		bookingPage.getNoMoreCitiesButton();
-		bookingPage.selectGuestDetails("1|1");
+		bookingPage.selectGuestDetails("1|Other");
 		bookingPage.clickonContinueButton();
 		bookingPage.selectCheaperFlights_Mob();
 		bookingPage.getTripinclusionContinueButton();
@@ -277,14 +278,6 @@ public class BookingPageTestScript extends TestBase {
 		
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-
 	//@Test(groups= {"smoke"},priority=7)
 	public void bookingFlightAndHotelForSingleCity_TC_7(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "bookingFlightAndHotelForSingleCity");
@@ -324,8 +317,9 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.clickOnBuildYourVacationDropDown();
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
 		bookingPage.fillGoingToCityDetails("Delhi (India)");
-		bookingPage.selectStayingTime("4");bookingPage.getNoMoreCitiesButton();
-		//bookingPage.selectGuestDetails("1|1");
+		bookingPage.selectStayingTime("4");
+		bookingPage.getNoMoreCitiesButton();
+		bookingPage.selectGuestDetails("1|1");
 		bookingPage.clickonContinueButton();
 		ActualHotel=bookingPage.browseHoteliOS();
 		ExpectedHotel = bookingPage.browseSelectHoteliOS();

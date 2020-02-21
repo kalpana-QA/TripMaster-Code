@@ -5,9 +5,8 @@
     <classes>
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="bookingFlightAndHotelForSingleCity_TC_7_iOS"/>
+          <include name="bookingFlightsWithMultipleCities_TC_6_iOS"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>

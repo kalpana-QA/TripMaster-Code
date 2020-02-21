@@ -155,7 +155,7 @@ public class BookingLocators {
 			.xpath("//div[@id='TravelerR1']//div[@class='editvaldob' or @class='cel-name col-6 mt-2' or @class='editvalgender font-weight-bold']");
 	private static By verifyTraveler2NameiOS = By
 			.xpath("//div[@id='TravelerR2']//div[@class='editvaldob' or @class='editvalgender font-weight-bold' or @class='cel-name col-6 mt-2']");
-	private static By firstHoteliOS = By.xpath("//div[@id='tblPrd173668']/div/a/h5");//inside dom id and dom structure changes frequently.
+	private static By firstHoteliOS = By.xpath("(//a[contains(@class,'hotelHeadTitle')]//h5)[1]");//inside dom id and dom structure changes frequently.
 	private static By verifyPremiumEconomy =By.xpath("//div[text()='Premium Economy']");
 	/**
 	 * @return the emailId
