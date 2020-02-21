@@ -17,7 +17,7 @@ public class BookingLocators {
 
 	private static By selectbutton = By.xpath("//div/a[contains(text(),'Select')]");
 
-	// private static By goingToTextboxSecond = By.xpath("//*[@id='qNACity2']");
+//	private static By goingToTextboxSecond = By.xpath("//*[@id='qNACity2']");
 	private static By addCityBtn = By.xpath("//span[contains(.,'Add City')] | //p[@id='pMaddcity']");
 	private static By noMoreCitiesBtn = By
 			.xpath("//span[contains(.,'No more cities. Continue')] | //span[@class = 'spMnextbutt']");
@@ -55,6 +55,7 @@ public class BookingLocators {
 	private static By europeanBestsellersHeader = By
 			.xpath("//div[contains(@class,'pageTitle')]/div[contains(.,'Europe - European Bestsellers')]");
 	private static By passportDrpdownFirstTraveller = By.xpath("//select[@id='txtPAX_Nationality1']");
+
 	private static By passportDrpdownSecondTraveller = By.xpath("//select[@id='txtPAX_Nationality2']");
 	private static By passportDrpdownThirdTraveller = By.xpath("//select[@id='txtPAX_Nationality3']");
 	private static By thirdTravelerFirstNameTxtbox = By.xpath(
@@ -144,12 +145,16 @@ public class BookingLocators {
 	//satyam
 	private static By tripInclusionContinueButtonmob=By.xpath("//a[@id='aContWithPriceValidationReview']");
 	private static By firstTravelerFirstNameTextBoxiOS=By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtPFName1' ]");
+	private static By thirdTravelerFirstNameTextBoxMob=By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtPFName3' ]");
+	private static By thirdTravelerLastNameTxtboxMob = By.xpath("//input[contains(@placeholder,'Last Name') and @id='txtPLName3']");
 	private static By secondTravelerFirstNameTextBoxiOS=By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtPFName2' ]");
 	private static By firstTravelerLastNameTxtboxiOS = By.xpath("//input[contains(@placeholder,'Last Name') and @id='txtPLName1']");
 	private static By secondTravelerLastNameTxtboxiOS = By.xpath("//input[contains(@placeholder,'Last Name') and @id='txtPLName2']");
+	private static By thirdTravelerGenderDropdownMob = By.xpath("//select[@id='txtPAX_Gender3']");
 	private static By firstTravelerGenderDropdowniOS = By.xpath("//select[@id='txtPAX_Gender1']");
 	private static By secondTravelerGenderDropdowniOS = By.xpath("//select[@id='txtPAX_Gender2']");
 	private static By firstTravelerDOBiOS = By.xpath("//input[@id='txtPAX_DOB1']");
+	private static By thirdTravelerDOBMob = By.xpath("//input[@id='txtPAX_DOB3']");
 	private static By secondTravelerDOBiOS = By.xpath("//input[@id='txtPAX_DOB2']");
 	private static By verifyTraveler1NameiOS = By
 			.xpath("//div[@id='TravelerR1']//div[@class='editvaldob' or @class='cel-name col-6 mt-2' or @class='editvalgender font-weight-bold']");
@@ -157,6 +162,8 @@ public class BookingLocators {
 			.xpath("//div[@id='TravelerR2']//div[@class='editvaldob' or @class='editvalgender font-weight-bold' or @class='cel-name col-6 mt-2']");
 	private static By firstHoteliOS = By.xpath("//div[@id='tblPrd173668']/div/a/h5");//inside dom id and dom structure changes frequently.
 	private static By verifyPremiumEconomy =By.xpath("//div[text()='Premium Economy']");
+	private static By selectNumberOfAdultMob = By.xpath("//span[@id='adultMinus']");
+	public static By slectNumberOfChildMob =By.xpath("//span[@id='childrenPlus']");
 	/**
 	 * @return the emailId
 	 */
@@ -583,6 +590,34 @@ public class BookingLocators {
 
 	return verifyPremiumEconomy;
 	}
+   public static By getthirdTravelerFirstNameTextBoxMob()
+   {
+	   return thirdTravelerFirstNameTextBoxMob;
+   }
+   
+   public static By getthirdTravelerLastNameTxtboxMob()
+   {
+	   return thirdTravelerLastNameTxtboxMob;
+   }
+   
+   public static By getthirdTravelerGenderDropdownMob()
+   {
+	   return thirdTravelerGenderDropdownMob ;
+   }
+   
+   public static By getthirdTravelerDOBMob()
+   {
+	   return thirdTravelerDOBMob ;
+   }
+   
+   public static By getselectNumberOfAdultMob()
+   {
+	   return selectNumberOfAdultMob;
+   }
 
+public static By getselectNumberOfChildMob() {
+	// TODO Auto-generated method stub
+	return slectNumberOfChildMob;
+}
 	
 }

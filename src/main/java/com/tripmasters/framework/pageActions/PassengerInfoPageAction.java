@@ -83,6 +83,23 @@ public class PassengerInfoPageAction extends PageBase {
 	}
 
 	public List<String> fillThirdTravellerDetails(String fname, String lname, String gender, String dateOfBirth,String passportInfo) throws Exception {
+	   if(TestBase.flag_Mob)
+	   {
+		   List<String> list = new ArrayList<String>();
+		   String firstName=clearAndSetValues(BookingLocators.getthirdTravelerFirstNameTextBoxMob(), fname);
+	    	String secondName=clearAndSetValues(BookingLocators.getthirdTravelerLastNameTxtboxMob(), lname);
+	    	String fullName=firstName +" "+ secondName;
+	    	list.add(fullName);
+		    list.add(selectOptionByText(BookingLocators.getthirdTravelerGenderDropdownMob(), gender));
+		    scrollDown();
+			list.add(clearAndSetValues(BookingLocators.getthirdTravelerDOBMob(), dateOfBirth));
+			selectOptionByValue(BookingLocators.getpassportDrpdownThirdTraveller(), passportInfo);
+	    	return list;
+		   
+		   
+	   }
+	   else
+	   { 
 		List<String> list = new ArrayList<String>();
 		String firstName = clearAndSetValues(BookingLocators.getthirdTravelerFirstNameTxtbox(), fname);
 		String secondName = clearAndSetValues(BookingLocators.getthirdTravelerLastNameTxtbox(), lname);
@@ -92,6 +109,7 @@ public class PassengerInfoPageAction extends PageBase {
 		list.add(clearAndSetValues(BookingLocators.getthirdTravelerDOB(), dateOfBirth));
 		selectOptionByValue(BookingLocators.getpassportDrpdownThirdTraveller(), passportInfo);
 		return list;
+	   }
 	}
 
 	public List<String> fillTravellerDetailsForMultipleRooms(String RoomTravelerInfo) throws Exception {

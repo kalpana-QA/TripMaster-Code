@@ -135,14 +135,23 @@ public class BookingPageAction extends PageBase {
 	}
 
 	public  void clicktoContinuePage() {
-
+     if(!TestBase.flag_Mob){
 			clickUsingJavaScript(BookingLocators.getcontinueImage());
-			
+     }
 	}
 
-	public  void selectNumberOfAdult(String numOfAdults, By element) {
-
+	public  void selectNumberOfAdult(String numOfAdults, By element) throws Exception
+	{
+	if(TestBase.flag_Mob)
+	{
+		PageBase.waitForElement(3);
+		
+        clickUsingJavaScript(BookingLocators.getselectNumberOfAdultMob());
+	}
+	else
+	{
 		selectOptionByValue(element, numOfAdults);
+	}
 	}
 
 	public  void ClickOnWithoutAir() {
@@ -152,8 +161,27 @@ public class BookingPageAction extends PageBase {
 	}
 
 	//TODO:this method need some modifications.
-	public  void selectNumberOfChild(String numOfChild, String ageOfChild, String childType) {
-		if (childType.equals("Child1")) {
+	public  void selectNumberOfChild(String numOfChild, String ageOfChild, String childType) throws Exception
+	{
+		
+		if(TestBase.flag_Mob)
+		{
+			if(childType.equals("Child1"))
+			{
+				clickUsingJavaScript(BookingLocators.getselectNumberOfChildMob());
+				Select option = Select(driver.findElement(By.xpath("//input[@id='xiChild1']")));
+				PageBase.waitForElement(3);
+				option.selectByValue(ageOfChild);
+		   }
+			else
+			{
+				//----------child for room 2---------
+			}
+		}
+	else
+		{
+			if (childType.equals("Child1")) {
+		
 			selectOptionByValue(BookingLocators.getselectChildDrpdown(), numOfChild);
 			Logs.info("User entered number of child'" + numOfChild + "' ");
 			Select option = new Select(driver.findElement(By.xpath("//select[@id='xiChild1']")));
@@ -167,6 +195,7 @@ public class BookingPageAction extends PageBase {
 			option.selectByValue(ageOfChild);
 			//selectOptionByValue(BookingLocators.getselectChildAgeRoom2Drpdown(), ageOfChild);
 			Logs.info("User entered age of child'" + ageOfChild + "' ");
+		}
 		}
 	}
 
@@ -185,6 +214,11 @@ public class BookingPageAction extends PageBase {
 //		selectGuestDetails(guestinfo);
 //	}
 	
+	private Select Select(WebElement findElement) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	public  void fillBasicDetatilsForMultipleCities(String leavefrom, String firstdestination,String stayingTime,String seconddestination,String seconddrop) throws Exception {
 		clearAndSetValues(BookingLocators.getLeavingTxtbox(), leavefrom);
 		clearAndSetValues(BookingLocators.getgoingToTextbox(), firstdestination);

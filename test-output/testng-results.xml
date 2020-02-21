@@ -2,37 +2,31 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="91941" started-at="2020-02-21T12:44:01 IST" finished-at="2020-02-21T12:45:33 IST">
+  <suite name="Default suite" duration-ms="84079" started-at="2020-02-21T18:46:16 IST" finished-at="2020-02-21T18:47:40 IST">
     <groups>
       <group name="smoke">
-        <method signature="BookingPageTestScript.bookingDetailswithPremiumEcomomy_TC_18(java.lang.reflect.Method)[pri:12, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingDetailswithPremiumEcomomy_TC_18" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
+        <method signature="BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(java.lang.reflect.Method)[pri:2, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingSingleRoomOneAdultOneChild_TC_2" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="91941" started-at="2020-02-21T12:44:01 IST" finished-at="2020-02-21T12:45:33 IST">
+    <test name="Default test" duration-ms="84079" started-at="2020-02-21T18:46:16 IST" finished-at="2020-02-21T18:47:40 IST">
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="setUp" is-config="true" duration-ms="22209" started-at="2020-02-21T12:44:01 IST" finished-at="2020-02-21T12:44:23 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="setUp" is-config="true" duration-ms="22530" started-at="2020-02-21T18:46:16 IST" finished-at="2020-02-21T18:46:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="bookingDetailswithPremiumEcomomy_TC_18(java.lang.reflect.Method)[pri:12, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingDetailswithPremiumEcomomy_TC_18" duration-ms="69662" started-at="2020-02-21T12:44:23 IST" finished-at="2020-02-21T12:45:33 IST">
+        <test-method status="FAIL" signature="bookingSingleRoomOneAdultOneChild_TC_2(java.lang.reflect.Method)[pri:2, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingSingleRoomOneAdultOneChild_TC_2" duration-ms="61502" started-at="2020-02-21T18:46:39 IST" finished-at="2020-02-21T18:47:40 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcomomy_TC_18(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[did not expect to find [true] but found [false]]]>
-            </message>
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: did not expect to find [true] but found [false]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.failNotEquals(Assert.java:969)
-at org.testng.Assert.assertTrue(Assert.java:43)
-at org.testng.Assert.assertTrue(Assert.java:53)
-at com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcomomy_TC_18(BookingPageTestScript.java:780)
+              <![CDATA[java.lang.NullPointerException
+at com.tripmasters.framework.pageActions.BookingPageAction.selectNumberOfChild(BookingPageAction.java:174)
+at com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(BookingPageTestScript.java:148)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -63,10 +57,10 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookingDetailswithPremiumEcomomy_TC_18 -->
+        </test-method> <!-- bookingSingleRoomOneAdultOneChild_TC_2 -->
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
