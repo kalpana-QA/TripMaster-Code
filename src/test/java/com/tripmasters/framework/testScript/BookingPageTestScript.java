@@ -219,7 +219,7 @@ public class BookingPageTestScript extends TestBase {
 	//@Test(groups= {"smoke"},priority=4)
 	public void bookingTwoRoomThreeAdultOneChild_TC_4(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom3Adult1Child");
-		
+		bookingPage.clickOnBuildYourVacationDropDown();
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
