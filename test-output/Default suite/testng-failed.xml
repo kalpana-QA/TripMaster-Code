@@ -5,8 +5,13 @@
     <classes>
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
+<<<<<<< HEAD
           <include name="setUp"/>
           <include name="bookingTwoRoomTwoAdult_TC_3" invocation-numbers="0"/>
+=======
+          <include name="bookingSingleRoomOneAdultOneChild_TC_2" invocation-numbers="0"/>
+          <include name="setUp"/>
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>

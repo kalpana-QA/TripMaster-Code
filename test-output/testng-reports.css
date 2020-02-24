@@ -1,9 +1,17 @@
 body {
+<<<<<<< HEAD
     margin: 0px 0px 5px 5px;
 }
 
 ul {
     margin: 0px;
+=======
+    margin: 0 0 5px 5px;
+}
+
+ul {
+    margin: 0;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
 }
 
 li {
@@ -41,19 +49,31 @@ a:hover {
 }
 
 .suite {
+<<<<<<< HEAD
     margin: 0px 10px 10px 0px;
+=======
+    margin: 0 10px 10px 0;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
     background-color: #fff8dc;
 }
 
 .suite-name {
     padding-left: 10px;
     font-size: 25px;
+<<<<<<< HEAD
     font-family: Times;
+=======
+    font-family: Times, sans-serif;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
 }
 
 .main-panel-header {
     padding: 5px;
+<<<<<<< HEAD
     background-color: #9FB4D9; //afeeee;
+=======
+    background-color: #9FB4D9; /*afeeee*/;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
     font-family: monospace;
     font-size: 18px;
 }
@@ -61,7 +81,11 @@ a:hover {
 .main-panel-content {
     padding: 5px;
     margin-bottom: 10px;
+<<<<<<< HEAD
     background-color: #DEE8FC; //d0ffff;
+=======
+    background-color: #DEE8FC; /*d0ffff*/;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
 }
 
 .rounded-window {
@@ -85,7 +109,11 @@ a:hover {
 
 .rounded-window-bottom {
     border-style: solid;
+<<<<<<< HEAD
     border-width: 0px 1px 1px 1px;
+=======
+    border-width: 0 1px 1px 1px;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
     border-bottom-right-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
     overflow: auto;
@@ -98,8 +126,13 @@ a:hover {
 
 .method-content {
     border-style: solid;
+<<<<<<< HEAD
     border-width: 0px 0px 1px 0px;
     margin-bottom: 10;
+=======
+    border-width: 0 0 1px 0;
+    margin-bottom: 10px;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
     padding-bottom: 5px;
     width: 80%;
 }
@@ -114,7 +147,11 @@ a:hover {
     font-family: monospace;
     font-size: 12px;
     font-weight: bold;
+<<<<<<< HEAD
     margin-top: 0px;
+=======
+    margin-top: 0;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
     margin-left: 20px;
 }
 
@@ -135,8 +172,13 @@ a:hover {
     margin-top: 10px;
     width: 80%;
     border-style: solid;
+<<<<<<< HEAD
     border-width: 1px 0px 0px 0px;
     font-family: Times;
+=======
+    border-width: 1px 0 0 0;
+    font-family: Times, sans-serif;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
     font-size: 18px;
     font-weight: bold;
 }
@@ -152,9 +194,15 @@ a:hover {
     left: 0;
     right: 0;
     padding: 5px;
+<<<<<<< HEAD
     margin: 0px 0px 5px 0px;
     background-color: #0066ff;
     font-family: Times;
+=======
+    margin: 0 0 5px 0;
+    background-color: #0066ff;
+    font-family: Times, sans-serif;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
     color: #fff;
     text-align: center;
 }
@@ -164,20 +212,32 @@ a:hover {
 }
 
 .test-name {
+<<<<<<< HEAD
     font-family: 'Lucida Grande';
+=======
+    font-family: 'Lucida Grande', sans-serif;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
     font-size: 16px;
 }
 
 .suite-icon {
     padding: 5px;
     float: right;
+<<<<<<< HEAD
     height: 20;
+=======
+    height: 20px;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
 }
 
 .test-group {
     font: 20px 'Lucida Grande';
     margin: 5px 5px 10px 5px;
+<<<<<<< HEAD
     border-width: 0px 0px 1px 0px;
+=======
+    border-width: 0 0 1px 0;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
     border-style: solid;
     padding: 5px;
 }
@@ -202,10 +262,17 @@ table.google-visualization-table-table {
 
 .reporter-method-output-div {
     padding: 5px;
+<<<<<<< HEAD
     margin: 0px 0px 5px 20px;
     font-size: 12px;
     font-family: monospace;
     border-width: 0px 0px 0px 1px;
+=======
+    margin: 0 0 5px 20px;
+    font-size: 12px;
+    font-family: monospace;
+    border-width: 0 0 0 1px;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
     border-style: solid;
 }
 
@@ -216,10 +283,17 @@ table.google-visualization-table-table {
 
 .ignored-methods-div {
     padding: 5px;
+<<<<<<< HEAD
     margin: 0px 0px 5px 20px;
     font-size: 12px;
     font-family: monospace;
     border-width: 0px 0px 0px 1px;
+=======
+    margin: 0 0 5px 20px;
+    font-size: 12px;
+    font-family: monospace;
+    border-width: 0 0 0 1px;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
     border-style: solid;
 }
 
@@ -227,7 +301,11 @@ table.google-visualization-table-table {
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
     border-style: solid;
+<<<<<<< HEAD
     border-width: 0px 0px 0px 10px;
+=======
+    border-width: 0 0 0 10px;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
     border-color: #f00;
 }
 
@@ -235,7 +313,11 @@ table.google-visualization-table-table {
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
     border-style: solid;
+<<<<<<< HEAD
     border-width: 0px 0px 0px 10px;
+=======
+    border-width: 0 0 0 10px;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
     border-color: #edc600;
 }
 
@@ -243,7 +325,11 @@ table.google-visualization-table-table {
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
     border-style: solid;
+<<<<<<< HEAD
     border-width: 0px 0px 0px 10px;
+=======
+    border-width: 0 0 0 10px;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
     border-color: #19f52d;
 }
 
@@ -277,9 +363,15 @@ table.google-visualization-table-table {
 }
 
 .chronological-class {
+<<<<<<< HEAD
     background-color: #0ccff;
     border-style: solid;
     border-width: 0px 0px 1px 1px;
+=======
+    background-color: skyblue;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
 }
 
 .method-start {
@@ -287,7 +379,11 @@ table.google-visualization-table-table {
 }
 
 .chronological-class-name {
+<<<<<<< HEAD
     padding: 0px 0px 0px 5px;
+=======
+    padding: 0 0 0 5px;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
     color: #008;
 }
 
@@ -298,7 +394,11 @@ table.google-visualization-table-table {
 
 .navigator-suite-header {
     font-size: 22px;
+<<<<<<< HEAD
     margin: 0px 10px 5px 0px;
+=======
+    margin: 0 10px 5px 0;
+>>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
     background-color: #deb887;
     text-align: center;
 }
