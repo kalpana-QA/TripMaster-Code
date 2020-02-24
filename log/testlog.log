@@ -248,3 +248,378 @@
 2020-02-21 18:46:50,574 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
 2020-02-21 18:46:54,992 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
 2020-02-21 18:47:24,282 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 09:55:33,767 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 09:55:43,694 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 09:55:50,808 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Philadelphia, PA' into leaving from field
+2020-02-24 09:55:54,489 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 09:55:59,191 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 09:56:28,650 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 10:11:19,806 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 10:11:31,101 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 10:11:43,388 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Philadelphia, PA' into leaving from field
+2020-02-24 10:11:47,312 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 10:11:58,188 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 10:12:27,398 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 10:14:49,315 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 10:14:54,801 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 10:15:01,771 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Philadelphia, PA' into leaving from field
+2020-02-24 10:15:05,332 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 10:15:09,704 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 10:15:39,057 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 10:16:26,494 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 10:16:33,983 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 10:16:40,956 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Philadelphia, PA' into leaving from field
+2020-02-24 10:16:44,596 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 10:16:45,983 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-02-24 10:17:17,181 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 10:17:25,082 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 10:18:48,032 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 10:18:53,934 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 10:19:00,891 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Philadelphia, PA' into leaving from field
+2020-02-24 10:19:04,589 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 10:20:17,375 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 10:20:23,185 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 10:20:30,134 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Philadelphia, PA' into leaving from field
+2020-02-24 10:20:33,776 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 10:20:38,180 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 10:21:07,641 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 10:22:55,307 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 10:23:02,592 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 10:23:09,625 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Philadelphia, PA' into leaving from field
+2020-02-24 10:23:13,302 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 10:23:17,741 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 10:23:47,106 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 10:28:00,559 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 10:28:07,431 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 10:28:14,365 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Philadelphia, PA' into leaving from field
+2020-02-24 10:28:18,072 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 10:28:22,478 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 10:28:51,772 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 10:31:59,364 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 10:32:06,656 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 10:32:13,647 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Philadelphia, PA' into leaving from field
+2020-02-24 10:32:17,335 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 10:32:21,829 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 10:32:51,087 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 10:40:15,179 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 10:40:20,906 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 10:40:27,784 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Philadelphia, PA' into leaving from field
+2020-02-24 10:40:31,406 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 10:40:35,850 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 10:41:05,313 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 10:43:24,994 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 10:43:30,900 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 10:43:37,919 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Philadelphia, PA' into leaving from field
+2020-02-24 10:43:41,638 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 10:43:46,068 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 10:44:15,481 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 10:47:01,127 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 10:47:07,838 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 10:47:14,781 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Philadelphia, PA' into leaving from field
+2020-02-24 10:47:18,426 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 10:47:22,864 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 10:47:52,256 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 10:49:38,281 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 10:49:45,069 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 10:49:52,023 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Philadelphia, PA' into leaving from field
+2020-02-24 10:49:55,790 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 10:50:00,393 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 10:50:29,837 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 10:51:25,317 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 10:51:30,860 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 10:51:37,844 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Philadelphia, PA' into leaving from field
+2020-02-24 10:51:41,477 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 10:51:45,895 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 10:52:28,057 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 10:52:33,880 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 10:52:40,841 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Philadelphia, PA' into leaving from field
+2020-02-24 10:52:44,500 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 10:52:48,949 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 10:53:18,459 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 10:54:41,276 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-24 10:54:41,285 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 10:54:41,285 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-24 10:54:41,285 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 10:54:41,301 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-02-24 10:55:13,363 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 10:55:19,601 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 10:55:26,616 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 10:55:30,359 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 10:55:34,706 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 10:56:04,124 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 11:06:14,935 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 11:06:21,518 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 11:06:28,548 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 11:06:32,338 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 11:06:33,949 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 11:07:03,423 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 11:07:39,903 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-02-24 11:11:27,850 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 11:11:33,272 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 11:11:40,315 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 11:11:43,960 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 11:11:45,597 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 11:12:04,693 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 11:12:41,194 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-02-24 11:15:46,448 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 11:15:53,334 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 11:16:00,466 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 11:16:04,219 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 11:16:05,831 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 11:16:24,916 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 11:17:06,723 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-02-24 11:23:28,390 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 11:23:34,857 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 11:23:41,836 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 11:23:45,506 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 11:23:47,188 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 11:24:06,246 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 11:24:48,018 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-02-24 11:26:39,581 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 11:26:45,402 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 11:26:52,459 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 11:26:56,155 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 11:26:57,783 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 11:27:16,801 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 11:27:38,547 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-02-24 11:37:28,152 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 11:37:34,455 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 11:37:41,525 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 11:37:45,214 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 11:37:46,766 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 11:38:05,805 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 11:50:19,108 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 11:50:25,802 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 11:50:32,814 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 11:50:36,525 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 11:50:38,028 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 11:50:57,157 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 11:51:13,697 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-02-24 11:59:40,001 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 11:59:45,902 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 12:00:44,563 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 12:00:52,176 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 12:00:59,228 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 12:01:02,965 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 12:01:04,524 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 12:01:23,572 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 12:02:19,202 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 12:02:26,365 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 12:02:33,411 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 12:02:37,107 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 12:02:38,783 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 12:02:57,771 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 12:10:42,971 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 12:10:49,978 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 12:10:57,013 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 12:11:00,704 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 12:11:02,331 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 12:11:21,350 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 12:13:41,440 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 12:13:50,437 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 12:13:57,460 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 12:14:01,369 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 12:14:02,997 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 12:14:21,978 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 12:15:29,006 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
+2020-02-24 12:18:10,201 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 12:18:19,634 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 12:18:26,763 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 12:18:30,596 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 12:18:32,223 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 12:18:51,197 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 12:19:58,622 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
+2020-02-24 12:24:07,941 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 12:24:13,721 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 12:24:20,812 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 12:24:24,530 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 12:24:26,141 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 12:24:45,134 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 12:33:49,958 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 12:33:57,319 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 12:34:04,544 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 12:34:08,285 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 12:34:09,779 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 12:34:28,851 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 12:37:48,640 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 12:37:55,032 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 12:38:02,109 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 12:38:05,832 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 12:38:07,422 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 12:38:26,365 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 12:41:19,745 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 12:41:25,536 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 12:41:32,655 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 12:41:36,365 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 12:41:37,991 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 12:41:56,981 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 12:45:04,572 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 12:45:10,147 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 12:45:17,200 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 12:45:20,865 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 12:45:22,494 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 12:45:41,506 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 12:50:18,384 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 12:50:24,784 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 12:50:31,968 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 12:50:35,611 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 12:50:37,225 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 12:50:56,232 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 13:04:50,335 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 13:04:56,718 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 13:05:03,775 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 13:05:07,479 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 13:05:09,073 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 13:05:28,073 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 13:08:56,653 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 13:09:04,185 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 13:09:11,272 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 13:09:14,981 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 13:09:16,655 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 13:09:35,629 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 13:11:13,337 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 13:11:19,188 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 13:11:26,212 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 13:11:29,916 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 13:11:31,481 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 13:11:50,406 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 13:15:06,802 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 13:15:13,781 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 13:15:20,912 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 13:15:24,554 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 13:15:26,199 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 13:15:45,187 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 13:16:05,564 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-02-24 13:16:55,221 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 13:17:02,809 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 13:17:07,626 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-24 13:17:07,627 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 13:17:08,970 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-24 13:17:08,973 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 13:17:10,342 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 13:17:38,328 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 13:17:45,555 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 13:17:52,636 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 13:17:56,413 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 13:17:58,062 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 13:18:17,249 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 13:18:37,190 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-02-24 13:20:16,737 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 13:20:23,176 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 13:20:30,277 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 13:20:33,969 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 13:20:35,579 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 13:20:54,675 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 13:21:31,114 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-24 13:23:24,453 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 13:23:30,663 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 13:23:37,764 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 13:23:41,453 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 13:23:43,081 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 13:24:02,020 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 13:27:13,591 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 13:27:19,631 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 13:27:26,768 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 13:27:30,534 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 13:27:32,148 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 13:27:51,097 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 13:33:59,645 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 13:34:06,202 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 13:34:13,194 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 13:34:16,879 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 13:34:18,554 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 13:34:37,492 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 13:37:16,517 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 13:37:22,624 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 13:37:29,722 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 13:37:33,466 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 13:37:35,089 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 13:37:54,053 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 13:40:18,689 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 13:40:25,028 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 13:40:32,065 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 13:40:35,793 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 13:40:37,402 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 13:41:01,597 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 13:41:18,939 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-24 13:46:21,292 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 13:46:27,681 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 13:46:34,924 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 13:46:38,624 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 13:46:40,108 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 13:47:04,465 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 13:57:22,112 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 13:57:29,153 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 13:57:36,300 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 13:57:40,000 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 13:57:41,629 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 13:58:05,825 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 14:01:10,414 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 14:01:17,416 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 14:01:24,515 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 14:01:28,208 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 14:01:29,801 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 14:01:53,963 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 14:03:41,706 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 14:03:53,028 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 14:04:00,284 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 14:04:04,067 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 14:04:05,507 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 14:04:29,660 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 14:45:46,080 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 14:45:59,580 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 14:46:06,665 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 14:46:10,341 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 14:46:11,930 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 14:46:36,252 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 15:00:37,471 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 15:00:44,953 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 15:00:51,990 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 15:00:55,642 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 15:00:57,194 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 15:01:21,491 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 15:03:40,522 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-24 15:04:00,633 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-24 15:04:20,717 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-02-24 15:04:40,847 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-24 15:11:25,730 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 15:11:31,587 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 15:11:38,594 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 15:11:42,229 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 15:11:43,803 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 15:12:08,071 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 15:12:56,107 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 15:13:03,124 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 15:13:10,150 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 15:13:13,936 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 15:13:15,471 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 15:13:39,762 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 15:14:59,400 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 15:15:06,330 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 15:15:13,349 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 15:15:17,064 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 15:15:18,690 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 15:15:37,686 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 15:19:00,350 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 15:19:07,668 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 15:19:14,641 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 15:19:18,360 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 15:19:19,991 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 15:19:38,948 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 15:22:03,093 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-24 15:22:23,127 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-24 15:22:43,200 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-02-24 15:23:03,317 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-24 15:32:26,477 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 15:32:35,728 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 15:32:42,879 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 15:32:46,640 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 15:32:48,135 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 15:33:07,195 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list
+2020-02-24 15:35:33,697 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-02-24 16:19:48,809 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-02-24 16:19:56,084 - com.tripmasters.framework.reports.Logs -INFO - The given URL 'https://www.tripmasters.com' launch successfully for Mobile platform and Chrome browser!!!!!!!!!!!!
+2020-02-24 16:20:03,150 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-02-24 16:20:06,796 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-02-24 16:20:08,393 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-02-24 16:20:27,412 - com.tripmasters.framework.reports.Logs -INFO - User select '1|Other' from Guest list

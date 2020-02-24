@@ -164,6 +164,13 @@ public class BookingLocators {
 	private static By verifyPremiumEconomy =By.xpath("//div[text()='Premium Economy']");
 	private static By selectNumberOfAdultMob = By.xpath("//span[@id='adultMinus']");
 	public static By slectNumberOfChildMob =By.xpath("//span[@id='childrenPlus']");
+	public static By clickChildDropdownMob =By.xpath("//input[@id='xiChild1']");
+	public static By selectChildAgeDropdownMob =By.xpath("(//ul[@id='ui-id-1']//li)[2]");
+	public static By secondTravelerFirstNameTextBoxMOb =By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtCFName2' ]");
+	public static By secondTravelerLastNameTxtboxMob = By.xpath("//input[contains(@placeholder,'Last Name') and @id='txtCLName2']");
+	public static By secondTravelerGenderDropdownMob = By.xpath("//select[@id='txtCPAX_Gender2']");
+	public static By secondTravelerDOBMob = By.xpath("//input[@id='txtCPAX_DOB2']");
+	public static By passportDrpdownSecondTravellerChildMob = By.xpath("//select[@id='txtCPAX_Nationality2']");
 	/**
 	 * @return the emailId
 	 */
@@ -616,8 +623,43 @@ public class BookingLocators {
    }
 
 public static By getselectNumberOfChildMob() {
-	// TODO Auto-generated method stub
+	
 	return slectNumberOfChildMob;
+}
+
+public static By getselectChildAgeDropdownMob() {
+	
+	return selectChildAgeDropdownMob ;
+}
+
+public static By getclickChildDropdownMob() {
+	
+	return clickChildDropdownMob ;
+}
+
+public static By getsecondTravelerFirstNameTextBoxMOb() {
+	
+	return secondTravelerFirstNameTextBoxMOb ;
+}
+
+public static By getsecondTravelerLastNameTxtboxMob() {
+	
+	return secondTravelerLastNameTxtboxMob;
+}
+
+public static By getsecondTravelerGenderDropdownMob() {
+	
+	return secondTravelerGenderDropdownMob;
+}
+
+public static By getsecondTravelerDOBMob() {
+	
+	return secondTravelerDOBMob;
+}
+
+public static By getpassportDrpdownSecondTravellerChildMob() {
+	
+	return passportDrpdownSecondTravellerChildMob;
 }
 	
 }

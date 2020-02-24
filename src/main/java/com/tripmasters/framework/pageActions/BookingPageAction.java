@@ -63,8 +63,8 @@ public class BookingPageAction extends PageBase {
 			WebElement wb = driver.findElement(BookingLocators.getoptionListForGuestsAndRooms())
 					.findElement(By.xpath(".//li[@id='" + guestInfo + "']"));
 			clickUsingJavaScript(wb);
-			clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
-			clickUsingJavaScript(BookingLocators.getdoneButton());
+		//	clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
+		//	clickUsingJavaScript(BookingLocators.getdoneButton());
 			Logs.info("User select '" + guestInfo + "' from Guest list");
 			//test.log(LogStatus.INFO, "User select '" + guestInfo + "' from Guest list");
 		} else {
@@ -74,6 +74,20 @@ public class BookingPageAction extends PageBase {
 		}
 	}
 	
+	public void selectPremiumEconomy()
+	{
+		if(TestBase.flag_Mob)
+	{
+		clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
+	}
+	}
+	
+	public void doneButtonMob() throws Exception
+	{
+	if(TestBase.flag_Mob){
+		clickUsingJavaScript(BookingLocators.getdoneButton());
+	   }
+	}
 	/*
 	 * public void selectGuestDetailsForOneandOther(String guestInfo) {
 	 * clickUsingJavaScript(BookingLocators.getselectGuestRoomOptions());
@@ -169,11 +183,14 @@ public class BookingPageAction extends PageBase {
 			if(childType.equals("Child1"))
 			{
 				clickUsingJavaScript(BookingLocators.getselectNumberOfChildMob());
-				Select option = Select(driver.findElement(By.xpath("//input[@id='xiChild1']")));
 				PageBase.waitForElement(3);
-				option.selectByValue(ageOfChild);
-		   }
-			else
+				driver.findElement(BookingLocators.getclickChildDropdownMob()).click();
+				driver.findElement(BookingLocators.getselectChildAgeDropdownMob()).click();
+				PageBase.waitForElement(2);
+				 
+			  }
+			
+		   	else
 			{
 				//----------child for room 2---------
 			}
@@ -198,6 +215,7 @@ public class BookingPageAction extends PageBase {
 		}
 		}
 	}
+	
 
 //	public  void fillBasicBookingDetailForMultipleCities(String flightType, String destination,String stayingTime, String destination_second, String guestinfo) throws Exception {
 //		if (flightType.equalsIgnoreCase("WithAir")) {

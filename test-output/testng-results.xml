@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="84079" started-at="2020-02-21T18:46:16 IST" finished-at="2020-02-21T18:47:40 IST">
+  <suite name="Default suite" duration-ms="202421" started-at="2020-02-24T16:19:32 IST" finished-at="2020-02-24T16:22:54 IST">
     <groups>
       <group name="smoke">
         <method signature="BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(java.lang.reflect.Method)[pri:2, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingSingleRoomOneAdultOneChild_TC_2" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="84079" started-at="2020-02-21T18:46:16 IST" finished-at="2020-02-21T18:47:40 IST">
+    <test name="Default test" duration-ms="202421" started-at="2020-02-24T16:19:32 IST" finished-at="2020-02-24T16:22:54 IST">
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="setUp" is-config="true" duration-ms="22530" started-at="2020-02-21T18:46:16 IST" finished-at="2020-02-21T18:46:39 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="setUp" is-config="true" duration-ms="23839" started-at="2020-02-24T16:19:32 IST" finished-at="2020-02-24T16:19:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="bookingSingleRoomOneAdultOneChild_TC_2(java.lang.reflect.Method)[pri:2, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingSingleRoomOneAdultOneChild_TC_2" duration-ms="61502" started-at="2020-02-21T18:46:39 IST" finished-at="2020-02-21T18:47:40 IST">
+        <test-method status="FAIL" signature="bookingSingleRoomOneAdultOneChild_TC_2(java.lang.reflect.Method)[pri:2, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingSingleRoomOneAdultOneChild_TC_2" duration-ms="178504" started-at="2020-02-24T16:19:56 IST" finished-at="2020-02-24T16:22:54 IST">
           <params>
             <param index="0">
               <value>
@@ -25,8 +25,7 @@
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at com.tripmasters.framework.pageActions.BookingPageAction.selectNumberOfChild(BookingPageAction.java:174)
-at com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(BookingPageTestScript.java:148)
+at com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(BookingPageTestScript.java:179)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
