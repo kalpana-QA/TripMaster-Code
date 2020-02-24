@@ -93,7 +93,7 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 	
-	//@Test(groups= {"smoke"},priority=2)
+	@Test(groups= {"smoke"},priority=2)
 	public void bookingSingleRoomOneAdultOneChild_TC_2(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoom1Adult1Child");
 		bookingPage.fillLeavingFromDetails("Philadelphia, PA");
