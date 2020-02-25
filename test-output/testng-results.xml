@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
-=======
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
->>>>>>> 348e31002cad392248c9e8aedab9e55d1688ee18
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="107783" started-at="2020-02-25T07:54:09Z" finished-at="2020-02-25T07:55:57Z">
+  <suite name="Suite" duration-ms="147489" started-at="2020-02-25T11:32:03Z" finished-at="2020-02-25T11:34:31Z">
     <groups>
       <group name="smoke">
-        <method signature="BookingPageTestScript.bookingDetailswithPremiumEcomomy_TC_18(java.lang.reflect.Method)[pri:12, instance:com.tripmasters.framework.testScript.BookingPageTestScript@4bbfb90a]" name="bookingDetailswithPremiumEcomomy_TC_18" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
+        <method signature="BookingPageTestScript.bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.BookingPageTestScript@239963d8]" name="bookingSingleRoomWithThreeAdults_TC_1" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="107783" started-at="2020-02-25T07:54:09Z" finished-at="2020-02-25T07:55:57Z">
+    <test name="Test" duration-ms="147489" started-at="2020-02-25T11:32:03Z" finished-at="2020-02-25T11:34:31Z">
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@4bbfb90a]" name="setUp" is-config="true" duration-ms="13455" started-at="2020-02-25T07:54:09Z" finished-at="2020-02-25T07:54:23Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@239963d8]" name="setUp" is-config="true" duration-ms="17793" started-at="2020-02-25T17:02:03Z" finished-at="2020-02-25T17:02:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="bookingDetailswithPremiumEcomomy_TC_18(java.lang.reflect.Method)[pri:12, instance:com.tripmasters.framework.testScript.BookingPageTestScript@4bbfb90a]" name="bookingDetailswithPremiumEcomomy_TC_18" duration-ms="94289" started-at="2020-02-25T07:54:23Z" finished-at="2020-02-25T07:55:57Z">
           <params>
             <param index="0">
@@ -127,6 +122,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- setUp -->
         <test-method status="FAIL" signature="bookingSingleRoomOneAdultOneChild_TC_2(java.lang.reflect.Method)[pri:2, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingSingleRoomOneAdultOneChild_TC_2" duration-ms="52006" started-at="2020-02-25T16:15:44 IST" finished-at="2020-02-25T16:16:36 IST">
+=======
+        <test-method status="PASS" signature="bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.BookingPageTestScript@239963d8]" name="bookingSingleRoomWithThreeAdults_TC_1" duration-ms="125342" started-at="2020-02-25T17:02:21Z" finished-at="2020-02-25T17:04:26Z">
+>>>>>>> 7f3ff27f3d2d3553ac504ca744318fab70209ab5
           <params>
             <param index="0">
               <value>
@@ -134,6 +132,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
+<<<<<<< HEAD
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[An unknown server-side error occurred while processing the command. Original error: unknown error: Element <input type="text" name="xiChild1" id="xiChild1" value="" data-role="none" class="inpChild ui-autocomplete-input" autocomplete="off"> is not clickable at point (117, 401). Other element would receive the click: <a class="ui-state-default" href="#">...</a>
@@ -220,7 +219,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
         </test-method> <!-- bookingSingleRoomOneAdultOneChild_TC_2 -->
 >>>>>>> Stashed changes
+=======
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingSingleRoomWithThreeAdults_TC_1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@239963d8]" name="tearDown" is-config="true" duration-ms="4329" started-at="2020-02-25T17:04:26Z" finished-at="2020-02-25T17:04:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+>>>>>>> 7f3ff27f3d2d3553ac504ca744318fab70209ab5
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

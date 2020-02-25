@@ -31,7 +31,7 @@ public class BookingPageTestScript extends TestBase {
 
 	//@Test(groups = { "smoke" }, priority = 1)
 	public void bookingSingleRoomWithThreeAdults_TC_1(Method method) throws Exception {
-		 ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoomWith3Adults");
+	    ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoomWith3Adults");
 		bookingPage.clickOnBuildYourVacationDropDown();
 		PageBase.waitForElement(3);
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
@@ -50,9 +50,15 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.clickonContinueButton();
 		test.log(LogStatus.INFO, "Click on \"Continue\" Button");
 		bookingPage.selectCheaperFlights();
+
 		//test.log(LogStatus.INFO, "User clicks on Select Cheaper Flights Link");
 		//test.log(LogStatus.INFO, "User selects a particular flight from existing options");
 		//test.log(LogStatus.INFO, "User clicks on Continue Link");
+
+		test.log(LogStatus.INFO, "User clicks on Select Cheaper Flights Link");
+		test.log(LogStatus.INFO, "User selects a particular flight from existing options");
+		test.log(LogStatus.INFO, "User clicks on Continue Link");
+
 		//Logs.info("Select Cheaper flights from flight options");
 		bookingPage.getTripinclusionContinueButton();
 		bookingPage.clicktoContinuePage();
@@ -70,6 +76,7 @@ public class BookingPageTestScript extends TestBase {
 //		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1994\" for Second Traveller's Date of Birth");
 //		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Second Traveller");
 		expectedThirdTravellerInfo = passengerInfoPage.fillThirdTravellerDetails("Marie", "Leo", "Female","01/01/1996", "237|US");
+
 //		test.log(LogStatus.INFO, "User enters \"Marie\" as Third Traveller First Name");
 //		test.log(LogStatus.INFO, "User enters \"Leo\" as Third Traveller Last Name");
 //		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Third Traveller Last Name");
@@ -77,6 +84,16 @@ public class BookingPageTestScript extends TestBase {
 //		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Third Traveller");
 //		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
 //		Logs.info("User fills all the 3 passenger details");
+
+		test.log(LogStatus.INFO, "User enters \"Marie\" as Third Traveller First Name");
+		test.log(LogStatus.INFO, "User enters \"Leo\" as Third Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Third Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1996\" for Third Traveller's Date of Birth");
+		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Third Traveller");
+		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
+		//Logs.info("User fills all the 3 passenger details");
+		bookingPage.getTripinclusionContinueButton();
+
 		bookingPage.clicktoContinuePage();
 		bookingPage.getTripinclusionContinueButton();
 		//test.log(LogStatus.INFO, "Click to Continue & User redirected to Payment Page");
@@ -91,8 +108,13 @@ public class BookingPageTestScript extends TestBase {
 		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler3Name(), expectedThirdTravellerInfo);
 		}
 		bookingPage.tripSummary();
+
 //		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
 //		Logs.info("Flights & passenger details verified successfully on PaymentPage");
+
+		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
+		//Logs.info("Flights & passenger details verified successfully on PaymentPage");
+
 	}
 	
 
@@ -155,7 +177,7 @@ public class BookingPageTestScript extends TestBase {
 		
 	}
 
-  @Test(groups= {"smoke"},priority=3)
+ // @Test(groups= {"smoke"},priority=3)
 	public void bookingTwoRoomTwoAdult_TC_3(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom2Adult");
 		bookingPage.clickOnBuildYourVacationDropDown();

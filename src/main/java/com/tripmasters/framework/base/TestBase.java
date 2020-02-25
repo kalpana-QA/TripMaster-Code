@@ -11,6 +11,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
 import com.relevantcodes.extentreports.ExtentTest;
@@ -58,14 +60,14 @@ public class TestBase {
 					// WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver();
 					driver.manage().window().maximize();
-					Logs.info("ChromeDriver instantiated for " + platform + " platform.");
+					//Logs.info("ChromeDriver instantiated for " + platform + " platform.");
 					flag = true;
 
 				} else if (browser.equalsIgnoreCase("Firefox")) {
 
 					WebDriverManager.firefoxdriver().setup();
 					// driver = new FirefoxDriver();
-					Logs.info("FirefoxDriver instantiated for " + platform + " platform.");
+					//Logs.info("FirefoxDriver instantiated for " + platform + " platform.");
 					flag = true;
 
 				} else {
@@ -87,7 +89,7 @@ public class TestBase {
 
 					driver = new AndroidDriver<MobileElement>(url, capabilities);
 
-					Logs.info(browser + " AndroidDriver instantiated for " + platform + " platform.");
+					//Logs.info(browser + " AndroidDriver instantiated for " + platform + " platform.");
 					flag = true;
 
 				} else {
@@ -110,14 +112,14 @@ public class TestBase {
 					System.out.println("Safari browser launched on iOS");
 					flag = true;
 				} else {
-					Logs.error("browser doesn't found!!!!!!!!!!!");
+					//Logs.error("browser doesn't found!!!!!!!!!!!");
 					System.err.println("browser doesn't found!!!!!!!!");
 				}
 				flag_Mob = true;
 				break;
 
 			default:
-				Logs.error("Platform doesn't found!!!!!!!!!!!");
+				//Logs.error("Platform doesn't found!!!!!!!!!!!");
 				System.err.println("Platform doesn't found!!!!!!!!!!!");
 				break;
 			}
@@ -130,8 +132,8 @@ public class TestBase {
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				String url = JsonDataReader.getJSONData("URL");
 				driver.get(url);
-				Logs.info("The given URL '" + url + "' launch successfully for " + platform + " platform and " + browser
-						+ " browser!!!!!!!!!!!!");
+				//Logs.info("The given URL '" + url + "' launch successfully for " + platform + " platform and " + browser
+					//	+ " browser!!!!!!!!!!!!");
 				int time = (int) System.nanoTime();
 				System.out.println("nano time is: " + time);
 			}
@@ -143,17 +145,17 @@ public class TestBase {
 		passengerInfoPage = new PassengerInfoPageAction(driver);
 	}
 
-	//@AfterMethod(alwaysRun = true)
+	@AfterMethod(alwaysRun = true)
 	public static void tearDown() {
 		// gn.extent.flush();
 		// driver.quit();
 		// GenerateReport2.startReport(null, null);
 		// GenerateReport2.getResult(null);
 		if (driver != null) {
-			Logs.info("Closing browser after TestClass");
+			//Logs.info("Closing browser after TestClass");
 		 driver.close();
 		} else {
-			Logs.error("Driver is null at AfterClass (TestBase)");
+			//Logs.error("Driver is null at AfterClass (TestBase)");
 		}
 
 	}
