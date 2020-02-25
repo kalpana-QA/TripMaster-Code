@@ -30,19 +30,19 @@ public class BookingPageAction extends PageBase {
 
 	public void fillLeavingFromDetails(String leavingFrom) throws Exception{
 		clearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
-		Logs.info("User entered '" + leavingFrom + "' into leaving from field");
+		//Logs.info("User entered '" + leavingFrom + "' into leaving from field");
 		//test.log(LogStatus.INFO, "User entered '" + leavingFrom + "' into leaving from field");
 	}
 	
 	public void fillGoingToCityDetails(String destination) throws Exception{
 		clearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
-		Logs.info("User entered '" + destination + "' into Going to from field");
+		//Logs.info("User entered '" + destination + "' into Going to from field");
 		//test.log(LogStatus.INFO, "User entered '" + destination + "' into Going to from field");
 	}
 	
 	public  void selectStayingTime(String stayingTime) {
 		selectOptionByValue(BookingLocators.getstayingDrpdown(), stayingTime);
-		Logs.info("User entered '" + stayingTime + "' nights staying time");
+		//Logs.info("User entered '" + stayingTime + "' nights staying time");
 		//test.log(LogStatus.INFO, "User entered '" + stayingTime + "' nights staying time");
 	}
 	
@@ -71,11 +71,11 @@ public class BookingPageAction extends PageBase {
 			clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
 			//clickUsingJavaScript(BookingLocators.getdoneButton());
 
-			Logs.info("User select '" + guestInfo + "' from Guest list");
+			//Logs.info("User select '" + guestInfo + "' from Guest list");
 			//test.log(LogStatus.INFO, "User select '" + guestInfo + "' from Guest list");
 		} else {
 			selectOptionByValue(BookingLocators.getselectGuestDrpdown(), guestInfo);
-			Logs.info("User select '" + guestInfo + "' from Guest list");
+			//Logs.info("User select '" + guestInfo + "' from Guest list");
 			//test.log(LogStatus.INFO, "User select '" + guestInfo + "' from Guest list");
 		}
 	}
@@ -113,7 +113,7 @@ public class BookingPageAction extends PageBase {
 	 */
 	public  void selectGuestDetailsOnMob(String guestInfo) {
 		selectOptionByValue(BookingLocators.getselectGuestDrpdown(), guestInfo);
-		Logs.info("User select '" + guestInfo + "' from Guest list");
+		//Logs.info("User select '" + guestInfo + "' from Guest list");
 	}
 
 	public  void clickonContinueButton() {

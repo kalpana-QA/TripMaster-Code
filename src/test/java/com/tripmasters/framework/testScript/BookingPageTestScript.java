@@ -31,7 +31,7 @@ public class BookingPageTestScript extends TestBase {
 
 	@Test(groups = { "smoke" }, priority = 1)
 	public void bookingSingleRoomWithThreeAdults_TC_1(Method method) throws Exception {
-		 ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoomWith3Adults");
+	    ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoomWith3Adults");
 		bookingPage.clickOnBuildYourVacationDropDown();
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
@@ -51,7 +51,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User clicks on Select Cheaper Flights Link");
 		test.log(LogStatus.INFO, "User selects a particular flight from existing options");
 		test.log(LogStatus.INFO, "User clicks on Continue Link");
-		Logs.info("Select Cheaper flights from flight options");
+		//Logs.info("Select Cheaper flights from flight options");
 		bookingPage.getTripinclusionContinueButton();
 		bookingPage.clicktoContinuePage();
 		test.log(LogStatus.INFO, "Click to Continue & User redirected to Fill Passenger Details Page");
@@ -74,7 +74,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1996\" for Third Traveller's Date of Birth");
 		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Third Traveller");
 		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
-		Logs.info("User fills all the 3 passenger details");
+		//Logs.info("User fills all the 3 passenger details");
 		bookingPage.getTripinclusionContinueButton();
 		bookingPage.clicktoContinuePage();
 		test.log(LogStatus.INFO, "Click to Continue & User redirected to Payment Page");
@@ -90,7 +90,7 @@ public class BookingPageTestScript extends TestBase {
 		}
 		bookingPage.tripSummary();
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
-		Logs.info("Flights & passenger details verified successfully on PaymentPage");
+		//Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 	
 
@@ -153,7 +153,7 @@ public class BookingPageTestScript extends TestBase {
 		
 	}
 
-  @Test(groups= {"smoke"},priority=3)
+ // @Test(groups= {"smoke"},priority=3)
 	public void bookingTwoRoomTwoAdult_TC_3(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom2Adult");
 		bookingPage.clickOnBuildYourVacationDropDown();
