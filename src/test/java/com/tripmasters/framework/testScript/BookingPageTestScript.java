@@ -308,12 +308,13 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Booking details filled successfully for Two Adults & Two Child");
 		bookingPage.selectNumberOfAdult("1", BookingLocators.getselectAdultDrpdown());
 		bookingPage.selectNumberOfChild("1", "9", "Child1");
+		bookingPage.doneButtonMob();
 		test.log(LogStatus.INFO, "No.of Child & Age of Child got selected successfully");
 		Logs.info("No.of Child & Age of Child got selected successfully");
-		//TODO Fix it for Web.
-		
-		//bookingPage.selectNumberOfAdult("1", BookingLocators.getselectAdultRoom2Drpdown());
-		//bookingPage.selectNumberOfChild("1", "9", "Child2");
+		bookingPage.selectNumberOfAdult("1", BookingLocators.getselectAdultRoom2Drpdown());
+		bookingPage.selectnumberofadultsRoom_1iOS();
+		bookingPage.selectnumberofadultsRoom_2iOS();
+		bookingPage.selectNumberOfChild("1", "9", "Child2");
 		bookingPage.clickonContinueButton();
 		PageBase.waitForElement(3);
 		test.log(LogStatus.INFO, "Click on Continue Button");
@@ -609,33 +610,6 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Validate that user is on TripInclusion Page");
 		Logs.info("Validate that user is on TripInclusion Page");
 	}
-
-	{
-//		boolean actual = bookingPage.isremovecitydisplayed();
-//		Assert.assertTrue(actual);
-//		test.log(LogStatus.INFO,"Verify that multiple cities got selected as destinations");
-//		test.log(LogStatus.INFO, "Verify that RemoveCity Link is also displayed for added cities");
-//		Logs.info("Verify that multiple cities got selected as destinations");
-//		Logs.info("Verify that RemoveCity Link is also displayed for added cities");
-//		bookingPage.deleteAddedCities();
-//		test.log(LogStatus.INFO, "Delete all the added cities");
-//		Logs.info("Delete all the added cities");
-//		bookingPage.validateremovedcity();
-//		test.log(LogStatus.INFO, "All the added cities removed successfully.Verified!");
-//		Logs.info("All the added cities removed successfully.Verified!");
-//		bookingPage.getNoMoreCitiesButton();
-//		bookingPage.selectGuestDetails("1|1");
-//		test.log(LogStatus.INFO, "Select Guest Details");
-//		bookingPage.clickonContinueButton();
-//		bookingPage.selectCheaperFlights();
-//		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
-//		Logs.info("Select Cheaper flights from flight options");
-//		bookingPage.validateTripIncluisonPage();
-//		test.log(LogStatus.INFO, "Validate that user is on TripInclusion Page");
-//		Logs.info("Validate that user is on TripInclusion Page");
-	}
-
-
 
     //@Test(groups= {"regression"},priority=13)
 	public void verifySpotlightLink_TC_14(Method method) throws Exception {
