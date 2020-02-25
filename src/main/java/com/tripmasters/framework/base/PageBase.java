@@ -29,9 +29,7 @@ import junit.framework.Assert;
 
 public class PageBase {
 
-	// static Logs log;
 	private static WebElement element = null;
-	// public static WebDriver driver = null;
 	static String screenShotPath = "";
 	protected static WebDriver driver;
     ExtentTest test;
@@ -73,35 +71,26 @@ public class PageBase {
 		try {
 			if (typeOfLocator.equalsIgnoreCase("xpath")) {
 				element = driver.findElement(By.xpath(locatorString));
-				highlightElement(element);
 			} else if (typeOfLocator.equalsIgnoreCase("id")) {
 				element = driver.findElement(By.id(locatorString));
-				highlightElement(element);
 			} else if (typeOfLocator.equalsIgnoreCase("cssSelector")) {
 				element = driver.findElement(By.cssSelector(locatorString));
-				highlightElement(element);
 			} else if (typeOfLocator.equalsIgnoreCase("linkText")) {
 				element = driver.findElement(By.linkText(locatorString));
-				highlightElement(element);
 			} else if (typeOfLocator.equalsIgnoreCase("name")) {
 				element = driver.findElement(By.name(locatorString));
-				highlightElement(element);
 			} else if (typeOfLocator.equalsIgnoreCase("className")) {
 				element = driver.findElement(By.className(locatorString));
-				highlightElement(element);
 			} else if (typeOfLocator.equalsIgnoreCase("tagName")) {
 				element = driver.findElement(By.tagName(locatorString));
-				highlightElement(element);
 			} else if (typeOfLocator.equalsIgnoreCase("partialLinkText")) {
 				element = driver.findElement(By.partialLinkText(locatorString));
-				highlightElement(element);
 			} else {
 				Logs.info("Element Not Found");
 			}
+			highlightElement(element);
 		} catch (Exception e) {
 			Logs.error("Something wrong with element data passed because of which element not Found.");
-			// Logs.error("e");
-			// element = null;
 		}
 		return element;
 	}
@@ -129,8 +118,6 @@ public class PageBase {
 	 * @throws IOException
 	 * @Version 1
 	 **/
-
-
 	public static String takeScreenShot() throws IOException {
 
 		try {
@@ -423,7 +410,7 @@ public class PageBase {
 		if (TestBase.flag_Mob) {
 			while (enterNumberofRepetaion > 0) {
 				try {
-					Thread.sleep(3000);
+					waitForElement(3);
 					java.awt.Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 					JavascriptExecutor jse = (JavascriptExecutor) driver;
 					jse.executeScript("window.scrollBy(0," + screenSize.height + ")", "");
@@ -431,7 +418,7 @@ public class PageBase {
 				} catch (Exception e) {
 					throw new Exception("Unable to scroll page");
 				}
-				Thread.sleep(1000);
+				waitForElement(1);
 				enterNumberofRepetaion--;
 			}
 		}

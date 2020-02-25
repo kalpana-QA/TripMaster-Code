@@ -59,11 +59,11 @@ public class PassengerInformationLocators {
      private static By fnameR2T1iOS=By.xpath("//input[@id='2_txtPFName1']");
      private static By lnameR2T1iOS=By.xpath("//input[@id='2_txtPLName1']");	 
      
-     private static By fnameR2T2iOS=By.xpath("//input[@id='2_txtPFName2']");
-    	 private static By lnameR2T2iOS=By.xpath("//input[@id='2_txtPLName2']"); 
-    	 
-    	 private static By dobR2T1iOS=By.xpath("//input[@id='2_txtPAX_DOB1']");
-    	 private static By dobR2T2iOS=By.xpath("//input[@id='2_txtPAX_DOB2']");
+	private static By fnameR2T2iOS = By.xpath("//input[@id='2_txtPFName2']");
+	private static By lnameR2T2iOS = By.xpath("//input[@id='2_txtPLName2']");
+
+	private static By dobR2T1iOS = By.xpath("//input[@id='2_txtPAX_DOB1']");
+	private static By dobR2T2iOS = By.xpath("//input[@id='2_txtPAX_DOB2']");
     			 
     	 
 	public static By getfnameR1T1() {
@@ -187,79 +187,82 @@ public class PassengerInformationLocators {
 	public static By getpassportR2C1() {
 		return passportR2C1;
 	}
-	
-	
-	public static By getfnameR1C1SingleTrvlr(){
-		
-	return fnameR1C1SingleTrvlr;
-	}
-	
-	public static By getlnameR1C1SingleTrvlr(){
-		
-		return lnameR1C1SingleTrvlr;
-		}
-	
-	public static By getgenderR1C1SingleTrvlr(){
-		
-		return genderR1C1SingleTrvlr;
-		}
-	
-	public static By getfnameR2C1SingleTrvlr(){
-		
-		return fnameR2C1SingleTrvlr;
-		}
-		
-		public static By getlnameR2C1SingleTrvlr(){
-			
-			return lnameR2C1SingleTrvlr;
-			}
-		
-		public static By getgenderR2C1SingleTrvlr(){
-			
-			return genderR2C1SingleTrvlr;
-			}
-		
 
-		public static By getdobR2C1SingleTrvlr() {
-			return dobR2C1SingleTrvlr;
-		}
-		
-		public static By getpassportR2C1SingleTrvlr() {
-			return passportR2C1SingleTrvlr;
-		}
-		public static By getR1T1genderiOS() {
-			return R1T1genderiOS;
-		}
-		public static By getR1T2genderiOS() {
-			return R1T2genderiOS;
-		}
-		public static By getR2T1genderiOS() {
-			return R2T1genderiOS;
-		}
-		public static By getR2T2genderiOS() {
-			return R2T2genderiOS;
-		}
-		
-		public static By getfnameR2T1iOS() {
-			
-			return fnameR2T1iOS;
-		}
-		public static By getlnameR2T1iOS() {
-			
-			return lnameR2T1iOS;
-		}
-		public static By getfnameR2T2iOS() {
-			
-			return fnameR2T2iOS;
-		}
-		public static By getlnameR2T2iOS() {
-			
-			return lnameR2T2iOS;
-		}
-		public static By getdobR2T1iOS() {
-        	return dobR2T1iOS;
-        }
-		public static By getdobR2T2iOS() {
-        	return dobR2T2iOS;
-        }
+	public static By getfnameR1C1SingleTrvlr() {
+
+		return fnameR1C1SingleTrvlr;
+	}
+
+	public static By getlnameR1C1SingleTrvlr() {
+
+		return lnameR1C1SingleTrvlr;
+	}
+
+	public static By getgenderR1C1SingleTrvlr() {
+		return genderR1C1SingleTrvlr;
+	}
+
+	public static By getfnameR2C1SingleTrvlr() {
+		return fnameR2C1SingleTrvlr;
+	}
+
+	public static By getlnameR2C1SingleTrvlr() {
+		return lnameR2C1SingleTrvlr;
+	}
+
+	public static By getgenderR2C1SingleTrvlr() {
+		return genderR2C1SingleTrvlr;
+	}
+
+	public static By getdobR2C1SingleTrvlr() {
+		return dobR2C1SingleTrvlr;
+	}
+
+	public static By getpassportR2C1SingleTrvlr() {
+		return passportR2C1SingleTrvlr;
+	}
+
+	public static By getR1T1genderiOS() {
+		return R1T1genderiOS;
+	}
+
+	public static By getR1T2genderiOS() {
+		return R1T2genderiOS;
+	}
+
+	public static By getR2T1genderiOS() {
+		return R2T1genderiOS;
+	}
+
+	public static By getR2T2genderiOS() {
+		return R2T2genderiOS;
+	}
+
+	public static By getfnameR2T1iOS() {
+
+		return fnameR2T1iOS;
+	}
+
+	public static By getlnameR2T1iOS() {
+
+		return lnameR2T1iOS;
+	}
+
+	public static By getfnameR2T2iOS() {
+
+		return fnameR2T2iOS;
+	}
+
+	public static By getlnameR2T2iOS() {
+
+		return lnameR2T2iOS;
+	}
+
+	public static By getdobR2T1iOS() {
+		return dobR2T1iOS;
+	}
+
+	public static By getdobR2T2iOS() {
+		return dobR2T2iOS;
+	}
 }

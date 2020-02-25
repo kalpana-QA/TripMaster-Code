@@ -4,7 +4,6 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,8 +13,6 @@ import com.relevantcodes.extentreports.LogStatus;
 //import com.tripmasters.framework.actions.BookingPageAction;
 import com.tripmasters.framework.base.PageBase;
 import com.tripmasters.framework.base.TestBase;
-
-import com.tripmasters.framework.pageActions.PassengerInfoPageAction;
 import com.tripmasters.framework.pageLocators.BookingLocators;
 import com.tripmasters.framework.reports.ExtentTestManager;
 import com.tripmasters.framework.reports.Logs;
@@ -137,7 +134,7 @@ public class BookingPageTestScript extends TestBase {
     	test.log(LogStatus.INFO, "User selects \"Gender:Male\" for First Traveller Last Name");
 		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1992\" for First Traveller's Date of Birth");
 		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for First Traveller");
-		expectedSecondTravellerInfo = passengerInfoPage.fillSecondTravellerDetailsMob("Shally", "Mano", "Female","01/01/1994", "237|US", "Child");
+		expectedSecondTravellerInfo = passengerInfoPage.fillSecondTravellerDetails("Shally", "Mano", "Female","01/01/1994", "237|US", "Child");
 		test.log(LogStatus.INFO, "User enters \"Shally\" as Second Traveller First Name");
 		test.log(LogStatus.INFO, "User enters \"Mano\" as Second Traveller Last Name");
 		test.log(LogStatus.INFO, "User selects \"Female\" for Second Traveller Last Name");

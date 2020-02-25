@@ -15,6 +15,7 @@ import com.tripmasters.framework.base.PageBase;
 import com.tripmasters.framework.base.TestBase;
 import com.tripmasters.framework.pageLocators.BookingLocators;
 import com.tripmasters.framework.pageLocators.HomePageLocators;
+import com.tripmasters.framework.pageLocators.TripInclusionPageLocators;
 import com.tripmasters.framework.reports.Logs;
 
 
@@ -538,12 +539,12 @@ public class BookingPageAction extends PageBase {
 		if(TestBase.flag_Mob)
 		{
 			scrollDownForMob(4);
-			clickUsingJavaScript(BookingLocators.getTripSummaryButton());
+			clickUsingJavaScript(TripInclusionPageLocators.getTripSummaryButton());
 		   
          }
 		else
 		{
-			clickUsingJavaScript(BookingLocators.getTripSummaryButton());
+			clickUsingJavaScript(TripInclusionPageLocators.getTripSummaryButton());
 		}
 	}
 
@@ -571,8 +572,6 @@ public class BookingPageAction extends PageBase {
 		if (TestBase.flag_Mob)
 			clickOnElement(BookingLocators.getBuildYourVacationDropDown());
 	}
-
-	
 	
 	public void clickOnAddCityBtn(){
 		clickUsingJavaScript(BookingLocators.getaddCityBtn());

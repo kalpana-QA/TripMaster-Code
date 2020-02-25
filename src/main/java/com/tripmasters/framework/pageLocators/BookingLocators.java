@@ -3,38 +3,25 @@ package com.tripmasters.framework.pageLocators;
 import org.openqa.selenium.By;
 
 public class BookingLocators {
-	private static By emailId = By.id("username");
-
 	private static By selectGuestRoomOptions = By.cssSelector("input[id='xcabinRoomPax']");
 	private static By selectGuestRoomOptionsDrpdown = By.cssSelector("div[id='dvpaxRoom']");
-
 	private static By optionListForGuestsAndRooms = By.cssSelector("div[id='dvpxroomlst'][style='display: block;']");
 	private static By doneButton = By.xpath("//div[@class='dvMdialogDone']/p[text()='Done']");
-
 	private static By selectFlightOption = By.xpath("(//a[@name='chkFlight'])[1] | //a[@id='chkFlightOpt1_UA|48|1']");
-	private static By selectButtonInFlightOption1 = By.xpath(
-			"(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/Select1.png')])[1]");
-
+	private static By selectButtonInFlightOption1 = By.xpath("(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/Select1.png')])[1]");
 	private static By selectbutton = By.xpath("//div/a[contains(text(),'Select')]");
 
-//	private static By goingToTextboxSecond = By.xpath("//*[@id='qNACity2']");
 	private static By addCityBtn = By.xpath("//span[contains(.,'Add City')] | //p[@id='pMaddcity']");
-	private static By noMoreCitiesBtn = By
-			.xpath("//span[contains(.,'No more cities. Continue')] | //span[@class = 'spMnextbutt']");
-	private static By continueBtn = By.xpath(
-			"//div[@class='dvContinueButton']//span[contains(.,'Continue')] | //p[@id='pMcont']/span[contains(.,'Continue')]");
+	private static By noMoreCitiesBtn = By.xpath("//span[contains(.,'No more cities. Continue')] | //span[@class = 'spMnextbutt']");
+	private static By continueBtn = By.xpath("//div[@class='dvContinueButton']//span[contains(.,'Continue')] | //p[@id='pMcont']/span[contains(.,'Continue')]");
 	private static By continueLink = By.xpath("//a[@id='aContWithPriceValidation']");
-	private static By continueImage = By.xpath(
-			"//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/btn_continue.png')]");
+	private static By continueImage = By.xpath("//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/btn_continue.png')]");
 	private static By paymentContinueBtn = By.xpath("//a[contains(@id,'PriceValidation')]");
-	private static By validatingPricesPopupText = By
-			.xpath("//div[@id='divLoading']//div[contains(.,'Validating prices...')]");
-	private static By tripInclusionDetailsHeader = By.xpath("//span[contains(.,'TRIP INCLUSION DETAILS')]");
+	private static By validatingPricesPopupText = By.xpath("//div[@id='divLoading']//div[contains(.,'Validating prices...')]");
+	
 	private static By EditContinueBtn = By.xpath("//div[a[contains(.,'Edit Itinerary')]]//a[contains(@id,'Continue')]");
-	private static By FirstTravelerFirstNameTxtbox = By.xpath(
-			"//div[div[span[contains(.,'Traveler 1:')]]]//input[contains(@placeholder,'First and Middle Name')]");
-	private static By FirstTravelerLastNameTxtbox = By
-			.xpath("//div[div[span[contains(.,'Traveler 1:')]]]//input[contains(@placeholder,'Last Name')]");
+	private static By FirstTravelerFirstNameTxtbox = By.xpath("//div[div[span[contains(.,'Traveler 1:')]]]//input[contains(@placeholder,'First and Middle Name')]");
+	private static By FirstTravelerLastNameTxtbox = By.xpath("//div[div[span[contains(.,'Traveler 1:')]]]//input[contains(@placeholder,'Last Name')]");
 	private static By SecondTravelerFirstNameTxtbox = By.xpath(
 			"//div[div[span[contains(.,'Traveler 2:')]]]//input[contains(@placeholder,'First and Middle Name')]");
 	private static By SecondTravelerLastNameTxtbox = By
@@ -83,8 +70,7 @@ public class BookingLocators {
 	private static By browseHotelslink = By.xpath("//a[contains(.,' Browse ')] | //a[@class='componentSSlink btnyellowcont mb-2 ml-auto mr-auto']");
 	
 	private static By selectFirstHotel = By.xpath("(//td[@class='RoomTypeHotelListBottom m-srd-td1']//img)[1] | //a[@class='h-100 btnyellowcont pb-1 font-weight-bold'][1]");
-	private static By verifyTripinclusionPage = By
-			.xpath("//div[@class='mainDiv']//span[contains(text(),'TRIP INCLUSION DETAILS')]");
+	
 	private static By firstHotel = By.xpath("//a[@class='hotelHeadTitle'][1])");
 	private static By verifyHotel = By.xpath("(//a[contains(@class,'hotel')])[1] | //a[@id='Prod_173668' and @class='m-hotel']");
 	private final static By firstFlightDetails = By.xpath("//div[@id='divSegmentDetails1']//tbody//td");
@@ -137,12 +123,11 @@ public class BookingLocators {
 	private static By verifycabinClassDropdown = By.xpath("//select[@id='xCabin']");
 	private static By firstpremiumoption = By.xpath("//select[@id='qCabinOpt']//option[2]");
 	private static By verifypremiumoption = By.xpath("//div[text()='Premium Economy']");
-	private static By tripSummaryButton = By.xpath("//span[text()='Trip Summary']");
+	
 
-	// ======== Locators for Mobile ======================
+	// ======== Locators for Mobile ===============================================================================================
 
 	private static By cabinSectionMob = By.cssSelector("div[id='dvMcabin']");
-	//satyam
 	private static By tripInclusionContinueButtonmob=By.xpath("//a[@id='aContWithPriceValidationReview']");
 	private static By firstTravelerFirstNameTextBoxiOS=By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtPFName1' ]");
 	private static By thirdTravelerFirstNameTextBoxMob=By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtPFName3' ]");
@@ -164,7 +149,7 @@ public class BookingLocators {
 			.xpath("//div[@id='TravelerR3']//div[@class='editvaldob' or @class='editvalgender font-weight-bold' or @class='cel-name col-6 mt-2']");
 	private static By verifyTraveler4NameiOS = By
 			.xpath("//div[@id='TravelerR4']//div[@class='editvaldob' or @class='editvalgender font-weight-bold' or @class='cel-name col-6 mt-2']");
-	private static By firstHoteliOS = By.xpath("(//a[contains(@class,'hotelHeadTitle')]//h5)[1]");//inside dom id and dom structure changes frequently.
+	private static By firstHoteliOS = By.xpath("(//a[contains(@class,'hotelHeadTitle')]//h5)[1]");
 	private static By verifyPremiumEconomy =By.xpath("//div[text()='Premium Economy']");
 	private static By selectNumberOfAdultMob = By.xpath("//span[@id='adultMinus']");
 	public static By slectNumberOfChildMob =By.xpath("//span[@id='childrenPlus']");
@@ -191,10 +176,6 @@ public class BookingLocators {
 		return firstHoteliOS;
 	}
 	
-	public static By getEmailId() {
-		return emailId;
-	}
-
 	public static By getLeavingTxtbox() {
 		return leavingTextbox;
 	}
@@ -283,9 +264,6 @@ public class BookingLocators {
 		return validatingPricesPopupText;
 	}
 
-	public static By gettripInclusionDetailsHeader() {
-		return tripInclusionDetailsHeader;
-	}
 
 	public static By getEditContinueBtn() {
 		return EditContinueBtn;
@@ -397,10 +375,6 @@ public class BookingLocators {
 
 	public static By getselectFirstHotel() {
 		return selectFirstHotel;
-	}
-
-	public static By toVerifyTripinclusionPage() {
-		return verifyTripinclusionPage;
 	}
 
 	public static By getFirstHotel() {
@@ -541,10 +515,6 @@ public class BookingLocators {
 
 	public static By getselectbutton() {
 		return selectbutton;
-	}
-
-	public static By getTripSummaryButton() {
-		return tripSummaryButton;
 	}
 
 	public static By getcabinSectionMob() {

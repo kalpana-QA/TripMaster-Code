@@ -11,8 +11,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
 import com.relevantcodes.extentreports.ExtentTest;
@@ -35,8 +33,7 @@ public class TestBase {
 	private DesiredCapabilities capabilities;
 	private URL url;
 	private boolean flag = false;
-	private static Logs log = new Logs();
-	protected static String platform;
+	public static String platform;
 	public static WebDriverWait wait;
 	public static boolean flag_Mob;
 
@@ -61,18 +58,18 @@ public class TestBase {
 					// WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver();
 					driver.manage().window().maximize();
-					log.info("ChromeDriver instantiated for " + platform + " platform.");
+					Logs.info("ChromeDriver instantiated for " + platform + " platform.");
 					flag = true;
 
 				} else if (browser.equalsIgnoreCase("Firefox")) {
 
 					WebDriverManager.firefoxdriver().setup();
 					// driver = new FirefoxDriver();
-					log.info("FirefoxDriver instantiated for " + platform + " platform.");
+					Logs.info("FirefoxDriver instantiated for " + platform + " platform.");
 					flag = true;
 
 				} else {
-					log.error("Browser doesn't found!!!! for " + platform + " platfrom");
+					Logs.error("Browser doesn't found!!!! for " + platform + " platfrom");
 					System.err.println("Browser doesn't found!!!! for windows platfrom");
 				}
 				break;
@@ -90,11 +87,11 @@ public class TestBase {
 
 					driver = new AndroidDriver<MobileElement>(url, capabilities);
 
-					log.info(browser + " AndroidDriver instantiated for " + platform + " platform.");
+					Logs.info(browser + " AndroidDriver instantiated for " + platform + " platform.");
 					flag = true;
 
 				} else {
-					log.error("Browser doesn't found!!!! for mobile platform");
+					Logs.error("Browser doesn't found!!!! for mobile platform");
 					System.err.println("Browser doesn't found!!!! for mobile platform");
 				}
 				flag_Mob = true;
@@ -109,18 +106,18 @@ public class TestBase {
 					// IOSDriver
 					url = new URL("http://127.0.0.1:4723/wd/hub");
 					driver = new IOSDriver<IOSElement>(url, capabilities);
-					DesiredCapabilities capabilities = new DesiredCapabilities();
+					//DesiredCapabilities capabilities = new DesiredCapabilities();
 					System.out.println("Safari browser launched on iOS");
 					flag = true;
 				} else {
-					log.error("browser doesn't found!!!!!!!!!!!");
+					Logs.error("browser doesn't found!!!!!!!!!!!");
 					System.err.println("browser doesn't found!!!!!!!!");
 				}
 				flag_Mob = true;
 				break;
 
 			default:
-				log.error("Platform doesn't found!!!!!!!!!!!");
+				Logs.error("Platform doesn't found!!!!!!!!!!!");
 				System.err.println("Platform doesn't found!!!!!!!!!!!");
 				break;
 			}
@@ -133,48 +130,13 @@ public class TestBase {
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				String url = JsonDataReader.getJSONData("URL");
 				driver.get(url);
-				log.info("The given URL '" + url + "' launch successfully for " + platform + " platform and " + browser
+				Logs.info("The given URL '" + url + "' launch successfully for " + platform + " platform and " + browser
 						+ " browser!!!!!!!!!!!!");
 				int time = (int) System.nanoTime();
 				System.out.println("nano time is: " + time);
 			}
 
 		}
-
-		/*
-		 * if (platform.equals("Windows")) { if (browser.equals("Chrome")) {
-		 * 
-		 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
-		 * 
-		 * } else if (browser.equals("Firefox")) {
-		 * 
-		 * WebDriverManager.firefoxdriver().setup(); driver = new FirefoxDriver();
-		 * 
-		 * } else { System.out.println("Browser doesn't found!!!!"); } } else if
-		 * (platform.equals("Mobile")) {
-		 * 
-		 * if (browser.equals("Chrome")) { DesiredCapabilities capabilities = new
-		 * DesiredCapabilities();
-		 * 
-		 * capabilities.setCapability("chromedriverExecutable",
-		 * "/TripMasters/Drivers/chromedriver.exe");
-		 * 
-		 * capabilities.setCapability("platformName", "Android");
-		 * capabilities.setCapability("deviceName", "One Plus");
-		 * capabilities.setCapability("browserName", "Chrome");
-		 * 
-		 * url = new URL("http:127.0.1.1:4723/wd/hub");
-		 * 
-		 * driver = new AndroidDriver<MobileElement>(url, capabilities);
-		 * 
-		 * driver.get("https://www.tripmasters.com/");
-		 * 
-		 * System.out.println(driver.getCurrentUrl()); }
-		 * 
-		 * } else if (platform.equals("IOS")) { if (browser.equals("Safari")) {
-		 * 
-		 * } } else { System.out.println("Platform doesn't found!!!!!!!!"); }
-		 */
 
 		homePage = new HomePageAction(driver);
 		bookingPage = new BookingPageAction(driver);
@@ -188,10 +150,10 @@ public class TestBase {
 		// GenerateReport2.startReport(null, null);
 		// GenerateReport2.getResult(null);
 		if (driver != null) {
-			log.info("Closing browser after TestClass");
+			Logs.info("Closing browser after TestClass");
 		 driver.close();
 		} else {
-			log.error("Driver is null at AfterClass (TestBase)");
+			Logs.error("Driver is null at AfterClass (TestBase)");
 		}
 
 	}

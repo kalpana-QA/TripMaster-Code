@@ -49,7 +49,7 @@ public class PassengerInfoPageAction extends PageBase {
 
 	public List<String> fillSecondTravellerDetails(String fname, String lname, String gender, String dateOfBirth,String passportInfo, String travelerType) throws Exception {
 		List<String> list = new ArrayList<String>();
-		if(TestBase.flag_Mob){
+		if(TestBase.platform.equalsIgnoreCase("iOS")){
 			 String firstName=clearAndSetValues(BookingLocators.getsecondTravelerFirstNameTextBoxiOS(), fname);
 			 String secondName=clearAndSetValues(BookingLocators.getsecondTravelerLastNameTxtboxiOS(), lname);
 			 String fullName=firstName +" "+ secondName;
@@ -65,7 +65,7 @@ public class PassengerInfoPageAction extends PageBase {
 			 }
 			return list;
 		}
-		else{
+		else if(TestBase.platform.equalsIgnoreCase("Windows")){
 			String firstName = clearAndSetValues(BookingLocators.getSecondTravelerFirstNameTxtbox(), fname);
 			String secondName = clearAndSetValues(BookingLocators.getSecondTravelerLastNameTxtbox(), lname);
 			String fullName = firstName + " " + secondName;
@@ -80,12 +80,7 @@ public class PassengerInfoPageAction extends PageBase {
 			}
 			return list;
 		}
-	}
-	
-	public List<String> fillSecondTravellerDetailsMob(String fname, String lname, String gender, String dateOfBirth,String passportInfo, String travelerType) throws Exception 
-	{
-		List<String> list = new ArrayList<String>();
-		if(TestBase.flag_Mob)
+		else
 		{
 			 String firstName=clearAndSetValues(BookingLocators.getsecondTravelerFirstNameTextBoxMOb(), fname);
 			 String secondName=clearAndSetValues(BookingLocators.getsecondTravelerLastNameTxtboxMob(), lname);
@@ -96,32 +91,14 @@ public class PassengerInfoPageAction extends PageBase {
 			 list.add(clearAndSetValues(BookingLocators.getsecondTravelerDOBMob(), dateOfBirth));
 			 selectOptionByValue(BookingLocators.getpassportDrpdownSecondTravellerChildMob(), passportInfo);
 		}
-        else{
+             else{
 				 
 				 //===========Write code for different traveller type=====================
-			 }
-			return list;
-	}
-		else{
-			String firstName = clearAndSetValues(BookingLocators.getSecondTravelerFirstNameTxtbox(), fname);
-			String secondName = clearAndSetValues(BookingLocators.getSecondTravelerLastNameTxtbox(), lname);
-			String fullName = firstName + " " + secondName;
-			list.add(fullName);
-			list.add(selectOptionByText(BookingLocators.getSecondTravelerGenderDropdown(), gender));
-			if (travelerType.equals("Child")) {
-				list.add(clearAndSetValues(BookingLocators.getselectChildTravelerDOB(), dateOfBirth));
-				selectOptionByValue(BookingLocators.getpassportDrpdownSecondChildTraveller(), passportInfo);
-			} else {
-				list.add(clearAndSetValues(BookingLocators.getSecondTravelerDOB(), dateOfBirth));
-				selectOptionByValue(BookingLocators.getpassportDrpdownSecondTraveller(), passportInfo);
-			}
-			return list;
+			  }
+		return list;
 		}
 	}
 	
-	
-	
-
 	public List<String> fillThirdTravellerDetails(String fname, String lname, String gender, String dateOfBirth,String passportInfo) throws Exception {
 	   if(TestBase.flag_Mob)
 	   {

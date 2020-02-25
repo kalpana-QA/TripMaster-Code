@@ -30,7 +30,6 @@ public class HomePageAction extends PageBase {
 			result = true;
 		}
 		return result;
-
 	}
 
 	public void getStartAgain() {
@@ -69,8 +68,7 @@ public class HomePageAction extends PageBase {
 		WebElement wbEl;
 		String Text;
 		if (TestBase.flag_Mob) {
-			wbEl = driver.findElement(HomePageLocators.getpackageDisplayedUnderOtherVacationPackageOption())
-					.findElement(By.xpath("./span[contains(@class,'Title')]"));
+			wbEl = driver.findElement(HomePageLocators.getpackageDisplayedUnderOtherVacationPackageOption()).findElement(By.xpath("./span[contains(@class,'Title')]"));
 			Text = getText(wbEl);
 			clickUsingJavaScript(HomePageLocators.getpackageDisplayedUnderOtherVacationPackageOption());
 		} else {
