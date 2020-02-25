@@ -167,9 +167,7 @@ public class BookingPageAction extends PageBase {
      if(!TestBase.flag_Mob){
 			clickUsingJavaScript(BookingLocators.getcontinueImage());
      }
-     else {
-    	 getTripinclusionContinueButton() ;
-     }
+
 	}
 	
 //satyam changes made according to iphone======================================
