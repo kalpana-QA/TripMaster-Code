@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
 =======
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
@@ -108,33 +109,41 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 <<<<<<< HEAD
         </test-method> <!-- bookingTwoRoomTwoAdult_TC_3 -->
 =======
+=======
+>>>>>>> 5042e9c4e1ca4df7dc88ad982ffb96d98e627cb5
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="202421" started-at="2020-02-24T16:19:32 IST" finished-at="2020-02-24T16:22:54 IST">
+  <suite name="Default suite" duration-ms="61769" started-at="2020-02-25T14:13:44 IST" finished-at="2020-02-25T14:14:46 IST">
     <groups>
       <group name="smoke">
-        <method signature="BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(java.lang.reflect.Method)[pri:2, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingSingleRoomOneAdultOneChild_TC_2" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
+        <method signature="BookingPageTestScript.bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingSingleRoomWithThreeAdults_TC_1" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="202421" started-at="2020-02-24T16:19:32 IST" finished-at="2020-02-24T16:22:54 IST">
+    <test name="Default test" duration-ms="61769" started-at="2020-02-25T14:13:44 IST" finished-at="2020-02-25T14:14:46 IST">
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="setUp" is-config="true" duration-ms="23839" started-at="2020-02-24T16:19:32 IST" finished-at="2020-02-24T16:19:56 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="setUp" is-config="true" duration-ms="25989" started-at="2020-02-25T14:13:44 IST" finished-at="2020-02-25T14:14:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="bookingSingleRoomOneAdultOneChild_TC_2(java.lang.reflect.Method)[pri:2, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingSingleRoomOneAdultOneChild_TC_2" duration-ms="178504" started-at="2020-02-24T16:19:56 IST" finished-at="2020-02-24T16:22:54 IST">
+        <test-method status="FAIL" signature="bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingSingleRoomWithThreeAdults_TC_1" duration-ms="35732" started-at="2020-02-25T14:14:10 IST" finished-at="2020-02-25T14:14:46 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Unable to scroll page]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(BookingPageTestScript.java:179)
+              <![CDATA[java.lang.Exception: Unable to scroll page
+at com.tripmasters.framework.base.PageBase.scrollDown(PageBase.java:398)
+at com.tripmasters.framework.pageActions.BookingPageAction.selectCheaperFlights_Mob(BookingPageAction.java:145)
+at com.tripmasters.framework.pageActions.BookingPageAction.selectCheaperFlights(BookingPageAction.java:130)
+at com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomWithThreeAdults_TC_1(BookingPageTestScript.java:53)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -165,14 +174,18 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.Exception -->
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- bookingSingleRoomOneAdultOneChild_TC_2 -->
 >>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
 =======
         </test-method> <!-- bookingDetailswithPremiumEcomomy_TC_18 -->
 >>>>>>> 348e31002cad392248c9e8aedab9e55d1688ee18
+=======
+        </test-method> <!-- bookingSingleRoomWithThreeAdults_TC_1 -->
+>>>>>>> 5042e9c4e1ca4df7dc88ad982ffb96d98e627cb5
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

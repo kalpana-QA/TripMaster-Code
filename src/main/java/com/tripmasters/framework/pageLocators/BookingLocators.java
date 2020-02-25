@@ -150,6 +150,7 @@ public class BookingLocators {
 	private static By firstTravelerDOBiOS = By.xpath("//input[@id='txtPAX_DOB1']");
 	private static By thirdTravelerDOBMob = By.xpath("//input[@id='txtPAX_DOB3']");
 	private static By secondTravelerDOBiOS = By.xpath("//input[@id='txtPAX_DOB2']");
+	private static By verifyTraveler3NameMob =By.xpath("//div[@id='TravelerR3']//div[@class='cel-name col-6 mt-2' or @class='editvalgender font-weight-bold' or @class='editvaldob']");
 	private static By verifyTraveler1NameiOS = By
 			.xpath("//div[@id='TravelerR1']//div[@class='editvaldob' or @class='cel-name col-6 mt-2' or @class='editvalgender font-weight-bold']");
 	private static By verifyTraveler2NameiOS = By
@@ -160,7 +161,8 @@ public class BookingLocators {
 			.xpath("//div[@id='TravelerR4']//div[@class='editvaldob' or @class='editvalgender font-weight-bold' or @class='cel-name col-6 mt-2']");
 	private static By firstHoteliOS = By.xpath("(//a[contains(@class,'hotelHeadTitle')]//h5)[1]");
 	private static By verifyPremiumEconomy =By.xpath("//div[text()='Premium Economy']");
-	private static By selectNumberOfAdultMob = By.xpath("//span[@id='adultMinus']");
+	private static By selectNumberOfAdultRoom1Mob = By.xpath("//span[@id='adultMinus']");
+	private static By selectNumberOfAdultRoom2Mob = By.xpath("//span[@id='adultPlus2']");
 	public static By slectNumberOfChildMob =By.xpath("//span[@id='childrenPlus']");
 	public static By clickChildDropdownMob =By.xpath("//input[@id='xiChild1']");
 	public static By secondTravelerFirstNameTextBoxMOb =By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtCFName2' ]");
@@ -609,9 +611,9 @@ public class BookingLocators {
 	   return thirdTravelerDOBMob ;
    }
    
-   public static By getselectNumberOfAdultMob()
+   public static By getselectNumberOfAdultRoom1Mob()
    {
-	   return selectNumberOfAdultMob;
+	   return selectNumberOfAdultRoom1Mob;
    }
 
 public static By getselectNumberOfChildMob() {
@@ -659,7 +661,6 @@ public static By getpassportDrpdownSecondTravellerChildMob() {
 		return verifyTraveler4NameiOS;
 	}
 
-
 	public static By getselectfirstRoomChildPlus() {
 		
 		return selectfirstRoomChildPlus;
@@ -683,5 +684,15 @@ public static By getpassportDrpdownSecondTravellerChildMob() {
 
 	public static By getselectRoomtwoChildAgeDropdownMob() {
 		return selectRoomtwoChildAgeDropdownMob;
+	}
+
+	public static By getselectNumberOfAdultRoom2Mob()
+	{
+		return selectNumberOfAdultRoom2Mob;
+	}
+	public static By getverifyTraveler3NameMob()
+	{
+		return verifyTraveler3NameMob;
+
 	}
 }
