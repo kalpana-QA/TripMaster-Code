@@ -161,19 +161,46 @@ public class BookingPageAction extends PageBase {
      }
 	}
 
-	public  void selectNumberOfAdult(String numOfAdults, By element) throws Exception
+	public  void select1NumberOfAdultForRoom1(String numOfAdults, By element) throws Exception
 	{
 	if(TestBase.flag_Mob)
 	{
 		PageBase.waitForElement(3);
+		{
+        clickUsingJavaScript(BookingLocators.getselectNumberOfAdultRoom1Mob());
+		}
 		
-        clickUsingJavaScript(BookingLocators.getselectNumberOfAdultMob());
-	}
+        }
 	else
 	{
 		selectOptionByValue(element, numOfAdults);
 	}
 	}
+	
+	public  void select2NumberOfAdultForRoom1(String numOfAdults, By element) throws Exception
+	{
+	{
+	
+      selectOptionByValue(element, numOfAdults);
+	}
+	}
+	
+	public void select1NumberOfAdultForRoom2(String numOfAdults,By element) throws Exception
+	{
+		if(TestBase.flag_Mob)
+		{
+			PageBase.waitForElement(3);
+			{
+				clickUsingJavaScript(BookingLocators.getselectNumberOfAdultRoom2Mob());
+			}
+		}
+		else
+		{
+			selectOptionByValue(element, numOfAdults);
+		}
+	}
+	
+	
 
 	public  void ClickOnWithoutAir() {
 
@@ -446,7 +473,7 @@ public class BookingPageAction extends PageBase {
 
 		if (TestBase.flag_Mob)
 		{
-			clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
+			//clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
 		String expectedcabin = driver.findElement(HomePageLocators.getSelectPremiumEconomy()).getText();
 		return expectedcabin;
 		}

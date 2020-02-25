@@ -7,21 +7,17 @@
 </head>
 <body>
 <table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<<<<<<< HEAD
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">207,512</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">61,769</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.tripmasters.framework.testScript.BookingPageTestScript</td><td><a href="#m0">bookingTwoRoomTwoAdult_TC_3</a></td><td rowspan="1">1582290478821</td><td rowspan="1">195729</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.tripmasters.framework.testScript.BookingPageTestScript</td><td><a href="#m0">bookingSingleRoomWithThreeAdults_TC_1</a></td><td rowspan="1">1582620250472</td><td rowspan="1">35732</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.tripmasters.framework.testScript.BookingPageTestScript#bookingTwoRoomTwoAdult_TC_3</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingTwoRoomTwoAdult_TC_3(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-=======
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">202,421</td><td></td><td></td></tr>
-</table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.tripmasters.framework.testScript.BookingPageTestScript</td><td><a href="#m0">bookingSingleRoomOneAdultOneChild_TC_2</a></td><td rowspan="1">1582541396091</td><td rowspan="1">178504</td></tr></tbody>
-</table>
-<h2>Default test</h2><h3 id="m0">com.tripmasters.framework.testScript.BookingPageTestScript#bookingSingleRoomOneAdultOneChild_TC_2</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(java.lang.reflect.Method) throws java.lang.Exception</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(BookingPageTestScript.java:179)
+<h2>Default test</h2><h3 id="m0">com.tripmasters.framework.testScript.BookingPageTestScript#bookingSingleRoomWithThreeAdults_TC_1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method) throws java.lang.Exception</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Exception: Unable to scroll page
+	at com.tripmasters.framework.base.PageBase.scrollDown(PageBase.java:398)
+	at com.tripmasters.framework.pageActions.BookingPageAction.selectCheaperFlights_Mob(BookingPageAction.java:145)
+	at com.tripmasters.framework.pageActions.BookingPageAction.selectCheaperFlights(BookingPageAction.java:130)
+	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomWithThreeAdults_TC_1(BookingPageTestScript.java:53)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -51,6 +47,5 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
->>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
 </body>
 </html>

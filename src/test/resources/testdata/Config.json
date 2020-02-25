@@ -1,11 +1,5 @@
 {
-<<<<<<< HEAD
-
-    "Platform": "iOS",
-    "Browser": "Safari",
-=======
     "Platform": "Mobile",
     "Browser": "Chrome",
->>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
     "URL": "https://www.tripmasters.com"
 }

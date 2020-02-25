@@ -219,12 +219,22 @@ public class PassengerInfoPageAction extends PageBase {
 			break;
 
 		case "Room1Child1":
+			if(TestBase.flag_Mob) {
+				String firstNameR1C1 = clearAndSetValues(PassengerInformationLocators.getfnameR1C1Mob(), "Erwin");
+				String secondNameR1C1 = clearAndSetValues(PassengerInformationLocators.getlnameR1C1Mob(), "George");
+				String fullNameR1C1 = firstNameR1C1 +" "+ secondNameR1C1;
+				list.add(fullNameR1C1);
+				list.add(selectOptionByText(PassengerInformationLocators.getgenderR1C1Mob(), "Male"));
+				list.add(clearAndSetValues(PassengerInformationLocators.getdobR1C1Mob(), "01/01/2000"));
+			}
+			else {
 			String firstNameR1C1 = clearAndSetValues(PassengerInformationLocators.getfnameR1C1(), "Erwin");
 			String secondNameR1C1 = clearAndSetValues(PassengerInformationLocators.getlnameR1C1(), "George");
 			String fullNameR1C1 = firstNameR1C1 + " " + secondNameR1C1;
 			list.add(fullNameR1C1);
 			list.add(selectOptionByText(PassengerInformationLocators.getgenderR1C1(), "Male"));
 			list.add(clearAndSetValues(PassengerInformationLocators.getdobR1C1(), "01/01/2000"));
+			}
 			selectOptionByValue(PassengerInformationLocators.getpassportR1C1(), "237|US");
 			break;
 

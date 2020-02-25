@@ -64,6 +64,10 @@ public class PassengerInformationLocators {
     	 
     	 private static By dobR2T1iOS=By.xpath("//input[@id='2_txtPAX_DOB1']");
     	 private static By dobR2T2iOS=By.xpath("//input[@id='2_txtPAX_DOB2']");
+    	 private static By fnameR1C1Mob =By.xpath("//input[@id='1_txtCFName1' and @name ='1_txtCFName1']");
+    	 private static By lnameR1C1Mob = By.xpath("//input[@id='1_txtCLName1' and @name ='1_txtCLName1']");
+    	 private static By genderR1C1Mob =By.xpath("//select[@id='1_txtCPAX_Gender1']");
+    	 private static By dobR1C1Mob = By.xpath("//input[@id='1_txtCPAX_DOB1']");
     			 
     	 
 	public static By getfnameR1T1() {
@@ -262,4 +266,22 @@ public class PassengerInformationLocators {
 		public static By getdobR2T2iOS() {
         	return dobR2T2iOS;
         }
+
+		public static By getfnameR1C1Mob() {
+			return fnameR1C1Mob;
+		}
+
+		public static By getlnameR1C1Mob() {
+			
+			return lnameR1C1Mob ;
+		}
+
+		public static By getgenderR1C1Mob() {
+			return genderR1C1Mob;
+		}
+
+		public static By getdobR1C1Mob() {
+			
+			return dobR1C1Mob;
+		}
 }
