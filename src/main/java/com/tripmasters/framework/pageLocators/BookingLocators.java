@@ -67,13 +67,13 @@ public class BookingLocators {
 			.xpath("//div[div[div[span[contains(.,'Traveler 3:')]]]]//input[contains(@id,'txtPAX_DOB')]");
 
 	private static By verifyTraveler1Name = By
-			.xpath("//div[@id='TravelerR1']//div[@class='cel-name' or @class='editvalgender' or @class='editvaldob']");
+			.xpath("//div[@id='TravelerR1']//div[@class='cel-name' or @class='editvalgender font-weight-bold' or @class='editvalgender' or @class='cel-name col-6 mt-2' or @class='editvaldob']");
 	private static By verifyTraveler2Name = By
-			.xpath("//div[@id='TravelerR2']//div[@class='cel-name' or @class='editvalgender' or @class='editvaldob']");
+			.xpath("//div[@id='TravelerR2']//div[@class='cel-name' or @class='cel-name col-6 mt-2' or @class='editvalgender' or @class='editvalgender font-weight-bold' or @class='editvaldob']");
 	private static By verifyTraveler3Name = By
-			.xpath("//div[@id='TravelerR3']//div[@class='cel-name' or @class='editvalgender' or @class='editvaldob']");
+			.xpath("//div[@id='TravelerR3']//div[@class='cel-name' or @class='cel-name col-6 mt-2' or @class='editvalgender font-weight-bold' or @class='editvalgender' or @class='editvaldob']");
 	private static By verifyTraveler4Name = By
-			.xpath("//div[@id='TravelerR4']//div[@class='cel-name' or @class='editvalgender' or @class='editvaldob']");
+			.xpath("//div[@id='TravelerR4']//div[@class='cel-name' or @class='cel-name col-6 mt-2' or @class='editvalgender font-weight-bold' or @class='editvalgender' or @class='editvaldob']");
 	private static By selectChildTravelerDOB = By
 			.xpath("//div[div[div[span[contains(.,'Traveler 2:')]]]]//input[contains(@id,'txtCPAX_DOB2')]");
 	private static By selectChildTraveleraPassport = By.xpath("//select[@id='txtCPAX_Nationality2']");
@@ -124,6 +124,7 @@ public class BookingLocators {
 	private static By selectChildAgeRoom2Drpdown = By.xpath("//select[@id='xRoom2_iChild1']");
 
 	private static By selectAdultDrpdown = By.xpath("//select[@id='xiAdults']");
+	
 	private static By selectAdultRoom2Drpdown = By.xpath("//select[@id='xRoom2_iAdults']");
 	public static By selectChildAgeDrpdown = By.xpath("//select[@id='xiChild1']");
 	private static By cheaperFlightsLink = By.xpath("(//a[contains(.,'Find cheaper flights')])[1]");
@@ -142,6 +143,14 @@ public class BookingLocators {
 
 	private static By cabinSectionMob = By.cssSelector("div[id='dvMcabin']");
 	//satyam
+	private static By selectfirstRoomAdultPlus=By.xpath("//div[@id='dvroom1']/p/span[@id='adultMinus']");
+	private static By SecondRoomadultPlus=By.xpath("//span[@id='adultPlus2']");
+	private static By firstChildDropdowniOS = By.xpath("//input[@id='xiChild1']");
+	private static By selectsecondRoomChildPlus = By.xpath("//span[@id='childrenPlus2']");
+	private static By secondRoomChildDropdowniOS = By.xpath("//input[@id='xRoom2_iChild1']");
+	private static By selectRoomtwoChildAgeDropdownMob = By.xpath("(//ul[@id='ui-id-3']//li)[2]");
+	private static By selectChildAgeDropdownMob = By.xpath("(//ul[@id='ui-id-1']//li)[2]");
+	private static By selectfirstRoomChildPlus=By.xpath("//span[@id='childrenPlus']");
 	private static By tripInclusionContinueButtonmob=By.xpath("//a[@id='aContWithPriceValidationReview']");
 	private static By firstTravelerFirstNameTextBoxiOS=By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtPFName1' ]");
 	private static By secondTravelerFirstNameTextBoxiOS=By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtPFName2' ]");
@@ -164,6 +173,15 @@ public class BookingLocators {
 	/**
 	 * @return the emailId
 	 */
+	public static By getfirstChildDropdowniOS() {
+		return firstChildDropdowniOS;
+	}
+	
+	public static By getselectfirstRoomAdultPlus() {
+		return selectfirstRoomAdultPlus;
+	}
+	
+	
 	public static By getverifyTraveler1NameiOS() {
 		return verifyTraveler1NameiOS;
 		
@@ -596,5 +614,36 @@ public class BookingLocators {
 	public static By getverifyTraveler4NameiOS() {
 		
 		return verifyTraveler4NameiOS;
+	}
+
+
+	public static By getselectfirstRoomChildPlus() {
+		
+		return selectfirstRoomChildPlus;
+	}
+
+	public static By getselectChildAgeDropdownMob() {
+		// TODO Auto-generated method stub
+		return selectChildAgeDropdownMob;
+	}
+
+	public static By getSecondRoomadultPlus() {
+		// TODO Auto-generated method stub
+		return SecondRoomadultPlus;
+	}
+
+	public static By getselectsecondRoomChildPlus() {
+		// TODO Auto-generated method stub
+		return selectsecondRoomChildPlus;
+	}
+
+	public static By getsecondRoomChildDropdowniOS() {
+		// TODO Auto-generated method stub
+		return secondRoomChildDropdowniOS;
+	}
+
+	public static By getselectRoomtwoChildAgeDropdownMob() {
+		// TODO Auto-generated method stub
+		return selectRoomtwoChildAgeDropdownMob;
 	}
 }

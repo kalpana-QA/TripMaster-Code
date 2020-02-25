@@ -64,7 +64,7 @@ public class BookingPageAction extends PageBase {
 					.findElement(By.xpath(".//li[@id='" + guestInfo + "']"));
 			clickUsingJavaScript(wb);
 			clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
-			clickUsingJavaScript(BookingLocators.getdoneButton());
+			//clickUsingJavaScript(BookingLocators.getdoneButton());
 			Logs.info("User select '" + guestInfo + "' from Guest list");
 			//test.log(LogStatus.INFO, "User select '" + guestInfo + "' from Guest list");
 		} else {
@@ -73,6 +73,14 @@ public class BookingPageAction extends PageBase {
 			//test.log(LogStatus.INFO, "User select '" + guestInfo + "' from Guest list");
 		}
 	}
+	
+	public void doneButtonMob() throws Exception
+	{
+	if(TestBase.flag_Mob){
+	clickUsingJavaScript(BookingLocators.getdoneButton());
+	  }
+	}
+	
 	
 	/*
 	 * public void selectGuestDetailsForOneandOther(String guestInfo) {
@@ -141,15 +149,25 @@ public class BookingPageAction extends PageBase {
 		return expectflightvalue;
 	}
 
-	public  void clicktoContinuePage() {
+	public  void clicktoContinuePage() throws Exception {
      if(!TestBase.flag_Mob){
 			clickUsingJavaScript(BookingLocators.getcontinueImage());
      }
+     else {
+    	 getTripinclusionContinueButton() ;
+     }
 	}
-
+//satyam changes made according to iphone
 	public  void selectNumberOfAdult(String numOfAdults, By element) {
-
+		if(!TestBase.flag_Mob) {
 		selectOptionByValue(element, numOfAdults);
+		}
+		else {
+			selectnumberofadultsiOS();
+		}	
+	}
+	public void selectnumberofadultsiOS() {
+		clickUsingJavaScript(BookingLocators.getselectfirstRoomAdultPlus());
 	}
 
 	public  void ClickOnWithoutAir() {
@@ -159,23 +177,69 @@ public class BookingPageAction extends PageBase {
 	}
 
 	//TODO:this method need some modifications.
-	public  void selectNumberOfChild(String numOfChild, String ageOfChild, String childType) {
-		if (childType.equals("Child1")) {
-			selectOptionByValue(BookingLocators.getselectChildDrpdown(), numOfChild);
-			Logs.info("User entered number of child'" + numOfChild + "' ");
-			Select option = new Select(driver.findElement(By.xpath("//select[@id='xiChild1']")));
-			option.selectByValue(ageOfChild);
-			//selectOptionByValue(BookingLocators.getselectChildAgeDrpdown(), ageOfChild);
-			Logs.info("User entered age of child'" + ageOfChild + "' ");
-		} else {
-			selectOptionByValue(BookingLocators.getselectChildRoom2Drpdown(), numOfChild);
-			Logs.info("User entered number of child'" + numOfChild + "' ");
-			Select option = new Select(driver.findElement(By.xpath("//select[@id='xRoom2_iChild1']")));
-			option.selectByValue(ageOfChild);
-			//selectOptionByValue(BookingLocators.getselectChildAgeRoom2Drpdown(), ageOfChild);
-			Logs.info("User entered age of child'" + ageOfChild + "' ");
-		}
+	
+	//modified by satyam
+	public  void selectNumberOfChild(String numOfChild, String ageOfChild, String childType) throws Exception
+	{
+
+	if(TestBase.flag_Mob)
+	{
+	if(childType.equals("Child1"))
+	{
+		
+		//clickUsingJavaScript(BookingLocators.getselectfirstRoomAdultPlus());	
+	clickUsingJavaScript(BookingLocators.getselectfirstRoomChildPlus());
+	PageBase.waitForElement(3);
+	driver.findElement(BookingLocators.getfirstChildDropdowniOS()).click();
+	PageBase.waitForElement(3);
+	driver.findElement(BookingLocators.getselectChildAgeDropdownMob()).click();
+	PageBase.waitForElement(2);
+	//adult two for room two ---->
+	driver.findElement(BookingLocators.getSecondRoomadultPlus()).click();
+	clickUsingJavaScript(BookingLocators.getselectsecondRoomChildPlus());
+	PageBase.waitForElement(3);
+	driver.findElement(BookingLocators.getsecondRoomChildDropdowniOS()).click();
+	PageBase.waitForElement(3);
+	driver.findElement(BookingLocators.getselectRoomtwoChildAgeDropdownMob()).click();
+	PageBase.waitForElement(2);
+	doneButtonMob();
+	 }
+
+	  else
+	{
+	//----------child for room 2---------
 	}
+	}
+	else
+	{
+	if (childType.equals("Child1")) {
+
+	selectOptionByValue(BookingLocators.getselectChildDrpdown(), numOfChild);
+	Logs.info("User entered number of child'" + numOfChild + "' ");
+	Select option = new Select(driver.findElement(By.xpath("//select[@id='xiChild1']")));
+	option.selectByValue(ageOfChild);
+	//selectOptionByValue(BookingLocators.getselectChildAgeDrpdown(), ageOfChild);
+	Logs.info("User entered age of child'" + ageOfChild + "' ");
+	} else {
+	selectOptionByValue(BookingLocators.getselectChildRoom2Drpdown(), numOfChild);
+	Logs.info("User entered number of child'" + numOfChild + "' ");
+	Select option = new Select(driver.findElement(By.xpath("//select[@id='xRoom2_iChild1']")));
+	option.selectByValue(ageOfChild);
+	//selectOptionByValue(BookingLocators.getselectChildAgeRoom2Drpdown(), ageOfChild);
+	Logs.info("User entered age of child'" + ageOfChild + "' ");
+	}
+	}
+	}
+	public void selectNumberofChildiOS() {
+		clickUsingJavaScript(BookingLocators.getselectfirstRoomChildPlus());
+		BookingLocators.getfirstChildDropdowniOS();
+		
+	
+		
+		
+	}
+	
+	
 
 //	public  void fillBasicBookingDetailForMultipleCities(String flightType, String destination,String stayingTime, String destination_second, String guestinfo) throws Exception {
 //		if (flightType.equalsIgnoreCase("WithAir")) {

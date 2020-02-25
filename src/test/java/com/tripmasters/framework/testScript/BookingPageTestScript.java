@@ -93,7 +93,7 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 	
-	@Test(groups= {"smoke"},priority=2)
+	//@Test(groups= {"smoke"},priority=2)
 	public void bookingSingleRoomOneAdultOneChild_TC_2(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoom1Adult1Child");
 		bookingPage.fillLeavingFromDetails("Philadelphia, PA");
@@ -145,7 +145,7 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 	
-  @Test(groups= {"smoke"},priority=3)
+ // @Test(groups= {"smoke"},priority=3)
 	public void bookingTwoRoomTwoAdult_TC_3(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom2Adult");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -286,16 +286,17 @@ public class BookingPageTestScript extends TestBase {
 	public void bookingTwoRoomTwoAdultTwoChild_TC_5(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "booking2Room2Adult2Child");
 		bookingPage.clickOnBuildYourVacationDropDown();
-		bookingPage.fillLeavingFromDetails("San Francisco, CA");
+		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
 		test.log(LogStatus.INFO, "User entered \"San Francisco', CA\" into leaving from field");
-		bookingPage.fillGoingToCityDetails("Munich (Germany)");
-		test.log(LogStatus.INFO, "User entered \"Munich (Germany)\" into Going to from field");
+		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
+		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
 		bookingPage.selectValueFromCalendar();
 		bookingPage.selectStayingTime("5");
 		test.log(LogStatus.INFO, "User entered \"5\" nights staying time");	
 		bookingPage.selectNoMoreCitiesBtn();
 		test.log(LogStatus.INFO, "Click on No More Cities Button");
 		bookingPage.selectGuestDetails("2|Other");
+		
 		test.log(LogStatus.INFO, "User select \"Two Adults & Two Child\" from Guest list");
 		test.log(LogStatus.INFO, "Booking details filled successfully for Two Adults & Two Child");
 		Logs.info("Booking details filled successfully for Two Adults & Two Child");
@@ -303,8 +304,8 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.selectNumberOfChild("1", "9", "Child1");
 		test.log(LogStatus.INFO, "No.of Child & Age of Child got selected successfully");
 		Logs.info("No.of Child & Age of Child got selected successfully");
-		bookingPage.selectNumberOfAdult("1", BookingLocators.getselectAdultRoom2Drpdown());
-		bookingPage.selectNumberOfChild("1", "9", "Child2");
+		//bookingPage.selectNumberOfAdult("1", BookingLocators.getselectAdultRoom2Drpdown());
+		//bookingPage.selectNumberOfChild("1", "9", "Child2");
 		bookingPage.clickonContinueButton();
 		PageBase.waitForElement(3);
 		test.log(LogStatus.INFO, "Click on Continue Button");
@@ -315,6 +316,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User clicks on Continue Link");
 		Logs.info("Select Cheaper flights from flight options");
 		bookingPage.clicktoContinuePage();
+		bookingPage.getTripinclusionContinueButton();
 		expectedFirstTravellerInfo = passengerInfoPage.fillTravellerDetailsForMultipleRooms("Room1Traveller1");
 		test.log(LogStatus.INFO, "User enters \"yury\" as Traveller1 First Name");
 		test.log(LogStatus.INFO, "User enters \"darwin\" as Traveller1 Last Name");
@@ -633,7 +635,7 @@ public class BookingPageTestScript extends TestBase {
 		Logs.info("Validate that user is on TripInclusion Page");
 	}
 
-	//@Test(groups= {"smoke"},priority=12)
+	@Test(groups= {"smoke"},priority=12)
 	public void bookingDetailswithPremiumEcomomy_TC_18(Method method) throws Exception {
 		ExtentTest test =ExtentTestManager.startTest(method.getName(), "bookingDetailswithPremiumEcomomy");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -649,10 +651,10 @@ public class BookingPageTestScript extends TestBase {
 		String actualcabin = bookingPage.selectedcabinAssert();
 		test.log(LogStatus.INFO, "Select Cabin class");
 		Logs.info("Select Cabin class");
-//		if(TestBase.flag_Mob){
-//			  boolean cabinVerify = bookingPage.verifyCabin();
-//			   Assert.assertTrue(cabinVerify);
-//		}
+	if(TestBase.flag_Mob){
+			  boolean cabinVerify = bookingPage.verifyCabin();
+			   Assert.assertTrue(cabinVerify);
+	}
 		String expectedcabin = bookingPage.verifycabinAssert();
 		Assert.assertEquals(expectedcabin, actualcabin);
 		test.log(LogStatus.INFO, "Selected Cabin class verified");
