@@ -114,36 +114,66 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61769" started-at="2020-02-25T14:13:44 IST" finished-at="2020-02-25T14:14:46 IST">
+  <suite name="Default suite" duration-ms="95884" started-at="2020-02-25T16:15:00 IST" finished-at="2020-02-25T16:16:36 IST">
     <groups>
       <group name="smoke">
-        <method signature="BookingPageTestScript.bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingSingleRoomWithThreeAdults_TC_1" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
+        <method signature="BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(java.lang.reflect.Method)[pri:2, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingSingleRoomOneAdultOneChild_TC_2" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="61769" started-at="2020-02-25T14:13:44 IST" finished-at="2020-02-25T14:14:46 IST">
+    <test name="Default test" duration-ms="95884" started-at="2020-02-25T16:15:00 IST" finished-at="2020-02-25T16:16:36 IST">
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="setUp" is-config="true" duration-ms="25989" started-at="2020-02-25T14:13:44 IST" finished-at="2020-02-25T14:14:10 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="setUp" is-config="true" duration-ms="43813" started-at="2020-02-25T16:15:00 IST" finished-at="2020-02-25T16:15:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingSingleRoomWithThreeAdults_TC_1" duration-ms="35732" started-at="2020-02-25T14:14:10 IST" finished-at="2020-02-25T14:14:46 IST">
+        <test-method status="FAIL" signature="bookingSingleRoomOneAdultOneChild_TC_2(java.lang.reflect.Method)[pri:2, instance:com.tripmasters.framework.testScript.BookingPageTestScript@69b0fd6f]" name="bookingSingleRoomOneAdultOneChild_TC_2" duration-ms="52006" started-at="2020-02-25T16:15:44 IST" finished-at="2020-02-25T16:16:36 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.Exception">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Unable to scroll page]]>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: unknown error: Element <input type="text" name="xiChild1" id="xiChild1" value="" data-role="none" class="inpChild ui-autocomplete-input" autocomplete="off"> is not clickable at point (117, 401). Other element would receive the click: <a class="ui-state-default" href="#">...</a>
+  (Session info: chrome=80.0.3987.117)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17763 x86_64)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'IQA_SATYAM', ip: '192.168.15.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromedriverExecutable: E:\TripMaster-Android\TripM..., databaseEnabled: false, desired: {browserName: Chrome, chromedriverExecutable: E:\TripMaster-Android\TripM..., deviceName: One Plus, platformName: android}, deviceApiLevel: 29, deviceManufacturer: OnePlus, deviceModel: GM1901, deviceName: f75b7d5c, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: f75b7d5c, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2054, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: f41f7450-6984-4e97-bd69-a6f1bf4a624c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Exception: Unable to scroll page
-at com.tripmasters.framework.base.PageBase.scrollDown(PageBase.java:398)
-at com.tripmasters.framework.pageActions.BookingPageAction.selectCheaperFlights_Mob(BookingPageAction.java:145)
-at com.tripmasters.framework.pageActions.BookingPageAction.selectCheaperFlights(BookingPageAction.java:130)
-at com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomWithThreeAdults_TC_1(BookingPageTestScript.java:53)
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: unknown error: Element <input type="text" name="xiChild1" id="xiChild1" value="" data-role="none" class="inpChild ui-autocomplete-input" autocomplete="off"> is not clickable at point (117, 401). Other element would receive the click: <a class="ui-state-default" href="#">...</a>
+  (Session info: chrome=80.0.3987.117)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17763 x86_64)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'IQA_SATYAM', ip: '192.168.15.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromedriverExecutable: E:\TripMaster-Android\TripM..., databaseEnabled: false, desired: {browserName: Chrome, chromedriverExecutable: E:\TripMaster-Android\TripM..., deviceName: One Plus, platformName: android}, deviceApiLevel: 29, deviceManufacturer: OnePlus, deviceModel: GM1901, deviceName: f75b7d5c, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: f75b7d5c, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2054, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: f41f7450-6984-4e97-bd69-a6f1bf4a624c
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at com.tripmasters.framework.pageActions.BookingPageAction.selectNumberOfChild(BookingPageAction.java:221)
+at com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(BookingPageTestScript.java:122)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -174,9 +204,10 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Exception -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         </test-method> <!-- bookingSingleRoomOneAdultOneChild_TC_2 -->
 >>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
@@ -186,6 +217,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
         </test-method> <!-- bookingSingleRoomWithThreeAdults_TC_1 -->
 >>>>>>> 5042e9c4e1ca4df7dc88ad982ffb96d98e627cb5
+=======
+        </test-method> <!-- bookingSingleRoomOneAdultOneChild_TC_2 -->
+>>>>>>> Stashed changes
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

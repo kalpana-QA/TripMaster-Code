@@ -60,8 +60,8 @@ public class PassengerInfoPageAction extends PageBase {
 			 selectOptionByValue(BookingLocators.getpassportDrpdownSecondTraveller(), passportInfo);
 			 }
 			 else{
-				 
-				 //===========Write code for different traveller type=====================
+				 list.add(clearAndSetValues(BookingLocators.getsecondTravelerDOBiOS(), dateOfBirth));
+				 selectOptionByValue(BookingLocators.getpassportDrpdownSecondTraveller(), passportInfo);
 			 }
 			return list;
 		}

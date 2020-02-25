@@ -170,6 +170,7 @@ public class BookingLocators {
 	public static By secondTravelerGenderDropdownMob = By.xpath("//select[@id='txtCPAX_Gender2']");
 	public static By secondTravelerDOBMob = By.xpath("//input[@id='txtCPAX_DOB2']");
 	public static By passportDrpdownSecondTravellerChildMob = By.xpath("//select[@id='txtCPAX_Nationality2']");
+	
 	/**
 	 * @return the emailId
 	 */
@@ -695,4 +696,6 @@ public static By getpassportDrpdownSecondTravellerChildMob() {
 		return verifyTraveler3NameMob;
 
 	}
+
+	
 }
