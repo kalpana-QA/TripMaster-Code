@@ -406,7 +406,7 @@ public class PageBase {
 	 * @throws Exception
 	 * @param enterNumberofRepetaion
 	 **/
-	public void scrollDownForMob(int enterNumberofRepetaion) throws Exception {
+	public static void scrollDownForMob(int enterNumberofRepetaion) throws Exception {
 		if (TestBase.flag_Mob) {
 			while (enterNumberofRepetaion > 0) {
 				try {

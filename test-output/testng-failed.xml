@@ -11,11 +11,15 @@
         <methods>
 <<<<<<< HEAD
           <include name="setUp"/>
+<<<<<<< HEAD
           <include name="bookingTwoRoomTwoAdult_TC_3" invocation-numbers="0"/>
 =======
           <include name="bookingSingleRoomOneAdultOneChild_TC_2" invocation-numbers="0"/>
           <include name="setUp"/>
 >>>>>>> 16081c7894f3e57fc6b606d1e526ad4eaabb03e7
+=======
+          <include name="bookingDetailswithPremiumEcomomy_TC_18" invocation-numbers="0"/>
+>>>>>>> 348e31002cad392248c9e8aedab9e55d1688ee18
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>
