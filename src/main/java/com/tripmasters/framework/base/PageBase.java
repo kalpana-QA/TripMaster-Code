@@ -163,7 +163,7 @@ public class PageBase {
 			element.sendKeys(StringToBeEntered);// Keys.TAB);
 			waitForElement(3);
 		} catch (Exception e) {
-			Logs.error("Unable to find the element on Page");
+			//Logs.error("Unable to find the element on Page");
 			// e.printStackTrace();
 		}
 		return StringToBeEntered;

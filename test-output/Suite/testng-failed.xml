@@ -5,7 +5,7 @@
     <listener class-name="com.tripmasters.framework.Listeners.TestListener"/>
     <listener class-name="com.tripmasters.framework.Listeners.AnnotationTransformer"/>
   </listeners>
-  <test name="Test(failed)" parallel="methods">
+  <test thread-count="5" name="Test(failed)" parallel="methods">
     <groups>
       <run>
         <include name="smoke"/>
@@ -18,9 +18,7 @@
           <include name="bookingSingleRoomWithThreeAdults_TC_1" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="bookingSingleRoomOneAdultOneChild_TC_2" invocation-numbers="0"/>
-          <include name="bookingTwoRoomTwoAdultTwoChild_TC_5" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="bookingTwoRoomThreeAdultOneChild_TC_4" invocation-numbers="0"/>
           <include name="bookingTwoRoomTwoAdult_TC_3" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
