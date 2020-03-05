@@ -64,13 +64,6 @@ public class BookingPageAction extends PageBase {
 			WebElement wb = driver.findElement(BookingLocators.getoptionListForGuestsAndRooms())
 					.findElement(By.xpath(".//li[@id='" + guestInfo + "']"));
 			clickUsingJavaScript(wb);
-
-		//	clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
-		//	clickUsingJavaScript(BookingLocators.getdoneButton());
-
-			clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
-			//clickUsingJavaScript(BookingLocators.getdoneButton());
-
 			//Logs.info("User select '" + guestInfo + "' from Guest list");
 			//test.log(LogStatus.INFO, "User select '" + guestInfo + "' from Guest list");
 		} else {
@@ -81,12 +74,19 @@ public class BookingPageAction extends PageBase {
 	}
 	
 
-	public void selectPremiumEconomy()
-	{
+	public String selectPremiumEconomy()
+	{ 
+		String actualCabin=null;
 		if(TestBase.flag_Mob)
 	{
-		clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
-	}
+
+			 actualCabin = driver.findElement(HomePageLocators.getSelectPremiumEconomy()).getText();
+			clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
+			
+		}  
+		
+		return actualCabin;
+
 	}
 	
 	public void doneButtonMob() throws Exception
@@ -131,29 +131,64 @@ public class BookingPageAction extends PageBase {
 		clickUsingJavaScript(BookingLocators.getcontinueLink());
 		}
 	}
-
+//
+//	public  String selectCheaperFlights() throws Exception {
+//		String flightvalue = null;
+//		if (TestBase.flag_Mob) {
+//			selectCheaperFlights_Mob();
+//		} else {
+//			clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
+//			flightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
+//			clickUsingJavaScript(BookingLocators.getselectFlightOption());
+//			clickUsingJavaScript(BookingLocators.getselectButtonInFlightOption1());
+//			clickUsingJavaScript(BookingLocators.getcontinueLink());
+//		}
+//		return flightvalue;
+//
+//	}
+//
+//	public  String selectCheaperFlights_Mob() throws Exception {
+//		
+//		isElementDisplayed(BookingLocators.getcheaperFlightsLink());
+//		scrollDown();
+//		clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
+//		String expectflightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
+//		System.out.println(expectflightvalue);
+//		clickUsingJavaScript(BookingLocators.getselectFlightOption());
+//		clickUsingJavaScript(BookingLocators.getselectbutton());
+//		isElementDisplayed(BookingLocators.getcontinueLink());
+//		scrollDown();
+//		scrollDown();
+//		clickUsingJavaScript(BookingLocators.getcontinueLink());
+//		return expectflightvalue;
+//	}
+	
 	public  String selectCheaperFlights() throws Exception {
 		String flightvalue = null;
 		if (TestBase.flag_Mob) {
-			selectCheaperFlights_Mob();
+		flightvalue = selectCheaperFlights_Mob();
+
+
 		} else {
-			clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
-			flightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
-			clickUsingJavaScript(BookingLocators.getselectFlightOption());
-			clickUsingJavaScript(BookingLocators.getselectButtonInFlightOption1());
-			clickUsingJavaScript(BookingLocators.getcontinueLink());
+		clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
+		flightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
+		clickUsingJavaScript(BookingLocators.getselectFlightOption());
+		clickUsingJavaScript(BookingLocators.getselectButtonInFlightOption1());
+		clickUsingJavaScript(BookingLocators.getcontinueLink());
+		//return flightvalue;
 		}
 		return flightvalue;
 
-	}
+		}
 
-	public  String selectCheaperFlights_Mob() throws Exception {
-		
+		public  String selectCheaperFlights_Mob() throws Exception {
+
 		isElementDisplayed(BookingLocators.getcheaperFlightsLink());
 		scrollDown();
+		PageBase.waitForElement(3);
 		clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
 		String expectflightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
-		System.out.println(expectflightvalue);
+		System.out.println("expected flight is "+expectflightvalue);
 		clickUsingJavaScript(BookingLocators.getselectFlightOption());
 		clickUsingJavaScript(BookingLocators.getselectbutton());
 		isElementDisplayed(BookingLocators.getcontinueLink());
@@ -161,7 +196,8 @@ public class BookingPageAction extends PageBase {
 		scrollDown();
 		clickUsingJavaScript(BookingLocators.getcontinueLink());
 		return expectflightvalue;
-	}
+		}
+
 
 	public  void clicktoContinuePage() throws Exception {
      if(!TestBase.flag_Mob){
@@ -260,7 +296,7 @@ public class BookingPageAction extends PageBase {
 				option.selectByValue(ageOfChild);
 				// selectOptionByValue(BookingLocators.getselectChildAgeRoom2Drpdown(),
 				// ageOfChild);
-				Logs.info("User entered age of child'" + ageOfChild + "' ");
+				//Logs.info("User entered age of child'" + ageOfChild + "' ");
 	   }
 	 }
 	}
@@ -292,13 +328,14 @@ public class BookingPageAction extends PageBase {
 	}
 
 
-	public  String browseHotelsButton() {
+	public  String browseHotelsButton() throws Exception {
 		clickUsingJavaScript(BookingLocators.getBrowseHotelsLink());
-		if(TestBase.flag_Mob){
+		if(!TestBase.flag_Mob){
 			String actualhotel = driver.findElement(BookingLocators.getFirstHotel()).getText();
 			return actualhotel;
 			}
 		else{
+			//scrollDownForMob(2);
 			String actualhotel = driver.findElement(BookingLocators.getfirstHoteliOS()).getText();
 			return actualhotel;
 		}
@@ -401,10 +438,14 @@ public class BookingPageAction extends PageBase {
 				break;
 			}
 		}
+		clickUsingJavaScript(BookingLocators.getcalendarDoneButton());
 	}
 
 	public  void selectCabinClass(String cabinclass) {
+	if(!TestBase.flag_Mob)
+	{
 		selectOptionByText(BookingLocators.getCabinClassDropdown(), cabinclass);
+	}
 	}
 
 	/**
@@ -445,19 +486,15 @@ public class BookingPageAction extends PageBase {
 	}
 
 	public  String selectedcabinAssert() {
+         String selectedcabin = null;
+		if (!TestBase.flag_Mob)
+		{
+		 selectedcabin = driver.findElement(BookingLocators.getFirstpremiumOption()).getText();
+		   
+		}
+		 return selectedcabin;
+	}
 
-		if (TestBase.flag_Mob)
-		{
-			//clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
-		String expectedcabin = driver.findElement(HomePageLocators.getSelectPremiumEconomy()).getText();
-		return expectedcabin;
-		}
-		else
-		{
-		String selectedcabin = driver.findElement(BookingLocators.getFirstpremiumOption()).getText();
-		   return selectedcabin;
-		}
-		}
 	
 	    public String verifycabinAssert() {
 		if(TestBase.flag_Mob)
@@ -537,19 +574,13 @@ public class BookingPageAction extends PageBase {
 
 	public  void tripSummary() throws Exception 
 	{
-		if(TestBase.flag_Mob)
-		{
-			scrollDownForMob(4);
 			clickUsingJavaScript(TripInclusionPageLocators.getTripSummaryButton());
-		   
-         }
-		else
-		{
-			clickUsingJavaScript(TripInclusionPageLocators.getTripSummaryButton());
-		}
 	}
 
-	public  void validateTripIncluisonPage() {
+	public  void validateTripIncluisonPage()
+	{
+	if(TestBase.flag_Mob)
+	{
 		boolean flag = false;
 		if (driver.getTitle().contains("ItineraryDetails"))
 			flag = true;
@@ -557,6 +588,7 @@ public class BookingPageAction extends PageBase {
 			flag = false;
 
 		Assert.assertTrue(flag);
+	}
 	}
 
 	public  void selectStayingTimeThree(String stayingTimeThree) {
@@ -580,11 +612,11 @@ public class BookingPageAction extends PageBase {
 
 	public void fillSecndAddedCityDetails(String destination_second) throws Exception {
 		clearAndSetValues(BookingLocators.getgoingToTextboxSecond(), destination_second);
-		Logs.info("User entered '" + destination_second + "' into Second Going to field");
+		//Logs.info("User entered '" + destination_second + "' into Second Going to field");
 	}
 
 	public void fillThirdAddedCityDetails(String destination_third) throws Exception {
 		clearAndSetValues(BookingLocators.getgoingToTextboxThird(), destination_third);
-		Logs.info("User entered '" + destination_third + "' into Second Going to field");
+		//Logs.info("User entered '" + destination_third + "' into Second Going to field");
 	}
 }

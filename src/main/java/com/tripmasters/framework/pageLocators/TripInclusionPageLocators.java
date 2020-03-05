@@ -6,7 +6,7 @@ public class TripInclusionPageLocators {
 
 	private static By tripInclusionDetailsHeader = By.xpath("//span[contains(.,'TRIP INCLUSION DETAILS')]");
 	private static By verifyTripinclusionPage = By.xpath("//div[@class='mainDiv']//span[contains(text(),'TRIP INCLUSION DETAILS')]");
-	private static By tripSummaryButton = By.xpath("//span[text()='Trip Summary']");
+	private static By tripSummaryButton = By.xpath("//span[text()='Trip Summary'] | //div[@class='col-12 text-center pb-3']");
 
 	public static By gettripInclusionDetailsHeader() {
 		return tripInclusionDetailsHeader;
