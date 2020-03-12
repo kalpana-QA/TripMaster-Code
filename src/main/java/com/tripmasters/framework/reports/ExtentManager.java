@@ -1,8 +1,12 @@
 package com.tripmasters.framework.reports;
 
-import com.relevantcodes.extentreports.ExtentReports;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
-public class ExtentManager {
+import com.relevantcodes.extentreports.ExtentReports;
+import com.tripmasters.framework.base.TestBase;
+
+public class ExtentManager extends TestBase {
 	
 	 private static ExtentReports extent;
 	 
@@ -11,10 +15,10 @@ public class ExtentManager {
 	            //Set HTML reporting file location
 	            String workingDir = System.getProperty("user.dir");
 	            //if (System.getProperty("os.name").toLowerCase().contains("win")) {
-	                extent = new ExtentReports(workingDir + "/target/ExtentReports/ExtentReportResults.html", true);
-	                
+	               String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+	               extent = new ExtentReports(workingDir + "/target/ExtentReports/" + timeStamp + ".html", true);
 	                extent.addSystemInfo("ProjectName", "TripMasters");
-	                extent.addSystemInfo("Environment", "Web");
+	                extent.addSystemInfo("Environment", platform);
 	                extent.addSystemInfo("HostOrg", "ImpactQA");
 	           // }
 //	            else if (System.getProperty("os.name").toLowerCase().contains("mac")) {
