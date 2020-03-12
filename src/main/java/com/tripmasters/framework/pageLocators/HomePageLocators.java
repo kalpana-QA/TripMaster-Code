@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 public class HomePageLocators {
 
 	private static By moreHighlightsBtn = By.xpath("//button[contains(.,'More Highlights & Attractions')] | //*[contains(text(),'more highlights & attractions')]");
-	private static By exploreEuropeLnk = By.xpath("//section[h1[contains(.,'popular vacation packages')]]//h3/a[contains(.,'Explore Europe')] | //div[text()='Explore Europe']");
+	private static By exploreEuropeLnk = By.xpath("(//section[h1[contains(.,'popular vacation packages')]]//div//a)[1] | //div[text()='Explore Europe']");
 	private static By romeFlorenceVeniceByTrainLnk = By.xpath("(//div[contains(text(),'other vacation packages')]/../div/h2/a)[2]");
 	private static By packageUnderOtherVacationPackageOption = By.xpath("//div[contains(text(),'other vacation packages')]/..//div[@class='swiper-slide swiper-slide-active']//a");
 	private static By romeFlorenceVeniceByTrainHeader = By.xpath("//h1[contains(.,'Rome - Florence - Venice by Train')]");

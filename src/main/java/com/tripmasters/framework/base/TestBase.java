@@ -145,7 +145,7 @@ public class TestBase {
 		passengerInfoPage = new PassengerInfoPageAction(driver);
 	}
 
-	@AfterMethod(alwaysRun = true)
+	//@AfterMethod(alwaysRun = true)
 	public static void tearDown() {
 		// gn.extent.flush();
 		// driver.quit();

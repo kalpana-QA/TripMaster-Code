@@ -66,11 +66,11 @@ public class BookingLocators {
 	private static By selectChildTraveleraPassport = By.xpath("//select[@id='txtCPAX_Nationality2']");
 
 	private static By selectWithoutAirButton = By.xpath("//*[@class='dvIntlFly']/child::span[text()='Without Air *']");
-	private static By browseHotelslink = By.xpath("//a[contains(.,' Browse ')] | //a[@class='componentSSlink btnyellowcont mb-2 ml-auto mr-auto']");
+	private static By browseHotelslink = By.xpath("(//a[contains(.,'Browse ')])[1] | //a[@class='componentSSlink btnyellowcont mb-2 ml-auto mr-auto']");
 	
-	private static By selectFirstHotel = By.xpath("(//td[@class='RoomTypeHotelListBottom m-srd-td1']//img)[1] | //a[@class='h-100 btnyellowcont pb-1 font-weight-bold'][1]");
+	private static By selectFirstHotel = By.xpath("(//td[contains(@class,'RoomTypeHotelList')]//img)[2] | //a[@class='h-100 btnyellowcont pb-1 font-weight-bold'][1]");
 	
-	private static By firstHotel = By.xpath("//a[@class='hotelHeadTitle'][1])");
+	private static By firstHotel = By.xpath("//a[@class='hotelHeadTitle'][1]");
 	private static By verifyHotel = By.xpath("(//a[contains(@class,'hotel')])[1] | //a[@id='Prod_173668' and @class='m-hotel']");
 	private final static By firstFlightDetails = By.xpath("//div[@id='divSegmentDetails1']//tbody//td");
 	private final static By actualFlightDetails = By
@@ -122,7 +122,7 @@ public class BookingLocators {
 	private static By cabinClassDropdown = By.xpath("//select[@id='qCabinOpt']");
 	private static By verifycabinClassDropdown = By.xpath("//select[@id='xCabin']");
 	private static By firstpremiumoption = By.xpath("//select[@id='qCabinOpt']//option[2]");
-	private static By verifypremiumoption = By.xpath("//div[text()='Premium Economy']");
+	private static By verifypremiumoption = By.xpath("(//div[@class='divFligth-Bottom-Right textGrey10']/text()[preceding-sibling::br])[1]//..");
 	
 
 	// ======== Locators for Mobile ===============================================================================================

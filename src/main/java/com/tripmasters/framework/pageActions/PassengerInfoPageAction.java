@@ -91,10 +91,6 @@ public class PassengerInfoPageAction extends PageBase {
 			 list.add(clearAndSetValues(BookingLocators.getsecondTravelerDOBMob(), dateOfBirth));
 			 selectOptionByValue(BookingLocators.getpassportDrpdownSecondTravellerChildMob(), passportInfo);
 		}
-             else{
-				 
-				 //===========Write code for different traveller type=====================
-			  }
 		return list;
 		}
 	}
@@ -112,8 +108,6 @@ public class PassengerInfoPageAction extends PageBase {
 			list.add(clearAndSetValues(BookingLocators.getthirdTravelerDOBMob(), dateOfBirth));
 			selectOptionByValue(BookingLocators.getpassportDrpdownThirdTraveller(), passportInfo);
 	    	return list;
-		   
-		   
 	   }
 	   else
 	   { 
