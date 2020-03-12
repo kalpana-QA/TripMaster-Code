@@ -73,13 +73,31 @@ public class BookingPageAction extends PageBase {
 	}
 	
 
-	public void selectPremiumEconomy()
+	public String selectPremiumEconomy()
 	{
-		if(TestBase.flag_Mob)
+	String actualCabin=null;
+	if(TestBase.flag_Mob)
 	{
-		clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
+
+	actualCabin = driver.findElement(HomePageLocators.getSelectPremiumEconomy()).getText();
+	clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
+
+	}  
+
+	return actualCabin;
+
 	}
-	}
+	
+	public  String selectedcabinAssert() {
+        String selectedcabin = null;
+if (!TestBase.flag_Mob)
+{
+selectedcabin = driver.findElement(BookingLocators.getFirstpremiumOption()).getText();
+ 
+}
+return selectedcabin;
+}
+
 	
 	public void doneButtonMob() throws Exception
 	{
@@ -112,6 +130,7 @@ public class BookingPageAction extends PageBase {
 
 		clickUsingJavaScript(BookingLocators.getcontinueBtn());
 		waitForElement(2);
+
 	}
 
 	public  void clickonContinueLink() throws Exception {
@@ -128,7 +147,9 @@ public class BookingPageAction extends PageBase {
 	public  String selectCheaperFlights() throws Exception {
 		String flightvalue = null;
 		if (TestBase.flag_Mob) {
+
 			flightvalue=selectCheaperFlights_Mob();
+
 		} else {
 			waitForElement(3);
 			clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
@@ -137,7 +158,9 @@ public class BookingPageAction extends PageBase {
 			clickUsingJavaScript(BookingLocators.getselectFlightOption());
 			clickUsingJavaScript(BookingLocators.getselectButtonInFlightOption1());
 			clickUsingJavaScript(BookingLocators.getcontinueLink());
+
 			waitForElement(2);
+
 		}
 		return flightvalue;
 	}
@@ -146,9 +169,10 @@ public class BookingPageAction extends PageBase {
 		
 		isElementDisplayed(BookingLocators.getcheaperFlightsLink());
 		scrollDown();
+		PageBase.waitForElement(3);
 		clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
 		String expectflightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
-		System.out.println(expectflightvalue);
+		System.out.println("expected flight is "+expectflightvalue);
 		clickUsingJavaScript(BookingLocators.getselectFlightOption());
 		clickUsingJavaScript(BookingLocators.getselectbutton());
 		isElementDisplayed(BookingLocators.getcontinueLink());
@@ -238,12 +262,12 @@ public class BookingPageAction extends PageBase {
 		{
 			if (childType.equals("Child1")) {
 				selectOptionByValue(BookingLocators.getselectChildDrpdown(), numOfChild);
-				//Logs.info("User entered number of child'" + numOfChild + "' ");
+
 				Select option = new Select(driver.findElement(By.xpath("//select[@id='xiChild1']")));
 				option.selectByValue(ageOfChild);
 				// selectOptionByValue(BookingLocators.getselectChildAgeDrpdown(),
 				// ageOfChild);
-				//Logs.info("User entered age of child'" + ageOfChild + "' ");
+
 			} else {
 				selectOptionByValue(BookingLocators.getselectChildRoom2Drpdown(), numOfChild);
 				//Logs.info("User entered number of child'" + numOfChild + "' ");
@@ -284,7 +308,13 @@ public class BookingPageAction extends PageBase {
 
 
 	public  String browseHotelsButton() throws Exception {
+
 		waitForElement(2);
+
+		if(TestBase.flag_Mob) {
+			scrollDownForMob(2);
+		}
+
 		clickUsingJavaScript(BookingLocators.getBrowseHotelsLink());
 		if(!TestBase.flag_Mob){
 			String actualhotel = driver.findElement(BookingLocators.getFirstHotel()).getText();
@@ -292,6 +322,7 @@ public class BookingPageAction extends PageBase {
 			}
 		else{
 			String actualhotel = driver.findElement(BookingLocators.getfirstHoteliOS()).getText();
+			System.out.println("*******"+actualhotel);
 			return actualhotel;
 		}
 	}
@@ -393,6 +424,8 @@ public class BookingPageAction extends PageBase {
 	}
 
 	public  void selectCabinClass(String cabinclass) {
+		if(!TestBase.flag_Mob)
+			
 		selectOptionByText(BookingLocators.getCabinClassDropdown(), cabinclass);
 	}
 
@@ -433,20 +466,7 @@ public class BookingPageAction extends PageBase {
 		selectGuestDetails(guestInfo);
 	}
 
-	public  String selectedcabinAssert() {
-
-		if (TestBase.flag_Mob)
-		{
-			//clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
-		String expectedcabin = driver.findElement(HomePageLocators.getSelectPremiumEconomy()).getText();
-		return expectedcabin;
-		}
-		else
-		{
-		String selectedcabin = driver.findElement(BookingLocators.getFirstpremiumOption()).getText();
-		   return selectedcabin;
-		}
-		}
+	
 	
 	    public String verifycabinAssert() {
 		if(TestBase.flag_Mob)
@@ -543,11 +563,20 @@ public class BookingPageAction extends PageBase {
 	}
 
 	public  void validateTripIncluisonPage() {
+		
 		boolean flag = false;
+
 		if (driver.getTitle().contains("Itinerary - Review"))
+		{
+		System.out.println("Title is "+ driver.getTitle());
+
 			flag = true;
+		}
 		else
+			{
 			flag = false;
+			
+			}
 
 		Assert.assertTrue(flag);
 	}

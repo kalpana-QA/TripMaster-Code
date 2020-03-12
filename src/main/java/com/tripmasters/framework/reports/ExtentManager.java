@@ -4,8 +4,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import com.relevantcodes.extentreports.ExtentReports;
+import com.tripmasters.framework.base.TestBase;
 
-public class ExtentManager {
+public class ExtentManager extends TestBase {
 	
 	 private static ExtentReports extent;
 	 
@@ -15,9 +16,11 @@ public class ExtentManager {
 	            String workingDir = System.getProperty("user.dir");
 	            //if (System.getProperty("os.name").toLowerCase().contains("win")) {
 	               String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+
 	                extent = new ExtentReports(workingDir + "/target/ExtentReports/" + timeStamp + ".html", true);
+
 	                extent.addSystemInfo("ProjectName", "TripMasters");
-	                extent.addSystemInfo("Environment", "Web");
+	                extent.addSystemInfo("Environment", platform);
 	                extent.addSystemInfo("HostOrg", "ImpactQA");
 	           // }
 //	            else if (System.getProperty("os.name").toLowerCase().contains("mac")) {

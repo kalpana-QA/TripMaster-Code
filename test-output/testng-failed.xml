@@ -5,19 +5,33 @@
     <listener class-name="com.tripmasters.framework.Listeners.TestListener"/>
     <listener class-name="com.tripmasters.framework.Listeners.AnnotationTransformer"/>
   </listeners>
+<<<<<<< HEAD
   <test name="Test(failed)" parallel="methods">
     <groups>
       <run>
         <include name="testdemo"/>
+=======
+  <test thread-count="5" name="Test(failed)" parallel="methods">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="regression"/>
+>>>>>>> fc64b247ddecee4b766fd9cb38eff4dc6b6b9a69
       </run>
     </groups>
     <classes>
-      <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
+      <class name="com.tripmasters.framework.testScript.HomePageTestScript">
         <methods>
+<<<<<<< HEAD
           <include name="setUp"/>
           <include name="verifySpotlightLink_TC_14" invocation-numbers="0"/>
+=======
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyFooterText_TC_16" invocation-numbers="0"/>
+>>>>>>> fc64b247ddecee4b766fd9cb38eff4dc6b6b9a69
         </methods>
-      </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
+      </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

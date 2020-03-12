@@ -8,6 +8,8 @@ import com.tripmasters.framework.base.PageBase;
 import com.tripmasters.framework.base.TestBase;
 import com.tripmasters.framework.pageLocators.HomePageLocators;
 
+import junit.framework.Assert;
+
 public class HomePageAction extends PageBase {
 
 	public HomePageAction(WebDriver driver) {
@@ -50,10 +52,16 @@ public class HomePageAction extends PageBase {
 	 * @throws Exception
 	 * @author Mrinal
 	 */
-	public void clickOnExploreEuropeLinkOnMob() throws Exception {
+	public void clickOnExploreEuropeLink() throws Exception {
 		if (TestBase.flag_Mob) {
 			scrollDown();
 			clickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
+		}
+		else {
+			
+			
+			
+			
 		}
 	}
 
@@ -76,6 +84,16 @@ public class HomePageAction extends PageBase {
 			clickUsingJavaScript(HomePageLocators.getRomeFlorenceVeniceByTrainLnk());
 		}
 		return Text;
+	}
+	public boolean moreHighlightandAttractions() throws Exception {
+		PageBase.scrollDown();
+		
+		clickUsingJavaScript(HomePageLocators.getmoreHighLightsBtn());
+	boolean moreAttractions = isElementDisplayed(HomePageLocators.getmoreHighlightsattractions());
+		Assert.assertTrue(moreAttractions);
+		return moreAttractions;
+	
+		
 	}
 
 }

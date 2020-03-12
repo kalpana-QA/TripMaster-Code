@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2020-03-04 15:19:36,576 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
 2020-03-04 15:19:36,576 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
 2020-03-04 15:19:36,577 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
@@ -230,3 +231,5 @@
 2020-03-06 13:40:38,054 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
 2020-03-06 13:42:35,078 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
 2020-03-06 15:03:01,152 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
+=======
+>>>>>>> fc64b247ddecee4b766fd9cb38eff4dc6b6b9a69
