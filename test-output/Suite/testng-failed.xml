@@ -15,10 +15,18 @@
     <classes>
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="bookingFlightAndHotelForSingleCity_TC_7" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
+      <class name="com.tripmasters.framework.testScript.HomePageTestScript">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyStartAgainLink_TC_15"/>
+          <include name="verifyFooterText_TC_16"/>
+        </methods>
+      </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

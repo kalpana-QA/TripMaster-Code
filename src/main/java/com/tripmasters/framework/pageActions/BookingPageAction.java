@@ -49,6 +49,11 @@ public class BookingPageAction extends PageBase {
 	public void selectNoMoreCitiesBtn(){
 		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
 	}
+	//demo 
+	public void clickonContinue() {
+	WebElement e =	 driver.findElement(BookingLocators.getnoMoreCitiesBtn());
+	e.click();
+	}
 
 	/**
 	 * Select guest details
@@ -116,9 +121,10 @@ public class BookingPageAction extends PageBase {
 		//Logs.info("User select '" + guestInfo + "' from Guest list");
 	}
 
-	public  void clickonContinueButton() {
+	public  void clickonContinueButton() throws Exception {
 
 		clickUsingJavaScript(BookingLocators.getcontinueBtn());
+		PageBase.waitForElement(10);
 	}
 
 	public  void clickonContinueLink() throws Exception {
@@ -175,7 +181,7 @@ public class BookingPageAction extends PageBase {
 		clickUsingJavaScript(BookingLocators.getselectFlightOption());
 		clickUsingJavaScript(BookingLocators.getselectButtonInFlightOption1());
 		clickUsingJavaScript(BookingLocators.getcontinueLink());
-		//return flightvalue;
+		return flightvalue;
 		}
 		return flightvalue;
 
@@ -405,7 +411,8 @@ public class BookingPageAction extends PageBase {
 
 	}
 
-	public  void getNoMoreCitiesButton() {
+	public  void getNoMoreCitiesButton()  {
+		
 		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
 	}
 
@@ -584,8 +591,12 @@ public class BookingPageAction extends PageBase {
 		boolean flag = false;
 		if (driver.getTitle().contains("ItineraryDetails"))
 			flag = true;
-		else
+		else if(TestBase.platform.equals("Windows")) {
 			flag = false;
+			if (driver.getTitle().contains("ItineraryDetails"))
+				flag = true;
+		}
+			
 
 		Assert.assertTrue(flag);
 	}

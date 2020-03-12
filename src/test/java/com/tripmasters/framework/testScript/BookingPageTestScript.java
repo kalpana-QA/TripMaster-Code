@@ -29,7 +29,7 @@ public class BookingPageTestScript extends TestBase {
 	private static String ActualHotel;
 	private static String ExpectedHotel;
 
-	//@Test(groups = { "smoke" }, priority = 1)
+	// @Test(groups = { "smoke" }, priority = 1)
 	public void bookingSingleRoomWithThreeAdults_TC_1(Method method) throws Exception {
 	    ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoomWith3Adults");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -155,7 +155,7 @@ public class BookingPageTestScript extends TestBase {
 		
 	}
 
-   //@Test(groups= {"smoke"},priority=3)
+  // @Test(groups= {"smoke"},priority=3)
 	public void bookingTwoRoomTwoAdult_TC_3(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom2Adult");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -228,7 +228,7 @@ public class BookingPageTestScript extends TestBase {
 		//Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 
-	@Test(groups= {"smoke"},priority=4)
+	//@Test(groups= {"smoke"},priority=4)
 	public void bookingTwoRoomThreeAdultOneChild_TC_4(Method method) throws Exception {
 		 ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom3Adult1Child");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -604,7 +604,7 @@ public class BookingPageTestScript extends TestBase {
 
 	
 
-	 //@Test(groups= {"regression"},priority=9)
+	// @Test(groups= {"regression"},priority=9)
 	public void withoutAirBookingForSingleCity_TC_19(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "withoutAirBookingForSingleCity_TC_19");
 		bookingPage.selectWithoutAir();
@@ -658,47 +658,89 @@ public class BookingPageTestScript extends TestBase {
 		//Logs.info("Verify that only particular selected hotel appears along with passenger details");
 
 	}
+	
+	
+	@Test(groups= {"testdemo"},priority=10)
+	public void multipleCities(Method method) throws Exception {
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "multipleCities");
+		bookingPage.fillLeavingFromDetails("Washington (all Airports), DC");
+		test.log(LogStatus.INFO, "User entered \"Washington (all Airports), DC\" into leaving from field");
+		bookingPage.fillGoingToCityDetails("London (England)");
+		test.log(LogStatus.INFO, "User entered \"London (England)\" into Going to from field");
+		bookingPage.selectStayingTime("3");
+		bookingPage.clickOnAddCityBtn();
+		bookingPage.fillSecndAddedCityDetails("Paris (France)");
+		test.log(LogStatus.INFO, "User entered \"Paris (France)\" into Going to from field");
+		bookingPage.clickOnAddCityBtn();
+		bookingPage.fillThirdAddedCityDetails("Rome (Italy)");
+		test.log(LogStatus.INFO, "User entered \"Rome (Italy)\" into Going to from field for adding second city");		
+		bookingPage.selectStayingTimeThree("3");
+		
+		bookingPage.clickonContinue();
+		
+		bookingPage.selectGuestDetails("1|2");
+		
+		bookingPage.clickonContinueButton();
+		bookingPage.selectCheaperFlights();
+		bookingPage.validateTripIncluisonPage();
+		test.log(LogStatus.INFO, "Validate that user is on TripInclusion Page");
+		
+	
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	//@Test(groups= {"regression"},priority=11)
 	public void removeAddedCity_TC_17(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "removeAddedCity");
 		bookingPage.clickOnBuildYourVacationDropDown();
 		PageBase.waitForElement(3);
-		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
+		bookingPage.fillLeavingFromDetails("Washington (all Airports), DC");
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
-		bookingPage.fillGoingToCityDetails("Delhi (India)");
+		bookingPage.fillGoingToCityDetails("London (England)");
 		test.log(LogStatus.INFO, "User entered \"Delhi (India)\" into Going to from field");
-		bookingPage.selectStayingTime("4");
+		bookingPage.selectStayingTime("3");
 		test.log(LogStatus.INFO, "User entered \"4\" nights staying time");
 		bookingPage.clickOnAddCityBtn();
-		bookingPage.fillSecndAddedCityDetails("Mumbai (India)");
+		bookingPage.fillSecndAddedCityDetails("Paris (France)");
 		test.log(LogStatus.INFO, "User entered \"Augsburg (Germany)\" into Going to from field for adding second city");
-		bookingPage.selectStayingTimeTwo("1");
+		bookingPage.selectStayingTimeTwo("3");
 		test.log(LogStatus.INFO, "User entered \"4\" nights staying time for the second city");
-		bookingPage.clickOnAddCityBtn();
-		bookingPage.fillThirdAddedCityDetails("Chennai -Madras (India)");
+		//bookingPage.clickOnAddCityBtn();
+		//bookingPage.fillThirdAddedCityDetails("Rome (Italy)");
 		test.log(LogStatus.INFO, "User entered \"Chennai -Madras (India)\" into Going to from field for adding Third city");
-		bookingPage.selectStayingTimeThree("1");
-		test.log(LogStatus.INFO, "User entered \"4\" nights staying time for the Third city");
+		//bookingPage.selectStayingTimeThree("3");
+		//test.log(LogStatus.INFO, "User entered \"4\" nights staying time for the Third city");
 		//bookingPage.fillBasicDetails("New York, Newark, NJ", "Delhi (India)", "4", "Mumbai (India)", "1","Chennai -Madras (India)", "1");
-		test.log(LogStatus.INFO, "Fill all the basic details for multiple cities");
-		test.log(LogStatus.INFO, "Adding multiple cities in destinations");
+		//test.log(LogStatus.INFO, "Fill all the basic details for multiple cities");
+		//test.log(LogStatus.INFO, "Adding multiple cities in destinations");
 		//Logs.info("Fill all the basic details for multiple cities");
 		//Logs.info("Adding multiple cities in destinations");
 
-		boolean actual = bookingPage.isremovecitydisplayed();
-		Assert.assertTrue(actual);
-		test.log(LogStatus.INFO,"Verify that multiple cities got selected as destinations");
-		test.log(LogStatus.INFO, "Verify that RemoveCity Link is also displayed for added cities");
+		//boolean actual = bookingPage.isremovecitydisplayed();
+		//Assert.assertTrue(actual);
+		//test.log(LogStatus.INFO,"Verify that multiple cities got selected as destinations");
+		//test.log(LogStatus.INFO, "Verify that RemoveCity Link is also displayed for added cities");
 		//Logs.info("Verify that multiple cities got selected as destinations");
 		//Logs.info("Verify that RemoveCity Link is also displayed for added cities");
-		bookingPage.deleteAddedCities();
-		test.log(LogStatus.INFO, "Delete all the added cities");
+		//bookingPage.deleteAddedCities();
+		//test.log(LogStatus.INFO, "Delete all the added cities");
 		//Logs.info("Delete all the added cities");
-		bookingPage.validateremovedcity();
-		test.log(LogStatus.INFO, "All the added cities removed successfully.Verified!");
+		//bookingPage.validateremovedcity();
+		//test.log(LogStatus.INFO, "All the added cities removed successfully.Verified!");
 		//Logs.info("All the added cities removed successfully.Verified!");
-		bookingPage.getNoMoreCitiesButton();
+		bookingPage.selectNoMoreCitiesBtn();
 		bookingPage.selectGuestDetails("1|1");
 		test.log(LogStatus.INFO, "Select Guest Details");
 		bookingPage.clickonContinueButton();
@@ -710,7 +752,7 @@ public class BookingPageTestScript extends TestBase {
 		//Logs.info("Validate that user is on TripInclusion Page");
 	}
 
-    //@Test(groups= {"regression"},priority=13)
+   // @Test(groups= {"regression"},priority=13)
 	public void verifySpotlightLink_TC_14(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "verifySpotlightLink");
 		bookingPage.selectLatinAmericaLink();
@@ -732,7 +774,7 @@ public class BookingPageTestScript extends TestBase {
 
 	
    
-   //@Test(groups= {"smoke"},priority=12)
+  // @Test(groups= {"smoke"},priority=12)
 		public void bookingDetailswithPremiumEcomomy_TC_18(Method method) throws Exception {
 			ExtentTest test =ExtentTestManager.startTest(method.getName(), "bookingDetailswithPremiumEcomomy");
 			bookingPage.clickOnBuildYourVacationDropDown();
