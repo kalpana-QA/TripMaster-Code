@@ -153,7 +153,7 @@ public class TestBase {
 		// GenerateReport2.getResult(null);
 		if (driver != null) {
 			//Logs.info("Closing browser after TestClass");
-		 driver.close();
+		// driver.close();
 		} else {
 			//Logs.error("Driver is null at AfterClass (TestBase)");
 		}

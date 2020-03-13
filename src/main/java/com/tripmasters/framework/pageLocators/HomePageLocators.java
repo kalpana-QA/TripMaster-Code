@@ -82,7 +82,10 @@ public class HomePageLocators {
 
 		return selectPremiumEconomy;
 		}
+
 	public static By getmoreHighlightsattractions() {
 		return moreHighlightsattractions;
-	}
+
+}
+
 }

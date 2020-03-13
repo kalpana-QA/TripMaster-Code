@@ -3,6 +3,7 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Suite" duration-ms="36898" started-at="2020-03-06T09:32:25Z" finished-at="2020-03-06T09:33:02Z">
     <groups>
       <group name="testdemo">
@@ -173,6 +174,25 @@
             <param index="0">
               <value>
                 <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.verifySpotlightLink_TC_14(java.lang.reflect.Method) throws java.lang.Exception]]>
+=======
+  <suite name="Suite" duration-ms="96220" started-at="2020-03-11T08:08:46Z" finished-at="2020-03-11T08:10:22Z">
+    <groups>
+      <group name="testdemo">
+        <method signature="BookingPageTestScript.multipleCities(java.lang.reflect.Method)[pri:10, instance:com.tripmasters.framework.testScript.BookingPageTestScript@31ef45e3]" name="multipleCities" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
+      </group> <!-- testdemo -->
+    </groups>
+    <test name="Test" duration-ms="96220" started-at="2020-03-11T08:08:46Z" finished-at="2020-03-11T08:10:22Z">
+      <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@31ef45e3]" name="setUp" is-config="true" duration-ms="10339" started-at="2020-03-11T13:38:46Z" finished-at="2020-03-11T13:38:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="multipleCities(java.lang.reflect.Method)[pri:10, instance:com.tripmasters.framework.testScript.BookingPageTestScript@31ef45e3]" name="multipleCities" duration-ms="85784" started-at="2020-03-11T13:38:57Z" finished-at="2020-03-11T13:40:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.multipleCities(java.lang.reflect.Method) throws java.lang.Exception]]>
+>>>>>>> 1ac9f1ecc2b65ac67232ebd26e0f94a4e54fbdef
               </value>
             </param>
           </params>
@@ -206,6 +226,7 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- verifySpotlightLink_TC_14 -->
 =======
@@ -420,6 +441,10 @@
           </reporter-output>
         </test-method> <!-- dateChanging_TC_9 -->
         <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@56ef9176]" name="tearDown" is-config="true" duration-ms="14" started-at="2020-03-06T12:24:25Z" finished-at="2020-03-06T12:24:25Z">
+=======
+        </test-method> <!-- multipleCities -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@31ef45e3]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-03-11T13:40:22Z" finished-at="2020-03-11T13:40:22Z">
+>>>>>>> 1ac9f1ecc2b65ac67232ebd26e0f94a4e54fbdef
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

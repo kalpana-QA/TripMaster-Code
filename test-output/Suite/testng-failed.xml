@@ -15,6 +15,7 @@
       <class name="com.tripmasters.framework.testScript.HomePageTestScript">
         <methods>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <include name="setUp"/>
           <include name="verifySpotlightLink_TC_14" invocation-numbers="0"/>
 =======
@@ -23,6 +24,19 @@
           <include name="verifyFooterText_TC_16" invocation-numbers="0"/>
 >>>>>>> fc64b247ddecee4b766fd9cb38eff4dc6b6b9a69
         </methods>
+=======
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
+      <class name="com.tripmasters.framework.testScript.HomePageTestScript">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyStartAgainLink_TC_15"/>
+          <include name="verifyFooterText_TC_16"/>
+        </methods>
+>>>>>>> 1ac9f1ecc2b65ac67232ebd26e0f94a4e54fbdef
       </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
     </classes>
   </test> <!-- Test(failed) -->

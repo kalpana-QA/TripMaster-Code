@@ -50,6 +50,11 @@ public class BookingPageAction extends PageBase {
 	public void selectNoMoreCitiesBtn(){
 		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
 	}
+	//demo 
+	public void clickonContinue() {
+	WebElement e =	 driver.findElement(BookingLocators.getnoMoreCitiesBtn());
+	e.click();
+	}
 
 	/**
 	 * Select guest details
@@ -65,6 +70,7 @@ public class BookingPageAction extends PageBase {
 			WebElement wb = driver.findElement(BookingLocators.getoptionListForGuestsAndRooms())
 					.findElement(By.xpath(".//li[@id='" + guestInfo + "']"));
 			clickUsingJavaScript(wb);
+
 		} else {
 			selectOptionByValue(BookingLocators.getselectGuestDrpdown(), guestInfo);
 			//Logs.info("User select '" + guestInfo + "' from Guest list");
@@ -74,6 +80,7 @@ public class BookingPageAction extends PageBase {
 	
 
 	public String selectPremiumEconomy()
+
 	{
 	String actualCabin=null;
 	if(TestBase.flag_Mob)
@@ -144,29 +151,28 @@ return selectedcabin;
 		}
 	}
 
+	
 	public  String selectCheaperFlights() throws Exception {
 		String flightvalue = null;
 		if (TestBase.flag_Mob) {
-
-			flightvalue=selectCheaperFlights_Mob();
-
-		} else {
-			waitForElement(3);
-			clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
-			waitForElement(3);
-			flightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
-			clickUsingJavaScript(BookingLocators.getselectFlightOption());
-			clickUsingJavaScript(BookingLocators.getselectButtonInFlightOption1());
-			clickUsingJavaScript(BookingLocators.getcontinueLink());
-
-			waitForElement(2);
-
+		flightvalue = selectCheaperFlights_Mob();
+		
+		} 
+		else
+		{
+		clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
+		flightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
+		clickUsingJavaScript(BookingLocators.getselectFlightOption());
+		clickUsingJavaScript(BookingLocators.getselectButtonInFlightOption1());
+		clickUsingJavaScript(BookingLocators.getcontinueLink());
+		return flightvalue;
 		}
 		return flightvalue;
-	}
 
-	public  String selectCheaperFlights_Mob() throws Exception {
-		
+		}
+
+		public  String selectCheaperFlights_Mob() throws Exception {
+
 		isElementDisplayed(BookingLocators.getcheaperFlightsLink());
 		scrollDown();
 		PageBase.waitForElement(3);
@@ -180,7 +186,8 @@ return selectedcabin;
 		scrollDown();
 		clickUsingJavaScript(BookingLocators.getcontinueLink());
 		return expectflightvalue;
-	}
+		}
+
 
 	public  void clicktoContinuePage() throws Exception {
      if(!TestBase.flag_Mob){
@@ -308,19 +315,14 @@ return selectedcabin;
 
 
 	public  String browseHotelsButton() throws Exception {
-
 		waitForElement(2);
-
-		if(TestBase.flag_Mob) {
-			scrollDownForMob(2);
-		}
-
 		clickUsingJavaScript(BookingLocators.getBrowseHotelsLink());
 		if(!TestBase.flag_Mob){
 			String actualhotel = driver.findElement(BookingLocators.getFirstHotel()).getText();
 			return actualhotel;
 			}
 		else{
+			scrollDownForMob(2);
 			String actualhotel = driver.findElement(BookingLocators.getfirstHoteliOS()).getText();
 			System.out.println("*******"+actualhotel);
 			return actualhotel;
@@ -388,7 +390,8 @@ return selectedcabin;
 
 	}
 
-	public  void getNoMoreCitiesButton() {
+	public  void getNoMoreCitiesButton()  {
+		
 		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
 	}
 
@@ -421,12 +424,15 @@ return selectedcabin;
 				break;
 			}
 		}
+		clickUsingJavaScript(BookingLocators.getcalendarDoneButton());
 	}
 
 	public  void selectCabinClass(String cabinclass) {
-		if(!TestBase.flag_Mob)
-			
+
+	if(!TestBase.flag_Mob)
+	{
 		selectOptionByText(BookingLocators.getCabinClassDropdown(), cabinclass);
+	}
 	}
 
 	/**
@@ -466,7 +472,7 @@ return selectedcabin;
 		selectGuestDetails(guestInfo);
 	}
 
-	
+
 	
 	    public String verifycabinAssert() {
 		if(TestBase.flag_Mob)
@@ -551,6 +557,7 @@ return selectedcabin;
 
 	public  void tripSummary() throws Exception 
 	{
+
 		if(TestBase.flag_Mob)
 		{
 			scrollDownForMob(4);
@@ -559,27 +566,34 @@ return selectedcabin;
 		else
 		{
 			clickUsingJavaScript(TripInclusionPageLocators.getTripSummaryButton());
-		}
 	}
-
-	public  void validateTripIncluisonPage() {
-		
+	}
+	public  void validateTripIncluisonPage()
+	{
 		boolean flag = false;
-
+	if(TestBase.flag_Mob)
+	{
 		if (driver.getTitle().contains("Itinerary - Review"))
 		{
 		System.out.println("Title is "+ driver.getTitle());
 
 			flag = true;
+
 		}
 		else
 			{
 			flag = false;
 			
 			}
-
+	}
+		else if(TestBase.platform.equals("Windows")) {
+			flag = false;
+			if (driver.getTitle().contains("ItineraryDetails"))
+				flag = true;
+		}
 		Assert.assertTrue(flag);
 	}
+	
 
 	public  void selectStayingTimeThree(String stayingTimeThree) {
 		selectOptionByValue(BookingLocators.getstayingDrpdownthree(), stayingTimeThree);

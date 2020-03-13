@@ -23,9 +23,13 @@
       <class name="com.tripmasters.framework.testScript.HomePageTestScript">
         <methods>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <include name="setUp"/>
           <include name="verifySpotlightLink_TC_14" invocation-numbers="0"/>
 =======
+=======
+          <include name="multipleCities"/>
+>>>>>>> 1ac9f1ecc2b65ac67232ebd26e0f94a4e54fbdef
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="verifyFooterText_TC_16" invocation-numbers="0"/>

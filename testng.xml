@@ -10,6 +10,7 @@
 	<groups>
 	<run>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!-- 		<include name="smoke"></include> -->
 <!-- 		<include name="regression"></include> -->
 		<include name="testdemo"></include>
@@ -18,17 +19,27 @@
 		<include name="smoke"></include>
 		<include name="regression"></include>
 >>>>>>> fc64b247ddecee4b766fd9cb38eff4dc6b6b9a69
+=======
+	<!--  	<include name="smoke"></include>  -->
+ 	<!--  	<include name="regression"></include>  -->
+ 		<include name="testdemo"></include> 
+>>>>>>> 1ac9f1ecc2b65ac67232ebd26e0f94a4e54fbdef
 	</run>
    </groups>
    
 <!-- <parameter name="browser" value="Chrome" /> -->
 		<classes>
+<<<<<<< HEAD
 		<class name="com.tripmasters.framework.testScript.HomePageTestScript" /> 
 <<<<<<< HEAD
  		<class name="com.tripmasters.framework.testScript.BookingPageTestScript" /> 
 =======
  		<class name="com.tripmasters.framework.testScript.BookingPageTestScript" />   
 >>>>>>> fc64b247ddecee4b766fd9cb38eff4dc6b6b9a69
+=======
+		<class name="com.tripmasters.framework.testScript.HomePageTestScript" />  
+	 	<class name="com.tripmasters.framework.testScript.BookingPageTestScript" />   
+>>>>>>> 1ac9f1ecc2b65ac67232ebd26e0f94a4e54fbdef
 <!--  			<class name="com.tripmasters.framework.utils.GenerateReport2" />  -->
 		</classes>
 	</test> <!-- Test -->

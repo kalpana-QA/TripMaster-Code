@@ -6,8 +6,9 @@ import java.util.Date;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.tripmasters.framework.base.TestBase;
 
+
 public class ExtentManager extends TestBase {
-	
+
 	 private static ExtentReports extent;
 	 
 	    public synchronized static ExtentReports getReporter() {
@@ -15,9 +16,10 @@ public class ExtentManager extends TestBase {
 	            //Set HTML reporting file location
 	            String workingDir = System.getProperty("user.dir");
 	            //if (System.getProperty("os.name").toLowerCase().contains("win")) {
-	               String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 
-	                extent = new ExtentReports(workingDir + "/target/ExtentReports/" + timeStamp + ".html", true);
+	            String timestamp=new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+	                extent = new ExtentReports(workingDir + "/target/ExtentReports/" + timestamp +".html", true);
+	                extent.addSystemInfo("User Name", "IQA");
 
 	                extent.addSystemInfo("ProjectName", "TripMasters");
 	                extent.addSystemInfo("Environment", platform);
