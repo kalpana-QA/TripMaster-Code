@@ -27,7 +27,6 @@ public class TestListener extends TestBase implements ITestListener {
 		iTestContext.setAttribute("WebDriver", this.driver);
 	}
 
-	@Override
 	public void onFinish(ITestContext iTestContext) {
 		System.out.println("I am in onFinish method " + iTestContext.getName());
 		// Do tier down operations for extentreports reporting!
@@ -35,7 +34,6 @@ public class TestListener extends TestBase implements ITestListener {
 		ExtentManager.getReporter().flush();
 	}
 
-	@Override
 	public void onTestStart(ITestResult iTestResult) {
 		System.out.println("I am in onTestStart method " + getTestMethodName(iTestResult) + " start");
 	}

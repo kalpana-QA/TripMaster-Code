@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="597.918" tests="14" errors="0" skipped="0" failures="13">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="1,019.465" tests="7" errors="0" skipped="0" failures="4">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="webdriver.chrome.driver" value="F:\New folder (2)\TripMasterPOM/src/test/resources/webdriver/chromedriver.exe"/>
+    <property name="webdriver.chrome.driver" value="D:\Shubham Backup\TRIP/src/test/resources/webdriver/chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="F:\New folder (2)\TripMasterPOM\target\test-classes;F:\New folder (2)\TripMasterPOM\target\classes;C:\Users\IQA\.m2\repository\io\github\bonigarcia\webdrivermanager\3.8.1\webdrivermanager-3.8.1.jar;C:\Users\IQA\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\IQA\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\IQA\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\IQA\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\IQA\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\IQA\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\IQA\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\IQA\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\IQA\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\IQA\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\IQA\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\IQA\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.8.1\maven-compiler-plugin-3.8.1.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\IQA\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\IQA\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\IQA\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-core\3.0\maven-core-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-settings\3.0\maven-settings-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-settings-builder\3.0\maven-settings-builder-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-model-builder\3.0\maven-model-builder-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-aether-provider\3.0\maven-aether-provider-3.0.jar;C:\Users\IQA\.m2\repository\org\sonatype\aether\aether-impl\1.7\aether-impl-1.7.jar;C:\Users\IQA\.m2\repository\org\sonatype\aether\aether-spi\1.7\aether-spi-1.7.jar;C:\Users\IQA\.m2\repository\org\sonatype\aether\aether-api\1.7\aether-api-1.7.jar;C:\Users\IQA\.m2\repository\org\sonatype\aether\aether-util\1.7\aether-util-1.7.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\IQA\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\IQA\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\IQA\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar;C:\Users\IQA\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-java\0.9.10\plexus-java-0.9.10.jar;C:\Users\IQA\.m2\repository\org\ow2\asm\asm\6.2\asm-6.2.jar;C:\Users\IQA\.m2\repository\com\thoughtworks\qdox\qdox\2.0-M8\qdox-2.0-M8.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.8.4\plexus-compiler-api-2.8.4.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.8.4\plexus-compiler-manager-2.8.4.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.8.4\plexus-compiler-javac-2.8.4.jar;C:\Users\IQA\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\IQA\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\IQA\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\IQA\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\IQA\.m2\repository\io\appium\java-client\7.3.0\java-client-7.3.0.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\IQA\.m2\repository\cglib\cglib\3.2.12\cglib-3.2.12.jar;C:\Users\IQA\.m2\repository\commons-validator\commons-validator\1.6\commons-validator-1.6.jar;C:\Users\IQA\.m2\repository\commons-beanutils\commons-beanutils\1.9.2\commons-beanutils-1.9.2.jar;C:\Users\IQA\.m2\repository\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;C:\Users\IQA\.m2\repository\org\springframework\spring-context\5.1.8.RELEASE\spring-context-5.1.8.RELEASE.jar;C:\Users\IQA\.m2\repository\org\springframework\spring-aop\5.1.8.RELEASE\spring-aop-5.1.8.RELEASE.jar;C:\Users\IQA\.m2\repository\org\springframework\spring-beans\5.1.8.RELEASE\spring-beans-5.1.8.RELEASE.jar;C:\Users\IQA\.m2\repository\org\springframework\spring-core\5.1.8.RELEASE\spring-core-5.1.8.RELEASE.jar;C:\Users\IQA\.m2\repository\org\springframework\spring-jcl\5.1.8.RELEASE\spring-jcl-5.1.8.RELEASE.jar;C:\Users\IQA\.m2\repository\org\springframework\spring-expression\5.1.8.RELEASE\spring-expression-5.1.8.RELEASE.jar;C:\Users\IQA\.m2\repository\org\aspectj\aspectjweaver\1.9.4\aspectjweaver-1.9.4.jar;C:\Users\IQA\.m2\repository\org\apache\maven\plugins\maven-jar-plugin\3.1.2\maven-jar-plugin-3.1.2.jar;C:\Users\IQA\.m2\repository\org\apache\maven\shared\file-management\3.0.0\file-management-3.0.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\shared\maven-shared-io\3.0.0\maven-shared-io-3.0.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-compat\3.0\maven-compat-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\wagon\wagon-provider-api\2.10\wagon-provider-api-2.10.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-archiver\3.4.0\maven-archiver-3.4.0.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-archiver\4.1.0\plexus-archiver-4.1.0.jar;C:\Users\IQA\.m2\repository\org\iq80\snappy\snappy\0.4\snappy-0.4.jar;C:\Users\IQA\.m2\repository\org\tukaani\xz\1.8\xz-1.8.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-utils\3.2.0\plexus-utils-3.2.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\plugins\maven-dependency-plugin\3.1.1\maven-dependency-plugin-3.1.1.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-repository-metadata\3.0\maven-repository-metadata-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\reporting\maven-reporting-api\3.0\maven-reporting-api-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\2.3\maven-reporting-impl-2.3.jar;C:\Users\IQA\.m2\repository\org\apache\maven\doxia\doxia-core\1.2\doxia-core-1.2.jar;C:\Users\IQA\.m2\repository\xerces\xercesImpl\2.9.1\xercesImpl-2.9.1.jar;C:\Users\IQA\.m2\repository\xml-apis\xml-apis\1.3.04\xml-apis-1.3.04.jar;C:\Users\IQA\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.4\doxia-sink-api-1.4.jar;C:\Users\IQA\.m2\repository\org\apache\maven\doxia\doxia-logging-api\1.4\doxia-logging-api-1.4.jar;C:\Users\IQA\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\1.4\doxia-site-renderer-1.4.jar;C:\Users\IQA\.m2\repository\org\apache\maven\doxia\doxia-decoration-model\1.4\doxia-decoration-model-1.4.jar;C:\Users\IQA\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml\1.4\doxia-module-xhtml-1.4.jar;C:\Users\IQA\.m2\repository\org\apache\maven\doxia\doxia-module-fml\1.4\doxia-module-fml-1.4.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-i18n\1.0-beta-7\plexus-i18n-1.0-beta-7.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-30\plexus-container-default-1.0-alpha-30.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-velocity\1.1.7\plexus-velocity-1.1.7.jar;C:\Users\IQA\.m2\repository\org\apache\velocity\velocity\1.5\velocity-1.5.jar;C:\Users\IQA\.m2\repository\oro\oro\2.0.8\oro-2.0.8.jar;C:\Users\IQA\.m2\repository\org\apache\velocity\velocity-tools\2.0\velocity-tools-2.0.jar;C:\Users\IQA\.m2\repository\commons-chain\commons-chain\1.1\commons-chain-1.1.jar;C:\Users\IQA\.m2\repository\dom4j\dom4j\1.1\dom4j-1.1.jar;C:\Users\IQA\.m2\repository\sslext\sslext\1.2-0\sslext-1.2-0.jar;C:\Users\IQA\.m2\repository\org\apache\struts\struts-core\1.3.8\struts-core-1.3.8.jar;C:\Users\IQA\.m2\repository\antlr\antlr\2.7.2\antlr-2.7.2.jar;C:\Users\IQA\.m2\repository\org\apache\struts\struts-taglib\1.3.8\struts-taglib-1.3.8.jar;C:\Users\IQA\.m2\repository\org\apache\struts\struts-tiles\1.3.8\struts-tiles-1.3.8.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-io\3.0.0\plexus-io-3.0.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\shared\maven-dependency-analyzer\1.10\maven-dependency-analyzer-1.10.jar;C:\Users\IQA\.m2\repository\org\apache\maven\shared\maven-dependency-tree\3.0.1\maven-dependency-tree-3.0.1.jar;C:\Users\IQA\.m2\repository\org\eclipse\aether\aether-util\0.9.0.M2\aether-util-0.9.0.M2.jar;C:\Users\IQA\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.0.1\maven-common-artifact-filters-3.0.1.jar;C:\Users\IQA\.m2\repository\org\apache\maven\shared\maven-artifact-transfer\0.9.1\maven-artifact-transfer-0.9.1.jar;C:\Users\IQA\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\IQA\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\IQA\.m2\repository\classworlds\classworlds\1.1\classworlds-1.1.jar;C:\Users\IQA\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\IQA\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\IQA\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\IQA\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\IQA\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\IQA\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.14.0\selenium-chrome-driver-3.14.0.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.14.0\selenium-firefox-driver-3.14.0.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar;C:\Users\IQA\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\IQA\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\IQA\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\IQA\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\IQA\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\IQA\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\IQA\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\IQA\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\IQA\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\IQA\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\IQA\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\IQA\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\IQA\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;"/>
+    <property name="java.class.path" value="D:\Shubham Backup\TRIP\target\test-classes;D:\Shubham Backup\TRIP\target\classes;C:\Users\Shubham\.m2\repository\io\github\bonigarcia\webdrivermanager\3.8.1\webdrivermanager-3.8.1.jar;C:\Users\Shubham\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Shubham\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Shubham\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\Shubham\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\Shubham\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\Shubham\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\Shubham\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\Shubham\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\Shubham\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Shubham\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Shubham\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.8.1\maven-compiler-plugin-3.8.1.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\Shubham\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\Shubham\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\Shubham\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-core\3.0\maven-core-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-settings\3.0\maven-settings-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-settings-builder\3.0\maven-settings-builder-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-model-builder\3.0\maven-model-builder-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-aether-provider\3.0\maven-aether-provider-3.0.jar;C:\Users\Shubham\.m2\repository\org\sonatype\aether\aether-impl\1.7\aether-impl-1.7.jar;C:\Users\Shubham\.m2\repository\org\sonatype\aether\aether-spi\1.7\aether-spi-1.7.jar;C:\Users\Shubham\.m2\repository\org\sonatype\aether\aether-api\1.7\aether-api-1.7.jar;C:\Users\Shubham\.m2\repository\org\sonatype\aether\aether-util\1.7\aether-util-1.7.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\Shubham\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\Shubham\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-java\0.9.10\plexus-java-0.9.10.jar;C:\Users\Shubham\.m2\repository\org\ow2\asm\asm\6.2\asm-6.2.jar;C:\Users\Shubham\.m2\repository\com\thoughtworks\qdox\qdox\2.0-M8\qdox-2.0-M8.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.8.4\plexus-compiler-api-2.8.4.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.8.4\plexus-compiler-manager-2.8.4.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.8.4\plexus-compiler-javac-2.8.4.jar;C:\Users\Shubham\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Shubham\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\Shubham\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\Shubham\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\Shubham\.m2\repository\io\appium\java-client\7.3.0\java-client-7.3.0.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Shubham\.m2\repository\cglib\cglib\3.2.12\cglib-3.2.12.jar;C:\Users\Shubham\.m2\repository\commons-validator\commons-validator\1.6\commons-validator-1.6.jar;C:\Users\Shubham\.m2\repository\commons-beanutils\commons-beanutils\1.9.2\commons-beanutils-1.9.2.jar;C:\Users\Shubham\.m2\repository\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;C:\Users\Shubham\.m2\repository\org\springframework\spring-context\5.1.8.RELEASE\spring-context-5.1.8.RELEASE.jar;C:\Users\Shubham\.m2\repository\org\springframework\spring-aop\5.1.8.RELEASE\spring-aop-5.1.8.RELEASE.jar;C:\Users\Shubham\.m2\repository\org\springframework\spring-beans\5.1.8.RELEASE\spring-beans-5.1.8.RELEASE.jar;C:\Users\Shubham\.m2\repository\org\springframework\spring-core\5.1.8.RELEASE\spring-core-5.1.8.RELEASE.jar;C:\Users\Shubham\.m2\repository\org\springframework\spring-jcl\5.1.8.RELEASE\spring-jcl-5.1.8.RELEASE.jar;C:\Users\Shubham\.m2\repository\org\springframework\spring-expression\5.1.8.RELEASE\spring-expression-5.1.8.RELEASE.jar;C:\Users\Shubham\.m2\repository\org\aspectj\aspectjweaver\1.9.4\aspectjweaver-1.9.4.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\plugins\maven-jar-plugin\3.1.2\maven-jar-plugin-3.1.2.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\shared\file-management\3.0.0\file-management-3.0.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\shared\maven-shared-io\3.0.0\maven-shared-io-3.0.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-compat\3.0\maven-compat-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\wagon\wagon-provider-api\2.10\wagon-provider-api-2.10.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-archiver\3.4.0\maven-archiver-3.4.0.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-archiver\4.1.0\plexus-archiver-4.1.0.jar;C:\Users\Shubham\.m2\repository\org\iq80\snappy\snappy\0.4\snappy-0.4.jar;C:\Users\Shubham\.m2\repository\org\tukaani\xz\1.8\xz-1.8.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-utils\3.2.0\plexus-utils-3.2.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\plugins\maven-dependency-plugin\3.1.1\maven-dependency-plugin-3.1.1.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-repository-metadata\3.0\maven-repository-metadata-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\reporting\maven-reporting-api\3.0\maven-reporting-api-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\2.3\maven-reporting-impl-2.3.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\doxia\doxia-core\1.2\doxia-core-1.2.jar;C:\Users\Shubham\.m2\repository\xerces\xercesImpl\2.9.1\xercesImpl-2.9.1.jar;C:\Users\Shubham\.m2\repository\xml-apis\xml-apis\1.3.04\xml-apis-1.3.04.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.4\doxia-sink-api-1.4.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\doxia\doxia-logging-api\1.4\doxia-logging-api-1.4.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\1.4\doxia-site-renderer-1.4.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\doxia\doxia-decoration-model\1.4\doxia-decoration-model-1.4.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml\1.4\doxia-module-xhtml-1.4.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\doxia\doxia-module-fml\1.4\doxia-module-fml-1.4.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-i18n\1.0-beta-7\plexus-i18n-1.0-beta-7.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-30\plexus-container-default-1.0-alpha-30.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-velocity\1.1.7\plexus-velocity-1.1.7.jar;C:\Users\Shubham\.m2\repository\org\apache\velocity\velocity\1.5\velocity-1.5.jar;C:\Users\Shubham\.m2\repository\oro\oro\2.0.8\oro-2.0.8.jar;C:\Users\Shubham\.m2\repository\org\apache\velocity\velocity-tools\2.0\velocity-tools-2.0.jar;C:\Users\Shubham\.m2\repository\commons-chain\commons-chain\1.1\commons-chain-1.1.jar;C:\Users\Shubham\.m2\repository\dom4j\dom4j\1.1\dom4j-1.1.jar;C:\Users\Shubham\.m2\repository\sslext\sslext\1.2-0\sslext-1.2-0.jar;C:\Users\Shubham\.m2\repository\org\apache\struts\struts-core\1.3.8\struts-core-1.3.8.jar;C:\Users\Shubham\.m2\repository\antlr\antlr\2.7.2\antlr-2.7.2.jar;C:\Users\Shubham\.m2\repository\org\apache\struts\struts-taglib\1.3.8\struts-taglib-1.3.8.jar;C:\Users\Shubham\.m2\repository\org\apache\struts\struts-tiles\1.3.8\struts-tiles-1.3.8.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-io\3.0.0\plexus-io-3.0.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\shared\maven-dependency-analyzer\1.10\maven-dependency-analyzer-1.10.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\shared\maven-dependency-tree\3.0.1\maven-dependency-tree-3.0.1.jar;C:\Users\Shubham\.m2\repository\org\eclipse\aether\aether-util\0.9.0.M2\aether-util-0.9.0.M2.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.0.1\maven-common-artifact-filters-3.0.1.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\shared\maven-artifact-transfer\0.9.1\maven-artifact-transfer-0.9.1.jar;C:\Users\Shubham\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Shubham\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Shubham\.m2\repository\classworlds\classworlds\1.1\classworlds-1.1.jar;C:\Users\Shubham\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\Shubham\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\Shubham\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Shubham\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\Shubham\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\Shubham\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.14.0\selenium-chrome-driver-3.14.0.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.14.0\selenium-firefox-driver-3.14.0.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar;C:\Users\Shubham\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Shubham\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Shubham\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Shubham\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Shubham\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Shubham\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Shubham\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Shubham\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Shubham\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Shubham\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Shubham\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\Shubham\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\Shubham\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -19,41 +19,41 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\IQA\AppData\Local\Temp\surefire7241539097980474900\surefirebooter650957458734336493.jar C:\Users\IQA\AppData\Local\Temp\surefire7241539097980474900 2020-03-06T17-32-58_011-jvmRun1 surefire9077418028574043434tmp surefire_06837177248763678432tmp"/>
-    <property name="surefire.test.class.path" value="F:\New folder (2)\TripMasterPOM\target\test-classes;F:\New folder (2)\TripMasterPOM\target\classes;C:\Users\IQA\.m2\repository\io\github\bonigarcia\webdrivermanager\3.8.1\webdrivermanager-3.8.1.jar;C:\Users\IQA\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\IQA\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\IQA\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\IQA\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\IQA\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\IQA\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\IQA\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\IQA\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\IQA\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\IQA\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\IQA\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\IQA\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.8.1\maven-compiler-plugin-3.8.1.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\IQA\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\IQA\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\IQA\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-core\3.0\maven-core-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-settings\3.0\maven-settings-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-settings-builder\3.0\maven-settings-builder-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-model-builder\3.0\maven-model-builder-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-aether-provider\3.0\maven-aether-provider-3.0.jar;C:\Users\IQA\.m2\repository\org\sonatype\aether\aether-impl\1.7\aether-impl-1.7.jar;C:\Users\IQA\.m2\repository\org\sonatype\aether\aether-spi\1.7\aether-spi-1.7.jar;C:\Users\IQA\.m2\repository\org\sonatype\aether\aether-api\1.7\aether-api-1.7.jar;C:\Users\IQA\.m2\repository\org\sonatype\aether\aether-util\1.7\aether-util-1.7.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\IQA\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\IQA\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\IQA\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar;C:\Users\IQA\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-java\0.9.10\plexus-java-0.9.10.jar;C:\Users\IQA\.m2\repository\org\ow2\asm\asm\6.2\asm-6.2.jar;C:\Users\IQA\.m2\repository\com\thoughtworks\qdox\qdox\2.0-M8\qdox-2.0-M8.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.8.4\plexus-compiler-api-2.8.4.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.8.4\plexus-compiler-manager-2.8.4.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.8.4\plexus-compiler-javac-2.8.4.jar;C:\Users\IQA\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\IQA\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\IQA\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\IQA\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\IQA\.m2\repository\io\appium\java-client\7.3.0\java-client-7.3.0.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\IQA\.m2\repository\cglib\cglib\3.2.12\cglib-3.2.12.jar;C:\Users\IQA\.m2\repository\commons-validator\commons-validator\1.6\commons-validator-1.6.jar;C:\Users\IQA\.m2\repository\commons-beanutils\commons-beanutils\1.9.2\commons-beanutils-1.9.2.jar;C:\Users\IQA\.m2\repository\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;C:\Users\IQA\.m2\repository\org\springframework\spring-context\5.1.8.RELEASE\spring-context-5.1.8.RELEASE.jar;C:\Users\IQA\.m2\repository\org\springframework\spring-aop\5.1.8.RELEASE\spring-aop-5.1.8.RELEASE.jar;C:\Users\IQA\.m2\repository\org\springframework\spring-beans\5.1.8.RELEASE\spring-beans-5.1.8.RELEASE.jar;C:\Users\IQA\.m2\repository\org\springframework\spring-core\5.1.8.RELEASE\spring-core-5.1.8.RELEASE.jar;C:\Users\IQA\.m2\repository\org\springframework\spring-jcl\5.1.8.RELEASE\spring-jcl-5.1.8.RELEASE.jar;C:\Users\IQA\.m2\repository\org\springframework\spring-expression\5.1.8.RELEASE\spring-expression-5.1.8.RELEASE.jar;C:\Users\IQA\.m2\repository\org\aspectj\aspectjweaver\1.9.4\aspectjweaver-1.9.4.jar;C:\Users\IQA\.m2\repository\org\apache\maven\plugins\maven-jar-plugin\3.1.2\maven-jar-plugin-3.1.2.jar;C:\Users\IQA\.m2\repository\org\apache\maven\shared\file-management\3.0.0\file-management-3.0.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\shared\maven-shared-io\3.0.0\maven-shared-io-3.0.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-compat\3.0\maven-compat-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\wagon\wagon-provider-api\2.10\wagon-provider-api-2.10.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-archiver\3.4.0\maven-archiver-3.4.0.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-archiver\4.1.0\plexus-archiver-4.1.0.jar;C:\Users\IQA\.m2\repository\org\iq80\snappy\snappy\0.4\snappy-0.4.jar;C:\Users\IQA\.m2\repository\org\tukaani\xz\1.8\xz-1.8.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-utils\3.2.0\plexus-utils-3.2.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\plugins\maven-dependency-plugin\3.1.1\maven-dependency-plugin-3.1.1.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\maven-repository-metadata\3.0\maven-repository-metadata-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\reporting\maven-reporting-api\3.0\maven-reporting-api-3.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\2.3\maven-reporting-impl-2.3.jar;C:\Users\IQA\.m2\repository\org\apache\maven\doxia\doxia-core\1.2\doxia-core-1.2.jar;C:\Users\IQA\.m2\repository\xerces\xercesImpl\2.9.1\xercesImpl-2.9.1.jar;C:\Users\IQA\.m2\repository\xml-apis\xml-apis\1.3.04\xml-apis-1.3.04.jar;C:\Users\IQA\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.4\doxia-sink-api-1.4.jar;C:\Users\IQA\.m2\repository\org\apache\maven\doxia\doxia-logging-api\1.4\doxia-logging-api-1.4.jar;C:\Users\IQA\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\1.4\doxia-site-renderer-1.4.jar;C:\Users\IQA\.m2\repository\org\apache\maven\doxia\doxia-decoration-model\1.4\doxia-decoration-model-1.4.jar;C:\Users\IQA\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml\1.4\doxia-module-xhtml-1.4.jar;C:\Users\IQA\.m2\repository\org\apache\maven\doxia\doxia-module-fml\1.4\doxia-module-fml-1.4.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-i18n\1.0-beta-7\plexus-i18n-1.0-beta-7.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-30\plexus-container-default-1.0-alpha-30.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-velocity\1.1.7\plexus-velocity-1.1.7.jar;C:\Users\IQA\.m2\repository\org\apache\velocity\velocity\1.5\velocity-1.5.jar;C:\Users\IQA\.m2\repository\oro\oro\2.0.8\oro-2.0.8.jar;C:\Users\IQA\.m2\repository\org\apache\velocity\velocity-tools\2.0\velocity-tools-2.0.jar;C:\Users\IQA\.m2\repository\commons-chain\commons-chain\1.1\commons-chain-1.1.jar;C:\Users\IQA\.m2\repository\dom4j\dom4j\1.1\dom4j-1.1.jar;C:\Users\IQA\.m2\repository\sslext\sslext\1.2-0\sslext-1.2-0.jar;C:\Users\IQA\.m2\repository\org\apache\struts\struts-core\1.3.8\struts-core-1.3.8.jar;C:\Users\IQA\.m2\repository\antlr\antlr\2.7.2\antlr-2.7.2.jar;C:\Users\IQA\.m2\repository\org\apache\struts\struts-taglib\1.3.8\struts-taglib-1.3.8.jar;C:\Users\IQA\.m2\repository\org\apache\struts\struts-tiles\1.3.8\struts-tiles-1.3.8.jar;C:\Users\IQA\.m2\repository\org\codehaus\plexus\plexus-io\3.0.0\plexus-io-3.0.0.jar;C:\Users\IQA\.m2\repository\org\apache\maven\shared\maven-dependency-analyzer\1.10\maven-dependency-analyzer-1.10.jar;C:\Users\IQA\.m2\repository\org\apache\maven\shared\maven-dependency-tree\3.0.1\maven-dependency-tree-3.0.1.jar;C:\Users\IQA\.m2\repository\org\eclipse\aether\aether-util\0.9.0.M2\aether-util-0.9.0.M2.jar;C:\Users\IQA\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.0.1\maven-common-artifact-filters-3.0.1.jar;C:\Users\IQA\.m2\repository\org\apache\maven\shared\maven-artifact-transfer\0.9.1\maven-artifact-transfer-0.9.1.jar;C:\Users\IQA\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\IQA\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\IQA\.m2\repository\classworlds\classworlds\1.1\classworlds-1.1.jar;C:\Users\IQA\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\IQA\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\IQA\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\IQA\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\IQA\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\IQA\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.14.0\selenium-chrome-driver-3.14.0.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.14.0\selenium-firefox-driver-3.14.0.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\Users\IQA\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar;C:\Users\IQA\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\IQA\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\IQA\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\IQA\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\IQA\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\IQA\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\IQA\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\IQA\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\IQA\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\IQA\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\IQA\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\IQA\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\IQA\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;"/>
+    <property name="sun.java.command" value="C:\Users\Shubham\AppData\Local\Temp\surefire7429637090147909284\surefirebooter6154384746482091246.jar C:\Users\Shubham\AppData\Local\Temp\surefire7429637090147909284 2020-03-17T17-32-14_924-jvmRun1 surefire4367042918886058681tmp surefire_056828128685002747tmp"/>
+    <property name="surefire.test.class.path" value="D:\Shubham Backup\TRIP\target\test-classes;D:\Shubham Backup\TRIP\target\classes;C:\Users\Shubham\.m2\repository\io\github\bonigarcia\webdrivermanager\3.8.1\webdrivermanager-3.8.1.jar;C:\Users\Shubham\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Shubham\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Shubham\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\Shubham\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\Shubham\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\Shubham\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\Shubham\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\Shubham\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\Shubham\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Shubham\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Shubham\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.8.1\maven-compiler-plugin-3.8.1.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\Shubham\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\Shubham\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\Shubham\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-core\3.0\maven-core-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-settings\3.0\maven-settings-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-settings-builder\3.0\maven-settings-builder-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-model-builder\3.0\maven-model-builder-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-aether-provider\3.0\maven-aether-provider-3.0.jar;C:\Users\Shubham\.m2\repository\org\sonatype\aether\aether-impl\1.7\aether-impl-1.7.jar;C:\Users\Shubham\.m2\repository\org\sonatype\aether\aether-spi\1.7\aether-spi-1.7.jar;C:\Users\Shubham\.m2\repository\org\sonatype\aether\aether-api\1.7\aether-api-1.7.jar;C:\Users\Shubham\.m2\repository\org\sonatype\aether\aether-util\1.7\aether-util-1.7.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\Shubham\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\Shubham\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-java\0.9.10\plexus-java-0.9.10.jar;C:\Users\Shubham\.m2\repository\org\ow2\asm\asm\6.2\asm-6.2.jar;C:\Users\Shubham\.m2\repository\com\thoughtworks\qdox\qdox\2.0-M8\qdox-2.0-M8.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.8.4\plexus-compiler-api-2.8.4.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.8.4\plexus-compiler-manager-2.8.4.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.8.4\plexus-compiler-javac-2.8.4.jar;C:\Users\Shubham\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Shubham\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\Shubham\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\Shubham\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\Shubham\.m2\repository\io\appium\java-client\7.3.0\java-client-7.3.0.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Shubham\.m2\repository\cglib\cglib\3.2.12\cglib-3.2.12.jar;C:\Users\Shubham\.m2\repository\commons-validator\commons-validator\1.6\commons-validator-1.6.jar;C:\Users\Shubham\.m2\repository\commons-beanutils\commons-beanutils\1.9.2\commons-beanutils-1.9.2.jar;C:\Users\Shubham\.m2\repository\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;C:\Users\Shubham\.m2\repository\org\springframework\spring-context\5.1.8.RELEASE\spring-context-5.1.8.RELEASE.jar;C:\Users\Shubham\.m2\repository\org\springframework\spring-aop\5.1.8.RELEASE\spring-aop-5.1.8.RELEASE.jar;C:\Users\Shubham\.m2\repository\org\springframework\spring-beans\5.1.8.RELEASE\spring-beans-5.1.8.RELEASE.jar;C:\Users\Shubham\.m2\repository\org\springframework\spring-core\5.1.8.RELEASE\spring-core-5.1.8.RELEASE.jar;C:\Users\Shubham\.m2\repository\org\springframework\spring-jcl\5.1.8.RELEASE\spring-jcl-5.1.8.RELEASE.jar;C:\Users\Shubham\.m2\repository\org\springframework\spring-expression\5.1.8.RELEASE\spring-expression-5.1.8.RELEASE.jar;C:\Users\Shubham\.m2\repository\org\aspectj\aspectjweaver\1.9.4\aspectjweaver-1.9.4.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\plugins\maven-jar-plugin\3.1.2\maven-jar-plugin-3.1.2.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\shared\file-management\3.0.0\file-management-3.0.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\shared\maven-shared-io\3.0.0\maven-shared-io-3.0.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-compat\3.0\maven-compat-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\wagon\wagon-provider-api\2.10\wagon-provider-api-2.10.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-archiver\3.4.0\maven-archiver-3.4.0.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-archiver\4.1.0\plexus-archiver-4.1.0.jar;C:\Users\Shubham\.m2\repository\org\iq80\snappy\snappy\0.4\snappy-0.4.jar;C:\Users\Shubham\.m2\repository\org\tukaani\xz\1.8\xz-1.8.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-utils\3.2.0\plexus-utils-3.2.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\plugins\maven-dependency-plugin\3.1.1\maven-dependency-plugin-3.1.1.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\maven-repository-metadata\3.0\maven-repository-metadata-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\reporting\maven-reporting-api\3.0\maven-reporting-api-3.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\2.3\maven-reporting-impl-2.3.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\doxia\doxia-core\1.2\doxia-core-1.2.jar;C:\Users\Shubham\.m2\repository\xerces\xercesImpl\2.9.1\xercesImpl-2.9.1.jar;C:\Users\Shubham\.m2\repository\xml-apis\xml-apis\1.3.04\xml-apis-1.3.04.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.4\doxia-sink-api-1.4.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\doxia\doxia-logging-api\1.4\doxia-logging-api-1.4.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\1.4\doxia-site-renderer-1.4.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\doxia\doxia-decoration-model\1.4\doxia-decoration-model-1.4.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml\1.4\doxia-module-xhtml-1.4.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\doxia\doxia-module-fml\1.4\doxia-module-fml-1.4.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-i18n\1.0-beta-7\plexus-i18n-1.0-beta-7.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-30\plexus-container-default-1.0-alpha-30.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-velocity\1.1.7\plexus-velocity-1.1.7.jar;C:\Users\Shubham\.m2\repository\org\apache\velocity\velocity\1.5\velocity-1.5.jar;C:\Users\Shubham\.m2\repository\oro\oro\2.0.8\oro-2.0.8.jar;C:\Users\Shubham\.m2\repository\org\apache\velocity\velocity-tools\2.0\velocity-tools-2.0.jar;C:\Users\Shubham\.m2\repository\commons-chain\commons-chain\1.1\commons-chain-1.1.jar;C:\Users\Shubham\.m2\repository\dom4j\dom4j\1.1\dom4j-1.1.jar;C:\Users\Shubham\.m2\repository\sslext\sslext\1.2-0\sslext-1.2-0.jar;C:\Users\Shubham\.m2\repository\org\apache\struts\struts-core\1.3.8\struts-core-1.3.8.jar;C:\Users\Shubham\.m2\repository\antlr\antlr\2.7.2\antlr-2.7.2.jar;C:\Users\Shubham\.m2\repository\org\apache\struts\struts-taglib\1.3.8\struts-taglib-1.3.8.jar;C:\Users\Shubham\.m2\repository\org\apache\struts\struts-tiles\1.3.8\struts-tiles-1.3.8.jar;C:\Users\Shubham\.m2\repository\org\codehaus\plexus\plexus-io\3.0.0\plexus-io-3.0.0.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\shared\maven-dependency-analyzer\1.10\maven-dependency-analyzer-1.10.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\shared\maven-dependency-tree\3.0.1\maven-dependency-tree-3.0.1.jar;C:\Users\Shubham\.m2\repository\org\eclipse\aether\aether-util\0.9.0.M2\aether-util-0.9.0.M2.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.0.1\maven-common-artifact-filters-3.0.1.jar;C:\Users\Shubham\.m2\repository\org\apache\maven\shared\maven-artifact-transfer\0.9.1\maven-artifact-transfer-0.9.1.jar;C:\Users\Shubham\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Shubham\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Shubham\.m2\repository\classworlds\classworlds\1.1\classworlds-1.1.jar;C:\Users\Shubham\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\Shubham\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\Shubham\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Shubham\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\Shubham\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\Shubham\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.14.0\selenium-chrome-driver-3.14.0.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.14.0\selenium-firefox-driver-3.14.0.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\Users\Shubham\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar;C:\Users\Shubham\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Shubham\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Shubham\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Shubham\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Shubham\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Shubham\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Shubham\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Shubham\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Shubham\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Shubham\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Shubham\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\Shubham\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\Shubham\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\IQA"/>
+    <property name="user.home" value="C:\Users\Shubham"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_241\jre"/>
-    <property name="basedir" value="F:\New folder (2)\TripMasterPOM"/>
+    <property name="basedir" value="D:\Shubham Backup\TRIP"/>
     <property name="file.separator" value="\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\IQA\AppData\Local\Temp\surefire7241539097980474900\surefirebooter650957458734336493.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Shubham\AppData\Local\Temp\surefire7429637090147909284\surefirebooter6154384746482091246.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_241\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_241-b07"/>
-    <property name="user.name" value="IQA"/>
+    <property name="user.name" value="Shubham"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\endorsed"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\Users\IQA\.m2\repository"/>
+    <property name="localRepository" value="C:\Users\Shubham\.m2\repository"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\IQA\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\Shubham\AppData\Local\Temp\"/>
     <property name="java.version" value="1.8.0_241"/>
-    <property name="user.dir" value="F:\New folder (2)\TripMasterPOM"/>
+    <property name="user.dir" value="D:\Shubham Backup\TRIP"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\IQA\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\TestMaven/bin;C:\Program Files\Java\jdk1.8.0_241/bin;C:\Program Files\Java\jdk1.8.0_241/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_241\bin;F:\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Users\IQA\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_241/bin/server;C:/Program Files/Java/jre1.8.0_241/bin;C:/Program Files/Java/jre1.8.0_241/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Users\Shubham\Downloads\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Shubham\AppData\Local\Microsoft\WindowsApps;C:\Users\Shubham\AppData\Roaming\npm;D:\Shubham Backup\eclipse\eclipse;;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="25.241-b07"/>
@@ -61,258 +61,152 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="bookingSingleRoomWithThreeAdults_TC_1" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="119.163"/>
-  <testcase name="bookingSingleRoomOneAdultOneChild_TC_2" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="17.991">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(BookingPageTestScript.java:114)
+  <testcase name="bookingSingleRoomOneAdultOneChild_TC_2" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="124.134">
+    <failure message="expected:&lt;[Morris Mano, Male, 01/01/1992]&gt; but was:&lt;[]&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<[Morris Mano, Male, 01/01/1992]> but was:<[]>
+	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(BookingPageTestScript.java:154)
 ]]></failure>
-    <system-out><![CDATA[json data: Windows
+    <system-out><![CDATA[I am in onStart method Test
+json data: Windows
 json data: Chrome
 json data: https://www.tripmasters.com
-nano time is: -272623284
+nano time is: -1370172628
 I am in onTestStart method bookingSingleRoomOneAdultOneChild_TC_2 start
-Fri Mar 06 17:35:45 IST 2020
+Tue Mar 17 17:32:43 IST 2020
+actual List:[]
 I am in onTestFailure method bookingSingleRoomOneAdultOneChild_TC_2 failed
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 10839
+    <system-err><![CDATA[log4j:WARN No such property [maxBackUpIndex] in org.apache.log4j.RollingFileAppender.
+log4j:WARN No such property [maxFileSize] in org.apache.log4j.FileAppender.
+log4j:WARN No such property [maxBackUpIndex] in org.apache.log4j.FileAppender.
+log4j:ERROR Could not read configuration file [D:\Shubham Backup\TRIP/src/main/resources/log4j.properties].
+java.io.FileNotFoundException: D:\Shubham Backup\TRIP\src\main\resources\log4j.properties (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:372)
+	at org.apache.log4j.PropertyConfigurator.configure(PropertyConfigurator.java:403)
+	at com.tripmasters.framework.reports.Logs.<init>(Logs.java:12)
+	at com.tripmasters.framework.testScript.BookingPageTestScript.<clinit>(BookingPageTestScript.java:22)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:24)
+	at org.testng.internal.ClassHelper.createInstance1(ClassHelper.java:423)
+	at org.testng.internal.ClassHelper.createInstance(ClassHelper.java:336)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:125)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:190)
+	at org.testng.TestClass.getInstances(TestClass.java:95)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:81)
+	at org.testng.TestClass.init(TestClass.java:73)
+	at org.testng.TestClass.<init>(TestClass.java:38)
+	at org.testng.TestRunner.initMethods(TestRunner.java:389)
+	at org.testng.TestRunner.init(TestRunner.java:271)
+	at org.testng.TestRunner.init(TestRunner.java:241)
+	at org.testng.TestRunner.<init>(TestRunner.java:167)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:663)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:260)
+	at org.testng.SuiteRunner.<init>(SuiteRunner.java:198)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1295)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1273)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1128)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+log4j:ERROR Ignoring configuration file [D:\Shubham Backup\TRIP/src/main/resources/log4j.properties].
+Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 29735
 Only local connections are allowed.
-[1583496322.556][WARNING]: Timed out connecting to Chrome, retrying...
-Mar 06, 2020 5:35:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1584446540.037][WARNING]: Timed out connecting to Chrome, retrying...
+Mar 17, 2020 5:32:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
-[1583496326.603][WARNING]: Timed out connecting to Chrome, retrying...
+[1584446544.108][WARNING]: Timed out connecting to Chrome, retrying...
 ]]></system-err>
   </testcase>
-  <testcase name="bookingTwoRoomTwoAdult_TC_3" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="14.869">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingTwoRoomTwoAdult_TC_3(BookingPageTestScript.java:172)
+  <testcase name="bookingTwoRoomThreeAdultOneChild_TC_4" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="157.681"/>
+  <testcase name="bookingTwoRoomTwoAdultTwoChild_TC_5" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="147.837"/>
+  <testcase name="bookingFlightAndHotelForSingleCity_TC_7" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="117.414"/>
+  <testcase name="bookingFlightAndHotelForMultipleCity_TC_8" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="81.787">
+    <failure message="expected [] but found [Park Plaza Wallstreet Mitte Hotel]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [] but found [Park Plaza Wallstreet Mitte Hotel]
+	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingFlightAndHotelForMultipleCity_TC_8(BookingPageTestScript.java:543)
 ]]></failure>
     <system-out><![CDATA[json data: Windows
 json data: Chrome
 json data: https://www.tripmasters.com
-nano time is: -821755048
-I am in onTestStart method bookingTwoRoomTwoAdult_TC_3 start
-Fri Mar 06 17:36:20 IST 2020
-I am in onTestFailure method bookingTwoRoomTwoAdult_TC_3 failed
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 32910
-Only local connections are allowed.
-[1583496361.495][WARNING]: Timed out connecting to Chrome, retrying...
-Mar 06, 2020 5:36:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-[1583496365.537][WARNING]: Timed out connecting to Chrome, retrying...
-]]></system-err>
-  </testcase>
-  <testcase name="bookingTwoRoomThreeAdultOneChild_TC_4" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="18.012">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingTwoRoomThreeAdultOneChild_TC_4(BookingPageTestScript.java:244)
-]]></failure>
-    <system-out><![CDATA[json data: Windows
-json data: Chrome
-json data: https://www.tripmasters.com
-nano time is: 1837029084
-I am in onTestStart method bookingTwoRoomThreeAdultOneChild_TC_4 start
-Fri Mar 06 17:37:00 IST 2020
-I am in onTestFailure method bookingTwoRoomThreeAdultOneChild_TC_4 failed
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 20562
-Only local connections are allowed.
-[1583496396.499][WARNING]: Timed out connecting to Chrome, retrying...
-Mar 06, 2020 5:36:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-[1583496400.537][WARNING]: Timed out connecting to Chrome, retrying...
-]]></system-err>
-  </testcase>
-  <testcase name="bookingTwoRoomTwoAdultTwoChild_TC_5" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="15.133">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingTwoRoomTwoAdultTwoChild_TC_5(BookingPageTestScript.java:324)
-]]></failure>
-    <system-out><![CDATA[json data: Windows
-json data: Chrome
-json data: https://www.tripmasters.com
-nano time is: 190683120
-I am in onTestStart method bookingTwoRoomTwoAdultTwoChild_TC_5 start
-Fri Mar 06 17:37:34 IST 2020
-I am in onTestFailure method bookingTwoRoomTwoAdultTwoChild_TC_5 failed
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 33260
-Only local connections are allowed.
-[1583496436.565][WARNING]: Timed out connecting to Chrome, retrying...
-Mar 06, 2020 5:37:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-[1583496440.600][WARNING]: Timed out connecting to Chrome, retrying...
-]]></system-err>
-  </testcase>
-  <testcase name="bookingFlightsWithmultipleCities_TC_6" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="15.46">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingFlightsWithmultipleCities_TC_6(BookingPageTestScript.java:388)
-]]></failure>
-    <system-out><![CDATA[json data: Windows
-json data: Chrome
-json data: https://www.tripmasters.com
-nano time is: 755651052
-I am in onTestStart method bookingFlightsWithmultipleCities_TC_6 start
-I am in onTestFailure method bookingFlightsWithmultipleCities_TC_6 failed
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 10036
-Only local connections are allowed.
-[1583496470.725][WARNING]: Timed out connecting to Chrome, retrying...
-Mar 06, 2020 5:37:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-[1583496474.765][WARNING]: Timed out connecting to Chrome, retrying...
-]]></system-err>
-  </testcase>
-  <testcase name="bookingFlightAndHotelForSingleCity_TC_7" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="14.838">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingFlightAndHotelForSingleCity_TC_7(BookingPageTestScript.java:451)
-]]></failure>
-    <system-out><![CDATA[json data: Windows
-json data: Chrome
-json data: https://www.tripmasters.com
-nano time is: 1401957284
-I am in onTestStart method bookingFlightAndHotelForSingleCity_TC_7 start
-Fri Mar 06 17:38:44 IST 2020
-I am in onTestFailure method bookingFlightAndHotelForSingleCity_TC_7 failed
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 21465
-Only local connections are allowed.
-[1583496506.171][WARNING]: Timed out connecting to Chrome, retrying...
-Mar 06, 2020 5:38:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-[1583496510.211][WARNING]: Timed out connecting to Chrome, retrying...
-]]></system-err>
-  </testcase>
-  <testcase name="bookingFlightAndHotelForMultipleCity_TC_8" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="16.644">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingFlightAndHotelForMultipleCity_TC_8(BookingPageTestScript.java:494)
-]]></failure>
-    <system-out><![CDATA[json data: Windows
-json data: Chrome
-json data: https://www.tripmasters.com
-nano time is: 1581483416
+nano time is: 556237312
 I am in onTestStart method bookingFlightAndHotelForMultipleCity_TC_8 start
+ INFO [TestNG-test=Test-5] (Logs.java:48)- Booking details filled successfully for multiple cities
+ INFO [TestNG-test=Test-5] (Logs.java:48)- Click on Continue Button
+ INFO [TestNG-test=Test-5] (Logs.java:48)- Click on Browse Hotels Button
+Unable to click on element
+ INFO [TestNG-test=Test-5] (Logs.java:48)- Select particular hotel from Hotel Options
+actual = Park Plaza Wallstreet Mitte HotelExpected = 
 I am in onTestFailure method bookingFlightAndHotelForMultipleCity_TC_8 failed
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 5887
+    <system-err><![CDATA[Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 21904
 Only local connections are allowed.
-[1583496540.332][WARNING]: Timed out connecting to Chrome, retrying...
-Mar 06, 2020 5:39:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1584447228.208][WARNING]: Timed out connecting to Chrome, retrying...
+Mar 17, 2020 5:43:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
-[1583496544.358][WARNING]: Timed out connecting to Chrome, retrying...
+[1584447232.260][WARNING]: Timed out connecting to Chrome, retrying...
 ]]></system-err>
   </testcase>
-  <testcase name="withoutAirBookingForSingleCity_TC_19" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="5.757">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.withoutAirBookingForSingleCity_TC_19(BookingPageTestScript.java:539)
+  <testcase name="getWithoutAir_TC_20" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="62.425">
+    <failure message="expected [] but found [Ambassador, New Delhi-IHCL SeleQtions]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [] but found [Ambassador, New Delhi-IHCL SeleQtions]
+	at com.tripmasters.framework.testScript.BookingPageTestScript.getWithoutAir_TC_20(BookingPageTestScript.java:676)
 ]]></failure>
     <system-out><![CDATA[json data: Windows
 json data: Chrome
 json data: https://www.tripmasters.com
-nano time is: -329823648
-I am in onTestStart method withoutAirBookingForSingleCity_TC_19 start
-I am in onTestFailure method withoutAirBookingForSingleCity_TC_19 failed
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 6685
-Only local connections are allowed.
-[1583496576.879][WARNING]: Timed out connecting to Chrome, retrying...
-Mar 06, 2020 5:39:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-[1583496580.927][WARNING]: Timed out connecting to Chrome, retrying...
-]]></system-err>
-  </testcase>
-  <testcase name="getWithoutAir_TC_20" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="5.764">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.getWithoutAir_TC_20(BookingPageTestScript.java:565)
-]]></failure>
-    <system-out><![CDATA[json data: Windows
-json data: Chrome
-json data: https://www.tripmasters.com
-nano time is: 1041656576
+nano time is: 795294708
 I am in onTestStart method getWithoutAir_TC_20 start
+ INFO [TestNG-test=Test-5] (Logs.java:48)- Click on WithOut Air Button
+ERROR [TestNG-test=Test-5] (Logs.java:60)- Unable to find the element on Page
+ INFO [TestNG-test=Test-5] (Logs.java:48)- Filled all the basic details of journey along with source & destination
+ INFO [TestNG-test=Test-5] (Logs.java:48)- Click on Browse Hotels Button
+Unable to click on element
+ INFO [TestNG-test=Test-5] (Logs.java:48)- Select particular hotel from Hotel Options
 I am in onTestFailure method getWithoutAir_TC_20 failed
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 42232
+    <system-err><![CDATA[Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 29099
 Only local connections are allowed.
-[1583496602.951][WARNING]: Timed out connecting to Chrome, retrying...
-Mar 06, 2020 5:40:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1584447332.873][WARNING]: Timed out connecting to Chrome, retrying...
+Mar 17, 2020 5:45:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
-[1583496607.007][WARNING]: Timed out connecting to Chrome, retrying...
+[1584447336.938][WARNING]: Timed out connecting to Chrome, retrying...
 ]]></system-err>
   </testcase>
-  <testcase name="removeAddedCity_TC_17" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="16.667">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.removeAddedCity_TC_17(BookingPageTestScript.java:597)
+  <testcase name="removeAddedCity_TC_17" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="115.563">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at com.tripmasters.framework.testScript.BookingPageTestScript.removeAddedCity_TC_17(BookingPageTestScript.java:757)
 ]]></failure>
     <system-out><![CDATA[json data: Windows
 json data: Chrome
 json data: https://www.tripmasters.com
-nano time is: 1568071200
+nano time is: -1109625408
 I am in onTestStart method removeAddedCity_TC_17 start
+ INFO [TestNG-test=Test-5] (Logs.java:48)- Fill all the basic details for multiple cities
+ INFO [TestNG-test=Test-5] (Logs.java:48)- Adding multiple cities in destinations
+ INFO [TestNG-test=Test-5] (Logs.java:48)- Verify that multiple cities got selected as destinations
+ INFO [TestNG-test=Test-5] (Logs.java:48)- Verify that RemoveCity Link is also displayed for added cities
+Unable to click on element
+ INFO [TestNG-test=Test-5] (Logs.java:48)- Delete all the added cities
+ INFO [TestNG-test=Test-5] (Logs.java:48)- All the added cities removed successfully.Verified!
+ INFO [TestNG-test=Test-5] (Logs.java:48)- Select Cheaper flights from flight options
 I am in onTestFailure method removeAddedCity_TC_17 failed
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 5816
+    <system-err><![CDATA[Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 37537
 Only local connections are allowed.
-[1583496629.643][WARNING]: Timed out connecting to Chrome, retrying...
-Mar 06, 2020 5:40:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1584447416.674][WARNING]: Timed out connecting to Chrome, retrying...
+Mar 17, 2020 5:46:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
-[1583496633.708][WARNING]: Timed out connecting to Chrome, retrying...
-]]></system-err>
-  </testcase>
-  <testcase name="bookingDetailswithPremiumEcomomy_TC_18" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="16.632">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcomomy_TC_18(BookingPageTestScript.java:710)
-]]></failure>
-    <system-out><![CDATA[json data: Windows
-json data: Chrome
-json data: https://www.tripmasters.com
-nano time is: 799059336
-I am in onTestStart method bookingDetailswithPremiumEcomomy_TC_18 start
-I am in onTestFailure method bookingDetailswithPremiumEcomomy_TC_18 failed
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 2996
-Only local connections are allowed.
-[1583496667.022][WARNING]: Timed out connecting to Chrome, retrying...
-Mar 06, 2020 5:41:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-[1583496671.077][WARNING]: Timed out connecting to Chrome, retrying...
-]]></system-err>
-  </testcase>
-  <testcase name="verifySpotlightLink_TC_14" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="20.857">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.verifySpotlightLink_TC_14(BookingPageTestScript.java:637)
-]]></failure>
-    <system-out><![CDATA[json data: Windows
-json data: Chrome
-json data: https://www.tripmasters.com
-nano time is: -1861592328
-I am in onTestStart method verifySpotlightLink_TC_14 start
-Unable to click on element
-I am in onTestFailure method verifySpotlightLink_TC_14 failed
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 35857
-Only local connections are allowed.
-[1583496705.021][WARNING]: Timed out connecting to Chrome, retrying...
-Mar 06, 2020 5:41:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-[1583496709.067][WARNING]: Timed out connecting to Chrome, retrying...
-]]></system-err>
-  </testcase>
-  <testcase name="dateChanging_TC_9" classname="com.tripmasters.framework.testScript.BookingPageTestScript" time="14.381">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.dateChanging_TC_9(BookingPageTestScript.java:663)
-]]></failure>
-    <system-out><![CDATA[json data: Windows
-json data: Chrome
-json data: https://www.tripmasters.com
-nano time is: 301150908
-I am in onTestStart method dateChanging_TC_9 start
-I am in onTestFailure method dateChanging_TC_9 failed
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 35783
-Only local connections are allowed.
-[1583496745.191][WARNING]: Timed out connecting to Chrome, retrying...
-Mar 06, 2020 5:42:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-[1583496749.229][WARNING]: Timed out connecting to Chrome, retrying...
+[1584447420.710][WARNING]: Timed out connecting to Chrome, retrying...
 ]]></system-err>
   </testcase>
 </testsuite>

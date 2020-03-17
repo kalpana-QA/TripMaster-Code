@@ -1,56 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 13, Errors: 0, Skipped: 0, Time elapsed: 597.918 s <<< FAILURE! - in TestSuite
-com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2  Time elapsed: 17.991 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(BookingPageTestScript.java:114)
+Tests run: 7, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 1,019.465 s <<< FAILURE! - in TestSuite
+com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2  Time elapsed: 124.134 s  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<[Morris Mano, Male, 01/01/1992]> but was:<[]>
+	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomOneAdultOneChild_TC_2(BookingPageTestScript.java:154)
 
-com.tripmasters.framework.testScript.BookingPageTestScript.bookingTwoRoomTwoAdult_TC_3  Time elapsed: 14.869 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingTwoRoomTwoAdult_TC_3(BookingPageTestScript.java:172)
+com.tripmasters.framework.testScript.BookingPageTestScript.bookingFlightAndHotelForMultipleCity_TC_8  Time elapsed: 81.787 s  <<< FAILURE!
+java.lang.AssertionError: expected [] but found [Park Plaza Wallstreet Mitte Hotel]
+	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingFlightAndHotelForMultipleCity_TC_8(BookingPageTestScript.java:543)
 
-com.tripmasters.framework.testScript.BookingPageTestScript.bookingTwoRoomThreeAdultOneChild_TC_4  Time elapsed: 18.012 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingTwoRoomThreeAdultOneChild_TC_4(BookingPageTestScript.java:244)
+com.tripmasters.framework.testScript.BookingPageTestScript.getWithoutAir_TC_20  Time elapsed: 62.425 s  <<< FAILURE!
+java.lang.AssertionError: expected [] but found [Ambassador, New Delhi-IHCL SeleQtions]
+	at com.tripmasters.framework.testScript.BookingPageTestScript.getWithoutAir_TC_20(BookingPageTestScript.java:676)
 
-com.tripmasters.framework.testScript.BookingPageTestScript.bookingTwoRoomTwoAdultTwoChild_TC_5  Time elapsed: 15.133 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingTwoRoomTwoAdultTwoChild_TC_5(BookingPageTestScript.java:324)
-
-com.tripmasters.framework.testScript.BookingPageTestScript.bookingFlightsWithmultipleCities_TC_6  Time elapsed: 15.46 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingFlightsWithmultipleCities_TC_6(BookingPageTestScript.java:388)
-
-com.tripmasters.framework.testScript.BookingPageTestScript.bookingFlightAndHotelForSingleCity_TC_7  Time elapsed: 14.838 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingFlightAndHotelForSingleCity_TC_7(BookingPageTestScript.java:451)
-
-com.tripmasters.framework.testScript.BookingPageTestScript.bookingFlightAndHotelForMultipleCity_TC_8  Time elapsed: 16.644 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingFlightAndHotelForMultipleCity_TC_8(BookingPageTestScript.java:494)
-
-com.tripmasters.framework.testScript.BookingPageTestScript.withoutAirBookingForSingleCity_TC_19  Time elapsed: 5.757 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.withoutAirBookingForSingleCity_TC_19(BookingPageTestScript.java:539)
-
-com.tripmasters.framework.testScript.BookingPageTestScript.getWithoutAir_TC_20  Time elapsed: 5.764 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.getWithoutAir_TC_20(BookingPageTestScript.java:565)
-
-com.tripmasters.framework.testScript.BookingPageTestScript.removeAddedCity_TC_17  Time elapsed: 16.667 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.removeAddedCity_TC_17(BookingPageTestScript.java:597)
-
-com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcomomy_TC_18  Time elapsed: 16.632 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcomomy_TC_18(BookingPageTestScript.java:710)
-
-com.tripmasters.framework.testScript.BookingPageTestScript.verifySpotlightLink_TC_14  Time elapsed: 20.857 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.verifySpotlightLink_TC_14(BookingPageTestScript.java:637)
-
-com.tripmasters.framework.testScript.BookingPageTestScript.dateChanging_TC_9  Time elapsed: 14.381 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.tripmasters.framework.testScript.BookingPageTestScript.dateChanging_TC_9(BookingPageTestScript.java:663)
+com.tripmasters.framework.testScript.BookingPageTestScript.removeAddedCity_TC_17  Time elapsed: 115.563 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.tripmasters.framework.testScript.BookingPageTestScript.removeAddedCity_TC_17(BookingPageTestScript.java:757)
 

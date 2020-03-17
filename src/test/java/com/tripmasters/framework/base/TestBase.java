@@ -10,6 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestContext;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -157,6 +159,26 @@ public class TestBase {
 			//Logs.error("Driver is null at AfterClass (TestBase)");
 		}
 
+	}
+
+	public void onStart(ITestContext iTestContext) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onTestFailure(ITestResult iTestResult) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onTestSkipped(ITestResult iTestResult) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

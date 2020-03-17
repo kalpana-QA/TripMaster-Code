@@ -17,18 +17,9 @@
         <methods>
           <include name="tearDown"/>
           <include name="bookingSingleRoomOneAdultOneChild_TC_2" invocation-numbers="0"/>
-          <include name="bookingTwoRoomTwoAdultTwoChild_TC_5" invocation-numbers="0"/>
-          <include name="getWithoutAir_TC_20" invocation-numbers="0"/>
-          <include name="bookingTwoRoomThreeAdultOneChild_TC_4" invocation-numbers="0"/>
-          <include name="bookingFlightAndHotelForSingleCity_TC_7" invocation-numbers="0"/>
-          <include name="withoutAirBookingForSingleCity_TC_19" invocation-numbers="0"/>
-          <include name="bookingFlightsWithmultipleCities_TC_6" invocation-numbers="0"/>
-          <include name="verifySpotlightLink_TC_14" invocation-numbers="0"/>
-          <include name="bookingTwoRoomTwoAdult_TC_3" invocation-numbers="0"/>
-          <include name="dateChanging_TC_9" invocation-numbers="0"/>
           <include name="bookingFlightAndHotelForMultipleCity_TC_8" invocation-numbers="0"/>
+          <include name="getWithoutAir_TC_20" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="bookingDetailswithPremiumEcomomy_TC_18" invocation-numbers="0"/>
           <include name="removeAddedCity_TC_17" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->

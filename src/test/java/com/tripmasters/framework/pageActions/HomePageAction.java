@@ -3,10 +3,13 @@ package com.tripmasters.framework.pageActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import com.tripmasters.framework.base.PageBase;
 import com.tripmasters.framework.base.TestBase;
 import com.tripmasters.framework.pageLocators.HomePageLocators;
+
+
 
 public class HomePageAction extends PageBase {
 
@@ -50,12 +53,27 @@ public class HomePageAction extends PageBase {
 	 * @throws Exception
 	 * @author Mrinal
 	 */
-	public void clickOnExploreEuropeLinkOnMob() throws Exception {
+	public void clickOnExploreEuropeLink() throws Exception {
 		if (TestBase.flag_Mob) {
 			scrollDown();
 			clickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
 		}
+		else {
+			
+			
+			
+			
+		}
 	}
+	
+	public boolean moreHighlightandAttractions() throws Exception {
+		PageBase.scrollDown();
+		clickUsingJavaScript(HomePageLocators.getmoreHighLightsBtn());
+	    boolean moreAttractions = isElementDisplayed(HomePageLocators.getmoreHighlightsattractions());
+		Assert.assertTrue(moreAttractions);
+		return moreAttractions;
+	}
+
 
 	/**
 	 * click On Package Displayed Under Other Vacation Packages
@@ -77,5 +95,6 @@ public class HomePageAction extends PageBase {
 		}
 		return Text;
 	}
+
 
 }

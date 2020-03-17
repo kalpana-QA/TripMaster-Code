@@ -29,6 +29,7 @@ public class BookingPageAction extends PageBase {
 	}
 
 	public void fillLeavingFromDetails(String leavingFrom) throws Exception{
+		
 		clearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
 		//Logs.info("User entered '" + leavingFrom + "' into leaving from field");
 		//test.log(LogStatus.INFO, "User entered '" + leavingFrom + "' into leaving from field");
@@ -49,6 +50,11 @@ public class BookingPageAction extends PageBase {
 	public void selectNoMoreCitiesBtn(){
 		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
 	}
+	//demo 
+	public void clickonContinue() {
+	WebElement e =	 driver.findElement(BookingLocators.getnoMoreCitiesBtn());
+	e.click();
+	}
 
 	/**
 	 * Select guest details
@@ -65,14 +71,6 @@ public class BookingPageAction extends PageBase {
 					.findElement(By.xpath(".//li[@id='" + guestInfo + "']"));
 			clickUsingJavaScript(wb);
 
-		//	clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
-		//	clickUsingJavaScript(BookingLocators.getdoneButton());
-
-			clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
-			//clickUsingJavaScript(BookingLocators.getdoneButton());
-
-			//Logs.info("User select '" + guestInfo + "' from Guest list");
-			//test.log(LogStatus.INFO, "User select '" + guestInfo + "' from Guest list");
 		} else {
 			selectOptionByValue(BookingLocators.getselectGuestDrpdown(), guestInfo);
 			//Logs.info("User select '" + guestInfo + "' from Guest list");
@@ -81,13 +79,32 @@ public class BookingPageAction extends PageBase {
 	}
 	
 
-	public void selectPremiumEconomy()
+	public String selectPremiumEconomy()
+
 	{
-		if(TestBase.flag_Mob)
+	String actualCabin=null;
+	if(TestBase.flag_Mob)
 	{
-		clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
+
+	actualCabin = driver.findElement(HomePageLocators.getSelectPremiumEconomy()).getText();
+	clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
+
+	}  
+
+	return actualCabin;
+
 	}
-	}
+	
+	public  String selectedcabinAssert() {
+        String selectedcabin = null;
+if (!TestBase.flag_Mob)
+{
+selectedcabin = driver.findElement(BookingLocators.getFirstpremiumOption()).getText();
+ 
+}
+return selectedcabin;
+}
+
 	
 	public void doneButtonMob() throws Exception
 	{
@@ -116,9 +133,11 @@ public class BookingPageAction extends PageBase {
 		//Logs.info("User select '" + guestInfo + "' from Guest list");
 	}
 
-	public  void clickonContinueButton() {
+	public  void clickonContinueButton() throws Exception {
 
 		clickUsingJavaScript(BookingLocators.getcontinueBtn());
+		waitForElement(2);
+
 	}
 
 	public  void clickonContinueLink() throws Exception {
@@ -132,28 +151,34 @@ public class BookingPageAction extends PageBase {
 		}
 	}
 
+	
 	public  String selectCheaperFlights() throws Exception {
 		String flightvalue = null;
 		if (TestBase.flag_Mob) {
-			selectCheaperFlights_Mob();
-		} else {
-			clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
-			flightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
-			clickUsingJavaScript(BookingLocators.getselectFlightOption());
-			clickUsingJavaScript(BookingLocators.getselectButtonInFlightOption1());
-			clickUsingJavaScript(BookingLocators.getcontinueLink());
+		flightvalue = selectCheaperFlights_Mob();
+		
+		} 
+		else
+		{
+		clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
+		flightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
+		clickUsingJavaScript(BookingLocators.getselectFlightOption());
+		clickUsingJavaScript(BookingLocators.getselectButtonInFlightOption1());
+		clickUsingJavaScript(BookingLocators.getcontinueLink());
+		return flightvalue;
 		}
 		return flightvalue;
 
-	}
+		}
 
-	public  String selectCheaperFlights_Mob() throws Exception {
-		
+		public  String selectCheaperFlights_Mob() throws Exception {
+
 		isElementDisplayed(BookingLocators.getcheaperFlightsLink());
 		scrollDown();
+		PageBase.waitForElement(3);
 		clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
 		String expectflightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
-		System.out.println(expectflightvalue);
+		System.out.println("expected flight is "+expectflightvalue);
 		clickUsingJavaScript(BookingLocators.getselectFlightOption());
 		clickUsingJavaScript(BookingLocators.getselectbutton());
 		isElementDisplayed(BookingLocators.getcontinueLink());
@@ -161,13 +186,13 @@ public class BookingPageAction extends PageBase {
 		scrollDown();
 		clickUsingJavaScript(BookingLocators.getcontinueLink());
 		return expectflightvalue;
-	}
+		}
+
 
 	public  void clicktoContinuePage() throws Exception {
      if(!TestBase.flag_Mob){
 			clickUsingJavaScript(BookingLocators.getcontinueImage());
      }
-
 	}
 	
 //satyam changes made according to iphone======================================
@@ -191,10 +216,7 @@ public class BookingPageAction extends PageBase {
 	
 	public  void select2NumberOfAdultForRoom1(String numOfAdults, By element) throws Exception
 	{
-	{
-	
       selectOptionByValue(element, numOfAdults);
-	}
 	}
 	
 	public void select1NumberOfAdultForRoom2(String numOfAdults,By element) throws Exception
@@ -247,20 +269,20 @@ public class BookingPageAction extends PageBase {
 		{
 			if (childType.equals("Child1")) {
 				selectOptionByValue(BookingLocators.getselectChildDrpdown(), numOfChild);
-				Logs.info("User entered number of child'" + numOfChild + "' ");
+
 				Select option = new Select(driver.findElement(By.xpath("//select[@id='xiChild1']")));
 				option.selectByValue(ageOfChild);
 				// selectOptionByValue(BookingLocators.getselectChildAgeDrpdown(),
 				// ageOfChild);
-				Logs.info("User entered age of child'" + ageOfChild + "' ");
+
 			} else {
 				selectOptionByValue(BookingLocators.getselectChildRoom2Drpdown(), numOfChild);
-				Logs.info("User entered number of child'" + numOfChild + "' ");
+				//Logs.info("User entered number of child'" + numOfChild + "' ");
 				Select option = new Select(driver.findElement(By.xpath("//select[@id='xRoom2_iChild1']")));
 				option.selectByValue(ageOfChild);
 				// selectOptionByValue(BookingLocators.getselectChildAgeRoom2Drpdown(),
 				// ageOfChild);
-				Logs.info("User entered age of child'" + ageOfChild + "' ");
+				//Logs.info("User entered age of child'" + ageOfChild + "' ");
 	   }
 	 }
 	}
@@ -292,24 +314,24 @@ public class BookingPageAction extends PageBase {
 	}
 
 
-	public  String browseHotelsButton() {
+	public  String browseHotelsButton() throws Exception {
+		waitForElement(2);
 		clickUsingJavaScript(BookingLocators.getBrowseHotelsLink());
-		if(TestBase.flag_Mob){
+		if(!TestBase.flag_Mob){
 			String actualhotel = driver.findElement(BookingLocators.getFirstHotel()).getText();
 			return actualhotel;
 			}
 		else{
+			scrollDownForMob(2);
 			String actualhotel = driver.findElement(BookingLocators.getfirstHoteliOS()).getText();
+			System.out.println("*******"+actualhotel);
 			return actualhotel;
 		}
 	}
-		
 
-	
 	public void selectFirstHotel(){
 		clickUsingJavaScript(BookingLocators.getselectFirstHotel());
 	}
-	
 
 	public  String browseSelectHotel() {
 		String expectedhotel = driver.findElement(BookingLocators.getExpectedHotel()).getText();
@@ -336,10 +358,10 @@ public class BookingPageAction extends PageBase {
 		return flightvalue;
 	}
 
-	public  void selectWithoutAir() {
+	public  void selectWithoutAir() throws Exception {
 		clickUsingJavaScript(BookingLocators.getwithoutAir());
-
-	}
+        waitForElement(2);
+        }
 
 	public  void clickChangedArriveDate() {
 		clickUsingJavaScript(BookingLocators.getChangedArriveDate());
@@ -368,7 +390,8 @@ public class BookingPageAction extends PageBase {
 
 	}
 
-	public  void getNoMoreCitiesButton() {
+	public  void getNoMoreCitiesButton()  {
+		
 		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
 	}
 
@@ -401,10 +424,15 @@ public class BookingPageAction extends PageBase {
 				break;
 			}
 		}
+		clickUsingJavaScript(BookingLocators.getcalendarDoneButton());
 	}
 
 	public  void selectCabinClass(String cabinclass) {
+
+	if(!TestBase.flag_Mob)
+	{
 		selectOptionByText(BookingLocators.getCabinClassDropdown(), cabinclass);
+	}
 	}
 
 	/**
@@ -444,20 +472,7 @@ public class BookingPageAction extends PageBase {
 		selectGuestDetails(guestInfo);
 	}
 
-	public  String selectedcabinAssert() {
 
-		if (TestBase.flag_Mob)
-		{
-			//clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
-		String expectedcabin = driver.findElement(HomePageLocators.getSelectPremiumEconomy()).getText();
-		return expectedcabin;
-		}
-		else
-		{
-		String selectedcabin = driver.findElement(BookingLocators.getFirstpremiumOption()).getText();
-		   return selectedcabin;
-		}
-		}
 	
 	    public String verifycabinAssert() {
 		if(TestBase.flag_Mob)
@@ -469,7 +484,9 @@ public class BookingPageAction extends PageBase {
 		else
 		{
 		    String expectedcabin = driver.findElement(BookingLocators.getSecondpremiumOption()).getText();
-		     return expectedcabin;
+		    String[] actualCabinClass=expectedcabin.split("Cabin: ");
+		    String actualExpectedCabin=actualCabinClass[1];
+		     return actualExpectedCabin;
 		}
 		}
 	    
@@ -501,6 +518,7 @@ public class BookingPageAction extends PageBase {
 		if (TestBase.flag_Mob) {
 			scrollDownForMob(4);
 			clickUsingJavaScript(HomePageLocators.getSpotlightOnDrpDwn());
+			
 		}
 	}
 
@@ -527,7 +545,9 @@ public class BookingPageAction extends PageBase {
 	 * @author Mrinal
 	 */
 	public  void verifyPageDisplayed(String PageTitle) {
+		if(TestBase.flag_Mob){
 		Assert.assertTrue(getPageTitle().contains(PageTitle.trim()));
+		}
 	}
 
 	public  void oldArriveDate() {
@@ -537,30 +557,45 @@ public class BookingPageAction extends PageBase {
 
 	public  void tripSummary() throws Exception 
 	{
+
 		if(TestBase.flag_Mob)
 		{
 			scrollDownForMob(4);
 			clickUsingJavaScript(TripInclusionPageLocators.getTripSummaryButton());
-		   
          }
 		else
 		{
 			clickUsingJavaScript(TripInclusionPageLocators.getTripSummaryButton());
-		}
 	}
-
-	public  void validateTripIncluisonPage() {
+	}
+	public  void validateTripIncluisonPage()
+	{
 		boolean flag = false;
-		if (driver.getTitle().contains("ItineraryDetails"))
-			flag = true;
-		else
-			flag = false;
+	if(TestBase.flag_Mob)
+	{
+		if (driver.getTitle().contains("Itinerary - Review"))
+		{
+		System.out.println("Title is "+ driver.getTitle());
 
+			flag = true;
+
+		}
+		else
+			{
+			flag = false;
+			
+			}
+	}
+		else if(TestBase.platform.equals("Windows")) {
+			flag = false;
+			if (driver.getTitle().contains("ItineraryDetails"))
+				flag = true;
+		}
 		Assert.assertTrue(flag);
 	}
+	
 
 	public  void selectStayingTimeThree(String stayingTimeThree) {
-
 		selectOptionByValue(BookingLocators.getstayingDrpdownthree(), stayingTimeThree);
 	}
 
@@ -580,11 +615,11 @@ public class BookingPageAction extends PageBase {
 
 	public void fillSecndAddedCityDetails(String destination_second) throws Exception {
 		clearAndSetValues(BookingLocators.getgoingToTextboxSecond(), destination_second);
-		Logs.info("User entered '" + destination_second + "' into Second Going to field");
+		//Logs.info("User entered '" + destination_second + "' into Second Going to field");
 	}
 
 	public void fillThirdAddedCityDetails(String destination_third) throws Exception {
 		clearAndSetValues(BookingLocators.getgoingToTextboxThird(), destination_third);
-		Logs.info("User entered '" + destination_third + "' into Second Going to field");
+		//Logs.info("User entered '" + destination_third + "' into Second Going to field");
 	}
 }
