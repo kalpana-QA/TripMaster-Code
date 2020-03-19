@@ -52,8 +52,7 @@ public class TestBase {
 		platform = JsonDataReader.getJSONData("Platform");
 		String browser = JsonDataReader.getJSONData("Browser");
 		try {
-			switch (platform) {
-			case "Windows":
+			if(platform.equalsIgnoreCase("Windows")) {
 				if (browser.equalsIgnoreCase(("Chrome"))) {
 					System.setProperty("webdriver.chrome.driver", chromeDriverFilePath);
 					// WebDriverManager.chromedriver().setup();
@@ -73,8 +72,8 @@ public class TestBase {
 					Logs.error("Browser doesn't found!!!! for " + platform + " platfrom");
 					System.err.println("Browser doesn't found!!!! for windows platfrom");
 				}
-				break;
-			case "Mobile":
+			}
+			else if(platform.equalsIgnoreCase("Mobile")){
 				if (browser.equalsIgnoreCase("Chrome")) {
 					capabilities = new DesiredCapabilities();
 
@@ -96,8 +95,9 @@ public class TestBase {
 					System.err.println("Browser doesn't found!!!! for mobile platform");
 				}
 				flag_Mob = true;
-				break;
-			case "iOS":
+			}
+			else if(platform.equalsIgnoreCase("iOS"))
+			{
 				if (browser.equalsIgnoreCase("Safari")) {
 					capabilities = new DesiredCapabilities();
 					capabilities.setCapability("deviceName", "iPhone 11 Pro Max");
@@ -115,13 +115,12 @@ public class TestBase {
 					System.err.println("browser doesn't found!!!!!!!!");
 				}
 				flag_Mob = true;
-				break;
-
-			default:
+			}
+			else{
 				//Logs.error("Platform doesn't found!!!!!!!!!!!");
 				System.err.println("Platform doesn't found!!!!!!!!!!!");
-				break;
 			}
+		
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
