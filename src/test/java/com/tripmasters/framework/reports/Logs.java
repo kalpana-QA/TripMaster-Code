@@ -9,7 +9,7 @@ public class Logs {
 	// Initialize Log4j logs
 	public Logs() {
 		Log = Logger.getLogger(Logs.class.getName());
-		PropertyConfigurator.configure(System.getProperty("user.dir")+"/src/main/resources/log4j.properties");
+		PropertyConfigurator.configure(System.getProperty("user.dir")+"/src/test/resources/log4j.properties");
 	}
 
 	public void startTestCase(String sTestCaseName) {
