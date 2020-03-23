@@ -286,6 +286,7 @@ public class BookingPageAction extends PageBase {
 	public  String browseHotelsButton() throws Exception {
 		waitForElement(2);
 		clickUsingJavaScript(BookingLocators.getBrowseHotelsLink());
+		waitForElement(2);
 		if(!TestBase.flag_Mob){
 			String actualhotel = driver.findElement(BookingLocators.getFirstHotel()).getText();
 			return actualhotel;

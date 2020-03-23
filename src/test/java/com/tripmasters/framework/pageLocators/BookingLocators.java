@@ -68,7 +68,7 @@ public class BookingLocators {
 	private static By selectWithoutAirButton = By.xpath("//*[@class='dvIntlFly']/child::span[text()='Without Air *']");
 	private static By browseHotelslink = By.xpath("(//a[contains(.,'Browse ')])[1] | //a[@class='componentSSlink btnyellowcont mb-2 ml-auto mr-auto']");
 	
-	private static By selectFirstHotel = By.xpath("(//td[contains(@class,'RoomTypeHotelList')]//img)[2] | //a[@class='h-100 btnyellowcont pb-1 font-weight-bold'][1]");
+	private static By selectFirstHotel = By.xpath("(//td[contains(@class,'RoomTypeHotelList')]//img)[1] | //a[@class='h-100 btnyellowcont pb-1 font-weight-bold'][1]");
 	
 	private static By firstHotel = By.xpath("//a[@class='hotelHeadTitle'][1]");
 	private static By verifyHotel = By.xpath("(//a[contains(@class,'hotel')])[1] | //a[@id='Prod_173668' and @class='m-hotel']");
