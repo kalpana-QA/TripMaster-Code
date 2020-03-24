@@ -488,7 +488,7 @@ public class BookingPageTestScript extends TestBase {
 		Assert.assertTrue(expected.contains(actualFlightDetails));
 		test.log(LogStatus.INFO, "Verify that only selected flight appears along with passenger details");
 		logs.info("Verify that only selected flight appears along with passenger details");
-		//Assert.assertEquals(ActualHotel, ExpectedHotel);
+	
 		test.log(LogStatus.INFO, "Verify that only particular selected hotel appears along with passenger details");
 		logs.info("Verify that only particular selected hotel appears along with passenger details");
 	}
