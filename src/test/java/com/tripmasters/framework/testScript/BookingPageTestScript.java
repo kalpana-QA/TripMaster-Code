@@ -164,7 +164,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User entered \"San Jose, CALIFORNIA\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Osaka (Japan)");
 		test.log(LogStatus.INFO, "User entered \"Osaka (Japan)\" into Going to from field");
-		bookingPage.selectValueFromCalendar();
+		//bookingPage.selectValueFromCalendar();
 		bookingPage.selectStayingTime("6");
 		test.log(LogStatus.INFO, "User entered \"6\" nights staying time");	
 		bookingPage.selectNoMoreCitiesBtn();
