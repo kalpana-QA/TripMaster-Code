@@ -39,7 +39,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
 		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
-		bookingPage.selectValueFromCalendar();
+		//bookingPage.selectValueFromCalendar();
 		bookingPage.selectStayingTime("4");
 		test.log(LogStatus.INFO, "User entered \"4\" nights staying time");	
 		bookingPage.selectNoMoreCitiesBtn();
@@ -106,7 +106,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User entered \"Philadelphia, PA\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
 		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
-		bookingPage.selectValueFromCalendar();
+		//bookingPage.selectValueFromCalendar();
 		bookingPage.selectStayingTime("6");
 		test.log(LogStatus.INFO, "User entered \"6\" nights staying time");	
 		 bookingPage.selectNoMoreCitiesBtn();

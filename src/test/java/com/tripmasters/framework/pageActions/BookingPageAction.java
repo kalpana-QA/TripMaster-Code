@@ -130,9 +130,9 @@ public class BookingPageAction extends PageBase {
 		if (TestBase.flag_Mob) {
 			flightvalue=selectCheaperFlights_Mob();
 		} else {
-			waitForElement(8);
+			waitForElement(4);
 			clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
-			waitForElement(8);
+			waitForElement(4);
 			flightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
 			clickUsingJavaScript(BookingLocators.getselectFlightOption());
 			clickUsingJavaScript(BookingLocators.getselectButtonInFlightOption1());

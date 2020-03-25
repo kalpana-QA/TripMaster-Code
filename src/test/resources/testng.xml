@@ -18,7 +18,7 @@
 <!-- <parameter name="browser" value="Chrome" /> -->
 		<classes>
 		<class name="com.tripmasters.framework.testScript.HomePageTestScript" /> 
-  		<class name="com.tripmasters.framework.testScript.BookingPageTestScript" /> 
+<!--   		<class name="com.tripmasters.framework.testScript.BookingPageTestScript" />  -->
 <!--  			<class name="com.tripmasters.framework.utils.GenerateReport2" />  -->
 		</classes>
 	</test> <!-- Test -->
