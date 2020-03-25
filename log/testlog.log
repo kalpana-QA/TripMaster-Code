@@ -228,3 +228,8 @@
 2020-03-23 12:19:01,477 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
 2020-03-23 12:19:11,049 - com.tripmasters.framework.reports.Logs -INFO - Verify that only selected flight appears along with passenger details
 2020-03-23 12:19:11,049 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
+2020-03-25 17:16:15,996 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
+2020-03-25 17:16:16,000 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
+2020-03-25 17:16:16,000 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
+2020-03-25 17:16:16,000 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
+2020-03-25 17:16:16,001 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
