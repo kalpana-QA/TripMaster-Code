@@ -182,6 +182,7 @@ public class PageBase {
 		try {
 			waitForElement(5);
 			WebElement element = driver.findElement(FieldElement);
+			waitForElement(5);
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", element);
 			waitForElement(5);
