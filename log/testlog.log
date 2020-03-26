@@ -271,3 +271,10 @@
 2020-03-26 11:44:14,839 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
 2020-03-26 11:44:24,965 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
 2020-03-26 11:44:45,024 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
+2020-03-26 15:15:07,401 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-26 15:16:34,217 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
+2020-03-26 15:16:34,218 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
+2020-03-26 15:16:34,218 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
+2020-03-26 15:16:34,218 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
+2020-03-26 15:16:34,219 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
+2020-03-26 15:16:47,770 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
