@@ -233,3 +233,21 @@
 2020-03-25 17:16:16,000 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
 2020-03-25 17:16:16,000 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
 2020-03-25 17:16:16,001 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
+2020-03-26 10:54:22,694 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
+2020-03-26 10:54:22,708 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
+2020-03-26 10:54:22,708 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
+2020-03-26 10:54:22,709 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
+2020-03-26 10:54:22,709 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
+2020-03-26 10:55:10,427 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
+2020-03-26 10:55:27,295 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
+2020-03-26 10:55:27,312 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-03-26 10:56:12,737 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
+2020-03-26 10:56:12,757 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
+2020-03-26 10:56:40,671 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
+2020-03-26 10:56:45,715 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
+2020-03-26 10:57:08,978 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
+2020-03-26 10:57:08,991 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
+2020-03-26 10:57:35,679 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
+2020-03-26 10:57:49,541 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
+2020-03-26 10:57:54,616 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
+2020-03-26 10:58:21,445 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
