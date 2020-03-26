@@ -181,7 +181,8 @@ public class PageBase {
 
 	public static void clickUsingJavaScript(By FieldElement) {
 		try {
-			waitForElement(10);
+			waitForElement(30);
+			System.out.println("waited for 30 secs");
 			WebElement element = driver.findElement(FieldElement);
 			waitForElement(15);
 			System.out.println("waited for 15 secs");
