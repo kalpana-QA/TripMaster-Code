@@ -180,6 +180,7 @@ public class PageBase {
 	public static void clickUsingJavaScript(By FieldElement) {
 
 		try {
+			waitForElement(5);
 			WebElement element = driver.findElement(FieldElement);
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", element);
