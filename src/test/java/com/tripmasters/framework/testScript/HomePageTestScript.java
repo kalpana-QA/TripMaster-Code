@@ -19,10 +19,12 @@ public class HomePageTestScript extends TestBase {
 
 	static Logs logs=new Logs();
 	
-	 @Test(groups = { "regression" }, priority = 15)
+	 @Test(groups = { "smoke" }, priority = 15)
 	public void verifyMoreHighlightAndAttractionLinks_TC_11(Method method) throws Exception {
+		Thread.sleep(20000);
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyMoreHighlightAndAttractionLinks_TC_11");
 		String homePageTitle = homePage.getPageTitle();
+		Thread.sleep(10000);
 		PageBase.clickUsingJavaScript(HomePageLocators.getmoreHighLightsBtn());
 		test.log(LogStatus.INFO, "User clicked on More HighLights & Attraction Links");
 		boolean amazonLinkDisplayed = homePage.isElementDisplayed(HomePageLocators.getTheLink("The Amazon"));

@@ -1,4 +1,4 @@
-	package com.tripmasters.framework.testScript;
+package com.tripmasters.framework.testScript;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -9,8 +9,6 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
-//import com.tripmasters.framework.actions.BookingPageAction;
 import com.tripmasters.framework.base.PageBase;
 import com.tripmasters.framework.base.TestBase;
 import com.tripmasters.framework.pageLocators.BookingLocators;
@@ -541,7 +539,7 @@ public class BookingPageTestScript extends TestBase {
 	}
 	
 
-	 @Test(groups= {"regression"},priority=9)
+	 @Test(groups= {"smoke"},priority=9)
 	public void withoutAirBookingForSingleCity_TC_19(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "withoutAirBookingForSingleCity_TC_19");
 		bookingPage.selectWithoutAir();
@@ -569,7 +567,7 @@ public class BookingPageTestScript extends TestBase {
 		logs.info("Verify that only particular selected hotel appears along with passenger details");
 	}
 	 
-	@Test(groups= {"regression"},priority=10)
+	@Test(groups= {"smoke"},priority=10)
 	public void getWithoutAir_TC_20(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "getWithoutAir");
 		bookingPage.getWithoutButton();
@@ -600,7 +598,7 @@ public class BookingPageTestScript extends TestBase {
 
 	}
 
-	@Test(groups= {"regression"},priority=11)
+	@Test(groups= {"smoke"},priority=11)
 	public void removeAddedCity_TC_17(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "removeAddedCity");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -660,7 +658,7 @@ public class BookingPageTestScript extends TestBase {
         logs.info("Spotlight link verified!");
 	}
 	
-    @Test(groups= {"regression"},priority=14)
+    @Test(groups= {"smoke"},priority=14)
 	public void dateChanging_TC_9(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "verify DateChanging functionality");
 		bookingPage.clickOnBuildYourVacationDropDown();

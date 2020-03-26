@@ -251,3 +251,23 @@
 2020-03-26 10:57:49,541 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
 2020-03-26 10:57:54,616 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
 2020-03-26 10:58:21,445 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
+2020-03-26 11:36:00,699 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-03-26 11:36:41,819 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
+2020-03-26 11:36:44,316 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-03-26 11:36:52,537 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-03-26 11:38:28,975 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
+2020-03-26 11:38:36,060 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-03-26 11:40:12,737 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
+2020-03-26 11:40:23,411 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic details of journey:Source,Destination & Staying Time
+2020-03-26 11:40:30,491 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-03-26 11:40:57,320 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-03-26 11:41:02,437 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-03-26 11:41:36,276 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
+2020-03-26 11:41:36,385 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-26 11:41:55,195 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
+2020-03-26 11:44:14,790 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
+2020-03-26 11:44:14,790 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
+2020-03-26 11:44:14,838 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
+2020-03-26 11:44:14,839 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
+2020-03-26 11:44:24,965 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
+2020-03-26 11:44:45,024 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
