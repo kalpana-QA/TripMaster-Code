@@ -284,7 +284,7 @@ public class BookingPageAction extends PageBase {
 
 
 	public  String browseHotelsButton() throws Exception {
-		waitForElement(2);
+		waitForElement(5);
 		clickUsingJavaScript(BookingLocators.getBrowseHotelsLink());
 		waitForElement(2);
 		if(!TestBase.flag_Mob){

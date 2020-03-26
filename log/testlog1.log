@@ -6299,3 +6299,16 @@
 2020-03-26 15:16:34,218 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - London - Paris and Beyond Link is displayed.
 2020-03-26 15:16:34,219 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - verifyMoreHighlightAndAttractionLinks is Passed.
 2020-03-26 15:16:47,770 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-03-26 16:39:59,507 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-03-26 16:40:26,329 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on WithOut Air Button
+2020-03-26 16:40:36,381 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-03-26 16:41:38,944 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Filled all the basic details of journey along with source & destination
+2020-03-26 16:42:26,399 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Browse Hotels Button
+2020-03-26 16:42:41,483 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select particular hotel from Hotel Options
+2020-03-26 16:47:29,886 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-03-26 16:47:59,862 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on WithOut Air Button
+2020-03-26 16:48:09,924 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to find the element on Page
+2020-03-26 16:49:12,635 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Filled all the basic details of journey along with source & destination
+2020-03-26 16:50:00,686 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Browse Hotels Button
+2020-03-26 16:50:22,528 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select particular hotel from Hotel Options
+2020-03-26 16:50:22,534 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Verify that only particular selected hotel appears along with passenger details

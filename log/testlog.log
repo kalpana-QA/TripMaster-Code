@@ -278,3 +278,16 @@
 2020-03-26 15:16:34,218 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
 2020-03-26 15:16:34,219 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
 2020-03-26 15:16:47,770 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-26 16:39:59,507 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-26 16:40:26,329 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
+2020-03-26 16:40:36,381 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-26 16:41:38,944 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
+2020-03-26 16:42:26,399 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-03-26 16:42:41,483 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-03-26 16:47:29,886 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-26 16:47:59,862 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
+2020-03-26 16:48:09,924 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-26 16:49:12,635 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
+2020-03-26 16:50:00,686 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-03-26 16:50:22,528 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-03-26 16:50:22,534 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details

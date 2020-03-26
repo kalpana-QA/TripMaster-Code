@@ -439,7 +439,7 @@ public class BookingPageTestScript extends TestBase {
 		logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 	
-	@Test(groups= {"smoke"},priority=7)
+	@Test(groups= {"testdemo"},priority=7)
 	public void bookingFlightAndHotelForSingleCity_TC_7(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "bookingFlightAndHotelForSingleCity");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -491,7 +491,7 @@ public class BookingPageTestScript extends TestBase {
 		logs.info("Verify that only particular selected hotel appears along with passenger details");
 	}
 		
-	@Test(groups= {"smoke"},priority=8)
+	@Test(groups= {"testdemo"},priority=8)
 	public void bookingFlightAndHotelForMultipleCity_TC_8(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "bookingFlightAndHotelForMultipleCity");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -539,7 +539,7 @@ public class BookingPageTestScript extends TestBase {
 	}
 	
 
-	 @Test(groups= {"smoke"},priority=9)
+	 @Test(groups= {"testdemo"},priority=9)
 	public void withoutAirBookingForSingleCity_TC_19(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "withoutAirBookingForSingleCity_TC_19");
 		bookingPage.selectWithoutAir();
@@ -567,7 +567,7 @@ public class BookingPageTestScript extends TestBase {
 		logs.info("Verify that only particular selected hotel appears along with passenger details");
 	}
 	 
-	@Test(groups= {"smoke"},priority=10)
+	@Test(groups= {"testdemo"},priority=10)
 	public void getWithoutAir_TC_20(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "getWithoutAir");
 		bookingPage.getWithoutButton();
