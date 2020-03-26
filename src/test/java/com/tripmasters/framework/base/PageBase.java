@@ -181,10 +181,10 @@ public class PageBase {
 
 	public static void clickUsingJavaScript(By FieldElement) {
 		try {
-			waitForElement(5);
-			WebElement element = driver.findElement(FieldElement);
 			waitForElement(10);
-			System.out.println("waited for 10 secs");
+			WebElement element = driver.findElement(FieldElement);
+			waitForElement(15);
+			System.out.println("waited for 15 secs");
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", element);
 			waitForElement(5);
