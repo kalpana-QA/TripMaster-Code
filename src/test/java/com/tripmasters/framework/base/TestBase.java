@@ -6,6 +6,7 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.json.simple.parser.ParseException;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.CapabilityType;
@@ -57,7 +58,8 @@ public class TestBase {
 					System.setProperty("webdriver.chrome.driver", chromeDriverFilePath);
 					// WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver();
-					driver.manage().window().maximize();
+					//driver.manage().window().maximize();
+					driver.manage().window().setSize(new Dimension(1044,784));
 					//Logs.info("ChromeDriver instantiated for " + platform + " platform.");
 					flag = true;
 
