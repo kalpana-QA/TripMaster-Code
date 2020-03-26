@@ -29,7 +29,7 @@ public class BookingPageTestScript extends TestBase {
 	private static String ActualHotel;
 	private static String ExpectedHotel;
 
-	//@Test(groups = { "smoke" }, priority = 1)
+	@Test(groups = { "smoke" }, priority = 1)
 	public void bookingSingleRoomWithThreeAdults_TC_1(Method method) throws Exception {
 	    ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoomWith3Adults");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -95,7 +95,7 @@ public class BookingPageTestScript extends TestBase {
 	}
 	
 
-	//@Test(groups= {"smoke"},priority=2)
+	@Test(groups= {"smoke"},priority=2)
 	public void bookingSingleRoomOneAdultOneChild_TC_2(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoom1Adult1Child");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -154,7 +154,7 @@ public class BookingPageTestScript extends TestBase {
 		
 	}
 
- //@Test(groups= {"smoke"},priority=3)
+ @Test(groups= {"smoke"},priority=3)
 	public void bookingTwoRoomTwoAdult_TC_3(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom2Adult");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -225,7 +225,7 @@ public class BookingPageTestScript extends TestBase {
 	//	logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 
-	//@Test(groups= {"smoke"},priority=4)
+	@Test(groups= {"smoke"},priority=4)
 	public void bookingTwoRoomThreeAdultOneChild_TC_4(Method method) throws Exception {
 		 ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom3Adult1Child");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -306,7 +306,7 @@ public class BookingPageTestScript extends TestBase {
 		//logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 
-	//@Test(groups= {"smoke"},priority=5)
+	@Test(groups= {"smoke"},priority=5)
 	public void bookingTwoRoomTwoAdultTwoChild_TC_5(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "booking2Room2Adult2Child");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -471,7 +471,7 @@ public class BookingPageTestScript extends TestBase {
 		ActualHotel = bookingPage.browseHotelsButton();
 		test.log(LogStatus.INFO, "Click on Browse Hotels Button");
 		logs.info("Click on Browse Hotels Button");
-		bookingPage.selectFirstHotel();
+		bookingPage.selectFirstHotel_SingleCity();
 		PageBase.scrollDownForMob(1);
 		ExpectedHotel = bookingPage.browseSelectHotel();
 		test.log(LogStatus.INFO, "Select particular hotel from Hotel Options");
@@ -712,7 +712,7 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.tripSummary();
 	}
 
-   @Test(groups= {"testdemo"},priority=12)
+   @Test(groups= {"smoke"},priority=12)
 		public void bookingDetailswithPremiumEcomomy_TC_18(Method method) throws Exception {
 			ExtentTest test =ExtentTestManager.startTest(method.getName(), "bookingDetailswithPremiumEcomomy");
 			bookingPage.clickOnBuildYourVacationDropDown();

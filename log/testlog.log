@@ -291,3 +291,11 @@
 2020-03-26 16:50:00,686 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
 2020-03-26 16:50:22,528 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
 2020-03-26 16:50:22,534 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
+2020-03-26 17:26:30,980 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-26 17:34:29,341 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-26 17:35:27,329 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
+2020-03-26 17:35:29,617 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-03-26 17:35:47,723 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-03-26 17:36:36,390 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-03-26 17:37:31,457 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-03-26 17:44:49,377 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.

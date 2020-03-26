@@ -69,7 +69,7 @@ public class BookingLocators {
 	private static By browseHotelslink = By.xpath("(//a[contains(.,'Browse ')])[1] | //a[@class='componentSSlink btnyellowcont mb-2 ml-auto mr-auto']");
 	
 	private static By selectFirstHotel = By.xpath("(//td[contains(@class,'RoomTypeHotelList')]//img[contains(@class,'m-srd-img1')])[1] | //a[@class='h-100 btnyellowcont pb-1 font-weight-bold'][1]");
-	
+	private static By selectFirstHotel_SingleCity=By.xpath("(//td[contains(@class,'RoomTypeHotelList')]//img[contains(@class,'m-srd-img2')])[1]");
 	private static By firstHotel = By.xpath("//a[@class='hotelHeadTitle'][1]");
 	private static By verifyHotel = By.xpath("(//a[contains(@class,'hotel')])[1] | //a[@id='Prod_173668' and @class='m-hotel']");
 	private final static By firstFlightDetails = By.xpath("//div[@id='divSegmentDetails1']//tbody//td");
@@ -694,5 +694,9 @@ public static By getpassportDrpdownSecondTravellerChildMob() {
 	{
 		return verifyTraveler3NameMob;
 
+	}
+	public static By getselectFirstHotel_SingleCity(){
+		
+		return selectFirstHotel_SingleCity;
 	}
 }

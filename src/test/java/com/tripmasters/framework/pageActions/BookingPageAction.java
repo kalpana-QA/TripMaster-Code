@@ -301,6 +301,11 @@ public class BookingPageAction extends PageBase {
 		clickUsingJavaScript(BookingLocators.getselectFirstHotel());
 	}
 
+	public void selectFirstHotel_SingleCity(){
+		
+		clickUsingJavaScript(BookingLocators.getselectFirstHotel_SingleCity());
+	}
+	
 	public  String browseSelectHotel() {
 		String expectedhotel = driver.findElement(BookingLocators.getExpectedHotel()).getText();
 		return expectedhotel;
