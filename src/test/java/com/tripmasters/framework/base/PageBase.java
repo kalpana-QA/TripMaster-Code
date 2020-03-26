@@ -156,12 +156,14 @@ public class PageBase {
 	public static String clearAndSetValues(By FieldElement, String StringToBeEntered) throws Exception {
 
 		try {
+			waitForElement(5);
 			WebElement element = driver.findElement(FieldElement);
+			waitForElement(5);
 			highlightElement(element);
 			element.clear();
 			// element.sendKeys(StringToBeEntered);
 			element.sendKeys(StringToBeEntered);// Keys.TAB);
-			waitForElement(3);
+			waitForElement(5);
 		} catch (Exception e) {
 			Logs.error("Unable to find the element on Page");
 			// e.printStackTrace();
@@ -178,11 +180,11 @@ public class PageBase {
 	 **/
 
 	public static void clickUsingJavaScript(By FieldElement) {
-
 		try {
 			waitForElement(5);
 			WebElement element = driver.findElement(FieldElement);
-			waitForElement(5);
+			waitForElement(10);
+			System.out.println("waited for 10 secs");
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", element);
 			waitForElement(5);
