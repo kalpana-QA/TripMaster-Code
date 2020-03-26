@@ -189,7 +189,7 @@ public class PageBase {
 			executor.executeScript("arguments[0].click();", element);
 			waitForElement(5);
 		} catch (Exception e) {
-			System.out.println("Unable to click on element");
+			System.out.println("Unable to click on element"+ FieldElement);
 		}
 	}
 
