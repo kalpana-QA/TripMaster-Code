@@ -59,7 +59,7 @@ public class TestBase {
 					// WebDriverManager.chromedriver().setup();
 					driver.manage().window().setSize(new Dimension(1024,546));
 					driver = new ChromeDriver();
-					driver.manage().window().maximize();
+					//driver.manage().window().maximize();
 					//System.out.println(driver.manage().window().getSize()); 
 					//Logs.info("ChromeDriver instantiated for " + platform + " platform.");
 					flag = true;
