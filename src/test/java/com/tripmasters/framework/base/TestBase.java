@@ -57,11 +57,11 @@ public class TestBase {
 				if (browser.equalsIgnoreCase(("Chrome"))) {
 					System.setProperty("webdriver.chrome.driver", chromeDriverFilePath);
 					// WebDriverManager.chromedriver().setup();
-					driver.manage().window().setSize(new Dimension(1024,546));
+					driver.manage().window().setSize(new Dimension(1040,784));
 					driver = new ChromeDriver();
 					//driver.manage().window().maximize();
 					//System.out.println(driver.manage().window().getSize()); 
-					//Logs.info("ChromeDriver instantiated for " + platform + " platform.");
+					Logs.info("ChromeDriver instantiated for " + platform + " platform.");
 					flag = true;
 
 				} else if (browser.equalsIgnoreCase("Firefox")) {
