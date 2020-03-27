@@ -640,7 +640,7 @@ public class BookingPageTestScript extends TestBase {
 		logs.info("Validate that user is on TripInclusion Page");
 	}
 
-     //@Test(groups= {"smoke"},priority=13)
+     @Test(groups= {"smoke"},priority=13)
 	public void verifySpotlightLink_TC_14(Method method) throws Exception {
     	String PageTitle=null;
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "verifySpotlightLink");
