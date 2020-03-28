@@ -299,3 +299,4 @@
 2020-03-26 17:36:36,390 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
 2020-03-26 17:37:31,457 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
 2020-03-26 17:44:49,377 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-28 13:58:48,098 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
