@@ -154,16 +154,19 @@ public class PageBase {
 	 **/
 
 	public static String clearAndSetValues(By FieldElement, String StringToBeEntered) throws Exception {
-
-		
-			waitForElement(5);
-			WebElement element = driver.findElement(FieldElement);
-			waitForElement(5);
-			highlightElement(element);
-			element.clear();
-			// element.sendKeys(StringToBeEntered);
-			element.sendKeys(StringToBeEntered);// Keys.TAB);
-			waitForElement(5);
+	
+			try {
+				waitForElement(5);
+				new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(FieldElement));
+				WebElement element = driver.findElement(FieldElement);
+				waitForElement(5);
+				highlightElement(element);
+				element.clear();
+				element.sendKeys(StringToBeEntered);
+				waitForElement(5);
+			} catch (Exception e) {
+				System.out.println("Unable to click on element"+ FieldElement);
+			}
 		
 		return StringToBeEntered;
 	}
