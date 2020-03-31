@@ -300,3 +300,42 @@
 2020-03-26 17:37:31,457 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
 2020-03-26 17:44:49,377 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
 2020-03-28 13:58:48,098 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:04:51,966 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:12:13,472 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:13:12,736 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-31 10:14:07,760 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-31 10:15:20,702 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:31:10,871 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:31:55,496 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:32:37,843 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
+2020-03-31 10:33:06,498 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
+2020-03-31 10:33:06,505 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-03-31 10:33:12,162 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:34:08,767 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
+2020-03-31 10:34:14,383 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:34:19,508 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:34:20,747 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
+2020-03-31 10:36:23,883 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:36:51,769 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
+2020-03-31 10:36:51,770 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
+2020-03-31 10:36:51,770 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
+2020-03-31 10:36:51,770 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
+2020-03-31 10:36:51,771 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
+2020-03-31 10:36:57,316 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:37:20,552 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
+2020-03-31 10:37:38,331 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
+2020-03-31 10:37:38,340 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-03-31 10:37:43,831 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:38:51,567 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
+2020-03-31 10:38:51,581 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
+2020-03-31 10:38:56,856 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:39:02,803 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
+2020-03-31 10:39:17,859 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
+2020-03-31 10:40:28,009 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
+2020-03-31 10:40:28,016 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
+2020-03-31 10:40:33,461 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:41:03,265 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
+2020-03-31 10:42:25,267 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
+2020-03-31 10:44:29,183 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
+2020-03-31 10:44:34,651 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:44:43,368 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed

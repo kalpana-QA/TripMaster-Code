@@ -9,6 +9,7 @@ import org.json.simple.parser.ParseException;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -44,8 +45,7 @@ public class TestBase {
 	public PassengerInfoPageAction passengerInfoPage;
 	public ExtentTest test;
 
-	// GenerateReport gn;
-	// @BeforeClass
+	
 	@BeforeMethod(alwaysRun = true)
 	// @Parameters(value = { "browser" })
 	public void setUp() throws FileNotFoundException, IOException, ParseException {
@@ -55,12 +55,14 @@ public class TestBase {
 		try {
 			if(platform.equalsIgnoreCase("Windows")) {
 				if (browser.equalsIgnoreCase(("Chrome"))) {
+					ChromeOptions options=new ChromeOptions();
+					 options.addArguments("ignore-certificate-errors");
+					 options.setAcceptInsecureCerts(true);
+					
 					System.setProperty("webdriver.chrome.driver", chromeDriverFilePath);
-					// WebDriverManager.chromedriver().setup();
-					driver = new ChromeDriver();
+					driver = new ChromeDriver(options);
+					
 					driver.manage().window().maximize();
-					//driver.manage().window().setSize(new Dimension(1024,768));
-					//System.out.println(driver.manage().window().getSize()); 
 					Logs.info("ChromeDriver instantiated for " + platform + " platform.");
 					flag = true;
 
