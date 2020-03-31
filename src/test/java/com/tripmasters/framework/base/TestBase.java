@@ -58,11 +58,11 @@ public class TestBase {
 					ChromeOptions options=new ChromeOptions();
 					 options.addArguments("ignore-certificate-errors");
 					 options.setAcceptInsecureCerts(true);
-					
 					System.setProperty("webdriver.chrome.driver", chromeDriverFilePath);
 					driver = new ChromeDriver(options);
 					
-					driver.manage().window().maximize();
+					Dimension d=new Dimension(1382,744);
+					driver.manage().window().setSize(d);
 					Logs.info("ChromeDriver instantiated for " + platform + " platform.");
 					flag = true;
 
