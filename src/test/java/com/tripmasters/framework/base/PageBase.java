@@ -157,7 +157,7 @@ public class PageBase {
 	
 			try {
 				waitForElement(5);
-				new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(FieldElement));
+				new WebDriverWait(driver, 40).until(ExpectedConditions.elementToBeClickable(FieldElement));
 				WebElement element = driver.findElement(FieldElement);
 				waitForElement(5);
 				highlightElement(element);
