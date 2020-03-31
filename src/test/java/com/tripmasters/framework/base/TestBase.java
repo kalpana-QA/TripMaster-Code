@@ -61,8 +61,8 @@ public class TestBase {
 					System.setProperty("webdriver.chrome.driver", chromeDriverFilePath);
 					driver = new ChromeDriver(options);
 					
-					Dimension d=new Dimension(1382,744);
-					driver.manage().window().setSize(d);
+					//Dimension d=new Dimension(1382,744);
+					driver.manage().window().maximize();
 					Logs.info("ChromeDriver instantiated for " + platform + " platform.");
 					flag = true;
 
@@ -131,8 +131,8 @@ public class TestBase {
 		} finally {
 			if (flag) {
 				driver.manage().deleteAllCookies();
-				driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
-				driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+				driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
+				driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 				String url = JsonDataReader.getJSONData("URL");
 				driver.get(url);
 				//Logs.info("The given URL '" + url + "' launch successfully for " + platform + " platform and " + browser
