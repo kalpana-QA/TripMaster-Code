@@ -155,7 +155,7 @@ public class PageBase {
 
 	public static String clearAndSetValues(By FieldElement, String StringToBeEntered) throws Exception {
 
-		try {
+		
 			waitForElement(5);
 			WebElement element = driver.findElement(FieldElement);
 			waitForElement(5);
@@ -164,10 +164,7 @@ public class PageBase {
 			// element.sendKeys(StringToBeEntered);
 			element.sendKeys(StringToBeEntered);// Keys.TAB);
 			waitForElement(5);
-		} catch (Exception e) {
-			Logs.error("Unable to find the element on Page");
-			// e.printStackTrace();
-		}
+		
 		return StringToBeEntered;
 	}
 
