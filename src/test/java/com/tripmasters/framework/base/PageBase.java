@@ -154,20 +154,20 @@ public class PageBase {
 	 **/
 
 	public static String clearAndSetValues(By FieldElement, String StringToBeEntered) throws Exception {
-
-		try {
-			waitForElement(5);
-			WebElement element = driver.findElement(FieldElement);
-			waitForElement(5);
-			highlightElement(element);
-			element.clear();
-			// element.sendKeys(StringToBeEntered);
-			element.sendKeys(StringToBeEntered);// Keys.TAB);
-			waitForElement(5);
-		} catch (Exception e) {
-			Logs.error("Unable to find the element on Page");
-			// e.printStackTrace();
-		}
+	
+			try {
+				waitForElement(5);
+				new WebDriverWait(driver, 40).until(ExpectedConditions.elementToBeClickable(FieldElement));
+				WebElement element = driver.findElement(FieldElement);
+				waitForElement(5);
+				highlightElement(element);
+				element.clear();
+				element.sendKeys(StringToBeEntered);
+				waitForElement(5);
+			} catch (Exception e) {
+				System.out.println("Unable to click on element"+ FieldElement);
+			}
+		
 		return StringToBeEntered;
 	}
 
@@ -366,7 +366,7 @@ public class PageBase {
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(new Date());
 		System.out.println(cal.getTime());
-		cal.add(Calendar.DATE, 100);
+		cal.add(Calendar.DATE, 120);
 		String newDate = dateFormat.format(cal.getTime());
 		String[] newDateDay = newDate.split("/");
 		return newDateDay[1];

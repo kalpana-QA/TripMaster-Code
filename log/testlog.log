@@ -300,6 +300,7 @@
 2020-03-26 17:37:31,457 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
 2020-03-26 17:44:49,377 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
 2020-03-28 13:58:48,098 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+<<<<<<< HEAD
 2020-03-30 09:40:16,830 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
 2020-03-30 09:48:28,876 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
 2020-03-31 10:49:49,650 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
@@ -343,3 +344,150 @@
 2020-03-31 11:33:39,817 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
 2020-03-31 11:35:01,892 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
 2020-03-31 11:35:41,238 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+=======
+2020-03-31 10:04:51,966 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:12:13,472 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:13:12,736 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-31 10:14:07,760 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-31 10:15:20,702 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:31:10,871 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:31:55,496 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:32:37,843 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
+2020-03-31 10:33:06,498 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
+2020-03-31 10:33:06,505 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-03-31 10:33:12,162 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:34:08,767 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
+2020-03-31 10:34:14,383 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:34:19,508 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:34:20,747 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
+2020-03-31 10:36:23,883 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:36:51,769 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
+2020-03-31 10:36:51,770 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
+2020-03-31 10:36:51,770 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
+2020-03-31 10:36:51,770 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
+2020-03-31 10:36:51,771 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
+2020-03-31 10:36:57,316 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:37:20,552 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
+2020-03-31 10:37:38,331 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
+2020-03-31 10:37:38,340 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-03-31 10:37:43,831 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:38:51,567 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
+2020-03-31 10:38:51,581 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
+2020-03-31 10:38:56,856 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:39:02,803 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
+2020-03-31 10:39:17,859 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
+2020-03-31 10:40:28,009 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
+2020-03-31 10:40:28,016 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
+2020-03-31 10:40:33,461 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:41:03,265 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
+2020-03-31 10:42:25,267 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
+2020-03-31 10:44:29,183 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
+2020-03-31 10:44:34,651 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 10:44:43,368 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
+2020-03-31 11:48:27,242 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 11:55:20,551 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 12:06:46,862 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 12:13:30,348 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 12:22:36,786 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-31 12:23:31,822 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-31 12:24:21,855 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-03-31 12:25:16,883 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-31 12:27:01,956 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-31 12:27:56,991 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-31 12:28:46,998 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-03-31 12:29:42,986 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-31 12:43:15,642 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 12:51:00,773 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 12:57:00,151 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:03:36,285 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:11:01,018 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:18:03,647 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:23:38,272 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-03-31 13:23:43,865 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:24:38,831 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
+2020-03-31 13:24:41,142 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-03-31 13:24:59,260 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-03-31 13:25:32,127 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-03-31 13:25:50,117 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-03-31 13:26:45,160 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-03-31 13:26:45,160 - com.tripmasters.framework.reports.Logs -INFO - Verify that only selected flight appears along with passenger details
+2020-03-31 13:26:45,161 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
+2020-03-31 13:26:50,420 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:28:14,909 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
+2020-03-31 13:28:31,934 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-03-31 13:29:06,603 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-03-31 13:29:25,927 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-03-31 13:30:49,118 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-03-31 13:31:57,024 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-03-31 13:32:15,973 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-03-31 13:32:21,590 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:32:44,049 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
+2020-03-31 13:33:16,507 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic details of journey:Source,Destination & Staying Time
+2020-03-31 13:33:33,533 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-03-31 13:34:01,071 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-03-31 13:34:18,153 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-03-31 13:34:18,154 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
+2020-03-31 13:34:23,805 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:34:44,993 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
+2020-03-31 13:35:45,067 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-31 13:36:47,744 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
+2020-03-31 13:37:31,029 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-03-31 13:37:49,296 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-03-31 13:37:49,296 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
+2020-03-31 13:37:54,962 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:39:35,877 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
+2020-03-31 13:39:35,877 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
+2020-03-31 13:39:35,910 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
+2020-03-31 13:39:35,911 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
+2020-03-31 13:40:05,986 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
+2020-03-31 13:40:56,025 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
+2020-03-31 13:42:53,579 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-03-31 13:42:53,584 - com.tripmasters.framework.reports.Logs -INFO - Validate that user is on TripInclusion Page
+2020-03-31 13:42:58,673 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:43:57,660 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
+2020-03-31 13:43:57,690 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
+2020-03-31 13:43:57,691 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
+2020-03-31 13:45:40,385 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-03-31 13:45:50,439 - com.tripmasters.framework.reports.Logs -INFO - bookingDetailswithPremiumEcomomy passed
+2020-03-31 13:45:55,668 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:46:20,992 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
+2020-03-31 13:46:20,996 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
+2020-03-31 13:46:20,996 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
+2020-03-31 13:46:20,996 - com.tripmasters.framework.reports.Logs -INFO - Spotlight link verified!
+2020-03-31 13:46:26,577 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:47:19,966 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
+2020-03-31 13:47:22,247 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-03-31 13:50:19,415 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-03-31 13:50:39,417 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-03-31 13:50:59,986 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:51:21,665 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
+2020-03-31 13:51:21,665 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
+2020-03-31 13:51:21,665 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
+2020-03-31 13:51:21,665 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
+2020-03-31 13:51:21,666 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
+2020-03-31 13:51:26,847 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:51:50,745 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
+2020-03-31 13:52:10,625 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
+2020-03-31 13:52:10,641 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-03-31 13:52:16,221 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:52:42,571 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
+2020-03-31 13:52:42,577 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
+2020-03-31 13:52:48,038 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:52:53,228 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
+2020-03-31 13:53:08,265 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
+2020-03-31 13:54:18,405 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
+2020-03-31 13:54:18,410 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
+2020-03-31 13:54:23,825 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:54:29,070 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
+2020-03-31 13:55:16,709 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
+2020-03-31 13:55:31,744 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
+2020-03-31 13:55:37,265 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 13:55:43,762 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
+2020-03-31 16:50:42,029 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 16:56:45,695 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-03-31 17:01:18,448 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-31 17:02:13,469 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-31 17:03:03,523 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-03-31 17:03:58,554 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-31 17:05:43,630 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+>>>>>>> cce5965c53e3c8a4c2de660ba1808b92a1a35833
