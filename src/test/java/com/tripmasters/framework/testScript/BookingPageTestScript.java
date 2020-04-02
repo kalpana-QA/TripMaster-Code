@@ -497,7 +497,7 @@ public class BookingPageTestScript extends TestBase {
 		logs.info("Verify that only particular selected hotel appears along with passenger details");
 	}
 		
-	@Test(groups= {"testdemo"},priority=8)
+	@Test(groups= {"smoke"},priority=8)
 	public void bookingFlightAndHotelForMultipleCity_TC_8(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "bookingFlightAndHotelForMultipleCity");
 		bookingPage.clickOnBuildYourVacationDropDown();
