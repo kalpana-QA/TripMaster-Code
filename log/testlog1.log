@@ -6311,3 +6311,18 @@ freemarker.core.InvalidReferenceException: [... Exception message was already pr
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 >>>>>>> fc64b247ddecee4b766fd9cb38eff4dc6b6b9a69
+2020-03-29 22:39:31,895 [main] INFO com.tripmasters.framework.reports.Logs - User clicked on Explore Europe Link
+2020-04-03 15:59:06,977 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-03 15:59:17,694 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-03 15:59:39,467 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-03 15:59:41,988 [main] INFO com.tripmasters.framework.reports.Logs - Click on WithOut Air Button
+2020-04-03 15:59:41,991 [main] INFO com.tripmasters.framework.reports.Logs - Filled all the basic details of journey along with source & destination
+2020-04-03 15:59:53,757 [main] INFO com.tripmasters.framework.reports.Logs - Fill all the basic details for multiple cities
+2020-04-03 15:59:53,760 [main] INFO com.tripmasters.framework.reports.Logs - Adding multiple cities in destinations
+2020-04-03 16:39:29,612 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-03 16:39:40,773 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-03 16:39:56,943 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-03 16:39:59,738 [main] INFO com.tripmasters.framework.reports.Logs - Click on WithOut Air Button
+2020-04-03 16:39:59,743 [main] INFO com.tripmasters.framework.reports.Logs - Filled all the basic details of journey along with source & destination
+2020-04-03 16:40:11,273 [main] INFO com.tripmasters.framework.reports.Logs - Fill all the basic details for multiple cities
+2020-04-03 16:40:11,292 [main] INFO com.tripmasters.framework.reports.Logs - Adding multiple cities in destinations

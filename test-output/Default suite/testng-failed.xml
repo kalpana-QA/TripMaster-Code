@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.tripmasters.framework.testScript.HomePageTestScript">
+      <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <include name="bookingFlightAndHotelForMultipleCity_TC_8" invocation-numbers="0"/>
-=======
-=======
-          <include name="multipleCities"/>
->>>>>>> 1ac9f1ecc2b65ac67232ebd26e0f94a4e54fbdef
-          <include name="tearDown"/>
->>>>>>> fc64b247ddecee4b766fd9cb38eff4dc6b6b9a69
+          <include name="bookingSingleRoomOneAdultOneChild_TC_2" invocation-numbers="0"/>
+          <include name="getWithoutAir_TC_20" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="verifyMoreHighlightAndAttractionLinks_Mob_TC_11"/>
+          <include name="bookingTwoRoomThreeAdultOneChild_TC_4" invocation-numbers="0"/>
+          <include name="bookingFlightAndHotelForSingleCity_TC_7" invocation-numbers="0"/>
+          <include name="multipleCities_TC_21" invocation-numbers="0"/>
+          <include name="bookingFlightsWithmultipleCities_TC_6" invocation-numbers="0"/>
+          <include name="removeAddedCity_TC_17" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
+      </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

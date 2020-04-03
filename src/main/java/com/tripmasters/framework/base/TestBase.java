@@ -82,7 +82,7 @@ public class TestBase {
 					System.out.println("chromeDriverFilePath : " + chromeDriverFilePath);
 					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
 					capabilities.setCapability("platformName", "Android");
-					capabilities.setCapability("deviceName", "One Plus");
+					capabilities.setCapability("deviceName", "Mi A3");
 					capabilities.setCapability("browserName", "Chrome");
 
 					url = new URL("http:127.0.1.1:4723/wd/hub");
@@ -148,12 +148,12 @@ public class TestBase {
 	//@AfterMethod(alwaysRun = true)
 	public static void tearDown() {
 		// gn.extent.flush();
-		// driver.quit();
+		 driver.quit();
 		// GenerateReport2.startReport(null, null);
 		// GenerateReport2.getResult(null);
 		if (driver != null) {
 			//Logs.info("Closing browser after TestClass");
-		// driver.close();
+		 driver.close();
 		} else {
 			//Logs.error("Driver is null at AfterClass (TestBase)");
 		}

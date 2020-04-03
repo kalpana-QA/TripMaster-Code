@@ -1,7 +1,7 @@
 {
 
-    "Platform": "iOS",
-    "Browser": "Safari",
+    "Platform": "Mobile",
+    "Browser": "Chrome",
 
     "URL": "https://www.tripmasters.com"
 }

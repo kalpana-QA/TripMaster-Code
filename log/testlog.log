@@ -233,3 +233,18 @@
 2020-03-06 15:03:01,152 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
 =======
 >>>>>>> fc64b247ddecee4b766fd9cb38eff4dc6b6b9a69
+2020-03-29 22:39:31,895 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
+2020-04-03 15:59:06,977 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-04-03 15:59:17,694 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-04-03 15:59:39,467 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-04-03 15:59:41,988 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
+2020-04-03 15:59:41,991 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
+2020-04-03 15:59:53,757 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
+2020-04-03 15:59:53,760 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
+2020-04-03 16:39:29,612 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-04-03 16:39:40,773 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-04-03 16:39:56,943 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-04-03 16:39:59,738 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
+2020-04-03 16:39:59,743 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
+2020-04-03 16:40:11,273 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
+2020-04-03 16:40:11,292 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
