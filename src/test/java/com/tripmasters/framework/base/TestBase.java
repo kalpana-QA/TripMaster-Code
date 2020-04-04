@@ -6,13 +6,14 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.json.simple.parser.ParseException;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
 import com.relevantcodes.extentreports.ExtentTest;
@@ -44,8 +45,7 @@ public class TestBase {
 	public PassengerInfoPageAction passengerInfoPage;
 	public ExtentTest test;
 
-	// GenerateReport gn;
-	// @BeforeClass
+	
 	@BeforeMethod(alwaysRun = true)
 	// @Parameters(value = { "browser" })
 	public void setUp() throws FileNotFoundException, IOException, ParseException {
@@ -53,14 +53,17 @@ public class TestBase {
 		platform = JsonDataReader.getJSONData("Platform");
 		String browser = JsonDataReader.getJSONData("Browser");
 		try {
-			switch (platform) {
-			case "Windows":
+			if(platform.equalsIgnoreCase("Windows")) {
 				if (browser.equalsIgnoreCase(("Chrome"))) {
+					ChromeOptions options=new ChromeOptions();
+					 options.addArguments("ignore-certificate-errors");
+					 options.setAcceptInsecureCerts(true);
 					System.setProperty("webdriver.chrome.driver", chromeDriverFilePath);
-					// WebDriverManager.chromedriver().setup();
-					driver = new ChromeDriver();
+					driver = new ChromeDriver(options);
+					
+					//Dimension d=new Dimension(1382,744);
 					driver.manage().window().maximize();
-					//Logs.info("ChromeDriver instantiated for " + platform + " platform.");
+					Logs.info("ChromeDriver instantiated for " + platform + " platform.");
 					flag = true;
 
 				} else if (browser.equalsIgnoreCase("Firefox")) {
@@ -74,15 +77,15 @@ public class TestBase {
 					Logs.error("Browser doesn't found!!!! for " + platform + " platfrom");
 					System.err.println("Browser doesn't found!!!! for windows platfrom");
 				}
-				break;
-			case "Mobile":
+			}
+			else if(platform.equalsIgnoreCase("Mobile")){
 				if (browser.equalsIgnoreCase("Chrome")) {
 					capabilities = new DesiredCapabilities();
 
 					System.out.println("chromeDriverFilePath : " + chromeDriverFilePath);
 					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
 					capabilities.setCapability("platformName", "Android");
-					capabilities.setCapability("deviceName", "Mi A3");
+					capabilities.setCapability("deviceName", "One Plus");
 					capabilities.setCapability("browserName", "Chrome");
 
 					url = new URL("http:127.0.1.1:4723/wd/hub");
@@ -97,8 +100,9 @@ public class TestBase {
 					System.err.println("Browser doesn't found!!!! for mobile platform");
 				}
 				flag_Mob = true;
-				break;
-			case "iOS":
+			}
+			else if(platform.equalsIgnoreCase("iOS"))
+			{
 				if (browser.equalsIgnoreCase("Safari")) {
 					capabilities = new DesiredCapabilities();
 					capabilities.setCapability("deviceName", "iPhone 11 Pro Max");
@@ -116,20 +120,19 @@ public class TestBase {
 					System.err.println("browser doesn't found!!!!!!!!");
 				}
 				flag_Mob = true;
-				break;
-
-			default:
+			}
+			else{
 				//Logs.error("Platform doesn't found!!!!!!!!!!!");
 				System.err.println("Platform doesn't found!!!!!!!!!!!");
-				break;
 			}
+		
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			if (flag) {
 				driver.manage().deleteAllCookies();
-				driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+				driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
+				driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 				String url = JsonDataReader.getJSONData("URL");
 				driver.get(url);
 				//Logs.info("The given URL '" + url + "' launch successfully for " + platform + " platform and " + browser
@@ -145,10 +148,10 @@ public class TestBase {
 		passengerInfoPage = new PassengerInfoPageAction(driver);
 	}
 
-	//@AfterMethod(alwaysRun = true)
+	@AfterMethod(alwaysRun = true)
 	public static void tearDown() {
 		// gn.extent.flush();
-		 driver.quit();
+		// driver.quit();
 		// GenerateReport2.startReport(null, null);
 		// GenerateReport2.getResult(null);
 		if (driver != null) {

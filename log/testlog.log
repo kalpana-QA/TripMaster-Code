@@ -1,250 +1,140 @@
-<<<<<<< HEAD
-2020-03-04 15:19:36,576 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
-2020-03-04 15:19:36,576 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
-2020-03-04 15:19:36,577 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-03-04 15:19:36,577 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
-2020-03-04 15:20:12,956 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
-2020-03-04 15:26:38,117 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
-2020-03-04 15:26:38,122 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
-2020-03-04 15:26:38,122 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
-2020-03-04 15:26:38,123 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-03-04 15:26:38,123 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
-2020-03-04 15:27:18,625 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
-2020-03-04 15:28:20,502 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
-2020-03-04 15:28:41,325 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
-2020-03-04 15:28:46,346 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
-2020-03-04 15:28:57,211 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
-2020-03-04 15:28:57,231 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
-2020-03-04 15:29:16,978 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
-2020-03-04 15:29:30,497 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
-2020-03-04 15:29:35,526 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
-2020-03-04 15:29:55,802 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-2020-03-04 15:35:07,101 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
-2020-03-04 15:42:05,348 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
-2020-03-04 15:48:44,224 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
-2020-03-04 15:48:55,948 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
-2020-03-04 15:48:55,959 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-03-04 15:50:05,193 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
-2020-03-04 15:50:05,204 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
-2020-03-04 15:51:43,353 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
-2020-03-04 15:51:43,356 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
-2020-03-04 15:51:43,356 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
-2020-03-04 15:51:43,356 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-03-04 15:51:43,357 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
-2020-03-04 15:52:12,973 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
-2020-03-04 15:52:31,766 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
-2020-03-04 15:52:31,867 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-03-04 15:53:04,836 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
-2020-03-04 15:53:04,847 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
-2020-03-04 15:53:19,514 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
-2020-03-04 15:53:24,543 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
-2020-03-04 15:53:35,719 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
-2020-03-04 15:53:35,728 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
-2020-03-04 15:53:50,398 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
-2020-03-04 15:54:03,925 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
-2020-03-04 15:54:08,961 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
-2020-03-04 15:54:24,322 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-2020-03-04 16:14:55,963 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-03-04 16:14:55,991 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-03-04 16:14:55,991 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-03-04 16:15:52,323 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-03-04 16:56:12,799 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-03-04 16:56:12,854 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-03-04 16:56:12,854 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-03-04 16:57:04,237 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-03-04 18:00:35,297 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-03-04 18:00:35,327 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-03-04 18:00:35,327 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-03-04 18:01:27,343 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-03-04 18:04:32,896 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-03-04 18:04:32,933 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-03-04 18:04:32,934 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-03-04 18:05:26,934 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-03-04 18:05:34,283 - com.tripmasters.framework.reports.Logs -INFO - bookingDetailswithPremiumEcomomy passed
-2020-03-04 18:07:41,048 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
-2020-03-04 18:13:31,499 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
-2020-03-04 18:13:33,741 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-03-04 18:14:42,361 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-03-04 18:14:49,695 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-03-04 18:16:24,543 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
-2020-03-04 18:16:24,554 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
-2020-03-04 18:16:24,597 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
-2020-03-04 18:16:24,598 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
-2020-03-04 18:16:34,677 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
-2020-03-04 18:16:54,757 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
-2020-03-04 18:17:59,331 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-03-04 18:18:34,780 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-03-04 18:19:04,488 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
-2020-03-04 18:19:06,718 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-03-04 18:20:12,571 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-03-04 18:20:22,112 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-03-05 10:03:08,436 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
-2020-03-05 10:03:08,446 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
-2020-03-05 10:03:08,479 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
-2020-03-05 10:03:08,479 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
-2020-03-05 10:03:18,542 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
-2020-03-05 10:03:38,600 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
-2020-03-05 12:25:29,560 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
-2020-03-05 12:25:29,571 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
-2020-03-05 12:25:29,595 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
-2020-03-05 12:25:29,595 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
-2020-03-05 12:25:39,666 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
-2020-03-05 12:25:59,738 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
-2020-03-05 12:27:53,888 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-03-05 12:31:16,792 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
-2020-03-05 12:31:16,805 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
-2020-03-05 12:31:16,830 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
-2020-03-05 12:31:16,831 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
-2020-03-05 12:31:26,899 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
-2020-03-05 12:31:46,940 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
-2020-03-05 12:33:11,490 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-03-05 12:36:03,970 - com.tripmasters.framework.reports.Logs -INFO - Validate that user is on TripInclusion Page
-2020-03-05 12:37:52,650 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
-2020-03-05 12:37:52,716 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-03-05 12:38:11,274 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
-2020-03-05 12:46:56,232 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
-2020-03-05 12:46:56,291 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-03-05 12:47:14,793 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
-2020-03-05 12:53:19,357 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
-2020-03-05 12:53:19,406 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-03-05 12:53:37,919 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
-2020-03-05 12:56:43,086 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
-2020-03-05 12:56:43,181 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-03-05 12:57:01,800 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
-2020-03-05 12:58:02,039 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-03-05 13:09:19,760 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-03-05 13:09:19,763 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
-2020-03-05 13:10:10,064 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
-2020-03-05 13:10:10,140 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-03-05 13:10:28,691 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
-2020-03-05 13:10:50,630 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-03-05 13:11:01,610 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-03-05 13:11:01,612 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
-2020-03-05 13:16:41,559 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
-2020-03-05 13:16:41,630 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-03-05 13:16:47,862 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic details of journey:Source,Destination & Staying Time
-2020-03-05 13:16:52,890 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-05 13:18:49,104 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
-2020-03-05 13:18:49,152 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-03-05 13:18:55,417 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic details of journey:Source,Destination & Staying Time
-2020-03-05 13:19:00,465 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-05 13:24:38,650 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
-2020-03-05 13:24:44,935 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-03-05 13:33:28,213 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
-2020-03-05 13:33:38,651 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic details of journey:Source,Destination & Staying Time
-2020-03-05 13:33:43,680 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-05 13:33:54,799 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-03-05 13:34:02,225 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-03-05 13:34:02,232 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
-2020-03-05 13:35:37,828 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-03-05 13:35:42,871 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-05 13:41:03,408 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-03-05 13:41:10,458 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-05 13:42:34,114 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-03-05 13:42:41,161 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-05 13:49:28,537 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-03-05 13:49:35,568 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-05 13:50:58,702 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-03-05 13:50:58,764 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-03-05 13:52:04,888 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-03-05 13:52:11,927 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-05 13:52:42,071 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-03-05 13:52:42,103 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-03-05 13:54:58,244 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-03-05 13:55:05,294 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-05 14:42:30,770 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-03-05 14:42:37,807 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-05 14:43:22,478 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-03-05 14:44:20,512 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-03-05 14:45:22,295 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-03-05 14:46:55,437 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-03-05 14:50:25,251 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-03-05 14:50:32,299 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-05 14:51:51,642 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-03-05 14:52:17,023 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-03-05 14:53:56,724 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-03-05 14:54:16,360 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-03-05 14:54:23,783 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-03-05 15:06:17,950 - com.tripmasters.framework.reports.Logs -ERROR - Traveller Details are not same as expected
-2020-03-05 15:06:37,962 - com.tripmasters.framework.reports.Logs -ERROR - Traveller Details are not same as expected
-2020-03-05 15:06:57,979 - com.tripmasters.framework.reports.Logs -ERROR - Traveller Details are not same as expected
-2020-03-05 15:07:17,990 - com.tripmasters.framework.reports.Logs -ERROR - Traveller Details are not same as expected
-2020-03-05 17:22:11,187 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
-2020-03-05 17:22:13,425 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-03-05 17:22:21,549 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-05 17:22:48,870 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-03-05 17:22:53,971 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-03-05 17:24:45,284 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-03-05 17:24:52,325 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-05 17:25:17,819 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-03-05 17:25:25,719 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-03-05 17:25:58,993 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-03-05 17:26:19,511 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-03-05 17:26:26,642 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-03-05 17:26:52,926 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
-2020-03-05 17:27:03,275 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic details of journey:Source,Destination & Staying Time
-2020-03-05 17:27:10,300 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-05 17:27:22,945 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-03-05 17:27:30,941 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-03-05 17:27:30,941 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
-2020-03-05 17:27:55,268 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
-2020-03-05 17:27:55,344 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-03-05 17:28:13,847 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
-2020-03-05 17:28:32,754 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-03-05 17:28:41,006 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-03-05 17:28:41,006 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
-2020-03-05 17:29:25,681 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
-2020-03-05 17:29:25,682 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
-2020-03-05 17:29:25,710 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
-2020-03-05 17:29:25,710 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
-2020-03-05 17:29:35,771 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
-2020-03-05 17:29:55,823 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
-2020-03-05 17:31:00,353 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-03-05 17:31:00,360 - com.tripmasters.framework.reports.Logs -INFO - Validate that user is on TripInclusion Page
-2020-03-05 17:37:18,800 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
-2020-03-05 17:37:38,810 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-03-05 17:37:58,832 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-03-05 17:38:58,931 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-03-05 17:39:49,617 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
-2020-03-05 17:39:51,873 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-03-05 17:40:57,396 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-03-05 17:41:07,178 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-03-05 17:41:38,709 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
-2020-03-05 17:41:38,709 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
-2020-03-05 17:41:38,709 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
-2020-03-05 17:41:38,709 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-03-05 17:41:38,709 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
-2020-03-05 17:42:07,540 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
-2020-03-05 17:42:16,921 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
-2020-03-05 17:42:16,929 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-03-05 17:42:46,521 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
-2020-03-05 17:42:46,553 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
-2020-03-05 17:43:06,039 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
-2020-03-05 17:43:11,059 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
-2020-03-05 17:43:21,684 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
-2020-03-05 17:43:21,696 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
-2020-03-05 17:43:40,467 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
-2020-03-05 17:43:53,935 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
-2020-03-05 17:43:58,989 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
-2020-03-05 17:44:19,856 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-2020-03-05 18:49:42,071 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-2020-03-06 13:40:38,054 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-03-06 13:42:35,078 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-03-06 15:03:01,152 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-=======
->>>>>>> fc64b247ddecee4b766fd9cb38eff4dc6b6b9a69
-2020-03-29 22:39:31,895 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
-2020-04-03 15:59:06,977 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-03 15:59:17,694 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-03 15:59:39,467 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-03 15:59:41,988 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
-2020-04-03 15:59:41,991 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
-2020-04-03 15:59:53,757 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
-2020-04-03 15:59:53,760 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
-2020-04-03 16:39:29,612 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-03 16:39:40,773 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-03 16:39:56,943 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-03 16:39:59,738 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
-2020-04-03 16:39:59,743 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
-2020-04-03 16:40:11,273 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
-2020-04-03 16:40:11,292 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
+2020-03-19 09:22:13,610 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-19 09:22:13,631 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-03-19 09:33:02,086 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
+2020-03-19 09:33:02,098 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
+2020-03-19 09:33:02,099 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
+2020-03-19 09:33:02,099 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
+2020-03-19 09:33:02,099 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
+2020-03-19 10:32:52,033 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
+2020-03-19 10:32:54,436 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-03-19 10:33:02,629 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-03-19 10:33:35,068 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-03-19 10:33:40,191 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-03-19 10:35:36,762 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
+2020-03-19 10:35:43,814 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-03-19 10:37:34,295 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
+2020-03-19 10:37:44,972 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic details of journey:Source,Destination & Staying Time
+2020-03-19 10:37:52,035 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-03-19 10:38:13,828 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-03-19 10:38:21,618 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-03-19 10:38:21,622 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
+2020-03-19 10:38:53,905 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
+2020-03-19 10:38:53,976 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-19 10:39:12,886 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
+2020-03-19 10:39:33,409 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-03-19 10:39:41,945 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-03-19 10:39:41,945 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
+2020-03-19 10:40:36,274 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
+2020-03-19 10:40:36,274 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
+2020-03-19 10:40:36,338 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
+2020-03-19 10:40:36,338 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
+2020-03-19 10:40:46,480 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
+2020-03-19 10:41:06,533 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
+2020-03-19 10:42:08,212 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-03-19 10:42:08,228 - com.tripmasters.framework.reports.Logs -INFO - Validate that user is on TripInclusion Page
+2020-03-19 10:42:48,446 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
+2020-03-19 10:42:48,517 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
+2020-03-19 10:42:48,517 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
+2020-03-19 10:43:51,301 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-03-19 10:43:59,630 - com.tripmasters.framework.reports.Logs -INFO - bookingDetailswithPremiumEcomomy passed
+2020-03-19 10:44:40,241 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
+2020-03-19 10:44:42,660 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-03-19 10:45:57,378 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-03-19 10:46:06,982 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-03-19 10:52:45,533 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
+2020-03-19 10:52:45,541 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
+2020-03-19 10:52:45,545 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
+2020-03-19 10:52:45,545 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
+2020-03-19 10:52:45,546 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
+2020-03-19 10:53:29,330 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
+2020-03-19 10:53:41,751 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
+2020-03-19 10:53:41,767 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-03-19 10:54:23,915 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
+2020-03-19 10:54:23,929 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
+2020-03-19 10:54:48,897 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
+2020-03-19 10:54:53,946 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
+2020-03-19 10:55:17,201 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
+2020-03-19 10:55:17,211 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
+2020-03-19 10:55:40,132 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
+2020-03-19 10:55:53,909 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
+2020-03-19 10:55:59,010 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
+2020-03-19 10:56:22,763 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
+2020-03-19 11:25:12,128 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
+2020-03-19 11:25:12,131 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
+2020-03-19 11:25:12,131 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
+2020-03-19 11:25:12,132 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
+2020-03-19 11:25:12,132 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
+2020-03-19 11:25:58,385 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
+2020-03-19 11:27:42,680 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
+2020-03-19 11:27:42,685 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
+2020-03-19 11:28:08,448 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
+2020-03-19 11:28:13,471 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
+2020-03-19 11:28:36,631 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
+2020-03-19 11:28:36,637 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
+2020-03-19 11:29:01,223 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
+2020-03-19 11:29:14,661 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
+2020-03-19 11:29:19,683 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
+2020-03-19 11:29:45,353 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
+2020-03-19 12:11:21,086 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
+2020-03-19 12:11:21,089 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
+2020-03-19 12:11:21,090 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
+2020-03-19 12:11:21,090 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
+2020-03-19 12:11:21,090 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
+2020-03-19 12:17:30,765 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
+2020-03-19 12:38:01,799 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
+2020-03-19 12:38:04,017 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-03-19 12:38:12,118 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-03-19 12:38:47,085 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-03-19 12:38:52,187 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-03-19 12:40:49,847 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
+2020-03-19 12:40:56,872 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-03-19 12:41:29,334 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-03-19 12:41:37,226 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-03-19 12:42:10,792 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-03-19 12:42:36,611 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-03-19 12:42:45,991 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-03-19 12:43:15,985 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
+2020-03-19 12:43:26,323 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic details of journey:Source,Destination & Staying Time
+2020-03-19 12:43:33,352 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-03-19 12:46:28,619 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
+2020-03-19 12:46:28,656 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
+2020-03-19 12:46:47,126 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
+2020-03-19 12:47:12,500 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-03-19 12:47:20,939 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-03-19 12:47:20,939 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
+2020-03-19 12:48:11,197 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
+2020-03-19 12:48:11,197 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
+2020-03-19 12:48:11,219 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
+2020-03-19 12:48:11,220 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
+2020-03-19 12:48:21,276 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
+2020-03-19 12:48:41,306 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
+2020-03-19 12:50:20,769 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
+2020-03-19 12:50:20,791 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
+2020-03-19 12:50:20,791 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
+2020-03-19 12:51:17,448 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-03-19 12:51:24,301 - com.tripmasters.framework.reports.Logs -INFO - bookingDetailswithPremiumEcomomy passed
+2020-03-19 12:52:06,851 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
+2020-03-19 12:52:06,865 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
+2020-03-19 12:52:06,866 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
+2020-03-19 12:52:06,866 - com.tripmasters.framework.reports.Logs -INFO - Spotlight link verified!
+2020-03-19 12:52:45,249 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
+2020-03-19 12:52:47,478 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-03-19 12:53:59,614 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-03-19 12:54:08,483 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-03-19 12:54:44,977 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
+2020-03-19 12:54:44,978 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
+2020-03-19 12:54:44,978 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
+2020-03-19 12:54:44,978 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
+2020-03-19 12:54:44,978 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
+2020-03-19 12:55:35,472 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
+2020-03-19 12:55:48,640 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
+2020-03-19 12:55:48,966 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-03-19 12:56:36,201 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
+2020-03-19 12:58:00,513 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
+2020-03-19 12:58:05,589 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
+2020-03-19 12:58:28,729 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
+2020-03-19 12:58:28,740 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
+2020-03-19 12:59:00,909 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
+2020-03-19 12:59:14,420 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
+2020-03-19 12:59:19,445 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
+2020-03-19 12:59:46,590 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
