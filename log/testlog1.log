@@ -6159,3 +6159,27 @@
 2020-03-19 12:59:14,420 [TestNG-test=Test-7] INFO com.tripmasters.framework.reports.Logs - User fills all the basic booking details
 2020-03-19 12:59:19,445 [TestNG-test=Test-7] INFO com.tripmasters.framework.reports.Logs - verifyStartAgainLink is displayed
 2020-03-19 12:59:46,590 [TestNG-test=Test-7] INFO com.tripmasters.framework.reports.Logs - verifyFooterText is displayed
+2020-04-06 13:39:07,535 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-06 13:39:54,365 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-06 13:41:23,947 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-06 13:48:36,978 [main] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for multiple cities
+2020-04-06 13:48:38,994 [main] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-06 15:59:19,978 [main] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for multiple cities
+2020-04-06 15:59:22,016 [main] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-06 17:47:07,263 [main] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for multiple cities
+2020-04-06 17:47:09,274 [main] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-08 11:28:22,966 [main] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for multiple cities
+2020-04-08 11:28:25,057 [main] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-08 12:04:33,220 [main] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for multiple cities
+2020-04-08 12:54:43,795 [main] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for multiple cities
+2020-04-08 12:54:45,805 [main] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-08 13:47:14,816 [main] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for multiple cities
+2020-04-08 13:47:16,827 [main] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-08 13:56:32,477 [main] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for multiple cities
+2020-04-08 13:56:34,488 [main] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-08 14:05:03,344 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-09 12:06:35,377 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-09 13:06:58,228 [main] INFO com.tripmasters.framework.reports.Logs - Verified User is on homepage
+2020-04-09 13:07:03,481 [main] INFO com.tripmasters.framework.reports.Logs - Click on Search textBox avialable on HomePage
+2020-04-09 13:07:22,130 [main] INFO com.tripmasters.framework.reports.Logs - Search for a particular city & Click on Go Button
+2020-04-09 13:07:22,613 [main] INFO com.tripmasters.framework.reports.Logs - User redirected to that particular city.Verified!

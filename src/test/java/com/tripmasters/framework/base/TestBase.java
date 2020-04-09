@@ -85,7 +85,7 @@ public class TestBase {
 					System.out.println("chromeDriverFilePath : " + chromeDriverFilePath);
 					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
 					capabilities.setCapability("platformName", "Android");
-					capabilities.setCapability("deviceName", "One Plus");
+					capabilities.setCapability("deviceName", "Mi A3");
 					capabilities.setCapability("browserName", "Chrome");
 
 					url = new URL("http:127.0.1.1:4723/wd/hub");

@@ -58,7 +58,7 @@ public class HomePageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "HightLights and Attraction Links Verified");
 	}
 
-	@Test(groups = { "regression" }, priority = 16)
+	//@Test(groups = { "regression" }, priority = 16)
 	public void verifyOtherVacationPackages_TC_12(Method method) throws Exception {
 		String PackageTitle;
 	//	ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyOtherVacationPackages_TC_12");
@@ -97,7 +97,7 @@ public class HomePageTestScript extends TestBase {
 
 	}
 
-	//@Test(groups = {"smoke"},priority=18)
+	@Test(groups = {"smoke"},priority=18)
 	public void verifyCity_TC_10(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "Verify Search City Button on homepage");
 		PageBase.waitForElement(5);
