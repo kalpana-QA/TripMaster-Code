@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -40,6 +41,10 @@ public class TestBase {
 	public static WebDriverWait wait;
 	public static boolean flag_Mob;
 
+	public static final String USERNAME = "kalpanakaushik1";
+	public static final String AUTOMATE_KEY = "VSDtyUi2m5c273tVKDJQ";
+    public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+	  
 	public BookingPageAction bookingPage;
 	public HomePageAction homePage;
 	public PassengerInfoPageAction passengerInfoPage;
@@ -83,15 +88,21 @@ public class TestBase {
 					capabilities = new DesiredCapabilities();
 
 					System.out.println("chromeDriverFilePath : " + chromeDriverFilePath);
-					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
-					capabilities.setCapability("platformName", "Android");
-					capabilities.setCapability("deviceName", "One Plus");
-					capabilities.setCapability("browserName", "Chrome");
+					capabilities.setCapability("browserName", "android");
+					capabilities.setCapability("device", "OnePlus 7");
+					capabilities.setCapability("realMobile", "true");
+					capabilities.setCapability("os_version", "9.0");
+					capabilities.setCapability("name", "Bstack-[Java] Sample Test");
+//					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
+//					capabilities.setCapability("platformName", "Android");
+//					capabilities.setCapability("deviceName", "One Plus");
+//					capabilities.setCapability("browserName", "Chrome");
+//
+//					url = new URL("http:127.0.1.1:4723/wd/hub");
 
-					url = new URL("http:127.0.1.1:4723/wd/hub");
-
-					driver = new AndroidDriver<MobileElement>(url, capabilities);
-
+					//driver = new AndroidDriver<MobileElement>(url, capabilities);
+					
+					driver =new RemoteWebDriver(new URL(URL), capabilities);
 					//Logs.info(browser + " AndroidDriver instantiated for " + platform + " platform.");
 					flag = true;
 
@@ -156,7 +167,7 @@ public class TestBase {
 		// GenerateReport2.getResult(null);
 		if (driver != null) {
 			//Logs.info("Closing browser after TestClass");
-		 driver.close();
+		 driver.quit();
 		} else {
 			//Logs.error("Driver is null at AfterClass (TestBase)");
 		}

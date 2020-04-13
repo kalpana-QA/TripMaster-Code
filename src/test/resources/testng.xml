@@ -9,15 +9,15 @@
 	<test name="Test">
 	<groups>
 	<run>
-		<include name="smoke"></include>
-		<include name="regression"></include>
-<!-- 		<include name="testdemo"></include> -->
+<!-- 		<include name="smoke"></include> -->
+<!-- 		<include name="regression"></include> -->
+		<include name="testdemo"></include>
 	</run>
    </groups>
    
 <!-- <parameter name="browser" value="Chrome" /> -->
 		<classes>
-		<class name="com.tripmasters.framework.testScript.HomePageTestScript" /> 
+<!-- 		<class name="com.tripmasters.framework.testScript.HomePageTestScript" />  -->
  		<class name="com.tripmasters.framework.testScript.BookingPageTestScript" /> 
 <!--  			<class name="com.tripmasters.framework.utils.GenerateReport2" />  -->
 		</classes>

@@ -101,7 +101,7 @@ public class BookingPageTestScript extends TestBase {
 	
 
 
-   @Test(groups= {"smoke"},priority=2)
+   //@Test(groups= {"smoke"},priority=2)
 	public void bookingSingleRoomOneAdultOneChild_TC_2(Method method) throws Exception {
 		//ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoom1Adult1Child");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -678,7 +678,7 @@ public class BookingPageTestScript extends TestBase {
 	}
 	
 	
-	@Test(groups= {"testdemo"},priority=10)
+	//@Test(groups= {"testdemo"},priority=10)
 	public void multipleCities_TC_21(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "multipleCities");
 		bookingPage.fillLeavingFromDetails("Washington (all Airports), DC");
