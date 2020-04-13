@@ -6174,3 +6174,9 @@
 2020-04-09 16:54:00,678 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Search textBox avialable on HomePage
 2020-04-09 16:54:25,309 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Search for a particular city & Click on Go Button
 2020-04-09 16:54:25,855 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User redirected to that particular city.Verified!
+2020-04-13 12:20:55,866 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Clicked on Popular Vacation Packages
+2020-04-13 12:20:56,260 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - VerifyPopularVacationPackages displayed
+2020-04-13 12:21:19,155 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - Click on Build Your Vacation Dropdown
+2020-04-13 12:27:30,413 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User clicked on Explore Europe Link
+2020-04-13 12:27:52,919 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User clicked on particular vacation package
+2020-04-13 12:27:53,361 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - verifyOtherVacationPackages is displayed & testcase passed successfully.

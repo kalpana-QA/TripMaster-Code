@@ -58,10 +58,10 @@ public class HomePageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "HightLights and Attraction Links Verified");
 	}
 
-	@Test(groups = { "regression" }, priority = 16)
+	@Test(groups = { "testdemo" }, priority = 16)
 	public void verifyOtherVacationPackages_TC_12(Method method) throws Exception {
 		String PackageTitle;
-	//	ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyOtherVacationPackages_TC_12");
+		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyOtherVacationPackages_TC_12");
 		homePage.scrollDownForMob(1);
 		Thread.sleep(30000);
 		PageBase.clickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
@@ -80,7 +80,7 @@ public class HomePageTestScript extends TestBase {
 
 	}
 
-	@Test(groups = {"smoke"},priority=17)
+	@Test(groups = {"testdemo"},priority=17)
 	public void verifyPopularVacationPackages_TC_13(Method method) {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "VerifyPopularVacationPackages_TC_13");
 		PageBase.clickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
@@ -119,7 +119,7 @@ public class HomePageTestScript extends TestBase {
 
 }
 
-	// @Test(groups = {"smoke"},priority=19)
+	//@Test(groups = {"smoke"},priority=19)
 	public void verifyStartAgainLink_TC_15(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyStartAgainLink_TC_15");
 		bookingPage.clickOnBuildYourVacationDropDown();
