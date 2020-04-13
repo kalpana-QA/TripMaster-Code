@@ -20,7 +20,8 @@ public class ExtentManager extends TestBase {
 	            String timestamp=new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 	                extent = new ExtentReports(workingDir + "/target/ExtentReports/" + timestamp +".html", true);
 	                extent.addSystemInfo("User Name", "IQA");
-
+	                extent.addSystemInfo("Device", "OnePlus 7");
+	                extent.addSystemInfo("os_version", "9.0");
 	                extent.addSystemInfo("ProjectName", "TripMasters");
 	                extent.addSystemInfo("Environment", platform);
 	                extent.addSystemInfo("HostOrg", "ImpactQA");
