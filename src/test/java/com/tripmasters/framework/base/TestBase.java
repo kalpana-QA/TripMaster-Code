@@ -43,8 +43,12 @@ public class TestBase {
 
 	public static final String USERNAME = "kalpanakaushik1";
 	public static final String AUTOMATE_KEY = "VSDtyUi2m5c273tVKDJQ";
-    public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
-	  
+   public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+//	public static String username = "kalpana.kaushik";
+//    public static String accesskey = "BTN7CDpX7oE0cBfCYeHmJUfmQeoeflGnT40WAWwElTDls2VxU0";
+//    public static RemoteWebDriver driver = null;
+//    public static String gridURL = "@hub.lambdatest.com/wd/hub";
+    
 	public BookingPageAction bookingPage;
 	public HomePageAction homePage;
 	public PassengerInfoPageAction passengerInfoPage;
@@ -88,21 +92,30 @@ public class TestBase {
 					capabilities = new DesiredCapabilities();
 
 					System.out.println("chromeDriverFilePath : " + chromeDriverFilePath);
-					capabilities.setCapability("browserName", "android");
-					capabilities.setCapability("device", "OnePlus 7");
-					capabilities.setCapability("realMobile", "true");
-					capabilities.setCapability("os_version", "9.0");
-					capabilities.setCapability("name", "Bstack-[Java] Sample Test");
+//					capabilities.setCapability("browserName", "android");
+//					capabilities.setCapability("device", "OnePlus 7");
+//					capabilities.setCapability("realMobile", "true");
+//					capabilities.setCapability("os_version", "9.0");
+//					capabilities.setCapability("name", "Bstack-[Java] Sample Test");
+	        /*Lambdatest capabilities			
+					capabilities.setCapability("name", "demo test");
+					capabilities.setCapability("platformName", "Android");
+					capabilities.setCapability("deviceName", "One Plus 6T");
+					capabilities.setCapability("platformVersion","9");
+					driver =new RemoteWebDriver(new URL("https://" + username + ":" + accesskey + gridURL), capabilities);
+					*/	
+			/*BrowserStack capabilities			
 //					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
 //					capabilities.setCapability("platformName", "Android");
 //					capabilities.setCapability("deviceName", "One Plus");
 //					capabilities.setCapability("browserName", "Chrome");
-//
+                    driver =new RemoteWebDriver(new URL(URL), capabilities);
+//              */
 //					url = new URL("http:127.0.1.1:4723/wd/hub");
 
 					//driver = new AndroidDriver<MobileElement>(url, capabilities);
 					
-					driver =new RemoteWebDriver(new URL(URL), capabilities);
+					
 					//Logs.info(browser + " AndroidDriver instantiated for " + platform + " platform.");
 					flag = true;
 
@@ -116,14 +129,22 @@ public class TestBase {
 			{
 				if (browser.equalsIgnoreCase("Safari")) {
 					capabilities = new DesiredCapabilities();
-					capabilities.setCapability("deviceName", "iPhone 11 Pro Max");
-					capabilities.setCapability("platformName", "iOS");
-					capabilities.setCapability("platformVersion", "13.3");
-					capabilities.setCapability(CapabilityType.BROWSER_NAME, "Safari");
-					// IOSDriver
-					url = new URL("http://127.0.0.1:4723/wd/hub");
-					driver = new IOSDriver<IOSElement>(url, capabilities);
-					//DesiredCapabilities capabilities = new DesiredCapabilities();
+//					capabilities.setCapability("deviceName", "iPhone 11 Pro Max");
+//					capabilities.setCapability("platformName", "iOS");
+//					capabilities.setCapability("platformVersion", "13.3");
+//					capabilities.setCapability(CapabilityType.BROWSER_NAME, "Safari");
+//					url = new URL("http://127.0.0.1:4723/wd/hub");
+//					driver = new IOSDriver<IOSElement>(url, capabilities);
+	/*Lambdatest Capabilities				
+//					capabilities.setCapability("platformName", "iOS");
+//					capabilities.setCapability("deviceName", "iPhone 11");
+//					capabilities.setCapability("platformVersion","13.1");
+//					driver =new RemoteWebDriver(new URL("https://" + username + ":" + accesskey + gridURL), capabilities);
+ */
+					capabilities.setCapability("device", "iPhone 11 Pro");
+					capabilities.setCapability("os_version", "13");
+					capabilities.setCapability("name", "Bstack-[Java] Sample Test");
+                    driver =new RemoteWebDriver(new URL(URL), capabilities);
 					System.out.println("Safari browser launched on iOS");
 					flag = true;
 				} else {

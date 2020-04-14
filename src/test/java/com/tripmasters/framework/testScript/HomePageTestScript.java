@@ -119,7 +119,7 @@ public class HomePageTestScript extends TestBase {
 
 }
 
-	//@Test(groups = {"smoke"},priority=19)
+	@Test(groups = {"smoke"},priority=19)
 	public void verifyStartAgainLink_TC_15(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyStartAgainLink_TC_15");
 		bookingPage.clickOnBuildYourVacationDropDown();
