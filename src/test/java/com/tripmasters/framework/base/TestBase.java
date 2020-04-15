@@ -33,7 +33,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	private static String chromeDriverFilePath = System.getProperty("user.dir")
 			+ "/src/test/resources/webdriver/chromedriver.exe";
-	public static WebDriver driver;
+	//public static WebDriver driver;
 	private DesiredCapabilities capabilities;
 	private URL url;
 	private boolean flag = false;
@@ -44,10 +44,10 @@ public class TestBase {
 	public static final String USERNAME = "kalpanakaushik1";
 	public static final String AUTOMATE_KEY = "VSDtyUi2m5c273tVKDJQ";
    public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
-//	public static String username = "kalpana.kaushik";
-//    public static String accesskey = "BTN7CDpX7oE0cBfCYeHmJUfmQeoeflGnT40WAWwElTDls2VxU0";
-//    public static RemoteWebDriver driver = null;
-//    public static String gridURL = "@hub.lambdatest.com/wd/hub";
+	public static String username = "kalpana.kaushik";
+    public static String accesskey = "BTN7CDpX7oE0cBfCYeHmJUfmQeoeflGnT40WAWwElTDls2VxU0";
+    public static RemoteWebDriver driver = null;
+    public static String gridURL = "@hub.lambdatest.com/wd/hub";
     
 	public BookingPageAction bookingPage;
 	public HomePageAction homePage;
@@ -97,13 +97,13 @@ public class TestBase {
 //					capabilities.setCapability("realMobile", "true");
 //					capabilities.setCapability("os_version", "9.0");
 //					capabilities.setCapability("name", "Bstack-[Java] Sample Test");
-	        /*Lambdatest capabilities			
+	        /*Lambdatest capabilities			*/
 					capabilities.setCapability("name", "demo test");
 					capabilities.setCapability("platformName", "Android");
 					capabilities.setCapability("deviceName", "One Plus 6T");
 					capabilities.setCapability("platformVersion","9");
 					driver =new RemoteWebDriver(new URL("https://" + username + ":" + accesskey + gridURL), capabilities);
-					*/	
+					
 			/*BrowserStack capabilities			
 //					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
 //					capabilities.setCapability("platformName", "Android");
