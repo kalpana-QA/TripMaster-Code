@@ -101,7 +101,9 @@ public class BookingPageTestScript extends TestBase {
 	
 
 
-   @Test(groups= {"smoke"},priority=2)
+
+   //@Test(groups= {"smoke"},priority=2)
+
 	public void bookingSingleRoomOneAdultOneChild_TC_2(Method method) throws Exception {
 		//ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoom1Adult1Child");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -791,13 +793,15 @@ public class BookingPageTestScript extends TestBase {
       @Test(groups= {"smoke"},priority=12)
 		public void bookingDetailswithPremiumEcomomy_TC_18(Method method) throws Exception {
 			ExtentTest test =ExtentTestManager.startTest(method.getName(), "bookingDetailswithPremiumEcomomy");
-
+            
 			bookingPage.clickOnBuildYourVacationDropDown();
 			PageBase.waitForElement(3);
 			bookingPage.selectCabinClass("Premium Economy");
 			test.log(LogStatus.INFO, "");
+
 			bookingPage.fillLeavingFromDetails("New York City (all Airports)");
 			bookingPage.fillGoingToCityDetails("Delhi (India)");
+
 			bookingPage.selectStayingTime("4");
 			bookingPage.selectNoMoreCitiesBtn();
 			bookingPage.selectGuestDetails("1|1");
@@ -811,23 +815,20 @@ public class BookingPageTestScript extends TestBase {
 			test.log(LogStatus.INFO, "Select Cabin class");
 			logs.info("Select Cabin class");
 			if(TestBase.flag_Mob){
-			  boolean cabinVerify = bookingPage.verifyCabin();
+			      boolean cabinVerify = bookingPage.verifyCabin();
 				   Assert.assertTrue(cabinVerify);
 				   }
-
             test.log(LogStatus.INFO, "Selected Cabin class verified");
             logs.info("Selected Cabin class verified");
 			bookingPage.clickonContinueButton();
 			bookingPage.selectCheaperFlights();
 			test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
 			logs.info("Select Cheaper flights from flight options");
-
-			String expectedcabin = bookingPage.verifycabinAssert();
+            String expectedcabin = bookingPage.verifycabinAssert();
 			System.out.println("This is for Expected "+expectedcabin);
 			if(TestBase.flag_Mob)
 			{
-
-				Assert.assertEquals(expectedcabin, actualcabin);
+               Assert.assertEquals(expectedcabin, actualcabin);
 			}
 			else {
 			Assert.assertEquals(expectedcabin, actualcabinweb);

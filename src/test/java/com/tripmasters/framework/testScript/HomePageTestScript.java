@@ -97,7 +97,7 @@ public class HomePageTestScript extends TestBase {
 
 	}
 
-	@Test(groups = {"smoke"},priority=18)
+	//@Test(groups = {"smoke"},priority=18)
 	public void verifyCity_TC_10(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "Verify Search City Button on homepage");
 		PageBase.waitForElement(5);
@@ -119,7 +119,9 @@ public class HomePageTestScript extends TestBase {
 
 }
 
-	// @Test(groups = {"smoke"},priority=19)
+
+	 //@Test(groups = {"smoke"},priority=19)
+
 	public void verifyStartAgainLink_TC_15(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyStartAgainLink_TC_15");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -142,7 +144,8 @@ public class HomePageTestScript extends TestBase {
 		logs.info("verifyStartAgainLink is displayed");
 	}
 
-//	@Test(groups = {"smoke"},priority=20)
+
+	//@Test(groups = {"smoke"},priority=20)
 	public void verifyFooterText_TC_16(Method method) {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyFooterText_TC_16");
 		boolean validatefooter = homePage.validateFooterText();
