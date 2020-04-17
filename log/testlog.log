@@ -194,3 +194,5 @@
 2020-04-14 17:25:07,183 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
 2020-04-14 17:25:29,273 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
 2020-04-14 17:25:30,315 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-04-16 15:46:18,329 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
+2020-04-16 15:46:19,281 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page

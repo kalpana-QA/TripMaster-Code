@@ -6215,3 +6215,5 @@
 2020-04-14 17:25:07,183 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User clicked on Explore Europe Link
 2020-04-14 17:25:29,273 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User clicked on particular vacation package
 2020-04-14 17:25:30,315 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-04-16 15:46:18,329 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select Latin America Link
+2020-04-16 15:46:19,281 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User redirected to the Latin America Page
