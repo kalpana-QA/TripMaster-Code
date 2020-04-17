@@ -91,13 +91,13 @@ public class TestBase {
 			else if(platform.equalsIgnoreCase("Mobile")){
 				if (browser.equalsIgnoreCase("Chrome")) {
 					capabilities = new DesiredCapabilities();
-
+			/*BrowserStack capabilities	*/	
 					System.out.println("chromeDriverFilePath : " + chromeDriverFilePath);
-//					capabilities.setCapability("browserName", "android");
-//					capabilities.setCapability("device", "OnePlus 7");
-//					capabilities.setCapability("realMobile", "true");
-//					capabilities.setCapability("os_version", "9.0");
-//					capabilities.setCapability("name", "Bstack-[Java] Sample Test");
+					capabilities.setCapability("browserName", "android");
+					capabilities.setCapability("device", "OnePlus 7");
+					capabilities.setCapability("realMobile", "true");
+					capabilities.setCapability("os_version", "9.0");
+					capabilities.setCapability("name", "Bstack-[Java] Sample Test");
 	        /*Lambdatest capabilities			
 					capabilities.setCapability("name", "demo test");
 					capabilities.setCapability("platformName", "Android");
@@ -105,11 +105,11 @@ public class TestBase {
 					capabilities.setCapability("platformVersion","9");
 					driver =new RemoteWebDriver(new URL("https://" + username + ":" + accesskey + gridURL), capabilities);
 					*/
-			/*BrowserStack capabilities	*/		
-					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
-					capabilities.setCapability("platformName", "Android");
-					capabilities.setCapability("deviceName", "One Plus");
-					capabilities.setCapability("browserName", "Chrome");
+				
+//					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
+//					capabilities.setCapability("platformName", "Android");
+//					capabilities.setCapability("deviceName", "One Plus");
+//					capabilities.setCapability("browserName", "Chrome");
                     driver =new RemoteWebDriver(new URL(URL), capabilities);
 //              
 //					url = new URL("http:127.0.1.1:4723/wd/hub");
