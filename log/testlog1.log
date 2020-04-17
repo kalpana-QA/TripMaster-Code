@@ -6159,3 +6159,143 @@
 2020-03-19 12:59:14,420 [TestNG-test=Test-7] INFO com.tripmasters.framework.reports.Logs - User fills all the basic booking details
 2020-03-19 12:59:19,445 [TestNG-test=Test-7] INFO com.tripmasters.framework.reports.Logs - verifyStartAgainLink is displayed
 2020-03-19 12:59:46,590 [TestNG-test=Test-7] INFO com.tripmasters.framework.reports.Logs - verifyFooterText is displayed
+2020-04-08 01:23:37,689 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-08 01:24:15,483 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-08 01:25:22,836 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-09 11:15:16,544 [main] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-09 12:02:32,218 [main] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-09 12:56:14,780 [main] INFO com.tripmasters.framework.reports.Logs - Click on Search textBox avialable on HomePage
+2020-04-09 12:56:28,379 [main] INFO com.tripmasters.framework.reports.Logs - Search for a particular city & Click on Go Button
+2020-04-09 12:58:31,007 [main] INFO com.tripmasters.framework.reports.Logs - VerifyPopularVacationPackages displayed
+2020-04-09 13:02:02,712 [main] INFO com.tripmasters.framework.reports.Logs - Click on Build Your Vacation Dropdown
+2020-04-09 14:42:26,290 [main] INFO com.tripmasters.framework.reports.Logs - verifyFooterText is displayed
+2020-04-09 16:11:17,841 [main] INFO com.tripmasters.framework.reports.Logs - No.of Child & Age of Child got selected successfully
+2020-04-09 16:15:47,173 [main] INFO com.tripmasters.framework.reports.Logs - No.of Child & Age of Child got selected successfully
+2020-04-09 16:28:12,247 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-09 16:28:15,365 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-09 16:29:17,750 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-09 16:29:20,863 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-09 16:33:49,696 [main] INFO com.tripmasters.framework.reports.Logs - No.of Child & Age of Child got selected successfully
+2020-04-09 16:38:51,734 [main] INFO com.tripmasters.framework.reports.Logs - No.of Child & Age of Child got selected successfully
+2020-04-09 16:44:17,925 [main] INFO com.tripmasters.framework.reports.Logs - No.of Child & Age of Child got selected successfully
+2020-04-09 16:52:11,140 [main] INFO com.tripmasters.framework.reports.Logs - No.of Child & Age of Child got selected successfully
+2020-04-09 16:55:56,660 [main] INFO com.tripmasters.framework.reports.Logs - No.of Child & Age of Child got selected successfully
+2020-04-09 17:01:45,951 [main] INFO com.tripmasters.framework.reports.Logs - No.of Child & Age of Child got selected successfully
+2020-04-09 18:06:59,735 [main] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for multiple cities
+2020-04-09 18:07:01,867 [main] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-13 16:30:55,253 [main] INFO com.tripmasters.framework.reports.Logs - verifyFooterText is displayed
+2020-04-14 12:37:54,511 [main] INFO com.tripmasters.framework.reports.Logs - verifyFooterText is displayed
+2020-04-14 13:32:40,136 [main] INFO com.tripmasters.framework.reports.Logs - verifyFooterText is displayed
+2020-04-14 13:55:25,641 [main] INFO com.tripmasters.framework.reports.Logs - Click on Search textBox avialable on HomePage
+2020-04-14 13:55:39,872 [main] INFO com.tripmasters.framework.reports.Logs - Search for a particular city & Click on Go Button
+2020-04-14 15:02:21,984 [main] INFO com.tripmasters.framework.reports.Logs - VerifyPopularVacationPackages displayed
+2020-04-14 16:14:27,111 [main] INFO com.tripmasters.framework.reports.Logs - VerifyPopularVacationPackages displayed
+2020-04-14 18:02:12,821 [main] INFO com.tripmasters.framework.reports.Logs - VerifyPopularVacationPackages displayed
+2020-04-14 18:06:44,569 [main] INFO com.tripmasters.framework.reports.Logs - VerifyPopularVacationPackages displayed
+2020-04-14 18:08:01,146 [main] INFO com.tripmasters.framework.reports.Logs - Click on Search textBox avialable on HomePage
+2020-04-14 18:08:14,971 [main] INFO com.tripmasters.framework.reports.Logs - Search for a particular city & Click on Go Button
+2020-04-14 18:11:36,355 [main] INFO com.tripmasters.framework.reports.Logs - verifyFooterText is displayed
+2020-04-15 11:36:13,661 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 11:41:01,801 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 11:41:21,581 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-15 11:42:15,180 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 11:44:02,109 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 11:55:34,674 [main] INFO com.tripmasters.framework.reports.Logs - VerifyPopularVacationPackages displayed
+2020-04-15 11:56:49,803 [main] INFO com.tripmasters.framework.reports.Logs - Click on Search textBox avialable on HomePage
+2020-04-15 11:57:03,798 [main] INFO com.tripmasters.framework.reports.Logs - Search for a particular city & Click on Go Button
+2020-04-15 12:00:11,997 [main] INFO com.tripmasters.framework.reports.Logs - verifyFooterText is displayed
+2020-04-15 12:38:44,505 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 12:41:59,184 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 12:46:38,447 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 12:49:15,137 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 12:54:15,073 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 12:54:20,893 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-15 12:54:27,912 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-15 12:58:40,402 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 13:09:03,055 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 13:10:01,234 [main] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-15 13:10:36,201 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 13:21:06,156 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 13:22:04,971 [main] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-15 13:26:11,291 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 13:57:47,407 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 14:13:30,271 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 14:42:51,374 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 14:59:59,536 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-15 15:02:46,945 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 15:17:17,817 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 15:22:53,018 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 15:25:43,912 [main] INFO com.tripmasters.framework.reports.Logs - Flights & passenger details verified successfully on PaymentPage
+2020-04-15 15:28:38,931 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 16:27:54,303 [main] INFO com.tripmasters.framework.reports.Logs - Flights & passenger details verified successfully on PaymentPage
+2020-04-15 16:37:44,994 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-15 16:40:14,922 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 16:45:28,853 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 16:47:18,200 [main] INFO com.tripmasters.framework.reports.Logs - Select particular hotel from Hotel Options
+2020-04-15 16:49:42,781 [main] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-04-15 16:50:14,403 [main] INFO com.tripmasters.framework.reports.Logs - User filled all the passenger details successfully
+2020-04-15 16:52:36,294 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 16:53:07,115 [main] INFO com.tripmasters.framework.reports.Logs - Fill all the basic details for multiple cities
+2020-04-15 16:53:07,116 [main] INFO com.tripmasters.framework.reports.Logs - Adding multiple cities in destinations
+2020-04-15 16:53:07,288 [main] INFO com.tripmasters.framework.reports.Logs - Verify that multiple cities got selected as destinations
+2020-04-15 16:53:07,289 [main] INFO com.tripmasters.framework.reports.Logs - Verify that RemoveCity Link is also displayed for added cities
+2020-04-15 16:53:20,308 [main] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-04-15 16:53:21,650 [main] INFO com.tripmasters.framework.reports.Logs - All the added cities removed successfully.Verified!
+2020-04-15 16:53:41,622 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 16:54:31,966 [main] INFO com.tripmasters.framework.reports.Logs - Filled flights details with premium economy
+2020-04-15 16:54:31,967 [main] INFO com.tripmasters.framework.reports.Logs - Select Cabin class
+2020-04-15 16:54:37,341 [main] INFO com.tripmasters.framework.reports.Logs - Selected Cabin class verified
+2020-04-15 16:55:41,499 [main] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-04-15 16:57:40,350 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 16:58:01,147 [main] INFO com.tripmasters.framework.reports.Logs - Select Latin America Link
+2020-04-15 16:58:01,198 [main] INFO com.tripmasters.framework.reports.Logs - User redirected to the Latin America Page
+2020-04-15 16:59:59,448 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 17:03:56,329 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 17:13:24,172 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 17:19:52,214 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 17:24:57,328 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 17:45:40,457 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 17:57:24,493 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 18:05:50,736 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 18:09:12,698 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-15 18:13:06,683 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 11:18:54,223 [main] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-16 11:18:56,154 [main] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-16 12:40:06,774 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 12:43:54,811 [main] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-16 12:56:46,833 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 13:27:29,779 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 13:37:42,337 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 13:47:58,259 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 13:57:55,008 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 14:11:17,781 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 14:14:58,514 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 14:17:20,533 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 14:18:18,088 [main] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-16 14:19:05,068 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 14:27:29,817 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 14:30:39,011 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 15:10:51,021 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 15:15:30,682 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 15:20:12,477 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 15:44:02,415 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 16:05:29,083 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 16:08:16,271 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 16:12:24,527 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-16 16:20:13,351 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-17 13:55:22,709 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-17 13:59:09,121 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-17 14:00:10,586 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-17 14:05:30,499 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-17 14:06:15,495 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-17 14:27:41,256 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-17 14:31:13,523 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-17 14:33:25,790 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-17 14:38:29,205 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-17 14:40:16,730 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-17 14:40:59,538 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-17 14:44:40,615 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-17 14:49:34,835 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-17 14:55:18,296 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-17 15:37:37,584 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-17 17:56:08,687 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - verifyFooterText is displayed

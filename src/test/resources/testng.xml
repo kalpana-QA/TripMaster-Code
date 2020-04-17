@@ -11,7 +11,7 @@
 	<run>
 		<include name="smoke"></include>
 		<include name="regression"></include>
-<!-- 		<include name="testdemo"></include> -->
+		<include name="testdemo"></include>
 	</run>
    </groups>
    

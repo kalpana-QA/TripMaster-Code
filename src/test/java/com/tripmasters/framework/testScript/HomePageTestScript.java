@@ -50,10 +50,10 @@ public class HomePageTestScript extends TestBase {
 		logs.info("verifyMoreHighlightAndAttractionLinks is Passed.");
 	 }
 	
-	//@Test(groups = { "regression" }, priority = 21)
+	@Test(groups = { "regression" }, priority = 21)
 	public void verifyMoreHighlightAndAttractionLinks_Mob_TC_11(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyMoreHighlightAndAttractionLinks_Mob_TC_11");
-		homePage.clickOnExploreEuropeLink();
+		homePage.clickOnExploreAsiaLink();
 		homePage.moreHighlightandAttractions();
 		test.log(LogStatus.INFO, "HightLights and Attraction Links Verified");
 	}
@@ -61,22 +61,22 @@ public class HomePageTestScript extends TestBase {
 	@Test(groups = { "regression" }, priority = 16)
 	public void verifyOtherVacationPackages_TC_12(Method method) throws Exception {
 		String PackageTitle;
-	//	ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyOtherVacationPackages_TC_12");
+		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyOtherVacationPackages_TC_12");
 		homePage.scrollDownForMob(1);
 		Thread.sleep(30000);
 		PageBase.clickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
 		test.log(LogStatus.INFO, "User clicked on Explore Europe Link");
-		logs.info("User clicked on Explore Europe Link");
+		//logs.info("User clicked on Explore Europe Link");
 		homePage.scrollDownForMob(3);
 		PackageTitle = homePage.clickOnPackageDisplayedUnderOtherVacationPackages();
 		test.log(LogStatus.INFO, "User clicked on particular vacation package");
-		logs.info("User clicked on particular vacation package");
+	//	logs.info("User clicked on particular vacation package");
 
 		boolean romeFlorenceVeniceByTrainHeader = homePage.getPageTitle().contains(PackageTitle);
 		test.log(LogStatus.INFO, "Verified User is redirected  to the particular vacation packages");
 		Assert.assertTrue(romeFlorenceVeniceByTrainHeader);
 		test.log(LogStatus.INFO, "verifyOtherVacationPackages is displayed & testcase passed successfully.");
-		logs.info("verifyOtherVacationPackages is displayed & testcase passed successfully.");
+		//logs.info("verifyOtherVacationPackages is displayed & testcase passed successfully.");
 
 	}
 
@@ -85,7 +85,7 @@ public class HomePageTestScript extends TestBase {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "VerifyPopularVacationPackages_TC_13");
 		PageBase.clickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
 		test.log(LogStatus.INFO, "Clicked on Popular Vacation Packages");
-		logs.info("Clicked on Popular Vacation Packages");
+		//logs.info("Clicked on Popular Vacation Packages");
 		String europePageTitle = homePage.getPageTitle();
 		System.out.println(europePageTitle);
 		 //Assert.assertEquals(HomePageLocators.getEuropePageTitle().trim(),
@@ -93,11 +93,11 @@ public class HomePageTestScript extends TestBase {
 		// europePageTitle.trim());
 		test.log(LogStatus.INFO, "User is able to see all existing popular vacation packages");
 		test.log(LogStatus.INFO, "VerifyPopularVacationPackages displayed");
-		logs.info("VerifyPopularVacationPackages displayed");
+		//logs.info("VerifyPopularVacationPackages displayed");
 
 	}
 
-	//@Test(groups = {"smoke"},priority=18)
+	@Test(groups = {"smoke"},priority=18)
 	public void verifyCity_TC_10(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "Verify Search City Button on homepage");
 		PageBase.waitForElement(5);
@@ -105,28 +105,27 @@ public class HomePageTestScript extends TestBase {
 		Assert.assertEquals(ActionPageData.getHomePageTitle(), verifyhomepage);
 		test.log(LogStatus.INFO, "Verified User is on homepage");
 
-		logs.info("Verified User is on homepage");
+		//logs.info("Verified User is on homepage");
 		homePage.clickSearch();
 		test.log(LogStatus.INFO, "Click on Search textBox avialable on HomePage");
-		logs.info("Click on Search textBox avialable on HomePage");
+		//logs.info("Click on Search textBox avialable on HomePage");
 		homePage.fillSearch("Berlin");
 		test.log(LogStatus.INFO, "Search for a particular city & Click on Go Button");
-		logs.info("Search for a particular city & Click on Go Button");
+		//logs.info("Search for a particular city & Click on Go Button");
 		homePage.validateURL();
 	    test.log(LogStatus.INFO, "User redirected to that particular city.Verified!");
-	    logs.info("User redirected to that particular city.Verified!");
+	  //  logs.info("User redirected to that particular city.Verified!");
 
 
 }
-
-	// @Test(groups = {"smoke"},priority=19)
+	 @Test(groups = {"smoke"},priority=19)
 	public void verifyStartAgainLink_TC_15(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyStartAgainLink_TC_15");
 		bookingPage.clickOnBuildYourVacationDropDown();
 		PageBase.waitForElement(3);
 		test.log(LogStatus.INFO, "Click on Build Your Vacation Dropdown");
 		
-		logs.info("Click on Build Your Vacation Dropdown");
+		//logs.info("Click on Build Your Vacation Dropdown");
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
 		bookingPage.fillGoingToCityDetails("Delhi (India)");
 		bookingPage.selectStayingTime("4");
@@ -134,15 +133,15 @@ public class HomePageTestScript extends TestBase {
 		bookingPage.selectGuestDetails("1|2");
 		test.log(LogStatus.INFO, "User fills all the basic booking details");
 
-        logs.info("User fills all the basic booking details");
+       // logs.info("User fills all the basic booking details");
 		homePage.getStartAgain();
 		String verifyhomepage = homePage.getPageTitle();
 		Assert.assertEquals(ActionPageData.getHomePageTitle(), verifyhomepage);
 		test.log(LogStatus.INFO, "Verify User is on Home after clicking on StartAgain Link.");
-		logs.info("verifyStartAgainLink is displayed");
+		//logs.info("verifyStartAgainLink is displayed");
 	}
 
-//	@Test(groups = {"smoke"},priority=20)
+	@Test(groups = {"smoke"},priority=20)
 	public void verifyFooterText_TC_16(Method method) {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyFooterText_TC_16");
 		boolean validatefooter = homePage.validateFooterText();

@@ -2,6 +2,7 @@ package com.tripmasters.framework.base;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
@@ -12,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -32,7 +34,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	private static String chromeDriverFilePath = System.getProperty("user.dir")
 			+ "/src/test/resources/webdriver/chromedriver.exe";
-	public static WebDriver driver;
+	//public static WebDriver driver;
 	private DesiredCapabilities capabilities;
 	private URL url;
 	private boolean flag = false;
@@ -44,6 +46,16 @@ public class TestBase {
 	public HomePageAction homePage;
 	public PassengerInfoPageAction passengerInfoPage;
 	public ExtentTest test;
+	
+	
+	  public String username = "kalpana.kaushik";
+	  public String accesskey = "BTN7CDpX7oE0cBfCYeHmJUfmQeoeflGnT40WAWwElTDls2VxU0";
+	  public static RemoteWebDriver driver = null;
+	  public String gridURL =  "@hub.lambdatest.com/wd/hub";
+	  boolean status = false;
+	
+	
+	
 
 	
 	@BeforeMethod(alwaysRun = true)
@@ -66,7 +78,15 @@ public class TestBase {
 					Logs.info("ChromeDriver instantiated for " + platform + " platform.");
 					flag = true;
 
-				} else if (browser.equalsIgnoreCase("Firefox")) {
+				} 
+				
+				
+				
+				
+				
+				
+				
+				else if (browser.equalsIgnoreCase("Firefox")) {
 
 					WebDriverManager.firefoxdriver().setup();
 					// driver = new FirefoxDriver();
@@ -78,22 +98,50 @@ public class TestBase {
 					System.err.println("Browser doesn't found!!!! for windows platfrom");
 				}
 			}
+			
+			
+				
+				
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			else if(platform.equalsIgnoreCase("Mobile")){
 				if (browser.equalsIgnoreCase("Chrome")) {
 					capabilities = new DesiredCapabilities();
 
 					System.out.println("chromeDriverFilePath : " + chromeDriverFilePath);
-					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
+//					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
+//					capabilities.setCapability("platformName", "Android");
+//					capabilities.setCapability("platformVersion", "10");
+//					capabilities.setCapability("deviceName", "f75b7d5c");
+//					capabilities.setCapability("browserName", "Chrome");
+
+					//lambdaTest
+					
+					capabilities.setCapability("name", "TestSuite");
 					capabilities.setCapability("platformName", "Android");
-					capabilities.setCapability("deviceName", "One Plus");
-					capabilities.setCapability("browserName", "Chrome");
+					capabilities.setCapability("deviceName", "One Plus 6T");
+					capabilities.setCapability("platformVersion","9");
+					capabilities.setCapability("console",true);
+					capabilities.setCapability("network",true);
+					capabilities.setCapability("visual",true);
+					
+				    driver =new RemoteWebDriver(new URL("https://" + username + ":" + accesskey + gridURL), capabilities);
+					
+				//	url = new URL("http:127.0.0.1:4723/wd/hub");
 
-					url = new URL("http:127.0.1.1:4723/wd/hub");
+					//driver = new AndroidDriver<MobileElement>(url, capabilities);
 
-					driver = new AndroidDriver<MobileElement>(url, capabilities);
-
-					//Logs.info(browser + " AndroidDriver instantiated for " + platform + " platform.");
+				//	Logs.info(browser + " AndroidDriver instantiated for " + platform + " platform.");
 					flag = true;
+					flag_Mob = true;
 
 				} else {
 					Logs.error("Browser doesn't found!!!! for mobile platform");
@@ -156,7 +204,7 @@ public class TestBase {
 		// GenerateReport2.getResult(null);
 		if (driver != null) {
 			//Logs.info("Closing browser after TestClass");
-		 driver.close();
+		driver.quit();
 		} else {
 			//Logs.error("Driver is null at AfterClass (TestBase)");
 		}

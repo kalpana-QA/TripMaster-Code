@@ -10,13 +10,11 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
 import com.tripmasters.framework.base.PageBase;
 import com.tripmasters.framework.base.TestBase;
 import com.tripmasters.framework.pageLocators.BookingLocators;
 import com.tripmasters.framework.pageLocators.HomePageLocators;
 import com.tripmasters.framework.pageLocators.TripInclusionPageLocators;
-import com.tripmasters.framework.reports.Logs;
 
 
 public class BookingPageAction extends PageBase {
@@ -47,9 +45,11 @@ public class BookingPageAction extends PageBase {
 		//test.log(LogStatus.INFO, "User entered '" + stayingTime + "' nights staying time");
 	}
 	
-	public void selectNoMoreCitiesBtn(){
+	public void selectNoMoreCitiesBtn() throws Exception{
+		
 		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
-	}
+		
+	} 
 	//demo 
 	public void clickonContinue() {
 	WebElement e =	 driver.findElement(BookingLocators.getnoMoreCitiesBtn());
@@ -155,6 +155,7 @@ return selectedcabin;
 	public  String selectCheaperFlights() throws Exception {
 		String flightvalue = null;
 		if (TestBase.flag_Mob) {
+			
 		flightvalue = selectCheaperFlights_Mob();
 		
 		} 
@@ -165,6 +166,7 @@ return selectedcabin;
 		clickUsingJavaScript(BookingLocators.getselectFlightOption());
 		clickUsingJavaScript(BookingLocators.getselectButtonInFlightOption1());
 		clickUsingJavaScript(BookingLocators.getcontinueLink());
+		
 		return flightvalue;
 		}
 		return flightvalue;
@@ -173,6 +175,8 @@ return selectedcabin;
 
 		public  String selectCheaperFlights_Mob() throws Exception {
 
+			
+			
 		isElementDisplayed(BookingLocators.getcheaperFlightsLink());
 		scrollDown();
 		PageBase.waitForElement(3);
@@ -343,6 +347,7 @@ return selectedcabin;
 	}
 
 	public  List<String> getSelectedFlightsDetails() {
+		
 		List<String> actualFlightdetails = new ArrayList<String>();
 
 		List<WebElement> actualFlight = driver.findElements(BookingLocators.getactualFlightDetails());
@@ -350,11 +355,13 @@ return selectedcabin;
 		for (WebElement details : actualFlight) {
 			actualFlightdetails.add(details.getText());
 		}
+		
 		return actualFlightdetails;
 	}
 
 	public  String getActualFlight() {
 		String flightvalue = driver.findElement(BookingLocators.getactualFlightDetails()).getText();
+		System.out.println("Actual flight value is "+flightvalue);
 		return flightvalue;
 	}
 
@@ -421,6 +428,7 @@ return selectedcabin;
 			if (cell.getText().equals(newDate)) {
 				cell.findElement(By.linkText(newDate)).click();
 				//test.log(LogStatus.INFO, "User selects '" + newDate + "' as Arriving_On Date");
+		
 				break;
 			}
 		}
@@ -490,7 +498,7 @@ return selectedcabin;
 		}
 		}
 	    
-	    public  static boolean verifyCabin()
+	    public   boolean verifyCabin()
 		{
 		clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
 		boolean verifycabin = driver.findElement(HomePageLocators.getSelectPremiumEconomy()).isEnabled();
@@ -516,7 +524,7 @@ return selectedcabin;
 	 */
 	public  void clickOnSpotlightOnDrpDwnForMob() throws Exception {
 		if (TestBase.flag_Mob) {
-			scrollDownForMob(4);
+			scrollDownForMob(3);
 			clickUsingJavaScript(HomePageLocators.getSpotlightOnDrpDwn());
 			
 		}
@@ -532,8 +540,11 @@ return selectedcabin;
 	public  String clickOnFirstOptionUnderSpotlightForMob() throws Exception {
 		String title = null;
 		if (TestBase.flag_Mob) {
+			
 			title = getText(HomePageLocators.getfirstOptionUnderSpotlightDrpDwn());
+			System.out.println("dropdown first option is "+ title);
 			clickUsingJavaScript(HomePageLocators.getfirstOptionUnderSpotlightDrpDwn());
+			System.out.println("title is "+driver.getTitle());
 		}
 		return title;
 	}
@@ -546,6 +557,7 @@ return selectedcabin;
 	 */
 	public  void verifyPageDisplayed(String PageTitle) {
 		if(TestBase.flag_Mob){
+			System.out.println("title is " + getPageTitle().trim());
 		Assert.assertTrue(getPageTitle().contains(PageTitle.trim()));
 		}
 	}
@@ -568,6 +580,24 @@ return selectedcabin;
 			clickUsingJavaScript(TripInclusionPageLocators.getTripSummaryButton());
 	}
 	}
+	
+	public void validateTripPage() {
+		if(TestBase.flag_Mob)
+		{
+			if (driver.getTitle().contains("Itinerary - Review"))
+			{
+			System.out.println("Title is "+ driver.getTitle());
+
+			boolean	flag = true;
+			Assert.assertTrue(flag);
+			}
+		
+	}
+		}
+	
+	
+	
+	
 	public  void validateTripIncluisonPage()
 	{
 		boolean flag = false;

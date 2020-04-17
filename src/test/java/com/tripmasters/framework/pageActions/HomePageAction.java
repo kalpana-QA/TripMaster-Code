@@ -53,10 +53,10 @@ public class HomePageAction extends PageBase {
 	 * @throws Exception
 	 * @author Mrinal
 	 */
-	public void clickOnExploreEuropeLink() throws Exception {
+	public void clickOnExploreAsiaLink() throws Exception {
 		if (TestBase.flag_Mob) {
 			scrollDown();
-			clickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
+			clickUsingJavaScript(HomePageLocators.getexploreAsiaLink());
 		}
 		else {
 			

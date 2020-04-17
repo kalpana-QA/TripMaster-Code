@@ -3,13 +3,13 @@ package com.tripmasters.framework.pageLocators;
 import org.openqa.selenium.By;
 
 public class PassengerInformationLocators {
-	 private static By fnameR1T1=By.xpath("(//div[div[*[contains(.,'Room 1')]]]//input[contains(@placeholder,'First and Middle Name')])[1] |//input[@id='1_txtCFName1']");
+	 private static By fnameR1T1=By.xpath("(//div[div[*[contains(.,'Room 1')]]]//input[contains(@placeholder,'First and Middle Name')])[1] |//input[@id='1_txtCFName1'] | //input[@id='1_txtPFName1'] ");
 	 private static By fnameR1T2=By.xpath("(//div[div[*[contains(.,'Room 1')]]]//input[contains(@placeholder,'First and Middle Name')])[2]");
 	 private static By fnameR2T1=By.xpath("(//div[div[span[contains(.,'Room 2')]]]//input[contains(@placeholder,'First and Middle Name')])[1]");
 	 private static By fnameR2T2=By.xpath("(//div[div[span[contains(.,'Room 2')]]]//input[contains(@placeholder,'First and Middle Name')])[2]");
 	
-	 private static By lnameR1T1=By.xpath("(//div[div[span[contains(.,'Room 1')]]]//input[contains(@placeholder,'Last Name')])[1] | //input[@id='1_txtCLName1']");
-	 private static By lnameR1T2=By.xpath("(//div[div[span[contains(.,'Room 1')]]]//input[contains(@placeholder,'Last Name')])[2]");
+	 private static By lnameR1T1=By.xpath("(//div[div[span[contains(.,'Room 1')]]]//input[contains(@placeholder,'Last Name')])[1] | //input[@id='1_txtCLName1'] | //input[@id='1_txtPLName1']");
+	 private static By lnameR1T2=By.xpath("(//div[div[span[contains(.,'Room 1')]]]//input[contains(@placeholder,'Last Name')])[2] | //input[@id='1_txtPLName2']");
 	 private static By lnameR2T1=By.xpath("(//div[div[span[contains(.,'Room 2')]]]//input[contains(@placeholder,'Last Name')])[1]");
 	 private static By lnameR2T2=By.xpath("(//div[div[span[contains(.,'Room 2')]]]//input[contains(@placeholder,'Last Name')])[2]");
      
@@ -18,8 +18,8 @@ public class PassengerInformationLocators {
      private static By genderR2T1=By.xpath("(//div[div[div[span[contains(.,'Room 2')]]]]//div[contains(@class,'Gender')]//select)[1]");
      private static By genderR2T2=By.xpath("(//div[div[div[span[contains(.,'Room 2')]]]]//div[contains(@class,'Gender')]//select)[2]");
 
-     private static By dobR1T1=By.xpath("(//div[div[div[span[contains(.,'Room 1')]]]]//input[contains(@id,'txtPAX_DOB')])[1]");
-     private static By dobR1T2=By.xpath("(//div[div[div[span[contains(.,'Room 1')]]]]//input[contains(@id,'txtPAX_DOB')])[2]");
+     private static By dobR1T1=By.xpath("(//div[div[div[span[contains(.,'Room 1')]]]]//input[contains(@id,'txtPAX_DOB')])[1] | //input[@id='1_txtPAX_DOB1']");
+     private static By dobR1T2=By.xpath("(//div[div[div[span[contains(.,'Room 1')]]]]//input[contains(@id,'txtPAX_DOB')])[2] | //input[@id='1_txtPAX_DOB2']");
      private static By dobR2T1=By.xpath("(//div[div[div[span[contains(.,'Room 2')]]]]//input[contains(@id,'txtPAX_DOB')])[1]");
      private static By dobR2T2=By.xpath("(//div[div[div[span[contains(.,'Room 2')]]]]//input[contains(@id,'txtPAX_DOB')])[2]");
 

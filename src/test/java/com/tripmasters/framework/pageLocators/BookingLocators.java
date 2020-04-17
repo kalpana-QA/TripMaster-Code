@@ -13,7 +13,7 @@ public class BookingLocators {
 	private static By addCityBtn = By.xpath("//span[contains(.,'Add City')] | //p[@id='pMaddcity']");
 	//private static By noMoreCitiesBtn = By.xpath("//span[contains(.,'No more cities. Continue')]");//// | //span[@class = 'spMnextbutt']");
 	
-	private static By noMoreCitiesBtn = By.xpath("//span[@class='btnNoMore']");
+	private static By noMoreCitiesBtn = By.xpath("//span[@class='btnNoMore'] | //span[text()='Next']");
 	
 	private static By continueBtn = By.xpath("//div[@class='dvContinueButton']//span[contains(.,'Continue')] | //p[@id='pMcont']/span[contains(.,'Continue')]");
 	private static By continueLink = By.xpath("//a[@id='aContWithPriceValidation']");
@@ -78,7 +78,7 @@ public class BookingLocators {
 	private static By verifyHotel = By.xpath("(//a[contains(@class,'hotel')])[1] | //a[@id='Prod_173668' and @class='m-hotel']");
 	private final static By firstFlightDetails = By.xpath("//div[@id='divSegmentDetails1']//tbody//td");
 	private final static By actualFlightDetails = By
-			.xpath("//div[@id='seg1flight1']//div[@class='divFligth-Bottom-Left textGrey10'] | //div[@id='segBottomInfo']//div[@class='col-12'][1]");
+			.xpath("//div[@id='seg1flight1']//div[@class='divFligth-Bottom-Left textGrey10'] | ( //div[@id='segBottomInfo']//div[@class='col-12'])[1]");
 	private static By expectedFlight = By.xpath("(//div[@id='divSegmentDetails1']//td//span[@class='textGrey10'])[2] | (//div[@class='col-12 pl-2 pt-1 pb-2']//span[@class='textGrey11 fontSize10'])[1]");
 
 	private static By selectWitoutAirOption = By.xpath("//form[@id='formBYO']//span[text()='Without Air *']");
