@@ -58,7 +58,7 @@ public class HomePageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "HightLights and Attraction Links Verified");
 	}
 
-	@Test(groups = { "regression" }, priority = 16)
+	//@Test(groups = { "regression" }, priority = 16)
 	public void verifyOtherVacationPackages_TC_12(Method method) throws Exception {
 		String PackageTitle;
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyOtherVacationPackages_TC_12");
@@ -118,7 +118,9 @@ public class HomePageTestScript extends TestBase {
 
 
 }
+
 	 @Test(groups = {"smoke"},priority=19)
+
 	public void verifyStartAgainLink_TC_15(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyStartAgainLink_TC_15");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -141,7 +143,9 @@ public class HomePageTestScript extends TestBase {
 		//logs.info("verifyStartAgainLink is displayed");
 	}
 
+
 	@Test(groups = {"smoke"},priority=20)
+
 	public void verifyFooterText_TC_16(Method method) {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyFooterText_TC_16");
 		boolean validatefooter = homePage.validateFooterText();

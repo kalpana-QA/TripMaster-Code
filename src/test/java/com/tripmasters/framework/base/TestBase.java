@@ -117,11 +117,13 @@ public class TestBase {
 					capabilities = new DesiredCapabilities();
 
 					System.out.println("chromeDriverFilePath : " + chromeDriverFilePath);
+
 //					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
 //					capabilities.setCapability("platformName", "Android");
 //					capabilities.setCapability("platformVersion", "10");
 //					capabilities.setCapability("deviceName", "f75b7d5c");
 //					capabilities.setCapability("browserName", "Chrome");
+
 
 					//lambdaTest
 					

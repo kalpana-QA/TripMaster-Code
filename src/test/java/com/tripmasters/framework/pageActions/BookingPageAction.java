@@ -557,8 +557,10 @@ return selectedcabin;
 	 */
 	public  void verifyPageDisplayed(String PageTitle) {
 		if(TestBase.flag_Mob){
+
 			System.out.println("title is " + getPageTitle().trim());
 		Assert.assertTrue(getPageTitle().contains(PageTitle.trim()));
+
 		}
 	}
 

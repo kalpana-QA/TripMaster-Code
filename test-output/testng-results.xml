@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="3" ignored="0" total="18" passed="15">
   <reporter-output>
   </reporter-output>
@@ -24,11 +25,28 @@
         <method signature="HomePageTestScript.verifyCity_TC_10(java.lang.reflect.Method)[pri:18, instance:com.tripmasters.framework.testScript.HomePageTestScript@75c072cb]" name="verifyCity_TC_10" class="com.tripmasters.framework.testScript.HomePageTestScript"/>
         <method signature="HomePageTestScript.verifyFooterText_TC_16(java.lang.reflect.Method)[pri:20, instance:com.tripmasters.framework.testScript.HomePageTestScript@75c072cb]" name="verifyFooterText_TC_16" class="com.tripmasters.framework.testScript.HomePageTestScript"/>
         <method signature="HomePageTestScript.verifyStartAgainLink_TC_15(java.lang.reflect.Method)[pri:19, instance:com.tripmasters.framework.testScript.HomePageTestScript@75c072cb]" name="verifyStartAgainLink_TC_15" class="com.tripmasters.framework.testScript.HomePageTestScript"/>
+=======
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+<<<<<<< Updated upstream
+  <suite name="Default suite" duration-ms="194281" started-at="2020-04-09T07:34:08Z" finished-at="2020-04-09T07:37:22Z">
+=======
+  <suite name="Default suite" duration-ms="93005" started-at="2020-04-17T11:33:43Z" finished-at="2020-04-17T11:35:16Z">
+>>>>>>> Stashed changes
+    <groups>
+      <group name="regression">
+        <method signature="HomePageTestScript.verifyOtherVacationPackages_TC_12(java.lang.reflect.Method)[pri:16, instance:com.tripmasters.framework.testScript.HomePageTestScript@64d7f7e0]" name="verifyOtherVacationPackages_TC_12" class="com.tripmasters.framework.testScript.HomePageTestScript"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="HomePageTestScript.verifyCity_TC_10(java.lang.reflect.Method)[pri:18, instance:com.tripmasters.framework.testScript.HomePageTestScript@64d7f7e0]" name="verifyCity_TC_10" class="com.tripmasters.framework.testScript.HomePageTestScript"/>
+>>>>>>> b60fbc97bb0ac7c6f4ae15ca6791b7e4c69001c7
       </group> <!-- smoke -->
       <group name="testdemo">
         <method signature="BookingPageTestScript.multipleCities_TC_21(java.lang.reflect.Method)[pri:10, instance:com.tripmasters.framework.testScript.BookingPageTestScript@1f1c7bf6]" name="multipleCities_TC_21" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
       </group> <!-- testdemo -->
     </groups>
+<<<<<<< HEAD
     <test name="Test" duration-ms="5116410" started-at="2020-04-17T11:02:27Z" finished-at="2020-04-17T12:27:44Z">
       <class name="com.tripmasters.framework.testScript.HomePageTestScript">
         <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@75c072cb]" name="setUp" is-config="true" duration-ms="63919" started-at="2020-04-17T12:18:55Z" finished-at="2020-04-17T12:19:59Z">
@@ -133,13 +151,33 @@
           </reporter-output>
         </test-method> <!-- setUp -->
         <test-method status="PASS" signature="bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.BookingPageTestScript@1f1c7bf6]" name="bookingSingleRoomWithThreeAdults_TC_1" duration-ms="307470" started-at="2020-04-17T11:03:08Z" finished-at="2020-04-17T11:08:15Z">
+=======
+<<<<<<< Updated upstream
+    <test name="Default test" duration-ms="194281" started-at="2020-04-09T07:34:08Z" finished-at="2020-04-09T07:37:22Z">
+      <class name="com.tripmasters.framework.testScript.HomePageTestScript">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@64d7f7e0]" name="setUp" is-config="true" duration-ms="51544" started-at="2020-04-09T07:34:08Z" finished-at="2020-04-09T07:35:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyOtherVacationPackages_TC_12(java.lang.reflect.Method)[pri:16, instance:com.tripmasters.framework.testScript.HomePageTestScript@64d7f7e0]" name="verifyOtherVacationPackages_TC_12" duration-ms="64418" started-at="2020-04-09T07:35:00Z" finished-at="2020-04-09T07:36:04Z">
+=======
+    <test name="Default test" duration-ms="93005" started-at="2020-04-17T11:33:43Z" finished-at="2020-04-17T11:35:16Z">
+      <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@64d7f7e0]" name="setUp" is-config="true" duration-ms="38454" started-at="2020-04-17T11:33:43Z" finished-at="2020-04-17T11:34:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifySpotlightLink_TC_14(java.lang.reflect.Method)[pri:13, instance:com.tripmasters.framework.testScript.BookingPageTestScript@64d7f7e0]" name="verifySpotlightLink_TC_14" duration-ms="54244" started-at="2020-04-17T11:34:22Z" finished-at="2020-04-17T11:35:16Z">
+>>>>>>> Stashed changes
+>>>>>>> b60fbc97bb0ac7c6f4ae15ca6791b7e4c69001c7
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.bookingSingleRoomWithThreeAdults_TC_1(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.tripmasters.framework.testScript.HomePageTestScript.verifyOtherVacationPackages_TC_12(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
+<<<<<<< HEAD
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookingSingleRoomWithThreeAdults_TC_1 -->
@@ -401,6 +439,22 @@ at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 at com.tripmasters.framework.pageActions.BookingPageAction.verifycabinAssert(BookingPageAction.java:489)
 at com.tripmasters.framework.testScript.BookingPageTestScript.bookingDetailswithPremiumEcomomy_TC_18(BookingPageTestScript.java:841)
+=======
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+<<<<<<< Updated upstream
+              <![CDATA[java.lang.NullPointerException
+at com.tripmasters.framework.testScript.HomePageTestScript.verifyOtherVacationPackages_TC_12(HomePageTestScript.java:68)
+=======
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.tripmasters.framework.pageActions.BookingPageAction.verifyLatinAmericPage(BookingPageAction.java:508)
+at com.tripmasters.framework.testScript.BookingPageTestScript.verifySpotlightLink_TC_14(BookingPageTestScript.java:768)
+>>>>>>> Stashed changes
+>>>>>>> b60fbc97bb0ac7c6f4ae15ca6791b7e4c69001c7
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -411,14 +465,57 @@ at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+<<<<<<< HEAD
 at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 at java.lang.Thread.run(Unknown Source)
+=======
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+>>>>>>> b60fbc97bb0ac7c6f4ae15ca6791b7e4c69001c7
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
+<<<<<<< Updated upstream
+        </test-method> <!-- verifyOtherVacationPackages_TC_12 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@64d7f7e0]" name="tearDown" is-config="true" duration-ms="283" started-at="2020-04-09T07:36:04Z" finished-at="2020-04-09T07:36:04Z">
+=======
+        </test-method> <!-- verifySpotlightLink_TC_14 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@64d7f7e0]" name="tearDown" is-config="true" duration-ms="251" started-at="2020-04-17T11:35:16Z" finished-at="2020-04-17T11:35:16Z">
+>>>>>>> Stashed changes
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@64d7f7e0]" name="setUp" is-config="true" duration-ms="47903" started-at="2020-04-09T07:36:04Z" finished-at="2020-04-09T07:36:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyCity_TC_10(java.lang.reflect.Method)[pri:18, instance:com.tripmasters.framework.testScript.HomePageTestScript@64d7f7e0]" name="verifyCity_TC_10" duration-ms="29839" started-at="2020-04-09T07:36:52Z" finished-at="2020-04-09T07:37:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tripmasters.framework.testScript.HomePageTestScript.verifyCity_TC_10(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- bookingDetailswithPremiumEcomomy_TC_18 -->
         <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@1f1c7bf6]" name="tearDown" is-config="true" duration-ms="1459" started-at="2020-04-17T12:11:39Z" finished-at="2020-04-17T12:11:41Z">
           <reporter-output>
@@ -493,4 +590,14 @@ at java.lang.Thread.run(Unknown Source)
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
+=======
+        </test-method> <!-- verifyCity_TC_10 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@64d7f7e0]" name="tearDown" is-config="true" duration-ms="196" started-at="2020-04-09T07:37:22Z" finished-at="2020-04-09T07:37:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> b60fbc97bb0ac7c6f4ae15ca6791b7e4c69001c7
 </testng-results>
