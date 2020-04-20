@@ -660,3 +660,4 @@
 2020-04-17 17:05:16,248 - com.tripmasters.framework.reports.Logs -INFO - Spotlight link verified!
 >>>>>>> Stashed changes
 >>>>>>> b60fbc97bb0ac7c6f4ae15ca6791b7e4c69001c7
+2020-04-20 17:25:22,472 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time

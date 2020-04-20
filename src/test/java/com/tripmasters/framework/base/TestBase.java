@@ -48,8 +48,8 @@ public class TestBase {
 	public ExtentTest test;
 	
 	
-	  public String username = "kalpana.kaushik";
-	  public String accesskey = "BTN7CDpX7oE0cBfCYeHmJUfmQeoeflGnT40WAWwElTDls2VxU0";
+	  public String username = "satyamsharma0001";
+	  public String accesskey = "Fbu1vUXHxF0GCngFkDHOO1ooXSU9GMLu3sIW4tlFIDhakoW2qi";
 	  public static RemoteWebDriver driver = null;
 	  public String gridURL =  "@hub.lambdatest.com/wd/hub";
 	  boolean status = false;
@@ -81,11 +81,6 @@ public class TestBase {
 				} 
 				
 				
-				
-				
-				
-				
-				
 				else if (browser.equalsIgnoreCase("Firefox")) {
 
 					WebDriverManager.firefoxdriver().setup();
@@ -98,19 +93,6 @@ public class TestBase {
 					System.err.println("Browser doesn't found!!!! for windows platfrom");
 				}
 			}
-			
-			
-				
-				
-				
-			
-			
-			
-			
-			
-			
-			
-			
 			
 			else if(platform.equalsIgnoreCase("Mobile")){
 				if (browser.equalsIgnoreCase("Chrome")) {

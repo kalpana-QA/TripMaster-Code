@@ -235,7 +235,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
 	}
 
-	//@Test(groups= {"smoke"},priority=4)
+	@Test(groups= {"smoke"},priority=4)
 	public void bookingTwoRoomThreeAdultOneChild_TC_4(Method method) throws Exception {
 		 ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom3Adult1Child");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -384,7 +384,7 @@ public class BookingPageTestScript extends TestBase {
 
 	}
 
-	//@Test(groups= {"smoke"},priority=6)
+	@Test(groups= {"smoke"},priority=6)
 	public void bookingFlightsWithmultipleCities_TC_6(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingFlightsWithmultipleCities");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -445,8 +445,7 @@ public class BookingPageTestScript extends TestBase {
 	}
 	
 
-    @Test
-
+    //@Test
 	public void bookingFlightAndHotelForSingleCity_TC_7(Method method) throws Exception {
 		//ExtentTest test=ExtentTestManager.startTest(method.getName(), "bookingFlightAndHotelForSingleCity");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -711,7 +710,7 @@ public class BookingPageTestScript extends TestBase {
 		
 	}
 	
-	//@Test(groups= {"regression"},priority=11)
+	@Test(groups= {"regression"},priority=11)
 	public void removeAddedCity_TC_17(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "removeAddedCity");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -766,8 +765,7 @@ public class BookingPageTestScript extends TestBase {
 		//logs.info("Validate that user is on TripInclusion Page");
 	}
 
-	@Test
-
+	//@Test
 	public void verifySpotlightLink_TC_14(Method method) throws Exception {
     	String PageTitle=null;
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "verifySpotlightLink");
@@ -806,8 +804,7 @@ public class BookingPageTestScript extends TestBase {
 	
    
 
-   @Test()
-
+  // @Test()
 		public void bookingDetailswithPremiumEcomomy_TC_18(Method method) throws Exception {
 			ExtentTest test =ExtentTestManager.startTest(method.getName(), "bookingDetailswithPremiumEcomomy");
             

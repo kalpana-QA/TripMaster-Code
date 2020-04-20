@@ -19,7 +19,7 @@ import junit.framework.Assert;
 public class HomePageTestScript extends TestBase {
 
 	static Logs logs=new Logs();
-	 //@Test(groups = { "regression" }, priority = 15)
+	 @Test(groups = { "regression" }, priority = 15)
 	public void verifyMoreHighlightAndAttractionLinks_TC_11(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyMoreHighlightAndAttractionLinks_TC_11");
 		String homePageTitle = homePage.getPageTitle();
@@ -58,7 +58,7 @@ public class HomePageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "HightLights and Attraction Links Verified");
 	}
 
-	//@Test(groups = { "regression" }, priority = 16)
+	@Test(groups = { "regression" }, priority = 16)
 	public void verifyOtherVacationPackages_TC_12(Method method) throws Exception {
 		String PackageTitle;
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyOtherVacationPackages_TC_12");
@@ -80,7 +80,7 @@ public class HomePageTestScript extends TestBase {
 
 	}
 
-	//@Test(groups = {"smoke"},priority=17)
+	@Test(groups = {"smoke"},priority=17)
 	public void verifyPopularVacationPackages_TC_13(Method method) {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "VerifyPopularVacationPackages_TC_13");
 		PageBase.clickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
