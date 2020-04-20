@@ -18,7 +18,7 @@
 		<classes>
 
 	    <class name="com.tripmasters.framework.testScript.HomePageTestScript" /> 
-<!--  	   	<class name="com.tripmasters.framework.testScript.BookingPageTestScript" />  -->
+ 	   	<class name="com.tripmasters.framework.testScript.BookingPageTestScript" /> 
 
 		</classes>
 	</test> <!-- Test -->

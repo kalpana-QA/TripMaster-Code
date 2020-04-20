@@ -36,10 +36,12 @@ public class BookingPageTestScript extends TestBase {
 	    ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoomWith3Adults");
 		 PageBase.waitForElement(5);
 		 bookingPage.clickOnBuildYourVacationDropDown();
-		PageBase.waitForElement(10);
+		PageBase.waitForElement(1);
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
+		logs.info("Leaving details filled");
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
+		logs.info("Going details filled");
 		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
 		bookingPage.selectValueFromCalendar();
 		bookingPage.selectStayingTime("4");
