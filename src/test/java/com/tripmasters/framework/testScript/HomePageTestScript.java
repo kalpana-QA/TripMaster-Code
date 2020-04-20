@@ -19,7 +19,7 @@ import junit.framework.Assert;
 public class HomePageTestScript extends TestBase {
 
 	static Logs logs=new Logs();
-	 @Test(groups = { "regression" }, priority = 15)
+	// @Test(groups = { "regression" }, priority = 15)
 	public void verifyMoreHighlightAndAttractionLinks_TC_11(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyMoreHighlightAndAttractionLinks_TC_11");
 		String homePageTitle = homePage.getPageTitle();
