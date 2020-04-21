@@ -47,8 +47,8 @@ public class TestBase {
 	public PassengerInfoPageAction passengerInfoPage;
 	public ExtentTest test;
 	
-	public static final String USERNAME = "kalpanakaushik1";
-	public static final String AUTOMATE_KEY = "VSDtyUi2m5c273tVKDJQ";
+	public static final String USERNAME = "testing1912";
+	public static final String AUTOMATE_KEY = "eqfE2B4RJjXXmqmUnqsH";
     public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
    
 	  public String username = "satyamsharma0001";
