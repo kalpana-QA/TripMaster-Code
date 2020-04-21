@@ -47,16 +47,15 @@ public class TestBase {
 	public PassengerInfoPageAction passengerInfoPage;
 	public ExtentTest test;
 	
-	
+	public static final String USERNAME = "kalpanakaushik1";
+	public static final String AUTOMATE_KEY = "VSDtyUi2m5c273tVKDJQ";
+    public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+   
 	  public String username = "satyamsharma0001";
 	  public String accesskey = "Fbu1vUXHxF0GCngFkDHOO1ooXSU9GMLu3sIW4tlFIDhakoW2qi";
 	  public static RemoteWebDriver driver = null;
 	  public String gridURL =  "@hub.lambdatest.com/wd/hub";
 	  boolean status = false;
-	
-	
-	
-
 	
 	@BeforeMethod(alwaysRun = true)
 	// @Parameters(value = { "browser" })
@@ -109,15 +108,24 @@ public class TestBase {
 
 					//lambdaTest
 					
-					capabilities.setCapability("name", "TestSuite");
-					capabilities.setCapability("platformName", "Android");
-					capabilities.setCapability("deviceName", "One Plus 6T");
-					capabilities.setCapability("platformVersion","9");
-					capabilities.setCapability("console",true);
-					capabilities.setCapability("network",true);
-					capabilities.setCapability("visual",true);
+//					capabilities.setCapability("name", "TestSuite");
+//					capabilities.setCapability("platformName", "Android");
+//					capabilities.setCapability("deviceName", "One Plus 6T");
+//					capabilities.setCapability("platformVersion","9");
+//					capabilities.setCapability("console",true);
+//					capabilities.setCapability("network",true);
+//					capabilities.setCapability("visual",true);
+//					
+//				    driver =new RemoteWebDriver(new URL("https://" + username + ":" + accesskey + gridURL), capabilities);
 					
-				    driver =new RemoteWebDriver(new URL("https://" + username + ":" + accesskey + gridURL), capabilities);
+					//BrowserStack
+					capabilities.setCapability("browserName", "android");
+					capabilities.setCapability("device", "OnePlus 7");
+					capabilities.setCapability("realMobile", "true");
+					capabilities.setCapability("os_version", "9.0");
+                    capabilities.setCapability("name", "Bstack-[Java] Sample Test");
+                    
+                    driver =new RemoteWebDriver(new URL(URL), capabilities);
 					
 				//	url = new URL("http:127.0.0.1:4723/wd/hub");
 

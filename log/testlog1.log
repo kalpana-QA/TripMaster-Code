@@ -6683,3 +6683,4 @@
 >>>>>>> b60fbc97bb0ac7c6f4ae15ca6791b7e4c69001c7
 2020-04-20 17:25:22,472 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
 2020-04-20 18:06:44,142 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-21 13:50:55,533 [TestNG-test=Test-3] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
