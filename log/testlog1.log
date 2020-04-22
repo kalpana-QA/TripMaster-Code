@@ -6685,3 +6685,17 @@
 2020-04-20 18:06:44,142 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
 2020-04-21 13:50:55,533 [TestNG-test=Test-3] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
 2020-04-21 16:27:33,056 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - verifyFooterText is displayed
+2020-04-22 10:58:42,089 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Leaving details filled
+2020-04-22 10:58:48,161 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Going details filled
+2020-04-22 10:59:06,169 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select value from calendar
+2020-04-22 10:59:10,811 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select staying time
+2020-04-22 10:59:16,982 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on No More Cities Button
+2020-04-22 10:59:34,483 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Guest details Selected
+2020-04-22 10:59:40,400 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on done Mobile Button
+2020-04-22 10:59:48,811 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-22 10:59:55,096 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-22 11:00:38,294 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-04-22 11:00:52,930 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click to Continue & User redirected to Fill Passenger Details Page
+2020-04-22 11:01:25,333 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - First Traveller details filled
+2020-04-22 11:02:25,933 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User fills all the 3 passenger details
+2020-04-22 11:02:39,607 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click to Continue & User redirected to Payment Page

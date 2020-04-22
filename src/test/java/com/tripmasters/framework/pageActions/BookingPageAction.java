@@ -15,12 +15,13 @@ import com.tripmasters.framework.base.TestBase;
 import com.tripmasters.framework.pageLocators.BookingLocators;
 import com.tripmasters.framework.pageLocators.HomePageLocators;
 import com.tripmasters.framework.pageLocators.TripInclusionPageLocators;
+import com.tripmasters.framework.reports.Logs;
 
 
 public class BookingPageAction extends PageBase {
 
 	ExtentTest test;
-	
+	static Logs logs=new Logs();
 	public BookingPageAction(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
@@ -29,19 +30,19 @@ public class BookingPageAction extends PageBase {
 	public void fillLeavingFromDetails(String leavingFrom) throws Exception{
 		
 		clearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
-		//Logs.info("User entered '" + leavingFrom + "' into leaving from field");
+		logs.info("User entered '" + leavingFrom + "' into leaving from field");
 		//test.log(LogStatus.INFO, "User entered '" + leavingFrom + "' into leaving from field");
 	}
 	
 	public void fillGoingToCityDetails(String destination) throws Exception{
 		clearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
-		//Logs.info("User entered '" + destination + "' into Going to from field");
+		logs.info("User entered '" + destination + "' into Going to from field");
 		//test.log(LogStatus.INFO, "User entered '" + destination + "' into Going to from field");
 	}
 	
 	public  void selectStayingTime(String stayingTime) {
 		selectOptionByValue(BookingLocators.getstayingDrpdown(), stayingTime);
-		//Logs.info("User entered '" + stayingTime + "' nights staying time");
+		logs.info("User entered '" + stayingTime + "' nights staying time");
 		//test.log(LogStatus.INFO, "User entered '" + stayingTime + "' nights staying time");
 	}
 	
@@ -162,6 +163,7 @@ return selectedcabin;
 		else
 		{
 		clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
+		
 		flightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
 		clickUsingJavaScript(BookingLocators.getselectFlightOption());
 		clickUsingJavaScript(BookingLocators.getselectButtonInFlightOption1());
@@ -174,9 +176,6 @@ return selectedcabin;
 		}
 
 		public  String selectCheaperFlights_Mob() throws Exception {
-
-			
-			
 		isElementDisplayed(BookingLocators.getcheaperFlightsLink());
 		scrollDown();
 		PageBase.waitForElement(3);
