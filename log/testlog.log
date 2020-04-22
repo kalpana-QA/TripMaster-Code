@@ -678,3 +678,22 @@
 2020-04-22 11:01:25,333 - com.tripmasters.framework.reports.Logs -INFO - First Traveller details filled
 2020-04-22 11:02:25,933 - com.tripmasters.framework.reports.Logs -INFO - User fills all the 3 passenger details
 2020-04-22 11:02:39,607 - com.tripmasters.framework.reports.Logs -INFO - Click to Continue & User redirected to Payment Page
+2020-04-22 12:39:37,179 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York City (all Airports)' into leaving from field
+2020-04-22 12:39:43,052 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
+2020-04-22 12:39:46,925 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-04-22 12:40:46,534 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
+2020-04-22 12:40:46,536 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
+2020-04-22 12:40:54,248 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
+2020-04-22 12:41:08,380 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
+2020-04-22 12:42:53,410 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-04-22 12:47:42,002 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
+2020-04-22 12:47:48,800 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
+2020-04-22 12:48:09,773 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-04-22 13:00:26,886 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Washington (all Airports), DC' into leaving from field
+2020-04-22 13:00:32,325 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
+2020-04-22 13:00:36,049 - com.tripmasters.framework.reports.Logs -INFO - User entered '3' nights staying time
+2020-04-22 13:01:35,927 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
+2020-04-22 13:13:16,905 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-04-22 13:13:22,233 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-04-22 13:13:27,017 - com.tripmasters.framework.reports.Logs -INFO - User entered '12' nights staying time
+2020-04-22 13:14:06,078 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
