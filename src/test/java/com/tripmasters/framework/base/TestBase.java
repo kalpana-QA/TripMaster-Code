@@ -119,7 +119,7 @@ public class TestBase {
 //				    driver =new RemoteWebDriver(new URL("https://" + username + ":" + accesskey + gridURL), capabilities);
 					
 					//BrowserStack
-					capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS,true);
+					//capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS,true);
 					capabilities.setCapability("browserName", "android");
 					capabilities.setCapability("device", "OnePlus 7");
 					capabilities.setCapability("realMobile", "true");
