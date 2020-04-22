@@ -47,8 +47,8 @@ public class TestBase {
 	public PassengerInfoPageAction passengerInfoPage;
 	public ExtentTest test;
 	
-	public static final String USERNAME = "testing1914";
-	public static final String AUTOMATE_KEY = "hBQPLdPpzrR3DkxsSCWy";
+	public static final String USERNAME = "testing1915";
+	public static final String AUTOMATE_KEY = "x3oBz3udWazJzyJ4BAyT";
     public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
    
 	  public String username = "satyamsharma0001";
@@ -119,6 +119,7 @@ public class TestBase {
 //				    driver =new RemoteWebDriver(new URL("https://" + username + ":" + accesskey + gridURL), capabilities);
 					
 					//BrowserStack
+					capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS,true);
 					capabilities.setCapability("browserName", "android");
 					capabilities.setCapability("device", "OnePlus 7");
 					capabilities.setCapability("realMobile", "true");
