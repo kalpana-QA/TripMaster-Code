@@ -491,3 +491,15 @@
 2020-03-31 17:03:58,554 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
 2020-03-31 17:05:43,630 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
 >>>>>>> cce5965c53e3c8a4c2de660ba1808b92a1a35833
+2020-04-21 14:18:17,607 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-04-21 16:58:42,220 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-04-21 17:06:22,578 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-04-21 17:18:41,474 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-04-21 17:36:54,330 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-04-21 17:42:35,235 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-04-21 17:47:48,638 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-04-21 17:48:12,999 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-04-21 18:19:40,098 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-04-21 18:26:38,312 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-04-21 18:48:32,379 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-04-21 18:49:13,717 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
