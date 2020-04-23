@@ -6524,3 +6524,5 @@
 2020-04-21 18:26:38,312 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
 2020-04-21 18:48:32,379 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
 2020-04-21 18:49:13,717 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-23 14:41:32,425 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-23 16:10:52,602 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.

@@ -10,7 +10,7 @@
 	<groups>
 	<run>
 		<include name="smoke"></include>
-<!-- 		<include name="testdemo"></include> -->
+<!-- 		<include name="TESTDEMO"></include> -->
 	</run>
    </groups>
    

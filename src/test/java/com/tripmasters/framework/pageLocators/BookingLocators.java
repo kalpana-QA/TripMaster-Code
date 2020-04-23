@@ -123,7 +123,7 @@ public class BookingLocators {
 	private static By verifycabinClassDropdown = By.xpath("//select[@id='xCabin']");
 	private static By firstpremiumoption = By.xpath("//select[@id='qCabinOpt']//option[2]");
 	private static By verifypremiumoption = By.xpath("(//div[@class='divFligth-Bottom-Right textGrey10']/text()[preceding-sibling::br])[1]//..");
-	
+	private static By backToItineraryOption=By.xpath("(//*[text()='Back to Itinerary'])[2]");
 
 	// ======== Locators for Mobile ===============================================================================================
 
@@ -699,4 +699,9 @@ public static By getpassportDrpdownSecondTravellerChildMob() {
 		
 		return selectFirstHotel_SingleCity;
 	}
+	public static By getbackToItineraryOption(){
+		
+		return backToItineraryOption;
+	}
 }
+

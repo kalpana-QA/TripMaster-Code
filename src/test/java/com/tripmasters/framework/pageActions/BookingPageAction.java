@@ -71,8 +71,12 @@ public class BookingPageAction extends PageBase {
 			//test.log(LogStatus.INFO, "User select '" + guestInfo + "' from Guest list");
 		}
 	}
+	//Satyam
+	public void clickonContinue() {
+		WebElement e =	 driver.findElement(BookingLocators.getnoMoreCitiesBtn());
+		e.click();
+		}
 	
-
 	public void selectPremiumEconomy()
 	{
 		if(TestBase.flag_Mob)
@@ -136,8 +140,10 @@ public class BookingPageAction extends PageBase {
 			flightvalue = driver.findElement(BookingLocators.getexpectedFlight()).getText();
 			clickUsingJavaScript(BookingLocators.getselectFlightOption());
 			clickUsingJavaScript(BookingLocators.getselectButtonInFlightOption1());
-			clickUsingJavaScript(BookingLocators.getcontinueLink());
+			//clickUsingJavaScript(BookingLocators.getcontinueLink());
+			clickUsingJavaScript(BookingLocators.getbackToItineraryOption());
 			waitForElement(2);
+			clickUsingJavaScript(BookingLocators.getcontinueLink());
 		}
 		return flightvalue;
 	}
