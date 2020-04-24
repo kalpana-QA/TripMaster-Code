@@ -505,3 +505,6 @@
 2020-04-21 18:49:13,717 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
 2020-04-23 14:41:32,425 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
 2020-04-23 16:10:52,602 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-04-23 16:20:36,372 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-04-23 16:28:38,395 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-04-23 16:35:49,270 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
