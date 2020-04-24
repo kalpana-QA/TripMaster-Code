@@ -508,3 +508,9 @@
 2020-04-23 16:20:36,372 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
 2020-04-23 16:28:38,395 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
 2020-04-23 16:35:49,270 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-04-24 10:48:11,728 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-04-24 10:49:33,620 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
+2020-04-24 10:49:33,652 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
+2020-04-24 10:49:33,652 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
+2020-04-24 10:49:50,702 - com.tripmasters.framework.reports.Logs -INFO - bookingDetailswithPremiumEcomomy passed
+2020-04-24 11:03:26,924 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.

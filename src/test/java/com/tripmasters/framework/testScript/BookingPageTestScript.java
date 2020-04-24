@@ -743,12 +743,12 @@ public class BookingPageTestScript extends TestBase {
 			test.log(LogStatus.INFO, "Selected Cabin class verified");
 			logs.info("Selected Cabin class verified");
 			bookingPage.clickonContinueButton();
-			bookingPage.selectCheaperFlights();
-			test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
-			logs.info("Select Cheaper flights from flight options");
-			String expectedcabin = bookingPage.verifycabinAssert();
-			System.out.println("This is for Expected "+expectedcabin);
-			Assert.assertEquals(expectedcabin, actualcabin);
+//			bookingPage.selectCheaperFlights();
+//			test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
+//			logs.info("Select Cheaper flights from flight options");
+//			String expectedcabin = bookingPage.verifycabinAssert();
+//			System.out.println("This is for Expected "+expectedcabin);
+//			Assert.assertEquals(expectedcabin, actualcabin);
 			test.log(LogStatus.INFO, "bookingDetailswithPremiumEcomomy passed");
 			logs.info("bookingDetailswithPremiumEcomomy passed");
 		}
