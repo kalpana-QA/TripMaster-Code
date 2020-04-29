@@ -6535,3 +6535,25 @@
 2020-04-24 10:49:33,652 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Selected Cabin class verified
 2020-04-24 10:49:50,702 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - bookingDetailswithPremiumEcomomy passed
 2020-04-24 11:03:26,924 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-28 22:26:50,194 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-28 22:38:53,965 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-28 22:40:22,605 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-28 22:41:35,895 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-28 22:42:26,916 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-28 22:47:42,701 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-28 22:52:04,127 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-28 22:54:51,308 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-29 10:40:20,491 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-29 10:51:40,381 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-29 10:58:25,717 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-29 11:00:45,192 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-29 12:30:37,173 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-29 12:31:31,353 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-29 12:39:51,641 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-29 12:47:06,270 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-29 12:53:14,327 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-29 13:01:26,136 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-29 13:08:31,743 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-29 13:18:30,640 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-29 13:26:32,702 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.
+2020-04-29 13:33:24,503 [main] INFO com.tripmasters.framework.reports.Logs - ChromeDriver instantiated for Windows platform.

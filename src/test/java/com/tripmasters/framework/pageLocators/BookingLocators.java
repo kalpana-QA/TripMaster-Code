@@ -102,7 +102,7 @@ public class BookingLocators {
 	private static By buildYourVacation_DropDown = By.xpath("//img[contains(@src,'createitinarary_')]/parent::p");
 
 	private static By leavingTextbox = By.xpath("//input[@id='qLeaveNA']");
-	private static By goingToTextbox = By.xpath("//input[contains(@id,'qNACity')]");
+	private static By goingToTextbox = By.xpath("//input[contains(@id,'qNACity1')]");
 	private static By stayingDrpdown = By.xpath("//select[@id='qSTCity1']");
 	private static By selectGuestDrpdown = By.xpath("//select[@id='xiRoomsAndPax']");
 	private static By selectChildDrpdown = By.xpath("//select[@id='xiChildren']");

@@ -157,29 +157,50 @@ public class BookingPageTestScript extends TestBase {
  @Test(groups= {"smoke"},priority=3)
 	public void bookingTwoRoomTwoAdult_TC_3(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom2Adult");
+		Thread.sleep(8000);
+
 		bookingPage.clickOnBuildYourVacationDropDown();
-		bookingPage.fillLeavingFromDetails("San Jose, CALIFORNIA");
+		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
+		Thread.sleep(8000);
 		test.log(LogStatus.INFO, "User entered \"San Jose, CALIFORNIA\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Osaka (Japan)");
 		test.log(LogStatus.INFO, "User entered \"Osaka (Japan)\" into Going to from field");
+		Thread.sleep(4000);
+
 		bookingPage.selectValueFromCalendar();
+		Thread.sleep(4000);
+
 		bookingPage.selectStayingTime("6");
 		test.log(LogStatus.INFO, "User entered \"6\" nights staying time");	
+		Thread.sleep(4000);
+
 		bookingPage.selectNoMoreCitiesBtn();
 		test.log(LogStatus.INFO, "Click on No More Cities Button");
+		Thread.sleep(4000);
+
 		bookingPage.selectGuestDetails("2|2-2");
 		test.log(LogStatus.INFO, "User select \"2 Room For Two Adults\" from Guest list");
 		test.log(LogStatus.INFO, "All the Basic Booking details Source & Destination filled successfully for Two Adults");
 		//logs.info("All the Basic Booking details Source & Destination filled successfully for Two Adults");
+		Thread.sleep(4000);
+
 		bookingPage.clickonContinueButton();
 		test.log(LogStatus.INFO, "Click on Continue Button");
 		//logs.info("Click on Continue Button");
+		Thread.sleep(4000);
+
 		bookingPage.selectCheaperFlights();
 		test.log(LogStatus.INFO, "User clicks on Select Cheaper Flights Link");
 		test.log(LogStatus.INFO, "User selects a particular flight from existing options");
 		test.log(LogStatus.INFO, "User clicks on Continue Link");
 		//logs.info("Select Cheaper flights from flight options");
+		Thread.sleep(4000);
+
 		bookingPage.getTripinclusionContinueButton();
+		Thread.sleep(4000);
+
+		Thread.sleep(4000);
+
 		bookingPage.clicktoContinuePage();
 		expectedFirstTravellerInfo = passengerInfoPage.fillTravellerDetailsForMultipleRooms("Room1Traveller1");
 		test.log(LogStatus.INFO, "User enters \"yury\" as Traveller1 First Name");
@@ -205,8 +226,14 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User enters \"George\" as Traveller3 Last Name");
 		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Traveller3 ");
 		test.log(LogStatus.INFO, "User selects \"DOB:01/01/2002\" for Traveller3 Date of Birth");
+		Thread.sleep(4000);
+
 		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Traveller3");
+		Thread.sleep(4000);
+
 		bookingPage.getTripinclusionContinueButton();
+		Thread.sleep(4000);
+
 		bookingPage.clicktoContinuePage();
 		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
 	//	logs.info("User filled all the passenger details successfully");
