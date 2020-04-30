@@ -6681,6 +6681,7 @@
 2020-04-17 17:05:16,248 [main] INFO com.tripmasters.framework.reports.Logs - Spotlight link verified!
 >>>>>>> Stashed changes
 >>>>>>> b60fbc97bb0ac7c6f4ae15ca6791b7e4c69001c7
+<<<<<<< HEAD
 2020-04-20 11:46:25,134 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
 2020-04-20 11:46:29,909 [TestNG-test=Test-2] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
 2020-04-20 11:46:34,702 [TestNG-test=Test-4] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
@@ -6918,3 +6919,43 @@
 2020-04-30 17:28:35,531 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
 2020-04-30 17:28:42,989 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Verify that only selected flight appears along with passenger details
 2020-04-30 17:28:42,991 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Verify that only particular selected hotel appears along with passenger details
+=======
+2020-04-20 17:25:22,472 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 18:06:44,142 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-21 13:50:55,533 [TestNG-test=Test-3] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-21 16:27:33,056 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - verifyFooterText is displayed
+2020-04-22 10:58:42,089 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Leaving details filled
+2020-04-22 10:58:48,161 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Going details filled
+2020-04-22 10:59:06,169 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select value from calendar
+2020-04-22 10:59:10,811 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select staying time
+2020-04-22 10:59:16,982 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on No More Cities Button
+2020-04-22 10:59:34,483 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Guest details Selected
+2020-04-22 10:59:40,400 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on done Mobile Button
+2020-04-22 10:59:48,811 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-22 10:59:55,096 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-22 11:00:38,294 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-04-22 11:00:52,930 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click to Continue & User redirected to Fill Passenger Details Page
+2020-04-22 11:01:25,333 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - First Traveller details filled
+2020-04-22 11:02:25,933 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User fills all the 3 passenger details
+2020-04-22 11:02:39,607 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click to Continue & User redirected to Payment Page
+2020-04-22 12:39:37,179 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York City (all Airports)' into leaving from field
+2020-04-22 12:39:43,052 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-04-22 12:39:46,925 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-04-22 12:40:46,534 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Filled flights details with premium economy
+2020-04-22 12:40:46,536 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select Cabin class
+2020-04-22 12:40:54,248 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Selected Cabin class verified
+2020-04-22 12:41:08,380 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-22 12:42:53,410 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-04-22 12:47:42,002 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'San Jose, CALIFORNIA' into leaving from field
+2020-04-22 12:47:48,800 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Osaka (Japan)' into Going to from field
+2020-04-22 12:48:09,773 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '6' nights staying time
+2020-04-22 13:00:26,886 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Washington (all Airports), DC' into leaving from field
+2020-04-22 13:00:32,325 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-04-22 13:00:36,049 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-04-22 13:01:35,927 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-22 13:13:16,905 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-04-22 13:13:22,233 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-04-22 13:13:27,017 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '12' nights staying time
+2020-04-22 13:14:06,078 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Booking details Source & Destination filled successfully 
+>>>>>>> 27a717a0ccb02bb1957ee01a7d525582258ab53c
+2020-04-30 18:11:39,238 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
