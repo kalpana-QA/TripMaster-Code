@@ -160,7 +160,7 @@ public class BookingPageTestScript extends TestBase {
 		
 	}
 
-
+//Working Fine
    @Test(groups= {"smoke"},priority=3)
 	public void bookingTwoRoomTwoAdult_TC_3(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom2Adult");
