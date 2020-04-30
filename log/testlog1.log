@@ -6681,3 +6681,240 @@
 2020-04-17 17:05:16,248 [main] INFO com.tripmasters.framework.reports.Logs - Spotlight link verified!
 >>>>>>> Stashed changes
 >>>>>>> b60fbc97bb0ac7c6f4ae15ca6791b7e4c69001c7
+2020-04-20 11:46:25,134 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 11:46:29,909 [TestNG-test=Test-2] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 11:46:34,702 [TestNG-test=Test-4] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 11:46:46,493 [TestNG-test=Test-6] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 11:48:07,271 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 11:48:12,625 [TestNG-test=Test-2] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 11:48:18,858 [TestNG-test=Test-4] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 11:48:30,832 [TestNG-test=Test-6] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 11:49:08,220 [TestNG-test=Test-15] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-04-20 12:59:04,077 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 12:59:09,560 [TestNG-test=Test-2] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 12:59:16,015 [TestNG-test=Test-4] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 13:01:57,714 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 13:02:03,331 [TestNG-test=Test-2] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 13:04:19,511 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 13:04:25,202 [main] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 13:06:44,455 [main] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-20 14:12:22,472 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 14:16:21,095 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 14:16:32,824 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 14:16:46,965 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-20 14:17:04,842 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 14:19:17,874 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 14:23:25,929 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 14:30:23,101 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 14:31:58,140 [TestNG-test=Test-4] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 14:32:56,061 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 14:33:57,427 [TestNG-test=Test-8] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 14:35:05,993 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 14:35:56,364 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 14:36:49,576 [TestNG-test=Test-7] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 14:37:50,988 [TestNG-test=Test-9] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 14:38:38,739 [TestNG-test=Test-14] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 14:39:39,112 [TestNG-test=Test-11] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 16:06:48,107 [TestNG-test=Test-12] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 17:08:31,634 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 17:14:22,379 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 17:19:04,526 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 17:23:41,687 [TestNG-test=Test-4] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 17:28:54,120 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 17:32:37,520 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 17:33:37,862 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 17:41:37,750 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 17:47:05,715 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 17:55:31,106 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 18:01:25,770 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 18:10:23,505 [TestNG-test=Test-6] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-20 18:14:05,028 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 18:20:53,872 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 18:22:48,165 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 18:26:23,153 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 18:29:58,863 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 18:31:19,978 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-20 18:32:07,202 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 10:39:01,792 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 10:45:09,767 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 10:54:40,861 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 10:55:51,606 [main] INFO com.tripmasters.framework.reports.Logs - Filled flights details with premium economy
+2020-04-21 10:55:51,608 [main] INFO com.tripmasters.framework.reports.Logs - Select Cabin class
+2020-04-21 10:55:57,026 [main] INFO com.tripmasters.framework.reports.Logs - Selected Cabin class verified
+2020-04-21 11:01:37,933 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 11:02:50,324 [main] INFO com.tripmasters.framework.reports.Logs - User clicked on Explore Europe Link
+2020-04-21 11:03:14,098 [main] INFO com.tripmasters.framework.reports.Logs - User clicked on particular vacation package
+2020-04-21 11:03:14,169 [main] INFO com.tripmasters.framework.reports.Logs - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-04-21 11:03:28,117 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 11:04:15,914 [main] INFO com.tripmasters.framework.reports.Logs - Clicked on Popular Vacation Packages
+2020-04-21 11:04:16,013 [main] INFO com.tripmasters.framework.reports.Logs - VerifyPopularVacationPackages displayed
+2020-04-21 11:04:33,498 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 11:05:03,301 [main] INFO com.tripmasters.framework.reports.Logs - Verified User is on homepage
+2020-04-21 11:05:08,520 [main] INFO com.tripmasters.framework.reports.Logs - Click on Search textBox avialable on HomePage
+2020-04-21 11:05:24,109 [main] INFO com.tripmasters.framework.reports.Logs - Search for a particular city & Click on Go Button
+2020-04-21 11:05:24,198 [main] INFO com.tripmasters.framework.reports.Logs - User redirected to that particular city.Verified!
+2020-04-21 11:05:38,724 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 11:06:48,788 [main] INFO com.tripmasters.framework.reports.Logs - Click on Build Your Vacation Dropdown
+2020-04-21 11:07:23,242 [main] INFO com.tripmasters.framework.reports.Logs - verifyStartAgainLink is displayed
+2020-04-21 11:07:36,538 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 11:08:29,196 [main] INFO com.tripmasters.framework.reports.Logs - verifyFooterText is displayed
+2020-04-21 11:08:42,958 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 16:21:52,406 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 16:25:56,682 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 16:29:44,441 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 16:35:35,612 [TestNG-test=Test-4] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 16:41:58,345 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 16:47:07,211 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 16:50:59,400 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 16:52:03,130 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for multiple cities
+2020-04-21 16:52:10,261 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-21 16:52:59,846 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Click on Browse Hotels Button
+2020-04-21 16:53:12,890 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Select particular hotel from Hotel Options
+2020-04-21 16:55:48,657 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-04-21 16:56:44,388 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User filled all the passenger details successfully
+2020-04-21 16:57:27,866 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 17:01:01,978 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 17:01:38,289 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 17:02:12,016 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 17:03:18,686 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User clicked on Explore Europe Link
+2020-04-21 17:03:43,425 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User clicked on particular vacation package
+2020-04-21 17:03:43,525 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-04-21 17:03:57,674 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 17:04:25,900 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Clicked on Popular Vacation Packages
+2020-04-21 17:04:26,167 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - VerifyPopularVacationPackages displayed
+2020-04-21 17:04:42,383 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 17:05:00,391 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Verified User is on homepage
+2020-04-21 17:05:05,542 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Click on Search textBox avialable on HomePage
+2020-04-21 17:05:20,929 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Search for a particular city & Click on Go Button
+2020-04-21 17:05:21,000 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User redirected to that particular city.Verified!
+2020-04-21 17:05:34,725 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 17:05:53,372 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Click on Build Your Vacation Dropdown
+2020-04-21 17:06:27,180 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - verifyStartAgainLink is displayed
+2020-04-21 17:06:41,207 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 17:07:00,561 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - verifyFooterText is displayed
+2020-04-21 17:07:14,570 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-21 17:21:58,674 [main] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-22 15:14:35,915 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-22 15:14:39,767 [TestNG-test=Test-2] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-22 15:14:43,621 [TestNG-test=Test-4] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-22 15:19:31,921 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-22 15:25:01,243 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-22 15:29:06,131 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-22 15:35:27,832 [TestNG-test=Test-4] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-22 15:43:47,625 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-22 15:49:10,872 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-22 15:53:08,900 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-22 15:54:06,553 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for multiple cities
+2020-04-22 15:54:13,707 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-22 15:54:59,838 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Click on Browse Hotels Button
+2020-04-22 15:55:20,245 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Select particular hotel from Hotel Options
+2020-04-22 15:57:51,347 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-04-22 15:58:26,626 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User filled all the passenger details successfully
+2020-04-22 15:59:07,341 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-22 16:03:29,793 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-22 16:05:56,361 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-04-22 16:07:36,494 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - All the added cities removed successfully.Verified!
+2020-04-22 16:22:08,075 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-22 16:23:10,830 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Filled flights details with premium economy
+2020-04-22 16:23:10,831 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select Cabin class
+2020-04-22 16:23:16,095 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Selected Cabin class verified
+2020-04-22 16:26:17,041 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-29 16:04:52,030 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-29 16:09:55,607 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-29 16:14:06,921 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - User filled all the passenger details successfully
+2020-04-29 16:14:07,642 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - Flights & passenger details verified successfully on PaymentPage
+2020-04-29 16:14:24,841 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-29 16:15:03,675 [TestNG-test=Test-3] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-29 16:15:18,399 [TestNG-test=Test-4] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-29 16:22:42,961 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-29 16:27:57,227 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-29 16:32:34,069 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-29 16:33:38,204 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for single city
+2020-04-29 16:33:57,489 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - No.of Child & Age of Child got selected successfully
+2020-04-29 16:34:05,078 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-29 16:35:24,021 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Click on Browse Hotels Button
+2020-04-29 16:35:38,104 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Select particular hotel from Hotel Options
+2020-04-29 16:36:48,307 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-04-29 16:36:51,623 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Verify that only selected flight appears along with passenger details
+2020-04-29 16:36:51,626 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Verify that only particular selected hotel appears along with passenger details
+2020-04-29 16:37:05,813 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-29 16:39:08,284 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for multiple cities
+2020-04-29 16:39:15,449 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-29 16:41:10,457 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Click on Browse Hotels Button
+2020-04-29 16:41:30,686 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Select particular hotel from Hotel Options
+2020-04-29 16:44:03,772 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-04-29 16:44:45,888 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - User filled all the passenger details successfully
+2020-04-29 16:46:34,407 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-29 16:49:57,284 [TestNG-test=Test-6] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-04-29 16:53:38,363 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-29 16:56:21,257 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-04-29 16:58:01,781 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - All the added cities removed successfully.Verified!
+2020-04-29 17:00:45,589 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-04-29 17:00:45,675 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Validate that user is on TripInclusion Page
+2020-04-29 17:01:00,659 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-29 17:04:26,434 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-29 17:06:34,714 [TestNG-test=Test-5] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-04-29 17:18:36,458 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-30 11:45:46,593 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-30 14:12:36,308 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-30 14:14:16,592 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for single city
+2020-04-30 14:14:35,807 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - No.of Child & Age of Child got selected successfully
+2020-04-30 14:14:43,491 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-30 14:15:51,885 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Browse Hotels Button
+2020-04-30 14:16:36,726 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select particular hotel from Hotel Options
+2020-04-30 14:17:50,494 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-04-30 14:18:11,586 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-30 14:24:37,617 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-30 14:26:44,965 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for single city
+2020-04-30 14:27:04,487 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - No.of Child & Age of Child got selected successfully
+2020-04-30 14:27:12,056 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-30 14:28:14,365 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Browse Hotels Button
+2020-04-30 14:28:28,068 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select particular hotel from Hotel Options
+2020-04-30 14:29:34,910 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-04-30 15:48:53,426 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-30 16:00:54,860 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-30 16:01:50,677 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User redirected to the Latin America Page
+2020-04-30 16:10:59,529 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-30 16:11:38,797 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User redirected to the Latin America Page
+2020-04-30 16:17:13,238 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-30 16:18:12,030 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User redirected to the Latin America Page
+2020-04-30 16:20:43,618 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-30 16:21:33,206 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User redirected to the Latin America Page
+2020-04-30 16:23:50,883 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-30 16:24:45,921 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User redirected to the Latin America Page
+2020-04-30 16:28:54,607 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-30 16:30:00,340 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User redirected to the Latin America Page
+2020-04-30 16:59:06,643 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-30 17:00:40,583 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for single city
+2020-04-30 17:00:59,748 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - No.of Child & Age of Child got selected successfully
+2020-04-30 17:01:07,228 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-30 17:02:15,436 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Browse Hotels Button
+2020-04-30 17:02:34,147 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select particular hotel from Hotel Options
+2020-04-30 17:03:36,203 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-04-30 17:07:06,455 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-30 17:08:40,363 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for single city
+2020-04-30 17:08:59,565 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - No.of Child & Age of Child got selected successfully
+2020-04-30 17:09:07,209 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-30 17:10:15,319 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Browse Hotels Button
+2020-04-30 17:10:29,527 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select particular hotel from Hotel Options
+2020-04-30 17:11:30,074 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-04-30 17:11:33,307 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Verify that only selected flight appears along with passenger details
+2020-04-30 17:11:33,308 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Verify that only particular selected hotel appears along with passenger details
+2020-04-30 17:15:17,593 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-30 17:17:07,765 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for single city
+2020-04-30 17:17:26,906 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - No.of Child & Age of Child got selected successfully
+2020-04-30 17:17:34,463 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-30 17:18:58,370 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Browse Hotels Button
+2020-04-30 17:19:15,583 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select particular hotel from Hotel Options
+2020-04-30 17:20:38,950 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-04-30 17:20:49,917 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Verify that only selected flight appears along with passenger details
+2020-04-30 17:20:49,918 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Verify that only particular selected hotel appears along with passenger details
+2020-04-30 17:24:36,628 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-04-30 17:25:50,627 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Booking details filled successfully for single city
+2020-04-30 17:26:09,838 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - No.of Child & Age of Child got selected successfully
+2020-04-30 17:26:17,336 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Continue Button
+2020-04-30 17:27:13,652 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Browse Hotels Button
+2020-04-30 17:27:37,347 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select particular hotel from Hotel Options
+2020-04-30 17:28:35,531 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-04-30 17:28:42,989 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Verify that only selected flight appears along with passenger details
+2020-04-30 17:28:42,991 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Verify that only particular selected hotel appears along with passenger details

@@ -34,7 +34,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	private static String chromeDriverFilePath = System.getProperty("user.dir")
 			+ "/src/test/resources/webdriver/chromedriver.exe";
-	//public static WebDriver driver;
+	public static WebDriver driver;
 	private DesiredCapabilities capabilities;
 	private URL url;
 	private boolean flag = false;
@@ -50,7 +50,7 @@ public class TestBase {
 	
 	  public String username = "kalpana.kaushik";
 	  public String accesskey = "BTN7CDpX7oE0cBfCYeHmJUfmQeoeflGnT40WAWwElTDls2VxU0";
-	  public static RemoteWebDriver driver = null;
+	 // public static RemoteWebDriver driver = null;
 	  public String gridURL =  "@hub.lambdatest.com/wd/hub";
 	  boolean status = false;
 	
@@ -99,49 +99,36 @@ public class TestBase {
 				}
 			}
 			
-			
-				
-				
-				
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			else if(platform.equalsIgnoreCase("Mobile")){
+		else if(platform.equalsIgnoreCase("Mobile")){
 				if (browser.equalsIgnoreCase("Chrome")) {
 					capabilities = new DesiredCapabilities();
 
 					System.out.println("chromeDriverFilePath : " + chromeDriverFilePath);
 
-//					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
-//					capabilities.setCapability("platformName", "Android");
-//					capabilities.setCapability("platformVersion", "10");
-//					capabilities.setCapability("deviceName", "f75b7d5c");
-//					capabilities.setCapability("browserName", "Chrome");
+					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
+					capabilities.setCapability("platformName", "Android");
+					capabilities.setCapability("platformVersion", "9");
+					capabilities.setCapability("deviceName", "b88be5542609");
+					capabilities.setCapability("browserName", "Chrome");
 
 
 					//lambdaTest
 					
-					capabilities.setCapability("name", "TestSuite");
+					/*capabilities.setCapability("name", "TestSuite");
 					capabilities.setCapability("platformName", "Android");
 					capabilities.setCapability("deviceName", "One Plus 6T");
 					capabilities.setCapability("platformVersion","9");
 					capabilities.setCapability("console",true);
 					capabilities.setCapability("network",true);
-					capabilities.setCapability("visual",true);
+					capabilities.setCapability("visual",true);*/
 					
-				    driver =new RemoteWebDriver(new URL("https://" + username + ":" + accesskey + gridURL), capabilities);
+				//    driver =new RemoteWebDriver(new URL("https://" + username + ":" + accesskey + gridURL), capabilities);
 					
-				//	url = new URL("http:127.0.0.1:4723/wd/hub");
+					url = new URL("http:127.0.0.1:4723/wd/hub");
 
-					//driver = new AndroidDriver<MobileElement>(url, capabilities);
+					driver = new AndroidDriver<MobileElement>(url, capabilities);
 
-				//	Logs.info(browser + " AndroidDriver instantiated for " + platform + " platform.");
+					Logs.info(browser + " AndroidDriver instantiated for " + platform + " platform.");
 					flag = true;
 					flag_Mob = true;
 

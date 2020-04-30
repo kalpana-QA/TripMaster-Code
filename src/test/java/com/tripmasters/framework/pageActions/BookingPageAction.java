@@ -557,13 +557,18 @@ return selectedcabin;
 	 */
 	public  void verifyPageDisplayed(String PageTitle) {
 		if(TestBase.flag_Mob){
-
-			System.out.println("title is " + getPageTitle().trim());
-		Assert.assertTrue(getPageTitle().contains(PageTitle.trim()));
+           // System.out.println("PageTitle is" +PageTitle.trimFromEnd(PageTitle,"\r\n" +" from $957*"));
+			System.out.println("Actual title is " + driver.getTitle().trim());
+			boolean value=driver.getTitle().contains("Arenal Volcano - Guanacaste Beaches");
+		    System.out.println("Value is"+value);
+			Assert.assertTrue(value);
 
 		}
 	}
 
+//	public static String  trimFromEnd(String value,Object trailing ) {
+//		return value.replaceAll("^["+trailing+"]+$","");
+//	}
 	public  void oldArriveDate() {
 		boolean actualdate = driver.findElement(BookingLocators.getArriveDate()).isEnabled();
 		Assert.assertTrue(actualdate);

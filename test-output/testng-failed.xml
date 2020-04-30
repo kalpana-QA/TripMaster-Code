@@ -1,32 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
-  <listeners>
-    <listener class-name="com.tripmasters.framework.Listeners.TestListener"/>
-    <listener class-name="com.tripmasters.framework.Listeners.AnnotationTransformer"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)" parallel="methods">
-    <groups>
-      <run>
-        <include name="smoke"/>
-        <include name="regression"/>
-        <include name="testdemo"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.tripmasters.framework.testScript.HomePageTestScript">
         <methods>
           <include name="tearDown"/>
+          <include name="verifyPopularVacationPackages_TC_13" invocation-numbers="0"/>
           <include name="setUp"/>
-<<<<<<< HEAD
-          <include name="multipleCities_TC_21" invocation-numbers="0"/>
-          <include name="bookingDetailswithPremiumEcomomy_TC_18" invocation-numbers="0"/>
-          <include name="verifySpotlightLink_TC_14" invocation-numbers="0"/>
-=======
           <include name="verifyOtherVacationPackages_TC_12" invocation-numbers="0"/>
->>>>>>> b60fbc97bb0ac7c6f4ae15ca6791b7e4c69001c7
+          <include name="verifyCity_TC_10" invocation-numbers="0"/>
+          <include name="verifyStartAgainLink_TC_15" invocation-numbers="0"/>
+          <include name="verifyMoreHighlightAndAttractionLinks_Mob_TC_11" invocation-numbers="0"/>
+          <include name="verifyFooterText_TC_16" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
