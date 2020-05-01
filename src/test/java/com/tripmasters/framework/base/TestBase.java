@@ -101,7 +101,9 @@ public class TestBase {
 					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
 					capabilities.setCapability("platformName", "Android");
 					capabilities.setCapability("platformVersion", "9");
-					capabilities.setCapability("deviceName", "b88be5542609");
+
+					capabilities.setCapability("deviceName", "D1AGAD57B1403257");
+
 					capabilities.setCapability("browserName", "Chrome");
 
 
@@ -129,6 +131,7 @@ public class TestBase {
 					
 					//BrowserStack
 					//capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS,true);
+
 //					capabilities.setCapability("browserName", "android");
 //					capabilities.setCapability("device", "OnePlus 7");
 //					capabilities.setCapability("realMobile", "true");
@@ -137,7 +140,15 @@ public class TestBase {
                     
             //        driver =new RemoteWebDriver(new URL(URL), capabilities);
 
-					
+
+					//capabilities.setCapability("browserName", "android");
+					//capabilities.setCapability("device", "OnePlus 7");
+					//capabilities.setCapability("realMobile", "true");
+					//capabilities.setCapability("os_version", "9.0");
+                    //capabilities.setCapability("name", "Bstack-[Java] Sample Test");
+                    
+                  //  driver =new RemoteWebDriver(new URL(URL), capabilities);
+
 					url = new URL("http:127.0.0.1:4723/wd/hub");
 
 					driver = new AndroidDriver<MobileElement>(url, capabilities);
