@@ -1,1002 +1,207 @@
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-2020-04-30 17:02:34,147 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-30 17:03:36,203 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-30 17:07:06,455 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-30 17:08:40,363 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
-2020-04-30 17:08:59,565 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-30 17:09:07,209 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-30 17:10:15,319 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-30 17:10:29,527 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-30 17:11:30,074 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-30 17:11:33,307 - com.tripmasters.framework.reports.Logs -INFO - Verify that only selected flight appears along with passenger details
-2020-04-30 17:11:33,308 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
-2020-04-30 17:15:17,593 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-30 17:17:07,765 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
-2020-04-30 17:17:26,906 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-30 17:17:34,463 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-30 17:18:58,370 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-30 17:19:15,583 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-30 17:20:38,950 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-30 17:20:49,917 - com.tripmasters.framework.reports.Logs -INFO - Verify that only selected flight appears along with passenger details
-2020-04-30 17:20:49,918 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
-2020-04-30 17:24:36,628 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-30 17:25:50,627 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
-2020-04-30 17:26:09,838 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-30 17:26:17,336 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-30 17:27:13,652 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-30 17:27:37,347 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-30 17:28:35,531 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-30 17:28:42,989 - com.tripmasters.framework.reports.Logs -INFO - Verify that only selected flight appears along with passenger details
-2020-04-30 17:28:42,991 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
-=======
-2020-03-19 09:22:13,610 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-03-19 09:22:13,631 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-03-19 09:33:02,086 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-03-19 09:33:02,098 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
-2020-03-19 09:33:02,099 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
-2020-03-19 09:33:02,099 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
-2020-03-19 09:33:02,099 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-03-19 10:32:52,033 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
-2020-03-19 10:32:54,436 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-03-19 10:33:02,629 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-19 10:33:35,068 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-03-19 10:33:40,191 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-03-19 10:35:36,762 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-03-19 10:35:43,814 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-19 10:37:34,295 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
-2020-03-19 10:37:44,972 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic details of journey:Source,Destination & Staying Time
-2020-03-19 10:37:52,035 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-19 10:38:13,828 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-03-19 10:38:21,618 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-03-19 10:38:21,622 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
-2020-03-19 10:38:53,905 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
-2020-03-19 10:38:53,976 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-03-19 10:39:12,886 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
-2020-03-19 10:39:33,409 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-03-19 10:39:41,945 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-03-19 10:39:41,945 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
-2020-03-19 10:40:36,274 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
-2020-03-19 10:40:36,274 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
-2020-03-19 10:40:36,338 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
-2020-03-19 10:40:36,338 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
-2020-03-19 10:40:46,480 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
-2020-03-19 10:41:06,533 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
-2020-03-19 10:42:08,212 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-03-19 10:42:08,228 - com.tripmasters.framework.reports.Logs -INFO - Validate that user is on TripInclusion Page
-2020-03-19 10:42:48,446 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-03-19 10:42:48,517 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-03-19 10:42:48,517 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-03-19 10:43:51,301 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-03-19 10:43:59,630 - com.tripmasters.framework.reports.Logs -INFO - bookingDetailswithPremiumEcomomy passed
-2020-03-19 10:44:40,241 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
-2020-03-19 10:44:42,660 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-03-19 10:45:57,378 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-03-19 10:46:06,982 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-03-19 10:52:45,533 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-03-19 10:52:45,541 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
-2020-03-19 10:52:45,545 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
-2020-03-19 10:52:45,545 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
-2020-03-19 10:52:45,546 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-03-19 10:53:29,330 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
-2020-03-19 10:53:41,751 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
-2020-03-19 10:53:41,767 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-03-19 10:54:23,915 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
-2020-03-19 10:54:23,929 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
-2020-03-19 10:54:48,897 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
-2020-03-19 10:54:53,946 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
-2020-03-19 10:55:17,201 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
-2020-03-19 10:55:17,211 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
-2020-03-19 10:55:40,132 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
-2020-03-19 10:55:53,909 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
-2020-03-19 10:55:59,010 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
-2020-03-19 10:56:22,763 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-2020-03-19 11:25:12,128 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
-2020-03-19 11:25:12,131 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
-2020-03-19 11:25:12,131 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
-2020-03-19 11:25:12,132 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-03-19 11:25:12,132 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
-2020-03-19 11:25:58,385 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
-2020-03-19 11:27:42,680 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
-2020-03-19 11:27:42,685 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
-2020-03-19 11:28:08,448 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
-2020-03-19 11:28:13,471 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
-2020-03-19 11:28:36,631 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
-2020-03-19 11:28:36,637 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
-2020-03-19 11:29:01,223 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
-2020-03-19 11:29:14,661 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
-2020-03-19 11:29:19,683 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
-2020-03-19 11:29:45,353 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-2020-03-19 12:11:21,086 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
-2020-03-19 12:11:21,089 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
-2020-03-19 12:11:21,090 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
-2020-03-19 12:11:21,090 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-03-19 12:11:21,090 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
-2020-03-19 12:17:30,765 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-03-19 12:38:01,799 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
-2020-03-19 12:38:04,017 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-03-19 12:38:12,118 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-19 12:38:47,085 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-03-19 12:38:52,187 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-03-19 12:40:49,847 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-03-19 12:40:56,872 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-19 12:41:29,334 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-03-19 12:41:37,226 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-03-19 12:42:10,792 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-03-19 12:42:36,611 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-03-19 12:42:45,991 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-03-19 12:43:15,985 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
-2020-03-19 12:43:26,323 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic details of journey:Source,Destination & Staying Time
-2020-03-19 12:43:33,352 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-03-19 12:46:28,619 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
-2020-03-19 12:46:28,656 - com.tripmasters.framework.reports.Logs -ERROR - Unable to find the element on Page
-2020-03-19 12:46:47,126 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
-2020-03-19 12:47:12,500 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-03-19 12:47:20,939 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-03-19 12:47:20,939 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
-2020-03-19 12:48:11,197 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
-2020-03-19 12:48:11,197 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
-2020-03-19 12:48:11,219 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
-2020-03-19 12:48:11,220 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
-2020-03-19 12:48:21,276 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
-2020-03-19 12:48:41,306 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
-2020-03-19 12:50:20,769 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-03-19 12:50:20,791 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-03-19 12:50:20,791 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-03-19 12:51:17,448 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-03-19 12:51:24,301 - com.tripmasters.framework.reports.Logs -INFO - bookingDetailswithPremiumEcomomy passed
-2020-03-19 12:52:06,851 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-03-19 12:52:06,865 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-03-19 12:52:06,866 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-03-19 12:52:06,866 - com.tripmasters.framework.reports.Logs -INFO - Spotlight link verified!
-2020-03-19 12:52:45,249 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
-2020-03-19 12:52:47,478 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-03-19 12:53:59,614 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-03-19 12:54:08,483 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-03-19 12:54:44,977 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
-2020-03-19 12:54:44,978 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
-2020-03-19 12:54:44,978 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
-2020-03-19 12:54:44,978 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
-2020-03-19 12:54:44,978 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
-2020-03-19 12:55:35,472 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
-2020-03-19 12:55:48,640 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
-2020-03-19 12:55:48,966 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-03-19 12:56:36,201 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
-2020-03-19 12:58:00,513 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
-2020-03-19 12:58:05,589 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
-2020-03-19 12:58:28,729 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
-2020-03-19 12:58:28,740 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
-2020-03-19 12:59:00,909 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
-2020-03-19 12:59:14,420 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
-2020-03-19 12:59:19,445 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
-2020-03-19 12:59:46,590 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-<<<<<<< HEAD
-2020-04-08 01:23:37,689 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-08 01:24:15,483 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-08 01:25:22,836 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-09 11:15:16,544 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-04-09 12:02:32,218 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-04-09 12:56:14,780 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
-2020-04-09 12:56:28,379 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
-2020-04-09 12:58:31,007 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
-2020-04-09 13:02:02,712 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
-2020-04-09 14:42:26,290 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-2020-04-09 16:11:17,841 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-09 16:15:47,173 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-09 16:28:12,247 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-09 16:28:15,365 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-09 16:29:17,750 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-09 16:29:20,863 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-09 16:33:49,696 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-09 16:38:51,734 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-09 16:44:17,925 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-09 16:52:11,140 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-09 16:55:56,660 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-09 17:01:45,951 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-09 18:06:59,735 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-09 18:07:01,867 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-13 16:30:55,253 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-2020-04-14 12:37:54,511 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-2020-04-14 13:32:40,136 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-2020-04-14 13:55:25,641 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
-2020-04-14 13:55:39,872 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
-2020-04-14 15:02:21,984 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
-2020-04-14 16:14:27,111 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
-2020-04-14 18:02:12,821 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
-2020-04-14 18:06:44,569 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
-2020-04-14 18:08:01,146 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
-2020-04-14 18:08:14,971 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
-2020-04-14 18:11:36,355 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-2020-04-15 11:36:13,661 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 11:41:01,801 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 11:41:21,581 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-15 11:42:15,180 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 11:44:02,109 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 11:55:34,674 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
-2020-04-15 11:56:49,803 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
-2020-04-15 11:57:03,798 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
-2020-04-15 12:00:11,997 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-2020-04-15 12:38:44,505 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 12:41:59,184 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 12:46:38,447 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 12:49:15,137 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 12:54:15,073 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 12:54:20,893 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-15 12:54:27,912 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-15 12:58:40,402 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 13:09:03,055 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 13:10:01,234 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-04-15 13:10:36,201 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 13:21:06,156 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 13:22:04,971 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-04-15 13:26:11,291 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 13:57:47,407 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 14:13:30,271 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 14:42:51,374 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 14:59:59,536 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-15 15:02:46,945 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 15:17:17,817 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 15:22:53,018 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 15:25:43,912 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-04-15 15:28:38,931 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 16:27:54,303 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-04-15 16:37:44,994 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-15 16:40:14,922 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 16:45:28,853 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 16:47:18,200 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-15 16:49:42,781 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-15 16:50:14,403 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-15 16:52:36,294 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 16:53:07,115 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
-2020-04-15 16:53:07,116 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
-2020-04-15 16:53:07,288 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
-2020-04-15 16:53:07,289 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
-2020-04-15 16:53:20,308 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
-2020-04-15 16:53:21,650 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
-2020-04-15 16:53:41,622 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 16:54:31,966 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-04-15 16:54:31,967 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-04-15 16:54:37,341 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-04-15 16:55:41,499 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-15 16:57:40,350 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 16:58:01,147 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-15 16:58:01,198 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-15 16:59:59,448 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 17:03:56,329 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 17:13:24,172 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 17:19:52,214 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 17:24:57,328 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 17:45:40,457 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 17:57:24,493 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 18:05:50,736 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 18:09:12,698 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-15 18:13:06,683 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 11:18:54,223 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-04-16 11:18:56,154 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-04-16 12:40:06,774 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 12:43:54,811 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-04-16 12:56:46,833 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 13:27:29,779 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 13:37:42,337 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 13:47:58,259 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 13:57:55,008 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 14:11:17,781 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 14:14:58,514 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 14:17:20,533 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 14:18:18,088 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-04-16 14:19:05,068 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 14:27:29,817 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 14:30:39,011 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 15:10:51,021 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 15:15:30,682 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 15:20:12,477 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 15:44:02,415 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 16:05:29,083 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 16:08:16,271 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 16:12:24,527 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-16 16:20:13,351 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-17 13:55:22,709 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-17 13:59:09,121 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-17 14:00:10,586 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-17 14:05:30,499 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-17 14:06:15,495 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-17 14:27:41,256 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-17 14:31:13,523 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-17 14:33:25,790 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-17 14:38:29,205 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-17 14:40:16,730 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-17 14:40:59,538 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-17 14:44:40,615 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-17 14:49:34,835 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-17 14:55:18,296 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-17 15:37:37,584 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-04-17 17:56:08,687 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-=======
-2020-04-06 13:39:07,535 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-04-06 13:39:54,365 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-04-06 13:41:23,947 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
-2020-04-06 13:48:36,978 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-06 13:48:38,994 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-06 15:59:19,978 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-06 15:59:22,016 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-06 17:47:07,263 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-06 17:47:09,274 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-08 11:28:22,966 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-08 11:28:25,057 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-08 12:04:33,220 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-08 12:54:43,795 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-08 12:54:45,805 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-08 13:47:14,816 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-08 13:47:16,827 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-08 13:56:32,477 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-08 13:56:34,488 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-08 14:05:03,344 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-09 12:06:35,377 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-09 13:06:58,228 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
-2020-04-09 13:07:03,481 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
-2020-04-09 13:07:22,130 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
-2020-04-09 13:07:22,613 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
-<<<<<<< Updated upstream
-=======
-2020-04-09 13:32:27,680 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-04-09 13:32:27,691 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-04-09 13:32:33,086 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-04-09 13:34:06,241 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-09 13:37:28,124 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-09 13:37:28,195 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-09 13:44:03,124 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-04-09 13:44:03,149 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-04-09 13:44:19,962 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-04-09 13:46:07,379 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-04-09 14:09:14,943 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-04-09 14:09:14,957 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-04-09 14:09:20,431 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-04-09 14:09:27,696 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-04-09 14:16:07,962 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-04-09 14:16:07,975 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-04-09 14:16:13,374 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-04-09 14:16:20,731 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-04-09 14:22:46,049 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-04-09 14:22:46,063 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-04-09 14:22:51,488 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-04-09 14:24:23,367 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-09 14:34:32,905 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-04-09 14:34:32,916 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-04-09 14:34:38,260 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-04-09 14:36:54,660 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-09 14:39:13,289 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
-2020-04-09 14:39:13,303 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
-2020-04-09 14:39:13,501 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
-2020-04-09 14:39:13,503 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
-2020-04-09 14:44:12,664 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
-2020-04-09 14:44:12,676 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
-2020-04-09 14:44:12,918 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
-2020-04-09 14:44:12,919 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
-2020-04-09 14:45:58,367 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
-2020-04-09 14:47:38,510 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
-2020-04-09 14:49:40,249 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-09 14:49:42,674 - com.tripmasters.framework.reports.Logs -INFO - Validate that user is on TripInclusion Page
-2020-04-09 15:41:33,909 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-09 15:41:41,136 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-09 15:43:03,834 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-09 15:43:25,237 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-09 15:46:11,091 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-09 15:46:58,422 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-09 15:50:07,224 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-09 15:50:09,261 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-09 15:52:53,301 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-09 15:53:00,464 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-09 15:54:02,288 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-09 15:54:21,215 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-09 15:56:56,276 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-09 15:57:38,054 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-09 16:04:09,247 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-09 16:04:16,494 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-09 16:05:22,651 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-09 16:05:44,427 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-09 16:08:24,249 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-09 16:09:11,560 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-09 16:29:22,280 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-09 16:29:29,463 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-09 16:30:45,488 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-09 16:31:09,338 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-09 16:34:03,037 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-09 16:34:40,767 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-09 16:41:30,705 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-09 16:41:38,019 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-09 16:42:37,621 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-09 16:42:58,490 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-09 16:45:47,847 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-09 16:46:36,188 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-09 16:51:45,734 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-09 16:51:53,004 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-09 16:52:52,554 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-09 16:53:12,623 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-09 16:55:58,162 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-09 16:57:03,618 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-09 17:03:21,248 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-09 17:03:28,406 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-09 17:04:25,497 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-09 17:04:44,324 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-09 17:07:21,216 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-09 17:08:02,314 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-09 17:11:52,579 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-09 17:11:59,814 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-09 17:12:58,061 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-09 17:13:15,031 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-09 17:15:54,435 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-09 17:19:20,544 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
-2020-04-09 17:20:43,656 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-09 17:20:51,205 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-09 17:21:54,489 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-09 17:22:16,184 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-09 17:25:00,819 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-09 17:25:19,167 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-09 17:25:40,988 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-09 17:33:16,306 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-09 17:33:23,490 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-09 17:34:22,487 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-09 17:34:43,185 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-09 17:37:21,985 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-09 17:38:04,084 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-09 17:43:30,620 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-09 17:43:37,981 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-09 17:44:53,332 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-09 17:45:18,419 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-09 17:48:32,101 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-09 17:49:45,356 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-09 17:52:38,813 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-15 11:02:31,478 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
-2020-04-15 11:02:32,695 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
-2020-04-15 11:02:42,855 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
-2020-04-15 11:02:42,896 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
-2020-04-15 11:19:19,027 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
-2020-04-15 11:19:43,345 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
-2020-04-15 11:19:43,452 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-04-15 11:20:42,351 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
-2020-04-15 11:20:42,542 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
-2020-04-15 11:21:50,517 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
-2020-04-15 11:21:55,712 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
-2020-04-15 11:22:10,927 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
-2020-04-15 11:22:11,057 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
-2020-04-15 11:23:06,245 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
-2020-04-15 11:55:11,212 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
-2020-04-15 11:55:38,008 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
-2020-04-15 11:55:38,102 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-04-15 11:57:33,147 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
-2020-04-15 11:57:33,224 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
-2020-04-15 11:58:46,819 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
-2020-04-15 11:58:52,107 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
-2020-04-15 11:59:13,454 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
-2020-04-15 11:59:13,590 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
-2020-04-15 12:00:11,295 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
-2020-04-15 12:00:41,042 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
-2020-04-15 12:00:46,359 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
-2020-04-15 12:01:25,493 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-2020-04-15 13:27:25,878 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-15 13:29:31,200 - com.tripmasters.framework.reports.Logs -INFO - User fills all the 3 passenger details
-2020-04-15 13:33:12,405 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-15 13:36:32,400 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-15 13:38:20,821 - com.tripmasters.framework.reports.Logs -INFO - All the Basic Booking details Source & Destination filled successfully for Two Adults
-2020-04-15 13:40:39,995 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-15 13:55:03,792 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for Three Adults & One Child
-2020-04-15 13:56:57,879 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-15 14:20:48,855 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-04-15 14:44:41,999 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-15 14:44:49,253 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-15 14:46:27,444 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-15 14:49:36,840 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-15 14:49:44,237 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-15 14:50:38,205 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-15 14:50:54,400 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-15 14:53:33,658 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-15 14:54:24,467 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-15 15:18:15,792 - com.tripmasters.framework.reports.Logs -INFO - All the Basic Booking details Source & Destination filled successfully for Two Adults
-2020-04-15 15:20:24,960 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-15 15:26:19,659 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for Three Adults & One Child
-2020-04-15 15:28:14,208 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-15 15:46:16,847 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for Three Adults & One Child
-2020-04-15 15:48:11,281 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-15 16:01:41,348 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
-2020-04-15 16:02:00,565 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-15 16:11:13,461 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-15 16:12:25,467 - com.tripmasters.framework.reports.Logs -INFO - User fills all the 3 passenger details
-2020-04-15 16:14:48,713 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-15 16:17:14,186 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-15 16:18:37,679 - com.tripmasters.framework.reports.Logs -INFO - All the Basic Booking details Source & Destination filled successfully for Two Adults
-2020-04-15 16:20:49,295 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-15 16:31:03,861 - com.tripmasters.framework.reports.Logs -ERROR - Traveller Details are not same as expected
-2020-04-15 16:31:12,857 - com.tripmasters.framework.reports.Logs -ERROR - Traveller Details are not same as expected
-2020-04-15 16:31:18,924 - com.tripmasters.framework.reports.Logs -ERROR - Traveller Details are not same as expected
-2020-04-15 16:31:24,943 - com.tripmasters.framework.reports.Logs -ERROR - Traveller Details are not same as expected
-2020-04-15 16:44:20,992 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-15 16:44:35,369 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-15 16:49:12,040 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-04-15 16:51:20,091 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
-2020-04-15 16:51:39,345 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-15 16:55:47,698 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-15 16:55:55,498 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-15 16:57:06,922 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-15 16:57:25,145 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-15 17:00:05,668 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-15 17:00:45,353 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-15 17:02:29,721 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-04-15 17:03:46,790 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-15 17:03:46,842 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-15 17:20:00,230 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
-2020-04-15 17:20:19,486 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-15 17:42:02,728 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-15 17:42:02,798 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-15 17:58:40,014 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-15 17:59:51,478 - com.tripmasters.framework.reports.Logs -INFO - User fills all the 3 passenger details
-2020-04-15 18:02:32,110 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-15 18:05:09,445 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-15 18:06:55,516 - com.tripmasters.framework.reports.Logs -INFO - All the Basic Booking details Source & Destination filled successfully for Two Adults
-2020-04-15 18:08:58,139 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-15 18:14:42,260 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for Three Adults & One Child
-2020-04-15 18:16:36,574 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-15 18:34:29,219 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-04-15 18:37:04,811 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
-2020-04-15 18:37:23,891 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-15 18:42:00,643 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-15 18:42:07,811 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-15 18:43:30,310 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-15 18:43:47,612 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-15 18:46:19,584 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-15 18:46:57,346 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-15 18:47:48,847 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-04-15 18:52:53,323 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
-2020-04-15 18:52:53,324 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
-2020-04-15 18:52:53,634 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
-2020-04-15 18:52:53,635 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
-2020-04-15 18:56:13,883 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
-2020-04-15 18:57:54,049 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
-2020-04-15 19:05:48,453 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-15 19:05:48,502 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-15 19:05:48,503 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-15 19:05:48,504 - com.tripmasters.framework.reports.Logs -INFO - Spotlight link verified!
-2020-04-16 11:04:22,311 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-16 11:04:29,595 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-16 11:05:58,277 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-16 11:06:13,223 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-16 11:09:49,842 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-16 11:10:27,672 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-16 11:10:45,289 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-04-16 11:15:49,310 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-16 11:15:49,393 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-16 11:25:17,940 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-16 11:25:18,020 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-16 11:29:14,289 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-16 11:29:14,378 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-16 11:44:52,543 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-16 11:44:52,614 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-16 11:56:05,517 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-16 11:56:05,583 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-16 11:58:39,396 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-16 11:58:39,516 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-16 11:59:12,876 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-16 12:05:34,000 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-16 12:05:34,071 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-16 12:06:06,891 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-16 13:22:38,549 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-16 13:22:38,623 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-16 13:23:16,894 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-16 13:40:06,352 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-04-16 13:40:06,393 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-04-16 13:40:11,844 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-04-16 13:41:31,110 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-16 13:51:22,134 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-16 13:51:22,217 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-16 13:51:22,218 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-16 13:51:28,225 - com.tripmasters.framework.reports.Logs -INFO - Spotlight link verified!
-2020-04-16 13:51:28,912 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-16 14:06:43,460 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-16 14:07:58,569 - com.tripmasters.framework.reports.Logs -INFO - User fills all the 3 passenger details
-2020-04-16 14:10:15,722 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-16 14:12:55,342 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-16 14:14:25,569 - com.tripmasters.framework.reports.Logs -INFO - All the Basic Booking details Source & Destination filled successfully for Two Adults
-2020-04-16 14:16:28,908 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-16 14:20:37,648 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for Three Adults & One Child
-2020-04-16 14:22:31,741 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-16 14:35:35,206 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-04-16 14:37:21,595 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-16 14:37:28,908 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-16 14:38:27,516 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-04-16 14:39:10,407 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-04-16 14:41:49,700 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-16 14:42:32,560 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-16 14:42:51,217 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-04-16 14:47:20,868 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
-2020-04-16 14:47:20,869 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
-2020-04-16 14:47:21,042 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
-2020-04-16 14:47:21,043 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
-2020-04-16 14:49:06,478 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
-2020-04-16 14:50:46,612 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
-2020-04-16 14:52:34,788 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-16 14:52:34,990 - com.tripmasters.framework.reports.Logs -INFO - Validate that user is on TripInclusion Page
-2020-04-16 14:58:07,387 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
-2020-04-16 14:58:32,339 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
-2020-04-16 14:58:32,410 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-04-16 15:00:14,770 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
-2020-04-16 15:00:14,912 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
-2020-04-16 15:01:25,326 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
-2020-04-16 15:01:30,479 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
-2020-04-16 15:02:00,994 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
-2020-04-16 15:02:01,162 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
-2020-04-16 15:02:41,800 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
-2020-04-16 15:03:10,818 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
-2020-04-16 15:03:16,348 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
-2020-04-16 15:04:17,911 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-2020-04-16 15:09:08,719 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-04-16 16:33:31,472 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-16 16:38:12,752 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-16 17:03:38,426 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-16 17:03:38,500 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-16 17:04:21,207 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-16 17:21:42,013 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-16 17:21:42,085 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-16 17:22:12,792 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-17 09:28:38,191 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-17 09:28:38,288 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-17 09:29:09,755 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-17 09:47:08,982 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-17 09:47:09,048 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-17 09:47:40,951 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-17 10:03:56,804 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-17 10:03:56,869 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-17 10:04:29,448 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-17 10:04:35,583 - com.tripmasters.framework.reports.Logs -INFO - Spotlight link verified!
-2020-04-17 10:10:35,232 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-17 10:10:35,331 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-17 10:11:07,376 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-17 10:13:27,682 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-17 10:13:27,812 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-17 10:14:03,575 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-17 10:23:43,281 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-17 10:23:43,354 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-17 10:24:15,705 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-17 10:27:51,927 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-17 10:27:51,991 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-17 10:28:25,941 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-17 10:28:32,148 - com.tripmasters.framework.reports.Logs -INFO - Spotlight link verified!
-2020-04-17 10:31:20,866 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-17 10:31:20,935 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-17 10:31:55,961 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-17 11:14:04,577 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-17 11:14:04,656 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-17 11:14:39,817 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-17 11:30:37,560 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-17 11:32:22,428 - com.tripmasters.framework.reports.Logs -INFO - User fills all the 3 passenger details
-2020-04-17 11:33:49,528 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-17 11:34:01,875 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-17 15:07:08,774 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-04-17 15:07:08,785 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-04-17 15:07:14,161 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-04-17 16:42:10,084 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-17 16:42:10,172 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-17 16:42:42,640 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-17 16:46:29,467 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-17 16:46:29,538 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-17 16:47:00,520 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-17 16:50:55,810 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-17 16:50:55,993 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-17 16:51:28,982 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-17 16:51:35,156 - com.tripmasters.framework.reports.Logs -INFO - Spotlight link verified!
-2020-04-17 16:53:36,579 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-17 16:53:36,654 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-17 16:54:07,869 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-17 16:54:14,012 - com.tripmasters.framework.reports.Logs -INFO - Spotlight link verified!
-2020-04-17 17:04:38,516 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
-2020-04-17 17:04:38,579 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-04-17 17:05:09,966 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
-2020-04-17 17:05:16,248 - com.tripmasters.framework.reports.Logs -INFO - Spotlight link verified!
->>>>>>> Stashed changes
->>>>>>> b60fbc97bb0ac7c6f4ae15ca6791b7e4c69001c7
-2020-04-20 17:25:22,472 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-20 18:06:44,142 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-04-21 13:50:55,533 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-04-21 16:27:33,056 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-2020-04-22 10:58:42,089 - com.tripmasters.framework.reports.Logs -INFO - Leaving details filled
-2020-04-22 10:58:48,161 - com.tripmasters.framework.reports.Logs -INFO - Going details filled
-2020-04-22 10:59:06,169 - com.tripmasters.framework.reports.Logs -INFO - Select value from calendar
-2020-04-22 10:59:10,811 - com.tripmasters.framework.reports.Logs -INFO - Select staying time
-2020-04-22 10:59:16,982 - com.tripmasters.framework.reports.Logs -INFO - Click on No More Cities Button
-2020-04-22 10:59:34,483 - com.tripmasters.framework.reports.Logs -INFO - Guest details Selected
-2020-04-22 10:59:40,400 - com.tripmasters.framework.reports.Logs -INFO - Click on done Mobile Button
-2020-04-22 10:59:48,811 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-22 10:59:55,096 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-04-22 11:00:38,294 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-22 11:00:52,930 - com.tripmasters.framework.reports.Logs -INFO - Click to Continue & User redirected to Fill Passenger Details Page
-2020-04-22 11:01:25,333 - com.tripmasters.framework.reports.Logs -INFO - First Traveller details filled
-2020-04-22 11:02:25,933 - com.tripmasters.framework.reports.Logs -INFO - User fills all the 3 passenger details
-2020-04-22 11:02:39,607 - com.tripmasters.framework.reports.Logs -INFO - Click to Continue & User redirected to Payment Page
-2020-04-22 12:39:37,179 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York City (all Airports)' into leaving from field
-2020-04-22 12:39:43,052 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
-2020-04-22 12:39:46,925 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-04-22 12:40:46,534 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-04-22 12:40:46,536 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-04-22 12:40:54,248 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-04-22 12:41:08,380 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-04-22 12:42:53,410 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-22 12:47:42,002 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
-2020-04-22 12:47:48,800 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
-2020-04-22 12:48:09,773 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
-2020-04-22 13:00:26,886 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Washington (all Airports), DC' into leaving from field
-2020-04-22 13:00:32,325 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
-2020-04-22 13:00:36,049 - com.tripmasters.framework.reports.Logs -INFO - User entered '3' nights staying time
-2020-04-22 13:01:35,927 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-04-22 13:13:16,905 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-22 13:13:22,233 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-22 13:13:27,017 - com.tripmasters.framework.reports.Logs -INFO - User entered '12' nights staying time
-2020-04-22 13:14:06,078 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
->>>>>>> 27a717a0ccb02bb1957ee01a7d525582258ab53c
-2020-04-30 18:11:39,238 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-=======
-2020-04-29 20:40:23,882 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:40:28,936 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 20:40:28,942 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 20:40:28,943 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-04-29 20:40:28,944 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-29 20:41:07,564 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 20:41:07,569 - com.tripmasters.framework.reports.Logs -INFO - Leaving details filled
-2020-04-29 20:41:07,571 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 20:41:07,571 - com.tripmasters.framework.reports.Logs -INFO - Going details filled
-2020-04-29 20:41:07,589 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:41:17,263 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 20:41:17,265 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 20:41:17,266 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:41:27,522 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
-2020-04-29 20:41:27,524 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
-2020-04-29 20:41:27,525 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:41:43,278 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 20:41:43,280 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 20:41:43,281 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:42:28,606 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 20:42:28,618 - com.tripmasters.framework.reports.Logs -INFO - Leaving details filled
-2020-04-29 20:42:28,621 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 20:42:28,622 - com.tripmasters.framework.reports.Logs -INFO - Going details filled
-2020-04-29 20:42:28,660 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:42:39,923 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 20:42:39,928 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 20:42:39,930 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:44:24,552 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 20:44:24,567 - com.tripmasters.framework.reports.Logs -INFO - Leaving details filled
-2020-04-29 20:44:24,571 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 20:44:24,573 - com.tripmasters.framework.reports.Logs -INFO - Going details filled
-2020-04-29 20:44:24,629 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:44:34,672 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 20:44:34,677 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 20:44:34,679 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:44:45,490 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
-2020-04-29 20:44:45,491 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
-2020-04-29 20:44:45,491 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:44:59,868 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 20:44:59,869 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 20:44:59,870 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:45:17,248 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 20:45:17,249 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 20:45:17,252 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:45:27,690 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 20:45:27,691 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 20:45:27,693 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-04-29 20:45:27,696 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-29 20:45:32,699 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-29 20:47:05,570 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 20:47:05,583 - com.tripmasters.framework.reports.Logs -INFO - Leaving details filled
-2020-04-29 20:47:05,586 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 20:47:05,587 - com.tripmasters.framework.reports.Logs -INFO - Going details filled
-2020-04-29 20:47:05,636 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:47:15,996 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 20:47:15,999 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 20:47:16,000 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:47:26,742 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
-2020-04-29 20:47:26,744 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
-2020-04-29 20:47:26,745 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:57:44,771 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 20:57:44,783 - com.tripmasters.framework.reports.Logs -INFO - Leaving details filled
-2020-04-29 20:57:44,785 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 20:57:44,787 - com.tripmasters.framework.reports.Logs -INFO - Going details filled
-2020-04-29 20:57:44,829 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:57:54,389 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 20:57:54,395 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 20:57:54,397 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:58:04,706 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
-2020-04-29 20:58:04,708 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
-2020-04-29 20:58:04,709 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 20:59:43,542 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 20:59:43,555 - com.tripmasters.framework.reports.Logs -INFO - Leaving details filled
-2020-04-29 20:59:43,558 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 20:59:43,559 - com.tripmasters.framework.reports.Logs -INFO - Going details filled
-2020-04-29 20:59:43,608 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 21:01:51,804 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 21:01:51,816 - com.tripmasters.framework.reports.Logs -INFO - Leaving details filled
-2020-04-29 21:01:51,819 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 21:01:51,820 - com.tripmasters.framework.reports.Logs -INFO - Going details filled
-2020-04-29 21:01:51,863 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 21:02:01,407 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 21:02:01,412 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 21:02:01,413 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 21:02:06,477 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
-2020-04-29 21:02:06,479 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
-2020-04-29 21:02:06,480 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 21:06:11,845 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 21:06:11,848 - com.tripmasters.framework.reports.Logs -INFO - Leaving details filled
-2020-04-29 21:06:11,849 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 21:06:11,849 - com.tripmasters.framework.reports.Logs -INFO - Going details filled
-2020-04-29 21:06:11,858 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 21:09:14,490 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 21:09:14,493 - com.tripmasters.framework.reports.Logs -INFO - Leaving details filled
-2020-04-29 21:09:14,494 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 21:09:14,494 - com.tripmasters.framework.reports.Logs -INFO - Going details filled
-2020-04-29 21:09:14,503 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 21:16:10,740 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 21:16:10,744 - com.tripmasters.framework.reports.Logs -INFO - Leaving details filled
-2020-04-29 21:16:10,745 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 21:16:10,746 - com.tripmasters.framework.reports.Logs -INFO - Going details filled
-2020-04-29 21:16:10,755 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 21:16:17,822 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 21:16:17,828 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 21:16:17,829 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 21:22:34,598 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 21:22:34,601 - com.tripmasters.framework.reports.Logs -INFO - Leaving details filled
-2020-04-29 21:22:34,602 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 21:22:34,603 - com.tripmasters.framework.reports.Logs -INFO - Going details filled
-2020-04-29 21:22:34,616 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 21:22:41,659 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-29 21:22:41,665 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-29 21:22:41,666 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-29 21:22:48,696 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
-2020-04-29 21:22:48,698 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
-2020-04-29 21:22:48,699 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-30 09:43:33,290 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-30 09:43:33,347 - com.tripmasters.framework.reports.Logs -INFO - Leaving details filled
-2020-04-30 09:43:33,350 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-30 09:43:33,350 - com.tripmasters.framework.reports.Logs -INFO - Going details filled
-2020-04-30 09:43:33,423 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-30 09:44:31,531 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-30 09:44:31,543 - com.tripmasters.framework.reports.Logs -INFO - Leaving details filled
-2020-04-30 09:44:31,546 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-30 09:44:31,547 - com.tripmasters.framework.reports.Logs -INFO - Going details filled
-2020-04-30 09:44:31,584 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-30 09:46:03,404 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-30 09:46:03,417 - com.tripmasters.framework.reports.Logs -INFO - Leaving details filled
-2020-04-30 09:46:03,420 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-30 09:46:03,422 - com.tripmasters.framework.reports.Logs -INFO - Going details filled
-2020-04-30 09:46:03,465 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-30 09:56:58,636 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-30 09:56:58,649 - com.tripmasters.framework.reports.Logs -INFO - Leaving details filled
-2020-04-30 09:57:03,569 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-30 09:57:03,570 - com.tripmasters.framework.reports.Logs -INFO - Going details filled
-2020-04-30 09:57:13,624 - com.tripmasters.framework.reports.Logs -INFO - Select value from calendar
-2020-04-30 09:57:15,427 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-04-30 09:57:15,428 - com.tripmasters.framework.reports.Logs -INFO - Select staying time
-2020-04-30 09:57:20,890 - com.tripmasters.framework.reports.Logs -INFO - Click on No More Cities Button
-2020-04-30 09:57:35,506 - com.tripmasters.framework.reports.Logs -INFO - Guest details Selected
-2020-04-30 09:57:40,843 - com.tripmasters.framework.reports.Logs -INFO - Click on done Mobile Button
-2020-04-30 09:57:48,069 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-30 09:58:47,807 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-30 09:59:06,666 - com.tripmasters.framework.reports.Logs -INFO - Click to Continue & User redirected to Fill Passenger Details Page
-2020-04-30 09:59:28,919 - com.tripmasters.framework.reports.Logs -INFO - First Traveller details filled
-2020-04-30 10:00:10,969 - com.tripmasters.framework.reports.Logs -INFO - User fills all the 3 passenger details
-2020-04-30 10:00:29,351 - com.tripmasters.framework.reports.Logs -INFO - Click to Continue & User redirected to Payment Page
-2020-04-30 10:00:30,813 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-04-30 10:01:15,099 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-30 10:01:19,564 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-30 10:01:28,776 - com.tripmasters.framework.reports.Logs -INFO - Select value from calendar
-2020-04-30 10:01:30,430 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
-2020-04-30 10:01:30,431 - com.tripmasters.framework.reports.Logs -INFO - User entered "6" nights staying time
-2020-04-30 10:01:35,717 - com.tripmasters.framework.reports.Logs -INFO - Click on No More Cities Button
-2020-04-30 10:01:49,607 - com.tripmasters.framework.reports.Logs -INFO - User select "1 Room With Other Options" from Guest list
-2020-04-30 10:01:55,485 - com.tripmasters.framework.reports.Logs -INFO - User selects "1" Adult from Adult Drpdown
-2020-04-30 10:02:09,597 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-30 10:02:21,911 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-30 10:03:18,262 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper Flights
-2020-04-30 10:03:32,811 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Continue Page
-2020-04-30 10:04:26,149 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-30 10:05:10,385 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
-2020-04-30 10:05:10,610 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
-2020-04-30 10:05:10,636 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-30 10:05:58,118 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-30 10:06:02,993 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-30 10:06:14,194 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-04-30 10:06:33,648 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for Three Adults & One Child
-2020-04-30 10:08:28,003 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-30 10:12:42,670 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-30 10:12:47,579 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-30 10:12:58,690 - com.tripmasters.framework.reports.Logs -INFO - User entered '5' nights staying time
-2020-04-30 10:17:51,990 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-30 10:17:56,880 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-30 10:18:09,154 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-04-30 10:18:28,729 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-30 10:18:38,921 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-30 10:21:28,778 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Washington (all Airports), DC' into leaving from field
-2020-04-30 10:21:33,682 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
-2020-04-30 10:21:35,255 - com.tripmasters.framework.reports.Logs -INFO - User entered '3' nights staying time
-2020-04-30 10:26:06,247 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Washington (all Airports), DC' into leaving from field
-2020-04-30 10:26:11,093 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
-2020-04-30 10:26:12,923 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-04-30 10:26:24,127 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
-2020-04-30 10:26:24,300 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
-2020-04-30 10:26:24,300 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
-2020-04-30 10:28:09,736 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
-2020-04-30 10:29:49,846 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
-2020-04-30 10:31:20,481 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-30 10:31:20,561 - com.tripmasters.framework.reports.Logs -INFO - Validate that user is on TripInclusion Page
-2020-04-30 10:33:15,982 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York City (all Airports)' into leaving from field
-2020-04-30 10:33:20,811 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
-2020-04-30 10:33:22,695 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-04-30 10:33:47,252 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-04-30 10:33:47,252 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-04-30 10:33:52,617 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-04-30 10:34:58,390 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-30 10:47:17,009 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-30 10:47:17,012 - com.tripmasters.framework.reports.Logs -INFO - Leaving details filled
-2020-04-30 10:47:21,750 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-30 10:47:21,750 - com.tripmasters.framework.reports.Logs -INFO - Going details filled
-2020-04-30 10:47:31,177 - com.tripmasters.framework.reports.Logs -INFO - Select value from calendar
-2020-04-30 10:47:32,810 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-04-30 10:47:32,811 - com.tripmasters.framework.reports.Logs -INFO - Select staying time
-2020-04-30 10:47:38,243 - com.tripmasters.framework.reports.Logs -INFO - Click on No More Cities Button
-2020-04-30 10:47:52,127 - com.tripmasters.framework.reports.Logs -INFO - Guest details Selected
-2020-04-30 10:47:57,397 - com.tripmasters.framework.reports.Logs -INFO - Click on done Mobile Button
-2020-04-30 10:48:04,618 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-30 10:49:01,483 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-30 10:49:21,005 - com.tripmasters.framework.reports.Logs -INFO - Click to Continue & User redirected to Fill Passenger Details Page
-2020-04-30 10:49:43,162 - com.tripmasters.framework.reports.Logs -INFO - First Traveller details filled
-2020-04-30 10:50:24,552 - com.tripmasters.framework.reports.Logs -INFO - User fills all the 3 passenger details
-2020-04-30 10:50:43,950 - com.tripmasters.framework.reports.Logs -INFO - Click to Continue & User redirected to Payment Page
-2020-04-30 10:50:45,316 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-04-30 10:51:29,438 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-30 10:51:34,305 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-30 10:51:43,433 - com.tripmasters.framework.reports.Logs -INFO - Select value from calendar
-2020-04-30 10:51:45,027 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
-2020-04-30 10:51:45,027 - com.tripmasters.framework.reports.Logs -INFO - User entered "6" nights staying time
-2020-04-30 10:51:50,402 - com.tripmasters.framework.reports.Logs -INFO - Click on No More Cities Button
-2020-04-30 10:52:04,315 - com.tripmasters.framework.reports.Logs -INFO - User select "1 Room With Other Options" from Guest list
-2020-04-30 10:52:09,457 - com.tripmasters.framework.reports.Logs -INFO - User selects "1" Adult from Adult Drpdown
-2020-04-30 10:52:23,649 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-30 10:52:36,143 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-30 10:53:32,182 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper Flights
-2020-04-30 10:53:50,945 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Continue Page
-2020-04-30 10:54:47,387 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-04-30 10:55:28,877 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
-2020-04-30 10:55:28,918 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
-2020-04-30 10:55:28,930 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-04-30 10:56:17,100 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-30 10:56:22,087 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-30 10:56:33,084 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-04-30 10:56:52,653 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for Three Adults & One Child
-2020-04-30 10:58:46,953 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-04-30 11:03:00,910 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-30 11:03:05,773 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-30 11:03:16,781 - com.tripmasters.framework.reports.Logs -INFO - User entered '5' nights staying time
-2020-04-30 11:08:11,532 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-30 11:08:16,468 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-04-30 11:08:28,749 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-04-30 11:08:48,928 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-04-30 11:08:59,163 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-04-30 11:11:52,898 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Washington (all Airports), DC' into leaving from field
-2020-04-30 11:11:57,841 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
-2020-04-30 11:11:59,262 - com.tripmasters.framework.reports.Logs -INFO - User entered '3' nights staying time
-2020-04-30 11:16:34,486 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Washington (all Airports), DC' into leaving from field
-2020-04-30 11:16:39,594 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
-2020-04-30 11:16:41,489 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-04-30 11:16:52,965 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
-2020-04-30 11:16:53,180 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
-2020-04-30 11:16:53,181 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
-2020-04-30 11:18:38,605 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
-2020-04-30 11:20:18,693 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
-2020-04-30 11:21:43,677 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-30 11:21:44,363 - com.tripmasters.framework.reports.Logs -INFO - Validate that user is on TripInclusion Page
-2020-04-30 11:22:26,202 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York City (all Airports)' into leaving from field
-2020-04-30 11:22:31,041 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
-2020-04-30 11:22:32,830 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-04-30 11:22:57,556 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-04-30 11:22:57,556 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-04-30 11:23:02,869 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-04-30 11:24:09,216 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-04-30 11:28:24,706 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-04-30 11:28:29,413 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
-2020-04-30 11:28:31,231 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-04-30 11:29:31,879 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
->>>>>>> Stashed changes
+2020-05-01 10:57:55,194 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-01 10:57:55,223 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-05-01 10:58:19,618 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-01 10:58:19,622 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-01 10:58:19,622 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-05-01 10:58:39,923 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
+2020-05-01 10:58:39,933 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
+2020-05-01 10:58:39,933 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-05-01 10:58:49,963 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-01 10:58:49,963 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-01 10:58:49,964 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-05-01 10:59:01,977 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-01 10:59:01,977 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-01 10:59:01,978 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-05-01 10:59:07,005 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-01 10:59:07,006 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-01 10:59:07,007 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-01 10:59:59,269 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:00:32,767 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-01 11:00:37,622 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-01 11:00:48,939 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-01 11:01:36,571 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:02:14,490 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-01 11:02:19,353 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-01 11:02:30,042 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-05-01 11:06:45,003 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-01 11:06:45,868 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-01 11:07:05,055 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:07:32,351 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
+2020-05-01 11:07:32,366 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
+2020-05-01 11:07:32,376 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-05-01 11:07:51,568 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:08:16,199 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-01 11:08:21,230 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-01 11:08:32,451 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-01 11:14:36,407 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:15:05,755 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-01 11:15:10,706 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-01 11:15:22,023 - com.tripmasters.framework.reports.Logs -INFO - User entered '5' nights staying time
+2020-05-01 11:19:59,779 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:20:19,802 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-01 11:20:24,794 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-01 11:20:36,990 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-01 11:23:44,960 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:25:02,812 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-01 11:25:07,537 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
+2020-05-01 11:25:18,648 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-05-01 11:25:38,022 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
+2020-05-01 11:25:57,466 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-05-01 11:26:05,147 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-05-01 11:26:56,343 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-01 11:27:09,477 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-01 11:28:05,708 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-01 11:28:08,952 - com.tripmasters.framework.reports.Logs -INFO - Verify that only selected flight appears along with passenger details
+2020-05-01 11:28:08,953 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
+2020-05-01 11:28:27,709 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:28:49,268 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-01 11:28:54,223 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-01 11:28:56,146 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-01 11:29:28,789 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
+2020-05-01 11:29:35,964 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-05-01 11:30:38,891 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-01 11:30:57,012 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-01 11:34:08,467 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-01 11:34:47,289 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-01 11:35:50,768 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:36:16,043 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-01 11:36:20,938 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
+2020-05-01 11:36:22,386 - com.tripmasters.framework.reports.Logs -INFO - User entered '3' nights staying time
+2020-05-01 11:37:07,733 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
+2020-05-01 11:37:30,127 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:38:02,505 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-01 11:38:07,604 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
+2020-05-01 11:38:09,500 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-01 11:40:06,793 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
+2020-05-01 11:41:46,868 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
+2020-05-01 11:43:10,993 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-01 11:43:13,065 - com.tripmasters.framework.reports.Logs -INFO - Validate that user is on TripInclusion Page
+2020-05-01 11:43:33,793 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:44:02,296 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
+2020-05-01 11:44:57,518 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:45:19,581 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York City (all Airports)' into leaving from field
+2020-05-01 11:45:24,476 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
+2020-05-01 11:45:26,362 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-01 11:45:56,452 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
+2020-05-01 11:45:56,453 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
+2020-05-01 11:46:02,393 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
+2020-05-01 11:49:10,191 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:49:31,702 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-01 11:49:36,837 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-01 11:49:38,792 - com.tripmasters.framework.reports.Logs -INFO - User entered '12' nights staying time
+2020-05-01 11:53:12,497 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:54:11,693 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
+2020-05-01 11:54:34,855 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
+2020-05-01 11:54:34,902 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-05-01 11:54:58,605 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:55:25,337 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
+2020-05-01 11:55:25,401 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
+2020-05-01 11:55:44,597 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:56:02,209 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
+2020-05-01 11:56:07,422 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
+2020-05-01 11:56:20,395 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
+2020-05-01 11:56:20,457 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
+2020-05-01 11:56:40,798 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:56:54,305 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
+2020-05-01 11:56:59,585 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-01 11:57:04,399 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
+2020-05-01 11:57:06,235 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-01 11:57:30,973 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
+2020-05-01 11:57:50,244 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-01 11:57:59,691 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
+2020-05-01 11:58:21,044 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 10:33:51,220 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 10:34:26,369 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-04 10:34:31,354 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-04 10:34:48,259 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-04 10:38:22,556 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 10:38:43,197 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-04 10:38:47,983 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-04 10:38:59,558 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-05-04 10:42:01,006 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-04 10:42:01,871 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-04 10:42:20,332 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 10:42:38,065 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
+2020-05-04 10:42:38,206 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
+2020-05-04 10:42:38,216 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-05-04 10:43:01,968 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 10:43:25,952 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-04 10:43:30,823 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-04 10:43:42,563 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-04 10:49:38,527 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 10:50:04,419 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-04 10:50:09,185 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-04 10:50:21,115 - com.tripmasters.framework.reports.Logs -INFO - User entered '5' nights staying time
+2020-05-04 10:54:45,114 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 10:55:05,001 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-04 10:55:09,886 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-04 10:55:22,233 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-04 10:58:19,834 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 10:58:38,132 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-04 10:58:42,774 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
+2020-05-04 10:58:54,659 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-05-04 10:59:14,092 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
+2020-05-04 10:59:33,589 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-05-04 10:59:41,245 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-05-04 11:00:31,465 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-04 11:00:44,380 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-04 11:01:41,550 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-04 11:01:44,836 - com.tripmasters.framework.reports.Logs -INFO - Verify that only selected flight appears along with passenger details
+2020-05-04 11:01:44,836 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
+2020-05-04 11:02:04,100 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 11:02:23,742 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-04 11:02:28,613 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-04 11:02:30,499 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-04 11:03:04,106 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
+2020-05-04 11:03:11,329 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-05-04 11:04:08,139 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-04 11:04:22,296 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-04 11:06:52,936 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-04 11:07:30,623 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-04 11:08:18,412 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 11:08:36,000 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-04 11:08:40,896 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
+2020-05-04 11:08:42,320 - com.tripmasters.framework.reports.Logs -INFO - User entered '3' nights staying time
+2020-05-04 11:12:46,885 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 11:13:07,764 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-04 11:13:12,689 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
+2020-05-04 11:13:14,613 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-04 11:15:11,855 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
+2020-05-04 11:16:51,982 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
+2020-05-04 11:18:18,102 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-04 11:18:18,187 - com.tripmasters.framework.reports.Logs -INFO - Validate that user is on TripInclusion Page
+2020-05-04 11:18:37,300 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 11:19:04,874 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
+2020-05-04 11:19:51,276 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 11:20:12,723 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York City (all Airports)' into leaving from field
+2020-05-04 11:20:17,451 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
+2020-05-04 11:20:19,259 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-04 11:20:43,871 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
+2020-05-04 11:20:43,871 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
+2020-05-04 11:20:49,537 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
+2020-05-04 11:21:54,613 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-04 11:22:13,207 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 11:22:30,961 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-04 11:22:35,916 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-04 11:22:37,727 - com.tripmasters.framework.reports.Logs -INFO - User entered '12' nights staying time
+2020-05-04 11:25:58,835 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 11:26:55,251 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
+2020-05-04 11:27:18,230 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
+2020-05-04 11:27:18,268 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-05-04 11:27:37,050 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 11:27:59,903 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
+2020-05-04 11:27:59,937 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
+2020-05-04 11:28:18,131 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 11:28:33,691 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
+2020-05-04 11:28:38,911 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
+2020-05-04 11:28:51,488 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
+2020-05-04 11:28:51,525 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
+2020-05-04 11:29:11,296 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 11:29:26,570 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
+2020-05-04 11:29:31,593 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-04 11:29:36,330 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
+2020-05-04 11:29:38,163 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-04 11:30:02,617 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
+2020-05-04 11:30:21,479 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-04 11:30:30,464 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
+2020-05-04 11:30:48,399 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
