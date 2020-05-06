@@ -167,20 +167,17 @@ public class TestBase {
 			{
 				if (browser.equalsIgnoreCase("Safari")) {
 					capabilities = new DesiredCapabilities();
-//					capabilities.setCapability("deviceName", "iPhone 11 Pro Max");
-//					capabilities.setCapability("platformName", "iOS");
-//					capabilities.setCapability("platformVersion", "13.3");
-//					capabilities.setCapability(CapabilityType.BROWSER_NAME, "Safari");
-//					url = new URL("http://127.0.0.1:4723/wd/hub");
-//					driver = new IOSDriver<IOSElement>(url, capabilities);
-					
-					//BrowserStack
-					capabilities.setCapability("device", "iPhone 11 Pro");
-					capabilities.setCapability("os_version", "13");
-					capabilities.setCapability("name", "Bstack-[Java] Sample Test");
-                    driver =new RemoteWebDriver(new URL(URL), capabilities);
+					capabilities.setCapability("deviceName", "iPhone 11 Pro Max");
+					capabilities.setCapability("platformName", "iOS");
+					capabilities.setCapability("platformVersion", "13.3");
+					capabilities.setCapability(CapabilityType.BROWSER_NAME, "Safari");
+					// IOSDriver
+					url = new URL("http://127.0.0.1:4723/wd/hub");
+					driver = new IOSDriver<IOSElement>(url, capabilities);
+					DesiredCapabilities capabilities = new DesiredCapabilities();
 					System.out.println("Safari browser launched on iOS");
 					flag = true;
+
 				} else {
 					//Logs.error("browser doesn't found!!!!!!!!!!!");
 					System.err.println("browser doesn't found!!!!!!!!");
