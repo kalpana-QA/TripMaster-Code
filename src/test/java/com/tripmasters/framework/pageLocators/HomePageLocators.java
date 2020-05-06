@@ -4,10 +4,9 @@ import org.openqa.selenium.By;
 
 public class HomePageLocators {
 
-
 	private static By moreHighlightsBtn = By.xpath("//button[contains(.,'More Highlights & Attractions')] | //*[contains(text(),'more highlights & attractions')] | //div[contains(text(),'more highlights & attractions ')]");
 	private static By exploreEuropeLnk = By.xpath("//section[h1[contains(.,'popular vacation packages')]]//h3/a[contains(.,'Explore Europe')] | //div[text()='Explore Europe']");
-	private static By exploreAsiaLink = By.xpath("//div[text()='Explore Asia, Pacific & Middle East']");
+	private static By exploreAsiaLnk = By.xpath("//div[text()='Explore Asia, Pacific & Middle East']");
 	private static By romeFlorenceVeniceByTrainLnk = By.xpath("(//div[contains(text(),'other vacation packages')]/../div/h2/a)[2]");
 	private static By packageUnderOtherVacationPackageOption = By.xpath("//div[contains(text(),'other vacation packages')]/..//div[@class='swiper-slide swiper-slide-active']//a");
 	private static By romeFlorenceVeniceByTrainHeader = By.xpath("//h1[contains(.,'Rome - Florence - Venice by Train')]");
@@ -82,13 +81,11 @@ public class HomePageLocators {
 
 		return selectPremiumEconomy;
 		}
-
 	public static By getmoreHighlightsattractions() {
 		return moreHighlightsattractions;
-
-}
-	public static By getexploreAsiaLink() {
-		return exploreAsiaLink;
 	}
-
+	
+	public static By getexploreAsiaLnk() {
+		return exploreAsiaLnk;
+	}
 }
