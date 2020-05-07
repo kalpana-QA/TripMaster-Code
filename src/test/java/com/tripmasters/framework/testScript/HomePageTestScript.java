@@ -51,7 +51,7 @@ public class HomePageTestScript extends TestBase {
 
 	}
 	
-	@Test(groups = { "smoke" },priority = 15)
+	//@Test(groups = { "smoke" },priority = 15)
 	public void verifyMoreHighlightAndAttractionLinks_Mob_TC_11(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyMoreHighlightAndAttractionLinks_Mob_TC_11");
 		homePage.clickOnExploreAsiaLink();
@@ -59,7 +59,7 @@ public class HomePageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "HightLights and Attraction Links Verified");
 	}
 
-	@Test(groups = { "smoke" }, priority = 16)
+	//@Test(groups = { "smoke" }, priority = 16)
 	public void verifyOtherVacationPackages_TC_12(Method method) throws Exception {
 		String PackageTitle;
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyOtherVacationPackages_TC_12");
@@ -78,7 +78,7 @@ public class HomePageTestScript extends TestBase {
 		//Logs.info("verifyOtherVacationPackages is displayed & testcase passed successfully.");
 	}
 
-	 @Test(groups = {"smoke"},priority=17)
+	// @Test(groups = {"smoke"},priority=17)
 	public void verifyPopularVacationPackages_TC_13(Method method) {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "VerifyPopularVacationPackages_TC_13");
 		PageBase.clickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
@@ -94,7 +94,7 @@ public class HomePageTestScript extends TestBase {
 		//sLogs.info("VerifyPopularVacationPackages displayed");
 	}
 
-	@Test(groups = {"smoke"},priority=18)
+	//@Test(groups = {"smoke"},priority=18)
 	public void verifyCity_TC_10(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "Verify Search City Button on homepage");
 		PageBase.waitForElement(5);
@@ -113,7 +113,7 @@ public class HomePageTestScript extends TestBase {
 	    //Logs.info("User redirected to that particular city.Verified!");
 }
 
-	@Test(groups = {"smoke"},priority=19)
+	//@Test(groups = {"smoke"},priority=19)
 	public void verifyStartAgainLink_TC_15(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyStartAgainLink_TC_15");
 		//String verifyhomepage = homePage.getPageTitle();
@@ -135,7 +135,7 @@ public class HomePageTestScript extends TestBase {
 		//Logs.info("verifyStartAgainLink is displayed");
 	}
 
-	@Test(groups = {"smoke"},priority=20)
+	//@Test(groups = {"smoke"},priority=20)
 	public void verifyFooterText_TC_16(Method method) {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyFooterText_TC_16");
 		boolean validatefooter = homePage.validateFooterText();
