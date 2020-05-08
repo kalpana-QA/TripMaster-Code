@@ -806,7 +806,7 @@ public class BookingPageTestScript extends TestBase {
 			logs.info("bookingDetailswithPremiumEcomomy passed");
 		}
 		
-   @Test(groups= {"smoke"},priority=15)
+	@Test(groups= {"smoke"},priority=15)
 	public void multipleCities_TC_21(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "multipleCities");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -823,10 +823,13 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User entered \"Rome (Italy)\" into Going to from field for adding second city");		
 		bookingPage.selectStayingTimeThree("3");
 		bookingPage.clickonContinue();
+		
+		//bookingPage.selectNoMoreCitiesBtn();
 		bookingPage.selectGuestDetails("1|2");
 		bookingPage.clickonContinueButton();
 		bookingPage.selectCheaperFlights();
-		bookingPage.tripSummary();
+		//bookingPage.tripSummary();
+		bookingPage.validateTripPage();
 		test.log(LogStatus.INFO, "Validate that user is on TripInclusion Page");
 		
 	}
