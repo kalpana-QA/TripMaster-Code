@@ -567,6 +567,19 @@ public class BookingPageAction extends PageBase {
 	public  void selectStayingTimeThree(String stayingTimeThree) {
 		selectOptionByValue(BookingLocators.getstayingDrpdownthree(), stayingTimeThree);
 	}
+	public void validateTripPage() {
+		  if(TestBase.flag_Mob)
+		  {
+		  if (driver.getTitle().contains("Itinerary - Review"))
+		  {
+		  System.out.println("Title is "+ driver.getTitle());
+
+		  boolean flag = true;
+		  Assert.assertTrue(flag);
+		  }
+
+		  }
+		  }
 
 	/**
 	 * click On Build Your Vacation Drop Down on mobile browser
