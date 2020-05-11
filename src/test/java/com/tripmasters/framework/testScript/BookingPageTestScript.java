@@ -806,7 +806,7 @@ public class BookingPageTestScript extends TestBase {
 //			logs.info("bookingDetailswithPremiumEcomomy passed");
 //		}
 //		
-	@Test(groups= {"smoke"},priority=22)
+	@Test(groups= {"smoke"},priority=1)
 	public void multipleCities_TC_21(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "multipleCities");
 		bookingPage.clickOnBuildYourVacationDropDown();
