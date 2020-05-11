@@ -827,6 +827,7 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.selectNoMoreCitiesBtn();
 		bookingPage.selectGuestDetails("1|2");
 		bookingPage.clickonContinueButton();
+		Thread.sleep(6000);
 		bookingPage.selectCheaperFlights();
 		//bookingPage.tripSummary();
 		bookingPage.validateTripPage();
