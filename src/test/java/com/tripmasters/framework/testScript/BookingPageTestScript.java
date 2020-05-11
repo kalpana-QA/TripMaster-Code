@@ -100,7 +100,7 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.clickOnBuildYourVacationDropDown();
 		PageBase.waitForElement(3);
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
-		test.log(LogStatus.INFO, "User entered \"Philadelphia, PA\" into leaving from field");
+		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
 		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
 		bookingPage.selectValueFromCalendar();
@@ -158,9 +158,9 @@ public class BookingPageTestScript extends TestBase {
 	public void bookingTwoRoomTwoAdult_TC_3(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom2Adult");
 		bookingPage.clickOnBuildYourVacationDropDown();
-		bookingPage.fillLeavingFromDetails("San Jose SJC (CA), US");//San Jose SJC (CA), US
-		//San Jose City SJC, CA
-		test.log(LogStatus.INFO, "User entered \"San Jose, CALIFORNIA\" into leaving from field");
+		bookingPage.fillLeavingFromDetails("San Jose SJC (CA), US");
+		
+		test.log(LogStatus.INFO, "User entered \"San Jose SJC (CA), US\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Osaka (Japan)");
 		test.log(LogStatus.INFO, "User entered \"Osaka (Japan)\" into Going to from field");
 		bookingPage.selectValueFromCalendar();
@@ -312,7 +312,7 @@ public class BookingPageTestScript extends TestBase {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "booking2Room2Adult2Child");
 		bookingPage.clickOnBuildYourVacationDropDown();
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
-		test.log(LogStatus.INFO, "User entered \"San Francisco', CA\" into leaving from field");
+		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
 		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
 		bookingPage.selectValueFromCalendar();
@@ -387,9 +387,12 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.clickOnBuildYourVacationDropDown();
 		PageBase.waitForElement(3);
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
+		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
+		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
 		bookingPage.clickOnAddCityBtn();
 		bookingPage.fillSecndAddedCityDetails("Augsburg (Germany)");
+		test.log(LogStatus.INFO, "User entered \"Augsburg (Germany)\" into Going to from field");
 		bookingPage.selectStayingTime("4");
 		bookingPage.selectNoMoreCitiesBtn();
 		bookingPage.selectGuestDetails("1|Other");
@@ -673,26 +676,6 @@ public class BookingPageTestScript extends TestBase {
 		//Logs.info("Validate that user is on TripInclusion Page");
 	}
 
-//    @Test(groups= {"regression"},priority=13)
-//	public void verifySpotlightLink_TC_14(Method method) throws Exception {
-//		ExtentTest test=ExtentTestManager.startTest(method.getName(), "verifySpotlightLink");
-//		bookingPage.selectLatinAmericaLink();
-//		test.log(LogStatus.INFO, "Select Latin America Link");
-//		//Logs.info("Select Latin America Link");
-//		bookingPage.verifyLatinAmericPage();
-//		test.log(LogStatus.INFO, "User redirected to the Latin America Page");
-//		//Logs.info("User redirected to the Latin America Page");
-//		bookingPage.clickOnSpotlightOnDrpDwnForMob();
-//		test.log(LogStatus.INFO, "User clicks on Spotlight button");
-//		bookingPage.verifyPageDisplayed(title);
-//		//Logs.info("User clicks on Spotlight button");
-//		/**
-//		 * TODO Verify below method whether it's working or not...modified during mobile automation.
-//		bookingPage.verifyPageDisplayed();
-//		*/
-//		test.log(LogStatus.INFO, "Spotlight link verified!");
-//        //Logs.info("Spotlight link verified!");
-//	}
 	
 	@Test(groups= {"regression"},priority=13)
 	public void verifySpotlightLink_TC_14(Method method) throws Exception {
@@ -721,11 +704,7 @@ public class BookingPageTestScript extends TestBase {
 		String title=bookingPage.clickOnFirstOptionUnderSpotlightForMob();
 		test.log(LogStatus.INFO, "User clicks on Spotlight button");
 		bookingPage.verifyPageDisplayed(title);
-		//Logs.info("User clicks on Spotlight button");
-		
-		// * TODO Verify below method whether it's working or not...modified during mobile automation.
-		//bookingPage.verifyPageDisplayed();
-		
+		//Logs.info("User clicks on Spotlight button");		
 		test.log(LogStatus.INFO, "Spotlight link verified!");
         //Logs.info("Spotlight link verified!");
 
