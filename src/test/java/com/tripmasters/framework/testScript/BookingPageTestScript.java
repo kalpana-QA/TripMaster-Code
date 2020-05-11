@@ -614,10 +614,10 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User entered \"Paris (France)\" into Going to from field");
 		bookingPage.clickOnAddCityBtn();
 		bookingPage.fillThirdAddedCityDetails("Rome (Italy)");
-		test.log(LogStatus.INFO, "User entered \"Rome (Italy)\" into Going to from field for adding second city");		
+		test.log(LogStatus.INFO, "User entered \"Rome (Italy)\" into Going to from field for adding third city");		
 		bookingPage.selectStayingTimeThree("3");
 		bookingPage.clickonContinue();
-		
+		test.log(LogStatus.INFO, "User is able to select multiple cities.");
 		//bookingPage.selectNoMoreCitiesBtn();
 		bookingPage.selectGuestDetails("1|2");
 		bookingPage.clickonContinueButton();
@@ -625,7 +625,7 @@ public class BookingPageTestScript extends TestBase {
 		//bookingPage.tripSummary();
 		bookingPage.validateTripPage();
 		test.log(LogStatus.INFO, "Validate that user is on TripInclusion Page");
-		test.log(LogStatus.INFO, "Validate that user is on TripInclusion Page");
+	
 		
 	}
 	
