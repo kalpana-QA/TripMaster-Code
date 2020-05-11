@@ -810,24 +810,34 @@ public class BookingPageTestScript extends TestBase {
 	public void multipleCities_TC_21(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "multipleCities");
 		bookingPage.clickOnBuildYourVacationDropDown();
+		Thread.sleep(6000);
 		bookingPage.fillLeavingFromDetails("Washington (all Airports), DC");
 		test.log(LogStatus.INFO, "User entered \"Washington (all Airports), DC\" into leaving from field");
+		Thread.sleep(6000);
 		bookingPage.fillGoingToCityDetails("London (England)");
 		test.log(LogStatus.INFO, "User entered \"London (England)\" into Going to from field");
+		Thread.sleep(6000);
 		bookingPage.selectStayingTime("3");
 		bookingPage.clickOnAddCityBtn();
+		Thread.sleep(6000);
 		bookingPage.fillSecndAddedCityDetails("Paris (France)");
 		test.log(LogStatus.INFO, "User entered \"Paris (France)\" into Going to from field");
+		Thread.sleep(6000);
 		bookingPage.clickOnAddCityBtn();
+		Thread.sleep(6000);
 		bookingPage.fillThirdAddedCityDetails("Rome (Italy)");
+		Thread.sleep(6000);
 		test.log(LogStatus.INFO, "User entered \"Rome (Italy)\" into Going to from field for adding second city");		
 		bookingPage.selectStayingTimeThree("3");
-		bookingPage.clickonContinue();
-		
-		//bookingPage.selectNoMoreCitiesBtn();
+		//bookingPage.clickonContinue();
+		Thread.sleep(6000);
+		bookingPage.selectNoMoreCitiesBtn();
+		Thread.sleep(6000);
 		bookingPage.selectGuestDetails("1|2");
 		bookingPage.clickonContinueButton();
+		Thread.sleep(6000);
 		bookingPage.selectCheaperFlights();
+		Thread.sleep(6000);
 		//bookingPage.tripSummary();
 		bookingPage.validateTripPage();
 		test.log(LogStatus.INFO, "Validate that user is on TripInclusion Page");
