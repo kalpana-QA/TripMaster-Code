@@ -568,7 +568,7 @@ public class BookingPageAction extends PageBase {
 		selectOptionByValue(BookingLocators.getstayingDrpdownthree(), stayingTimeThree);
 	}
 	public void validateTripPage() {
-		  if(TestBase.flag_Mob)
+		  if(!TestBase.flag_Mob)
 		  {
 		  if (driver.getTitle().contains("Itinerary - Review"))
 		  {
