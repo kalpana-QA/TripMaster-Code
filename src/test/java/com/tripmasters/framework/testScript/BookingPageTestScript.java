@@ -829,9 +829,10 @@ public class BookingPageTestScript extends TestBase {
 		Thread.sleep(6000);
 		test.log(LogStatus.INFO, "User entered \"Rome (Italy)\" into Going to from field for adding second city");		
 		bookingPage.selectStayingTimeThree("3");
-		//bookingPage.clickonContinue();
 		Thread.sleep(6000);
-		bookingPage.selectNoMoreCitiesBtn();
+		bookingPage.clickonContinue();
+		
+		//bookingPage.selectNoMoreCitiesBtn();
 		Thread.sleep(6000);
 		bookingPage.selectGuestDetails("1|2");
 		bookingPage.clickonContinueButton();
