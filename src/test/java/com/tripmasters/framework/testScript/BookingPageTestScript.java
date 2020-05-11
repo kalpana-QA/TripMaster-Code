@@ -806,31 +806,31 @@ public class BookingPageTestScript extends TestBase {
 //			logs.info("bookingDetailswithPremiumEcomomy passed");
 //		}
 //		
-	@Test(groups= {"smoke"},priority=15)
+	@Test(groups= {"smoke"},priority=22)
 	public void multipleCities_TC_21(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "multipleCities");
 		bookingPage.clickOnBuildYourVacationDropDown();
-		Thread.sleep(6000);
+		//Thread.sleep(6000);
 		bookingPage.fillLeavingFromDetails("Washington (all Airports), DC");
-		Thread.sleep(6000);
+		//Thread.sleep(6000);
 		test.log(LogStatus.INFO, "User entered \"Washington (all Airports), DC\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("London (England)");
-		Thread.sleep(6000);
+		//Thread.sleep(6000);
 		test.log(LogStatus.INFO, "User entered \"London (England)\" into Going to from field");
 		bookingPage.selectStayingTime("3");
-		Thread.sleep(6000);
+		//Thread.sleep(6000);
 		bookingPage.clickOnAddCityBtn();
 		bookingPage.fillSecndAddedCityDetails("Paris (France)");
-		Thread.sleep(6000);
+		//.sleep(6000);
 		test.log(LogStatus.INFO, "User entered \"Paris (France)\" into Going to from field");
 		bookingPage.clickOnAddCityBtn();
 		bookingPage.fillThirdAddedCityDetails("Rome (Italy)");
-		Thread.sleep(6000);
+		//Thread.sleep(6000);
 		test.log(LogStatus.INFO, "User entered \"Rome (Italy)\" into Going to from field for adding second city");		
 		bookingPage.selectStayingTimeThree("3");
-		//bookingPage.clickonContinue();
+		bookingPage.clickonContinue();
 		Thread.sleep(6000);
-		bookingPage.selectNoMoreCitiesBtn();
+		//bookingPage.selectNoMoreCitiesBtn();
 		Thread.sleep(6000);
 		bookingPage.selectGuestDetails("1|2");
 		Thread.sleep(6000);
