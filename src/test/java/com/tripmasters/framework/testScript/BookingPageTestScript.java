@@ -29,7 +29,7 @@ public class BookingPageTestScript extends TestBase {
 	private static String ActualHotel;
 	private static String ExpectedHotel;
 
-	@Test(groups = { "smoke" }, priority = 15)
+	@Test(groups = { "smoke" }, priority = 1)
 	public void bookingSingleRoomWithThreeAdults_TC_1(Method method) throws Exception {
 	    ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoomWith3Adults");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -699,7 +699,7 @@ public class BookingPageTestScript extends TestBase {
 		logs.info("Validate that user is on TripInclusion Page");
 	}
 
-     @Test(groups= {"smoke"},priority=13)
+     @Test(groups= {"smoke"},priority=12)
 	public void verifySpotlightLink_TC_14(Method method) throws Exception {
     	String PageTitle=null;
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "verifySpotlightLink");
@@ -717,7 +717,7 @@ public class BookingPageTestScript extends TestBase {
         logs.info("Spotlight link verified!");
 	}
 	
-    @Test(groups= {"smoke"},priority=14)
+    @Test(groups= {"smoke"},priority=13)
 	public void dateChanging_TC_9(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "verify DateChanging functionality");
 		bookingPage.clickOnBuildYourVacationDropDown();
@@ -771,7 +771,7 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.tripSummary();
 	}
 
-   @Test(groups= {"smoke"},priority=12)
+   @Test(groups= {"smoke"},priority=14)
 		public void bookingDetailswithPremiumEcomomy_TC_18(Method method) throws Exception {
 			ExtentTest test =ExtentTestManager.startTest(method.getName(), "bookingDetailswithPremiumEcomomy");
 			bookingPage.clickOnBuildYourVacationDropDown();
@@ -806,7 +806,7 @@ public class BookingPageTestScript extends TestBase {
 			logs.info("bookingDetailswithPremiumEcomomy passed");
 		}
 		
-	@Test(groups= {"smoke"},priority=1)
+	@Test(groups= {"smoke"},priority=15)
 	public void multipleCities_TC_21(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "multipleCities");
 		bookingPage.clickOnBuildYourVacationDropDown();
