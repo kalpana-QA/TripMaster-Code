@@ -206,7 +206,7 @@ public class PassengerInfoPageAction extends PageBase {
 			String fullNameR1C1 = firstNameR1C1 + " " + secondNameR1C1;
 			list.add(fullNameR1C1);
 			list.add(selectOptionByText(PassengerInformationLocators.getgenderR1C1(), "Male"));
-			list.add(clearAndSetValues(PassengerInformationLocators.getdobR1C1(), "01/01/2000"));
+			list.add(clearAndSetValues(PassengerInformationLocators.getdobR1C1(), "01/01/2010"));
 			}
 			selectOptionByValue(PassengerInformationLocators.getpassportR1C1(), "237|US");
 	   }
@@ -241,6 +241,20 @@ public class PassengerInfoPageAction extends PageBase {
 		selectOptionByValue(PassengerInformationLocators.getpassportR2C1SingleTrvlr(), "237|US");
 	}
 		return list;
+	}
+
+	public List<String> fillThirdTravellerDetails_Child(String fnameChild, String lnameChild, String gender, String dobChild,
+			String passportInfo) throws Exception {
+		List<String> list = new ArrayList<String>();
+		String firstName = clearAndSetValues(PassengerInformationLocators.getfnameChild(), fnameChild);
+		String secondName = clearAndSetValues(PassengerInformationLocators.getlnameChild(), lnameChild);
+		String fullName = firstName + " " + secondName;
+		list.add(fullName);
+		list.add(selectOptionByText(PassengerInformationLocators.getgenderChild(), gender));
+		list.add(clearAndSetValues(PassengerInformationLocators.getdobChild(), dobChild));
+		selectOptionByValue(PassengerInformationLocators.getpassportChild(), passportInfo);
+		return list;
+	
 	}
 
 }

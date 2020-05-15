@@ -16,6 +16,9 @@ public class HomePageLocators {
 	private static By footer = By.xpath("//div[@class='dvCopy'] | //div[@class='dvfootWording']");
 	private static By exploreLatinAmericaLnk = By.xpath("//section[h1[contains(.,'popular vacation packages')]]//h3/a[contains(.,'Latin America')] | //div[text()='Explore Latin America']");
 	
+	private static By asiaPagelink=By.xpath("(//a[text()='Asia, Pacific & Middle East'])[1]");
+	private static By europePageLink=By.xpath("(//a[text()='Europe'])[1]");
+	
 	// ============= Locators for mobile =========================================================================================
 
 	private static By SpotlightOnDrpDwn = By.cssSelector("div[id='dvSpot']");
@@ -79,4 +82,13 @@ public class HomePageLocators {
 
 		return selectPremiumEconomy;
 		}
+	
+	public static By getasiaPagelink(){
+		 return asiaPagelink;
+	}
+
+	public static By getEuropePageLink() {
+		
+		return europePageLink;
+	}
 }

@@ -290,7 +290,7 @@ public class PageBase {
 
 	 */
 
-	public boolean isElementDisplayed(By element) {
+	public static boolean isElementDisplayed(By element) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 20);
 			WebElement waitElement = wait.until(ExpectedConditions.visibilityOf(driver.findElement((element))));
@@ -360,13 +360,13 @@ public class PageBase {
 	 * String Return Type:: 
 	 * @author Kalpana Kaushik
 	 */
-	public static String selectNewDateFromCalendar() {
+	public static String selectNewDateFromCalendar(int AdditionalDays) {
 
 		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(new Date());
 		System.out.println(cal.getTime());
-		cal.add(Calendar.DATE, 150);
+		cal.add(Calendar.DATE, AdditionalDays);
 		String newDate = dateFormat.format(cal.getTime());
 		String[] newDateDay = newDate.split("/");
 		return newDateDay[1];

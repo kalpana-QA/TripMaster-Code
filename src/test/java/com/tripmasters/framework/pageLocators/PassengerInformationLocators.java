@@ -50,6 +50,13 @@ public class PassengerInformationLocators {
      private static By dobR2C1=By.xpath("//input[@id='2_txtCPAX_DOB2']");
      private static By passportR2C1=By.xpath("//select[@id='2_txtCPAX_Nationality2']");
      
+     private static By fnameChild=By.xpath("//input[@id='txtCFName3']");
+     private static By lnameChild=By.xpath("//input[@id='txtCLName3']");
+     private static By genderChild=By.xpath("//select[@id='txtCPAX_Gender3']");
+     private static By dobChild=By.xpath("//input[@id='txtCPAX_DOB3']");
+     private static By passportChild=By.xpath("//select[@id='txtCPAX_Nationality3']");
+   
+     
 //================================Mobile Locators========================================================================================
      private static By R1T1genderiOS=By.xpath("//select[@id='1_txtPAX_Gender1']");
      private static By R1T2genderiOS=By.xpath("//select[@id='1_txtPAX_Gender2']");
@@ -291,4 +298,23 @@ public class PassengerInformationLocators {
 		return dobR1C1Mob;
 	}
 
+	public static By getfnameChild() {
+
+		return fnameChild;
+	}
+
+	public static By getlnameChild() {
+
+		return lnameChild;
+	}
+
+	public static By getgenderChild() {
+		return genderChild;
+	}
+	public static By getdobChild() {
+		return dobChild;
+	}
+	public static By getpassportChild() {
+		return passportChild;
+	}
 }

@@ -8,7 +8,8 @@ public class BookingLocators {
 	private static By optionListForGuestsAndRooms = By.cssSelector("div[id='dvpxroomlst'][style='display: block;']");
 	private static By doneButton = By.xpath("//div[@class='dvMdialogDone']/p[text()='Done']");
 	private static By selectFlightOption = By.xpath("(//a[@name='chkFlight'])[1] | //a[@id='chkFlightOpt1_UA|48|1']");
-	private static By selectButtonInFlightOption1 = By.xpath("(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/Select1.png')])[1]");
+	//private static By selectButtonInFlightOption1 = By.xpath("(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/Select1.png')])[1]");
+	private static By selectButtonInFlightOption1 = By.xpath("//div[@id='dropShadow1']//tr//a//*[text()='Select']");
 	private static By selectbutton = By.xpath("//div/a[contains(text(),'Select')]");
 	private static By addCityBtn = By.xpath("//span[contains(.,'Add City')] | //p[@id='pMaddcity']");
 	private static By noMoreCitiesBtn = By.xpath("//span[contains(.,'No more cities. Continue')] | //span[@class = 'spMnextbutt']");
@@ -125,6 +126,41 @@ public class BookingLocators {
 	private static By verifypremiumoption = By.xpath("(//div[@class='divFligth-Bottom-Right textGrey10']/text()[preceding-sibling::br])[1]//..");
 	private static By backToItineraryOption=By.xpath("(//*[text()='Back to Itinerary'])[2]");
 
+	private static By travelByOption=By.xpath("//p[@id='pTranspSel1-1']");
+	private static By hotelsBy_Reviewscore=By.xpath("//a[text()='Review Score']");
+	private static By hotelsBy_Price=By.xpath("//a[text()='Price']");
+	private static By hotelsBy_Name=By.xpath("//a[text()='Name']");
+	
+	private static By hotelBrowseOptions=By.xpath("(//a[@class='ui-radio-selected'])");
+	
+	private static By changeTravelByButton=By.xpath("(//input[@class='buttontranspChange'])[1]");
+	private static By topDealsButton=By.xpath("//a[text()='Top Deals']");
+	private static By topDealsPageHeading=By.xpath("//div[text()='Deals of the week']//..//h3[text()='Top Deals - Vacation specials']");
+	
+	private static By topDealsPageList=By.xpath("//div//a//div[@class='Blue-Arial16']");
+	private static By validatehighLightOptions=By.xpath("//div[@class='startHighlight']//div//a");
+	private static By selectVacationIdeas=By.xpath("(//h1[text()='vacation packages ideas']//..//div//li//a)[1]");
+	private static By clickonReorderCities=By.xpath("//img[@id='buttReorder']");
+	
+	private static By leavingTextboxBYO_Page = By.xpath("//input[@id='xtxtLeavingFrom']");
+	private static By arriveDateDropdown_BYOPage = By.xpath("//input[contains(@id,'xtxtBYArriving')]");
+	private static By selectGuestRoomOptionsDrpdown_BYOPage=By.cssSelector("input[id='xiRoomsAndPaxText']");
+	private static By selectAdult_Room1_BYOPage=By.cssSelector("div[id='dvR1adults']");
+	private static  By selectChild_Room1_BYOPage=By.cssSelector("div[id='dvR1children']");
+	private static  By ChildAgeTextbox_BYO=By.xpath("//input[@id='xiChild1']");
+	private static By clickOnContinueButton_BYO=By.xpath("//input[@id='bContinue']");
+	
+	private static By selectCabinFromFlightOptions=By.xpath("(//a[contains(text(),'Select Cabin')])[1]");
+	private static By validateErrorOnPAXDetails=By.xpath("//label[text()='This field is required.']");
+	private static By leavingTextboxFirstPckg=By.xpath("//input[@id='sDepCity']");
+	private static By arriveDateDropdown_FirstPckg=By.xpath("//input[@id='InDate1']");
+	private static By selectGuestDrpdown_FirstPackage=By.xpath("//select[@id='iRoomsAndPax']");
+	private static By clickOnViewPriceButton=By.xpath("//span[@id='imgPriceIt1']");
+	private static By clickToRemoveScndCityHotel=By.xpath("//div[@data-cityno='2']//div//a[contains(text(),'Remove')]");
+	private static By selectDialogBox=By.xpath("//div[text()='Yes']");
+	private static By selectRemoveCityBtn=By.xpath("(//span[text()='Edit/Remove'])[1]");
+	private static By selectButtonCar=By.xpath("(//p[@id='pCheckBox1']//input[@id='xradioTrans1'])[3]");
+	
 	// ======== Locators for Mobile ===============================================================================================
 
 	private static By cabinSectionMob = By.cssSelector("div[id='dvMcabin']");
@@ -703,5 +739,139 @@ public static By getpassportDrpdownSecondTravellerChildMob() {
 		
 		return backToItineraryOption;
 	}
+    public static By validateTravelByOption(){
+		
+		return travelByOption;
+	}
+
+	public static By getHotelsBy_Reviewscore() {
+		
+		return hotelsBy_Reviewscore;
+	}
+
+	public static By getHotelsBy_Price() {
+		
+		return hotelsBy_Price;
+	}
+
+	public static By getHotelsBy_Name() {
+		
+		return hotelsBy_Name;
+	}
+
+	public static By gethotelBrowseOptions() {
+		
+		return hotelBrowseOptions;
+	}
+
+	public static By getChangeTravelByButton() {
+		
+		return changeTravelByButton;
+	}
+
+	public static By getTopDealsButton() {
+		
+		return topDealsButton;
+	}
+
+	public static By getTopDealsPageHeading() {
+		
+		return topDealsPageHeading;
+	}
+
+	public static By getTopDealsPageList() {
+		
+		return topDealsPageList;
+	}
+
+	public static By gethighLightOptions() {
+		return validatehighLightOptions;
+	}
+
+	public static By getSelectVacationIdeas() {
+		return selectVacationIdeas;
+	}
+
+	public static By getClickonReorderCities() {
+		
+		return clickonReorderCities;
+	}
+	
+    public static By getleavingTextboxBYO_Page() {
+		
+		return leavingTextboxBYO_Page;
+	}
+    
+    public static By getarriveDateDropdown_BYOPage() {
+		
+		return arriveDateDropdown_BYOPage;
+	}
+
+	public static By getselectGuestRoomOptionsDrpdown_BYOPage() {
+		
+		return selectGuestRoomOptionsDrpdown_BYOPage;
+	}
+
+	public static By getselectAdult_Room1_BYOPage() {
+		
+		return selectAdult_Room1_BYOPage;
+	}
+
+	public static By getselectChild_Room1_BYOPage() {
+		
+		return selectChild_Room1_BYOPage;
+	}
+
+	public static By getChildAgeTextbox() {
+		return ChildAgeTextbox_BYO;
+	}
+	
+	public static By getclickOnContinueButton_BYO() {
+		return clickOnContinueButton_BYO;
+	}
+
+	public static By getselectCabinFromFlightOptions() {
+		return selectCabinFromFlightOptions;
+	}
+
+	public static By getvalidateErrorOnPAXDetails() {
+		return validateErrorOnPAXDetails;
+	}
+
+	public static By getleavingTextboxFirstPckg() {
+		
+		return leavingTextboxFirstPckg;
+	}
+
+	public static By getarriveDateDropdown_FirstPckg() {
+		
+		return arriveDateDropdown_FirstPckg;
+	}
+
+	public static By getselectGuestDrpdown_FirstPackage() {
+		
+		return selectGuestDrpdown_FirstPackage;
+	}
+
+	public static By getClickOnViewPriceButton() {
+		return clickOnViewPriceButton;
+	}
+
+	public static By getClickToRemoveScndCityHotel() {
+		return clickToRemoveScndCityHotel;
+	}
+
+	public static By getselectDialogBox() {
+		return selectDialogBox;
+	}
+	
+	public static By getselectRemoveCityBtn() {
+		return selectRemoveCityBtn;
+	}
+
+	public static By getSelectButtonCar() {
+		return selectButtonCar;
+	}
+	
 }
 
