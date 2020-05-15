@@ -858,8 +858,8 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.fillGoingToCityDetails("Delhi (India)");
 		test.log(LogStatus.INFO, "User going to City: Delhi (India)");
 		Thread.sleep(4000);
-		bookingPage.selectValueFromCalendar(90);
-		test.log(LogStatus.INFO, "Select +90 days from current date");
+		String selectDate=bookingPage.selectValueFromCalendar(90);
+		test.log(LogStatus.INFO,   "User selects '" + selectDate + "'from calendar");
 		bookingPage.selectStayingTime("4");
 		test.log(LogStatus.INFO, "Select staying time :4 nights");
 		Thread.sleep(4000);
@@ -930,8 +930,8 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User entered leaving from: New York City (all Airports),  NY");
 		bookingPage.fillGoingToCityDetails("Rome (Italy)");
 		test.log(LogStatus.INFO, "User entered Going to City:Rome (Italy)");
-		bookingPage.selectValueFromCalendar(90);
-		test.log(LogStatus.INFO, "Select +90 days from current date");
+		String selectDate=bookingPage.selectValueFromCalendar(90);
+		test.log(LogStatus.INFO,   "User selects '" + selectDate + "'from calendar");
 		bookingPage.selectStayingTime("4");
 		test.log(LogStatus.INFO, "Select staying time :4 nights");
 		bookingPage.clickOnAddCityBtn();
@@ -1019,8 +1019,8 @@ public class BookingPageTestScript extends TestBase {
 		logs.info("Select withOut Air Option on HomePage");
 		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
 		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
-		bookingPage.selectValueFromCalendar(180);
-		test.log(LogStatus.INFO, "User entered +180 days from current date ");
+		String selectDate=bookingPage.selectValueFromCalendar(180);
+		test.log(LogStatus.INFO,   "User selects '" + selectDate + "'from calendar");
 		bookingPage.selectStayingTime("4");
 		test.log(LogStatus.INFO, "User entered \"4\" nights staying time");	
 		bookingPage.selectNoMoreCitiesBtn();
@@ -1056,8 +1056,8 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User entered \"New York City (all Airports),  NY\" into Leaving from field");
 		bookingPage.fillGoingToCityDetails("London (England)");
 		test.log(LogStatus.INFO, "User entered \"London (England)\" into Going to from field");
-		bookingPage.selectValueFromCalendar(90);
-		test.log(LogStatus.INFO, "User entered +90 days from current date ");
+		String selectDate=bookingPage.selectValueFromCalendar(90);
+		test.log(LogStatus.INFO,   "User selects '" + selectDate + "'from calendar");
 		bookingPage.selectStayingTime("6");
 		test.log(LogStatus.INFO, "User entered \"6\" nights staying time");	
 		bookingPage.clickOnAddCityBtn();
@@ -1110,8 +1110,8 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Delhi (India)");
 		test.log(LogStatus.INFO, "User entered \"Delhi (India)\" into Going to from field");
-		bookingPage.selectValueFromCalendar(180);	
-		test.log(LogStatus.INFO, "User entered +180 days from current date ");
+		String selectDate=bookingPage.selectValueFromCalendar(180);	
+		test.log(LogStatus.INFO,   "User selects '" + selectDate + "'from calendar");
 		bookingPage.selectStayingTime("6");
 		test.log(LogStatus.INFO, "User entered \"6\" nights staying time");	
 		bookingPage.selectNoMoreCitiesBtn();
@@ -1164,8 +1164,8 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
 		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
-		bookingPage.selectValueFromCalendar(150);	
-		test.log(LogStatus.INFO, "User entered +150 days from current date ");
+		String selectDate=bookingPage.selectValueFromCalendar(150);	
+		test.log(LogStatus.INFO,   "User selects '" + selectDate + "'from calendar");
 		bookingPage.clickOnAddCityBtn();
 		test.log(LogStatus.INFO, "User clicks on Add City Button");
 		bookingPage.fillSecndAddedCityDetails("Augsburg (Germany)");
@@ -1234,8 +1234,8 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User clicks on Reorder cities button");	
 		bookingPage.fillLeavingFromDetails_BYOPage("Chicago (All Airports)");
 		test.log(LogStatus.INFO, "User entered \"Chicago (All Airports)\" into leaving from field");
-		bookingPage.selectValueFromCalendar_BYOPackage(120);	
-		test.log(LogStatus.INFO, "User entered +120 days from current date ");
+		String selectDate=bookingPage.selectValueFromCalendar_BYOPackage(120);
+		test.log(LogStatus.INFO,   "User selects '" + selectDate + "'from calendar");	
 		bookingPage.selectGuestDetails_BYOPage("2 rooms with children or other options");
 		test.log(LogStatus.INFO, "User select \"2 Room With Other Options\" from Guest list");
 //		bookingPage.selectAdultForRoom1_BYOPage("1");
@@ -1264,8 +1264,8 @@ public class BookingPageTestScript extends TestBase {
 		 test.log(LogStatus.INFO, "User selects an option from Vacation Package Ideas");
 		bookingPage.fillLeavingFromDetails_FirstPckg("Washington (all Airports), DC");
 		test.log(LogStatus.INFO, "User entered \"Washington (all Airports), DC\" into leaving from field");
-		bookingPage.selectValueFromCalendar_FirstPckg(90);
-		test.log(LogStatus.INFO, "User entered +90 days from current date ");
+		String selectDate=bookingPage.selectValueFromCalendar_FirstPckg(90);
+		test.log(LogStatus.INFO,   "User selects '" + selectDate + "'from calendar");		
 		bookingPage.selectGuestDetails_FirstPckgOneRoom("1|2");
 		test.log(LogStatus.INFO, "User selects 1 Room with two Adults");
 		bookingPage.clickOnViewPrice();
@@ -1311,8 +1311,8 @@ public class BookingPageTestScript extends TestBase {
 			test.log(LogStatus.INFO, "User entered \"Seattle, WA\" into Leaving from field");
 			bookingPage.fillGoingToCityDetails("Dublin (Ireland)");
 			test.log(LogStatus.INFO, "User entered \"Dublin (Ireland)\" into Going to from field");
-			bookingPage.selectValueFromCalendar(75);
-			test.log(LogStatus.INFO, "User entered +75 days from current date ");
+			String selectDate=bookingPage.selectValueFromCalendar(75);
+			test.log(LogStatus.INFO,   "User selects '" + selectDate + "'from calendar");	
 			bookingPage.selectStayingTime("4");
 			test.log(LogStatus.INFO, "User entered \"4\" nights staying time");	
 			bookingPage.clickOnAddCityBtn();

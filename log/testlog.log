@@ -35,3 +35,10 @@
 2020-05-15 18:42:43,829 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
 2020-05-15 18:42:49,477 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
 2020-05-15 18:42:59,540 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
+2020-05-15 20:20:57,938 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-15 20:28:18,316 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-15 20:31:14,858 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-15 20:33:42,323 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-15 20:35:34,637 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-15 20:51:30,801 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-15 21:02:01,849 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.

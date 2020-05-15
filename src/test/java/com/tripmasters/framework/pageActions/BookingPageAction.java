@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -397,17 +398,20 @@ public class BookingPageAction extends PageBase {
 		selectOptionByValue(BookingLocators.getstayingDrpdowntwo(), stayingTimeTwo);
 	}
 
-	public  void selectValueFromCalendar(int AdditionalDays) {
+	public  String selectValueFromCalendar(int AdditionalDays) {
 		clickOnElement(BookingLocators.getArriveDateDropdown());
 		String newDate = selectNewDateFromCalendar(AdditionalDays);
+		String[] newDateDay = newDate.split("/");
+		String selecteddate=newDateDay[1];
 		List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
 		for (WebElement cell : columns) {
-			if (cell.getText().equals(newDate)) {
-				cell.findElement(By.linkText(newDate)).click();
+			if (cell.getText().equals(selecteddate)) {
+				cell.findElement(By.linkText(selecteddate)).click();
 				//test.log(LogStatus.INFO, "User selects '" + newDate + "' as Arriving_On Date");
 				break;
 			}
 		}
+		return newDate;
 	}
 
 	public  void selectCabinClass(String cabinclass) {
@@ -691,17 +695,20 @@ public class BookingPageAction extends PageBase {
 		clearAndSetValues(BookingLocators.getleavingTextboxBYO_Page(), leavingFrom);
 	}
 	
-	public  void selectValueFromCalendar_BYOPackage(int AdditionalDays) {
+	public  String selectValueFromCalendar_BYOPackage(int AdditionalDays) {
 		clickOnElement(BookingLocators.getarriveDateDropdown_BYOPage());
 		String newDate = selectNewDateFromCalendar(AdditionalDays);
+		String[] newDateDay = newDate.split("/");
+         String selectedDate= newDateDay[1];
 		List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
 		for (WebElement cell : columns) {
-			if (cell.getText().equals(newDate)) {
-				cell.findElement(By.linkText(newDate)).click();
+			if (cell.getText().equals(selectedDate)) {
+				cell.findElement(By.linkText(selectedDate)).click();
 				//test.log(LogStatus.INFO, "User selects '" + newDate + "' as Arriving_On Date");
 				break;
 			}
 		}
+		return newDate;
 	}
 
 	public void selectGuestDetails_BYOPage(String guestInfo) throws Exception {
@@ -713,6 +720,7 @@ public class BookingPageAction extends PageBase {
 	public void selectAdultForRoom1_BYOPage(String numOfAdults) {
 		clickUsingJavaScript(BookingLocators.getselectAdult_Room1_BYOPage());
 		driver.findElement(By.xpath("(//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']//li)[15]")).click();
+		 
 	}
 
 	public void selectChildForRoom1_BYOPage(String numOfChild) {
@@ -746,16 +754,19 @@ public class BookingPageAction extends PageBase {
 		clearAndSetValues(BookingLocators.getleavingTextboxFirstPckg(), leavingFrom);
 	}
 
-	public void selectValueFromCalendar_FirstPckg(int AdditionalDays) {
+	public String selectValueFromCalendar_FirstPckg(int AdditionalDays) {
 		clickOnElement(BookingLocators.getarriveDateDropdown_FirstPckg());
 		String newDate = selectNewDateFromCalendar(AdditionalDays);
+		String[] newDateDay = newDate.split("/");
+        String selectedDate= newDateDay[1];
 		List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
 		for (WebElement cell : columns) {
-			if (cell.getText().equals(newDate)) {
-				cell.findElement(By.linkText(newDate)).click();
+			if (cell.getText().equals(selectedDate)) {
+				cell.findElement(By.linkText(selectedDate)).click();
 				break;
 			}
 		}
+		return newDate;
 	}
 
 	public void selectGuestDetails_FirstPckgOneRoom(String guestInfo) {

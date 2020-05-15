@@ -368,8 +368,9 @@ public class PageBase {
 		System.out.println(cal.getTime());
 		cal.add(Calendar.DATE, AdditionalDays);
 		String newDate = dateFormat.format(cal.getTime());
-		String[] newDateDay = newDate.split("/");
-		return newDateDay[1];
+//		String[] newDateDay = newDate.split("/");
+//		return newDateDay[1];
+		return newDate;
 	}
 
 	/**
