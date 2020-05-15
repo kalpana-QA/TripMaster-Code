@@ -911,10 +911,11 @@ public class BookingPageTestScript extends TestBase {
 		Thread.sleep(4000);
 		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
 		logs.info("Select Cheaper flights from flight options");
+		test.log(LogStatus.INFO, "User clicks on Continue button");
 		bookingPage.validateTripIncluisonPage();
 		Thread.sleep(4000);
-		test.log(LogStatus.INFO, "Validate that user is on TripInclusion Page");
-		logs.info("Validate that user is on TripInclusion Page");
+		test.log(LogStatus.INFO, "Validate that selected flight on Review & Customize Package Page");
+		logs.info("Validate that selected flight on Review & Customize Package Page");
 	}
 
 	//new
@@ -1039,9 +1040,9 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.browseHotelsBy_Reviewscore();
 		test.log(LogStatus.INFO, "browseHotelsBy_Reviewscore");
 		bookingPage.browseHotelsBy_Price();
-		test.log(LogStatus.INFO, "browseHotelsBy_Reviewscore");
+		test.log(LogStatus.INFO, "browseHotelsBy_Price");
 		bookingPage.browseHotelsBy_Name();
-		test.log(LogStatus.INFO, "browseHotelsBy_Reviewscore");
+		test.log(LogStatus.INFO, "browseHotelsBy_Name");
 		test.log(LogStatus.INFO, "User validated all hotel options for defined PAX details");
 	}
 	
@@ -1052,6 +1053,7 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.clickOnBuildYourVacationDropDown();
 		PageBase.waitForElement(3);
 		bookingPage.fillLeavingFromDetails("New York City (all Airports),  NY");
+		test.log(LogStatus.INFO, "User entered \"New York City (all Airports),  NY\" into Leaving from field");
 		bookingPage.fillGoingToCityDetails("London (England)");
 		test.log(LogStatus.INFO, "User entered \"London (England)\" into Going to from field");
 		bookingPage.selectValueFromCalendar(90);
@@ -1274,6 +1276,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User clicks to Yes button on Dialog Box");
 		bookingPage.getContinueLink();
 		test.log(LogStatus.INFO, "User clicks on Continue Button");
+		test.log(LogStatus.INFO, "User validates that the hotel name is removed for second city ");
 		bookingPage.clicktoContinuePage();
 		test.log(LogStatus.INFO, "User clicks on Continue Page to fill PAX details");
 		expectedFirstTravellerInfo = passengerInfoPage.fillFirstTravellerDetails("John", "Leo", "Male","01/01/1992", "237|US");
