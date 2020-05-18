@@ -844,7 +844,7 @@ public class BookingPageTestScript extends TestBase {
 	}
 	
 	//new
-	@Test(groups= {"smoke"},priority=11)
+	@Test(groups= {"smoke"},priority=21)
 	public void validateTripSummarywithMultipleCitiesforAsianPacificPage_TC_17(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "Validate TripSummary along with Multiple Cities for Asian Pacific Page");
 		bookingPage.clickOnBuildYourVacationDropDown();
