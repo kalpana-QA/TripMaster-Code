@@ -29,7 +29,7 @@ public class BookingPageTestScript extends TestBase {
 	private static String ActualHotel;
 	private static String ExpectedHotel;
 
-//	@Test(groups = { "smoke" }, priority = 1)
+//	@Test(groups = { "smoke" }, priority = 11)
 //	public void bookingSingleRoomWithThreeAdults_TC_1(Method method) throws Exception {
 //	    ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoomWith3Adults");
 //		bookingPage.clickOnBuildYourVacationDropDown();
@@ -641,63 +641,63 @@ public class BookingPageTestScript extends TestBase {
 
 	}
 
-//	@Test(groups= {"smoke"},priority=11)
-//	public void removeAddedCity_TC_17(Method method) throws Exception {
-//		ExtentTest test=ExtentTestManager.startTest(method.getName(), "removeAddedCity");
-//		bookingPage.clickOnBuildYourVacationDropDown();
-//		Thread.sleep(8000);
-//		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
-//		Thread.sleep(4000);
-//		bookingPage.fillGoingToCityDetails("Delhi (India)");
-//		Thread.sleep(4000);
-//		bookingPage.selectStayingTime("4");
-//		Thread.sleep(4000);
-//		bookingPage.clickOnAddCityBtn();
-//		Thread.sleep(4000);
-//		bookingPage.fillSecndAddedCityDetails("Mumbai (India)");
-//		Thread.sleep(4000);
-//		bookingPage.selectStayingTimeTwo("1");
-//		Thread.sleep(4000);
-//		bookingPage.clickOnAddCityBtn();
-//		Thread.sleep(4000);
-//		bookingPage.fillThirdAddedCityDetails("");
-//		Thread.sleep(4000);
-//		bookingPage.selectStayingTimeThree("1");
-//		Thread.sleep(4000);
-//		//bookingPage.fillBasicDetails("New York, Newark, NJ", "Delhi (India)", "4", "Mumbai (India)", "1","Chennai -Madras (India)", "1");
-//		test.log(LogStatus.INFO, "Fill all the basic details for multiple cities");
-//		test.log(LogStatus.INFO, "Adding multiple cities in destinations");
-//		logs.info("Fill all the basic details for multiple cities");
-//		logs.info("Adding multiple cities in destinations");
-//		boolean actual = bookingPage.isremovecitydisplayed();
-//		Assert.assertTrue(actual);
-//		test.log(LogStatus.INFO,"Verify that multiple cities got selected as destinations");
-//		test.log(LogStatus.INFO, "Verify that RemoveCity Link is also displayed for added cities");
-//		logs.info("Verify that multiple cities got selected as destinations");
-//		logs.info("Verify that RemoveCity Link is also displayed for added cities");
-//		bookingPage.deleteAddedCities();
-//		Thread.sleep(4000);
-//		test.log(LogStatus.INFO, "Delete all the added cities");
-//		logs.info("Delete all the added cities");
-//		bookingPage.validateremovedcity();
-//		Thread.sleep(4000);
-//		test.log(LogStatus.INFO, "All the added cities removed successfully.Verified!");
-//		logs.info("All the added cities removed successfully.Verified!");
-//		bookingPage.getNoMoreCitiesButton();
-//		Thread.sleep(4000);
-//		bookingPage.selectGuestDetails("1|1");
-//		test.log(LogStatus.INFO, "Select Guest Details");
-//		bookingPage.clickonContinueButton();
-//		Thread.sleep(4000);
-//		bookingPage.selectCheaperFlights();
-//		Thread.sleep(4000);
-//		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
-//		logs.info("Select Cheaper flights from flight options");
-//		bookingPage.validateTripIncluisonPage();
-//		Thread.sleep(4000);
-//		test.log(LogStatus.INFO, "Validate that user is on TripInclusion Page");
-//		logs.info("Validate that user is on TripInclusion Page");
-//	}
+	@Test(groups= {"smoke"},priority=1)
+	public void removeAddedCity_TC_17(Method method) throws Exception {
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "removeAddedCity");
+		bookingPage.clickOnBuildYourVacationDropDown();
+		Thread.sleep(8000);
+		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
+		Thread.sleep(4000);
+		bookingPage.fillGoingToCityDetails("Delhi (India)");
+		Thread.sleep(4000);
+		bookingPage.selectStayingTime("4");
+		Thread.sleep(4000);
+		bookingPage.clickOnAddCityBtn();
+		Thread.sleep(4000);
+		bookingPage.fillSecndAddedCityDetails("Mumbai (India)");
+		Thread.sleep(4000);
+		bookingPage.selectStayingTimeTwo("1");
+		Thread.sleep(4000);
+		bookingPage.clickOnAddCityBtn();
+		Thread.sleep(4000);
+		bookingPage.fillThirdAddedCityDetails("");
+		Thread.sleep(4000);
+		bookingPage.selectStayingTimeThree("1");
+		Thread.sleep(4000);
+		//bookingPage.fillBasicDetails("New York, Newark, NJ", "Delhi (India)", "4", "Mumbai (India)", "1","Chennai -Madras (India)", "1");
+		test.log(LogStatus.INFO, "Fill all the basic details for multiple cities");
+		test.log(LogStatus.INFO, "Adding multiple cities in destinations");
+		logs.info("Fill all the basic details for multiple cities");
+		logs.info("Adding multiple cities in destinations");
+		boolean actual = bookingPage.isremovecitydisplayed();
+		Assert.assertTrue(actual);
+		test.log(LogStatus.INFO,"Verify that multiple cities got selected as destinations");
+		test.log(LogStatus.INFO, "Verify that RemoveCity Link is also displayed for added cities");
+		logs.info("Verify that multiple cities got selected as destinations");
+		logs.info("Verify that RemoveCity Link is also displayed for added cities");
+		bookingPage.deleteAddedCities();
+		Thread.sleep(4000);
+		test.log(LogStatus.INFO, "Delete all the added cities");
+		logs.info("Delete all the added cities");
+		bookingPage.validateremovedcity();
+		Thread.sleep(4000);
+		test.log(LogStatus.INFO, "All the added cities removed successfully.Verified!");
+		logs.info("All the added cities removed successfully.Verified!");
+		bookingPage.getNoMoreCitiesButton();
+		Thread.sleep(8000);
+		bookingPage.selectGuestDetails("1|1");
+		test.log(LogStatus.INFO, "Select Guest Details");
+		bookingPage.clickonContinueButton();
+		Thread.sleep(16000);
+		bookingPage.selectCheaperFlights();
+		Thread.sleep(16000);
+		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
+		logs.info("Select Cheaper flights from flight options");
+		bookingPage.validateTripIncluisonPage();
+		Thread.sleep(4000);
+		test.log(LogStatus.INFO, "Validate that user is on TripInclusion Page");
+		logs.info("Validate that user is on TripInclusion Page");
+	}
 
      @Test(groups= {"smoke"},priority=12)
 	public void verifySpotlightLink_TC_14(Method method) throws Exception {
@@ -1010,7 +1010,7 @@ public class BookingPageTestScript extends TestBase {
 	}
 	
 	//new
-	@Test(groups = { "smoke" }, priority = 1)
+	@Test(groups = { "smoke" }, priority = 11)
 	public void bookingJourneyWithOutAirForTwoRoomsPAXDetails_TC_1(Method method) throws Exception {
 	    ExtentTest test = ExtentTestManager.startTest(method.getName(), "Flight booking journey without multiple cities with Two Room (1 adult+ 1 child for Room1 & 3Adults for Room2) without Air");
 		bookingPage.clickOnBuildYourVacationDropDown();
