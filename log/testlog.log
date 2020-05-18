@@ -1,207 +1,120 @@
-2020-05-01 10:57:55,194 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-01 10:57:55,223 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-05-01 10:58:19,618 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-01 10:58:19,622 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-01 10:58:19,622 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-05-01 10:58:39,923 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
-2020-05-01 10:58:39,933 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
-2020-05-01 10:58:39,933 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-05-01 10:58:49,963 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-01 10:58:49,963 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-01 10:58:49,964 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-05-01 10:59:01,977 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-01 10:59:01,977 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-01 10:59:01,978 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-05-01 10:59:07,005 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-01 10:59:07,006 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-01 10:59:07,007 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-05-01 10:59:59,269 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:00:32,767 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-01 11:00:37,622 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-01 11:00:48,939 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-05-01 11:01:36,571 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:02:14,490 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-01 11:02:19,353 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-01 11:02:30,042 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
-2020-05-01 11:06:45,003 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-05-01 11:06:45,868 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-05-01 11:07:05,055 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:07:32,351 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
-2020-05-01 11:07:32,366 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
-2020-05-01 11:07:32,376 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-05-01 11:07:51,568 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:08:16,199 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-01 11:08:21,230 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-01 11:08:32,451 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-05-01 11:14:36,407 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:15:05,755 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-01 11:15:10,706 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-01 11:15:22,023 - com.tripmasters.framework.reports.Logs -INFO - User entered '5' nights staying time
-2020-05-01 11:19:59,779 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:20:19,802 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-01 11:20:24,794 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-01 11:20:36,990 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-05-01 11:23:44,960 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:25:02,812 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-01 11:25:07,537 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
-2020-05-01 11:25:18,648 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
-2020-05-01 11:25:38,022 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
-2020-05-01 11:25:57,466 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-05-01 11:26:05,147 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-05-01 11:26:56,343 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-05-01 11:27:09,477 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-05-01 11:28:05,708 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-05-01 11:28:08,952 - com.tripmasters.framework.reports.Logs -INFO - Verify that only selected flight appears along with passenger details
-2020-05-01 11:28:08,953 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
-2020-05-01 11:28:27,709 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:28:49,268 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-01 11:28:54,223 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-01 11:28:56,146 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-05-01 11:29:28,789 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-05-01 11:29:35,964 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-05-01 11:30:38,891 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-05-01 11:30:57,012 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-05-01 11:34:08,467 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-05-01 11:34:47,289 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-05-01 11:35:50,768 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:36:16,043 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Washington (all Airports), DC' into leaving from field
-2020-05-01 11:36:20,938 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
-2020-05-01 11:36:22,386 - com.tripmasters.framework.reports.Logs -INFO - User entered '3' nights staying time
-2020-05-01 11:37:07,733 - com.tripmasters.framework.reports.Logs -ERROR - Element is not displayed
-2020-05-01 11:37:30,127 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:38:02,505 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Washington (all Airports), DC' into leaving from field
-2020-05-01 11:38:07,604 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
-2020-05-01 11:38:09,500 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-05-01 11:40:06,793 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
-2020-05-01 11:41:46,868 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
-2020-05-01 11:43:10,993 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-05-01 11:43:13,065 - com.tripmasters.framework.reports.Logs -INFO - Validate that user is on TripInclusion Page
-2020-05-01 11:43:33,793 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:44:02,296 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-05-01 11:44:57,518 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:45:19,581 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York City (all Airports)' into leaving from field
-2020-05-01 11:45:24,476 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
-2020-05-01 11:45:26,362 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-05-01 11:45:56,452 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-05-01 11:45:56,453 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-05-01 11:46:02,393 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-05-01 11:49:10,191 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:49:31,702 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-01 11:49:36,837 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-01 11:49:38,792 - com.tripmasters.framework.reports.Logs -INFO - User entered '12' nights staying time
-2020-05-01 11:53:12,497 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:54:11,693 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
-2020-05-01 11:54:34,855 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
-2020-05-01 11:54:34,902 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-05-01 11:54:58,605 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:55:25,337 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
-2020-05-01 11:55:25,401 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
-2020-05-01 11:55:44,597 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:56:02,209 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
-2020-05-01 11:56:07,422 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
-2020-05-01 11:56:20,395 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
-2020-05-01 11:56:20,457 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
-2020-05-01 11:56:40,798 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:56:54,305 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
-2020-05-01 11:56:59,585 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-01 11:57:04,399 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
-2020-05-01 11:57:06,235 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-05-01 11:57:30,973 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
-2020-05-01 11:57:50,244 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-01 11:57:59,691 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-2020-05-01 11:58:21,044 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 10:33:51,220 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 10:34:26,369 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-04 10:34:31,354 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-04 10:34:48,259 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-05-04 10:38:22,556 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 10:38:43,197 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-04 10:38:47,983 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-04 10:38:59,558 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
-2020-05-04 10:42:01,006 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-05-04 10:42:01,871 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
-2020-05-04 10:42:20,332 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 10:42:38,065 - com.tripmasters.framework.reports.Logs -INFO - User entered 'San Jose, CALIFORNIA' into leaving from field
-2020-05-04 10:42:38,206 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Osaka (Japan)' into Going to from field
-2020-05-04 10:42:38,216 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
-2020-05-04 10:43:01,968 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 10:43:25,952 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-04 10:43:30,823 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-04 10:43:42,563 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-05-04 10:49:38,527 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 10:50:04,419 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-04 10:50:09,185 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-04 10:50:21,115 - com.tripmasters.framework.reports.Logs -INFO - User entered '5' nights staying time
-2020-05-04 10:54:45,114 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 10:55:05,001 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-04 10:55:09,886 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-04 10:55:22,233 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-05-04 10:58:19,834 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 10:58:38,132 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-04 10:58:42,774 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
-2020-05-04 10:58:54,659 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
-2020-05-04 10:59:14,092 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for single city
-2020-05-04 10:59:33,589 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
-2020-05-04 10:59:41,245 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-05-04 11:00:31,465 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-05-04 11:00:44,380 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-05-04 11:01:41,550 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-05-04 11:01:44,836 - com.tripmasters.framework.reports.Logs -INFO - Verify that only selected flight appears along with passenger details
-2020-05-04 11:01:44,836 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
-2020-05-04 11:02:04,100 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 11:02:23,742 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-04 11:02:28,613 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-04 11:02:30,499 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-05-04 11:03:04,106 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
-2020-05-04 11:03:11,329 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
-2020-05-04 11:04:08,139 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
-2020-05-04 11:04:22,296 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
-2020-05-04 11:06:52,936 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-05-04 11:07:30,623 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
-2020-05-04 11:08:18,412 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 11:08:36,000 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Washington (all Airports), DC' into leaving from field
-2020-05-04 11:08:40,896 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
-2020-05-04 11:08:42,320 - com.tripmasters.framework.reports.Logs -INFO - User entered '3' nights staying time
-2020-05-04 11:12:46,885 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 11:13:07,764 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Washington (all Airports), DC' into leaving from field
-2020-05-04 11:13:12,689 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
-2020-05-04 11:13:14,613 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-05-04 11:15:11,855 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
-2020-05-04 11:16:51,982 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
-2020-05-04 11:18:18,102 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-05-04 11:18:18,187 - com.tripmasters.framework.reports.Logs -INFO - Validate that user is on TripInclusion Page
-2020-05-04 11:18:37,300 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 11:19:04,874 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
-2020-05-04 11:19:51,276 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 11:20:12,723 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York City (all Airports)' into leaving from field
-2020-05-04 11:20:17,451 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
-2020-05-04 11:20:19,259 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-05-04 11:20:43,871 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
-2020-05-04 11:20:43,871 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
-2020-05-04 11:20:49,537 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
-2020-05-04 11:21:54,613 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
-2020-05-04 11:22:13,207 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 11:22:30,961 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-04 11:22:35,916 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
-2020-05-04 11:22:37,727 - com.tripmasters.framework.reports.Logs -INFO - User entered '12' nights staying time
-2020-05-04 11:25:58,835 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 11:26:55,251 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
-2020-05-04 11:27:18,230 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
-2020-05-04 11:27:18,268 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
-2020-05-04 11:27:37,050 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 11:27:59,903 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
-2020-05-04 11:27:59,937 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
-2020-05-04 11:28:18,131 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 11:28:33,691 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
-2020-05-04 11:28:38,911 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
-2020-05-04 11:28:51,488 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
-2020-05-04 11:28:51,525 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
-2020-05-04 11:29:11,296 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 11:29:26,570 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
-2020-05-04 11:29:31,593 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
-2020-05-04 11:29:36,330 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
-2020-05-04 11:29:38,163 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
-2020-05-04 11:30:02,617 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
-2020-05-04 11:30:21,479 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
-2020-05-04 11:30:30,464 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
-2020-05-04 11:30:48,399 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 16:18:16,044 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 16:19:00,593 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 16:19:04,731 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 16:19:14,464 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-18 16:21:16,332 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 16:22:18,847 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 16:22:23,825 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 16:22:33,712 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-18 16:23:32,596 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 16:23:46,652 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-05-18 16:24:50,494 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 16:26:00,851 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 16:26:05,014 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 16:26:14,881 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-18 16:34:01,525 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 16:35:00,957 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 16:35:05,992 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 16:35:15,727 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-18 17:20:55,907 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 17:21:37,534 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 17:21:41,744 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 17:21:53,514 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-18 17:25:36,943 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 17:26:02,377 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 17:26:06,396 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
+2020-05-18 17:26:11,107 - com.tripmasters.framework.reports.Logs -INFO - User entered '3' nights staying time
+2020-05-18 17:29:53,682 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-18 17:29:54,588 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-18 17:30:08,774 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 17:31:02,031 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Seattle, WA' into leaving from field
+2020-05-18 17:31:10,917 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-18 17:31:12,690 - com.tripmasters.framework.reports.Logs -INFO - User entered '3' nights staying time
+2020-05-18 17:31:52,026 - com.tripmasters.framework.reports.Logs -INFO - Galway city is deleted successfully
+2020-05-18 17:31:52,028 - com.tripmasters.framework.reports.Logs -INFO - Galway city removed successfully.Verified!
+2020-05-18 17:33:47,825 - com.tripmasters.framework.reports.Logs -INFO - Limerick city is deleted successfully
+2020-05-18 17:40:32,129 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 17:41:28,816 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-18 17:49:27,152 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-05-18 17:54:50,033 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 17:55:30,735 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 17:55:34,805 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 17:55:46,628 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-18 17:59:17,209 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 17:59:55,164 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 17:59:59,287 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
+2020-05-18 18:00:03,916 - com.tripmasters.framework.reports.Logs -INFO - User entered '3' nights staying time
+2020-05-18 18:03:33,667 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-18 18:03:34,389 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-18 18:03:48,807 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:04:38,034 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Seattle, WA' into leaving from field
+2020-05-18 18:04:46,621 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-18 18:04:48,518 - com.tripmasters.framework.reports.Logs -INFO - User entered '3' nights staying time
+2020-05-18 18:05:27,022 - com.tripmasters.framework.reports.Logs -INFO - Galway city is deleted successfully
+2020-05-18 18:05:27,025 - com.tripmasters.framework.reports.Logs -INFO - Galway city removed successfully.Verified!
+2020-05-18 18:07:23,129 - com.tripmasters.framework.reports.Logs -INFO - Limerick city is deleted successfully
+2020-05-18 18:14:20,067 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:15:34,595 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-18 18:18:23,376 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:20:00,597 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Chicago (All Airports)' into leaving from field
+2020-05-18 18:23:26,724 - com.tripmasters.framework.reports.Logs -INFO - User is not able to proceed with empty field in passenger details
+2020-05-18 18:23:41,694 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:25:16,689 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 18:25:23,373 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 18:25:34,268 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-18 18:28:32,409 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:29:38,675 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 18:29:45,755 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
+2020-05-18 18:29:57,678 - com.tripmasters.framework.reports.Logs -INFO - User entered '6' nights staying time
+2020-05-18 18:33:02,849 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:34:42,284 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York City (all Airports),  NY' into leaving from field
+2020-05-18 18:34:49,140 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Rome (Italy)' into Going to from field
+2020-05-18 18:35:00,098 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-18 18:36:05,463 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:36:47,135 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:37:28,007 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:37:54,250 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-18 18:37:58,698 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
+2020-05-18 18:38:00,052 - com.tripmasters.framework.reports.Logs -INFO - User entered '3' nights staying time
+2020-05-18 18:42:13,732 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:42:54,860 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 18:43:01,742 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
+2020-05-18 18:43:03,088 - com.tripmasters.framework.reports.Logs -INFO - User entered '3' nights staying time
+2020-05-18 18:43:37,545 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
+2020-05-18 18:45:17,618 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed  from itenary successfully.Verified!
+2020-05-18 18:45:22,887 - com.tripmasters.framework.reports.Logs -INFO - Click again to add city
+2020-05-18 18:49:12,216 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-18 18:49:12,268 - com.tripmasters.framework.reports.Logs -INFO - Validate that user is on TripInclusion Page
+2020-05-18 18:49:27,929 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:50:04,605 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
+2020-05-18 18:50:57,924 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:51:29,998 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York City (all Airports)' into leaving from field
+2020-05-18 18:51:34,501 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Delhi (India)' into Going to from field
+2020-05-18 18:51:36,316 - com.tripmasters.framework.reports.Logs -INFO - User entered '4' nights staying time
+2020-05-18 18:52:00,528 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
+2020-05-18 18:52:00,531 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
+2020-05-18 18:52:06,483 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
+2020-05-18 18:53:22,734 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-18 18:53:43,510 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:54:11,525 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 18:54:16,176 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 18:54:17,902 - com.tripmasters.framework.reports.Logs -INFO - User entered '12' nights staying time
+2020-05-18 18:57:42,691 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:59:06,411 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
+2020-05-18 18:59:28,078 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
+2020-05-18 18:59:28,144 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-05-18 18:59:44,744 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 19:01:26,509 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
+2020-05-18 19:01:26,564 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
+2020-05-18 19:29:26,254 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 19:29:26,301 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 19:29:26,439 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-05-18 19:30:08,121 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 19:30:08,124 - com.tripmasters.framework.reports.Logs -INFO - User entered 'London (England)' into Going to from field
+2020-05-18 19:30:08,125 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-05-18 19:32:27,111 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 19:32:27,126 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 19:32:27,256 - com.tripmasters.framework.reports.Logs -ERROR - Unable to click on element even after specified time
+2020-05-18 19:35:29,871 - com.tripmasters.framework.reports.Logs -INFO - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 19:36:35,010 - com.tripmasters.framework.reports.Logs -INFO - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 19:36:39,129 - com.tripmasters.framework.reports.Logs -INFO - User entered 'Berlin (Germany)' into Going to from field

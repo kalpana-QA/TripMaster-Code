@@ -70,7 +70,8 @@ public class PassengerInformationLocators {
 	private static By lnameR1C1Mob = By.xpath("//input[@id='1_txtCLName1' and @name ='1_txtCLName1']");
 	private static By genderR1C1Mob = By.xpath("//select[@id='1_txtCPAX_Gender1']");
 	private static By dobR1C1Mob = By.xpath("//input[@id='1_txtCPAX_DOB1']");
-    			 
+	private static By errorMessage =By.xpath("//input[@id='txtPAX_DOB1']//following-sibling::label[text()='This field is required.']");
+			 
     	 
 	public static By getfnameR1T1() {
 		return fnameR1T1;
@@ -291,4 +292,8 @@ public class PassengerInformationLocators {
 		return dobR1C1Mob;
 	}
 
+	
+	public static By geterrorMessage() {
+		return errorMessage;
+	}
 }

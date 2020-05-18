@@ -366,8 +366,40 @@ public class PageBase {
 		String[] newDateDay = newDate.split("/");
 		return newDateDay[1];
 	}
+	
+	
+public static String selectNewDateFromCalendar(int additionaldays) {
+		
+		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(new Date());
+		System.out.println(cal.getTime());
+		cal.add(Calendar.DATE, additionaldays);
+		String newDate = dateFormat.format(cal.getTime());
+		//String[] newDateDay = newDate.split("/");
+		//return newDateDay[1];
+		return newDate;
+	}
+	
 
-	/**
+
+	
+	
+	
+	/*public static String Calender() {
+		String date = "15/11/2020";
+		String dateArr[]=date.split("/");
+		String day = dateArr[0];
+		String month = dateArr[1];
+		String year = dateArr[2];
+		
+		
+		
+		
+		
+	}
+
+*/	/**
 	 * Scroll page down to full of its height
 	 * 
 	 * @author Mrinal

@@ -7615,3 +7615,840 @@
 2020-05-04 11:30:21,479 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
 2020-05-04 11:30:30,464 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - verifyFooterText is displayed
 2020-05-04 11:30:48,399 [TestNG-test=Test-6] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-13 11:46:54,415 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-13 12:28:23,934 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-13 12:29:11,513 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-13 12:29:15,731 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-13 12:29:17,392 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-13 12:31:15,480 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-05-13 12:32:55,597 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - All the added cities removed successfully.Verified!
+2020-05-13 12:36:19,877 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-13 12:37:11,335 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-13 12:37:15,649 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-13 12:37:17,414 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-13 12:39:14,817 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-05-13 12:40:54,925 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - All the added cities removed successfully.Verified!
+2020-05-13 12:44:00,180 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-13 12:45:10,076 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-13 12:45:14,362 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-13 12:45:16,028 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-13 12:47:12,499 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-05-13 12:48:52,662 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - All the added cities removed successfully.Verified!
+2020-05-13 12:49:29,705 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-05-13 12:54:53,986 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-13 12:55:55,477 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-13 12:56:00,738 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-13 12:56:02,649 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-13 12:57:59,200 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-05-13 12:57:59,202 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - All the added cities removed successfully.Verified!
+2020-05-13 12:58:37,910 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-05-13 13:06:14,237 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-13 13:07:02,212 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-13 13:07:06,465 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-13 13:07:08,251 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-13 13:09:07,078 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-05-13 13:09:07,079 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - All the added cities removed successfully.Verified!
+2020-05-13 13:26:23,036 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-13 13:27:06,420 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-13 13:27:10,737 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-13 13:27:12,342 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-13 13:29:09,791 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-05-13 13:29:09,793 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - All the added cities removed successfully.Verified!
+2020-05-13 15:10:14,240 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-13 15:10:14,290 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-13 15:10:14,434 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-13 15:11:30,871 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-13 15:11:30,882 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-13 15:11:30,919 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-13 15:13:57,351 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-13 15:13:57,360 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-13 15:13:57,471 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-13 15:18:32,109 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-13 15:20:38,593 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-13 15:20:43,163 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-13 15:20:54,971 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '6' nights staying time
+2020-05-13 16:46:15,710 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-13 16:46:39,631 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-13 16:46:43,972 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-13 16:46:55,973 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '6' nights staying time
+2020-05-14 16:01:59,631 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 16:02:28,881 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 16:02:32,973 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 16:02:45,025 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-14 16:02:55,863 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-14 16:03:23,371 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-14 16:03:39,060 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-14 16:03:49,649 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-14 16:11:01,018 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 16:11:24,329 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 16:11:28,248 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 16:11:40,255 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-14 16:11:51,214 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-14 16:12:19,216 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-14 16:12:34,915 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-14 16:23:43,334 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-05-14 16:34:06,321 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 16:34:45,681 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 16:34:49,658 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 16:35:00,617 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-14 16:35:44,366 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-14 16:36:04,171 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-14 16:36:34,993 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 16:41:05,464 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 16:41:46,721 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 16:41:50,540 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 16:42:01,565 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-14 16:42:38,403 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-14 16:42:53,948 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-14 16:43:24,089 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 16:46:02,446 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 16:46:30,575 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 16:46:34,664 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 16:46:45,828 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-14 16:47:25,643 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-14 16:47:41,275 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-14 16:52:28,255 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 16:53:03,160 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 16:53:07,094 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 16:53:18,235 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-14 16:53:56,867 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-14 16:54:12,520 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-14 16:56:59,813 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 16:57:23,608 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 16:57:27,583 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 16:57:38,742 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-14 16:58:16,677 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-14 16:58:32,342 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-14 17:01:13,894 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 17:01:40,679 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 17:01:44,697 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 17:01:55,357 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-14 17:02:33,612 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-14 17:02:49,250 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-14 17:05:30,279 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 17:05:54,157 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 17:05:58,168 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 17:06:09,245 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-14 17:06:47,212 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-14 17:07:02,808 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-14 17:12:29,266 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 17:12:59,178 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 17:13:03,207 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 17:13:14,312 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-14 17:13:52,623 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-14 17:14:08,231 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-14 17:16:07,772 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 17:16:24,010 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-14 17:16:28,379 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 17:16:29,706 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 17:16:31,117 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-14 17:18:18,747 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 17:18:23,623 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-14 17:18:27,988 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 17:18:29,329 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 17:18:30,682 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-14 17:20:15,156 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 17:20:40,930 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 17:20:45,025 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 17:20:56,248 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-14 17:21:34,921 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-14 17:21:50,660 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-14 17:47:34,539 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 17:47:57,252 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 17:48:01,337 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 17:48:12,631 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-14 17:48:51,940 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-14 17:49:07,677 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-14 21:27:15,267 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 21:33:41,462 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 21:35:13,271 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 21:35:17,409 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 21:35:28,292 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-14 21:36:05,867 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-14 21:37:11,272 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 21:37:22,969 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-14 21:37:27,390 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 21:37:28,752 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 21:37:30,107 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-14 21:39:16,800 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 21:44:32,979 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 21:46:59,825 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 21:47:54,596 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-14 21:47:58,948 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 21:48:00,316 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 21:48:01,673 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-14 21:49:28,143 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-14 21:51:14,064 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-14 21:51:18,483 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-14 21:51:29,397 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-14 21:52:25,571 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-15 09:49:31,560 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 09:50:14,849 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-15 09:50:18,971 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-15 09:50:31,406 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-15 09:51:09,679 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-15 09:52:37,306 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 09:53:33,111 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-15 09:53:37,096 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-15 09:53:50,002 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-15 09:54:27,399 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-15 09:54:42,916 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 10:13:00,137 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 10:13:37,689 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-15 10:13:41,892 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-15 10:13:52,970 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-15 10:14:40,879 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-15 10:14:55,551 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 10:20:46,334 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 10:21:19,722 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-15 10:21:23,846 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-15 10:21:35,256 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-15 10:22:13,166 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-15 10:22:13,167 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city removed successfully.Verified!
+2020-05-15 10:22:29,011 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-15 12:23:26,898 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 12:39:36,047 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 12:54:08,839 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 12:56:25,318 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 13:23:40,704 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 13:26:29,806 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 13:39:58,268 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 13:41:25,683 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports' into leaving from field
+2020-05-15 14:34:30,537 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 14:36:03,791 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports' into leaving from field
+2020-05-15 14:51:38,390 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 14:52:56,155 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports' into leaving from field
+2020-05-15 14:55:29,504 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 15:03:49,454 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 15:05:15,136 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports' into leaving from field
+2020-05-15 15:07:18,226 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 15:08:41,027 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports)' into leaving from field
+2020-05-15 15:11:13,856 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 15:11:40,543 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 15:21:40,806 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 15:23:03,872 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports)' into leaving from field
+2020-05-15 15:25:37,857 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 15:49:24,194 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 15:50:51,447 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports)' into leaving from field
+2020-05-15 15:54:11,954 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 15:55:43,185 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports)' into leaving from field
+2020-05-15 16:07:13,816 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 16:08:26,057 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports)' into leaving from field
+2020-05-15 16:11:00,082 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 16:11:26,568 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 16:22:40,439 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 16:24:00,246 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports)' into leaving from field
+2020-05-15 16:42:51,457 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 16:44:28,391 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports)' into leaving from field
+2020-05-15 16:52:20,849 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 16:53:34,256 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports)' into leaving from field
+2020-05-15 17:02:31,747 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 17:03:47,907 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports)' into leaving from field
+2020-05-15 17:24:13,451 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 17:25:29,510 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports)' into leaving from field
+2020-05-15 17:33:03,296 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-05-15 17:34:08,921 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 17:35:23,754 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports)' into leaving from field
+2020-05-15 17:35:47,815 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-05-15 17:38:49,719 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User filled all the passenger details successfully
+2020-05-15 17:38:55,943 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-05-15 17:39:02,665 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-05-15 17:46:36,129 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 17:48:14,372 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports)' into leaving from field
+2020-05-15 17:51:41,758 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User filled all the passenger details successfully
+2020-05-15 18:23:34,887 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-15 18:24:47,242 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports)' into leaving from field
+2020-05-15 18:28:03,488 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User filled all the passenger details successfully
+2020-05-17 10:27:48,032 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 10:28:40,384 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-17 10:28:44,417 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-17 10:28:58,410 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-17 10:29:35,924 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-17 10:29:35,925 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city removed successfully.Verified!
+2020-05-17 10:31:32,066 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-17 10:42:23,377 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-05-17 10:53:43,441 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 10:54:35,525 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-17 10:54:39,479 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-17 10:54:53,451 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-17 10:55:30,707 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-17 10:55:30,709 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city removed successfully.Verified!
+2020-05-17 10:57:26,554 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-17 11:08:12,432 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-05-17 11:13:39,517 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 11:14:27,792 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 11:22:50,077 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 11:23:31,817 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-17 11:23:45,668 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-17 11:23:47,127 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-17 11:24:25,790 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-17 11:24:25,792 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Galway city removed successfully.Verified!
+2020-05-17 11:26:21,681 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-17 11:36:58,723 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 11:38:47,308 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports)' into leaving from field
+2020-05-17 11:42:41,673 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User is not able to proceed with empty field in passenger details
+2020-05-17 11:47:09,616 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 11:47:39,868 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-17 11:47:43,971 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-17 11:47:55,131 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '6' nights staying time
+2020-05-17 11:51:21,243 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User filled all the passenger details successfully
+2020-05-17 11:51:22,103 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Flights & passenger details verified successfully on PaymentPage
+2020-05-17 15:34:02,649 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 15:36:50,457 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-17 15:36:54,466 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-17 15:36:56,218 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-17 15:39:52,387 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 15:41:05,236 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-17 15:41:09,190 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-17 15:41:10,891 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '1' nights staying time
+2020-05-17 15:41:43,834 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-05-17 15:43:24,003 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - All the added cities removed successfully.Verified!
+2020-05-17 15:43:29,310 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click again to add city
+2020-05-17 15:45:16,720 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-05-17 15:45:24,893 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 15:46:31,411 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-17 15:46:35,771 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-17 15:46:37,129 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-17 15:46:38,569 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-17 15:47:48,091 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 15:49:24,725 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-17 15:49:28,844 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-17 15:49:30,815 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-17 15:50:03,805 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-05-17 15:51:44,035 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - All the added cities removed successfully.Verified!
+2020-05-17 15:51:49,421 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click again to add city
+2020-05-17 15:54:02,662 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-05-17 15:54:11,365 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Validate that user is on TripInclusion Page
+2020-05-17 16:03:15,822 [main] ERROR freemarker.runtime - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> report.systemInfoMap[info]  [in template "Extent.ftl" at line 193, column 95]
+
+----
+Tip: It's the final [] step that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${report.systemInfoMap[info]}  [in template "Extent.ftl" at line 193, column 93]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:240)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at com.relevantcodes.extentreports.HTMLReporter.flush(HTMLReporter.java:173)
+	at com.relevantcodes.extentreports.Report.flush(Report.java:468)
+	at com.relevantcodes.extentreports.ExtentReports.flush(ExtentReports.java:900)
+	at com.tripmasters.framework.Listeners.TestListener.onFinish(TestListener.java:34)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:772)
+	at org.testng.TestRunner.afterRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:509)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+2020-05-17 16:04:03,213 [main] ERROR freemarker.runtime - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> report.systemInfoMap[info]  [in template "Extent.ftl" at line 193, column 95]
+
+----
+Tip: It's the final [] step that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${report.systemInfoMap[info]}  [in template "Extent.ftl" at line 193, column 93]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:240)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at com.relevantcodes.extentreports.HTMLReporter.flush(HTMLReporter.java:173)
+	at com.relevantcodes.extentreports.Report.flush(Report.java:468)
+	at com.relevantcodes.extentreports.ExtentReports.flush(ExtentReports.java:900)
+	at com.tripmasters.framework.Listeners.TestListener.onFinish(TestListener.java:34)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:772)
+	at org.testng.TestRunner.afterRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:509)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+2020-05-17 16:06:01,723 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 16:08:11,918 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-17 16:08:15,983 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-05-17 16:08:27,147 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-17 16:12:16,894 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-05-17 16:18:32,022 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 16:19:32,250 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 16:23:36,472 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 16:24:51,454 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-17 16:24:55,673 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-17 16:25:07,356 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '6' nights staying time
+2020-05-17 18:05:21,618 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 18:34:43,770 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 18:37:13,282 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York City (all Airports),  NY' into leaving from field
+2020-05-17 18:37:17,104 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Rome (Italy)' into Going to from field
+2020-05-17 18:37:28,269 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-17 21:54:28,933 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 21:57:34,191 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 21:59:20,981 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 22:14:50,064 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 22:17:33,049 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-17 22:17:37,178 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-17 22:17:38,788 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-17 22:18:15,400 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-05-17 22:19:55,586 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - All the added cities removed  from itenary successfully.Verified!
+2020-05-17 22:24:08,304 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 22:25:11,916 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-17 22:25:17,110 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 22:25:59,081 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-17 22:25:59,572 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-17 22:26:01,024 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-17 22:26:30,231 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-17 22:26:34,235 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-17 22:26:35,607 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-17 22:27:03,212 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-05-17 22:28:43,294 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-05-17 22:28:43,384 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - All the added cities removed  from itenary successfully.Verified!
+2020-05-17 22:30:23,441 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - All the added cities removed  from itenary successfully.Verified!
+2020-05-17 22:30:46,643 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 22:31:35,604 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 22:32:01,116 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 22:33:45,944 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-17 22:33:49,982 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-17 22:33:51,653 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-17 22:34:25,649 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-05-17 22:36:05,791 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - All the added cities removed  from itenary successfully.Verified!
+2020-05-17 22:36:11,050 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click again to add city
+2020-05-17 22:50:08,218 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 22:52:12,767 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-17 22:52:16,880 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-17 22:52:18,328 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-17 22:52:51,764 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-05-17 22:54:31,863 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - All the added cities removed  from itenary successfully.Verified!
+2020-05-17 22:54:37,133 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click again to add city
+2020-05-17 23:02:49,179 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-17 23:09:00,779 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 09:19:27,338 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 09:27:19,866 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 09:29:52,056 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 09:29:56,103 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 09:30:07,443 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 09:37:19,020 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 09:41:56,467 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 09:44:55,636 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 09:48:10,434 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-18 10:01:07,914 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 10:03:42,612 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 10:05:35,005 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 10:07:51,497 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-18 10:11:56,056 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 10:16:05,014 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 10:17:54,420 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 10:20:07,464 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-18 10:26:34,522 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 10:32:46,241 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 10:34:20,524 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-18 10:41:13,897 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 10:43:14,154 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 10:43:18,162 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-18 10:43:29,658 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '6' nights staying time
+2020-05-18 10:44:17,875 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 10:44:54,189 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 10:46:48,042 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 10:48:13,158 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 10:48:17,133 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-18 10:48:29,166 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '6' nights staying time
+2020-05-18 10:49:11,440 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 10:50:04,084 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 10:53:08,684 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 10:54:23,526 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 10:54:27,454 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-18 10:54:39,500 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '6' nights staying time
+2020-05-18 11:31:54,521 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 11:33:57,406 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 11:34:01,405 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-18 11:34:12,579 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '6' nights staying time
+2020-05-18 11:34:55,157 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 11:37:00,019 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 11:40:09,056 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 11:40:09,309 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-18 11:40:19,396 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-18 11:41:41,419 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 11:44:07,309 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 11:45:33,188 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 11:45:37,232 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-18 11:45:48,929 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '6' nights staying time
+2020-05-18 11:55:38,465 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 11:57:16,361 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 11:57:20,362 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-18 11:57:31,781 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '6' nights staying time
+2020-05-18 11:58:14,258 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 12:19:34,955 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 12:21:00,605 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 12:21:04,617 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-18 12:21:15,931 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '6' nights staying time
+2020-05-18 12:23:10,659 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 12:29:50,566 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 12:30:51,469 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 12:30:57,267 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-18 12:31:07,165 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '6' nights staying time
+2020-05-18 12:35:21,220 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 12:36:06,521 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York City (all Airports),  NY' into leaving from field
+2020-05-18 12:36:10,494 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Rome (Italy)' into Going to from field
+2020-05-18 12:36:22,134 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 12:40:42,983 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 12:52:44,280 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 12:53:41,945 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 12:53:46,573 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 12:53:58,097 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 12:56:56,556 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 12:57:48,262 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 12:57:52,326 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 12:58:04,626 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 13:01:56,095 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 13:02:29,393 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 13:02:34,092 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-18 13:02:43,873 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-18 13:06:14,278 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - User filled all the passenger details successfully
+2020-05-18 13:06:15,007 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - Flights & passenger details verified successfully on PaymentPage
+2020-05-18 13:06:29,178 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 13:07:06,010 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-18 13:07:18,037 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-18 13:07:19,618 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-18 13:07:58,447 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-18 13:07:58,450 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - Galway city removed successfully.Verified!
+2020-05-18 13:09:54,343 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-18 13:16:33,368 [TestNG-test=Test-4] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 13:17:41,799 [TestNG-test=Test-4] INFO com.tripmasters.framework.reports.Logs - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-18 13:20:48,222 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 13:22:56,696 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports)' into leaving from field
+2020-05-18 13:26:57,595 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User is not able to proceed with empty field in passenger details
+2020-05-18 13:27:11,843 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 13:29:22,636 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 13:29:26,708 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 13:29:37,981 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 13:33:02,852 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 13:34:20,779 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 13:34:24,852 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-18 13:34:34,439 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered '6' nights staying time
+2020-05-18 13:37:39,373 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 13:38:35,879 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'New York City (all Airports),  NY' into leaving from field
+2020-05-18 13:38:39,727 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'Rome (Italy)' into Going to from field
+2020-05-18 13:38:50,891 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 13:39:56,410 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 13:40:44,204 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 13:41:33,512 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 13:42:04,765 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-18 13:42:08,790 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-18 13:42:10,351 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-18 13:42:52,557 [TestNG-test=Test-5] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-05-18 13:43:11,149 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 13:44:31,858 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 13:44:35,901 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-18 13:44:37,425 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-18 13:45:10,455 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-05-18 13:46:50,544 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - All the added cities removed  from itenary successfully.Verified!
+2020-05-18 13:46:55,802 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click again to add city
+2020-05-18 13:51:29,662 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Element is not displayed
+2020-05-18 13:55:12,185 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 13:56:00,246 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 13:56:48,697 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 13:57:52,906 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User redirected to the Latin America Page
+2020-05-18 13:58:36,267 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 13:59:14,222 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York City (all Airports)' into leaving from field
+2020-05-18 13:59:18,212 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-18 13:59:19,868 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 13:59:44,481 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Filled flights details with premium economy
+2020-05-18 13:59:44,484 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select Cabin class
+2020-05-18 13:59:49,833 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Selected Cabin class verified
+2020-05-18 14:00:59,489 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-05-18 14:01:14,345 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 14:01:54,069 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 14:01:58,466 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 14:02:00,350 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '12' nights staying time
+2020-05-18 14:05:13,395 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 14:07:18,370 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User clicked on Explore Europe Link
+2020-05-18 14:07:41,420 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User clicked on particular vacation package
+2020-05-18 14:07:41,492 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-05-18 14:07:57,009 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 14:09:08,432 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Clicked on Popular Vacation Packages
+2020-05-18 14:09:08,509 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - VerifyPopularVacationPackages displayed
+2020-05-18 14:09:23,830 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 14:10:13,325 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Verified User is on homepage
+2020-05-18 14:10:18,547 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Search textBox avialable on HomePage
+2020-05-18 14:10:34,563 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Search for a particular city & Click on Go Button
+2020-05-18 14:10:34,623 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User redirected to that particular city.Verified!
+2020-05-18 14:10:49,712 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 14:11:17,376 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click on Build Your Vacation Dropdown
+2020-05-18 14:11:21,861 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 14:11:26,182 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-18 14:11:27,927 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 14:11:52,492 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - verifyStartAgainLink is displayed
+2020-05-18 14:12:07,809 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 14:12:40,929 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - verifyFooterText is displayed
+2020-05-18 14:12:56,609 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 14:52:23,913 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 14:53:46,072 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York City (all Airports),  NY' into leaving from field
+2020-05-18 14:53:50,080 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Rome (Italy)' into Going to from field
+2020-05-18 14:54:02,123 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 15:00:27,555 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 15:01:11,520 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 15:06:23,562 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 15:08:19,756 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 15:08:23,989 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-18 15:08:25,506 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-18 15:08:58,406 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-05-18 15:10:38,649 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - All the added cities removed  from itenary successfully.Verified!
+2020-05-18 15:10:43,894 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Click again to add city
+2020-05-18 15:14:36,334 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-05-18 15:14:36,387 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Validate that user is on TripInclusion Page
+2020-05-18 16:17:19,861 [main] ERROR freemarker.runtime - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> report.systemInfoMap[info]  [in template "Extent.ftl" at line 193, column 95]
+
+----
+Tip: It's the final [] step that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${report.systemInfoMap[info]}  [in template "Extent.ftl" at line 193, column 93]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:240)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at com.relevantcodes.extentreports.HTMLReporter.flush(HTMLReporter.java:173)
+	at com.relevantcodes.extentreports.Report.flush(Report.java:468)
+	at com.relevantcodes.extentreports.ExtentReports.flush(ExtentReports.java:900)
+	at com.tripmasters.framework.Listeners.TestListener.onFinish(TestListener.java:34)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:772)
+	at org.testng.TestRunner.afterRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:509)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+2020-05-18 16:18:16,044 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 16:19:00,593 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 16:19:04,731 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 16:19:14,464 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 16:21:16,332 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 16:22:18,847 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 16:22:23,825 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 16:22:33,712 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 16:23:32,596 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 16:23:46,652 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-18 16:24:50,494 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 16:26:00,851 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 16:26:05,014 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 16:26:14,881 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 16:34:01,525 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 16:35:00,957 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 16:35:05,992 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 16:35:15,727 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 17:20:55,907 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 17:21:37,534 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 17:21:41,744 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 17:21:53,514 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 17:25:36,943 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 17:26:02,377 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 17:26:06,396 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-18 17:26:11,107 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-18 17:29:53,682 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - User filled all the passenger details successfully
+2020-05-18 17:29:54,588 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - Flights & passenger details verified successfully on PaymentPage
+2020-05-18 17:30:08,774 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 17:31:02,031 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-18 17:31:10,917 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-18 17:31:12,690 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-18 17:31:52,026 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-18 17:31:52,028 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - Galway city removed successfully.Verified!
+2020-05-18 17:33:47,825 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-18 17:40:32,129 [TestNG-test=Test-4] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 17:41:28,816 [TestNG-test=Test-4] INFO com.tripmasters.framework.reports.Logs - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-18 17:49:27,152 [TestNG-test=Test-4] ERROR com.tripmasters.framework.reports.Logs - Unable to select element by text
+2020-05-18 17:54:50,033 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 17:55:30,735 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 17:55:34,805 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 17:55:46,628 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 17:59:17,209 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 17:59:55,164 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 17:59:59,287 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-18 18:00:03,916 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-18 18:03:33,667 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - User filled all the passenger details successfully
+2020-05-18 18:03:34,389 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - Flights & passenger details verified successfully on PaymentPage
+2020-05-18 18:03:48,807 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:04:38,034 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - User entered 'Seattle, WA' into leaving from field
+2020-05-18 18:04:46,621 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - User entered 'Dublin (Ireland)' into Going to from field
+2020-05-18 18:04:48,518 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-18 18:05:27,022 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - Galway city is deleted successfully
+2020-05-18 18:05:27,025 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - Galway city removed successfully.Verified!
+2020-05-18 18:07:23,129 [TestNG-test=Test-3] INFO com.tripmasters.framework.reports.Logs - Limerick city is deleted successfully
+2020-05-18 18:14:20,067 [TestNG-test=Test-4] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:15:34,595 [TestNG-test=Test-4] INFO com.tripmasters.framework.reports.Logs - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-18 18:18:23,376 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:20:00,597 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'Chicago (All Airports)' into leaving from field
+2020-05-18 18:23:26,724 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User is not able to proceed with empty field in passenger details
+2020-05-18 18:23:41,694 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:25:16,689 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 18:25:23,373 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 18:25:34,268 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 18:28:32,409 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:29:38,675 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 18:29:45,755 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-18 18:29:57,678 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered '6' nights staying time
+2020-05-18 18:33:02,849 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:34:42,284 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'New York City (all Airports),  NY' into leaving from field
+2020-05-18 18:34:49,140 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'Rome (Italy)' into Going to from field
+2020-05-18 18:35:00,098 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 18:36:05,463 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:36:47,135 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:37:28,007 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:37:54,250 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'Washington (all Airports), DC' into leaving from field
+2020-05-18 18:37:58,698 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-18 18:38:00,052 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-18 18:42:13,732 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:42:54,860 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 18:43:01,742 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-18 18:43:03,088 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered '3' nights staying time
+2020-05-18 18:43:37,545 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Delete all the added cities
+2020-05-18 18:45:17,618 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - All the added cities removed  from itenary successfully.Verified!
+2020-05-18 18:45:22,887 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Click again to add city
+2020-05-18 18:49:12,216 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-05-18 18:49:12,268 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Validate that user is on TripInclusion Page
+2020-05-18 18:49:27,929 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:50:04,605 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User redirected to the Latin America Page
+2020-05-18 18:50:57,924 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:51:29,998 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'New York City (all Airports)' into leaving from field
+2020-05-18 18:51:34,501 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'Delhi (India)' into Going to from field
+2020-05-18 18:51:36,316 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered '4' nights staying time
+2020-05-18 18:52:00,528 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Filled flights details with premium economy
+2020-05-18 18:52:00,531 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Select Cabin class
+2020-05-18 18:52:06,483 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Selected Cabin class verified
+2020-05-18 18:53:22,734 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Select Cheaper flights from flight options
+2020-05-18 18:53:43,510 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:54:11,525 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 18:54:16,176 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 18:54:17,902 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User entered '12' nights staying time
+2020-05-18 18:57:42,691 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 18:59:06,411 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User clicked on Explore Europe Link
+2020-05-18 18:59:28,078 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - User clicked on particular vacation package
+2020-05-18 18:59:28,144 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-05-18 18:59:44,744 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 19:01:26,509 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - Clicked on Popular Vacation Packages
+2020-05-18 19:01:26,564 [TestNG-test=Test-5] INFO com.tripmasters.framework.reports.Logs - VerifyPopularVacationPackages displayed
+2020-05-18 19:29:26,254 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 19:29:26,301 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 19:29:26,439 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-18 19:30:08,121 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 19:30:08,124 [TestNG-test=Test-2] INFO com.tripmasters.framework.reports.Logs - User entered 'London (England)' into Going to from field
+2020-05-18 19:30:08,125 [TestNG-test=Test-2] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-18 19:32:27,111 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 19:32:27,126 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
+2020-05-18 19:32:27,256 [TestNG-test=Test-1] ERROR com.tripmasters.framework.reports.Logs - Unable to click on element even after specified time
+2020-05-18 19:35:29,871 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - Chrome AndroidDriver instantiated for Mobile platform.
+2020-05-18 19:36:35,010 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'New York, Newark, NJ' into leaving from field
+2020-05-18 19:36:39,129 [TestNG-test=Test-1] INFO com.tripmasters.framework.reports.Logs - User entered 'Berlin (Germany)' into Going to from field
