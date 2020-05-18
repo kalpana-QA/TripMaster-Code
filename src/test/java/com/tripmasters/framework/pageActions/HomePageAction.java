@@ -1,5 +1,7 @@
 package com.tripmasters.framework.pageActions;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -73,6 +75,77 @@ public class HomePageAction extends PageBase {
 			clickUsingJavaScript(HomePageLocators.getexploreAsiaLnk());
 		}
 	}
+	
+	//Method to verify Highlight and Attraction
+	public void verifyHighLightsandAttractions() throws Exception {
+		PageBase.waitForElement(10);
+		String highlighttitle = driver.findElement(HomePageLocators.gethighlightandAttractiontitle()).getText();
+		System.out.println("highlightTitle is "+ highlighttitle);
+		boolean flag = false;
+		if(driver.getPageSource().contains(highlighttitle)) {
+			 flag = true;
+			Assert.assertTrue(flag);
+		}
+	}
+	
+	//verify first highlight and attraction
+	public void verifyfirsthighlightandAttraction() throws Exception {
+		PageBase.waitForElement(10);
+	String firsthighlightandAttraction = driver.findElement(HomePageLocators.getFirstHighLightandAttraction()).getText();
+	System.out.println("First highlight and Attraction is "+ firsthighlightandAttraction);
+	boolean flag = false;
+	if(driver.getPageSource().contains(firsthighlightandAttraction)) {
+		 flag = true;
+		Assert.assertTrue(flag);
+		
+	}
+	}
+	
+	
+	public void clickOntitle() {
+		clickUsingJavaScript(HomePageLocators.getTitle());
+	}
+	
+	//method Satyam
+	public void topdeals() throws Exception {
+		scrollDownForMob(1);
+		clickUsingJavaScript(HomePageLocators.getTopdeals());
+		
+	}
+	
+	//satyam
+public  void validateTopDealsPage() {
+		
+		boolean flag = false;
+		System.out.println("Title is "+ driver.getTitle());
+		if (driver.getTitle().contains(" Top Deals "))
+			{
+			flag = true;	
+		
+		Assert.assertTrue(flag);
+		}
+	}
+
+//Method created to validate list of the week @author Satyam
+ 
+public void validatetopDealsList(){	
+	
+List<WebElement> topDeals = driver.findElements(By.className("pMpkTitle"));
+
+System.out.println(topDeals.size());
+
+for (WebElement webElement : topDeals) {
+    String name = webElement.getText();
+    System.out.println(name);
+    boolean flag = false;
+	if(driver.getPageSource().contains(name)) {
+		 flag = true;
+		Assert.assertTrue(flag);
+    
+}
+}
+}
+	
 
 	/**
 	 * click On Package Displayed Under Other Vacation Packages

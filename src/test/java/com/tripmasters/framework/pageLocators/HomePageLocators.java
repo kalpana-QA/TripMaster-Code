@@ -23,6 +23,11 @@ public class HomePageLocators {
 	private static By firstOptionUnderSpotlightDrpDwn = By.xpath("(//div[@id='ContdvSpot'][@style='display: block;']//a)[1]");
 	private static By selectPremiumEconomy = By.xpath("//span[text()='Premium Economy']");
 	private static By moreHighlightsattractions = By.xpath("//div[@class='dvMbHightTblHide']"); 
+	private static By highlightandAttractiontitle = By.xpath("//div[@class='dvMbHightAttrTitle']");
+	private static By FirstHighLightandAttraction = By.xpath("(//div[@class='dvMbEachHigh'])[1]");
+	private static By title = By.xpath("//div[@class='dvMheadLogo']/img");
+	private static By topdeals = By.xpath("//div[@id='dvTopDeals']");
+	private static By suggestedVacationPackageOption = By.xpath("//div[contains(text(),'suggested vacation packages')]/..//div[@class='dvEachSuggItin'][4]//a");
 
 	public static By getmoreHighLightsBtn() {
 		return moreHighlightsBtn;
@@ -88,4 +93,29 @@ public class HomePageLocators {
 	public static By getexploreAsiaLnk() {
 		return exploreAsiaLnk;
 	}
+	
+	public static By gethighlightandAttractiontitle() {
+		return highlightandAttractiontitle;
+	}
+	
+	public static By getFirstHighLightandAttraction() {
+		return FirstHighLightandAttraction;
+	}
+
+	public static By getTitle() {
+		
+		return title;
+	}
+
+	public static By getTopdeals() {
+	
+		return topdeals;
+	}
+	
+	//vaishali
+public static By getPackageDisplayedUnderSuggestedVacationPackageOption() {
+		
+		return suggestedVacationPackageOption;
+	}
+	
 }

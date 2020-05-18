@@ -10,7 +10,6 @@
       <run>
         <include name="smoke"/>
         <include name="regression"/>
-        <include name="testdemo"/>
       </run>
     </groups>
     <classes>
@@ -18,9 +17,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="multipleCities_TC_21" invocation-numbers="0"/>
-          <include name="bookingDetailswithPremiumEcomomy_TC_18" invocation-numbers="0"/>
-          <include name="verifySpotlightLink_TC_14" invocation-numbers="0"/>
+          <include name="removeAddedCity_WithAdditonalChanges_TC_17" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>

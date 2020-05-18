@@ -3,18 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tripmasters.framework.testScript.HomePageTestScript">
+      <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyPopularVacationPackages_TC_13" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="verifyOtherVacationPackages_TC_12" invocation-numbers="0"/>
-          <include name="verifyCity_TC_10" invocation-numbers="0"/>
-          <include name="verifyStartAgainLink_TC_15" invocation-numbers="0"/>
-          <include name="verifyMoreHighlightAndAttractionLinks_Mob_TC_11" invocation-numbers="0"/>
-          <include name="verifyFooterText_TC_16" invocation-numbers="0"/>
+          <include name="removeAddedCity_WithAdditonalChanges_TC_17" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
+      </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

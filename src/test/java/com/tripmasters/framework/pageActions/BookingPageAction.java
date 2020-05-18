@@ -22,6 +22,7 @@ import com.tripmasters.framework.reports.Logs;
 public class BookingPageAction extends PageBase {
 
 	ExtentTest test;
+	String secondCityHotel ;
 	
 	public BookingPageAction(WebDriver driver) {
 		super(driver);
@@ -172,7 +173,27 @@ return selectedcabin;
 		}
 		return flightvalue;
 
+	}//===========Satyam==========
+	//Divide cheaperflight button method into small units we are returning and verifying
+	//more then one values here.
+	
+	//===============CheaperFlightbutton ==============
+	public void cheaperFlightbutton() throws Exception {
+		isElementDisplayed(BookingLocators.getcheaperFlightsLink());
+		scrollDown();
+		PageBase.waitForElement(3);
+		clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
+		
+		clickUsingJavaScript(BookingLocators.getselectFlightOption());
+		clickUsingJavaScript(BookingLocators.getselectbutton());
+		isElementDisplayed(BookingLocators.getcontinueLink());
+		scrollDown();
+		scrollDown();
+		scrollDown();
+		clickUsingJavaScript(BookingLocators.getcontinueLink());
+		
 	}
+	
 
 	public  String selectCheaperFlights_Mob() throws Exception {
 		
@@ -312,6 +333,14 @@ return selectedcabin;
 		scrollDown();
 		clickUsingJavaScript(BookingLocators.getTripInclusionContinueButtonmob());
 		}
+		else if(TestBase.flag_Mob)  {
+			boolean isElementDisplayed = true;
+			if (driver.findElement(BookingLocators.getTripInclusionContinueButtonmob()).isDisplayed()) {
+				isElementDisplayed = false;
+				System.out.println("Selected Flight is not available on given date.");
+			}
+		
+		}
 	}
 
 	public  void getWithoutButton() {
@@ -347,6 +376,50 @@ return selectedcabin;
 		String expectedhotel = driver.findElement(BookingLocators.getExpectedHotel()).getText();
 		return expectedhotel;
 	}
+	
+	//==============Satyam==============//
+	public String secondCityHotelName() {
+		String expectedHotelName = driver.findElement(BookingLocators.getSecondCityHotel()).getText();
+		return expectedHotelName;
+	}
+	
+	public String browseHotelSecondCity() throws Exception {
+		if(TestBase.flag_Mob) {
+			scrollDownForMob(2);
+		}
+		clickUsingJavaScript(BookingLocators.getbrowseHotelsForSecondCity());
+		if(!TestBase.flag_Mob){
+			return null;
+			}
+		else{
+			String actualhotel = driver.findElement(BookingLocators.getfirstHoteliOS()).getText();
+			System.out.println("*******"+actualhotel);
+			return actualhotel;
+		}
+		
+	}
+		public void removeSecondCityHotel() throws Exception {
+			if(TestBase.flag_Mob) {
+				scrollDownForMob(2);
+			}
+			secondCityHotel = driver.findElement(BookingLocators.getsecondCityhotelName()).getText();
+			
+			System.out.println("name of the hotel is "+ secondCityHotel);
+			clickUsingJavaScript(BookingLocators.getremoveSecondCityHotel());
+			clickUsingJavaScript(BookingLocators.getremoveSecondCityHotelYesBtn());
+			scrollDownForMob(2);
+			
+		}
+		
+		public void validateSecondCityHotel() {
+			boolean flag = true;
+		if(driver.getPageSource().contains(secondCityHotel)) {
+			 flag = false;
+			Assert.assertFalse(flag);
+		}
+	}
+	
+	
 
 	public  void getContinueLink() {
 		clickUsingJavaScript(BookingLocators.getcontinueLink());
@@ -422,18 +495,29 @@ return selectedcabin;
 		selectOptionByValue(BookingLocators.getstayingDrpdowntwo(), stayingTimeTwo);
 	}
 
-	public  void selectValueFromCalendar() {
+	public  String selectValueFromCalendar(int additionaldays) {
 		clickOnElement(BookingLocators.getArriveDateDropdown());
-		String newDate = selectNewDateFromCalendar();
-		List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
+		String newDate = selectNewDateFromCalendar(additionaldays);
+		String[] newDateDay = newDate.split("/");
+	String selectdate=newDateDay[1];	
+	
+	List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
 		for (WebElement cell : columns) {
-			if (cell.getText().equals(newDate)) {
-				cell.findElement(By.linkText(newDate)).click();
+			if (cell.getText().equals(selectdate)) {
+				cell.findElement(By.linkText(selectdate)).click();
 				//test.log(LogStatus.INFO, "User selects '" + newDate + "' as Arriving_On Date");
 				break;
 			}
 		}
+		return newDate;
 	}
+	
+	
+	
+	
+	
+	
+	
 
 	public  void selectCabinClass(String cabinclass) {
 		if(!TestBase.flag_Mob)
@@ -622,6 +706,33 @@ return selectedcabin;
 			clickOnElement(BookingLocators.getBuildYourVacationDropDown());
 	}
 	
+	
+	
+	
+	/**
+	 * click On Europe Page Vacation Drop Down on mobile browser
+	 * 
+	 * @author Satyam
+	 * @throws Exception 
+	 */
+	public  void geteuropecreateVacationDrpDown() throws Exception {
+		if (TestBase.flag_Mob)
+			PageBase.waitForElement(5);
+		clickOnElement(BookingLocators.geteuropecreateVacationDrpDown());
+	}
+	
+	public  void getexploreLink() throws Exception {
+		if (TestBase.flag_Mob)
+			PageBase.waitForElement(5);
+			clickUsingJavaScript(BookingLocators.getexploreLink());
+			scrollDownForMob(1);
+			PageBase.waitForElement(5);
+	}
+	
+	
+	
+	
+	
 	public void clickOnAddCityBtn(){
 		clickUsingJavaScript(BookingLocators.getaddCityBtn());
 	}
@@ -635,4 +746,104 @@ return selectedcabin;
 		clearAndSetValues(BookingLocators.getgoingToTextboxThird(), destination_third);
 		//Logs.info("User entered '" + destination_third + "' into Second Going to field");
 	}
+//satyam
+	public void clickOnViewPrice() {
+		clickUsingJavaScript(BookingLocators.getViewPricebtn());
+		
+	}
+	//===========Methods By Vaishali===========
+	public boolean isTravelByDisplayed()
+	{
+		boolean result = false;
+		if(driver.findElement(BookingLocators.getTravelBy()).isDisplayed()){
+			result = true;
+		}
+		return result;
+	}
+	
+	public void clickOnPackageDisplayedUnderSuggestedVacationPackageOption() throws Exception {
+		scrollDownForMob(3);
+		clickUsingJavaScript(HomePageLocators.getPackageDisplayedUnderSuggestedVacationPackageOption());
+	}
+	
+	public void clickOnReorderCitiesLink() throws Exception {
+		scrollDownForMob(2);
+		clickUsingJavaScript(BookingLocators.getreorderCitiesLink());
+		
+	}
+	
+	public void fillLeavingFromDetailsOnEuropePage(String leavingFrom) throws Exception {
+		clearAndSetValues(BookingLocators.getleavingtextBoxOnEuropePage(), leavingFrom);
+		//logs.info("User entered '" + leavingFrom + "' into leaving from field");
+	}
+	
+	public  void selectNumberOfChildNewPage(String numOfChild, String ageOfChild, String childType) throws Exception
+	{
+
+	if(TestBase.flag_Mob)
+	{
+	    if(childType.equals("Child1"))
+			{
+				// clickUsingJavaScript(BookingLocators.getselectfirstRoomAdultPlus());
+				clickUsingJavaScript(BookingLocators.getselectfirstRoomChildPlus());
+				PageBase.waitForElement(3);
+				driver.findElement(BookingLocators.getfirstChildDropdowniOS()).click();
+				PageBase.waitForElement(3);
+				driver.findElement(BookingLocators.getselectChildAgeDopdownMobNewPage()).click();
+				PageBase.waitForElement(2);
+			} else {
+				clickUsingJavaScript(BookingLocators.getselectsecondRoomChildPlus());
+				PageBase.waitForElement(3);
+				driver.findElement(BookingLocators.getsecondRoomChildDropdowniOS()).click();
+				PageBase.waitForElement(3);
+				driver.findElement(BookingLocators.getselectRoomTwoChildAgeDropDownMobNEWPage()).click();
+				PageBase.waitForElement(2);
+			}
+	}
+
+
+	}
+	public void clickToRemoveGalwayCityLink() {
+		clickUsingJavaScript(BookingLocators.getremoveGalwayCitylinkOnRoomPage());
+	}
+	
+	public void deleteGalwayCity()  {
+		clickUsingJavaScript(BookingLocators.getsecondremovecitylink());
+	}
+
+	public void clickToRemoveLimerickCityLink() {
+		clickUsingJavaScript(BookingLocators.getremoveLimerickCitylinkOnRoomPage());
+	}
+	
+public void deleteLimrickCity()  {
+		
+		clickUsingJavaScript(BookingLocators.getsecondremovecitylink());
+	}
+
+public  void validateremovedGalwaycity() {
+	boolean flag = false;
+	try {
+		driver.findElement(BookingLocators.getsecondremovecitylink());
+		flag = false;
+	} catch (Exception NoSuchElementException) {
+		flag = true;
+	}
+	Assert.assertTrue(flag);
+}
+
+public void selectCarFromTransportation() throws Exception {
+	
+	driver.findElement(BookingLocators.getselectTravelByCarClickFirst()).click();
+	PageBase.waitForElement(2);
+	driver.findElement(BookingLocators.getselectTravelCarClickSecond()).click();
+	
+}
+
+public boolean verifyTravelByTrain() {
+	boolean result = false;
+	if(driver.findElement(BookingLocators.getverifyTravelByTrain()).isDisplayed()){
+		result = true;
+	}
+	return result;
+}
 }

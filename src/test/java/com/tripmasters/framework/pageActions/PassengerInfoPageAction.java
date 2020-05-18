@@ -309,5 +309,13 @@ public class PassengerInfoPageAction extends PageBase {
 		}
 		return list;
 	}
+	
+	public boolean isErrorMessageDisplayed() {
+		boolean result = false;
+		if(driver.findElement(PassengerInformationLocators.geterrorMessage()).isDisplayed());{
+			result = true;
+		}
+		return result;
+	}
 
 }
