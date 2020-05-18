@@ -676,15 +676,15 @@ public class BookingPageTestScript extends TestBase {
 		logs.info("Verify that multiple cities got selected as destinations");
 		logs.info("Verify that RemoveCity Link is also displayed for added cities");
 		bookingPage.deleteAddedCities();
-		Thread.sleep(4000);
+		Thread.sleep(8000);
 		test.log(LogStatus.INFO, "Delete all the added cities");
 		logs.info("Delete all the added cities");
 		bookingPage.validateremovedcity();
-		Thread.sleep(4000);
+		Thread.sleep(8000);
 		test.log(LogStatus.INFO, "All the added cities removed successfully.Verified!");
 		logs.info("All the added cities removed successfully.Verified!");
 		bookingPage.getNoMoreCitiesButton();
-		Thread.sleep(8000);
+		Thread.sleep(16000);
 		bookingPage.selectGuestDetails("1|1");
 		test.log(LogStatus.INFO, "Select Guest Details");
 		bookingPage.clickonContinueButton();
