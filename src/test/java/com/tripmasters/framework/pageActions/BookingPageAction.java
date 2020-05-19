@@ -495,8 +495,19 @@ return selectedcabin;
 		selectOptionByValue(BookingLocators.getstayingDrpdowntwo(), stayingTimeTwo);
 	}
 
-	public  String selectValueFromCalendar(int additionaldays) {
+	public  String selectValueFromCalendar(int additionaldays,int n) throws Exception {
 		clickOnElement(BookingLocators.getArriveDateDropdown());
+		
+		if(n>=2) {
+		for(int i=0;i<=n;i++)
+		{
+			clickOnElement(BookingLocators.getnavMonth());
+		}
+		}else if(n<1) {
+			clickOnElement(BookingLocators.getnavMonth_prev());
+		}
+		
+		//.sleep(20000);
 		String newDate = selectNewDateFromCalendar(additionaldays);
 		String[] newDateDay = newDate.split("/");
 	String selectdate=newDateDay[1];	
@@ -504,7 +515,9 @@ return selectedcabin;
 	List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
 		for (WebElement cell : columns) {
 			if (cell.getText().equals(selectdate)) {
+				Thread.sleep(20000);
 				cell.findElement(By.linkText(selectdate)).click();
+	//			Thread.sleep(10000);
 				//test.log(LogStatus.INFO, "User selects '" + newDate + "' as Arriving_On Date");
 				break;
 			}
@@ -512,10 +525,29 @@ return selectedcabin;
 		return newDate;
 	}
 	
+	public  String selectValueFromCalendar_1(int additionaldays) throws Exception {
+		clickOnElement(BookingLocators.getArriveDateDropdown());
+		WebElement e = driver.findElement(BookingLocators.getArriveDateCalender());
+		
+		Thread.sleep(20000);
+		String newDate = selectNewDateFromCalendar(additionaldays);
+		String[] newDateDay = newDate.split("/");
+	String selectdate=newDateDay[1];	
+	Thread.sleep(5000);
 	
-	
-	
-	
+	List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
+		for (WebElement cell : columns) {
+			if (cell.getText().equals(selectdate)) {
+				Thread.sleep(20000);
+				cell.findElement(By.linkText(selectdate)).click();
+				Thread.sleep(10000);
+				//test.log(LogStatus.INFO, "User selects '" + newDate + "' as Arriving_On Date");
+				break;
+			}
+		}
+		
+		return newDate;
+	}
 	
 	
 

@@ -194,7 +194,8 @@ public class BookingLocators {
 	private static By selectTravelCar2Click = By.xpath("//span[@id='spTransRank12']//span[@class='spMtranspR']");
 	private static By selectTravelByCar1Click = By.xpath("//span[@id='spTransRank11']//span[@class='spMtranspR']");
 	private static By verifyTravelByTrain = By.xpath("//div[@class='col-10']//child::div[contains(text(),'INTER-CITY TRANSFER')]");
-	
+	private static By navMonth = By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']");
+	private static By navMonth_prev = By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-w']");
 	
 	/**
 	 * @return the emailId
@@ -798,6 +799,15 @@ public static By getselectTravelByCarClickFirst() {
 public static By getverifyTravelByTrain() {
 	
 	return verifyTravelByTrain;
+}
+
+public static By getnavMonth() {
+	// TODO Auto-generated method stub
+	return navMonth;
+}
+
+public static By getnavMonth_prev() {
+	return navMonth_prev;
 }
 
 

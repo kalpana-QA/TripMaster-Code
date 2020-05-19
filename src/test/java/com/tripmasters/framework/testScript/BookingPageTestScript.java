@@ -37,7 +37,10 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
 		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
-		bookingPage.selectValueFromCalendar(180);
+		String date = bookingPage.selectValueFromCalendar(180 ,3);
+		
+	
+		test.log(LogStatus.INFO,   "User selects '" + date + "'from calendar");
 		bookingPage.selectStayingTime("4");
 		test.log(LogStatus.INFO, "User entered \"4\" nights staying time");	
 		bookingPage.selectNoMoreCitiesBtn();
@@ -104,7 +107,10 @@ public class BookingPageTestScript extends TestBase {
 			test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
 			bookingPage.fillGoingToCityDetails("London (England)");
 			test.log(LogStatus.INFO, "User entered \"London(England)\" into Going to from field");
-			bookingPage.selectValueFromCalendar(90);
+			String date = bookingPage.selectValueFromCalendar(120 ,2);
+			
+			
+			test.log(LogStatus.INFO,   "User selects '" + date + "'from calendar");
 			bookingPage.selectStayingTime("6");
 			test.log(LogStatus.INFO, "User entered \"6\" nights staying time");	
 			bookingPage.clickOnAddCityBtn();
@@ -228,7 +234,10 @@ public class BookingPageTestScript extends TestBase {
 		PageBase.waitForElement(3);
 		bookingPage.fillLeavingFromDetails("Seattle, WA");
 		test.log(LogStatus.INFO, "User entered \"Seattle, WA\" into leaving from field");
-		bookingPage.selectValueFromCalendar(75);
+		String date = bookingPage.selectValueFromCalendar(175 ,0);
+		
+		
+		test.log(LogStatus.INFO,   "User selects '" + date + "'from calendar");
 		bookingPage.fillGoingToCityDetails("Dublin (Ireland)");
 		test.log(LogStatus.INFO, "User entered \"Dublin (Ireland)\" into Going to from field");
 		bookingPage.selectStayingTime("3");
@@ -694,6 +703,10 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.clickOnAddCityBtn();
 		bookingPage.fillSecndAddedCityDetails("Augsburg (Germany)");
 		test.log(LogStatus.INFO, "User entered \"Augsburg (Germany)\" into Going to from field");
+        String date = bookingPage.selectValueFromCalendar(180 ,1);
+		
+		
+		test.log(LogStatus.INFO,   "User selects '" + date + "'from calendar");
 		bookingPage.selectStayingTime("4");
 		bookingPage.selectNoMoreCitiesBtn();
 		bookingPage.selectGuestDetails("1|Other");
@@ -758,7 +771,10 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Delhi (India)");
 		test.log(LogStatus.INFO, "User entered \"Delhi (India)\" into Going to from field");
-		bookingPage.selectValueFromCalendar(180);
+		String date = bookingPage.selectValueFromCalendar(180 ,3);
+		
+		
+		test.log(LogStatus.INFO,   "User selects '" + date + "'from calendar");
 		bookingPage.selectStayingTime("6");
 		test.log(LogStatus.INFO, "User entered \"6\" nights staying time");	
 		bookingPage.selectNoMoreCitiesBtn();
@@ -816,9 +832,8 @@ public class BookingPageTestScript extends TestBase {
 		 test.log(LogStatus.INFO, "User entered \"New York City (all Airports),  NY\" into leaving from field");
 		 bookingPage.fillGoingToCityDetails("Rome (Italy)");
 		 test.log(LogStatus.INFO, "User entered \"Rome (Italy)\" into going to field");
-		 //bookingPage.selectValueFromCalendar(90);
-		 String selectDate=bookingPage.selectValueFromCalendar(90);
-		 test.log(LogStatus.INFO,   "User selects '" + selectDate + "'from calendar");
+		 
+		 
 		 bookingPage.selectStayingTime("4");
 		 test.log(LogStatus.INFO, "User entered \"4\" nights staying time in Rome (Italy)");
 		 bookingPage.clickOnAddCityBtn();
@@ -891,7 +906,7 @@ public class BookingPageTestScript extends TestBase {
 			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler3Name(), expectedThirdTravellerInfo);
 			test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");	  
 	  }
-//	
+	
 //	
 //	
 //	
@@ -1080,7 +1095,7 @@ public class BookingPageTestScript extends TestBase {
 //		test.log(LogStatus.INFO, "Validate that user is on TripInclusion Page");
 //		//Logs.info("Validate that user is on TripInclusion Page");
 //	}
-////	//Vaishali
+//	//Vaishali
 	@Test(groups= {"smoke"},priority=11)
 	public void removeAddedCity_WithAdditonalChanges_TC_17(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "removeAddedCity_WithAdditonalChanges_TC_17");
@@ -1145,13 +1160,13 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Validate that user is on TripInclusion Page");
 		//logs.info("Validate that user is on TripInclusion Page");
 	}
-//	
-//	
-//	
-//	
-//	
-//
-//	
+	
+	
+	
+	
+	
+
+	
 	@Test(groups= {"regression"},priority=13)
 	public void verifySpotlightLink_TC_14(Method method) throws Exception {
     	String PageTitle=null;
@@ -1195,6 +1210,10 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.clickOnBuildYourVacationDropDown();
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
 		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
+		String date = bookingPage.selectValueFromCalendar(180 ,2);
+		
+		
+		test.log(LogStatus.INFO,   "User selects '" + date + "'from calendar");
 		bookingPage.selectStayingTime("12");
 		bookingPage.selectNoMoreCitiesBtn();
 		bookingPage.selectGuestDetails("1|Other");
