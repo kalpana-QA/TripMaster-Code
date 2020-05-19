@@ -1356,12 +1356,12 @@ public class BookingPageTestScript extends TestBase {
 		 test.log(LogStatus.INFO, "User selects an option from Vacation Package Ideas");
 		bookingPage.fillLeavingFromDetails_FirstPckg("Washington (all Airports), DC");
 		test.log(LogStatus.INFO, "User entered \"Washington (all Airports), DC\" into leaving from field");
+		Thread.sleep(8000);
 		String selectDate=bookingPage.selectValueFromCalendar_FirstPckg(90);
 		test.log(LogStatus.INFO,   "User selects '" + selectDate + "'from calendar");		
 		Thread.sleep(8000);
 		bookingPage.selectGuestDetails_FirstPckgOneRoom("1|2");
 		test.log(LogStatus.INFO, "User selects 1 Room with two Adults");
-		
 		Thread.sleep(8000);
 		bookingPage.clickOnViewPrice();
 		test.log(LogStatus.INFO, "User clicks on View Price Button");
@@ -1369,6 +1369,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User clicks on remove second city button");
 		Thread.sleep(8000);
 		bookingPage.clickToYesOnDialogBox();
+		Thread.sleep(8000);
 		test.log(LogStatus.INFO, "User clicks to Yes button on Dialog Box");
 		bookingPage.getContinueLink();
 		test.log(LogStatus.INFO, "User clicks on Continue Button");
@@ -1390,6 +1391,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Second Traveller");
 		Thread.sleep(8000);
 		bookingPage.getTripinclusionContinueButton();
+		Thread.sleep(8000);
 		bookingPage.clicktoContinuePage();
 		test.log(LogStatus.INFO, "Click to Continue & User redirected to Payment Page");
 		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
@@ -1412,20 +1414,23 @@ public class BookingPageTestScript extends TestBase {
 			Thread.sleep(8000);
 			bookingPage.fillGoingToCityDetails("Dublin (Ireland)");
 			test.log(LogStatus.INFO, "User entered \"Dublin (Ireland)\" into Going to from field");
+			Thread.sleep(8000);
 			String selectDate=bookingPage.selectValueFromCalendar(75);
 			test.log(LogStatus.INFO,   "User selects '" + selectDate + "'from calendar");	
 			Thread.sleep(8000);
 			bookingPage.selectStayingTime("4");
 			test.log(LogStatus.INFO, "User entered \"4\" nights staying time");	
+			Thread.sleep(8000);
 			bookingPage.clickOnAddCityBtn();
 			test.log(LogStatus.INFO, "User clicks on Add City Button");
+			Thread.sleep(8000);
 			bookingPage.fillSecndAddedCityDetails("Galway (Ireland)");
 			test.log(LogStatus.INFO, "User entered another city:Galway (Ireland)");
+			Thread.sleep(8000);
 			bookingPage.selectStayingTimeTwo("4");
 			test.log(LogStatus.INFO, "User entered \"4\" nights staying time");	
 			bookingPage.clickOnAddCityBtn();
 			test.log(LogStatus.INFO, "User clicks on Add City Button");
-			
 			Thread.sleep(8000);
 			bookingPage.fillThirdAddedCityDetails("Limerick (Ireland)");
 			test.log(LogStatus.INFO, "User select another city:Limerick (Ireland)");
@@ -1486,11 +1491,13 @@ public class BookingPageTestScript extends TestBase {
 			test.log(LogStatus.INFO, "User select \"1 Child\" in Room2,Age of Child:7");	
 			bookingPage.clickonContinueButton();
 			test.log(LogStatus.INFO, "Click on Continue Button");
+			Thread.sleep(8000);
 			bookingPage.selectCheaperFlights();
 			test.log(LogStatus.INFO, "User clicks on Select Cheaper Flights Link");
 			test.log(LogStatus.INFO, "User selects a particular flight from existing options");
 			test.log(LogStatus.INFO, "User selects cabin class Coach/Economy");
 			test.log(LogStatus.INFO, "User clicks on Continue Link");
+			Thread.sleep(8000);
 			bookingPage.clicktoContinuePage();
 			test.log(LogStatus.INFO, "User clicks on Continue  to arrive in Pax Info Page");
 			expectedFirstTravellerInfo = passengerInfoPage.fillTravellerDetailsForMultipleRooms("Room1Traveller1");
