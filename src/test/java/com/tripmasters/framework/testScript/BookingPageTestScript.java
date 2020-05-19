@@ -572,7 +572,7 @@ public class BookingPageTestScript extends TestBase {
 //	}
 //	
 
-	 @Test(groups= {"smoke"},priority=1)
+	 @Test(groups= {"smoke"},priority=16)
 	public void withoutAirBookingForSingleCity_TC_19(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "withoutAirBookingForSingleCity_TC_19");
 		bookingPage.selectWithoutAir();
@@ -1348,7 +1348,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Validate error message for Mandatory Fields");
 	}	
 	//new
-	@Test(groups= {"smoke"},priority=16)
+	@Test(groups= {"smoke"},priority=1)
 	public void FirstPackageoptionalongwithRemoveHotelFunc_TC_4(Method method) throws Exception {
 		 ExtentTest test = ExtentTestManager.startTest(method.getName(), "Flight booking journey with for First Package option along with Remove Hotel Functionality ");
 		 Thread.sleep(8000);
