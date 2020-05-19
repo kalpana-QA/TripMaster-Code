@@ -938,6 +938,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
 		logs.info("Select Cheaper flights from flight options");
 		test.log(LogStatus.INFO, "User clicks on Continue button");
+		Thread.sleep(20000);
 		bookingPage.validateTripIncluisonPage();
 		Thread.sleep(8000);
 		test.log(LogStatus.INFO, "Validate that selected flight on Review & Customize Package Page");
