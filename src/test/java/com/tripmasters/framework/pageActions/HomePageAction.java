@@ -1,10 +1,13 @@
 package com.tripmasters.framework.pageActions;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.tripmasters.framework.base.PageBase;
 import com.tripmasters.framework.base.TestBase;
@@ -176,6 +179,40 @@ for (WebElement webElement : topDeals) {
 		return moreAttractions;
 	
 		
+	}
+	
+	public void clickOnMoreHighLight() throws Exception {
+		
+		PageBase.scrollDown();
+		clickUsingJavaScript(HomePageLocators.getmoreHighLightsBtn());
+	}
+	
+	public void clickonFirstHighlight() {
+		clickUsingJavaScript(HomePageLocators.getFirstHighLightsBtn());
+	}
+
+	public void clickOnBuildYourOwnVacation() throws Exception {
+		PageBase.scrollDown();
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='dvGoUrl']/a")));
+		element.click();
+
+
+		
+//		PageBase.scrollDown();
+//		Thread.sleep(5000);
+//		PageBase.waitForElement(5);
+//		clickUsingJavaScript(HomePageLocators.clickOnBuildYourOwnVacation());
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//		driver.get("http://asia/Design_Your_Own_Trip.aspx");
+//		
+//		
+//				//driver.driver.findElement(HomePageLocators.clickOnBuildYourOwnVacation()).click();
+		
+	}
+
+	public void clickOnCustomizeit() {
+		clickUsingJavaScript(HomePageLocators.clickOnCustomizeit());
 	}
 
 }

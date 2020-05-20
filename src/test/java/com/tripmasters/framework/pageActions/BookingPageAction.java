@@ -87,6 +87,43 @@ public class BookingPageAction extends PageBase {
 	}
 	
 
+	
+	public  void selectGuestDetails_dealsPage(String guestInfo) throws Exception {
+
+		if (TestBase.flag_Mob) {
+			WebElement w = driver.findElement(BookingLocators.selectGuestRoomOptions_viewpage());
+			w.click();
+			
+			
+			clickUsingJavaScript(BookingLocators.getselectGuestRoomOptionsDrpdown());
+			WebElement wb = driver.findElement(BookingLocators.getoptionListForGuestsAndRooms())
+					.findElement(By.xpath(".//li[@id='" + guestInfo + "']"));
+			clickUsingJavaScript(wb);
+
+		//	clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
+		//	clickUsingJavaScript(BookingLocators.getdoneButton());
+			clickUsingJavaScript(BookingLocators.selectguestminus());
+			clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
+			//clickUsingJavaScript(BookingLocators.getdoneButton());
+			
+			
+			// selectNumberOfAdult("1", BookingLocators.getselectAdultRoom2Drpdown());
+			 selectnumberofadultsRoom_2iOS();
+			//Logs.info("User select '" + guestInfo + "' from Guest list");
+			//test.log(LogStatus.INFO, "User select '" + guestInfo + "' from Guest list");
+		} else {
+			selectOptionByValue(BookingLocators.getselectGuestDrpdown(), guestInfo);
+			//Logs.info("User select '" + guestInfo + "' from Guest list");
+			//test.log(LogStatus.INFO, "User select '" + guestInfo + "' from Guest list");
+		}
+	}
+
+	
+	
+	
+	
+	
+	
 	public String selectPremiumEconomy()
 	{
 	String actualCabin=null;
@@ -156,7 +193,32 @@ return selectedcabin;
 		clickUsingJavaScript(BookingLocators.getcontinueLink());
 		}
 	}
-
+	
+	public void clickOncheaperFlights() throws Exception {
+		isElementDisplayed(BookingLocators.getcheaperFlightsLink());
+		scrollDown();
+		PageBase.waitForElement(3);
+		clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
+		
+	}
+	
+	public void selectOnCheaperFlightPage()
+	{
+		clickUsingJavaScript(BookingLocators.getSelectOncheaperFlightsPage());
+		
+	}
+	
+	public void selectCabin() throws Exception {
+		scrollDown();
+		isElementDisplayed(BookingLocators.getCabinbtn());
+		
+		PageBase.waitForElement(3);
+		clickUsingJavaScript(BookingLocators.getCabinbtn());
+		
+	}
+	
+	
+	
 	public  String selectCheaperFlights() throws Exception {
 		String flightvalue = null;
 		if (TestBase.flag_Mob) {
@@ -271,17 +333,24 @@ return selectedcabin;
 	//modified by satyam
 	public  void selectNumberOfChild(String numOfChild, String ageOfChild, String childType) throws Exception
 	{
-
+		
+		
 	if(TestBase.flag_Mob)
 	{
 	    if(childType.equals("Child1"))
 			{
 				// clickUsingJavaScript(BookingLocators.getselectfirstRoomAdultPlus());
 				clickUsingJavaScript(BookingLocators.getselectfirstRoomChildPlus());
-				PageBase.waitForElement(3);
+				PageBase.waitForElement(20);
+				Thread.sleep(20000);
 				driver.findElement(BookingLocators.getfirstChildDropdowniOS()).click();
 				PageBase.waitForElement(3);
-				driver.findElement(BookingLocators.getselectChildAgeDropdownMob()).click();
+				
+					//driver.findElement(BookingLocators.getselectChildAgeDropdownMob_eleven()).click();
+				
+				
+				
+					driver.findElement(BookingLocators.getselectChildAgeDropdownMob()).click();
 				PageBase.waitForElement(2);
 			} else {
 				clickUsingJavaScript(BookingLocators.getselectsecondRoomChildPlus());
@@ -329,6 +398,7 @@ return selectedcabin;
 	}
 	public void getTripinclusionContinueButton() throws Exception {
 		if(TestBase.flag_Mob){
+		scrollDown();
 		scrollDown();
 		scrollDown();
 		clickUsingJavaScript(BookingLocators.getTripInclusionContinueButtonmob());
@@ -499,11 +569,11 @@ return selectedcabin;
 		clickOnElement(BookingLocators.getArriveDateDropdown());
 		
 		if(n>=2) {
-		for(int i=0;i<=n;i++)
+		for(int i=1;i<n;i++)
 		{
 			clickOnElement(BookingLocators.getnavMonth());
 		}
-		}else if(n<1) {
+		}else if(n==1) {
 			clickOnElement(BookingLocators.getnavMonth_prev());
 		}
 		

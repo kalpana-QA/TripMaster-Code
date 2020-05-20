@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="removeAddedCity_WithAdditonalChanges_TC_17" invocation-numbers="0"/>
+          <include name="bookingSingleRoomtwoAdultOneChildTC_2" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>

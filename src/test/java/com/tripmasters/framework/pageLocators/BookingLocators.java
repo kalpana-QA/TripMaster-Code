@@ -1,9 +1,10 @@
 package com.tripmasters.framework.pageLocators;
 
 import org.openqa.selenium.By;
-
+//input[id='cabinRoomPax']
 public class BookingLocators {
-	private static By selectGuestRoomOptions = By.cssSelector("input[id='xcabinRoomPax'] ");
+	private static By selectGuestRoomOptions = By.cssSelector("input[id='xcabinRoomPax']");
+	private static By selectGuestRoomOptions_viewpage = By.xpath("//input[@id='cabinRoomPax']");
 	private static By selectGuestRoomOptionsDrpdown = By.cssSelector("div[id='dvpaxRoom']");
 	private static By optionListForGuestsAndRooms = By.cssSelector("div[id='dvpxroomlst'][style='display: block;']");
 	private static By doneButton = By.xpath("//p[text()='Done']");
@@ -109,14 +110,14 @@ public class BookingLocators {
 	private static By selectChildRoom2Drpdown = By.xpath("//select[@id='xRoom2_iChildren'] | //input[@id='xRoom2_iChildren']");
 	private static By selectChildAgeRoom2Drpdown = By.xpath("//select[@id='xRoom2_iChild1'] | //input[@id='xRoom2_iChild1']");
 
-	private static By selectAdultDrpdown = By.xpath("//select[@id='xiAdults'] | //input[@id='xiAdults']");
-	
+	private static By selectAdultDrpdown = By.xpath("//select[@id='xiAdults']  | //input[@id='xiAdults'] | //input[@id='iAdults'] | //span[@id='adultPlus']");
+	private static By selectguestminus = By.xpath("//span[@id='adultMinus']");
 	private static By selectAdultRoom2Drpdown = By.xpath("//select[@id='xRoom2_iAdults'] | //input[@id='xRoom2_iAdults']");
 	public static By selectChildAgeDrpdown = By.xpath("//select[@id='xiChild1'] | //input[@id='xiChild1']");
 	private static By cheaperFlightsLink = By.xpath("(//a[contains(.,'Find cheaper flights')])[1]");
 	private static By goingToTextboxSecond = By.xpath("//*[@id='qNACity2']");
 
-	private static By arriveDateDropdown = By.xpath("//input[contains(@id,'qArrDate')]");
+	private static By arriveDateDropdown = By.xpath("//input[contains(@id,'qArrDate')] | //input[@id='InDate1']  ");
 	private static By arriveDateCalender = By.xpath("//table[@class='ui-datepicker-calendar']//tbody//td");
 
 	private static By cabinClassDropdown = By.xpath("//select[@id='qCabinOpt']");
@@ -130,14 +131,14 @@ public class BookingLocators {
 	private static By cabinSectionMob = By.cssSelector("div[id='dvMcabin']");
 	private static By selectfirstRoomAdultPlus=By.xpath("//div[@id='dvroom1']/p/span[@id='adultMinus']");
 	private static By SecondRoomadultPlus=By.xpath("//span[@id='adultPlus2']");
-	private static By firstChildDropdowniOS = By.xpath("//input[@id='xiChild1']");
+	private static By firstChildDropdowniOS = By.xpath("//input[@id='xiChild1'] | //input[@id='iChild1'] | //input[@name='xiChild1']");
 	private static By selectsecondRoomChildPlus = By.xpath("//span[@id='childrenPlus2']");
 	private static By secondRoomChildDropdowniOS = By.xpath("//input[@id='xRoom2_iChild1']");
 	private static By selectRoomtwoChildAgeDropdownMob = By.xpath("(//ul[@id='ui-id-3']//li)[2]");
-	private static By selectChildAgeDropdownMob = By.xpath("(//ul[@id='ui-id-1']//li)[2] | (//ul[@id='ui-id-2']//li)[10]");
+	private static By selectChildAgeDropdownMob = By.xpath("(//ul[@id='ui-id-1']//li)[10] | (//ul[@id='ui-id-1']//li)[2] | (//ul[@id='ui-id-2']//li)[10] | (//ul[@id='ui-id-3']//li)[10]");
 	private static By selectfirstRoomChildPlus=By.xpath("//span[@id='childrenPlus']");
 
-	private static By tripInclusionContinueButtonmob=By.xpath("//a[@id='aContWithPriceValidationReview']");
+	private static By tripInclusionContinueButtonmob=By.xpath("//a[@id='aContWithPriceValidationReview'] | //a[@id='aContWithPriceValidation']");
 	private static By firstTravelerFirstNameTextBoxiOS=By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtPFName1' ]");
 	private static By thirdTravelerFirstNameTextBoxMob=By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtPFName3' ]");
 	private static By thirdTravelerLastNameTxtboxMob = By.xpath("//input[contains(@placeholder,'Last Name') and @id='txtPLName3']");
@@ -197,9 +198,22 @@ public class BookingLocators {
 	private static By navMonth = By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']");
 	private static By navMonth_prev = By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-w']");
 	
+	private static By selectChildAgeDropdownMob_eleven = By.xpath("(//ul[@id='ui-id-1']//li)[10])");
+	private static By selectOncheaperFlightsPage = By.xpath("(//span[@class='ml-3'])[1]");
+	private static By cabinbtn = By.xpath("(//div[@class='col-opt']/a[@class='btn-select'])[1]");
+	
+	
+	
+	
+	
+	
 	/**
 	 * @return the emailId
 	 */
+	public static By selectGuestRoomOptions_viewpage() {
+		return selectGuestRoomOptions_viewpage;
+	}
+	
 	public static By getfirstChildDropdowniOS() {
 		return firstChildDropdowniOS;
 	}
@@ -810,5 +824,24 @@ public static By getnavMonth_prev() {
 	return navMonth_prev;
 }
 
+public static By getselectChildAgeDropdownMob_eleven() {
+	// TODO Auto-generated method stub
+	return selectChildAgeDropdownMob_eleven;
+}
 
+public static By getSelectOncheaperFlightsPage() {
+	
+	return selectOncheaperFlightsPage;
+}
+
+public static By getCabinbtn() {
+	// TODO Auto-generated method stub
+	return cabinbtn;
+}
+public static By selectguestminus() {
+	// TODO Auto-generated method stub
+	return selectguestminus;
+}
+
+//selectguestminus
 }
