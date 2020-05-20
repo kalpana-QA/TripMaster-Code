@@ -22,6 +22,7 @@ public class HomePageTestScript extends TestBase {
 	 @Test(groups = { "smoke" }, priority = 16)
 	public void verifyMoreHighlightAndAttractionLinks_TC_11(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyMoreHighlightAndAttractionLinks_TC_11");
+		logs.startTestCase(method.getName());
 		String homePageTitle = homePage.getPageTitle();
 		PageBase.clickUsingJavaScript(HomePageLocators.getmoreHighLightsBtn());
 		test.log(LogStatus.INFO, "User clicked on More HighLights & Attraction Links");
@@ -48,13 +49,14 @@ public class HomePageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "London - Paris and Beyond Link is displayed.");
 		test.log(LogStatus.INFO, "HightLights and Attraction Links Verified");
 		logs.info("verifyMoreHighlightAndAttractionLinks is Passed.");
-
+		logs.endTestCase(method.getName());
 	}
 
 	@Test(groups = { "smoke" }, priority = 17)
 	public void verifyOtherVacationPackages_TC_12(Method method) throws Exception {
 		String PackageTitle;
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyOtherVacationPackages_TC_12");
+		logs.startTestCase(method.getName());
 		homePage.scrollDownForMob(1);
 		PageBase.clickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
 		test.log(LogStatus.INFO, "User clicked on Explore Europe Link");
@@ -68,26 +70,28 @@ public class HomePageTestScript extends TestBase {
 		Assert.assertTrue(romeFlorenceVeniceByTrainHeader);
 		test.log(LogStatus.INFO, "verifyOtherVacationPackages is displayed & testcase passed successfully.");
 		logs.info("verifyOtherVacationPackages is displayed & testcase passed successfully.");
+		logs.endTestCase(method.getName());
 	}
 
 	 @Test(groups = {"smoke"},priority=18)
 	public void verifyPopularVacationPackages_TC_13(Method method) {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "VerifyPopularVacationPackages_TC_13");
+		logs.startTestCase(method.getName());
 		PageBase.clickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
 		test.log(LogStatus.INFO, "Clicked on Popular Vacation Packages");
 		logs.info("Clicked on Popular Vacation Packages");
 		String europePageTitle = homePage.getPageTitle();
-		// Assert.assertEquals(HomePageLocators.getEuropePageTitle().trim(),
 		 Assert.assertEquals(ActionPageData.getEuropePageTitle().trim(),europePageTitle);
-		// europePageTitle.trim());
 		test.log(LogStatus.INFO, "User is able to see all existing popular vacation packages");
 		test.log(LogStatus.INFO, "VerifyPopularVacationPackages displayed");
 		logs.info("VerifyPopularVacationPackages displayed");
+		logs.endTestCase(method.getName());
 	}
 
 	@Test(groups = {"smoke"},priority=19)
 	public void verifyCity_TC_10(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "Verify Search City Button on homepage");
+		logs.startTestCase(method.getName());
 		String verifyhomepage = homePage.getPageTitle();
 		Assert.assertEquals(ActionPageData.getHomePageTitle(), verifyhomepage);
 		test.log(LogStatus.INFO, "Verified User is on homepage");
@@ -101,17 +105,20 @@ public class HomePageTestScript extends TestBase {
 		homePage.validateURL();
 	    test.log(LogStatus.INFO, "User redirected to that particular city.Verified!");
 	    logs.info("User redirected to that particular city.Verified!");
+	    logs.endTestCase(method.getName());
 }
 
 	@Test(groups = {"smoke"},priority=20)
 	public void verifyStartAgainLink_TC_15(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyStartAgainLink_TC_15");
-		//String verifyhomepage = homePage.getPageTitle();
+		logs.startTestCase(method.getName());
 		bookingPage.clickOnBuildYourVacationDropDown();
 		test.log(LogStatus.INFO, "Click on Build Your Vacation Dropdown");
 		logs.info("Click on Build Your Vacation Dropdown");
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
 		bookingPage.fillGoingToCityDetails("Delhi (India)");
+		String selectDate=bookingPage.selectValueFromCalendar(90,1);
+		test.log(LogStatus.INFO,   "User selects '" + selectDate + "'from calendar");
 		bookingPage.selectStayingTime("4");
 		bookingPage.selectNoMoreCitiesBtn();
 		bookingPage.selectGuestDetails("1|2");
@@ -120,15 +127,18 @@ public class HomePageTestScript extends TestBase {
 		homePage.getStartAgain();
 		test.log(LogStatus.INFO, "Verify StartAgain Link is displayed");
 		logs.info("verifyStartAgainLink is displayed");
+		logs.endTestCase(method.getName());
 	}
 
 	@Test(groups = {"smoke"},priority=21)
 	public void verifyFooterText_TC_16(Method method) {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyFooterText_TC_16");
+		logs.startTestCase(method.getName());
 		boolean validatefooter = homePage.validateFooterText();
 		Assert.assertTrue(validatefooter);
 		test.log(LogStatus.INFO, "verifyFooterText is displayed");
 		logs.info("verifyFooterText is displayed");
+		logs.endTestCase(method.getName());
 	}
 
 }

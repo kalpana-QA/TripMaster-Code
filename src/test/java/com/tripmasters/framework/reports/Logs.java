@@ -12,41 +12,22 @@ public class Logs {
 		PropertyConfigurator.configure(System.getProperty("user.dir")+"/src/test/resources/log4j.properties");
 	}
 
+	// This is to print log at the starting of the test case
 	public void startTestCase(String sTestCaseName) {
 
-		Log.info("****************************************************************************************");
-
-		Log.info("****************************************************************************************");
-
-		Log.info("$$$$$$$$$$$$$$$$$$$$$                 " + sTestCaseName + "       $$$$$$$$$$$$$$$$$$$$$$$$$");
-
-		Log.info("****************************************************************************************");
-
-		Log.info("****************************************************************************************");
+		Log.info("*******************          " + sTestCaseName + "      " + "-S-T-A-R-T-E-D-" + "  ****************************************");
 
 	}
 
 	// This is to print log for the ending of the test case
-
 	public void endTestCase(String sTestCaseName) {
 
-		Log.info("XXXXXXXXXXXXXXXXXXXXXXX             " + "-E---N---D-" + "             XXXXXXXXXXXXXXXXXXXXXX");
-
-		Log.info("X");
-
-		Log.info("X");
-
-		Log.info("X");
-
-		Log.info("X");
+		Log.info("XXXXXXXXXXXXXXXXXXXXXXX           " + sTestCaseName + "    " + "-E---N---D-" + "             XXXXXXXXXXXXXXXXXXXXXX");
 
 	}
 
-	// Need to create these methods, so that they can be called
-
 	public static void info(String message) {
 		 Log.info(message);
-		 //ExtentTestManager.getTest().log(LogStatus.INFO, message);
 	}
 
 	public void warn(String message) {

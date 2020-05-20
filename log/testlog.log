@@ -42,3 +42,367 @@
 2020-05-15 20:35:34,637 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
 2020-05-15 20:51:30,801 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
 2020-05-15 21:02:01,849 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 13:32:54,025 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 13:35:22,517 - com.tripmasters.framework.reports.Logs -INFO - All the basic booking details Source & Destination filled successfully for 1_Adult_1Child_With_SingleRoom
+2020-05-19 13:35:24,864 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-05-19 13:35:41,888 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-05-19 13:37:52,012 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-19 14:14:17,001 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 14:17:32,895 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
+2020-05-19 14:17:49,955 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-05-19 14:18:31,624 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-19 14:18:51,845 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-19 14:20:39,832 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-19 14:23:35,546 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-19 14:23:58,931 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-19 14:26:17,329 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 14:26:51,542 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
+2020-05-19 15:15:08,590 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 15:22:36,790 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 15:23:44,986 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 15:30:18,547 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 15:36:31,387 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 15:46:25,804 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 15:50:51,408 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 16:07:18,056 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 16:33:47,266 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 16:45:27,693 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 16:56:55,086 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 17:05:09,300 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-19 17:05:32,953 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-19 17:12:06,822 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 17:12:37,578 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
+2020-05-19 17:15:18,321 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 17:17:40,683 - com.tripmasters.framework.reports.Logs -INFO - All the basic booking details Source & Destination filled successfully for 1_Adult_1Child_With_SingleRoom
+2020-05-19 17:17:43,221 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-05-19 17:18:00,268 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-05-19 17:19:59,767 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-19 17:20:31,255 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 17:33:36,481 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-19 17:34:00,322 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-19 17:34:07,523 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 17:39:36,861 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 17:43:51,924 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 17:46:48,698 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
+2020-05-19 17:47:05,763 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-05-19 17:47:42,150 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-19 17:48:00,638 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-19 17:49:49,636 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-19 17:52:42,866 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-19 17:53:09,706 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-19 17:53:14,505 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 17:53:45,714 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
+2020-05-19 17:54:18,816 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic details of journey:Source,Destination & Staying Time
+2020-05-19 17:54:35,872 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-05-19 17:55:07,515 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-19 17:55:27,093 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-19 17:55:27,093 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
+2020-05-19 17:55:30,833 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 17:56:11,251 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
+2020-05-19 17:58:28,003 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
+2020-05-19 17:59:30,714 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-19 17:59:57,148 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-19 17:59:57,152 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
+2020-05-19 18:00:00,981 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 18:03:27,924 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
+2020-05-19 18:03:27,924 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
+2020-05-19 18:03:28,056 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
+2020-05-19 18:03:28,056 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
+2020-05-19 18:03:47,202 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
+2020-05-19 18:05:31,233 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
+2020-05-19 18:09:31,317 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-19 18:09:36,858 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 18:09:57,880 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 18:10:16,051 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 18:11:07,674 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
+2020-05-19 18:11:07,690 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
+2020-05-19 18:11:07,690 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
+2020-05-19 18:11:07,690 - com.tripmasters.framework.reports.Logs -INFO - Spotlight link verified!
+2020-05-19 18:11:12,140 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 18:12:16,922 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
+2020-05-19 18:12:19,365 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-05-19 18:15:34,213 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-19 18:15:59,583 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-19 18:16:21,055 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 18:17:28,297 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
+2020-05-19 18:17:28,388 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
+2020-05-19 18:17:28,392 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
+2020-05-19 18:17:45,451 - com.tripmasters.framework.reports.Logs -INFO - bookingDetailswithPremiumEcomomy passed
+2020-05-19 18:17:49,367 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 18:22:17,889 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 18:22:53,275 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
+2020-05-19 18:22:53,275 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
+2020-05-19 18:22:53,277 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
+2020-05-19 18:22:53,278 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
+2020-05-19 18:22:53,278 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
+2020-05-19 18:22:57,516 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 18:23:52,465 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
+2020-05-19 18:24:13,198 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
+2020-05-19 18:24:13,240 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-05-19 18:24:18,433 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 18:25:16,073 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
+2020-05-19 18:25:16,079 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
+2020-05-19 18:25:20,626 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 18:25:36,975 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
+2020-05-19 18:25:52,031 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
+2020-05-19 18:27:52,320 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
+2020-05-19 18:27:52,337 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
+2020-05-19 18:27:56,443 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 18:28:08,379 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
+2020-05-19 18:28:57,216 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
+2020-05-19 18:29:12,278 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
+2020-05-19 18:29:16,107 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 18:29:30,962 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
+2020-05-19 19:45:23,010 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 19:54:36,302 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-19 19:55:01,197 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-19 19:55:09,024 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 19:57:36,132 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-19 20:03:29,006 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
+2020-05-19 20:03:29,006 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
+2020-05-19 20:03:29,056 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
+2020-05-19 20:03:29,057 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
+2020-05-19 20:03:48,104 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
+2020-05-19 20:05:32,253 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
+2020-05-19 20:10:05,592 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-19 20:10:14,652 - com.tripmasters.framework.reports.Logs -INFO - Validate that selected flight on Review & Customize Package Page
+2020-05-20 09:36:06,992 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 09:36:57,370 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 09:37:22,048 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 09:41:18,202 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 09:41:56,734 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 09:47:17,693 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 09:49:19,221 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 09:50:48,716 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 09:54:18,435 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 09:56:21,925 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 10:00:45,097 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 10:03:41,224 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-20 10:03:58,058 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-20 10:08:06,760 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-20 10:39:52,628 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 10:43:07,790 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-20 10:43:24,717 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-20 10:45:11,754 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-20 10:47:56,874 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-20 10:48:20,980 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-20 10:52:25,968 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 10:57:21,351 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 11:05:02,209 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 11:05:28,415 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
+2020-05-20 11:07:36,188 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 11:08:11,628 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
+2020-05-20 11:15:35,026 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 11:16:01,633 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
+2020-05-20 11:18:35,769 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 11:20:43,090 - com.tripmasters.framework.reports.Logs -INFO - All the basic booking details Source & Destination filled successfully for 1_Adult_1Child_With_SingleRoom
+2020-05-20 11:20:45,361 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-05-20 11:21:02,392 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-05-20 11:22:49,898 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-20 11:23:11,435 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 11:36:08,065 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 11:47:45,209 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 11:50:04,516 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-05-20 11:52:20,264 - com.tripmasters.framework.reports.Logs -ERROR - Unable to select element by text
+2020-05-20 11:58:41,195 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 11:59:07,968 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
+2020-05-20 12:01:43,426 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 12:03:57,708 - com.tripmasters.framework.reports.Logs -INFO - All the basic booking details Source & Destination filled successfully for 1_Adult_1Child_With_SingleRoom
+2020-05-20 12:03:59,969 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-05-20 12:04:16,997 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-05-20 12:06:08,168 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-20 12:06:30,808 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 12:19:32,546 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-20 12:19:55,173 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-20 12:19:58,882 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 12:25:19,025 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 12:29:42,743 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 12:36:15,820 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-20 12:36:38,378 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-20 12:36:42,140 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 12:39:51,687 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-20 12:40:09,183 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-20 12:41:58,949 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-20 12:44:46,822 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-20 12:45:12,580 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-20 12:45:20,889 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 12:48:37,090 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
+2020-05-20 12:48:54,130 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-05-20 12:49:33,768 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-20 12:49:51,014 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-20 12:51:35,675 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-20 12:54:26,328 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-20 12:54:51,209 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-20 12:54:57,280 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 12:55:24,547 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
+2020-05-20 12:56:17,564 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic details of journey:Source,Destination & Staying Time
+2020-05-20 12:56:34,610 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-05-20 12:57:08,459 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-20 12:57:27,262 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-20 12:57:27,262 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
+2020-05-20 12:57:30,730 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 12:58:07,820 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
+2020-05-20 13:00:44,252 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
+2020-05-20 13:01:45,294 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-20 13:02:09,691 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-20 13:02:09,691 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
+2020-05-20 13:02:13,160 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 13:05:30,007 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
+2020-05-20 13:05:30,008 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
+2020-05-20 13:05:30,049 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
+2020-05-20 13:05:30,050 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
+2020-05-20 13:05:49,095 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
+2020-05-20 13:07:33,161 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
+2020-05-20 13:11:41,691 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-20 13:11:45,699 - com.tripmasters.framework.reports.Logs -INFO - Validate that selected flight on Review & Customize Package Page
+2020-05-20 13:11:50,333 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 13:13:08,162 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
+2020-05-20 13:13:08,166 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
+2020-05-20 13:13:08,167 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
+2020-05-20 13:13:08,167 - com.tripmasters.framework.reports.Logs -INFO - Spotlight link verified!
+2020-05-20 13:13:11,553 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 13:14:54,291 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
+2020-05-20 13:14:56,582 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-05-20 13:18:05,230 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-20 13:18:36,071 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-20 13:18:56,807 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 13:20:45,803 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
+2020-05-20 13:20:45,827 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
+2020-05-20 13:20:45,828 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
+2020-05-20 13:21:02,873 - com.tripmasters.framework.reports.Logs -INFO - bookingDetailswithPremiumEcomomy passed
+2020-05-20 13:21:06,416 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 13:26:07,092 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 13:26:50,309 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
+2020-05-20 13:26:50,310 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
+2020-05-20 13:26:50,310 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
+2020-05-20 13:26:50,310 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
+2020-05-20 13:26:50,310 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
+2020-05-20 13:26:53,734 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 13:28:36,959 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
+2020-05-20 13:29:04,604 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
+2020-05-20 13:29:04,611 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-05-20 13:29:08,226 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 13:30:35,648 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
+2020-05-20 13:30:35,657 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
+2020-05-20 13:30:39,482 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 13:31:09,311 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
+2020-05-20 13:31:24,344 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
+2020-05-20 13:33:24,530 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
+2020-05-20 13:33:24,540 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
+2020-05-20 13:33:30,308 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 13:33:57,029 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
+2020-05-20 13:35:05,176 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
+2020-05-20 13:35:20,223 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
+2020-05-20 13:35:25,921 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 13:36:04,653 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
+2020-05-20 16:10:05,582 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 16:10:34,317 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
+2020-05-20 16:13:17,534 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 16:15:26,926 - com.tripmasters.framework.reports.Logs -INFO - All the basic booking details Source & Destination filled successfully for 2_Adult_1Child_With_SingleRoom
+2020-05-20 16:15:29,300 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-05-20 16:15:46,343 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-05-20 16:17:40,586 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-20 16:18:06,027 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 16:31:09,688 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-20 16:31:32,247 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-20 16:31:36,734 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 16:36:51,412 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 16:41:35,755 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 16:48:10,555 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-20 16:48:34,322 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-20 16:48:38,947 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 16:51:34,095 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-20 16:51:52,852 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-20 16:53:42,006 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-20 16:56:28,323 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-20 16:56:50,179 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-20 16:56:54,038 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 16:59:51,205 - com.tripmasters.framework.reports.Logs -INFO - Booking details filled successfully for multiple cities
+2020-05-20 17:00:08,236 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-05-20 17:00:39,458 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-20 17:00:57,226 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-20 17:02:41,881 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-20 17:05:35,838 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-20 17:05:57,932 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-20 17:06:02,204 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 17:06:30,519 - com.tripmasters.framework.reports.Logs -INFO - Select withOut Air Option on HomePage
+2020-05-20 17:07:23,568 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic details of journey:Source,Destination & Staying Time
+2020-05-20 17:07:40,600 - com.tripmasters.framework.reports.Logs -INFO - Click on Continue Button
+2020-05-20 17:08:04,868 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-20 17:08:23,874 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-20 17:08:23,874 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
+2020-05-20 17:08:29,121 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 17:09:03,719 - com.tripmasters.framework.reports.Logs -INFO - Click on WithOut Air Button
+2020-05-20 17:11:40,423 - com.tripmasters.framework.reports.Logs -INFO - Filled all the basic details of journey along with source & destination
+2020-05-20 17:12:42,090 - com.tripmasters.framework.reports.Logs -INFO - Click on Browse Hotels Button
+2020-05-20 17:13:07,778 - com.tripmasters.framework.reports.Logs -INFO - Select particular hotel from Hotel Options
+2020-05-20 17:13:07,778 - com.tripmasters.framework.reports.Logs -INFO - Verify that only particular selected hotel appears along with passenger details
+2020-05-20 17:13:12,117 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 17:16:31,639 - com.tripmasters.framework.reports.Logs -INFO - Fill all the basic details for multiple cities
+2020-05-20 17:16:31,639 - com.tripmasters.framework.reports.Logs -INFO - Adding multiple cities in destinations
+2020-05-20 17:16:31,679 - com.tripmasters.framework.reports.Logs -INFO - Verify that multiple cities got selected as destinations
+2020-05-20 17:16:31,679 - com.tripmasters.framework.reports.Logs -INFO - Verify that RemoveCity Link is also displayed for added cities
+2020-05-20 17:16:50,773 - com.tripmasters.framework.reports.Logs -INFO - Delete all the added cities
+2020-05-20 17:18:34,974 - com.tripmasters.framework.reports.Logs -INFO - All the added cities removed successfully.Verified!
+2020-05-20 17:22:46,162 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-20 17:22:50,177 - com.tripmasters.framework.reports.Logs -INFO - Validate that selected flight on Review & Customize Package Page
+2020-05-20 17:22:54,009 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 17:23:29,312 - com.tripmasters.framework.reports.Logs -INFO - Select Latin America Link
+2020-05-20 17:23:29,324 - com.tripmasters.framework.reports.Logs -INFO - User redirected to the Latin America Page
+2020-05-20 17:23:29,324 - com.tripmasters.framework.reports.Logs -INFO - User clicks on Spotlight button
+2020-05-20 17:23:29,325 - com.tripmasters.framework.reports.Logs -INFO - Spotlight link verified!
+2020-05-20 17:23:32,897 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 17:24:49,633 - com.tripmasters.framework.reports.Logs -INFO - Booking details Source & Destination filled successfully 
+2020-05-20 17:24:51,905 - com.tripmasters.framework.reports.Logs -INFO - No.of Child & Age of Child got selected successfully
+2020-05-20 17:27:53,461 - com.tripmasters.framework.reports.Logs -INFO - User filled all the passenger details successfully
+2020-05-20 17:28:15,602 - com.tripmasters.framework.reports.Logs -INFO - Flights & passenger details verified successfully on PaymentPage
+2020-05-20 17:28:34,785 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 17:29:55,451 - com.tripmasters.framework.reports.Logs -INFO - Filled flights details with premium economy
+2020-05-20 17:29:55,480 - com.tripmasters.framework.reports.Logs -INFO - Select Cabin class
+2020-05-20 17:29:55,480 - com.tripmasters.framework.reports.Logs -INFO - Selected Cabin class verified
+2020-05-20 17:30:12,507 - com.tripmasters.framework.reports.Logs -INFO - bookingDetailswithPremiumEcomomy passed
+2020-05-20 17:30:16,859 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 17:34:52,586 - com.tripmasters.framework.reports.Logs -INFO - Select Cheaper flights from flight options
+2020-05-20 17:34:58,097 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 17:35:24,704 - com.tripmasters.framework.reports.Logs -INFO - Home Page Title Verified.
+2020-05-20 17:35:24,705 - com.tripmasters.framework.reports.Logs -INFO - The Amazon Link is displayed.
+2020-05-20 17:35:24,705 - com.tripmasters.framework.reports.Logs -INFO - Best Of Middle East Link is displayed.
+2020-05-20 17:35:24,706 - com.tripmasters.framework.reports.Logs -INFO - London - Paris and Beyond Link is displayed.
+2020-05-20 17:35:24,706 - com.tripmasters.framework.reports.Logs -INFO - verifyMoreHighlightAndAttractionLinks is Passed.
+2020-05-20 17:35:30,914 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 17:36:10,499 - com.tripmasters.framework.reports.Logs -INFO - User clicked on Explore Europe Link
+2020-05-20 17:36:30,588 - com.tripmasters.framework.reports.Logs -INFO - User clicked on particular vacation package
+2020-05-20 17:36:30,593 - com.tripmasters.framework.reports.Logs -INFO - verifyOtherVacationPackages is displayed & testcase passed successfully.
+2020-05-20 17:36:36,314 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 17:37:12,362 - com.tripmasters.framework.reports.Logs -INFO - Clicked on Popular Vacation Packages
+2020-05-20 17:37:12,364 - com.tripmasters.framework.reports.Logs -INFO - VerifyPopularVacationPackages displayed
+2020-05-20 17:37:17,255 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 17:37:27,686 - com.tripmasters.framework.reports.Logs -INFO - Verified User is on homepage
+2020-05-20 17:37:42,716 - com.tripmasters.framework.reports.Logs -INFO - Click on Search textBox avialable on HomePage
+2020-05-20 17:39:42,928 - com.tripmasters.framework.reports.Logs -INFO - Search for a particular city & Click on Go Button
+2020-05-20 17:39:42,933 - com.tripmasters.framework.reports.Logs -INFO - User redirected to that particular city.Verified!
+2020-05-20 17:39:47,387 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 17:39:56,111 - com.tripmasters.framework.reports.Logs -INFO - Click on Build Your Vacation Dropdown
+2020-05-20 17:41:04,437 - com.tripmasters.framework.reports.Logs -INFO - User fills all the basic booking details
+2020-05-20 17:41:19,466 - com.tripmasters.framework.reports.Logs -INFO - verifyStartAgainLink is displayed
+2020-05-20 17:41:23,420 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 17:41:34,133 - com.tripmasters.framework.reports.Logs -INFO - verifyFooterText is displayed
+2020-05-20 19:18:48,385 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 19:19:03,596 - com.tripmasters.framework.reports.Logs -INFO - ****************************************************************************************
+2020-05-20 19:19:03,596 - com.tripmasters.framework.reports.Logs -INFO - ****************************************************************************************
+2020-05-20 19:19:03,600 - com.tripmasters.framework.reports.Logs -INFO - $$$$$$$$$$$$$$$$$$$$$                 FlightbookingjourneywithBYOPackage_TC_5      Started  $$$$$$$$$$$$$$$$$$$$$$$$$
+2020-05-20 19:19:03,612 - com.tripmasters.framework.reports.Logs -INFO - ****************************************************************************************
+2020-05-20 19:19:03,616 - com.tripmasters.framework.reports.Logs -INFO - ****************************************************************************************
+2020-05-20 19:19:03,616 - com.tripmasters.framework.reports.Logs -INFO - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+2020-05-20 19:19:03,616 - com.tripmasters.framework.reports.Logs -INFO - X
+2020-05-20 19:19:03,616 - com.tripmasters.framework.reports.Logs -INFO - X
+2020-05-20 19:19:03,620 - com.tripmasters.framework.reports.Logs -INFO - X
+2020-05-20 19:19:03,621 - com.tripmasters.framework.reports.Logs -INFO - X
+2020-05-20 19:25:16,946 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 19:25:29,402 - com.tripmasters.framework.reports.Logs -INFO - ****************************************************************************************
+2020-05-20 19:25:29,402 - com.tripmasters.framework.reports.Logs -INFO - $$$$$$$$$$$$$$$$$$$$$                 FlightbookingjourneywithBYOPackage_TC_5      -S-T-A-R-T-E-D-   $$$$$$$$$$$$$$$$$$$$$$$$$
+2020-05-20 19:25:29,402 - com.tripmasters.framework.reports.Logs -INFO - ****************************************************************************************
+2020-05-20 19:25:29,418 - com.tripmasters.framework.reports.Logs -INFO - XXXXXXXXXXXXXXXXXXXXXXX           FlightbookingjourneywithBYOPackage_TC_5    -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+2020-05-20 19:27:31,574 - com.tripmasters.framework.reports.Logs -INFO - ChromeDriver instantiated for Windows platform.
+2020-05-20 19:27:43,523 - com.tripmasters.framework.reports.Logs -INFO - *******************          FlightbookingjourneywithBYOPackage_TC_5      -S-T-A-R-T-E-D-  ****************************************
+2020-05-20 19:27:43,523 - com.tripmasters.framework.reports.Logs -INFO - XXXXXXXXXXXXXXXXXXXXXXX           FlightbookingjourneywithBYOPackage_TC_5    -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX

@@ -131,11 +131,12 @@ public class BookingPageAction extends PageBase {
 		}
 	}
 
-	public  String selectCheaperFlights() throws Exception {
+	public  String selectCheaperFlights(String cabinType) throws Exception {
 		String flightvalue = null;
 		if (TestBase.flag_Mob) {
 			flightvalue=selectCheaperFlights_Mob();
 		} else {
+			
 			waitForElement(8);
 			clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
 			waitForElement(8);
@@ -145,10 +146,15 @@ public class BookingPageAction extends PageBase {
 			//clickUsingJavaScript(BookingLocators.getcontinueLink());
 			waitForElement(3);
 			//newadded*************************
+			if(cabinType.equalsIgnoreCase("Coach/Economy")){
 			clickUsingJavaScript(BookingLocators.getselectCabinFromFlightOptions());
-			clickUsingJavaScript(BookingLocators.getbackToItineraryOption());
-			//***************
+			}else if(cabinType.equalsIgnoreCase("Business")){
+				clickUsingJavaScript(BookingLocators.getselectscndCabinFromFlightOptions());
+			}else if(cabinType.equalsIgnoreCase("Mixed")){
+				clickUsingJavaScript(BookingLocators.getselectscndCabinFromFlightOptions());
+			}
 			//clickUsingJavaScript(BookingLocators.getbackToItineraryOption());
+			//***************
 			waitForElement(2);
 			clickUsingJavaScript(BookingLocators.getcontinueLink());
 		}
@@ -398,21 +404,47 @@ public class BookingPageAction extends PageBase {
 		selectOptionByValue(BookingLocators.getstayingDrpdowntwo(), stayingTimeTwo);
 	}
 
-	public  String selectValueFromCalendar(int AdditionalDays) {
+//	public  String selectValueFromCalendar(int AdditionalDays) {
+//		clickOnElement(BookingLocators.getArriveDateDropdown());
+//		String newDate = selectNewDateFromCalendar(AdditionalDays);
+//		String[] newDateDay = newDate.split("/");
+//		String selecteddate=newDateDay[1];
+//		List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
+//		for (WebElement cell : columns) {
+//			if (cell.getText().equals(selecteddate)) {
+//				cell.findElement(By.linkText(selecteddate)).click();
+//				//test.log(LogStatus.INFO, "User selects '" + newDate + "' as Arriving_On Date");
+//				break;
+//			}
+//		}
+//		return newDate;
+//	}
+	
+	public  String selectValueFromCalendar(int additionaldays,int n) throws Exception {
 		clickOnElement(BookingLocators.getArriveDateDropdown());
-		String newDate = selectNewDateFromCalendar(AdditionalDays);
+		if(n>=2) {
+		for(int i=0;i<=n;i++)
+		{
+		clickOnElement(BookingLocators.getnavMonth());
+		}
+		}else if(n<1) {
+		clickOnElement(BookingLocators.getnavMonth_prev());
+		}
+		String newDate = selectNewDateFromCalendar(additionaldays);
 		String[] newDateDay = newDate.split("/");
-		String selecteddate=newDateDay[1];
+		String selectdate=newDateDay[1]; 
 		List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
 		for (WebElement cell : columns) {
-			if (cell.getText().equals(selecteddate)) {
-				cell.findElement(By.linkText(selecteddate)).click();
-				//test.log(LogStatus.INFO, "User selects '" + newDate + "' as Arriving_On Date");
-				break;
-			}
+		if (cell.getText().equals(selectdate)) {
+		Thread.sleep(20000);
+		cell.findElement(By.linkText(selectdate)).click();
+		
+		break;
+		}
 		}
 		return newDate;
-	}
+		}
+
 
 	public  void selectCabinClass(String cabinclass) {
 		selectOptionByText(BookingLocators.getCabinClassDropdown(), cabinclass);
@@ -673,8 +705,8 @@ public class BookingPageAction extends PageBase {
 		}
 		System.out.println("Top Deals List Status is"+ flag);
 		Assert.assertTrue(flag);
-		driver.navigate().back();
-		driver.navigate().refresh();
+		//driver.navigate().back();
+		//driver.navigate().refresh();
 	}
 
 	public void validateHighLights() {
@@ -754,20 +786,30 @@ public class BookingPageAction extends PageBase {
 		clearAndSetValues(BookingLocators.getleavingTextboxFirstPckg(), leavingFrom);
 	}
 
-	public String selectValueFromCalendar_FirstPckg(int AdditionalDays) {
+	public String selectValueFromCalendar_FirstPckg(int AdditionalDays,int n) throws InterruptedException {
 		clickOnElement(BookingLocators.getarriveDateDropdown_FirstPckg());
-		String newDate = selectNewDateFromCalendar(AdditionalDays);
-		String[] newDateDay = newDate.split("/");
-        String selectedDate= newDateDay[1];
-		List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
-		for (WebElement cell : columns) {
-			if (cell.getText().equals(selectedDate)) {
-				cell.findElement(By.linkText(selectedDate)).click();
-				break;
+		if(n>=2) {
+			for(int i=0;i<=n;i++)
+			{
+			clickOnElement(BookingLocators.getnavMonth());
 			}
-		}
-		return newDate;
-	}
+			}else if(n<1) {
+			clickOnElement(BookingLocators.getnavMonth_prev());
+			}
+			String newDate = selectNewDateFromCalendar(AdditionalDays);
+			String[] newDateDay = newDate.split("/");
+			String selectdate=newDateDay[1]; 
+			List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
+			for (WebElement cell : columns) {
+			if (cell.getText().equals(selectdate)) {
+			Thread.sleep(20000);
+			cell.findElement(By.linkText(selectdate)).click();
+			
+			break;
+			}
+			}
+			return newDate;
+			}
 
 	public void selectGuestDetails_FirstPckgOneRoom(String guestInfo) {
 		selectOptionByValue(BookingLocators.getselectGuestDrpdown_FirstPackage(), guestInfo);
@@ -804,6 +846,45 @@ public class BookingPageAction extends PageBase {
 	public void selectChngeTransByCar() {
 		clickUsingJavaScript(BookingLocators.getChangeTravelByButton());
 		clickUsingJavaScript(BookingLocators.getSelectButtonCar());
+	}
+
+	public String selectFirstHighLightOption() {
+		String expectedValue=driver.findElement(By.xpath("(//div[@class='startHighlight']//div//a)[1]//h3")).getText();
+		System.out.println("expec"+expectedValue);
+		clickUsingJavaScript(BookingLocators.getSelectHighLightOption());
+		return expectedValue;
+	}
+
+	public void validateHighlightOption(String value) {
+		String actualValue=driver.findElement(By.xpath("(//div[@class='dvBGpageTitle']//div)[1]")).getText();
+		System.out.println("actual"+actualValue);
+		//Assert.assertTrue(actualValue.contains(value.trim()));
+		
+	}
+
+	public String getFirstDealTxtclickonCustomize() {
+		String expectedVal=driver.findElement(By.xpath("(//div[@id='DealsContainer']//div//a//div)[1]")).getText();
+		System.out.println("expected value" +expectedVal);
+		clickUsingJavaScript(BookingLocators.getClickOnCustomiseBtn());
+		return expectedVal;
+	}
+
+	public void validateFirstDealPage(String expectedVal) {
+		boolean flag=false;
+		if(driver.getPageSource().contains(expectedVal)){
+			System.out.println("actual result is"+(driver.getPageSource().contains(expectedVal)));
+			flag=true;
+		}
+		Assert.assertTrue(flag);
+	}
+
+	public void selectNumberOfChild_TopDealPage(String numOfChild, String ageOfChild, String childType) throws Exception {
+		
+		if (childType.equals("Child2")) {
+			selectOptionByValue(BookingLocators.getselectChildDrpdown2_dealsPage(), numOfChild);
+			clearAndSetValues(BookingLocators.getenterAgeofChild(), ageOfChild);
+		}
+		
 	}
 
 }

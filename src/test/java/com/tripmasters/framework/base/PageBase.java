@@ -360,18 +360,30 @@ public class PageBase {
 	 * String Return Type:: 
 	 * @author Kalpana Kaushik
 	 */
-	public static String selectNewDateFromCalendar(int AdditionalDays) {
-
+//	public static String selectNewDateFromCalendar(int AdditionalDays) {
+//
+//		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
+//		Calendar cal = Calendar.getInstance();
+//		cal.setTime(new Date());
+//		System.out.println(cal.getTime());
+//		cal.add(Calendar.DATE, AdditionalDays);
+//		String newDate = dateFormat.format(cal.getTime());
+////		String[] newDateDay = newDate.split("/");
+////		return newDateDay[1];
+//		return newDate;
+//	}
+	public static String selectNewDateFromCalendar(int additionaldays) {
 		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(new Date());
 		System.out.println(cal.getTime());
-		cal.add(Calendar.DATE, AdditionalDays);
+		cal.add(Calendar.DATE, additionaldays);
 		String newDate = dateFormat.format(cal.getTime());
-//		String[] newDateDay = newDate.split("/");
-//		return newDateDay[1];
+		//String[] newDateDay = newDate.split("/");
+		//return newDateDay[1];
 		return newDate;
-	}
+		}
+
 
 	/**
 	 * Scroll page down to full of its height
