@@ -331,6 +331,28 @@ return selectedcabin;
 
 	//TODO:this method need some modifications.
 	//modified by satyam
+	
+	public  void selectNumberOfChild_dealsPage(String numOfChild, String ageOfChild, String childType) throws Exception
+	{
+		
+		
+	if(TestBase.flag_Mob)
+	{
+	    if(childType.equals("Child1"))
+			{
+				clickUsingJavaScript(BookingLocators.getselectfirstRoomChildPlus());
+				PageBase.waitForElement(3);
+			
+				driver.findElement(BookingLocators.getfirstChildDropdowniOS_deals()).click();
+				PageBase.waitForElement(3);
+				
+					driver.findElement(BookingLocators.getselectChildAgeDropdownMob_eleven()).click();	
+			}
+	
+			}
+	
+	}
+	
 	public  void selectNumberOfChild(String numOfChild, String ageOfChild, String childType) throws Exception
 	{
 		
@@ -341,8 +363,8 @@ return selectedcabin;
 			{
 				// clickUsingJavaScript(BookingLocators.getselectfirstRoomAdultPlus());
 				clickUsingJavaScript(BookingLocators.getselectfirstRoomChildPlus());
-				PageBase.waitForElement(20);
-				Thread.sleep(20000);
+				PageBase.waitForElement(3);
+				//Thread.sleep(20000);
 				driver.findElement(BookingLocators.getfirstChildDropdowniOS()).click();
 				PageBase.waitForElement(3);
 				
@@ -368,18 +390,14 @@ return selectedcabin;
 			//	Logs.info("User entered number of child'" + numOfChild + "' ");
 				Select option = new Select(driver.findElement(By.xpath("//select[@id='xiChild1']")));
 				option.selectByValue(ageOfChild);
-				// selectOptionByValue(BookingLocators.getselectChildAgeDrpdown(),
-				// ageOfChild);
+				
 			//	Logs.info("User entered age of child'" + ageOfChild + "' ");
 			} else {
 				selectOptionByValue(BookingLocators.getselectChildRoom2Drpdown(), numOfChild);
 				//Logs.info("User entered number of child'" + numOfChild + "' ");
 				Select option = new Select(driver.findElement(By.xpath("//select[@id='xRoom2_iChild1']")));
 				option.selectByValue(ageOfChild);
-				// selectOptionByValue(BookingLocators.getselectChildAgeRoom2Drpdown(),
-				// ageOfChild);
-				//Logs.info("User entered age of child'" + ageOfChild + "' ");
-	   }
+				}
 	 }
 	}
 	public void selectNumberofChildiOS() {
