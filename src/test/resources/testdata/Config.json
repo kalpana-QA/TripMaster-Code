@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
     "Platform": "Mobile",
+=======
+    "Platform": "Android",
+>>>>>>> Stashed changes
     "Browser": "Chrome",
     "URL": "https://www.tripmasters.com"
 }

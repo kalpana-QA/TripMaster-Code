@@ -92,7 +92,7 @@ public class TestBase {
 				}
 			}
 			
-		else if(platform.equalsIgnoreCase("Mobile")){
+		else if(platform.equalsIgnoreCase("Android")){
 				if (browser.equalsIgnoreCase("Chrome")) {
 					capabilities = new DesiredCapabilities();
 
@@ -153,7 +153,7 @@ public class TestBase {
 
 					driver = new AndroidDriver<MobileElement>(url, capabilities);
 
-					Logs.info(browser + " AndroidDriver instantiated for " + platform + " platform.");
+					//Logs.info(browser + " AndroidDriver instantiated for " + platform + " platform.");
 					flag = true;
 					flag_Mob = true;
 

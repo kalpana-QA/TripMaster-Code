@@ -355,7 +355,11 @@ public class PageBase {
 	 * String Return Type:: 
 	 * @author Kalpana Kaushik
 	 */
+<<<<<<< Updated upstream
 	public static String selectNewDateFromCalendar() {
+=======
+	/*public static String selectNewDateFromCalendar() {
+>>>>>>> Stashed changes
 
 		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
 		Calendar cal = Calendar.getInstance();
@@ -365,8 +369,12 @@ public class PageBase {
 		String newDate = dateFormat.format(cal.getTime());
 		String[] newDateDay = newDate.split("/");
 		return newDateDay[1];
+<<<<<<< Updated upstream
 	}
 	
+=======
+	}*/
+>>>>>>> Stashed changes
 	
 public static String selectNewDateFromCalendar(int additionaldays) {
 		
@@ -381,7 +389,10 @@ public static String selectNewDateFromCalendar(int additionaldays) {
 		return newDate;
 	}
 	
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 
 	
 	

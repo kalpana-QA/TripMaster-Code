@@ -65,19 +65,19 @@ public class BookingPageTestScript extends TestBase {
 		expectedFirstTravellerInfo = passengerInfoPage.fillFirstTravellerDetails("John", "Leo", "Male","01/01/1992", "237|US");
 		test.log(LogStatus.INFO, "User enters \"John\" as First Traveller First Name");
 		test.log(LogStatus.INFO, "User enters \"Leo\" as First Traveller Last Name");
-		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for First Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for First Traveller");
 		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1992\" for First Traveller's Date of Birth");
 		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for First Traveller");
 		expectedSecondTravellerInfo = passengerInfoPage.fillSecondTravellerDetails("Elvin", "Leo", "Male","01/01/1994", "237|US", "Adult");
 		test.log(LogStatus.INFO, "User enters \"Elvin\" as Second Traveller First Name");
 		test.log(LogStatus.INFO, "User enters \"Leo\" as Second Traveller Last Name");
-		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Second Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Second Traveller ");
 		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1994\" for Second Traveller's Date of Birth");
 		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Second Traveller");
 		expectedThirdTravellerInfo = passengerInfoPage.fillThirdTravellerDetails("Marie", "Leo", "Female","01/01/1996", "237|US");
 		test.log(LogStatus.INFO, "User enters \"Marie\" as Third Traveller First Name");
 		test.log(LogStatus.INFO, "User enters \"Leo\" as Third Traveller Last Name");
-		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Third Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Third Traveller ");
 		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1996\" for Third Traveller's Date of Birth");
 		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Third Traveller");
 		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
@@ -505,8 +505,13 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User select \"Two Adults\" from Guest list");
 		test.log(LogStatus.INFO, "Booking details filled successfully for Two Adults");
 		bookingPage.clickOnViewPrice();
+<<<<<<< Updated upstream
 		test.log(LogStatus.INFO, "Booking details filled successfully for Two Adults");
 		//PageBase.waitForElement(10);
+=======
+		test.log(LogStatus.INFO, "User clicks on View Price button");
+		PageBase.waitForElement(10);
+>>>>>>> Stashed changes
 		bookingPage.removeSecondCityHotel();
 		test.log(LogStatus.INFO, "Removes Hotel for Second City.");
 		bookingPage.getContinueLink();
@@ -516,13 +521,13 @@ public class BookingPageTestScript extends TestBase {
 		expectedFirstTravellerInfo = passengerInfoPage.fillFirstTravellerDetails("Morris", "Leo", "Male","01/01/1992", "237|US");
 		test.log(LogStatus.INFO, "User enters \"Morris\" as First Traveller First Name");
 		test.log(LogStatus.INFO, "User enters \"Mano\" as First Traveller Last Name");
-      	test.log(LogStatus.INFO, "User selects \"Gender:Male\" for First Traveller Last Name");
+      	test.log(LogStatus.INFO, "User selects \"Gender:Male\" for First Traveller");
 		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1992\" for First Traveller's Date of Birth");
 		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for First Traveller");
 		expectedSecondTravellerInfo = passengerInfoPage.fillSecondTravellerDetails("Elvin", "Leo", "Male","01/01/1994", "237|US", "Adult");
 		test.log(LogStatus.INFO, "User enters \"Elvin\" as Second Traveller First Name");
 		test.log(LogStatus.INFO, "User enters \"Leo\" as Second Traveller Last Name");
-		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Second Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Second Traveller");
 		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1994\" for Second Traveller's Date of Birth");
 		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Second Traveller");
 		bookingPage.getTripinclusionContinueButton();
@@ -534,6 +539,7 @@ public class BookingPageTestScript extends TestBase {
 		}
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
 	}
+<<<<<<< Updated upstream
 
 //	@Test(groups= {"smoke"},priority=5)
 	public void bookingTwoRoomTwoAdultTwoChild_TC_5(Method method) throws Exception {
@@ -549,6 +555,25 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User entered \"5\" nights staying time");	
 		bookingPage.selectNoMoreCitiesBtn();
 		test.log(LogStatus.INFO, "Click on No More Cities Button");
+=======
+	
+
+		@Test(groups= {"smoke"},priority=5)
+	public void bookingTwoRoomTwoAdultTwoChild_WithChanges_TC_5(Method method) throws Exception {
+		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoomTwoAdultTwoChild_WithChanges_TC_5");
+		PageBase.scrollDownForMob(1);
+		homePage.clickOnExploreEuropeLink();
+		test.log(LogStatus.INFO, "User clicked on Explore Europe Link");
+		bookingPage.clickOnPackageDisplayedUnderSuggestedVacationPackageOption();
+		test.log(LogStatus.INFO, "User clicked on particular vacation package");
+		bookingPage.clickOnReorderCitiesLink();
+		test.log(LogStatus.INFO, "User clicked on Reorder cities link");
+		bookingPage.fillLeavingFromDetailsOnEuropePage("Chicago (All Airports)");
+		test.log(LogStatus.INFO, "User entered \"Chicago (All Airports)\" into leaving from field");
+		String date = PageBase.selectNewDateFromCalendar(90);
+		test.log(LogStatus.INFO, "User selects '" + date + "'from calendar");
+		PageBase.scrollDownForMob(2);
+>>>>>>> Stashed changes
 		bookingPage.selectGuestDetails("2|Other");
 		test.log(LogStatus.INFO, "User select \"Two Adults & Two Child\" from Guest list");
 		test.log(LogStatus.INFO, "Booking details filled successfully for Two Adults & Two Child");
@@ -569,6 +594,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User clicks on Continue Link");
         bookingPage.clicktoContinuePage();
 		bookingPage.getTripinclusionContinueButton();
+<<<<<<< Updated upstream
 		expectedFirstTravellerInfo = passengerInfoPage.fillTravellerDetailsForMultipleRooms("Room1Traveller1");
 		test.log(LogStatus.INFO, "User enters \"yury\" as Traveller1 First Name");
 		test.log(LogStatus.INFO, "User enters \"darwin\" as Traveller1 Last Name");
@@ -644,12 +670,22 @@ public class BookingPageTestScript extends TestBase {
 			test.log(LogStatus.INFO, "User enters \"Morris\" as First Traveller First Name");
 			test.log(LogStatus.INFO, "User enters \"Mano\" as First Traveller Last Name");
 	    	test.log(LogStatus.INFO, "User selects \"Gender:Male\" for First Traveller Last Name");
+=======
+		 expectedFirstTravellerInfo = passengerInfoPage.fillFirstTravellerDetails("Morris", "Mano", "Male","", "237|US");
+			test.log(LogStatus.INFO, "User enters \"Morris\" as First Traveller First Name");
+			test.log(LogStatus.INFO, "User enters \"Mano\" as First Traveller Last Name");
+	    	test.log(LogStatus.INFO, "User selects \"Gender:Male\" for First Traveller ");
+>>>>>>> Stashed changes
 			test.log(LogStatus.INFO, "User selects \"DOB:01/01/1992\" for First Traveller's Date of Birth");
 			test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for First Traveller");
 			expectedSecondTravellerInfo = passengerInfoPage.fillSecondTravellerDetailsChildMob("Shally", "Mano", "Female","01/01/1994", "237|US", "Child");
 			test.log(LogStatus.INFO, "User enters \"Shally\" as Second Traveller First Name");
 			test.log(LogStatus.INFO, "User enters \"Mano\" as Second Traveller Last Name");
+<<<<<<< Updated upstream
 			test.log(LogStatus.INFO, "User selects \"Female\" for Second Traveller Last Name");
+=======
+			test.log(LogStatus.INFO, "User selects \"Female\" for Second Traveller ");
+>>>>>>> Stashed changes
 			test.log(LogStatus.INFO, "User selects \"DOB:01/01/1994\" for Second Traveller's Date of Birth");
 			test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Second Traveller");
 			bookingPage.getTripinclusionContinueButton();
@@ -765,13 +801,13 @@ public class BookingPageTestScript extends TestBase {
 		expectedFirstTravellerInfo = passengerInfoPage.fillFirstTravellerDetails("Morris", "Leo", "Male","01/01/1992", "237|US");
 		test.log(LogStatus.INFO, "User enters \"Morris\" as First Traveller First Name");
 		test.log(LogStatus.INFO, "User enters \"Mano\" as First Traveller Last Name");
-		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for First Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for First Traveller");
 		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1992\" for First Traveller's Date of Birth");
 		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for First Traveller");
 		expectedSecondTravellerInfo = passengerInfoPage.fillSecondTravellerDetails("Shally", "Leo", "Male","01/01/1994", "237|US", "Child");
 		test.log(LogStatus.INFO, "User enters \"Shally\" as Second Traveller First Name");
 		test.log(LogStatus.INFO, "User enters \"Mano\" as Second Traveller Last Name");
-		test.log(LogStatus.INFO, "User selects \"Female\" for Second Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"Female\" for Second Traveller");
 		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1994\" for Second Traveller's Date of Birth");
 		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Second Traveller");
 		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
@@ -1193,6 +1229,8 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User entered \"Washington (all Airports), DC\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("London (England)");
 		test.log(LogStatus.INFO, "User entered \"London (England)\" into Going to from field");
+		String date = PageBase.selectNewDateFromCalendar(90);
+		test.log(LogStatus.INFO, "User selects '" + date + "'from calendar");
 		bookingPage.selectStayingTime("3");
 		bookingPage.clickOnAddCityBtn();
 		bookingPage.fillSecndAddedCityDetails("Paris (France)");
@@ -1225,8 +1263,15 @@ public class BookingPageTestScript extends TestBase {
 		    test.log(LogStatus.INFO,   "User selects '" + selectDate + "'from calendar");
 		bookingPage.fillGoingToCityDetails("Delhi (India)");
 		test.log(LogStatus.INFO, "User entered \"Delhi (India)\" into Going to from field");
+<<<<<<< Updated upstream
 		bookingPage.selectStayingTime("3");
 		test.log(LogStatus.INFO, "User entered \"3\" nights staying time");
+=======
+		String date = PageBase.selectNewDateFromCalendar(90);
+		test.log(LogStatus.INFO, "User selects '" + date + "'from calendar");
+		bookingPage.selectStayingTime("4");
+		test.log(LogStatus.INFO, "User entered \"4\" nights staying time");
+>>>>>>> Stashed changes
 		bookingPage.clickOnAddCityBtn();
 		bookingPage.fillSecndAddedCityDetails("Mumbai (India)");
 		test.log(LogStatus.INFO, "User entered \"Mumbai (India)\" into Going to from field for adding second city");
@@ -1236,9 +1281,13 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.fillThirdAddedCityDetails("Chennai -Madras (India)");
 		test.log(LogStatus.INFO, "User entered \"Chennai -Madras (India)\" into Going to from field for adding Third city");
 		bookingPage.selectStayingTimeThree("1");
+<<<<<<< Updated upstream
 		test.log(LogStatus.INFO, "User entered \"1\" nights staying time for the Third city");
 		//bookingPage.fillBasicDetails("New York, Newark, NJ", "Delhi (India)", "4", "Mumbai (India)", "1","Chennai -Madras (India)", "1");
 
+=======
+		test.log(LogStatus.INFO, "User entered \"1\" nights staying time for the  third city");
+>>>>>>> Stashed changes
 		test.log(LogStatus.INFO, "Fill all the basic details for multiple cities");
 		test.log(LogStatus.INFO, "Adding multiple cities in destinations");
 		//logs.info("Fill all the basic details for multiple cities");
@@ -1329,6 +1378,7 @@ public class BookingPageTestScript extends TestBase {
 	
    
 
+<<<<<<< Updated upstream
 	@Test(groups= {"smoke"},priority=13)
     public void bookingDetailswithPremiumEcomomy_TC_18(Method method) throws Exception {
 		ExtentTest test =ExtentTestManager.startTest(method.getName(), "bookingDetailswithPremiumEcomomy");
@@ -1350,6 +1400,50 @@ public class BookingPageTestScript extends TestBase {
 		String actualcabinweb = bookingPage.selectedcabinAssert();
 		test.log(LogStatus.INFO, "Select Cabin class");
 		logs.info("Select Cabin class");
+=======
+	
+    @Test(groups= {"regression"},priority=14)
+	public void dateChanging_TC_9(Method method) throws Exception {
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "verify DateChanging functionality");
+		bookingPage.clickOnBuildYourVacationDropDown();
+		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
+		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
+		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
+		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
+		String date = bookingPage.selectValueFromCalendar(180 ,2);
+		
+		
+		test.log(LogStatus.INFO,   "User selects '" + date + "'from calendar");
+		bookingPage.selectStayingTime("12");
+		bookingPage.selectNoMoreCitiesBtn();
+		bookingPage.selectGuestDetails("1|Other");
+		test.log(LogStatus.INFO, "Booking details Source & Destination filled successfully ");
+		
+		bookingPage.clickonContinueButton();
+		bookingPage.clickChangedArriveDate();
+		bookingPage.oldArriveDate();
+		bookingPage.clickonContinueLink();
+		test.log(LogStatus.INFO,   "Arrival date changes successfully.");
+		bookingPage.getTripinclusionContinueButton();
+		bookingPage.clicktoContinuePage();
+		expectedFirstTravellerInfo = passengerInfoPage.fillFirstTravellerDetails("Morris", "Leo", "Male","01/01/1992", "237|US");
+		test.log(LogStatus.INFO, "User enters \"Morris\" as First Traveller First Name");
+		test.log(LogStatus.INFO, "User enters \"Mano\" as First Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for First Traveller ");
+		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1992\" for First Traveller's Date of Birth");
+		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for First Traveller");
+		expectedSecondTravellerInfo = passengerInfoPage.fillSecondTravellerDetails("Shally", "Leo", "Male","01/01/1994", "237|US", "Child");
+		test.log(LogStatus.INFO, "User enters \"Shally\" as Second Traveller First Name");
+		test.log(LogStatus.INFO, "User enters \"Mano\" as Second Traveller Last Name");
+		test.log(LogStatus.INFO, "User selects \"Female\" for Second Traveller");
+		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1994\" for Second Traveller's Date of Birth");
+		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Second Traveller");
+		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
+		//Logs.info("User filled all the passenger details successfully");
+		
+		bookingPage.clicktoContinuePage();
+		bookingPage.getTripinclusionContinueButton();
+>>>>>>> Stashed changes
 		if(TestBase.flag_Mob){
 		      boolean cabinVerify = bookingPage.verifyCabin();
 			   Assert.assertTrue(cabinVerify);
