@@ -355,7 +355,19 @@ public class PageBase {
 	 * String Return Type:: 
 	 * @author Kalpana Kaushik
 	 */
-	public static String selectNewDateFromCalendar(int additionaldays) {
+	/*public static String selectNewDateFromCalendar() {
+
+		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(new Date());
+		System.out.println(cal.getTime());
+		cal.add(Calendar.DATE, 50);
+		String newDate = dateFormat.format(cal.getTime());
+		String[] newDateDay = newDate.split("/");
+		return newDateDay[1];
+	}*/
+	
+public static String selectNewDateFromCalendar(int additionaldays) {
 		
 		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
 		Calendar cal = Calendar.getInstance();
@@ -368,8 +380,6 @@ public class PageBase {
 		return newDate;
 	}
 	
-	
-
 
 	/**
 	 * Scroll page down to full of its height

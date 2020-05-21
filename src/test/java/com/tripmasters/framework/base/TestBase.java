@@ -92,7 +92,7 @@ public class TestBase {
 				}
 			}
 			
-		else if(platform.equalsIgnoreCase("Mobile")){
+		else if(platform.equalsIgnoreCase("Android")){
 				if (browser.equalsIgnoreCase("Chrome")) {
 					capabilities = new DesiredCapabilities();
 
@@ -153,7 +153,7 @@ public class TestBase {
 
 					driver = new AndroidDriver<MobileElement>(url, capabilities);
 
-					Logs.info(browser + " AndroidDriver instantiated for " + platform + " platform.");
+					//Logs.info(browser + " AndroidDriver instantiated for " + platform + " platform.");
 					flag = true;
 					flag_Mob = true;
 
@@ -167,17 +167,20 @@ public class TestBase {
 			{
 				if (browser.equalsIgnoreCase("Safari")) {
 					capabilities = new DesiredCapabilities();
-					capabilities.setCapability("deviceName", "iPhone 11 Pro Max");
-					capabilities.setCapability("platformName", "iOS");
-					capabilities.setCapability("platformVersion", "13.3");
-					capabilities.setCapability(CapabilityType.BROWSER_NAME, "Safari");
-					// IOSDriver
-					url = new URL("http://127.0.0.1:4723/wd/hub");
-					driver = new IOSDriver<IOSElement>(url, capabilities);
-					DesiredCapabilities capabilities = new DesiredCapabilities();
+//					capabilities.setCapability("deviceName", "iPhone 11 Pro Max");
+//					capabilities.setCapability("platformName", "iOS");
+//					capabilities.setCapability("platformVersion", "13.3");
+//					capabilities.setCapability(CapabilityType.BROWSER_NAME, "Safari");
+//					url = new URL("http://127.0.0.1:4723/wd/hub");
+//					driver = new IOSDriver<IOSElement>(url, capabilities);
+					
+					//BrowserStack
+					capabilities.setCapability("device", "iPhone 11 Pro");
+					capabilities.setCapability("os_version", "13");
+					capabilities.setCapability("name", "Bstack-[Java] Sample Test");
+                    driver =new RemoteWebDriver(new URL(URL), capabilities);
 					System.out.println("Safari browser launched on iOS");
 					flag = true;
-
 				} else {
 					//Logs.error("browser doesn't found!!!!!!!!!!!");
 					System.err.println("browser doesn't found!!!!!!!!");
@@ -219,7 +222,7 @@ public class TestBase {
 		// GenerateReport2.getResult(null);
 		if (driver != null) {
 			//Logs.info("Closing browser after TestClass");
-		//driver.quit();
+		driver.quit();
 		} else {
 			//Logs.error("Driver is null at AfterClass (TestBase)");
 		}
