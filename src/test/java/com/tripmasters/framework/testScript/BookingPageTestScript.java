@@ -670,7 +670,7 @@ public class BookingPageTestScript extends TestBase {
 		logs.endTestCase(method.getName());
 	}
 	//new
-	@Test(groups= {"TestDemo"},priority=5)
+	@Test(groups= {"smoke"},priority=5)
 	public void FlightbookingjourneywithBYOPackage_TC_5(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "Flight booking journey with BYO Package along with Pax mandatory field validation");
 		logs.startTestCase(method.getName());
@@ -684,8 +684,6 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");	
 		bookingPage.selectGuestDetails_BYOPage("2 rooms with children or other options");
 		test.log(LogStatus.INFO, "User select \"2 Room With Other Options\" from Guest list");
-		//bookingPage.selectAdultForRoom1_BYOPage("1");
-		
 		test.log(LogStatus.INFO, "User select \"1 Adult 1Child \" for Room1 ");
 		test.log(LogStatus.INFO, "User select \"Age of Child:7 \" for Room1 ");
 		test.log(LogStatus.INFO, "2 Adults selecetd for Room 2 ");
