@@ -15,10 +15,18 @@
     <classes>
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
+          <include name="TC_0001_bookingSingleRoomWithThreeAdults" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="bookingTwoRoomThreeAdultAndOneChildWithMultipleCities_AdditionalChanges_TC_3" invocation-numbers="0"/>
-          <include name="bookingFlightsWithmultipleCities_TC_6" invocation-numbers="0"/>
+          <include name="TC_0002_bookingSingleRoomtwoAdultOneChild" invocation-numbers="0"/>
+          <include name="TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities" invocation-numbers="0"/>
+          <include name="TC_0021_tripSummarymultipleCities" invocation-numbers="0"/>
+          <include name="TC_0017_removeAddedCity_WithAdditonalChanges" invocation-numbers="0"/>
+          <include name="TC_0018_bookingDetailswithPremiumEcomomy" invocation-numbers="0"/>
+          <include name="TC_0005_bookingwithoutmultiplecityOneAdultOneChild" invocation-numbers="0"/>
+          <include name="TC_0007_bookingFlightAndHotelForSingleCity" invocation-numbers="0"/>
+          <include name="TC_0006_bookingFlightsWithmultipleCities" invocation-numbers="0"/>
+          <include name="TC_0008_europePageBookingForMultipleCities" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>

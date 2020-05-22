@@ -441,17 +441,14 @@ return selectedcabin;
 		if(TestBase.flag_Mob) {
 			scrollDownForMob(2);
 		}
+		
 		clickUsingJavaScript(BookingLocators.getBrowseHotelsLink());
-		if(!TestBase.flag_Mob){
-			String actualhotel = driver.findElement(BookingLocators.getFirstHotel()).getText();
-			return actualhotel;
-			}
-		else{
 			String actualhotel = driver.findElement(BookingLocators.getfirstHoteliOS()).getText();
 			System.out.println("*******"+actualhotel);
+			//clickUsingJavaScript(BookingLocators.getBrowseHotelsLink());
 			return actualhotel;
 		}
-	}
+	
 		
 
 	
