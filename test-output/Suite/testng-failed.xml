@@ -8,7 +8,8 @@
   <test thread-count="5" name="Test(failed)" parallel="methods">
     <groups>
       <run>
-        <include name="smok"/>
+        <include name="smoke"/>
+        <include name="regression"/>
       </run>
     </groups>
     <classes>
@@ -16,7 +17,8 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="bookingSingleRoomtwoAdultOneChildTC_2" invocation-numbers="0"/>
+          <include name="bookingTwoRoomThreeAdultAndOneChildWithMultipleCities_AdditionalChanges_TC_3" invocation-numbers="0"/>
+          <include name="bookingFlightsWithmultipleCities_TC_6" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>

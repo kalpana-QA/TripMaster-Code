@@ -30,8 +30,8 @@ public class BookingPageTestScript extends TestBase {
 	private static String actualsecondCityHotel;
 
 	@Test(groups = { "smoke" }, priority = 1)
-	public void bookingSingleRoomWithThreeAdults_TC_1(Method method) throws Exception {
-	    ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoomWithThreeAdults_TC_1");
+	public void TC_0001_bookingSingleRoomWithThreeAdults(Method method) throws Exception {
+	    ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0001_bookingSingleRoomWithThreeAdults");
 		bookingPage.clickOnBuildYourVacationDropDown();
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
@@ -97,10 +97,9 @@ public class BookingPageTestScript extends TestBase {
 	}
 	
 	
-	
-	@Test(groups= {"smoke"},priority = 2,alwaysRun = true)
-		public void bookingSingleRoomtwoAdultOneChildTC_2(Method method) throws Exception {
-			ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingSingleRoom1Adult1Child");
+		@Test(groups= {"smoke"},priority = 2,alwaysRun = true)
+		public void TC_0002_bookingSingleRoomtwoAdultOneChild(Method method) throws Exception {
+			ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0002_bookingSingleRoomtwoAdultOneChild");
 			bookingPage.clickOnBuildYourVacationDropDown();
 			PageBase.waitForElement(3);
 			bookingPage.fillLeavingFromDetails("New York City (all Airports),  NY");
@@ -111,13 +110,13 @@ public class BookingPageTestScript extends TestBase {
 			
 			
 			test.log(LogStatus.INFO,   "User selects '" + date + "'from calendar");
-			bookingPage.selectStayingTime("3");
-			test.log(LogStatus.INFO, "User entered \"3\" nights staying time");	
+			bookingPage.selectStayingTime("6");
+			test.log(LogStatus.INFO, "User entered \"6\" nights staying time");	
 			bookingPage.clickOnAddCityBtn();
 			bookingPage.fillSecndAddedCityDetails("Paris (France)");
 			test.log(LogStatus.INFO, "User entered \"Paris (France)\" into Going to from field for adding second city");
-			bookingPage.selectStayingTimeTwo("4");
-			test.log(LogStatus.INFO, "User entered \"4\" nights staying time for second city");
+			bookingPage.selectStayingTimeTwo("5");
+			test.log(LogStatus.INFO, "User entered \"5\" nights staying time for second city");
 			 bookingPage.selectNoMoreCitiesBtn();
 			test.log(LogStatus.INFO, "Click on No More Cities Button");
 			bookingPage.selectGuestDetails("1|Other");
@@ -182,8 +181,8 @@ public class BookingPageTestScript extends TestBase {
 
 	
 	  @Test(groups= {"smoke"},priority=3 ,alwaysRun = true)
-	public void bookingTwoRoomThreeAdultAndOneChildWithMultipleCities_AdditionalChanges_TC_3(Method method) throws Exception {
-		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoomThreeAdultAndOneChildWithMultipleCities_AdditionalChanges_TC_3");
+	public void TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(Method method) throws Exception {
+		ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities");
 		bookingPage.clickOnBuildYourVacationDropDown();
 		PageBase.waitForElement(3);
 		bookingPage.fillLeavingFromDetails("Seattle, WA");
@@ -244,11 +243,21 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.clickonContinueButton();
 		test.log(LogStatus.INFO, "Click on Continue Button");
 		//Logs.info("Click on Continue Button");
-		bookingPage.selectCheaperFlights();
+		//bookingPage.selectCheaperFlights();
+		
+		bookingPage.clickOncheaperFlights();
 		test.log(LogStatus.INFO, "User clicks on Select Cheaper Flights Link");
+		bookingPage.selectOnCheaperFlightPage();
+		bookingPage.selectCabin();
+		bookingPage.getTripinclusionContinueButton();
+
+		
+		
+		
+		
 		test.log(LogStatus.INFO, "User selects a particular flight from existing options");
 		test.log(LogStatus.INFO, "User clicks on Continue Link");
-		PageBase.waitForElement(10);
+		//PageBase.waitForElement(10);
 		bookingPage.getTripinclusionContinueButton();
 		expectedFirstTravellerInfo = passengerInfoPage.fillTravellerDetailsForMultipleRooms("Room1Traveller1");
 		test.log(LogStatus.INFO, "User enters \"yury\" as Traveller1 First Name");
@@ -295,8 +304,8 @@ public class BookingPageTestScript extends TestBase {
 	
 	
 	@Test(groups= {"smoke"},priority=4)
-	public void flightBookingWithFirstPackage_TC_4_Additional_changes(Method method) throws Exception {
-		ExtentTest test = ExtentTestManager.startTest(method.getName(), "flightBookingWithFirstPackage_TC_4_Additional_changes");
+	public void TC_0004_flightBookingWithFirstPackage(Method method) throws Exception {
+		ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0004_flightBookingWithFirstPackage");
 		bookingPage.getexploreLink();
 		test.log(LogStatus.INFO, "User clicks on Explore link");
 		bookingPage.fillLeavingFromDetails("Washington (all Airports), DC");
@@ -312,7 +321,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User select \"Two Adults\" from Guest list");
 		test.log(LogStatus.INFO, "Booking details filled successfully for Two Adults");
 		bookingPage.clickOnViewPrice();
-		test.log(LogStatus.INFO, "Booking details filled successfully for Two Adults");
+		//test.log(LogStatus.INFO, "Booking details filled successfully for Two Adults");
 		PageBase.waitForElement(10);
 		bookingPage.removeSecondCityHotel();
 		test.log(LogStatus.INFO, "Removes Hotel for Second City.");
@@ -344,8 +353,8 @@ public class BookingPageTestScript extends TestBase {
 	
 
 		@Test(groups= {"smoke"},priority=5)
-	public void bookingTwoRoomTwoAdultTwoChild_WithChanges_TC_5(Method method) throws Exception {
-		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoomTwoAdultTwoChild_WithChanges_TC_5");
+	public void TC_0005_bookingwithoutmultiplecityOneAdultOneChild(Method method) throws Exception {
+		ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0005_bookingwithoutmultiplecityOneAdultOneChild");
 		PageBase.scrollDownForMob(1);
 		homePage.clickOnExploreEuropeLink();
 		test.log(LogStatus.INFO, "User clicked on Explore Europe Link");
@@ -354,13 +363,13 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.clickOnReorderCitiesLink();
 		test.log(LogStatus.INFO, "User clicked on Reorder cities link");
 		bookingPage.fillLeavingFromDetailsOnEuropePage("Chicago (All Airports)");
+		
+		String date = bookingPage.selectValueFromCalendar(90 ,0);
+		
+		
+		test.log(LogStatus.INFO,   "User selects '" + date + "'from calendar");
+		
 		test.log(LogStatus.INFO, "User entered \"Chicago (All Airports)\" into leaving from field");
-		
-		
-
-		
-		
-		
 		PageBase.scrollDownForMob(2);
 		bookingPage.selectGuestDetails("2|Other");
 		test.log(LogStatus.INFO, "User select \"Two Adults & Two Child\" from Guest list");
@@ -407,8 +416,8 @@ public class BookingPageTestScript extends TestBase {
 	}
 
 //6
-	//@Test(groups= {"smoke"},priority=6)
-	public void bookingFlightsWithmultipleCities_TC_6(Method method) throws Exception {
+	@Test(groups= {"smoke"},priority=6)
+	public void TC_0006_bookingFlightsWithmultipleCities(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingFlightsWithmultipleCities_TC_6");
 		homePage.clickOnExploreAsiaLink();
 		test.log(LogStatus.INFO, "User Clicks on Explore Asia Link");
@@ -429,11 +438,11 @@ public class BookingPageTestScript extends TestBase {
 //		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
 		bookingPage.selectStayingTime("4");
 		bookingPage.clickOnAddCityBtn();
-		bookingPage.fillSecndAddedCityDetails("Augsburg (Germany)");
-		test.log(LogStatus.INFO, "User entered \"Augsburg (Germany)\" into Going to from field");
+		bookingPage.fillSecndAddedCityDetails("Frankfurt (Germany)");
+		test.log(LogStatus.INFO, "User entered \"Frankfurt (Germany)\" into Going to from field");
 		bookingPage.selectStayingTime("4");
-		String date = bookingPage.selectValueFromCalendar(180 ,2);
-//		
+		String date = bookingPage.selectValueFromCalendar(90 ,0);
+		System.out.println("date is "+ date);
 //		
 		test.log(LogStatus.INFO,   "User selects '" + date + "'from calendar");
 
@@ -492,8 +501,8 @@ public class BookingPageTestScript extends TestBase {
 	}
 
 	@Test(groups= {"smoke"},priority=7)
-	public void bookingFlightAndHotelForSingleCity_TC_7(Method method) throws Exception {
-		ExtentTest test=ExtentTestManager.startTest(method.getName(), "bookingFlightAndHotelForSingleCity_TC_7");
+	public void TC_0007_bookingFlightAndHotelForSingleCity(Method method) throws Exception {
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0007_bookingFlightAndHotelForSingleCity");
 		homePage.topdeals();
 		test.log(LogStatus.INFO, "User clicks on Top Deals");
 		Thread.sleep(5000);
@@ -508,7 +517,7 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.fillLeavingFromDetails("New York City (all Airports),  NY");
 		test.log(LogStatus.INFO, "User entered \"New York City (all Airports),  NY\" into leaving from field");
 
-		String date = bookingPage.selectValueFromCalendar(0 ,0);
+		String date = bookingPage.selectValueFromCalendar(180 ,1);
 		
 		
 		test.log(LogStatus.INFO,   "User selects '" + date + "'from calendar");
@@ -579,7 +588,7 @@ public class BookingPageTestScript extends TestBase {
 	}
 	
 	@Test(groups= {"smoke"},priority=8)
-	  public void europePageBookingForMultipleCities_TC_8(Method method) throws Exception {
+	  public void TC_0008_europePageBookingForMultipleCities(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "europePageBookingForMultipleCities_TC_8");
 		homePage.clickOnExploreEuropeLink();
 		test.log(LogStatus.INFO, "User clicks on explore europe page link");
@@ -587,7 +596,7 @@ public class BookingPageTestScript extends TestBase {
 		 bookingPage.fillLeavingFromDetails("New York City (all Airports),  NY");
 		 test.log(LogStatus.INFO, "User entered \"New York City (all Airports),  NY\" into leaving from field");
 		
-		 String date = bookingPage.selectValueFromCalendar(0 ,0);
+		 String date = bookingPage.selectValueFromCalendar(90 ,0);
 			
 			
 			test.log(LogStatus.INFO,   "User selects '" + date + "'from calendar");
@@ -679,14 +688,21 @@ public class BookingPageTestScript extends TestBase {
 			test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");	  
 	  }
 	
-	@Test(groups= {"smoke"},priority=10)
-	public void multipleCities_TC_21(Method method) throws Exception {
-		ExtentTest test=ExtentTestManager.startTest(method.getName(), "multipleCities");
+	@Test(groups= {"smoke"},priority=21)
+	public void TC_0021_tripSummarymultipleCities(Method method) throws Exception {
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0021_tripSummarymultipleCities");
 		bookingPage.clickOnBuildYourVacationDropDown();
 		bookingPage.fillLeavingFromDetails("Washington (all Airports), DC");
 		test.log(LogStatus.INFO, "User entered \"Washington (all Airports), DC\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("London (England)");
 		test.log(LogStatus.INFO, "User entered \"London (England)\" into Going to from field");
+		String date = bookingPage.selectValueFromCalendar(90 ,0);
+		
+		System.out.println("date is "+ date);	
+			test.log(LogStatus.INFO,   "User selects '" + date + "'from calendar");
+		
+		
+		
 		bookingPage.selectStayingTime("3");
 		bookingPage.clickOnAddCityBtn();
 		bookingPage.fillSecndAddedCityDetails("Paris (France)");
@@ -709,15 +725,24 @@ public class BookingPageTestScript extends TestBase {
 	}
 	
 
-	@Test(groups= {"smoke"},priority=11)
-	public void removeAddedCity_WithAdditonalChanges_TC_17(Method method) throws Exception {
-		ExtentTest test=ExtentTestManager.startTest(method.getName(), "removeAddedCity_WithAdditonalChanges_TC_17");
+	@Test(groups= {"smoke"},priority=17)
+	public void TC_0017_removeAddedCity_WithAdditonalChanges(Method method) throws Exception {
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0017_removeAddedCity_WithAdditonalChanges");
 		homePage.clickOnExploreAsiaLink();
+		
 		bookingPage.clickOnBuildYourVacationDropDown();
 		PageBase.waitForElement(3);
 		bookingPage.fillLeavingFromDetails("New York City (all Airports),  NY");
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Delhi (India)");
+		
+		 String date = bookingPage.selectValueFromCalendar(90 ,0);
+			
+		System.out.println("date is "+ date);	
+			test.log(LogStatus.INFO,   "User selects '" + date + "'from calendar");
+		
+		
+		
 		test.log(LogStatus.INFO, "User entered \"Delhi (India)\" into Going to from field");
 		bookingPage.selectStayingTime("4");
 		test.log(LogStatus.INFO, "User entered \"4\" nights staying time");
@@ -730,7 +755,7 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.fillThirdAddedCityDetails("Chennai -Madras (India)");
 		test.log(LogStatus.INFO, "User entered \"Chennai -Madras (India)\" into Going to from field for adding Third city");
 		bookingPage.selectStayingTimeThree("1");
-		
+		test.log(LogStatus.INFO, "User entered \"1\" nights staying time for the third city");
 		test.log(LogStatus.INFO, "Fill all the basic details for multiple cities");
 		test.log(LogStatus.INFO, "Adding multiple cities in destinations");
 		
@@ -752,8 +777,9 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User entered \"Mumbai (India)\" into Going to from field");
 		bookingPage.selectStayingTimeTwo("4");
 		test.log(LogStatus.INFO, "User entered \"4\" nights staying time");
-		PageBase.waitForElement(3);
+		PageBase.waitForElement(10);
 		bookingPage.selectNoMoreCitiesBtn();
+		Thread.sleep(50000);
 		boolean actualresult = bookingPage.isTravelByDisplayed();
 		Assert.assertTrue(actualresult);
 		test.log(LogStatus.INFO,"Verify that Travel By option from one destination to other is displayed");
@@ -774,10 +800,10 @@ public class BookingPageTestScript extends TestBase {
 	
 
 	
-	@Test(groups= {"regression"},priority=13)
-	public void verifySpotlightLink_TC_14(Method method) throws Exception {
+	@Test(groups= {"regression"},priority=14)
+	public void TC_0014_verifySpotlightLink(Method method) throws Exception {
     	String PageTitle=null;
-		ExtentTest test=ExtentTestManager.startTest(method.getName(), "verifySpotlightLink");
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0014_verifySpotlightLink");
 		bookingPage.selectLatinAmericaLink();
 		test.log(LogStatus.INFO, "Select Latin America Link");
 		
@@ -803,8 +829,8 @@ public class BookingPageTestScript extends TestBase {
 	
 
 	
-    @Test(groups= {"regression"},priority=14)
-	public void dateChanging_TC_9(Method method) throws Exception {
+    @Test(groups= {"regression"},priority=9)
+	public void TC_0009_arrival_dateChanging(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "verify DateChanging functionality");
 		bookingPage.clickOnBuildYourVacationDropDown();
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
@@ -856,9 +882,9 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.tripSummary();
 	}
 
-  @Test(groups= {"smoke"},priority=12)
-		public void bookingDetailswithPremiumEcomomy_TC_18(Method method) throws Exception {
-		   ExtentTest test =ExtentTestManager.startTest(method.getName(), "bookingDetailswithPremiumEcomomy");
+  @Test(groups= {"smoke"},priority=18)
+		public void TC_0018_bookingDetailswithPremiumEcomomy(Method method) throws Exception {
+		   ExtentTest test =ExtentTestManager.startTest(method.getName(), "TC_0018_bookingDetailswithPremiumEcomomy");
 			bookingPage.clickOnBuildYourVacationDropDown();
 			bookingPage.selectCabinClass("Premium Economy");
 			bookingPage.fillLeavingFromDetails("New York City (all Airports)");

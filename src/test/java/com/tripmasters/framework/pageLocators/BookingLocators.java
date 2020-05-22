@@ -114,10 +114,10 @@ public class BookingLocators {
 	private static By selectguestminus = By.xpath("//span[@id='adultMinus']");
 	private static By selectAdultRoom2Drpdown = By.xpath("//select[@id='xRoom2_iAdults'] | //input[@id='xRoom2_iAdults']");
 	public static By selectChildAgeDrpdown = By.xpath("//select[@id='xiChild1'] | //input[@id='xiChild1']");
-	private static By cheaperFlightsLink = By.xpath("(//a[contains(.,'Find cheaper flights')])[1]");
+	private static By cheaperFlightsLink = By.xpath("(//a[contains(.,'Find cheaper flights')])[1] | (//a[contains(.,'Browse all flights')])[1]");
 	private static By goingToTextboxSecond = By.xpath("//*[@id='qNACity2']");
 
-	private static By arriveDateDropdown = By.xpath("//input[contains(@id,'qArrDate')] | //input[@id='InDate1']  ");
+	private static By arriveDateDropdown = By.xpath("//input[contains(@id,'qArrDate')] | //input[@id='InDate1'] | //input[@id='xtxtBYArriving'] ");
 	private static By arriveDateCalender = By.xpath("//table[@class='ui-datepicker-calendar']//tbody//td");
 
 	private static By cabinClassDropdown = By.xpath("//select[@id='qCabinOpt']");

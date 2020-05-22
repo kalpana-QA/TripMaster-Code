@@ -193,7 +193,7 @@ for (WebElement webElement : topDeals) {
 
 	public void clickOnBuildYourOwnVacation() throws Exception {
 		PageBase.scrollDown();
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='dvGoUrl']/a")));
 		element.click();
 
