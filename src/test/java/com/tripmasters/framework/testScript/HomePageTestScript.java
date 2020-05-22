@@ -19,9 +19,9 @@ public class HomePageTestScript extends TestBase {
 
 	static Logs logs=new Logs();
 	
-	 @Test(groups = { "smoke" }, priority = 16)
-	public void verifyMoreHighlightAndAttractionLinks_TC_11(Method method) throws Exception {
-		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyMoreHighlightAndAttractionLinks_TC_11");
+	 @Test(groups = { "smoke" }, priority = 11)
+	public void TC_0011_verifyMoreHighlightAndAttractionLinks(Method method) throws Exception {
+		ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0011_verifyMoreHighlightAndAttractionLinks");
 		logs.startTestCase(method.getName());
 		String homePageTitle = homePage.getPageTitle();
 		PageBase.clickUsingJavaScript(HomePageLocators.getmoreHighLightsBtn());
@@ -52,10 +52,10 @@ public class HomePageTestScript extends TestBase {
 		logs.endTestCase(method.getName());
 	}
 
-	@Test(groups = { "smoke" }, priority = 17)
-	public void verifyOtherVacationPackages_TC_12(Method method) throws Exception {
+	@Test(groups = { "smoke" }, priority = 12)
+	public void TC_0012_verifyOtherVacationPackages(Method method) throws Exception {
 		String PackageTitle;
-		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyOtherVacationPackages_TC_12");
+		ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0012_verifyOtherVacationPackages");
 		logs.startTestCase(method.getName());
 		homePage.scrollDownForMob(1);
 		PageBase.clickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
@@ -73,9 +73,9 @@ public class HomePageTestScript extends TestBase {
 		logs.endTestCase(method.getName());
 	}
 
-	 @Test(groups = {"smoke"},priority=18)
-	public void verifyPopularVacationPackages_TC_13(Method method) {
-		ExtentTest test = ExtentTestManager.startTest(method.getName(), "VerifyPopularVacationPackages_TC_13");
+	 @Test(groups = {"smoke"},priority=13)
+	public void TC_0013_verifyPopularVacationPackages(Method method) {
+		ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0013_verifyPopularVacationPackages");
 		logs.startTestCase(method.getName());
 		PageBase.clickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
 		test.log(LogStatus.INFO, "Clicked on Popular Vacation Packages");
@@ -88,9 +88,9 @@ public class HomePageTestScript extends TestBase {
 		logs.endTestCase(method.getName());
 	}
 
-	@Test(groups = {"smoke"},priority=19)
-	public void verifyCity_TC_10(Method method) throws Exception {
-		ExtentTest test=ExtentTestManager.startTest(method.getName(), "Verify Search City Button on homepage");
+	@Test(groups = {"smoke"},priority=10)
+	public void TC_0010_verifySearchCity(Method method) throws Exception {
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0010_verifySearchCity");
 		logs.startTestCase(method.getName());
 		String verifyhomepage = homePage.getPageTitle();
 		Assert.assertEquals(ActionPageData.getHomePageTitle(), verifyhomepage);
@@ -108,9 +108,9 @@ public class HomePageTestScript extends TestBase {
 	    logs.endTestCase(method.getName());
 }
 
-	@Test(groups = {"smoke"},priority=20)
-	public void verifyStartAgainLink_TC_15(Method method) throws Exception {
-		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyStartAgainLink_TC_15");
+	@Test(groups = {"smoke"},priority=15)
+	public void TC_0015_verifyStartAgainLink(Method method) throws Exception {
+		ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0015_verifyStartAgainLink");
 		logs.startTestCase(method.getName());
 		bookingPage.clickOnBuildYourVacationDropDown();
 		test.log(LogStatus.INFO, "Click on Build Your Vacation Dropdown");
@@ -130,9 +130,9 @@ public class HomePageTestScript extends TestBase {
 		logs.endTestCase(method.getName());
 	}
 
-	@Test(groups = {"smoke"},priority=21)
-	public void verifyFooterText_TC_16(Method method) {
-		ExtentTest test = ExtentTestManager.startTest(method.getName(), "verifyFooterText_TC_16");
+	@Test(groups = {"smoke"},priority=16)
+	public void TC_0016_verifyFooterText(Method method) {
+		ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0016_verifyFooterText");
 		logs.startTestCase(method.getName());
 		boolean validatefooter = homePage.validateFooterText();
 		Assert.assertTrue(validatefooter);

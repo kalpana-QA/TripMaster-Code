@@ -30,9 +30,9 @@ public class BookingPageTestScript extends TestBase {
 	private static String ActualHotel;
 	private static String ExpectedHotel;
 
-	 @Test(groups= {"smoke"},priority=9)
-	public void withoutAirBookingForSingleCity_TC_19(Method method) throws Exception {
-		ExtentTest test=ExtentTestManager.startTest(method.getName(), "withoutAirBookingForSingleCity_TC_19");
+	 @Test(groups= {"smoke"},priority=19)
+	public void TC_0019_withoutAirBookingForSingleCity(Method method) throws Exception {
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0019_withoutAirBookingForSingleCity");
 		logs.startTestCase(method.getName());
 		bookingPage.selectWithoutAir();
 		test.log(LogStatus.INFO, "Select withOut Air Option on HomePage");
@@ -62,9 +62,9 @@ public class BookingPageTestScript extends TestBase {
 		logs.endTestCase(method.getName());
 	}
 	 
-	@Test(groups= {"smoke"},priority=10)
-	public void getWithoutAir_TC_20(Method method) throws Exception {
-		ExtentTest test=ExtentTestManager.startTest(method.getName(), "getWithoutAir");
+	@Test(groups= {"smoke"},priority=20)
+	public void TC_0020_getWithoutAir(Method method) throws Exception {
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0020_getWithoutAir");
 		logs.startTestCase(method.getName());
 		bookingPage.getWithoutButton();
 		Thread.sleep(8000);
@@ -107,10 +107,10 @@ public class BookingPageTestScript extends TestBase {
 
 
 
-     @Test(groups= {"smoke"},priority=12)
-	public void verifySpotlightLink_TC_14(Method method) throws Exception {
+     @Test(groups= {"smoke"},priority=14)
+	public void TC_0014_verifySpotlightLink(Method method) throws Exception {
     	String PageTitle=null;
-		ExtentTest test=ExtentTestManager.startTest(method.getName(), "verifySpotlightLink");
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0014_verifySpotlightLink");
 		logs.startTestCase(method.getName());
 		bookingPage.selectLatinAmericaLink();
 		test.log(LogStatus.INFO, "Select Latin America Link");
@@ -127,9 +127,9 @@ public class BookingPageTestScript extends TestBase {
         logs.endTestCase(method.getName());
 	}
 	
-    @Test(groups= {"smoke"},priority=13)
-	public void dateChanging_TC_9(Method method) throws Exception {
-		ExtentTest test=ExtentTestManager.startTest(method.getName(), "verify DateChanging functionality");
+    @Test(groups= {"smoke"},priority=9)
+	public void TC_0009_dateChanging(Method method) throws Exception {
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0009_dateChanging");
 		logs.startTestCase(method.getName());
 		bookingPage.clickOnBuildYourVacationDropDown();
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
@@ -185,9 +185,9 @@ public class BookingPageTestScript extends TestBase {
 		logs.endTestCase(method.getName());
 	}
 
-   @Test(groups= {"smoke"},priority=14)
-		public void bookingDetailswithPremiumEcomomy_TC_18(Method method) throws Exception {
-			ExtentTest test =ExtentTestManager.startTest(method.getName(), "bookingDetailswithPremiumEcomomy");
+   @Test(groups= {"smoke"},priority=18)
+		public void TC_0018_bookingDetailswithPremiumEcomomy(Method method) throws Exception {
+			ExtentTest test =ExtentTestManager.startTest(method.getName(), "TC_0018_bookingDetailswithPremiumEcomomy");
 			logs.startTestCase(method.getName());
 			bookingPage.clickOnBuildYourVacationDropDown();
 			bookingPage.selectCabinClass("Premium Economy");
@@ -224,9 +224,9 @@ public class BookingPageTestScript extends TestBase {
 			logs.endTestCase(method.getName());
 		}
 		
-	@Test(groups= {"smoke"},priority=15)
-	public void multipleCities_TC_21(Method method) throws Exception {
-		ExtentTest test=ExtentTestManager.startTest(method.getName(), "multipleCities");
+	@Test(groups= {"smoke"},priority=21)
+	public void TC_0021_multipleCities(Method method) throws Exception {
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0021_multipleCities");
 		logs.startTestCase(method.getName());
 		bookingPage.clickOnBuildYourVacationDropDown();	
 		bookingPage.fillLeavingFromDetails("Washington (all Airports), DC");		
@@ -261,9 +261,9 @@ public class BookingPageTestScript extends TestBase {
 	}
 	
 	//new
-	@Test(groups= {"smoke"},priority=11)
-	public void validateTripSummarywithMultipleCitiesforAsianPacificPage_TC_17(Method method) throws Exception {
-		ExtentTest test=ExtentTestManager.startTest(method.getName(), "Validate TripSummary along with Multiple Cities for Asian Pacific Page");
+	@Test(groups= {"smoke"},priority=17)
+	public void TC_0017_validateTripSummarywithMultipleCitiesforAsianPacificPage(Method method) throws Exception {
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0017_validateTripSummarywithMultipleCitiesforAsianPacificPage");
 		logs.startTestCase(method.getName());
 		bookingPage.clickOnBuildYourVacationDropDown();
 		Thread.sleep(8000);
@@ -341,8 +341,8 @@ public class BookingPageTestScript extends TestBase {
 
 	//new
 	@Test(groups= {"smoke"},priority=8)
-	public void bookingFlightAndHotelwithMultipleCitiesForEuropePage_TC_8(Method method) throws Exception {
-		ExtentTest test=ExtentTestManager.startTest(method.getName(), "Flight and hotel booking journey with multiple cities for Europe Page");
+	public void TC_0008_bookingFlightAndHotelwithMultipleCitiesForEuropePage(Method method) throws Exception {
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0008_bookingFlightAndHotelwithMultipleCitiesForEuropePage");
 		logs.startTestCase(method.getName());
 		bookingPage.clickOnBuildYourVacationDropDown();
 		bookingPage.clickonEuropeLink();
@@ -435,8 +435,8 @@ public class BookingPageTestScript extends TestBase {
 	
 	//new
 	@Test(groups = { "smoke" }, priority = 1)
-	public void bookingJourneyWithOutAirForTwoRoomsPAXDetails_TC_1(Method method) throws Exception {
-	    ExtentTest test = ExtentTestManager.startTest(method.getName(), "Flight booking journey without multiple cities with Two Room (1 adult+ 1 child for Room1 & 3Adults for Room2) without Air");
+	public void TC_0001_bookingJourneyWithOutAirForTwoRoomsPAXDetails(Method method) throws Exception {
+	    ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0001_bookingJourneyWithOutAirForTwoRoomsPAXDetails");
 	    logs.startTestCase(method.getName());
 	    bookingPage.clickOnBuildYourVacationDropDown();
 		bookingPage.selectWithoutAir();
@@ -474,8 +474,8 @@ public class BookingPageTestScript extends TestBase {
 	
    //new 
 	@Test(groups= {"smoke"},priority=2)
-	public void bookingJourneyWithFlightAndTrain_TC_2(Method method) throws Exception {
-		ExtentTest test = ExtentTestManager.startTest(method.getName(), "Booking journey for multiple cities with Train & Flight");
+	public void TC_0002_bookingJourneyWithFlightAndTrain(Method method) throws Exception {
+		ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0002_bookingJourneyWithFlightAndTrain");
 		logs.startTestCase(method.getName());
 		bookingPage.clickOnBuildYourVacationDropDown();
 		PageBase.waitForElement(3);
@@ -527,8 +527,8 @@ public class BookingPageTestScript extends TestBase {
 	
 	//new
 	@Test(groups= {"smoke"},priority=7)
-	public void bookingFlightAndHotelForSingleCitywithTopDealsValidation_TC_7(Method method) throws Exception {
-		ExtentTest test=ExtentTestManager.startTest(method.getName(), "Flight and hotel booking journey with single city along with Top Deal Validation");
+	public void TC_0007_bookingFlightAndHotelForSingleCitywithTopDealsValidation(Method method) throws Exception {
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0007_bookingFlightAndHotelForSingleCitywithTopDealsValidation");
 		logs.startTestCase(method.getName());
 		bookingPage.clickOnBuildYourVacationDropDown();
 		bookingPage.clickOnTopDealsLink();
@@ -604,8 +604,8 @@ public class BookingPageTestScript extends TestBase {
 	
 	//new.
 	@Test(groups= {"smoke"},priority=6)
-	public void bookingFlightsWithmultipleCitieswithHighLightsValidation_TC_6(Method method) throws Exception {
-		ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingFlightsWithmultipleCitieswithHighLightsValidation");
+	public void TC_0006_bookingFlightsWithmultipleCitieswithHighLightsValidation(Method method) throws Exception {
+		ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0006_bookingFlightsWithmultipleCitieswithHighLightsValidation");
 		logs.startTestCase(method.getName());
 		bookingPage.clickOnBuildYourVacationDropDown();				
 		bookingPage.validateHighLights();
@@ -671,8 +671,8 @@ public class BookingPageTestScript extends TestBase {
 	}
 	//new
 	@Test(groups= {"smoke"},priority=5)
-	public void FlightbookingjourneywithBYOPackage_TC_5(Method method) throws Exception {
-		ExtentTest test = ExtentTestManager.startTest(method.getName(), "Flight booking journey with BYO Package along with Pax mandatory field validation");
+	public void TC_0005_FlightbookingjourneywithBYOPackage(Method method) throws Exception {
+		ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0005_FlightbookingjourneywithBYOPackage");
 		logs.startTestCase(method.getName());
 		bookingPage.selectFromVacationPackageIdeas();
 		test.log(LogStatus.INFO, "User selects an option from Vacation Package Ideas");
@@ -704,8 +704,8 @@ public class BookingPageTestScript extends TestBase {
 	}	
 	//new
 	@Test(groups= {"smoke"},priority=4)
-	public void FirstPackageoptionalongwithRemoveHotelFunc_TC_4(Method method) throws Exception {
-		 ExtentTest test = ExtentTestManager.startTest(method.getName(), "Flight booking journey with for First Package option along with Remove Hotel Functionality ");
+	public void TC_0004_FirstPackageoptionalongwithRemoveHotelFunc(Method method) throws Exception {
+		 ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0004_FirstPackageoptionalongwithRemoveHotelFunc");
 		 logs.startTestCase(method.getName());
 		 bookingPage.selectFromVacationPackageIdeas();
 		 test.log(LogStatus.INFO, "User selects an option from Vacation Package Ideas");
@@ -751,8 +751,8 @@ public class BookingPageTestScript extends TestBase {
 	
 	//new
 		@Test(groups= {"smoke"},priority=3)
-		public void bookingTwoRoomTwoAdult_TC_3(Method method) throws Exception {
-			ExtentTest test = ExtentTestManager.startTest(method.getName(), "bookingTwoRoom2Adult");
+		public void TC_0003_bookingTwoRoomTwoAdult(Method method) throws Exception {
+			ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0003_bookingTwoRoomTwoAdult");
 			logs.startTestCase(method.getName());
 			bookingPage.clickOnBuildYourVacationDropDown();
 			PageBase.waitForElement(3);
