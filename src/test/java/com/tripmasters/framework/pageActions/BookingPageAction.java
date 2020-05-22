@@ -157,6 +157,7 @@ public class BookingPageAction extends PageBase {
 			//***************
 			waitForElement(2);
 			clickUsingJavaScript(BookingLocators.getcontinueLink());
+			waitForElement(5);
 		}
 		return flightvalue;
 	}
@@ -885,6 +886,21 @@ public class BookingPageAction extends PageBase {
 			clearAndSetValues(BookingLocators.getenterAgeofChild(), ageOfChild);
 		}
 		
+	}
+
+	public String browseHotelsButton_EuropePage() throws Exception {
+		waitForElement(5);
+		clickUsingJavaScript(BookingLocators.getBrowseHotelsLink_TopDealsPage());
+		waitForElement(2);
+		if(!TestBase.flag_Mob){
+			String actualhotel = driver.findElement(BookingLocators.getFirstHotel()).getText();
+			System.out.println(actualhotel);
+			return actualhotel;
+			}
+		else{
+			String actualhotel = driver.findElement(BookingLocators.getfirstHoteliOS()).getText();
+			return actualhotel;
+		}
 	}
 
 }

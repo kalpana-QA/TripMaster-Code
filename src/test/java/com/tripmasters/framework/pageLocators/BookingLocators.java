@@ -114,7 +114,7 @@ public class BookingLocators {
 	
 	private static By selectAdultRoom2Drpdown = By.xpath("//select[@id='xRoom2_iAdults'] | //select[@id='ARoom2_iAdults']");
 	public static By selectChildAgeDrpdown = By.xpath("//select[@id='xiChild1']");
-	private static By cheaperFlightsLink = By.xpath("(//a[contains(.,'Find cheaper flights')])[1]");
+	private static By cheaperFlightsLink = By.xpath("(//a[contains(.,'Find cheaper flights')])[1] | (//a[contains(.,'Browse all flights')])[1]");
 	private static By goingToTextboxSecond = By.xpath("//*[@id='qNACity2']");
 
 	private static By arriveDateDropdown = By.xpath("//input[contains(@id,'qArrDate')]");
@@ -167,6 +167,7 @@ public class BookingLocators {
 	private static By clickOnCustomiseBtn=By.xpath("(//div[@id='DealsContainer']//div//a//img)[2]");
 	private static By selectChildDrpdown2_dealsPage=By.xpath("//select[@id='Room2_iChildren'] ");
 	private static By enterAgeofChild=By.xpath("//input[@id='Room2_iChild1']");
+	private static By browseHotelsLink_TopDealsPage=By.xpath("(//div[@class='changeHotel rbtn']//a)[1]");
 	// ======== Locators for Mobile ===============================================================================================
 
 	private static By cabinSectionMob = By.cssSelector("div[id='dvMcabin']");
@@ -912,6 +913,11 @@ public static By getpassportDrpdownSecondTravellerChildMob() {
 	public static By getenterAgeofChild() {
 		// TODO Auto-generated method stub
 		return enterAgeofChild;
+	}
+
+	public static By getBrowseHotelsLink_TopDealsPage() {
+		// TODO Auto-generated method stub
+		return browseHotelsLink_TopDealsPage;
 	}
 }
 

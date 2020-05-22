@@ -16,6 +16,7 @@ public class ExtentManager {
 	            //if (System.getProperty("os.name").toLowerCase().contains("win")) {
 	               String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 	                extent = new ExtentReports(workingDir + "/target/ExtentReports/" + timeStamp + ".html", true);
+	                extent.addSystemInfo("User Name", "MySystem");
 	                extent.addSystemInfo("ProjectName", "TripMasters");
 	                extent.addSystemInfo("Environment", "Web");
 	                extent.addSystemInfo("HostOrg", "ImpactQA");
