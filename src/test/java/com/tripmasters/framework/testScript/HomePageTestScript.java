@@ -112,20 +112,24 @@ public class HomePageTestScript extends TestBase {
 	public void TC_0015_verifyStartAgainLink(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0015_verifyStartAgainLink");
 		logs.startTestCase(method.getName());
-		bookingPage.clickOnBuildYourVacationDropDown();
-		test.log(LogStatus.INFO, "Click on Build Your Vacation Dropdown");
-		logs.info("Click on Build Your Vacation Dropdown");
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
+		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ - EWR\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Delhi (India)");
+		test.log(LogStatus.INFO, "User entered \"Delhi (India)\" into Going to from field");
 		String selectDate=bookingPage.selectValueFromCalendar(90,1);
 		test.log(LogStatus.INFO,   "User selects '" + selectDate + "'from calendar");
 		bookingPage.selectStayingTime("4");
+		test.log(LogStatus.INFO, "Select staying time :4 nights");
 		bookingPage.selectNoMoreCitiesBtn();
+		test.log(LogStatus.INFO, "Click on No More Cities Button");
 		bookingPage.selectGuestDetails("1|2");
+		test.log(LogStatus.INFO, "User select 1 Room for 2 Adults");
 		test.log(LogStatus.INFO, "User fills all the basic booking details");
 		logs.info("User fills all the basic booking details");
 		homePage.getStartAgain();
 		test.log(LogStatus.INFO, "Verify StartAgain Link is displayed");
+		test.log(LogStatus.INFO, "User clicks on Start Again Link");
+		test.log(LogStatus.INFO, "On clicking start again,User redirected to super homepage");
 		logs.info("verifyStartAgainLink is displayed");
 		logs.endTestCase(method.getName());
 	}

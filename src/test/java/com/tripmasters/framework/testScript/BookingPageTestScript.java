@@ -30,6 +30,7 @@ public class BookingPageTestScript extends TestBase {
 	private static String ActualHotel;
 	private static String ExpectedHotel;
 
+	
 	 @Test(groups= {"smoke"},priority=19)
 	public void TC_0019_withoutAirBookingForSingleCity(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0019_withoutAirBookingForSingleCity");
@@ -38,11 +39,15 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Select withOut Air Option on HomePage");
 		logs.info("Select withOut Air Option on HomePage");
 		bookingPage.fillGoingToCityDetails("San Francisco (USA)");
+		test.log(LogStatus.INFO, "User entered \"San Francisco (USA)\" into Going To City field");
 		String selectDate=bookingPage.selectValueFromCalendar(90,1);
 		test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");
 		bookingPage.selectStayingTime("5");
+		test.log(LogStatus.INFO,   "Select staying time 5 nights");
 		bookingPage.selectNoMoreCitiesBtn();
+		test.log(LogStatus.INFO,   "Click to No More Cities Continue Button");
 		bookingPage.selectGuestDetails("1|3");
+		test.log(LogStatus.INFO,   "Select 1 Room for 3 Adults");
 		test.log(LogStatus.INFO, "User fills all the basic details of journey:Source,Destination & Staying Time");
 		logs.info("User fills all the basic details of journey:Source,Destination & Staying Time");
 		bookingPage.clickonContinueButton();
@@ -57,38 +62,44 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Select particular hotel from Hotel Options");
 		logs.info("Select particular hotel from Hotel Options");
 		Assert.assertEquals(Actualresult, expectedresult);
-		test.log(LogStatus.INFO, "Verify that only particular selected hotel appears along with passenger details");
-		logs.info("Verify that only particular selected hotel appears along with passenger details");
+		test.log(LogStatus.INFO, "Verify that only selected hotel appears");
+		logs.info("Verify that only  selected hotel appears ");
 		logs.endTestCase(method.getName());
 	}
 	 
 	@Test(groups= {"smoke"},priority=20)
-	public void TC_0020_getWithoutAir(Method method) throws Exception {
-		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0020_getWithoutAir");
+	public void TC_0020_withoutAirBookingForMultipleCity(Method method) throws Exception {
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0020_withoutAirBookingForMultipleCity");
 		logs.startTestCase(method.getName());
 		bookingPage.getWithoutButton();
 		Thread.sleep(8000);
 		test.log(LogStatus.INFO, "Click on WithOut Air Button");
 		logs.info("Click on WithOut Air Button");
-		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
-		Thread.sleep(4000);
 		bookingPage.fillGoingToCityDetails("Delhi (India)");
+		test.log(LogStatus.INFO,   "User entered \"Delhi (India)\" into Going To City field");
+		Thread.sleep(4000);
+		bookingPage.selectStayingTime("4");
+		test.log(LogStatus.INFO,   "Select staying time 4 nights");
 		Thread.sleep(4000);
 		String selectDate=bookingPage.selectValueFromCalendar(100,1);
 		test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");
 		bookingPage.clickOnAddCityBtn();
+		test.log(LogStatus.INFO,   "Click on Add city button");
 		Thread.sleep(4000);
 		bookingPage.fillSecndAddedCityDetails("Mumbai (India)");
-		Thread.sleep(4000);
-		bookingPage.selectStayingTime("4");
+		test.log(LogStatus.INFO,   "User entered \"Mumbai (India)\" into Going To City field");
+		bookingPage.selectStayingTimeTwo("1");
+		test.log(LogStatus.INFO, "Select staying time :1 night");
 		Thread.sleep(4000);
 		bookingPage.selectNoMoreCitiesBtn();
+		test.log(LogStatus.INFO,   "Click on No More Cities Button");
 		Thread.sleep(8000);
 		bookingPage.selectGuestDetails("1|3");
 		test.log(LogStatus.INFO, "Filled all the basic details of journey along with source & destination");
 		logs.info("Filled all the basic details of journey along with source & destination");
 		Thread.sleep(8000);
 		bookingPage.clickonContinueButton();
+		test.log(LogStatus.INFO,   "Click on Continue Button");
 		ActualHotel = bookingPage.browseHotelsButton();
 		test.log(LogStatus.INFO, "Click on Browse Hotels Button");
 		Thread.sleep(8000);
@@ -100,8 +111,8 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Select particular hotel from Hotel Options");
 		logs.info("Select particular hotel from Hotel Options");
 		Assert.assertEquals(ActualHotel, ExpectedHotel);
-		test.log(LogStatus.INFO, "Verify that only particular selected hotel appears along with passenger details");
-		logs.info("Verify that only particular selected hotel appears along with passenger details");
+		test.log(LogStatus.INFO, "Verify that only particular selected hotel appears along with selected cities");
+		logs.info("Verify that only particular selected hotel appears along with selected cities");
 		logs.endTestCase(method.getName());
 	}
 
@@ -127,42 +138,57 @@ public class BookingPageTestScript extends TestBase {
         logs.endTestCase(method.getName());
 	}
 	
+    
     @Test(groups= {"smoke"},priority=9)
 	public void TC_0009_dateChanging(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0009_dateChanging");
 		logs.startTestCase(method.getName());
 		bookingPage.clickOnBuildYourVacationDropDown();
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
+		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ - EWR\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
+		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
 		String selectDate=bookingPage.selectValueFromCalendar(90,1);
 		test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");
 		bookingPage.selectStayingTime("12");
+		test.log(LogStatus.INFO, "Select staying time :12 nights");
 		bookingPage.selectNoMoreCitiesBtn();
-		bookingPage.selectGuestDetails("1|Other");
+		test.log(LogStatus.INFO, "Click on No More Cities Button");
+		bookingPage.selectGuestDetails("1|2");
+		test.log(LogStatus.INFO, "User select 1 Room for 2 Adults");
 		test.log(LogStatus.INFO, "Booking details Source & Destination filled successfully ");
 		logs.info("Booking details Source & Destination filled successfully ");
-		bookingPage.selectNumberOfAdult("1", BookingLocators.getselectAdultDrpdown());
-		bookingPage.selectnumberofadultsRoom_1iOS();
-		test.log(LogStatus.INFO, "User selects \"1\" Adult from Adult Drpdown");
-		bookingPage.selectNumberOfChild("1", "9", "Child1");
-		bookingPage.doneButtonMob();
-		test.log(LogStatus.INFO, "User selects \"1\" Child,\"Age of Child:9\"");
-		test.log(LogStatus.INFO, "No.of Child & Age of Child got selected successfully");
-		logs.info("No.of Child & Age of Child got selected successfully");
 		bookingPage.clickonContinueButton();
 		test.log(LogStatus.INFO, "Click on Continue Button");
 		bookingPage.clickChangedArriveDate();
+		test.log(LogStatus.INFO, "Click to change Arrive Date from suggested options");
 		bookingPage.oldArriveDate();
-		bookingPage.clickonContinueLink();
+		test.log(LogStatus.INFO, "Arrival Date get changed,Verified!");
+		ActualHotel = bookingPage.browseHotelsButton_EuropePage();
+		test.log(LogStatus.INFO, "Click on Browse Hotels Button");
+		logs.info("Click on Browse Hotels Button");
+		bookingPage.selectFirstHotel();
+		PageBase.scrollDownForMob(1);
+		ExpectedHotel = bookingPage.browseSelectHotel();
+		test.log(LogStatus.INFO, "Select particular hotel from Hotel Options");
+		logs.info("Select particular hotel from Hotel Options");
+		Assert.assertEquals(ActualHotel, ExpectedHotel);
+		test.log(LogStatus.INFO, "Validate selected hotel name is displayed");
+		bookingPage.selectCheaperFlights("Coach/Economy");
+		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
+		logs.info("Select Cheaper flights from flight options");
+		test.log(LogStatus.INFO, "User selects cabin class:Coach/Economy");
+		test.log(LogStatus.INFO, "click to continue button");
 		bookingPage.getTripinclusionContinueButton();
 		bookingPage.clicktoContinuePage();
+		test.log(LogStatus.INFO, "User clicks on Continue  to arrive in Pax Info Page");
 		expectedFirstTravellerInfo = passengerInfoPage.fillFirstTravellerDetails("Morris", "Leo", "Male","01/01/1992", "237|US");
 		test.log(LogStatus.INFO, "User enters \"Morris\" as First Traveller First Name");
 		test.log(LogStatus.INFO, "User enters \"Mano\" as First Traveller Last Name");
 		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for First Traveller");
 		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1992\" for First Traveller's Date of Birth");
 		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for First Traveller");
-		expectedSecondTravellerInfo = passengerInfoPage.fillSecondTravellerDetails("Shally", "Leo", "Male","01/01/1994", "237|US", "Child");
+		expectedSecondTravellerInfo = passengerInfoPage.fillSecondTravellerDetails("Shally", "Leo", "Male","01/01/1994", "237|US", "Adult");
 		test.log(LogStatus.INFO, "User enters \"Shally\" as Second Traveller First Name");
 		test.log(LogStatus.INFO, "User enters \"Mano\" as Second Traveller Last Name");
 		test.log(LogStatus.INFO, "User selects \"Female\" for Second Traveller Last Name");
@@ -172,6 +198,7 @@ public class BookingPageTestScript extends TestBase {
 		logs.info("User filled all the passenger details successfully");
 		bookingPage.getTripinclusionContinueButton();
 		bookingPage.clicktoContinuePage();
+		test.log(LogStatus.INFO, "Click on Continue button to validate trip summary on Payment page");
 		if(TestBase.flag_Mob){
 			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1NameiOS(), expectedFirstTravellerInfo);
 			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler2NameiOS(), expectedSecondTravellerInfo);
@@ -190,43 +217,48 @@ public class BookingPageTestScript extends TestBase {
 			ExtentTest test =ExtentTestManager.startTest(method.getName(), "TC_0018_bookingDetailswithPremiumEcomomy");
 			logs.startTestCase(method.getName());
 			bookingPage.clickOnBuildYourVacationDropDown();
-			bookingPage.selectCabinClass("Premium Economy");
 			bookingPage.fillLeavingFromDetails("New York City (all Airports)");
+			test.log(LogStatus.INFO, "User entered \"New York City (all Airports)\" into leaving from field");
 			bookingPage.fillGoingToCityDetails("Delhi (India)");
+			test.log(LogStatus.INFO, "User entered \"Delhi (India)\" into Going To City field");
 			String selectDate=bookingPage.selectValueFromCalendar(100,1);
 			test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");
+			bookingPage.selectCabinClass("Premium Economy");
+			test.log(LogStatus.INFO, "Select Cabin Class:Premium");
 			bookingPage.selectStayingTime("4");
+			test.log(LogStatus.INFO, "Select staying time :4 nights");
 			bookingPage.selectNoMoreCitiesBtn();
+			test.log(LogStatus.INFO, "Click to No More Cities,Continue Button");
 			bookingPage.selectGuestDetails("1|1");
+			test.log(LogStatus.INFO, "Select 1 Room for 1 Adult");
 			bookingPage.selectPremiumEconomy();
 			bookingPage.doneButtonMob();
 			test.log(LogStatus.INFO, "Filled flights details with premium economy");
 			logs.info("Filled flights details with premium economy");
 			String actualcabin = bookingPage.selectedcabinAssert();
 			System.out.println("This is for Actual "+actualcabin);
-			test.log(LogStatus.INFO, "Select Cabin class");
 			logs.info("Select Cabin class");
 			if(TestBase.flag_Mob){
 			  boolean cabinVerify = bookingPage.verifyCabin();
 				   Assert.assertTrue(cabinVerify);
 				   }
-			test.log(LogStatus.INFO, "Selected Cabin class verified");
-			logs.info("Selected Cabin class verified");
 			bookingPage.clickonContinueButton();
-//			bookingPage.selectCheaperFlights();
-//			test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
-//			logs.info("Select Cheaper flights from flight options");
-//			String expectedcabin = bookingPage.verifycabinAssert();
-//			System.out.println("This is for Expected "+expectedcabin);
-//			Assert.assertEquals(expectedcabin, actualcabin);
-			test.log(LogStatus.INFO, "bookingDetailswithPremiumEcomomy passed");
+			test.log(LogStatus.INFO, "Click on Continue Button");
+			bookingPage.getContinueLink();
+			test.log(LogStatus.INFO, "Click on Continue link to naviagte to Trip Inclusion Page");
+			String expectedcabin = bookingPage.verifycabinAssert();
+			System.out.println("This is for Expected "+expectedcabin);
+			Assert.assertEquals(expectedcabin, actualcabin);
+			test.log(LogStatus.INFO, "Selected Cabin class:Premium Economy verified");
+			logs.info("Selected Cabin class verified");
+			test.log(LogStatus.INFO, "bookingDetailswithPremiumEcomomy verified on Trip Inclusion Page");
 			logs.info("bookingDetailswithPremiumEcomomy passed");
 			logs.endTestCase(method.getName());
 		}
 		
 	@Test(groups= {"smoke"},priority=21)
-	public void TC_0021_multipleCities(Method method) throws Exception {
-		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0021_multipleCities");
+	public void TC_0021_FlightbookingJourneywithmultipleCities(Method method) throws Exception {
+		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0021_FlightbookingJourneywithmultipleCities");
 		logs.startTestCase(method.getName());
 		bookingPage.clickOnBuildYourVacationDropDown();	
 		bookingPage.fillLeavingFromDetails("Washington (all Airports), DC");		
@@ -236,19 +268,28 @@ public class BookingPageTestScript extends TestBase {
 		String selectDate=bookingPage.selectValueFromCalendar(90,1);
 		test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");
 		bookingPage.selectStayingTime("3");		
+		test.log(LogStatus.INFO, "Select staying time :3 nights");
 		bookingPage.clickOnAddCityBtn();
+		test.log(LogStatus.INFO, "Click on Add City button");
 		bookingPage.fillSecndAddedCityDetails("Paris (France)");		
 		test.log(LogStatus.INFO, "User entered \"Paris (France)\" into Going to from field");
+		bookingPage.selectStayingTimeTwo("1");
+		test.log(LogStatus.INFO, "Select staying time :1 night");
 		bookingPage.clickOnAddCityBtn();
+		test.log(LogStatus.INFO, "Click on Add City button");
 		bookingPage.fillThirdAddedCityDetails("Rome (Italy)");		
 		test.log(LogStatus.INFO, "User entered \"Rome (Italy)\" into Going to from field for adding second city");		
 		bookingPage.selectStayingTimeThree("3");
+		test.log(LogStatus.INFO, "Select staying time :3 nights");
 		bookingPage.clickonContinue();
+		test.log(LogStatus.INFO, "Click on No more Cities button");
 		Thread.sleep(6000);
 		Thread.sleep(6000);
 		bookingPage.selectGuestDetails("1|2");
+		test.log(LogStatus.INFO, "User select \"1 Room With 2 Adults\" from Guest list");
 		Thread.sleep(6000);
 		bookingPage.clickonContinueButton();
+		test.log(LogStatus.INFO, "Click on Continue button");
 		Thread.sleep(6000);
 		bookingPage.selectCheaperFlights("Coach/Economy");
 		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
@@ -256,7 +297,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User selects cabin class:Coach/Economy");
 		test.log(LogStatus.INFO, "User clicks on Continue button");
 		bookingPage.validateTripPage();
-		test.log(LogStatus.INFO, "Validate that user is on TripInclusion Page");
+		test.log(LogStatus.INFO, "Validate trip summary along with multiple cities on TripInclusion Page");
 		logs.endTestCase(method.getName());
 	}
 	
@@ -310,20 +351,25 @@ public class BookingPageTestScript extends TestBase {
 		logs.info("Verify that RemoveCity Link is also displayed for added cities");
 		bookingPage.deleteAddedCities();
 		Thread.sleep(4000);
-		test.log(LogStatus.INFO, "Delete all the added cities");
-		logs.info("Delete all the added cities");
+		test.log(LogStatus.INFO, "Deleted last added cities");
+		logs.info("Deleted last added cities");
 		bookingPage.validateremovedcity();
 		Thread.sleep(4000);
-		test.log(LogStatus.INFO, "All the added cities removed successfully.Verified!");
-		logs.info("All the added cities removed successfully.Verified!");
+		test.log(LogStatus.INFO, "Last added cities removed successfully.Verified!");
+		logs.info("Last added cities removed successfully.Verified!");
 		bookingPage.getNoMoreCitiesButton();
 		test.log(LogStatus.INFO, "User clicked on No More Cities,Continue button");
 		Thread.sleep(4000);
 		bookingPage.ValidateTravelByOption();
 		test.log(LogStatus.INFO, "Travel By Option validated from one city to another");
-		bookingPage.selectGuestDetails("1|1");
-		test.log(LogStatus.INFO, "Select Guest Details");
+		bookingPage.selectGuestDetails("1|Other");
+		test.log(LogStatus.INFO, "User select \"1 Room With Other Options\" from Guest list");
+		bookingPage.selectNumberOfAdult("2", BookingLocators.getselectAdultDrpdown());
+		test.log(LogStatus.INFO, "User selects \"2\" Adult from Adult Drpdown");
+		bookingPage.selectNumberOfChild("1", "11", "Child1");
+		test.log(LogStatus.INFO, "User selects \"1\" Child,\"Age of Child:11\"");
 		bookingPage.clickonContinueButton();
+		test.log(LogStatus.INFO, "User clicks on Continue button");
 		Thread.sleep(4000);
 		bookingPage.selectCheaperFlights("Coach/Economy");
 		Thread.sleep(8000);
@@ -371,11 +417,11 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.selectNoMoreCitiesBtn();
 		test.log(LogStatus.INFO, "User clicked on No More Cities,Continue button");
 		bookingPage.ValidateTravelByOption();
-		test.log(LogStatus.INFO, "Travel By Option validated frrom one city to another");
+		test.log(LogStatus.INFO, "Travel By Option validated from one city to another");
 		bookingPage.selectGuestDetails("1|Other");
 		test.log(LogStatus.INFO, "User select \"1 Room With Other Options\" from Guest list");
 		bookingPage.selectNumberOfAdult("2", BookingLocators.getselectAdultDrpdown());
-		test.log(LogStatus.INFO, "User selects \"1\" Adult from Adult Drpdown");
+		test.log(LogStatus.INFO, "User selects \"2\" Adult from Adult Drpdown");
 		bookingPage.selectNumberOfChild("1", "11", "Child1");
 		test.log(LogStatus.INFO, "User selects \"1\" Child,\"Age of Child:11\"");
 		test.log(LogStatus.INFO, "Booking details filled successfully for multiple cities");
@@ -383,7 +429,6 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.clickonContinueButton();
 		test.log(LogStatus.INFO, "Click on Continue Button");
 		logs.info("Click on Continue Button");
-		//ActualHotel = bookingPage.browseHotelsButton();
 		ActualHotel = bookingPage.browseHotelsButton_EuropePage();
 		test.log(LogStatus.INFO, "Click on Browse Hotels Button");
 		logs.info("Click on Browse Hotels Button");
@@ -393,12 +438,14 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Select particular hotel from Hotel Options");
 		logs.info("Select particular hotel from Hotel Options");
 		//Assert.assertEquals(ActualHotel, ExpectedHotel);
+		test.log(LogStatus.INFO, "Validate selected hotel name is displayed");
 		bookingPage.selectCheaperFlights("Business");
 		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
 		logs.info("Select Cheaper flights from flight options");
 		test.log(LogStatus.INFO, "User selects cabin class:Business");
 		bookingPage.getTripinclusionContinueButton();
 		bookingPage.clicktoContinuePage();
+		test.log(LogStatus.INFO, "User clicks on Continue  to arrive in Pax Info Page");
 		expectedFirstTravellerInfo = passengerInfoPage.fillFirstTravellerDetails("Morris", "Leo", "Male","01/01/1992", "237|US");
 		test.log(LogStatus.INFO, "User enters \"Morris\" as First Traveller First Name");
 		test.log(LogStatus.INFO, "User enters \"Mano\" as First Traveller Last Name");
@@ -421,6 +468,7 @@ public class BookingPageTestScript extends TestBase {
 		logs.info("User filled all the passenger details successfully");
 		bookingPage.getTripinclusionContinueButton();
 		bookingPage.clicktoContinuePage();
+		
 		if(TestBase.flag_Mob){
 			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1NameiOS(), expectedFirstTravellerInfo);
 		}else{
@@ -576,21 +624,21 @@ public class BookingPageTestScript extends TestBase {
 		expectedFirstTravellerInfo = passengerInfoPage.fillTravellerDetailsForMultipleRooms("Room1Traveller1");
 		test.log(LogStatus.INFO, "User enters \"yury\" as Traveller1 First Name");
 		test.log(LogStatus.INFO, "User enters \"darwin\" as Traveller1 Last Name");
-		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Traveller1 ");
+		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Traveller1");
 		test.log(LogStatus.INFO, "User selects \"DOB:01/01/2000\" for Traveller1 Date of Birth");
 		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Traveller1");
 		expectedSecondTravellerInfo = passengerInfoPage.fillTravellerDetailsForMultipleRooms("Room2Traveller1");
-		test.log(LogStatus.INFO, "User enters \"Hanna\" as Traveller3 First Name");
-		test.log(LogStatus.INFO, "User enters \"darwin\" as Traveller3 Last Name");
-		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Traveller3 ");
-		test.log(LogStatus.INFO, "User selects \"DOB:01/01/2000\" for Traveller3 Date of Birth");
-		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Traveller3");
+		test.log(LogStatus.INFO, "User enters \"Hanna\" as Traveller2 First Name");
+		test.log(LogStatus.INFO, "User enters \"darwin\" as Traveller2 Last Name");
+		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Traveller2 ");
+		test.log(LogStatus.INFO, "User selects \"DOB:01/01/2000\" for Traveller2 Date of Birth");
+		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Traveller2");
 		expectedThirdTravellerInfo = passengerInfoPage.fillTravellerDetailsForMultipleRooms("Room2Child1SingleTravlr");
-		test.log(LogStatus.INFO, "User enters \"Erwin\" as Traveller4 First Name");
-		test.log(LogStatus.INFO, "User enters \"George\" as Traveller4 Last Name");
-		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Traveller4 ");
-		test.log(LogStatus.INFO, "User selects \"DOB:01/01/2011\" for Traveller4 Date of Birth");
-		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Traveller4");
+		test.log(LogStatus.INFO, "User enters \"Erwin\" as Traveller3 First Name");
+		test.log(LogStatus.INFO, "User enters \"George\" as Travelle3 Last Name");
+		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Traveller3 ");
+		test.log(LogStatus.INFO, "User selects \"DOB:01/01/2011\" for Traveller3 Date of Birth");
+		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Traveller3");
 		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
 		logs.info("User filled all the passenger details successfully");
 		bookingPage.clicktoContinuePage();
@@ -643,6 +691,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User clicks on Continue Link");
 		bookingPage.getTripinclusionContinueButton();
 		bookingPage.clicktoContinuePage();
+		test.log(LogStatus.INFO, "User clicks on Continue  to arrive in Pax Info Page");
 		expectedFirstTravellerInfo = passengerInfoPage.fillFirstTravellerDetails("Morris", "Leo", "Male","01/01/1992", "237|US");
 		test.log(LogStatus.INFO, "User enters \"Morris\" as First Traveller First Name");
 		test.log(LogStatus.INFO, "User enters \"Mano\" as First Traveller Last Name");
@@ -687,19 +736,32 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User select \"2 Room With Other Options\" from Guest list");
 		test.log(LogStatus.INFO, "User select \"1 Adult 1Child \" for Room1 ");
 		test.log(LogStatus.INFO, "User select \"Age of Child:7 \" for Room1 ");
-		test.log(LogStatus.INFO, "2 Adults selecetd for Room 2 ");
+		test.log(LogStatus.INFO, "2 Adults selected for Room 2 ");
 		bookingPage.clickToContinue_BYOPage();
-		test.log(LogStatus.INFO, "User clicks on BYO Page");
+		test.log(LogStatus.INFO, "User clicks to continue");
 		bookingPage.selectCheaperFlights("Coach/Economy");
 		test.log(LogStatus.INFO, "User clicks on Select Cheaper Flights Link");
 		test.log(LogStatus.INFO, "User selects a particular flight from existing options");
 		test.log(LogStatus.INFO, "User selects cabin class:Coach/Economy");
 		bookingPage.clicktoContinuePage();
 		test.log(LogStatus.INFO, "User clicks on Continue Link to fill PAX details");
+		expectedFirstTravellerInfo = passengerInfoPage.fillTravellerDetailsForMultipleRooms("Room1Traveller1");
+		test.log(LogStatus.INFO, "User enters \"yury\" as Traveller1 First Name,Room1");
+		test.log(LogStatus.INFO, "User enters \"darwin\" as Traveller1 Last Name,Room1");
+		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Traveller1,Room1 ");
+		test.log(LogStatus.INFO, "User selects \"DOB:01/01/2000\" for Traveller1 Date of Birth,Room1");
+		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Traveller1,Room1");
+		expectedFirstTravellerInfo = passengerInfoPage.fillTravellerDetailsForMultipleRooms("Room1Traveller2");
+		test.log(LogStatus.INFO, "User enters \"George\" as Traveller2 First Name,Room1");
+		test.log(LogStatus.INFO, "User enters \"darwin\" as Traveller2 Last Name,Room1");
+		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Traveller2,Room1 ");
+		test.log(LogStatus.INFO, "User selects \"DOB:01/01/2011\" for Traveller2 Date of Birth,Room1");
+		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Traveller2,Room1");
 		bookingPage.clicktoContinuePage();
 		test.log(LogStatus.INFO, "User clicks on continue Page Button");
 		bookingPage.validateErrorMessage_MandatoryFields();
-		test.log(LogStatus.INFO, "Validate error message for Mandatory Fields");
+		test.log(LogStatus.INFO, "User is not able to proceed with empty fields in passenger details");
+		test.log(LogStatus.INFO, "Error Message Validated for unfilled fields - This field is required.");
 		logs.endTestCase(method.getName());
 		
 	}	

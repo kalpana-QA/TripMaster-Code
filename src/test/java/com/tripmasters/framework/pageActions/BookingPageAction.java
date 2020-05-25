@@ -579,9 +579,10 @@ public class BookingPageAction extends PageBase {
 		}
 	}
 
-	public  void oldArriveDate() {
+	public  void oldArriveDate() throws Exception {
 		boolean actualdate = driver.findElement(BookingLocators.getArriveDate()).isEnabled();
 		Assert.assertTrue(actualdate);
+		waitForElement(5);
 	}
 
 	public  void tripSummary() throws Exception 
