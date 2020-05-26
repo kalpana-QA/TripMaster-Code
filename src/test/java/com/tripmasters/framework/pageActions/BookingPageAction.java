@@ -331,8 +331,9 @@ public class BookingPageAction extends PageBase {
 		return expectedhotel;
 	}
 
-	public  void getContinueLink() {
+	public  void getContinueLink() throws Exception {
 		clickUsingJavaScript(BookingLocators.getcontinueLink());
+		waitForElement(5);
 	}
 
 	public  List<String> getSelectedFlightsDetails() {

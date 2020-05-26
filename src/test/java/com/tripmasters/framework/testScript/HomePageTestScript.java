@@ -46,7 +46,7 @@ public class HomePageTestScript extends TestBase {
 		logs.info("London - Paris and Beyond Link is displayed.");
 
 		Assert.assertTrue(europeDisplayed);
-		test.log(LogStatus.INFO, "London - Paris and Beyond Link is displayed.");
+		test.log(LogStatus.INFO, "Europe Link is displayed.");
 		test.log(LogStatus.INFO, "HightLights and Attraction Links Verified");
 		logs.info("verifyMoreHighlightAndAttractionLinks is Passed.");
 		logs.endTestCase(method.getName());
@@ -63,7 +63,7 @@ public class HomePageTestScript extends TestBase {
 		logs.info("User clicked on Explore Europe Link");
 		homePage.scrollDownForMob(3);
 		PackageTitle = homePage.clickOnPackageDisplayedUnderOtherVacationPackages();
-		test.log(LogStatus.INFO, "User clicked on particular vacation package");
+		test.log(LogStatus.INFO, "User clicked on package displayed under other vacation package");
 		logs.info("User clicked on particular vacation package");
 		boolean romeFlorenceVeniceByTrainHeader = homePage.getPageTitle().contains(PackageTitle);
 		test.log(LogStatus.INFO, "Verified User is redirected  to the particular vacation packages");

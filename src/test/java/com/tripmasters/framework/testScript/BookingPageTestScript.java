@@ -95,6 +95,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO,   "Click on No More Cities Button");
 		Thread.sleep(8000);
 		bookingPage.selectGuestDetails("1|3");
+		test.log(LogStatus.INFO,   "User selects 1 Room for 3 Adults");
 		test.log(LogStatus.INFO, "Filled all the basic details of journey along with source & destination");
 		logs.info("Filled all the basic details of journey along with source & destination");
 		Thread.sleep(8000);
@@ -246,6 +247,7 @@ public class BookingPageTestScript extends TestBase {
 			test.log(LogStatus.INFO, "Click on Continue Button");
 			bookingPage.getContinueLink();
 			test.log(LogStatus.INFO, "Click on Continue link to naviagte to Trip Inclusion Page");
+			Thread.sleep(4000);
 			String expectedcabin = bookingPage.verifycabinAssert();
 			System.out.println("This is for Expected "+expectedcabin);
 			Assert.assertEquals(expectedcabin, actualcabin);
@@ -256,7 +258,7 @@ public class BookingPageTestScript extends TestBase {
 			logs.endTestCase(method.getName());
 		}
 		
-	@Test(groups= {"smoke"},priority=21)
+	@Test(groups= {"testdemo"},priority=21)
 	public void TC_0021_FlightbookingJourneywithmultipleCities(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0021_FlightbookingJourneywithmultipleCities");
 		logs.startTestCase(method.getName());
@@ -372,7 +374,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User clicks on Continue button");
 		Thread.sleep(4000);
 		bookingPage.selectCheaperFlights("Coach/Economy");
-		Thread.sleep(8000);
+		Thread.sleep(10000);
 		test.log(LogStatus.INFO, "Select Cheaper flights from flight options");
 		logs.info("Select Cheaper flights from flight options");
 		test.log(LogStatus.INFO, "User selects cabin class:Coach/Economy");
@@ -500,9 +502,11 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Click on No More Cities Button");
 		bookingPage.selectGuestDetails("2|Other");
 		bookingPage.select2NumberOfAdultForRoom1("1", BookingLocators.getselectAdultDrpdown());
+		test.log(LogStatus.INFO, "User selects \"1\" Adult from Adult Drpdown for Room 1");
 		bookingPage.selectNumberOfChild("1", "3", "Child1");
 		test.log(LogStatus.INFO, "No.of Child & Age of Child got selected successfully");
 		bookingPage.select1NumberOfAdultForRoom2("3", BookingLocators.getselectAdultRoom2Drpdown());
+		test.log(LogStatus.INFO, "User selects \"3\" Adults from Adult Drpdown for Room2 ");
 		bookingPage.doneButtonMob();
 		test.log(LogStatus.INFO, "User select \"2 Rooms:1Adult,1Child in Room1,3Adults in Room2\" from Guest list");
 		test.log(LogStatus.INFO, "All the basic booking details Source & Destination filled successfully for 4 Adults_1Child_4nights");
@@ -679,8 +683,8 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Select staying time for city 2 :4 nights");
 		bookingPage.selectNoMoreCitiesBtn();
 		test.log(LogStatus.INFO, "Click on No More Cities Button");
-		test.log(LogStatus.INFO, "User select \"1 Room With 1 Adult\" from Guest list");
-		test.log(LogStatus.INFO, "All the basic booking details Source & Destination filled successfully for 1_Adult_With_SingleRoom");		
+		test.log(LogStatus.INFO, "User select \"1 Room With 2 Adults\" from Guest list");
+		test.log(LogStatus.INFO, "All the basic booking details Source & Destination filled successfully for 2_Adult_With_SingleRoom");		
 		bookingPage.doneButtonMob();
 		bookingPage.clicktoContinuePage();
 		test.log(LogStatus.INFO, "Click on Continue Button");
@@ -819,7 +823,7 @@ public class BookingPageTestScript extends TestBase {
 			logs.startTestCase(method.getName());
 			bookingPage.clickOnBuildYourVacationDropDown();
 			PageBase.waitForElement(3);
-			bookingPage.fillLeavingFromDetails("Seattle, WA");
+			bookingPage.fillLeavingFromDetails("Seattle SEA (WA), US");
 			test.log(LogStatus.INFO, "User entered \"Seattle, WA\" into Leaving from field");
 			bookingPage.fillGoingToCityDetails("Dublin (Ireland)");
 			test.log(LogStatus.INFO, "User entered \"Dublin (Ireland)\" into Going to from field");
