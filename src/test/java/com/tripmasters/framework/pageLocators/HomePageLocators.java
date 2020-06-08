@@ -27,10 +27,12 @@ public class HomePageLocators {
 	private static By FirstHighLightandAttraction = By.xpath("(//div[@class='dvMbEachHigh'])[1]");
 	private static By title = By.xpath("//div[@class='dvMheadLogo']/img");
 	private static By topdeals = By.xpath("//div[@id='dvTopDeals']");
-	private static By suggestedVacationPackageOption = By.xpath("//div[contains(text(),'suggested vacation packages')]/..//div[@class='dvEachSuggItin'][4]//a");
+	private static By suggestedVacationPackageOption = By.xpath("//div[contains(text(),'suggested vacation packages')]/..//div[@class='dvEachSuggItin'][5]//a");
 	private static By firstHighLightsBtn = By.xpath("(//div[@class='dvMbEachHigh']/img)[1]");
 	private static By clickOnBuildYourOwnVacation = By.xpath("//div[@class='dvGoUrl']/a | (//a[@href='/asia/Design_Your_Own_Trip.aspx'])[2] | //a[contains(text(),' Customize your Itinerary')] | //div[@class='dvGoUrl']");
 	private static By clickOnCustomizeit = By.xpath("(//div[@class='dvMCustomize'])[1]");
+	private static By packagename = By.xpath("(//p[@class='pMpkInf1']/b)[1]");
+	private static By firstTopdealname = By.xpath("(//p[@class='pMpkTitle'])[1]");
 	
 	public static By getmoreHighLightsBtn() {
 		return moreHighlightsBtn;
@@ -134,6 +136,16 @@ public static By clickOnBuildYourOwnVacation() {
 public static By clickOnCustomizeit() {
 	// TODO Auto-generated method stub
 	return clickOnCustomizeit;
+}
+
+public static By getpackagename() {
+	// TODO Auto-generated method stub
+	return packagename;
+}
+
+public static By getfirstTopdealname() {
+	// TODO Auto-generated method stub
+	return firstTopdealname;
 }
 	
 }

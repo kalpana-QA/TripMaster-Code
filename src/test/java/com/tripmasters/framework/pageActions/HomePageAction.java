@@ -1,5 +1,6 @@
 package com.tripmasters.framework.pageActions;
 
+import java.lang.reflect.Method;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -9,9 +10,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import com.tripmasters.framework.base.PageBase;
 import com.tripmasters.framework.base.TestBase;
 import com.tripmasters.framework.pageLocators.HomePageLocators;
+import com.tripmasters.framework.reports.ExtentTestManager;
 
 import junit.framework.Assert;
 
@@ -92,7 +96,7 @@ public class HomePageAction extends PageBase {
 	}
 	
 	//verify first highlight and attraction
-	public void verifyfirsthighlightandAttraction() throws Exception {
+	public String verifyfirsthighlightandAttraction() throws Exception {
 		PageBase.waitForElement(10);
 	String firsthighlightandAttraction = driver.findElement(HomePageLocators.getFirstHighLightandAttraction()).getText();
 	System.out.println("First highlight and Attraction is "+ firsthighlightandAttraction);
@@ -102,6 +106,7 @@ public class HomePageAction extends PageBase {
 		Assert.assertTrue(flag);
 		
 	}
+	return firsthighlightandAttraction;
 	}
 	
 	
@@ -148,8 +153,29 @@ for (WebElement webElement : topDeals) {
 }
 }
 }
-	
 
+public void moreHighlightsandattractionList(){	
+		
+List<WebElement> morehighlights = driver.findElements(By.xpath("//div[@class='dvMbHighContent']/div/div/p"));
+
+System.out.println(morehighlights.size());
+
+for (WebElement webElement : morehighlights) {
+    String name = webElement.getText();
+    System.out.println(name);
+    
+    boolean flag = false;
+	if(driver.getPageSource().contains(name)) {
+		 flag = true;
+		Assert.assertTrue(flag);
+    
+}
+}
+
+
+
+	
+}
 	/**
 	 * click On Package Displayed Under Other Vacation Packages
 	 * 
@@ -211,8 +237,12 @@ for (WebElement webElement : topDeals) {
 		
 	}
 
-	public void clickOnCustomizeit() {
+	public String clickOnCustomizeit() {
+		WebElement we = driver.findElement(HomePageLocators.getfirstTopdealname()); 
+		String firstTopdeal = we.getText();
+		System.out.println("first top deal is " + firstTopdeal);
 		clickUsingJavaScript(HomePageLocators.clickOnCustomizeit());
+		return firstTopdeal;
 	}
 
 }

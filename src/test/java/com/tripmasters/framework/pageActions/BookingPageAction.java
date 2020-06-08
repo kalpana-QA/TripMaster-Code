@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -182,6 +183,19 @@ return selectedcabin;
 		clickUsingJavaScript(BookingLocators.getcontinueBtn());
 		PageBase.waitForElement(8);
 	}
+	
+	
+	//Get Session id
+	public String getSessionid() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement element = driver.findElement(By.id("nTXMLSession"));
+		js.executeScript("arguments[0].setAttribute('type', '')",element);
+		System.out.println(driver.findElement(By.id("nTXMLSession")).getAttribute("value"));
+		String value = driver.findElement(By.id("nTXMLSession")).getAttribute("value");
+		System.out.println("value is "+ value);
+		return value;
+	}
+	
 
 	public  void clickonContinueLink() throws Exception {
 		if(TestBase.flag_Mob) {
@@ -195,7 +209,7 @@ return selectedcabin;
 	}
 	
 	public void clickOncheaperFlights() throws Exception {
-		isElementDisplayed(BookingLocators.getcheaperFlightsLink());
+	//	isElementDisplayed(BookingLocators.getcheaperFlightsLink());
 		scrollDown();
 		PageBase.waitForElement(3);
 		clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
@@ -346,7 +360,7 @@ return selectedcabin;
 				driver.findElement(BookingLocators.getfirstChildDropdowniOS_deals()).click();
 				PageBase.waitForElement(3);
 				
-					driver.findElement(BookingLocators.getselectChildAgeDropdownMob_eleven()).click();	
+					driver.findElement(BookingLocators.getselectChildAgeDropdownMob_elevendeals()).click();	
 			}
 	
 			}
@@ -374,7 +388,64 @@ return selectedcabin;
 				
 					driver.findElement(BookingLocators.getselectChildAgeDropdownMob()).click();
 				PageBase.waitForElement(2);
-			} else {
+			} 
+	    
+	    else if(childType.equals("newageeleven")) {
+	    	
+	    	clickUsingJavaScript(BookingLocators.getselectfirstRoomChildPlus());
+			PageBase.waitForElement(3);
+			//Thread.sleep(20000);
+			driver.findElement(BookingLocators.getfirstChildDropdowniOS()).click();
+			PageBase.waitForElement(3);
+			
+				driver.findElement(BookingLocators.getselectChildAgeDropdownMob_eleven()).click();
+			
+			
+			
+				//driver.findElement(BookingLocators.getselectChildAgeDropdownMob()).click();
+			PageBase.waitForElement(2);
+	    	
+	    	
+	    }
+	    
+else if(childType.equals("europepage")) {
+	    	
+	    	clickUsingJavaScript(BookingLocators.getselectfirstRoomChildPlus());
+			PageBase.waitForElement(3);
+			//Thread.sleep(20000);
+			driver.findElement(BookingLocators.getfirstChildDropdowniOS()).click();
+			PageBase.waitForElement(3);
+			
+				driver.findElement(BookingLocators.getselectChildAgeDropdowneurope_elevendeals()).click();
+			
+			
+			
+				//driver.findElement(BookingLocators.getselectChildAgeDropdownMob()).click();
+			PageBase.waitForElement(2);
+	    	
+	    	
+	    }
+	    
+	    
+	    
+else if(childType.equals("newageseven")) {
+	    	
+	clickUsingJavaScript(BookingLocators.getselectsecondRoomChildPlus());
+	PageBase.waitForElement(3);
+	driver.findElement(BookingLocators.getsecondRoomChildDropdowniOS()).click();
+	PageBase.waitForElement(3);
+	driver.findElement(BookingLocators.getselectRoomtwoChildAgeseven()).click();
+	PageBase.waitForElement(2);
+	    	
+	    }
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    else {
 				clickUsingJavaScript(BookingLocators.getselectsecondRoomChildPlus());
 				PageBase.waitForElement(3);
 				driver.findElement(BookingLocators.getsecondRoomChildDropdowniOS()).click();
@@ -463,8 +534,11 @@ return selectedcabin;
 	}
 	
 	//==============Satyam==============//
-	public String secondCityHotelName() {
+	public String secondCityHotelName() throws Exception {
+		PageBase.waitForElement(10);
+		Thread.sleep(5000);
 		String expectedHotelName = driver.findElement(BookingLocators.getSecondCityHotel()).getText();
+		System.out.println("on last page hotel name" + expectedHotelName);
 		return expectedHotelName;
 	}
 	
@@ -477,8 +551,9 @@ return selectedcabin;
 			return null;
 			}
 		else{
+			Thread.sleep(10000);
 			String actualhotel = driver.findElement(BookingLocators.getfirstHoteliOS()).getText();
-			System.out.println("*******"+actualhotel);
+			System.out.println("*******n"+actualhotel);
 			return actualhotel;
 		}
 		
@@ -584,14 +659,15 @@ return selectedcabin;
 		clickOnElement(BookingLocators.getArriveDateDropdown());
 		
 		if(n>=2) {
-		for(int i=1;i<n;i++)
+		for(int i=0;i<n;i++)
 		{
 			clickOnElement(BookingLocators.getnavMonth());
+	//		clickOnElement(BookingLocators.clickondate());
 		}
 		}else if(n==1) {
 			clickOnElement(BookingLocators.getnavMonth_prev());
 		}
-		
+		clickOnElement(BookingLocators.clickondate());
 		//.sleep(20000);
 		String newDate = selectNewDateFromCalendar(additionaldays);
 		String[] newDateDay = newDate.split("/");
@@ -607,6 +683,8 @@ return selectedcabin;
 				break;
 			}
 		}
+	//	WebElement e = driver.findElement(By.xpath("//button[contains(.,'Done')]"));
+	//	e.click();
 		return newDate;
 	}
 	
@@ -846,8 +924,13 @@ return selectedcabin;
 			PageBase.waitForElement(5);
 	}
 	
-	
-	
+
+	public String exploreList() {
+		WebElement e = driver.findElement(By.xpath("(//p[@class='pMproduct']/a)[1]"));
+			String listname = e.getText();
+			System.out.println("list name is "+ listname);
+			return listname;
+	}
 	
 	
 	public void clickOnAddCityBtn(){
@@ -878,9 +961,13 @@ return selectedcabin;
 		return result;
 	}
 	
-	public void clickOnPackageDisplayedUnderSuggestedVacationPackageOption() throws Exception {
+	public String clickOnPackageDisplayedUnderSuggestedVacationPackageOption() throws Exception {
 		scrollDownForMob(3);
 		clickUsingJavaScript(HomePageLocators.getPackageDisplayedUnderSuggestedVacationPackageOption());
+	WebElement e = driver.findElement(HomePageLocators.getpackagename());
+	String packagename = e.getText();
+	System.out.println("Name of package is "+packagename);
+	return packagename;
 	}
 	
 	public void clickOnReorderCitiesLink() throws Exception {
@@ -892,7 +979,14 @@ return selectedcabin;
 	public void fillLeavingFromDetailsOnEuropePage(String leavingFrom) throws Exception {
 		clearAndSetValues(BookingLocators.getleavingtextBoxOnEuropePage(), leavingFrom);
 		//logs.info("User entered '" + leavingFrom + "' into leaving from field");
+		WebElement select = driver.findElement(By.xpath("(//span[@class='highlight boldText'])[1]"));
+		select.click();
+
+	
 	}
+	
+	
+	
 	
 	public  void selectNumberOfChildNewPage(String numOfChild, String ageOfChild, String childType) throws Exception
 	{

@@ -10,11 +10,11 @@
 	<groups>
 	<run>
 
-
+<!--   <include name="smok"></include>   -->
+<!--  <include name="regressio"></include>	 -->
+	
 	  <include name="smoke"></include>
 	  <include name="regression"></include>	
- 		 
-
 	</run>
    </groups>
    
