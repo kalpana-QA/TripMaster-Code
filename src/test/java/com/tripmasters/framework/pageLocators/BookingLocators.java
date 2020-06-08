@@ -130,6 +130,7 @@ public class BookingLocators {
 	private static By hotelsBy_Reviewscore=By.xpath("//a[text()='Review Score']");
 	private static By hotelsBy_Price=By.xpath("//a[text()='Price']");
 	private static By hotelsBy_Name=By.xpath("//a[text()='Name']");
+	private static By hotelsBy_Star=By.xpath("//a[text()='Stars']");
 	
 	private static By hotelBrowseOptions=By.xpath("(//a[@class='ui-radio-selected'])");
 	
@@ -145,7 +146,7 @@ public class BookingLocators {
 	private static By leavingTextboxBYO_Page = By.xpath("//input[@id='xtxtLeavingFrom']");
 	private static By arriveDateDropdown_BYOPage = By.xpath("//input[contains(@id,'xtxtBYArriving')]");
 	private static By selectGuestRoomOptionsDrpdown_BYOPage=By.cssSelector("input[id='xiRoomsAndPaxText']");
-	private static By selectAdult_Room1_BYOPage=By.cssSelector("div[id='dvR1adults']");
+	private static By selectAdult_Room1_BYOPage=By.cssSelector("input[id='xiAdultsText']");
 	private static  By selectChild_Room1_BYOPage=By.cssSelector("div[id='dvR1children']");
 	private static  By ChildAgeTextbox_BYO=By.xpath("//input[@id='xiChild1']");
 	private static By clickOnContinueButton_BYO=By.xpath("//input[@id='bContinue']");
@@ -168,6 +169,11 @@ public class BookingLocators {
 	private static By selectChildDrpdown2_dealsPage=By.xpath("//select[@id='Room2_iChildren'] ");
 	private static By enterAgeofChild=By.xpath("//input[@id='Room2_iChild1']");
 	private static By browseHotelsLink_TopDealsPage=By.xpath("(//div[@class='changeHotel rbtn']//a)[1]");
+	private static By getdate = By.xpath("(//table[@class='ui-datepicker-calendar']//tr//td[4]/a)[1]");
+	
+
+
+
 	// ======== Locators for Mobile ===============================================================================================
 
 	private static By cabinSectionMob = By.cssSelector("div[id='dvMcabin']");
@@ -918,6 +924,15 @@ public static By getpassportDrpdownSecondTravellerChildMob() {
 	public static By getBrowseHotelsLink_TopDealsPage() {
 		// TODO Auto-generated method stub
 		return browseHotelsLink_TopDealsPage;
+	}
+
+	public static By getHotelsBy_Star() {
+		
+		return hotelsBy_Star;
+	}
+
+	public static By clickondate() {
+		return getdate;
 	}
 }
 

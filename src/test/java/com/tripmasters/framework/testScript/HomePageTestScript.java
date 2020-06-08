@@ -23,6 +23,7 @@ public class HomePageTestScript extends TestBase {
 	public void TC_0011_verifyMoreHighlightAndAttractionLinks(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0011_verifyMoreHighlightAndAttractionLinks");
 		logs.startTestCase(method.getName());
+		test.log(LogStatus.INFO, "User entered the URL: 'https://www.tripmasters.com/");
 		String homePageTitle = homePage.getPageTitle();
 		PageBase.clickUsingJavaScript(HomePageLocators.getmoreHighLightsBtn());
 		test.log(LogStatus.INFO, "User clicked on More HighLights & Attraction Links");
@@ -57,18 +58,19 @@ public class HomePageTestScript extends TestBase {
 		String PackageTitle;
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0012_verifyOtherVacationPackages");
 		logs.startTestCase(method.getName());
+		test.log(LogStatus.INFO, "User entered the URL: 'https://www.tripmasters.com/");
 		homePage.scrollDownForMob(1);
 		PageBase.clickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
 		test.log(LogStatus.INFO, "User clicked on Explore Europe Link");
 		logs.info("User clicked on Explore Europe Link");
 		homePage.scrollDownForMob(3);
 		PackageTitle = homePage.clickOnPackageDisplayedUnderOtherVacationPackages();
-		test.log(LogStatus.INFO, "User clicked on package displayed under other vacation package");
+		test.log(LogStatus.INFO, "User clicked on package:'"+PackageTitle+"' displayed under other vacation package");
 		logs.info("User clicked on particular vacation package");
 		boolean romeFlorenceVeniceByTrainHeader = homePage.getPageTitle().contains(PackageTitle);
 		test.log(LogStatus.INFO, "Verified User is redirected  to the particular vacation packages");
 		Assert.assertTrue(romeFlorenceVeniceByTrainHeader);
-		test.log(LogStatus.INFO, "verifyOtherVacationPackages is displayed & testcase passed successfully.");
+		test.log(LogStatus.INFO, "verify selected Vacation Package: '"+PackageTitle+"' is displayed on navigating");
 		logs.info("verifyOtherVacationPackages is displayed & testcase passed successfully.");
 		logs.endTestCase(method.getName());
 	}
@@ -77,13 +79,16 @@ public class HomePageTestScript extends TestBase {
 	public void TC_0013_verifyPopularVacationPackages(Method method) {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0013_verifyPopularVacationPackages");
 		logs.startTestCase(method.getName());
+		test.log(LogStatus.INFO, "User entered the URL: 'https://www.tripmasters.com/");
+		String verifyPackage  = driver.findElement(HomePageLocators.getExploreEuropeLnk()).getText();
 		PageBase.clickUsingJavaScript(HomePageLocators.getExploreEuropeLnk());
-		test.log(LogStatus.INFO, "Clicked on Popular Vacation Packages");
-		logs.info("Clicked on Popular Vacation Packages");
+		test.log(LogStatus.INFO, "User validated that Popular Vacation Packages heading displayed on the homepage");
+		logs.info("User validated that Popular Vacation Packages displayed on the homepage");
 		String europePageTitle = homePage.getPageTitle();
 		 Assert.assertEquals(ActionPageData.getEuropePageTitle().trim(),europePageTitle);
-		test.log(LogStatus.INFO, "User is able to see all existing popular vacation packages");
-		test.log(LogStatus.INFO, "VerifyPopularVacationPackages displayed");
+		test.log(LogStatus.INFO, "User is able to see all existing popular vacation packages,Verified");
+		test.log(LogStatus.INFO, "User clicks on particular vacation package: '"+verifyPackage+"'");
+		test.log(LogStatus.INFO, "Verify that user redirected to selected Vacation Package page: '"+europePageTitle+"'");
 		logs.info("VerifyPopularVacationPackages displayed");
 		logs.endTestCase(method.getName());
 	}
@@ -92,6 +97,7 @@ public class HomePageTestScript extends TestBase {
 	public void TC_0010_verifySearchCity(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0010_verifySearchCity");
 		logs.startTestCase(method.getName());
+		test.log(LogStatus.INFO, "User entered the URL: 'https://www.tripmasters.com/");
 		String verifyhomepage = homePage.getPageTitle();
 		Assert.assertEquals(ActionPageData.getHomePageTitle(), verifyhomepage);
 		test.log(LogStatus.INFO, "Verified User is on homepage");
@@ -112,6 +118,7 @@ public class HomePageTestScript extends TestBase {
 	public void TC_0015_verifyStartAgainLink(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0015_verifyStartAgainLink");
 		logs.startTestCase(method.getName());
+		test.log(LogStatus.INFO, "User entered the URL: 'https://www.tripmasters.com/");
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ - EWR\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Delhi (India)");
@@ -138,6 +145,8 @@ public class HomePageTestScript extends TestBase {
 	public void TC_0016_verifyFooterText(Method method) {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0016_verifyFooterText");
 		logs.startTestCase(method.getName());
+		test.log(LogStatus.INFO, "User entered the URL: 'https://www.tripmasters.com/");
+		test.log(LogStatus.INFO, "Scroll down to the footer of the page");
 		boolean validatefooter = homePage.validateFooterText();
 		Assert.assertTrue(validatefooter);
 		test.log(LogStatus.INFO, "verifyFooterText is displayed");

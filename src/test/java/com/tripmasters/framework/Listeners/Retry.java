@@ -13,7 +13,7 @@ import com.tripmasters.framework.reports.ExtentTestManager;
 public class Retry implements IRetryAnalyzer{
 
 	private int count = 0;
-	private static int maxTry = 1; // Run the failed test 1 times
+	private static int maxTry = 1; // Run the failed test 2 times
 	// @Override
 
 	public boolean retry(ITestResult iTestResult) {
@@ -34,6 +34,18 @@ public class Retry implements IRetryAnalyzer{
 		}
 		return false;
 	}
+//		RetryCountIfFailed annotation = iTestResult.getMethod().getConstructorOrMethod().getMethod()
+//				 .getAnnotation(RetryCountIfFailed.class);
+//				 // based on the value of annotation see if test needs to be rerun
+//				 if((annotation != null) && (count < annotation.value()))
+//				 {
+//				 count++;
+//				 return true;
+//				 }
+//				 return false;
+//				 }
+
+	
 
 	public void extendReportsFailOperations(ITestResult iTestResult) {
 		Object testClass = iTestResult.getInstance();

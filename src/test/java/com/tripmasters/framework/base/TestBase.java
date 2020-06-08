@@ -32,7 +32,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	private static String chromeDriverFilePath = System.getProperty("user.dir")
 			+ "/src/test/resources/webdriver/chromedriver.exe";
-	public static WebDriver driver;
+	public  WebDriver driver;
 	private DesiredCapabilities capabilities;
 	private URL url;
 	private boolean flag = false;
@@ -46,7 +46,7 @@ public class TestBase {
 	public ExtentTest test;
 
 	
-	@BeforeMethod(alwaysRun = true)
+	@BeforeMethod(alwaysRun=true)
 	// @Parameters(value = { "browser" })
 	public void setUp() throws FileNotFoundException, IOException, ParseException {
 		// gn = new GenerateReport();
@@ -148,15 +148,13 @@ public class TestBase {
 		passengerInfoPage = new PassengerInfoPageAction(driver);
 	}
 
-	@AfterMethod(alwaysRun = true)
-	public static void tearDown() {
-		// gn.extent.flush();
-		// driver.quit();
-		// GenerateReport2.startReport(null, null);
-		// GenerateReport2.getResult(null);
+	@AfterMethod(alwaysRun=true)
+	public void tearDown() throws FileNotFoundException, IOException, ParseException {
+		
 		if (driver != null) {
 			//Logs.info("Closing browser after TestClass");
 		 driver.close();
+		
 		} else {
 			//Logs.error("Driver is null at AfterClass (TestBase)");
 		}

@@ -8,6 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.html5.RemoteSessionStorage;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
@@ -425,13 +426,16 @@ public class BookingPageAction extends PageBase {
 	public  String selectValueFromCalendar(int additionaldays,int n) throws Exception {
 		clickOnElement(BookingLocators.getArriveDateDropdown());
 		if(n>=2) {
-		for(int i=0;i<=n;i++)
+		for(int i=0;i<n;i++)
 		{
 		clickOnElement(BookingLocators.getnavMonth());
 		}
 		}else if(n<1) {
 		clickOnElement(BookingLocators.getnavMonth_prev());
 		}
+		
+		clickOnElement(BookingLocators.clickondate());
+		
 		String newDate = selectNewDateFromCalendar(additionaldays);
 		String[] newDateDay = newDate.split("/");
 		String selectdate=newDateDay[1]; 
@@ -440,12 +444,46 @@ public class BookingPageAction extends PageBase {
 		if (cell.getText().equals(selectdate)) {
 		Thread.sleep(20000);
 		cell.findElement(By.linkText(selectdate)).click();
-		
 		break;
 		}
 		}
 		return newDate;
 		}
+	
+//	public  String selectValueFromCalendar(int additionaldays,int n) throws Exception {
+//		clickOnElement(BookingLocators.getArriveDateDropdown());
+//		String newDate = selectNewDateFromCalendar(additionaldays);
+//		String[] newDateDay = newDate.split("/");
+//		String selectdate=newDateDay[1]; 
+//		
+//		if(n>=2) {
+//		for(int i=0;i<n;i++)
+//		{
+//		clickOnElement(BookingLocators.getnavMonth());
+//		}
+//		List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
+//		for (WebElement cell : columns) {
+//			if (cell.getText().equals(selectdate)) {
+//			Thread.sleep(20000);
+//			cell.findElement(By.linkText(selectdate)).click();
+//			break;
+//			}
+//		 }
+//	   }
+//	
+//		else if(n<1) {
+//		clickOnElement(BookingLocators.getnavMonth_prev());
+//		List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
+//		for (WebElement cell : columns) {
+//			if (cell.getText().equals(selectdate)) {
+//			Thread.sleep(20000);
+//			cell.findElement(By.linkText(selectdate)).click();
+//			break;
+//			}
+//		  }
+//		}
+//		return newDate;
+//		}
 
 
 	public  void selectCabinClass(String cabinclass) {
@@ -718,8 +756,12 @@ public class BookingPageAction extends PageBase {
 		Assert.assertTrue(status);
 	}
 
-	public void selectFromVacationPackageIdeas() {
+	public String selectFromVacationPackageIdeas() {
+		String selectedPackage = driver.findElement(BookingLocators.getSelectVacationIdeas()).getText();
+	    System.out.println(selectedPackage);
 		clickUsingJavaScript(BookingLocators.getSelectVacationIdeas());
+	    return selectedPackage;
+		
 	}
 
 	public void clicktoReorderCities() {
@@ -732,6 +774,7 @@ public class BookingPageAction extends PageBase {
 	
 	public  String selectValueFromCalendar_BYOPackage(int AdditionalDays) {
 		clickOnElement(BookingLocators.getarriveDateDropdown_BYOPage());
+		
 		String newDate = selectNewDateFromCalendar(AdditionalDays);
 		String[] newDateDay = newDate.split("/");
          String selectedDate= newDateDay[1];
@@ -754,6 +797,9 @@ public class BookingPageAction extends PageBase {
 
 	public void selectAdultForRoom1_BYOPage(String numOfAdults) {
 		clickUsingJavaScript(BookingLocators.getselectAdult_Room1_BYOPage());
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("document.getElementById('xiAdults')[0].value='1'");
+		//clickUsingJavaScript(driver.findElement(By.cssSelector("input[id='xiAdults']")));
 		driver.findElement(By.xpath("(//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']//li)[15]")).click();
 		 
 	}
@@ -769,6 +815,12 @@ public class BookingPageAction extends PageBase {
 
 	public void clickToContinue_BYOPage() {
 		clickUsingJavaScript(BookingLocators.getclickOnContinueButton_BYO());
+
+//		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		WebElement element = driver.findElement(By.id("nTXMLSession"));
+//		js.executeScript("arguments[0].setAttribute('type', '')",element);
+//		System.out.println(driver.findElement(By.id("nTXMLSession")).getAttribute("value"));
+
 	}
 
 	public void validateErrorMessage_MandatoryFields() {
@@ -905,4 +957,22 @@ public class BookingPageAction extends PageBase {
 		}
 	}
 
+	public void browseHotelsBy_Star() {
+		clickUsingJavaScript(BookingLocators.getHotelsBy_Star());
+		boolean status=driver.findElement(BookingLocators.gethotelBrowseOptions()).isDisplayed();
+		System.out.println("Staus is"+ status);
+		Assert.assertTrue(status);
+		
+	}
+
+	public String getSessionID() {
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement element = driver.findElement(By.id("nTXMLSession"));
+		js.executeScript("arguments[0].setAttribute('type', '')",element);
+		System.out.println(driver.findElement(By.id("nTXMLSession")).getAttribute("value"));
+		String sessionValue=driver.findElement(By.id("nTXMLSession")).getAttribute("value");
+		return sessionValue;
+		
+	}
 }
