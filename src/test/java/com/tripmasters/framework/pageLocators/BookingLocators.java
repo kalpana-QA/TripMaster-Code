@@ -11,8 +11,8 @@ public class BookingLocators {
 	//private static By selectButtonInFlightOption1 = By.xpath("(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/Select1.png')])[1]");
 	private static By selectButtonInFlightOption1 = By.xpath("//div[@id='dropShadow1']//tr//a//*[text()='Select']");
 	private static By selectbutton = By.xpath("//div/a[contains(text(),'Select')]");
-	private static By addCityBtn = By.xpath("//input[@id='inpAddCty'] | //span[contains(.,'Add City')] | //p[@id='pMaddcity']");
-	private static By noMoreCitiesBtn = By.xpath("//input[@id='inpNoMore'] | //span[contains(.,'No more cities. Continue')] | //span[@class = 'spMnextbutt']");
+	private static By addCityBtn = By.xpath("//input[@id='inpAddCty'] | //span[text()='ADD DESTINATION']|//span[contains(.,'Add City')] | //p[@id='pMaddcity']");
+	private static By noMoreCitiesBtn = By.xpath("//span[text()='Next'] | //input[@id='inpNoMore'] | //span[contains(.,'No more cities. Continue')] | //span[@class = 'spMnextbutt']");
 	private static By continueBtn = By.xpath("//div[@class='dvContinueButton']//span[contains(.,'Continue')] | //p[@id='pMcont']/span[contains(.,'Continue')]");
 	private static By continueLink = By.xpath("//a[@id='aContWithPriceValidation']");
 	private static By continueImage = By.xpath("//img[@id='imgPriceIt'] | //img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/btn_continue.png')]");
@@ -170,7 +170,7 @@ public class BookingLocators {
 	private static By enterAgeofChild=By.xpath("//input[@id='Room2_iChild1']");
 	private static By browseHotelsLink_TopDealsPage=By.xpath("(//div[@class='changeHotel rbtn']//a)[1]");
 	private static By getdate = By.xpath("(//table[@class='ui-datepicker-calendar']//tr//td[4]/a)[1]");
-	
+	private static By selectRemoveThirdCityBtn=By.xpath("(//span[text()='Edit/Remove'])[2]");
 
 
 
@@ -934,5 +934,11 @@ public static By getpassportDrpdownSecondTravellerChildMob() {
 	public static By clickondate() {
 		return getdate;
 	}
+	
+	public static By getselectRemoveThirdCityBtn() {
+		return selectRemoveThirdCityBtn;
+	}
+	
+	
 }
 

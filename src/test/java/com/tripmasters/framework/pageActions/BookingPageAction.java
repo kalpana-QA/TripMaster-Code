@@ -975,4 +975,8 @@ public class BookingPageAction extends PageBase {
 		return sessionValue;
 		
 	}
+
+	public void clickOnRemoveBtnThirdCity() {
+		clickUsingJavaScript(BookingLocators.getselectRemoveThirdCityBtn());
+	}
 }

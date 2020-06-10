@@ -128,7 +128,7 @@ public class HomePageTestScript extends TestBase {
 		bookingPage.selectStayingTime("4");
 		test.log(LogStatus.INFO, "Select staying time :4 nights");
 		bookingPage.selectNoMoreCitiesBtn();
-		test.log(LogStatus.INFO, "Click on No More Cities Button");
+		test.log(LogStatus.INFO,   "Click on Next Button");
 		bookingPage.selectGuestDetails("1|2");
 		test.log(LogStatus.INFO, "User select 1 Room for 2 Adults");
 		test.log(LogStatus.INFO, "User fills all the basic booking details");
