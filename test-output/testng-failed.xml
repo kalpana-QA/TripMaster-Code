@@ -10,23 +10,18 @@
       <run>
         <include name="smoke"/>
         <include name="regression"/>
-        <include name="testdemo"/>
       </run>
     </groups>
     <classes>
-      <class name="com.tripmasters.framework.testScript.HomePageTestScript">
+      <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
           <include name="tearDown"/>
+          <include name="TC_0009_arrival_dateChanging" invocation-numbers="0"/>
           <include name="setUp"/>
-<<<<<<< HEAD
-          <include name="multipleCities_TC_21" invocation-numbers="0"/>
-          <include name="bookingDetailswithPremiumEcomomy_TC_18" invocation-numbers="0"/>
-          <include name="verifySpotlightLink_TC_14" invocation-numbers="0"/>
-=======
-          <include name="verifyOtherVacationPackages_TC_12" invocation-numbers="0"/>
->>>>>>> b60fbc97bb0ac7c6f4ae15ca6791b7e4c69001c7
+          <include name="TC_0021_tripSummarymultipleCities"/>
+          <include name="TC_0018_bookingDetailswithPremiumEcomomy"/>
         </methods>
-      </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
+      </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

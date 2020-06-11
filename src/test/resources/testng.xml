@@ -9,32 +9,21 @@
 	<test name="Test">
 	<groups>
 	<run>
-<<<<<<< Updated upstream
-		<include name="smoke"></include>
-		<include name="regression"></include>
-<<<<<<< HEAD
-		<include name="testdemo"></include>
-=======
-<!-- 		<include name="testdemo"></include> -->
-=======
+
+
 	  <include name="smoke"></include>
 	  <include name="regression"></include>	
- 	  <include name="testdemo"></include>
- 		 
->>>>>>> Stashed changes
->>>>>>> b60fbc97bb0ac7c6f4ae15ca6791b7e4c69001c7
+<!--  	  <include name="testdemo"></include> -->
+
 	</run>
    </groups>
    
 <!-- <parameter name="browser" value="Chrome" /> -->
 		<classes>
-<<<<<<< Updated upstream
+
 		<class name="com.tripmasters.framework.testScript.HomePageTestScript" /> 
  		<class name="com.tripmasters.framework.testScript.BookingPageTestScript" /> 
-=======
- <!--  	<class name="com.tripmasters.framework.testScript.HomePageTestScript" /> --> 
- 	   	<class name="com.tripmasters.framework.testScript.BookingPageTestScript" /> 
->>>>>>> Stashed changes
+
 <!--  			<class name="com.tripmasters.framework.utils.GenerateReport2" />  -->
 		</classes>
 	</test> <!-- Test -->

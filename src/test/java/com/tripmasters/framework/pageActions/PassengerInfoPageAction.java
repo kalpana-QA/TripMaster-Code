@@ -266,7 +266,7 @@ public class PassengerInfoPageAction extends PageBase {
 				String fullNameR1C1 = firstNameR1C1 +" "+ secondNameR1C1;
 				list.add(fullNameR1C1);
 				list.add(selectOptionByText(PassengerInformationLocators.getgenderR1C1Mob(), "Male"));
-				list.add(clearAndSetValues(PassengerInformationLocators.getdobR1C1Mob(), "01/01/2000"));
+				list.add(clearAndSetValues(PassengerInformationLocators.getdobR1C1Mob(), "01/01/2009"));
 			}
 			else {
 			String firstNameR1C1 = clearAndSetValues(PassengerInformationLocators.getfnameR1C1(), "Erwin");
@@ -274,7 +274,7 @@ public class PassengerInfoPageAction extends PageBase {
 			String fullNameR1C1 = firstNameR1C1 + " " + secondNameR1C1;
 			list.add(fullNameR1C1);
 			list.add(selectOptionByText(PassengerInformationLocators.getgenderR1C1(), "Male"));
-			list.add(clearAndSetValues(PassengerInformationLocators.getdobR1C1(), "01/01/2000"));
+			list.add(clearAndSetValues(PassengerInformationLocators.getdobR1C1(), "01/01/2009"));
 			}
 			selectOptionByValue(PassengerInformationLocators.getpassportR1C1(), "237|US");
 		}
@@ -285,7 +285,7 @@ public class PassengerInfoPageAction extends PageBase {
 			String fullNameR2C1 = firstNameR2C1 + " " + secondNameR2C1;
 			list.add(fullNameR2C1);
 			list.add(selectOptionByText(PassengerInformationLocators.getgenderR2C1(), "Male"));
-			list.add(clearAndSetValues(PassengerInformationLocators.getdobR2C1(), "01/01/2000"));
+			list.add(clearAndSetValues(PassengerInformationLocators.getdobR2C1(), "01/01/2017"));
 			selectOptionByValue(PassengerInformationLocators.getpassportR2C1(), "237|US");
 		}
 		else if(RoomTravelerInfo.equalsIgnoreCase("Room1Child1SingleTravlr")) {
@@ -294,7 +294,7 @@ public class PassengerInfoPageAction extends PageBase {
         	String fullNameR1C1SingleTravlr=firstNameR1C1SingleTravlr +" "+ secondNameR1C1SingleTravlr;
         	list.add(fullNameR1C1SingleTravlr);
     	    list.add(selectOptionByText(PassengerInformationLocators.getgenderR1C1SingleTrvlr(), "Male"));
-    		list.add(clearAndSetValues(PassengerInformationLocators.getdobR1C1(), "01/01/2000"));
+    		list.add(clearAndSetValues(PassengerInformationLocators.getdobR1C1(), "01/01/2009"));
     		selectOptionByValue(PassengerInformationLocators.getpassportR1C1(), "237|US");
 		}
 		
@@ -304,10 +304,18 @@ public class PassengerInfoPageAction extends PageBase {
     	String fullNameR2C1SingleTravlr=firstNameR2C1SingleTravlr +" "+ secondNameR2C1SingleTravlr;
     	list.add(fullNameR2C1SingleTravlr);
 	    list.add(selectOptionByText(PassengerInformationLocators.getgenderR2C1SingleTrvlr(), "Male"));
-		list.add(clearAndSetValues(PassengerInformationLocators.getdobR2C1SingleTrvlr(), "01/01/2000"));
+		list.add(clearAndSetValues(PassengerInformationLocators.getdobR2C1SingleTrvlr(), "01/01/2017"));
 		selectOptionByValue(PassengerInformationLocators.getpassportR2C1SingleTrvlr(), "237|US");
 		}
 		return list;
+	}
+	
+	public boolean isErrorMessageDisplayed() {
+		boolean result = false;
+		if(driver.findElement(PassengerInformationLocators.geterrorMessage()).isDisplayed());{
+			result = true;
+		}
+		return result;
 	}
 
 }
