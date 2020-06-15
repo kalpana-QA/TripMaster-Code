@@ -422,7 +422,16 @@ public class BookingPageAction extends PageBase {
 //		}
 //		return newDate;
 //	}
-	
+	public Object newValue(String selectdate){
+		char achar=0;
+	if(selectdate.startsWith("0")){
+		achar=selectdate.charAt(1);
+		return achar;
+	}
+	else {
+		return selectdate;
+	  }
+	}
 	public  String selectValueFromCalendar(int additionaldays,int n) throws Exception {
 		clickOnElement(BookingLocators.getArriveDateDropdown());
 		if(n>=2) {
@@ -433,17 +442,17 @@ public class BookingPageAction extends PageBase {
 		}else if(n<1) {
 		clickOnElement(BookingLocators.getnavMonth_prev());
 		}
-		
-		clickOnElement(BookingLocators.clickondate());
-		
 		String newDate = selectNewDateFromCalendar(additionaldays);
 		String[] newDateDay = newDate.split("/");
 		String selectdate=newDateDay[1]; 
+		Object date=newValue(selectdate);	
 		List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
 		for (WebElement cell : columns) {
-		if (cell.getText().equals(selectdate)) {
+			String val=cell.getText();
+			String dateString=date.toString();
+		if (val.equals(dateString)) {
 		Thread.sleep(20000);
-		cell.findElement(By.linkText(selectdate)).click();
+		clickOnElement(BookingLocators.getdate(dateString));
 		break;
 		}
 		}
@@ -795,18 +804,19 @@ public class BookingPageAction extends PageBase {
 		
 	}
 
-	public void selectAdultForRoom1_BYOPage(String numOfAdults) {
+	public void selectAdultForRoom1_BYOPage(String numOfAdults) throws Exception {
 		clickUsingJavaScript(BookingLocators.getselectAdult_Room1_BYOPage());
-		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		jse.executeScript("document.getElementById('xiAdults')[0].value='1'");
-		//clickUsingJavaScript(driver.findElement(By.cssSelector("input[id='xiAdults']")));
+//		JavascriptExecutor jse = (JavascriptExecutor)driver;
+//		jse.executeScript("document.getElementById('xiAdults')[0].value='1'");
+		clearAndSetValues(BookingLocators.getselectRoom1AdultBYO_Page(), "1");
 		driver.findElement(By.xpath("(//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']//li)[15]")).click();
 		 
 	}
 
-	public void selectChildForRoom1_BYOPage(String numOfChild) {
+	public void selectChildForRoom1_BYOPage(String numOfChild) throws Exception {
 		clickUsingJavaScript(BookingLocators.getselectChild_Room1_BYOPage());
-		driver.findElement(By.xpath("(//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']//li)[22]")).click();
+		clearAndSetValues(BookingLocators.getselectRoom1ChildBYO_Page(), "1");
+		clickUsingJavaScript(driver.findElement(By.xpath("(//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']//li)[17]")));
 	}
 
 	public void enterChildAge_BYOPage(String childAge) throws Exception {
@@ -844,22 +854,27 @@ public class BookingPageAction extends PageBase {
 	public String selectValueFromCalendar_FirstPckg(int AdditionalDays,int n) throws InterruptedException {
 		clickOnElement(BookingLocators.getarriveDateDropdown_FirstPckg());
 		if(n>=2) {
-			for(int i=0;i<=n;i++)
+			for(int i=0;i<n;i++)
 			{
 			clickOnElement(BookingLocators.getnavMonth());
 			}
 			}else if(n<1) {
 			clickOnElement(BookingLocators.getnavMonth_prev());
 			}
+			else if(n==1){
+				clickOnElement(BookingLocators.getnavMonth());
+			}
 			String newDate = selectNewDateFromCalendar(AdditionalDays);
 			String[] newDateDay = newDate.split("/");
 			String selectdate=newDateDay[1]; 
+			Object date=newValue(selectdate);	
 			List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
 			for (WebElement cell : columns) {
-			if (cell.getText().equals(selectdate)) {
+				String val=cell.getText();
+				String dateString=date.toString();
+			if (val.equals(dateString)) {
 			Thread.sleep(20000);
-			cell.findElement(By.linkText(selectdate)).click();
-			
+			clickOnElement(BookingLocators.getdate(dateString));
 			break;
 			}
 			}

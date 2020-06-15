@@ -89,6 +89,7 @@ public class BookingPageTestScript extends TestBase {
 		Thread.sleep(4000);
 		String selectDate=bookingPage.selectValueFromCalendar(100,1);
 		test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");
+		System.out.println(selectDate);
 		bookingPage.clickOnAddCityBtn();
 		test.log(LogStatus.INFO,   "Click on + Add Destination button");
 		Thread.sleep(4000);
@@ -156,7 +157,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ - EWR\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
 		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
-		String selectDate=bookingPage.selectValueFromCalendar(90,1);
+		String selectDate=bookingPage.selectValueFromCalendar(100,1);
 		test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");
 		bookingPage.selectStayingTime("12");
 		test.log(LogStatus.INFO, "Select staying time :12 nights");
@@ -234,7 +235,7 @@ public class BookingPageTestScript extends TestBase {
 			test.log(LogStatus.INFO, "User entered \"New York City (all Airports)\" into leaving from field");
 			bookingPage.fillGoingToCityDetails("Delhi (India)");
 			test.log(LogStatus.INFO, "User entered \"Delhi (India)\" into Going To City field");
-			String selectDate=bookingPage.selectValueFromCalendar(90,1);
+			String selectDate=bookingPage.selectValueFromCalendar(100,1);
 			test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");
 			bookingPage.selectCabinClass("Premium Economy");
 			test.log(LogStatus.INFO, "Select Cabin Class:Premium");
@@ -257,6 +258,8 @@ public class BookingPageTestScript extends TestBase {
 				   }
 			bookingPage.clickonContinueButton();
 			test.log(LogStatus.INFO, "Click on Continue Button");
+			String sessionID=bookingPage.getSessionID();
+			test.log(LogStatus.INFO, "Session ID is: '"+sessionID+"'");
 			bookingPage.getContinueLink();
 			test.log(LogStatus.INFO, "Click on Continue link to navigate to Trip Inclusion Page");
 			Thread.sleep(4000);
@@ -339,6 +342,7 @@ public class BookingPageTestScript extends TestBase {
 		Thread.sleep(4000);
 		String selectDate=bookingPage.selectValueFromCalendar(90,1);
 		test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");
+		System.out.println(selectDate);
 		bookingPage.selectStayingTime("4");
 		test.log(LogStatus.INFO, "Select staying time :4 nights");
 		Thread.sleep(4000);
@@ -522,7 +526,7 @@ public class BookingPageTestScript extends TestBase {
 		logs.info("Select withOut Air Option on HomePage");
 		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
 		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
-		String selectDate=bookingPage.selectValueFromCalendar(90,1);
+		String selectDate=bookingPage.selectValueFromCalendar(100,1);
 		test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");
 		System.out.println(selectDate);
 		bookingPage.selectStayingTime("4");
@@ -572,6 +576,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User entered \"London (England)\" into Going to from field");
 		String selectDate=bookingPage.selectValueFromCalendar(90,1);
 		test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");
+		System.out.println(selectDate);
 		bookingPage.selectStayingTime("6");
 		test.log(LogStatus.INFO, "User entered \"6\" nights staying time");	
 		bookingPage.clickOnAddCityBtn();
@@ -634,8 +639,9 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User redirected to first deal of the week,Verified!");
 		bookingPage.fillLeavingFromDetails_FirstPckg("New York, Newark, NJ - EWR");
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ - EWR\" into leaving from field");
-		String selectDate=bookingPage.selectValueFromCalendar_FirstPckg(124,1);	
+		String selectDate=bookingPage.selectValueFromCalendar_FirstPckg(124,0);	
 		test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");
+		System.out.println(selectDate);
 		bookingPage.selectGuestDetails_FirstPckgOneRoom("2|Other");
 		test.log(LogStatus.INFO, "User selects 2 Rooms with other options");
 		bookingPage.select2NumberOfAdultForRoom1("1", BookingLocators.getselectAdultDrpdown());
@@ -724,6 +730,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Select staying time for city 2 :4 nights");
 		String selectDate=bookingPage.selectValueFromCalendar(215,4);
 		test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");
+		System.out.println(selectDate);
 		bookingPage.selectNoMoreCitiesBtn();
 		test.log(LogStatus.INFO,   "Click on No more cities,Continue Button");
 		test.log(LogStatus.INFO, "User select \"1 Room With 2 Adults\" from Guest list");
@@ -786,7 +793,9 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO,   "User selects default date from calendar as per the package");	
 		bookingPage.selectGuestDetails_BYOPage("2 rooms with children or other options");
 		test.log(LogStatus.INFO, "User select \"2 Room With Other Options\" from Guest list");
-		//bookingPage.selectAdultForRoom1_BYOPage("1");
+		bookingPage.selectAdultForRoom1_BYOPage("1");
+		bookingPage.selectChildForRoom1_BYOPage("1");
+		bookingPage.enterChildAge_BYOPage("7");
 		test.log(LogStatus.INFO, "User select \"1 Adult 1Child \" for Room1 ");
 		test.log(LogStatus.INFO, "User select \"Age of Child:7 \" for Room1 ");
 		test.log(LogStatus.INFO, "2 Adults selected for Room 2(default selected) ");
@@ -831,8 +840,9 @@ public class BookingPageTestScript extends TestBase {
 		 test.log(LogStatus.INFO, "User selects '"+selectedPackage+"' option from Vacation Package Ideas");
 		bookingPage.fillLeavingFromDetails_FirstPckg("Washington (all Airports), DC");
 		test.log(LogStatus.INFO, "User entered \"Washington (all Airports), DC\" into leaving from field");
-		String selectDate=bookingPage.selectValueFromCalendar_FirstPckg(150,2);
-		test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");		
+		String selectDate=bookingPage.selectValueFromCalendar_FirstPckg(180,1);
+		test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");	
+		System.out.println(selectDate);
 		bookingPage.selectGuestDetails_FirstPckgOneRoom("1|2");
 		test.log(LogStatus.INFO, "User selects 1 Room with two Adults");
 		bookingPage.clickOnViewPrice();
@@ -884,7 +894,8 @@ public class BookingPageTestScript extends TestBase {
 			bookingPage.fillGoingToCityDetails("Dublin (Ireland)");
 			test.log(LogStatus.INFO, "User entered \"Dublin (Ireland)\" into Going to from field");
 			String selectDate=bookingPage.selectValueFromCalendar(180,3);
-			test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");	
+			test.log(LogStatus.INFO,   "User selects '" + selectDate + "' from calendar");
+			System.out.println(selectDate);
 			bookingPage.selectStayingTime("4");
 			test.log(LogStatus.INFO, "User entered \"4\" nights staying time");	
 			bookingPage.clickOnAddCityBtn();

@@ -123,7 +123,7 @@ public class BookingLocators {
 	private static By cabinClassDropdown = By.xpath("//select[@id='qCabinOpt']");
 	private static By verifycabinClassDropdown = By.xpath("//select[@id='xCabin']");
 	private static By firstpremiumoption = By.xpath("//select[@id='qCabinOpt']//option[2]");
-	private static By verifypremiumoption = By.xpath("(//div[@class='divFligth-Bottom-Right textGrey10']/text()[preceding-sibling::br])[2]//..");
+	private static By verifypremiumoption = By.xpath("(//div[@class='divFligth-Bottom-Right textGrey10']/text()[preceding-sibling::br])[1]//..");
 	private static By backToItineraryOption=By.xpath("(//*[text()='Back to Itinerary'])[2]");
 
 	private static By travelByOption=By.xpath("//p[@id='pTranspSel1-1']");
@@ -169,10 +169,13 @@ public class BookingLocators {
 	private static By selectChildDrpdown2_dealsPage=By.xpath("//select[@id='Room2_iChildren'] ");
 	private static By enterAgeofChild=By.xpath("//input[@id='Room2_iChild1']");
 	private static By browseHotelsLink_TopDealsPage=By.xpath("(//div[@class='changeHotel rbtn']//a)[1]");
-	private static By getdate = By.xpath("(//table[@class='ui-datepicker-calendar']//tr//td[4]/a)[1]");
+	public static By getdate(String selectdate) {
+		
+		return (By.xpath("(//td//a[contains(text(),'"+selectdate+"')])[1]"));
+	}
 	private static By selectRemoveThirdCityBtn=By.xpath("(//span[text()='Edit/Remove'])[2]");
-
-
+    private static By selectRoom1AdultBYO_Page=By.cssSelector("input[id='xiAdultsText']");
+    private static By selectRoom1ChildBYO_Page=By.cssSelector("input[id='xiChildrenText']");
 
 	// ======== Locators for Mobile ===============================================================================================
 
@@ -931,14 +934,22 @@ public static By getpassportDrpdownSecondTravellerChildMob() {
 		return hotelsBy_Star;
 	}
 
-	public static By clickondate() {
-		return getdate;
-	}
+//	public static By clickondate(String selectdate) {
+//		return getdate;
+//	}
 	
 	public static By getselectRemoveThirdCityBtn() {
 		return selectRemoveThirdCityBtn;
 	}
 	
 	
+	public static By getselectRoom1AdultBYO_Page() {
+		return selectRoom1AdultBYO_Page;
+	}
+
+	public static By getselectRoom1ChildBYO_Page() {
+		// TODO Auto-generated method stub
+		return selectRoom1ChildBYO_Page;
+	}
 }
 

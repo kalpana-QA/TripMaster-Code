@@ -138,6 +138,12 @@ public class HomePageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User clicks on Start Again Link");
 		test.log(LogStatus.INFO, "On clicking start again,User redirected to super homepage");
 		logs.info("verifyStartAgainLink is displayed");
+		bookingPage.selectNoMoreCitiesBtn();
+		test.log(LogStatus.INFO,   "Click on Next Button");
+		bookingPage.clickonContinueButton();
+		test.log(LogStatus.INFO, "Click on Continue Button");
+		String sessionID=bookingPage.getSessionID();
+		test.log(LogStatus.INFO, "Session ID is: '"+sessionID+"'");
 		logs.endTestCase(method.getName());
 	}
 
