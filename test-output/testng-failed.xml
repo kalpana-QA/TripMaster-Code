@@ -5,6 +5,7 @@
     <classes>
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
+          <include name="tearDown"/>
           <include name="setUp"/>
           <include name="TC_0005_FlightbookingjourneywithBuyYourOwnPackage" invocation-numbers="0"/>
         </methods>

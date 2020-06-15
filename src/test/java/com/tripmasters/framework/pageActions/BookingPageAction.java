@@ -816,7 +816,10 @@ public class BookingPageAction extends PageBase {
 	public void selectChildForRoom1_BYOPage(String numOfChild) throws Exception {
 		clickUsingJavaScript(BookingLocators.getselectChild_Room1_BYOPage());
 		clearAndSetValues(BookingLocators.getselectRoom1ChildBYO_Page(), "1");
-		clickUsingJavaScript(driver.findElement(By.xpath("(//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']//li)[17]")));
+		//WebElement select=driver.findElement(By.xpath("(//li[contains(@class,'ui-menu-item')])[1]"));
+		//select.click();
+		clickUsingJavaScript(driver.findElement(By.xpath("(//li[contains(@class,'ui-menu-item')])[1]")));
+		//clickUsingJavaScript(driver.findElement(By.xpath("(//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']//li)[17]")));
 	}
 
 	public void enterChildAge_BYOPage(String childAge) throws Exception {
@@ -849,6 +852,8 @@ public class BookingPageAction extends PageBase {
 
 	public void fillLeavingFromDetails_FirstPckg(String leavingFrom) throws Exception {
 		clearAndSetValues(BookingLocators.getleavingTextboxFirstPckg(), leavingFrom);
+		WebElement select=driver.findElement(By.xpath("(//li[contains(@class,'ui-menu-item')])[1]"));
+		select.click();
 	}
 
 	public String selectValueFromCalendar_FirstPckg(int AdditionalDays,int n) throws InterruptedException {
