@@ -816,10 +816,14 @@ public class BookingPageAction extends PageBase {
 	public void selectChildForRoom1_BYOPage(String numOfChild) throws Exception {
 		clickUsingJavaScript(BookingLocators.getselectChild_Room1_BYOPage());
 		clearAndSetValues(BookingLocators.getselectRoom1ChildBYO_Page(), "1");
-		//WebElement select=driver.findElement(By.xpath("(//li[contains(@class,'ui-menu-item')])[1]"));
-		//select.click();
-		clickUsingJavaScript(driver.findElement(By.xpath("(//li[contains(@class,'ui-menu-item')])[1]")));
-		//clickUsingJavaScript(driver.findElement(By.xpath("(//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']//li)[17]")));
+//clickUsingJavaScript(driver.findElement(By.xpath("(//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']//li)[17]")));
+		WebElement Childdrpdown= driver.findElement(By.xpath("//ul[@id='ui-id-4']"));
+		List<WebElement>Childlist =Childdrpdown.findElements(By.tagName("li"));
+		for (WebElement li : Childlist) {
+		if (li.getText().equals("1")) {
+		     li.click();
+		   }
+		}
 	}
 
 	public void enterChildAge_BYOPage(String childAge) throws Exception {
@@ -963,7 +967,7 @@ public class BookingPageAction extends PageBase {
 	}
 
 	public String browseHotelsButton_EuropePage() throws Exception {
-		waitForElement(5);
+		waitForElement(8);
 		clickUsingJavaScript(BookingLocators.getBrowseHotelsLink_TopDealsPage());
 		waitForElement(2);
 		if(!TestBase.flag_Mob){

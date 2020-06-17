@@ -787,7 +787,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User selects '"+selectedPackage+"' option from Vacation Package Ideas");
 		bookingPage.clicktoReorderCities();
 		test.log(LogStatus.INFO, "User clicks on Reorder cities button");	
-		bookingPage.fillLeavingFromDetails_BYOPage("Chicago (All Airports)");
+		bookingPage.fillLeavingFromDetails_BYOPage("Chicago CHI (All Airports)(IL), US");
 		test.log(LogStatus.INFO, "User entered \"Chicago (All Airports)\" into leaving from field");
 		//String selectDate=bookingPage.selectValueFromCalendar_BYOPackage(90);
 		test.log(LogStatus.INFO,   "User selects default date from calendar as per the package");	
