@@ -50,10 +50,33 @@ public class BookingPageAction extends PageBase {
 		//test.log(LogStatus.INFO, "User entered '" + stayingTime + "' nights staying time");
 	}
 	
+	
+	public void selectStayingTimeTwo_EuropePage() throws Exception{
+		clearAndSetValues(BookingLocators.getstayingDrpdowntwo(), "4 nts");
+		WebElement drpdown= driver.findElement(By.xpath("//ul[@id='ui-id-11']"));
+		List<WebElement>Childlist = drpdown.findElements(By.tagName("li"));
+		for (WebElement li : Childlist) {
+		if (li.getText().equals("4 nts")) {
+		     li.click();
+		   }
+		}
+	}
+	
+	
 	public void selectNoMoreCitiesBtn(){
 		clickUsingJavaScript(BookingLocators.getnoMoreCitiesBtn());
 	}
-
+	
+	public void selectStayingTime_EuropePage() throws Exception{
+		clearAndSetValues(BookingLocators.getstayingDrpdown(), "4 nts");
+		WebElement dropdown= driver.findElement(By.xpath("//ul[@id='ui-id-4']"));
+		List<WebElement>list =dropdown.findElements(By.tagName("li"));
+		for (WebElement li : list) {
+		if (li.getText().equals("4 nts")) {
+		     li.click();
+		   }
+		}
+	}
 	/**
 	 * Select guest details
 	 * 
@@ -646,8 +669,9 @@ public class BookingPageAction extends PageBase {
 		}
 	}
 
-	public  void validateTripIncluisonPage() {
+	public  void validateTripIncluisonPage() throws InterruptedException {
 		boolean flag = false;
+		Thread.sleep(10000);
 		if (driver.getTitle().contains("Itinerary - Review"))
 			flag = true;
 		else
@@ -700,9 +724,14 @@ public class BookingPageAction extends PageBase {
 		clickUsingJavaScript(HomePageLocators.getasiaPagelink());
 	}
 
-	public void ValidateTravelByOption() {
+	public String ValidateTravelByOption() {
 		boolean validateTravelByStatus=isElementDisplayed(BookingLocators.validateTravelByOption());
+		
+		WebElement travelby = driver.findElement(By.xpath("//p[@id='pTranspSel1-1']//span//b"));
+		String travel = travelby.getText();
 		Assert.assertTrue(validateTravelByStatus);
+		return travel;
+	
 	}
 
 	public void clickonEuropeLink() {
@@ -779,6 +808,10 @@ public class BookingPageAction extends PageBase {
 
 	public void fillLeavingFromDetails_BYOPage(String leavingFrom) throws Exception {
 		clearAndSetValues(BookingLocators.getleavingTextboxBYO_Page(), leavingFrom);
+	
+		WebElement select = driver.findElement(By.xpath("//ul[@id='ui-id-10']//li//a//span"));
+		select.click();
+
 	}
 	
 	public  String selectValueFromCalendar_BYOPackage(int AdditionalDays) {
@@ -797,6 +830,16 @@ public class BookingPageAction extends PageBase {
 		}
 		return newDate;
 	}
+	
+	public String getdefaultDate() {
+		
+		WebElement datepick = driver.findElement(By.id("xtxtBYArriving"));
+		System.out.println("Default date is:- "+ datepick.getAttribute("value"));
+		String defaultdate = datepick.getAttribute("value");
+		return defaultdate;
+	}
+	
+	
 
 	public void selectGuestDetails_BYOPage(String guestInfo) throws Exception {
 		clickUsingJavaScript(BookingLocators.getselectGuestRoomOptionsDrpdown_BYOPage());
@@ -967,7 +1010,7 @@ public class BookingPageAction extends PageBase {
 	}
 
 	public String browseHotelsButton_EuropePage() throws Exception {
-		waitForElement(8);
+		waitForElement(15);
 		clickUsingJavaScript(BookingLocators.getBrowseHotelsLink_TopDealsPage());
 		waitForElement(2);
 		if(!TestBase.flag_Mob){

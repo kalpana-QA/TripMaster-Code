@@ -30,6 +30,7 @@ import io.appium.java_client.ios.IOSElement;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
+	
 	private static String chromeDriverFilePath = System.getProperty("user.dir")
 			+ "/src/test/resources/webdriver/chromedriver.exe";
 	public  WebDriver driver;
@@ -58,7 +59,7 @@ public class TestBase {
 					ChromeOptions options=new ChromeOptions();
 					 options.addArguments("ignore-certificate-errors");
 					 options.setAcceptInsecureCerts(true);
-					System.setProperty("webdriver.chrome.driver", chromeDriverFilePath);
+					System.setProperty("webdriver.chrome.driver", "/Users/iqa/Downloads/chromedriver");
 					driver = new ChromeDriver(options);
 					
 					//Dimension d=new Dimension(1382,744);
@@ -105,7 +106,7 @@ public class TestBase {
 			{
 				if (browser.equalsIgnoreCase("Safari")) {
 					capabilities = new DesiredCapabilities();
-					capabilities.setCapability("deviceName", "iPhone 11 Pro Max");
+					capabilities.setCapability("deviceName", "iPhone 11 Pro");
 					capabilities.setCapability("platformName", "iOS");
 					capabilities.setCapability("platformVersion", "13.3");
 					capabilities.setCapability(CapabilityType.BROWSER_NAME, "Safari");

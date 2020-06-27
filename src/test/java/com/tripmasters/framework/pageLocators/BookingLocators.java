@@ -95,7 +95,7 @@ public class BookingLocators {
 	private static By thirdremoveCitylink = By.xpath("//div//span[@id='cty3'] | //span[@id='spClose3']");
 	private static By edititinerary = By.xpath("//div//a[contains(text(),'Edit Itinerary')]");
 	private static By goingToTextboxThird = By.xpath("//*[@id='qNACity3']");
-	private static By stayingDrpdowntwo = By.xpath("//select[@id='qSTCity2']");
+	private static By stayingDrpdowntwo = By.xpath("//select[@id='qSTCity2']  | //input[@id='qSTCity2Txt']");
 	private static By stayingDrpdownthree = By.xpath("//select[@id='qSTCity3']");
 	private static By changedArriveDate = By.xpath("//div[contains(@id,'divDayOpt4')]//div[contains(@class,'divDayOptionDate')]");
 	private static By pickCalendarData = By.xpath("//table[@class='ui-datepicker-calendar']//tbody//td");

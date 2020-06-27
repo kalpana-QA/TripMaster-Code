@@ -8,7 +8,7 @@
   <test thread-count="5" name="Test(failed)" parallel="methods">
     <groups>
       <run>
-        <include name="testdemo"/>
+        <include name="smoke"/>
       </run>
     </groups>
     <classes>
@@ -16,7 +16,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="TC_0021_FlightbookingJourneywithmultipleCities" invocation-numbers="0"/>
+          <include name="TC_0018_bookingDetailswithPremiumEcomomy" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>
