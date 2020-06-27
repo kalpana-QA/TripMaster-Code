@@ -100,9 +100,9 @@ public class TestBase {
 
 					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
 					capabilities.setCapability("platformName", "Android");
-					capabilities.setCapability("platformVersion", "9");
+					capabilities.setCapability("platformVersion", "10");
 
-					capabilities.setCapability("deviceName", "D1AGAD57B1403257");
+					capabilities.setCapability("deviceName", "OnePlus 7");
 
 					capabilities.setCapability("browserName", "Chrome");
 
@@ -167,7 +167,7 @@ public class TestBase {
 			{
 				if (browser.equalsIgnoreCase("Safari")) {
 					capabilities = new DesiredCapabilities();
-					capabilities.setCapability("deviceName", "iPhone 11 Pro Max");
+					capabilities.setCapability("deviceName", "iPhone 11");
 					capabilities.setCapability("platformName", "iOS");
 					capabilities.setCapability("platformVersion", "13.3");
 					capabilities.setCapability(CapabilityType.BROWSER_NAME, "Safari");
@@ -178,6 +178,25 @@ public class TestBase {
 					System.out.println("Safari browser launched on iOS");
 					flag = true;
 
+
+					
+					
+//					capabilities = new DesiredCapabilities();
+//					capabilities.setCapability("deviceName", "Satyam's iPhone");
+//					capabilities.setCapability("platformName", "iOS");
+//					capabilities.setCapability("platformVersion", "13.3.1");
+//					capabilities.setCapability(CapabilityType.BROWSER_NAME, "Safari");
+//					// IOSDriver
+//					url = new URL("http://127.0.0.1:4723/wd/hub");
+//					driver = new IOSDriver<IOSElement>(url, capabilities);
+//					DesiredCapabilities capabilities = new DesiredCapabilities();
+//					System.out.println("Safari browser launched on iOS");
+//					flag = true;
+
+					
+					
+					
+					
 				} else {
 					//Logs.error("browser doesn't found!!!!!!!!!!!");
 					System.err.println("browser doesn't found!!!!!!!!");

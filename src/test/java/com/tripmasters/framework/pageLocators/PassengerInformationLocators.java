@@ -71,7 +71,7 @@ public class PassengerInformationLocators {
 	private static By genderR1C1Mob = By.xpath("//select[@id='1_txtCPAX_Gender1']");
 	private static By dobR1C1Mob = By.xpath("//input[@id='1_txtCPAX_DOB1']");
     	//vaishali
-	private static By errorMessage =By.xpath("//input[@id='txtPAX_DOB1']//following-sibling::label[text()='This field is required.']");
+	private static By errorMessage =By.xpath("//label[@id='1_txtPAX_DOB1-error']");
 	
     	 
 	public static By getfnameR1T1() {

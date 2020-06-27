@@ -144,6 +144,7 @@ public class HomePageTestScript extends TestBase {
 		bookingPage.clickOnBuildYourVacationDropDown();
 		test.log(LogStatus.INFO, "Tap on Build Your Vacation Dropdown");
 		//Logs.info("Click on Build Your Vacation Dropdown");
+		PageBase.waitForElement(10);
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Delhi (India)");
@@ -153,7 +154,7 @@ public class HomePageTestScript extends TestBase {
 		bookingPage.selectNoMoreCitiesBtn();
 		test.log(LogStatus.INFO, "Tap on Next");
 		bookingPage.selectGuestDetails("1|2");
-		//test.log(LogStatus.INFO, "User select \"1 Room With 2 Adults\" from Guest list");
+		test.log(LogStatus.INFO, "User select \"1 Room With 2 Adults\" from Guest list");
 		test.log(LogStatus.INFO, "User fills all the basic booking details");
 		//Logs.info("User fills all the basic booking details");
 		homePage.getStartAgain();
@@ -161,6 +162,14 @@ public class HomePageTestScript extends TestBase {
 		String verifyhomepage = homePage.getPageTitle();
 		Assert.assertEquals(ActionPageData.getHomePageTitle(), verifyhomepage);
 		test.log(LogStatus.INFO, "Verify User is redirected to the  home page after tapping on StartAgain Link.");
+		bookingPage.selectNoMoreCitiesBtn();
+		test.log(LogStatus.INFO, "Tap on Next");
+		bookingPage.clickonContinueButton();
+		//test.log(LogStatus.INFO, "Scrolled Down.");
+		test.log(LogStatus.INFO, "Tap on continue button");
+		String value = bookingPage.getSessionid();
+		test.log(LogStatus.INFO, "Session id is "+ value);
+		
 		//Logs.info("verifyStartAgainLink is displayed");
 	}
 

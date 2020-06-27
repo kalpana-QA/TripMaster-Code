@@ -50,6 +50,39 @@ public class PassengerInfoPageAction extends PageBase {
 	}
 
 
+	
+	
+	
+	
+	public List<String> fillFirstTravellerDetails_deals(String fname, String lname, String gender, String dateOfBirth,String passportInfo) throws Exception {
+		List<String> list = new ArrayList<String>();
+		if(TestBase.flag_Mob){
+			String firstName=clearAndSetValues(BookingLocators.getfirstTravelerFirstNameTextBoxiOS(), fname);
+	    	String secondName=clearAndSetValues(BookingLocators.getfirstTravelerLastNameTxtboxiOS(), lname);
+	    	String fullName=firstName +" "+ secondName;
+	    	list.add(fullName);
+		    list.add(selectOptionByText(BookingLocators.getfirstTravelerGenderDropdowniOS(), gender));
+		    scrollDown();
+			list.add(clearAndSetValues(BookingLocators.getfirstTravelerDOBiOS(), dateOfBirth));
+			selectOptionByValue(BookingLocators.getpassportDrpdownFirstTraveller(), passportInfo);
+	    	return list;
+		}
+		else {
+			String firstName = clearAndSetValues(BookingLocators.getFirstTravelerFirstNameTxtbox(), fname);
+			String secondName = clearAndSetValues(BookingLocators.getFirstTravelerLastNameTxtbox(), lname);
+			String fullName = firstName + " " + secondName;
+			list.add(fullName);
+			list.add(selectOptionByText(BookingLocators.getFirstTravelerGenderDropdown(), gender));
+			list.add(clearAndSetValues(BookingLocators.getFirstTravelerDOB(), dateOfBirth));
+			selectOptionByValue(BookingLocators.getpassportDrpdownFirstTraveller(), passportInfo);
+			return list;
+		}
+	}
+
+	
+	
+	
+	
 	public List<String> fillSecondTravellerDetails(String fname, String lname, String gender, String dateOfBirth,String passportInfo, String travelerType) throws Exception {
 		List<String> list = new ArrayList<String>();
 		if(TestBase.flag_Mob){
