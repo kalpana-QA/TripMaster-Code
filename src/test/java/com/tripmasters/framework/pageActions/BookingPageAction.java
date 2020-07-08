@@ -37,6 +37,16 @@ public class BookingPageAction extends PageBase {
 		//test.log(LogStatus.INFO, "User entered '" + leavingFrom + "' into leaving from field");
 	}
 	
+	
+	public void fillLeavingonExplorepage(String leavingFrom) throws Exception {
+		clearAndSetValues(BookingLocators.getLeavingTxtbox(), leavingFrom);
+		WebElement select = driver.findElement(By.xpath("(//span[@class='highlight boldText'])[1]"));
+		select.click();
+
+	}
+	
+	
+	
 	public void fillGoingToCityDetails(String destination) throws Exception{
 		clearAndSetValues(BookingLocators.getgoingToTextbox(), destination);
 		//Logs.info("User entered '" + destination + "' into Going to from field");
@@ -76,7 +86,7 @@ public class BookingPageAction extends PageBase {
 		//	clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
 		//	clickUsingJavaScript(BookingLocators.getdoneButton());
 
-			clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
+		//	clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
 			//clickUsingJavaScript(BookingLocators.getdoneButton());
 
 			//Logs.info("User select '" + guestInfo + "' from Guest list");
@@ -93,8 +103,9 @@ public class BookingPageAction extends PageBase {
 	public  void selectGuestDetails_dealsPage(String guestInfo) throws Exception {
 
 		if (TestBase.flag_Mob) {
-			WebElement w = driver.findElement(BookingLocators.selectGuestRoomOptions_viewpage());
-			w.click();
+		//	WebElement w = driver.findElement(BookingLocators.selectGuestRoomOptions_viewpage());
+		//	w.click();
+			clickUsingJavaScript(BookingLocators.selectGuestRoomOptions_viewpage());
 			
 			
 			clickUsingJavaScript(BookingLocators.getselectGuestRoomOptionsDrpdown());
@@ -105,7 +116,7 @@ public class BookingPageAction extends PageBase {
 		//	clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
 		//	clickUsingJavaScript(BookingLocators.getdoneButton());
 			clickUsingJavaScript(BookingLocators.selectguestminus());
-			clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
+			//clickUsingJavaScript(HomePageLocators.getSelectPremiumEconomy());
 			//clickUsingJavaScript(BookingLocators.getdoneButton());
 			
 			
@@ -155,6 +166,7 @@ return selectedcabin;
 	public void doneButtonMob() throws Exception
 	{
 	if(TestBase.flag_Mob){
+		Thread.sleep(5000);
 		clickUsingJavaScript(BookingLocators.getdoneButton());
 	   }
 	}
@@ -214,6 +226,14 @@ return selectedcabin;
 		scrollDown();
 		PageBase.waitForElement(3);
 		clickUsingJavaScript(BookingLocators.getcheaperFlightsLink());
+		clickUsingJavaScript(BookingLocators.getSelectOncheaperFlightsPage());
+		scrollDown();
+		//	isElementDisplayed(BookingLocators.getCabinbtn());
+			
+			PageBase.waitForElement(3);
+			clickUsingJavaScript(BookingLocators.getCabinbtn());
+			clickUsingJavaScript(BookingLocators.getTripInclusionContinueButtonmob());
+			
 		
 	}
 	
@@ -656,38 +676,83 @@ else if(childType.equals("newageseven")) {
 		selectOptionByValue(BookingLocators.getstayingDrpdowntwo(), stayingTimeTwo);
 	}
 
+//	public  String selectValueFromCalendar(int additionaldays,int n) throws Exception {
+//		clickOnElement(BookingLocators.getArriveDateDropdown());
+//		
+//		if(n>=2) {
+//		for(int i=0;i<n;i++)
+//		{
+//			clickOnElement(BookingLocators.getnavMonth());
+//	//		clickOnElement(BookingLocators.clickondate());
+//		}
+//		}else if(n==1) {
+//			clickOnElement(BookingLocators.getnavMonth_prev());
+//		}
+//		clickOnElement(BookingLocators.clickondate());
+//		//.sleep(20000);
+//		String newDate = selectNewDateFromCalendar(additionaldays);
+//		String[] newDateDay = newDate.split("/");
+//	String selectdate=newDateDay[1];	
+//	
+//	List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
+//		for (WebElement cell : columns) {
+//			if (cell.getText().equals(selectdate)) {
+//				Thread.sleep(20000);
+//				cell.findElement(By.linkText(selectdate)).click();
+//	//			Thread.sleep(10000);
+//				//test.log(LogStatus.INFO, "User selects '" + newDate + "' as Arriving_On Date");
+//				break;
+//			}
+//		}
+//	//	WebElement e = driver.findElement(By.xpath("//button[contains(.,'Done')]"));
+//	//	e.click();
+//		return newDate;
+//	}
+	
+	
+	public Object newValue(String selectdate){
+		char achar=0;
+	if(selectdate.startsWith("0")){
+		achar=selectdate.charAt(1);
+		return achar;
+	}
+	else {
+		return selectdate;
+	  }
+	}
 	public  String selectValueFromCalendar(int additionaldays,int n) throws Exception {
+		char achar = 0;
 		clickOnElement(BookingLocators.getArriveDateDropdown());
-		
 		if(n>=2) {
 		for(int i=0;i<n;i++)
 		{
-			clickOnElement(BookingLocators.getnavMonth());
-	//		clickOnElement(BookingLocators.clickondate());
+		clickOnElement(BookingLocators.getnavMonth());
 		}
 		}else if(n==1) {
-			clickOnElement(BookingLocators.getnavMonth_prev());
+		clickOnElement(BookingLocators.getnavMonth_prev());
 		}
-		clickOnElement(BookingLocators.clickondate());
-		//.sleep(20000);
 		String newDate = selectNewDateFromCalendar(additionaldays);
 		String[] newDateDay = newDate.split("/");
-	String selectdate=newDateDay[1];	
-	
-	List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
+		String selectdate=newDateDay[1]; 
+		Object date=newValue(selectdate);	
+		List<WebElement> columns = driver.findElements(BookingLocators.getArriveDateCalender());
 		for (WebElement cell : columns) {
-			if (cell.getText().equals(selectdate)) {
-				Thread.sleep(20000);
-				cell.findElement(By.linkText(selectdate)).click();
-	//			Thread.sleep(10000);
-				//test.log(LogStatus.INFO, "User selects '" + newDate + "' as Arriving_On Date");
-				break;
-			}
+			String val=cell.getText();
+			String dateString=date.toString();
+		if (val.equals(dateString)) {
+		Thread.sleep(20000);
+		clickOnElement(BookingLocators.getdate(dateString));
+		break;
 		}
-	//	WebElement e = driver.findElement(By.xpath("//button[contains(.,'Done')]"));
-	//	e.click();
+		}
 		return newDate;
-	}
+		}
+	
+	
+	
+	
+	
+	
 	
 	public  String selectValueFromCalendar_1(int additionaldays) throws Exception {
 		clickOnElement(BookingLocators.getArriveDateDropdown());
@@ -896,9 +961,11 @@ else if(childType.equals("newageseven")) {
 	 * click On Build Your Vacation Drop Down on mobile browser
 	 * 
 	 * @author Mrinal
+	 * @throws Exception 
 	 */
-	public  void clickOnBuildYourVacationDropDown() {
+	public  void clickOnBuildYourVacationDropDown() throws Exception {
 		if (TestBase.flag_Mob)
+			PageBase.waitForElement(5);
 			clickOnElement(BookingLocators.getBuildYourVacationDropDown());
 	}
 	
@@ -964,8 +1031,19 @@ else if(childType.equals("newageseven")) {
 	
 	public String clickOnPackageDisplayedUnderSuggestedVacationPackageOption() throws Exception {
 		scrollDownForMob(3);
+		WebElement select = driver.findElement(By.xpath("//div[@class='dvMoreSuggBtn']"));
+		select.click();
+		scrollDownForMob(1);
+		
+		
 		clickUsingJavaScript(HomePageLocators.getPackageDisplayedUnderSuggestedVacationPackageOption());
-	WebElement e = driver.findElement(HomePageLocators.getpackagename());
+	
+		WebElement selec = driver.findElement(By.xpath("(//a[@class='dvSuggViewIt'])[11]"));
+		selec.click();
+		scrollDownForMob(1);
+		
+		
+		WebElement e = driver.findElement(HomePageLocators.getpackagename());
 	String packagename = e.getText();
 	System.out.println("Name of package is "+packagename);
 	return packagename;
@@ -1092,5 +1170,15 @@ public boolean verifyTravelByTrain() {
 		result = true;
 	}
 	return result;
+}
+
+
+
+public String getSelectedDate() {
+	
+	WebElement datepick = driver.findElement(BookingLocators.selectdate());
+	System.out.println("Selected arrival  date is:- "+ datepick.getAttribute("value"));
+	String defaultdate = datepick.getAttribute("value");
+	return defaultdate;
 }
 }

@@ -7,7 +7,7 @@ public class BookingLocators {
 	private static By selectGuestRoomOptions_viewpage = By.xpath("//input[@id='cabinRoomPax']");
 	private static By selectGuestRoomOptionsDrpdown = By.cssSelector("div[id='dvpaxRoom']");
 	private static By optionListForGuestsAndRooms = By.cssSelector("div[id='dvpxroomlst'][style='display: block;']");
-	private static By doneButton = By.xpath("//p[text()='Done']");
+	private static By doneButton = By.xpath("//p[text()='Done'] | //button[contains(.,'Done')]");
 	private static By selectFlightOption = By.xpath("(//a[@name='chkFlight'])[1] | //a[@id='chkFlightOpt1_UA|48|1']");
 	private static By selectButtonInFlightOption1 = By.xpath("(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/Select1.png')])[1]");
 	private static By selectbutton = By.xpath("//div/a[contains(text(),'Select')]");
@@ -41,7 +41,7 @@ public class BookingLocators {
 			"//div[a[div[contains(@class,'dvEachHighImg')]/following-sibling::h3[contains(.,'European BestSellers')]]]//a");
 	private static By europeanBestsellersHeader = By
 			.xpath("//div[contains(@class,'pageTitle')]/div[contains(.,'Europe - European Bestsellers')]");
-	private static By passportDrpdownFirstTraveller = By.xpath("//select[@id='txtPAX_Nationality1']");
+	private static By passportDrpdownFirstTraveller = By.xpath("//select[@id='txtPAX_Nationality1'] | //select[@id='1_txtPAX_Nationality1']");
 
 	private static By passportDrpdownSecondTraveller = By.xpath("//select[@id='txtCPAX_Nationality2'] | //select[@id='txtPAX_Nationality2']");
 	private static By passportDrpdownThirdTraveller = By.xpath("//select[@id='txtPAX_Nationality3']");
@@ -143,14 +143,14 @@ public class BookingLocators {
 	private static By selectfirstRoomChildPlus=By.xpath("//span[@id='childrenPlus']");
 
 	private static By tripInclusionContinueButtonmob=By.xpath("//a[@id='aContWithPriceValidationReview'] | //a[@id='aContWithPriceValidation']");
-	private static By firstTravelerFirstNameTextBoxiOS=By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtPFName1' ]");
-	private static By thirdTravelerFirstNameTextBoxMob=By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtPFName3' ]");
+	private static By firstTravelerFirstNameTextBoxiOS=By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtPFName1' ] | //input[@id='1_txtPFName1']");
+	private static By thirdTravelerFirstNameTextBoxMob=By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtPFName3' ] ");
 	private static By thirdTravelerLastNameTxtboxMob = By.xpath("//input[contains(@placeholder,'Last Name') and @id='txtPLName3']");
 	private static By secondTravelerFirstNameTextBoxiOS=By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtPFName2' ] | //input[@id='txtPFName2' ] |//input[@id='txtCFName2' ]" );
-	private static By firstTravelerLastNameTxtboxiOS = By.xpath("//input[contains(@placeholder,'Last Name') and @id='txtPLName1']");
-	private static By secondTravelerLastNameTxtboxiOS = By.xpath("//input[contains(@placeholder,'Last Name') and @id='txtPLName2'] | //input[@id='txtCLName2']");
+	private static By firstTravelerLastNameTxtboxiOS = By.xpath("//input[contains(@placeholder,'Last Name') and @id='txtPLName1'] | //input[@id='1_txtPLName1']");
+	private static By secondTravelerLastNameTxtboxiOS = By.xpath("//input[contains(@placeholder,'Last Name') and @id='txtPLName2'] | //input[@id='txtCLName2'] ");
 	private static By thirdTravelerGenderDropdownMob = By.xpath("//select[@id='txtPAX_Gender3']");
-	private static By firstTravelerGenderDropdowniOS = By.xpath("//select[@id='txtPAX_Gender1']");
+	private static By firstTravelerGenderDropdowniOS = By.xpath("//select[@id='txtPAX_Gender1'] | //select[@id='1_txtPAX_Gender1']");
 	private static By secondTravelerGenderDropdowniOS = By.xpath("//select[@id='txtCPAX_Gender2'] | //select[@id='txtPAX_Gender2']");
 	private static By firstTravelerDOBiOS = By.xpath("//input[@id='txtPAX_DOB1']");
 	private static By thirdTravelerDOBMob = By.xpath("//input[@id='txtPAX_DOB3']");
@@ -170,11 +170,11 @@ public class BookingLocators {
 	private static By selectNumberOfAdultRoom2Mob = By.xpath("//span[@id='adultPlus2']");
 	public static By slectNumberOfChildMob =By.xpath("//span[@id='childrenPlus']");
 	public static By clickChildDropdownMob =By.xpath("//input[@id='xiChild1']");
-	public static By secondTravelerFirstNameTextBoxMOb =By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtCFName2' ] |//input[contains(@placeholder,'First and Middle Name') and @id='2_txtCFName1' ]");
-	public static By secondTravelerLastNameTxtboxMob = By.xpath("//input[contains(@placeholder,'Last Name') and @id='txtCLName2'] | //input[contains(@placeholder,'Last Name') and @id='2_txtCLName1']");
-	public static By secondTravelerGenderDropdownMob = By.xpath("//select[@id='txtCPAX_Gender2' or @id='2_txtCPAX_Gender1']");
-	public static By secondTravelerDOBMob = By.xpath("//input[@id='txtCPAX_DOB2' or @id='2_txtCPAX_DOB1']");
-	public static By passportDrpdownSecondTravellerChildMob = By.xpath("//select[@id='txtCPAX_Nationality2' or @id='2_txtCPAX_Nationality1']");
+	public static By secondTravelerFirstNameTextBoxMOb =By.xpath("//input[contains(@placeholder,'First and Middle Name') and @id='txtCFName2' ] |//input[contains(@placeholder,'First and Middle Name') and @id='2_txtCFName1' ] | //input[@id='1_txtCFName1']");
+	public static By secondTravelerLastNameTxtboxMob = By.xpath("//input[contains(@placeholder,'Last Name') and @id='txtCLName2'] | //input[contains(@placeholder,'Last Name') and @id='2_txtCLName1'] | //input[@id='1_txtCLName1']");
+	public static By secondTravelerGenderDropdownMob = By.xpath("//select[@id='txtCPAX_Gender2' or @id='2_txtCPAX_Gender1']  | //select[@id='1_txtCPAX_Gender1']");
+	public static By secondTravelerDOBMob = By.xpath("//input[@id='txtCPAX_DOB2' or @id='2_txtCPAX_DOB1'] | //input[@id='1_txtCPAX_DOB1']");
+	public static By passportDrpdownSecondTravellerChildMob = By.xpath("//select[@id='txtCPAX_Nationality2' or @id='2_txtCPAX_Nationality1'] | //select[@id='1_txtCPAX_Nationality1']");
 	
 	
 	//====================New Locators==================
@@ -218,13 +218,25 @@ public class BookingLocators {
 	
 	private static By selectRoomtwoChildAgeseven = By.xpath("(//ul[@id='ui-id-3']//li)[6]");
 	
-	
-	
+	private static By selectdate = By.xpath("//input[@id='InDate1'] | //input[@id='qArrDate'] | //input[@id='xtxtBYArriving']");
 	
 	
 	/**
 	 * @return the emailId
 	 */
+
+	
+
+public static By getdate(String selectdate) {
+		
+		return (By.xpath("(//td//a[contains(text(),'"+selectdate+"')])[1]"));
+	}
+
+
+
+	
+	
+	
 	
 	public static By getselectChildAgeDropdowneurope_elevendeals() {
 		return selectChildAgeDropdowneurope_elevendeals;
@@ -890,4 +902,8 @@ public static By clickondate() {
 }
 
 //selectguestminus
+public static By selectdate() {
+	// TODO Auto-generated method stub
+	return selectdate;
+}
 }

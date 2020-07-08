@@ -8,18 +8,15 @@
   <test thread-count="5" name="Test(failed)" parallel="methods">
     <groups>
       <run>
-        <include name="smoke"/>
-        <include name="regression"/>
+        <include name="smok"/>
       </run>
     </groups>
     <classes>
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
           <include name="tearDown"/>
-          <include name="TC_0009_arrival_dateChanging" invocation-numbers="0"/>
+          <include name="TC_0008_bookingFlightMultipleCitiesAndTwoRoomsWithAdultsAndChilds_FromEuropePage" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="TC_0021_tripSummarymultipleCities"/>
-          <include name="TC_0018_bookingDetailswithPremiumEcomomy"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>

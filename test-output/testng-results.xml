@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="19" passed="19">
+<testng-results skipped="0" failed="0" ignored="0" total="21" passed="21">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="3988566" started-at="2020-06-11T07:26:33Z" finished-at="2020-06-11T08:33:02Z">
+  <suite name="Suite" duration-ms="4562496" started-at="2020-07-08T05:14:15Z" finished-at="2020-07-08T06:30:17Z">
     <groups>
       <group name="regression">
         <method signature="BookingPageTestScript.TC_0014_verifySpotlightLink(java.lang.reflect.Method)[pri:14, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0014_verifySpotlightLink" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
@@ -14,11 +14,13 @@
         <method signature="BookingPageTestScript.TC_0004_bookingFlightAndSingleRoomWithTwoAdults_FromFirstPackages(java.lang.reflect.Method)[pri:4, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0004_bookingFlightAndSingleRoomWithTwoAdults_FromFirstPackages" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
         <method signature="BookingPageTestScript.TC_0005_FlightbookingjourneywithPaxmandatoryfieldvalidation(java.lang.reflect.Method)[pri:5, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0005_FlightbookingjourneywithPaxmandatoryfieldvalidation" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
         <method signature="BookingPageTestScript.TC_0006_bookingFlightsWithmultipleCities(java.lang.reflect.Method)[pri:6, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0006_bookingFlightsWithmultipleCities" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
-        <method signature="BookingPageTestScript.TC_0007_bookingFlightAndTwoRoomsWithAdultsAndChilds_FromTopDalPackages(java.lang.reflect.Method)[pri:7, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0007_bookingFlightAndTwoRoomsWithAdultsAndChilds_FromTopDalPackages" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
+        <method signature="BookingPageTestScript.TC_0007_bookingFlightAndTwoRoomsWithAdultsAndChilds_FromTopDealPackages(java.lang.reflect.Method)[pri:7, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0007_bookingFlightAndTwoRoomsWithAdultsAndChilds_FromTopDealPackages" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
         <method signature="BookingPageTestScript.TC_0008_bookingFlightMultipleCitiesAndTwoRoomsWithAdultsAndChilds_FromEuropePage(java.lang.reflect.Method)[pri:8, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0008_bookingFlightMultipleCitiesAndTwoRoomsWithAdultsAndChilds_FromEuropePage" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
         <method signature="BookingPageTestScript.TC_0009_arrival_dateChanging_FromTopOptions(java.lang.reflect.Method)[pri:9, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0009_arrival_dateChanging_FromTopOptions" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
         <method signature="BookingPageTestScript.TC_0017_validateTripSummarywithMultipleCitiesforExploreAsiaPage(java.lang.reflect.Method)[pri:17, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0017_validateTripSummarywithMultipleCitiesforExploreAsiaPage" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
         <method signature="BookingPageTestScript.TC_0018_bookingDetailswithPremiumEcomomy(java.lang.reflect.Method)[pri:18, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0018_bookingDetailswithPremiumEcomomy" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
+        <method signature="BookingPageTestScript.TC_0019_withoutAirBookingForSingleCity(java.lang.reflect.Method)[pri:19, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0019_withoutAirBookingForSingleCity" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
+        <method signature="BookingPageTestScript.TC_0020_withoutAirBookingForMultipleCity(java.lang.reflect.Method)[pri:20, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0020_withoutAirBookingForMultipleCity" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
         <method signature="BookingPageTestScript.TC_0021_tripSummarymultipleCities(java.lang.reflect.Method)[pri:21, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0021_tripSummarymultipleCities" class="com.tripmasters.framework.testScript.BookingPageTestScript"/>
         <method signature="HomePageTestScript.TC_0010_verifyCity(java.lang.reflect.Method)[pri:10, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="TC_0010_verifyCity" class="com.tripmasters.framework.testScript.HomePageTestScript"/>
         <method signature="HomePageTestScript.TC_0011_verifyMoreHighlightAndAttractionLinks(java.lang.reflect.Method)[pri:11, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="TC_0011_verifyMoreHighlightAndAttractionLinks" class="com.tripmasters.framework.testScript.HomePageTestScript"/>
@@ -28,13 +30,13 @@
         <method signature="HomePageTestScript.TC_0016_verifyFooterText(java.lang.reflect.Method)[pri:16, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="TC_0016_verifyFooterText" class="com.tripmasters.framework.testScript.HomePageTestScript"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Test" duration-ms="3988566" started-at="2020-06-11T07:26:33Z" finished-at="2020-06-11T08:33:02Z">
+    <test name="Test" duration-ms="4562496" started-at="2020-07-08T05:14:15Z" finished-at="2020-07-08T06:30:17Z">
       <class name="com.tripmasters.framework.testScript.HomePageTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="setUp" is-config="true" duration-ms="20901" started-at="2020-06-11T08:13:28Z" finished-at="2020-06-11T08:13:49Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="setUp" is-config="true" duration-ms="22962" started-at="2020-07-08T06:10:32Z" finished-at="2020-07-08T06:10:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0010_verifyCity(java.lang.reflect.Method)[pri:10, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="TC_0010_verifyCity" duration-ms="22422" started-at="2020-06-11T08:13:49Z" finished-at="2020-06-11T08:14:12Z">
+        <test-method status="PASS" signature="TC_0010_verifyCity(java.lang.reflect.Method)[pri:10, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="TC_0010_verifyCity" duration-ms="22479" started-at="2020-07-08T06:10:55Z" finished-at="2020-07-08T06:11:17Z">
           <params>
             <param index="0">
               <value>
@@ -45,15 +47,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0010_verifyCity -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="tearDown" is-config="true" duration-ms="689" started-at="2020-06-11T08:14:12Z" finished-at="2020-06-11T08:14:12Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="tearDown" is-config="true" duration-ms="721" started-at="2020-07-08T06:11:17Z" finished-at="2020-07-08T06:11:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="setUp" is-config="true" duration-ms="17606" started-at="2020-06-11T08:14:12Z" finished-at="2020-06-11T08:14:30Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="setUp" is-config="true" duration-ms="25154" started-at="2020-07-08T06:11:18Z" finished-at="2020-07-08T06:11:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0011_verifyMoreHighlightAndAttractionLinks(java.lang.reflect.Method)[pri:11, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="TC_0011_verifyMoreHighlightAndAttractionLinks" duration-ms="20670" started-at="2020-06-11T08:14:30Z" finished-at="2020-06-11T08:14:51Z">
+        <test-method status="PASS" signature="TC_0011_verifyMoreHighlightAndAttractionLinks(java.lang.reflect.Method)[pri:11, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="TC_0011_verifyMoreHighlightAndAttractionLinks" duration-ms="23574" started-at="2020-07-08T06:11:43Z" finished-at="2020-07-08T06:12:07Z">
           <params>
             <param index="0">
               <value>
@@ -64,15 +66,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0011_verifyMoreHighlightAndAttractionLinks -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="tearDown" is-config="true" duration-ms="571" started-at="2020-06-11T08:14:51Z" finished-at="2020-06-11T08:14:51Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="tearDown" is-config="true" duration-ms="580" started-at="2020-07-08T06:12:07Z" finished-at="2020-07-08T06:12:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="setUp" is-config="true" duration-ms="125489" started-at="2020-06-11T08:14:51Z" finished-at="2020-06-11T08:16:57Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="setUp" is-config="true" duration-ms="22311" started-at="2020-07-08T06:12:07Z" finished-at="2020-07-08T06:12:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0012_verifyOtherVacationPackages(java.lang.reflect.Method)[pri:12, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="TC_0012_verifyOtherVacationPackages" duration-ms="36803" started-at="2020-06-11T08:16:57Z" finished-at="2020-06-11T08:17:34Z">
+        <test-method status="PASS" signature="TC_0012_verifyOtherVacationPackages(java.lang.reflect.Method)[pri:12, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="TC_0012_verifyOtherVacationPackages" duration-ms="35583" started-at="2020-07-08T06:12:30Z" finished-at="2020-07-08T06:13:05Z">
           <params>
             <param index="0">
               <value>
@@ -83,15 +85,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0012_verifyOtherVacationPackages -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="tearDown" is-config="true" duration-ms="47043" started-at="2020-06-11T08:17:34Z" finished-at="2020-06-11T08:18:21Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="tearDown" is-config="true" duration-ms="571" started-at="2020-07-08T06:13:05Z" finished-at="2020-07-08T06:13:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="setUp" is-config="true" duration-ms="52111" started-at="2020-06-11T08:18:21Z" finished-at="2020-06-11T08:19:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="setUp" is-config="true" duration-ms="21280" started-at="2020-07-08T06:13:06Z" finished-at="2020-07-08T06:13:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0013_verifyPopularVacationPackages(java.lang.reflect.Method)[pri:13, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="TC_0013_verifyPopularVacationPackages" duration-ms="10758" started-at="2020-06-11T08:19:13Z" finished-at="2020-06-11T08:19:23Z">
+        <test-method status="PASS" signature="TC_0013_verifyPopularVacationPackages(java.lang.reflect.Method)[pri:13, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="TC_0013_verifyPopularVacationPackages" duration-ms="10289" started-at="2020-07-08T06:13:27Z" finished-at="2020-07-08T06:13:37Z">
           <params>
             <param index="0">
               <value>
@@ -102,15 +104,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0013_verifyPopularVacationPackages -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="tearDown" is-config="true" duration-ms="611" started-at="2020-06-11T08:19:23Z" finished-at="2020-06-11T08:19:24Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="tearDown" is-config="true" duration-ms="564" started-at="2020-07-08T06:13:37Z" finished-at="2020-07-08T06:13:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="setUp" is-config="true" duration-ms="19132" started-at="2020-06-11T08:20:32Z" finished-at="2020-06-11T08:20:51Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="setUp" is-config="true" duration-ms="22877" started-at="2020-07-08T06:14:43Z" finished-at="2020-07-08T06:15:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0015_verifyStartAgainLink(java.lang.reflect.Method)[pri:15, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="TC_0015_verifyStartAgainLink" duration-ms="39375" started-at="2020-06-11T08:20:51Z" finished-at="2020-06-11T08:21:31Z">
+        <test-method status="PASS" signature="TC_0015_verifyStartAgainLink(java.lang.reflect.Method)[pri:15, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="TC_0015_verifyStartAgainLink" duration-ms="83061" started-at="2020-07-08T06:15:06Z" finished-at="2020-07-08T06:16:29Z">
           <params>
             <param index="0">
               <value>
@@ -121,15 +123,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0015_verifyStartAgainLink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="tearDown" is-config="true" duration-ms="801" started-at="2020-06-11T08:21:31Z" finished-at="2020-06-11T08:21:31Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="tearDown" is-config="true" duration-ms="625" started-at="2020-07-08T06:16:29Z" finished-at="2020-07-08T06:16:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="setUp" is-config="true" duration-ms="17372" started-at="2020-06-11T08:21:31Z" finished-at="2020-06-11T08:21:49Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="setUp" is-config="true" duration-ms="21894" started-at="2020-07-08T06:16:30Z" finished-at="2020-07-08T06:16:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0016_verifyFooterText(java.lang.reflect.Method)[pri:16, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="TC_0016_verifyFooterText" duration-ms="131" started-at="2020-06-11T08:21:49Z" finished-at="2020-06-11T08:21:49Z">
+        <test-method status="PASS" signature="TC_0016_verifyFooterText(java.lang.reflect.Method)[pri:16, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="TC_0016_verifyFooterText" duration-ms="93" started-at="2020-07-08T06:16:51Z" finished-at="2020-07-08T06:16:52Z">
           <params>
             <param index="0">
               <value>
@@ -140,17 +142,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0016_verifyFooterText -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="tearDown" is-config="true" duration-ms="609" started-at="2020-06-11T08:21:49Z" finished-at="2020-06-11T08:21:50Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.HomePageTestScript@15bfd87]" name="tearDown" is-config="true" duration-ms="749" started-at="2020-07-08T06:16:52Z" finished-at="2020-07-08T06:16:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tripmasters.framework.testScript.HomePageTestScript -->
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="30189" started-at="2020-06-11T07:26:33Z" finished-at="2020-06-11T07:27:03Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="85898" started-at="2020-07-08T05:14:15Z" finished-at="2020-07-08T05:15:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0001_bookingSingleRoomWithThreeAdults(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0001_bookingSingleRoomWithThreeAdults" duration-ms="237877" started-at="2020-06-11T07:27:03Z" finished-at="2020-06-11T07:31:01Z">
+        <test-method status="PASS" signature="TC_0001_bookingSingleRoomWithThreeAdults(java.lang.reflect.Method)[pri:1, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0001_bookingSingleRoomWithThreeAdults" duration-ms="262502" started-at="2020-07-08T05:15:41Z" finished-at="2020-07-08T05:20:03Z">
           <params>
             <param index="0">
               <value>
@@ -161,15 +163,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0001_bookingSingleRoomWithThreeAdults -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="830" started-at="2020-06-11T07:31:01Z" finished-at="2020-06-11T07:31:02Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="1067" started-at="2020-07-08T05:20:03Z" finished-at="2020-07-08T05:20:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="19086" started-at="2020-06-11T07:31:02Z" finished-at="2020-06-11T07:31:21Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="27238" started-at="2020-07-08T05:20:04Z" finished-at="2020-07-08T05:20:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0002_bookingSingleRoomtwoAdultOneChild(java.lang.reflect.Method)[pri:2, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0002_bookingSingleRoomtwoAdultOneChild" duration-ms="228614" started-at="2020-06-11T07:31:21Z" finished-at="2020-06-11T07:35:10Z">
+        <test-method status="PASS" signature="TC_0002_bookingSingleRoomtwoAdultOneChild(java.lang.reflect.Method)[pri:2, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0002_bookingSingleRoomtwoAdultOneChild" duration-ms="246391" started-at="2020-07-08T05:20:31Z" finished-at="2020-07-08T05:24:38Z">
           <params>
             <param index="0">
               <value>
@@ -180,15 +182,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0002_bookingSingleRoomtwoAdultOneChild -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="688" started-at="2020-06-11T07:35:10Z" finished-at="2020-06-11T07:35:10Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="751" started-at="2020-07-08T05:24:38Z" finished-at="2020-07-08T05:24:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="19755" started-at="2020-06-11T07:35:10Z" finished-at="2020-06-11T07:35:30Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="26805" started-at="2020-07-08T05:24:38Z" finished-at="2020-07-08T05:25:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(java.lang.reflect.Method)[pri:3, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities" duration-ms="415379" started-at="2020-06-11T07:35:30Z" finished-at="2020-06-11T07:42:25Z">
+        <test-method status="PASS" signature="TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(java.lang.reflect.Method)[pri:3, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities" duration-ms="444293" started-at="2020-07-08T05:25:05Z" finished-at="2020-07-08T05:32:30Z">
           <params>
             <param index="0">
               <value>
@@ -199,15 +201,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="1218" started-at="2020-06-11T07:42:25Z" finished-at="2020-06-11T07:42:27Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="704" started-at="2020-07-08T05:32:30Z" finished-at="2020-07-08T05:32:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="18602" started-at="2020-06-11T07:42:27Z" finished-at="2020-06-11T07:42:45Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="28902" started-at="2020-07-08T05:32:30Z" finished-at="2020-07-08T05:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0004_bookingFlightAndSingleRoomWithTwoAdults_FromFirstPackages(java.lang.reflect.Method)[pri:4, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0004_bookingFlightAndSingleRoomWithTwoAdults_FromFirstPackages" duration-ms="202708" started-at="2020-06-11T07:42:45Z" finished-at="2020-06-11T07:46:08Z">
+        <test-method status="PASS" signature="TC_0004_bookingFlightAndSingleRoomWithTwoAdults_FromFirstPackages(java.lang.reflect.Method)[pri:4, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0004_bookingFlightAndSingleRoomWithTwoAdults_FromFirstPackages" duration-ms="310199" started-at="2020-07-08T05:32:59Z" finished-at="2020-07-08T05:38:09Z">
           <params>
             <param index="0">
               <value>
@@ -218,15 +220,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0004_bookingFlightAndSingleRoomWithTwoAdults_FromFirstPackages -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="1442" started-at="2020-06-11T07:46:08Z" finished-at="2020-06-11T07:46:09Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="735" started-at="2020-07-08T05:38:09Z" finished-at="2020-07-08T05:38:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="22330" started-at="2020-06-11T07:46:09Z" finished-at="2020-06-11T07:46:32Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="22377" started-at="2020-07-08T05:38:10Z" finished-at="2020-07-08T05:38:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0005_FlightbookingjourneywithPaxmandatoryfieldvalidation(java.lang.reflect.Method)[pri:5, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0005_FlightbookingjourneywithPaxmandatoryfieldvalidation" duration-ms="352982" started-at="2020-06-11T07:46:32Z" finished-at="2020-06-11T07:52:25Z">
+        <test-method status="PASS" signature="TC_0005_FlightbookingjourneywithPaxmandatoryfieldvalidation(java.lang.reflect.Method)[pri:5, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0005_FlightbookingjourneywithPaxmandatoryfieldvalidation" duration-ms="315622" started-at="2020-07-08T05:38:33Z" finished-at="2020-07-08T05:43:48Z">
           <params>
             <param index="0">
               <value>
@@ -237,15 +239,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0005_FlightbookingjourneywithPaxmandatoryfieldvalidation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="732" started-at="2020-06-11T07:52:25Z" finished-at="2020-06-11T07:52:25Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="1072" started-at="2020-07-08T05:43:48Z" finished-at="2020-07-08T05:43:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="19212" started-at="2020-06-11T07:52:25Z" finished-at="2020-06-11T07:52:45Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="23229" started-at="2020-07-08T05:43:49Z" finished-at="2020-07-08T05:44:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0006_bookingFlightsWithmultipleCities(java.lang.reflect.Method)[pri:6, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0006_bookingFlightsWithmultipleCities" duration-ms="223211" started-at="2020-06-11T07:52:45Z" finished-at="2020-06-11T07:56:28Z">
+        <test-method status="PASS" signature="TC_0006_bookingFlightsWithmultipleCities(java.lang.reflect.Method)[pri:6, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0006_bookingFlightsWithmultipleCities" duration-ms="338675" started-at="2020-07-08T05:44:12Z" finished-at="2020-07-08T05:49:51Z">
           <params>
             <param index="0">
               <value>
@@ -256,34 +258,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0006_bookingFlightsWithmultipleCities -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="736" started-at="2020-06-11T07:56:28Z" finished-at="2020-06-11T07:56:29Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="625" started-at="2020-07-08T05:49:51Z" finished-at="2020-07-08T05:49:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="18200" started-at="2020-06-11T07:56:29Z" finished-at="2020-06-11T07:56:47Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="23802" started-at="2020-07-08T05:49:52Z" finished-at="2020-07-08T05:50:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0007_bookingFlightAndTwoRoomsWithAdultsAndChilds_FromTopDalPackages(java.lang.reflect.Method)[pri:7, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0007_bookingFlightAndTwoRoomsWithAdultsAndChilds_FromTopDalPackages" duration-ms="289896" started-at="2020-06-11T07:56:47Z" finished-at="2020-06-11T08:01:37Z">
+        <test-method status="PASS" signature="TC_0007_bookingFlightAndTwoRoomsWithAdultsAndChilds_FromTopDealPackages(java.lang.reflect.Method)[pri:7, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0007_bookingFlightAndTwoRoomsWithAdultsAndChilds_FromTopDealPackages" duration-ms="386635" started-at="2020-07-08T05:50:16Z" finished-at="2020-07-08T05:56:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0007_bookingFlightAndTwoRoomsWithAdultsAndChilds_FromTopDalPackages(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0007_bookingFlightAndTwoRoomsWithAdultsAndChilds_FromTopDealPackages(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0007_bookingFlightAndTwoRoomsWithAdultsAndChilds_FromTopDalPackages -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="735" started-at="2020-06-11T08:01:37Z" finished-at="2020-06-11T08:01:37Z">
+        </test-method> <!-- TC_0007_bookingFlightAndTwoRoomsWithAdultsAndChilds_FromTopDealPackages -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="1041" started-at="2020-07-08T05:56:42Z" finished-at="2020-07-08T05:56:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="28853" started-at="2020-06-11T08:01:37Z" finished-at="2020-06-11T08:02:06Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="25644" started-at="2020-07-08T05:56:43Z" finished-at="2020-07-08T05:57:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0008_bookingFlightMultipleCitiesAndTwoRoomsWithAdultsAndChilds_FromEuropePage(java.lang.reflect.Method)[pri:8, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0008_bookingFlightMultipleCitiesAndTwoRoomsWithAdultsAndChilds_FromEuropePage" duration-ms="344724" started-at="2020-06-11T08:02:06Z" finished-at="2020-06-11T08:07:51Z">
+        <test-method status="PASS" signature="TC_0008_bookingFlightMultipleCitiesAndTwoRoomsWithAdultsAndChilds_FromEuropePage(java.lang.reflect.Method)[pri:8, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0008_bookingFlightMultipleCitiesAndTwoRoomsWithAdultsAndChilds_FromEuropePage" duration-ms="369096" started-at="2020-07-08T05:57:09Z" finished-at="2020-07-08T06:03:18Z">
           <params>
             <param index="0">
               <value>
@@ -294,15 +296,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0008_bookingFlightMultipleCitiesAndTwoRoomsWithAdultsAndChilds_FromEuropePage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="921" started-at="2020-06-11T08:07:51Z" finished-at="2020-06-11T08:07:52Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="747" started-at="2020-07-08T06:03:18Z" finished-at="2020-07-08T06:03:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="46694" started-at="2020-06-11T08:07:52Z" finished-at="2020-06-11T08:08:39Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="24383" started-at="2020-07-08T06:03:19Z" finished-at="2020-07-08T06:03:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0009_arrival_dateChanging_FromTopOptions(java.lang.reflect.Method)[pri:9, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0009_arrival_dateChanging_FromTopOptions" duration-ms="288756" started-at="2020-06-11T08:08:39Z" finished-at="2020-06-11T08:13:27Z">
+        <test-method status="PASS" signature="TC_0009_arrival_dateChanging_FromTopOptions(java.lang.reflect.Method)[pri:9, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0009_arrival_dateChanging_FromTopOptions" duration-ms="408060" started-at="2020-07-08T06:03:43Z" finished-at="2020-07-08T06:10:31Z">
           <params>
             <param index="0">
               <value>
@@ -313,15 +315,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0009_arrival_dateChanging_FromTopOptions -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="892" started-at="2020-06-11T08:13:27Z" finished-at="2020-06-11T08:13:28Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="680" started-at="2020-07-08T06:10:31Z" finished-at="2020-07-08T06:10:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="22680" started-at="2020-06-11T08:19:24Z" finished-at="2020-06-11T08:19:47Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="22287" started-at="2020-07-08T06:13:38Z" finished-at="2020-07-08T06:14:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0014_verifySpotlightLink(java.lang.reflect.Method)[pri:14, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0014_verifySpotlightLink" duration-ms="44101" started-at="2020-06-11T08:19:47Z" finished-at="2020-06-11T08:20:31Z">
+        <test-method status="PASS" signature="TC_0014_verifySpotlightLink(java.lang.reflect.Method)[pri:14, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0014_verifySpotlightLink" duration-ms="42127" started-at="2020-07-08T06:14:00Z" finished-at="2020-07-08T06:14:42Z">
           <params>
             <param index="0">
               <value>
@@ -332,15 +334,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0014_verifySpotlightLink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="1219" started-at="2020-06-11T08:20:31Z" finished-at="2020-06-11T08:20:32Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="641" started-at="2020-07-08T06:14:42Z" finished-at="2020-07-08T06:14:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="16994" started-at="2020-06-11T08:21:50Z" finished-at="2020-06-11T08:22:07Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="22184" started-at="2020-07-08T06:16:52Z" finished-at="2020-07-08T06:17:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0017_validateTripSummarywithMultipleCitiesforExploreAsiaPage(java.lang.reflect.Method)[pri:17, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0017_validateTripSummarywithMultipleCitiesforExploreAsiaPage" duration-ms="332093" started-at="2020-06-11T08:22:07Z" finished-at="2020-06-11T08:27:39Z">
+        <test-method status="PASS" signature="TC_0017_validateTripSummarywithMultipleCitiesforExploreAsiaPage(java.lang.reflect.Method)[pri:17, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0017_validateTripSummarywithMultipleCitiesforExploreAsiaPage" duration-ms="361985" started-at="2020-07-08T06:17:15Z" finished-at="2020-07-08T06:23:16Z">
           <params>
             <param index="0">
               <value>
@@ -351,15 +353,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0017_validateTripSummarywithMultipleCitiesforExploreAsiaPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="851" started-at="2020-06-11T08:27:39Z" finished-at="2020-06-11T08:27:39Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="817" started-at="2020-07-08T06:23:16Z" finished-at="2020-07-08T06:23:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="22196" started-at="2020-06-11T08:27:39Z" finished-at="2020-06-11T08:28:02Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="23025" started-at="2020-07-08T06:23:17Z" finished-at="2020-07-08T06:23:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0018_bookingDetailswithPremiumEcomomy(java.lang.reflect.Method)[pri:18, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0018_bookingDetailswithPremiumEcomomy" duration-ms="153035" started-at="2020-06-11T08:28:02Z" finished-at="2020-06-11T08:30:35Z">
+        <test-method status="PASS" signature="TC_0018_bookingDetailswithPremiumEcomomy(java.lang.reflect.Method)[pri:18, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0018_bookingDetailswithPremiumEcomomy" duration-ms="156518" started-at="2020-07-08T06:23:40Z" finished-at="2020-07-08T06:26:17Z">
           <params>
             <param index="0">
               <value>
@@ -370,15 +372,53 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0018_bookingDetailswithPremiumEcomomy -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="658" started-at="2020-06-11T08:30:35Z" finished-at="2020-06-11T08:30:35Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="565" started-at="2020-07-08T06:26:17Z" finished-at="2020-07-08T06:26:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="16911" started-at="2020-06-11T08:30:35Z" finished-at="2020-06-11T08:30:52Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="24399" started-at="2020-07-08T06:26:17Z" finished-at="2020-07-08T06:26:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_0021_tripSummarymultipleCities(java.lang.reflect.Method)[pri:21, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0021_tripSummarymultipleCities" duration-ms="128524" started-at="2020-06-11T08:30:52Z" finished-at="2020-06-11T08:33:01Z">
+        <test-method status="PASS" signature="TC_0019_withoutAirBookingForSingleCity(java.lang.reflect.Method)[pri:19, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0019_withoutAirBookingForSingleCity" duration-ms="3" started-at="2020-07-08T06:26:42Z" finished-at="2020-07-08T06:26:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0019_withoutAirBookingForSingleCity(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0019_withoutAirBookingForSingleCity -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="609" started-at="2020-07-08T06:26:42Z" finished-at="2020-07-08T06:26:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="24156" started-at="2020-07-08T06:26:42Z" finished-at="2020-07-08T06:27:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TC_0020_withoutAirBookingForMultipleCity(java.lang.reflect.Method)[pri:20, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0020_withoutAirBookingForMultipleCity" duration-ms="13" started-at="2020-07-08T06:27:07Z" finished-at="2020-07-08T06:27:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0020_withoutAirBookingForMultipleCity(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0020_withoutAirBookingForMultipleCity -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="563" started-at="2020-07-08T06:27:07Z" finished-at="2020-07-08T06:27:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="setUp" is-config="true" duration-ms="25627" started-at="2020-07-08T06:27:07Z" finished-at="2020-07-08T06:27:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TC_0021_tripSummarymultipleCities(java.lang.reflect.Method)[pri:21, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="TC_0021_tripSummarymultipleCities" duration-ms="163624" started-at="2020-07-08T06:27:33Z" finished-at="2020-07-08T06:30:16Z">
           <params>
             <param index="0">
               <value>
@@ -389,7 +429,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_0021_tripSummarymultipleCities -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="662" started-at="2020-06-11T08:33:01Z" finished-at="2020-06-11T08:33:01Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tripmasters.framework.testScript.BookingPageTestScript@543e710e]" name="tearDown" is-config="true" duration-ms="642" started-at="2020-07-08T06:30:16Z" finished-at="2020-07-08T06:30:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

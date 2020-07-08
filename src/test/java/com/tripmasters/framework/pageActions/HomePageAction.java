@@ -236,6 +236,17 @@ for (WebElement webElement : morehighlights) {
 //				//driver.driver.findElement(HomePageLocators.clickOnBuildYourOwnVacation()).click();
 		
 	}
+	
+	public void clickonCreateVacation() {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//p[@class='pMtab'])[1]")));
+		element.click();
+
+		
+		
+	}
+	
+	
 
 	public String clickOnCustomizeit() {
 		WebElement we = driver.findElement(HomePageLocators.getfirstTopdealname()); 
