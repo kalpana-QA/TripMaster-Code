@@ -262,7 +262,7 @@ public class BookingPageTestScript extends TestBase {
 		PageBase.waitForElement(3);
 		bookingPage.fillLeavingFromDetails("Seattle SEA (WA), US");
 		test.log(LogStatus.INFO, "User entered \"Seattle, WA\" into leaving from field");
-		String date = bookingPage.selectValueFromCalendar(115 ,0);
+		String date = bookingPage.selectValueFromCalendar(117 ,0);
 		
 		String selecteddate = bookingPage.getSelectedDate();
 		test.log(LogStatus.INFO,   "User selects arrival date '" + selecteddate + "'from calendar");

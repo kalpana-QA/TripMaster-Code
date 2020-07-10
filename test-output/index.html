@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">21 methods,   21 passed</span>
+                    <span class="method-stats">21 methods, 1 failed,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.tripmasters.framework.testScript.BookingPageTestScript" hash-for-method="TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0003_bookingTwoRoomThreeAd...)">TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0003_bookingTwoRoomThreeAd...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,11 +122,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.tripmasters.framework.testScript.BookingPageTestScript" hash-for-method="TC_0002_bookingSingleRoomtwoAdultOneChild(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0002_bookingSingleRoomtwoA...)">TC_0002_bookingSingleRoomtwoAdultOneChild(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0002_bookingSingleRoomtwoA...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.tripmasters.framework.testScript.BookingPageTestScript" hash-for-method="TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0003_bookingTwoRoomThreeAd...)">TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0003_bookingTwoRoomThreeAd...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -217,6 +226,32 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tripmasters.framework.testScript.BookingPageTestScript</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0003_bookingTwoRoomThreeAd...)">
+                  </a> <!-- TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0003_bookingTwoRoomThreeAd...) -->
+                  <span class="method-name">TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities</span>
+                  <span class="parameters">(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.tripmasters.framework.reports.Logs.error(Logs.java:60)
+	at com.tripmasters.framework.base.PageBase.selectOptionByText(PageBase.java:251)
+	at com.tripmasters.framework.pageActions.PassengerInfoPageAction.fillTravellerDetailsForMultipleRooms(PassengerInfoPageAction.java:204)
+	at com.tripmasters.framework.testScript.BookingPageTestScript.TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(BookingPageTestScript.java:389)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -293,14 +328,6 @@
                   </a> <!-- TC_0002_bookingSingleRoomtwoAdultOneChild(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0002_bookingSingleRoomtwoA...) -->
                   <span class="method-name">TC_0002_bookingSingleRoomtwoAdultOneChild</span>
                   <span class="parameters">(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0002_bookingSingleRoomtwoAdultOneChild(java.lang.reflect.Method) throws java.lang.Exception)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0003_bookingTwoRoomThreeAd...)">
-                  </a> <!-- TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0003_bookingTwoRoomThreeAd...) -->
-                  <span class="method-name">TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities</span>
-                  <span class="parameters">(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(java.lang.reflect.Method) throws java.lang.Exception)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -560,87 +587,87 @@ data.addRows(21);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities')
 data.setCell(0, 2, 'com.tripmasters.framework.testScript.BookingPageTestScript')
-data.setCell(0, 3, 444293);
+data.setCell(0, 3, 654492);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TC_0009_arrival_dateChanging_FromTopOptions')
 data.setCell(1, 2, 'com.tripmasters.framework.testScript.BookingPageTestScript')
-data.setCell(1, 3, 408060);
+data.setCell(1, 3, 422569);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'TC_0007_bookingFlightAndTwoRoomsWithAdultsAndChilds_FromTopDealPackages')
 data.setCell(2, 2, 'com.tripmasters.framework.testScript.BookingPageTestScript')
-data.setCell(2, 3, 386635);
+data.setCell(2, 3, 395705);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_0008_bookingFlightMultipleCitiesAndTwoRoomsWithAdultsAndChilds_FromEuropePage')
+data.setCell(3, 1, 'TC_0001_bookingSingleRoomWithThreeAdults')
 data.setCell(3, 2, 'com.tripmasters.framework.testScript.BookingPageTestScript')
-data.setCell(3, 3, 369096);
+data.setCell(3, 3, 386403);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_0017_validateTripSummarywithMultipleCitiesforExploreAsiaPage')
+data.setCell(4, 1, 'TC_0008_bookingFlightMultipleCitiesAndTwoRoomsWithAdultsAndChilds_FromEuropePage')
 data.setCell(4, 2, 'com.tripmasters.framework.testScript.BookingPageTestScript')
-data.setCell(4, 3, 361985);
+data.setCell(4, 3, 364758);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC_0006_bookingFlightsWithmultipleCities')
+data.setCell(5, 1, 'TC_0017_validateTripSummarywithMultipleCitiesforExploreAsiaPage')
 data.setCell(5, 2, 'com.tripmasters.framework.testScript.BookingPageTestScript')
-data.setCell(5, 3, 338675);
+data.setCell(5, 3, 352134);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'TC_0005_FlightbookingjourneywithPaxmandatoryfieldvalidation')
 data.setCell(6, 2, 'com.tripmasters.framework.testScript.BookingPageTestScript')
-data.setCell(6, 3, 315622);
+data.setCell(6, 3, 312432);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'TC_0004_bookingFlightAndSingleRoomWithTwoAdults_FromFirstPackages')
 data.setCell(7, 2, 'com.tripmasters.framework.testScript.BookingPageTestScript')
-data.setCell(7, 3, 310199);
+data.setCell(7, 3, 311046);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC_0001_bookingSingleRoomWithThreeAdults')
+data.setCell(8, 1, 'TC_0006_bookingFlightsWithmultipleCities')
 data.setCell(8, 2, 'com.tripmasters.framework.testScript.BookingPageTestScript')
-data.setCell(8, 3, 262502);
+data.setCell(8, 3, 265691);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'TC_0002_bookingSingleRoomtwoAdultOneChild')
 data.setCell(9, 2, 'com.tripmasters.framework.testScript.BookingPageTestScript')
-data.setCell(9, 3, 246391);
+data.setCell(9, 3, 247138);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'TC_0021_tripSummarymultipleCities')
 data.setCell(10, 2, 'com.tripmasters.framework.testScript.BookingPageTestScript')
-data.setCell(10, 3, 163624);
+data.setCell(10, 3, 159242);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'TC_0018_bookingDetailswithPremiumEcomomy')
 data.setCell(11, 2, 'com.tripmasters.framework.testScript.BookingPageTestScript')
-data.setCell(11, 3, 156518);
+data.setCell(11, 3, 155512);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'TC_0015_verifyStartAgainLink')
 data.setCell(12, 2, 'com.tripmasters.framework.testScript.HomePageTestScript')
-data.setCell(12, 3, 83061);
+data.setCell(12, 3, 84517);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'TC_0014_verifySpotlightLink')
 data.setCell(13, 2, 'com.tripmasters.framework.testScript.BookingPageTestScript')
-data.setCell(13, 3, 42127);
+data.setCell(13, 3, 42508);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'TC_0012_verifyOtherVacationPackages')
 data.setCell(14, 2, 'com.tripmasters.framework.testScript.HomePageTestScript')
-data.setCell(14, 3, 35583);
+data.setCell(14, 3, 38910);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'TC_0011_verifyMoreHighlightAndAttractionLinks')
+data.setCell(15, 1, 'TC_0010_verifyCity')
 data.setCell(15, 2, 'com.tripmasters.framework.testScript.HomePageTestScript')
-data.setCell(15, 3, 23574);
+data.setCell(15, 3, 26003);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'TC_0010_verifyCity')
+data.setCell(16, 1, 'TC_0011_verifyMoreHighlightAndAttractionLinks')
 data.setCell(16, 2, 'com.tripmasters.framework.testScript.HomePageTestScript')
-data.setCell(16, 3, 22479);
+data.setCell(16, 3, 22133);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'TC_0013_verifyPopularVacationPackages')
 data.setCell(17, 2, 'com.tripmasters.framework.testScript.HomePageTestScript')
-data.setCell(17, 3, 10289);
+data.setCell(17, 3, 13173);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'TC_0016_verifyFooterText')
 data.setCell(18, 2, 'com.tripmasters.framework.testScript.HomePageTestScript')
-data.setCell(18, 3, 93);
+data.setCell(18, 3, 116);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'TC_0020_withoutAirBookingForMultipleCity')
+data.setCell(19, 1, 'TC_0019_withoutAirBookingForSingleCity')
 data.setCell(19, 2, 'com.tripmasters.framework.testScript.BookingPageTestScript')
-data.setCell(19, 3, 13);
+data.setCell(19, 3, 17);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'TC_0019_withoutAirBookingForSingleCity')
+data.setCell(20, 1, 'TC_0020_withoutAirBookingForMultipleCity')
 data.setCell(20, 2, 'com.tripmasters.framework.testScript.BookingPageTestScript')
-data.setCell(20, 3, 3);
+data.setCell(20, 3, 2);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -678,263 +705,265 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0001_bookingSingleRoomWithThreeAdults(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0001_bookingSingleRoomWith...)</span>
-                <span class="method-start">85898 ms</span>
+                <span class="method-start">98696 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">348406 ms</span>
+                <span class="method-start">485105 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">349473 ms</span>
+                <span class="method-start">488332 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0002_bookingSingleRoomtwoAdultOneChild(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0002_bookingSingleRoomtwoA...)</span>
-                <span class="method-start">376711 ms</span>
+                <span class="method-start">523103 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">623102 ms</span>
+                <span class="method-start">770241 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">623868 ms</span>
+                <span class="method-start">772267 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0003_bookingTwoRoomThreeAd...)</span>
-                <span class="method-start">650674 ms</span>
+                <span class="method-start">805367 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">1094967 ms</span>
+                <span class="method-start">1461398 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">1095671 ms</span>
+                <span class="method-start">1463153 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0004_bookingFlightAndSingleRoomWithTwoAdults_FromFirstPackages(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0004_bookingFlightAndSingl...)</span>
-                <span class="method-start">1124573 ms</span>
+                <span class="method-start">1495408 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">1434772 ms</span>
+                <span class="method-start">1806454 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">1435522 ms</span>
+                <span class="method-start">1808619 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0005_FlightbookingjourneywithPaxmandatoryfieldvalidation(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0005_Flightbookingjourneyw...)</span>
-                <span class="method-start">1457899 ms</span>
+                <span class="method-start">1885057 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">1773521 ms</span>
+                <span class="method-start">2197489 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">1774593 ms</span>
+                <span class="method-start">2199070 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0006_bookingFlightsWithmultipleCities(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0006_bookingFlightsWithmul...)</span>
-                <span class="method-start">1797822 ms</span>
+                <span class="method-start">2261249 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">2136500 ms</span>
+                <span class="method-start">2526944 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">2137125 ms</span>
+                <span class="method-start">2531006 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0007_bookingFlightAndTwoRoomsWithAdultsAndChilds_FromTopDealPackages(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0007_bookingFlightAndTwoRo...)</span>
-                <span class="method-start">2160927 ms</span>
+                <span class="method-start">2569235 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">2547562 ms</span>
+                <span class="method-start">2964940 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">2548604 ms</span>
+                <span class="method-start">2967165 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0008_bookingFlightMultipleCitiesAndTwoRoomsWithAdultsAndChilds_FromEuropePage(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0008_bookingFlightMultiple...)</span>
-                <span class="method-start">2574248 ms</span>
+                <span class="method-start">2998780 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">2943344 ms</span>
+                <span class="method-start">3363538 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">2944093 ms</span>
+                <span class="method-start">3365028 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0009_arrival_dateChanging_FromTopOptions(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0009_arrival_dateChanging_...)</span>
-                <span class="method-start">2968476 ms</span>
+                <span class="method-start">3399390 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3376536 ms</span>
+                <span class="method-start">3821963 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tripmasters.framework.testScript.HomePageTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">3377231 ms</span>
+                <span class="method-start">3823739 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0010_verifyCity(public void com.tripmasters.framework.testScript.HomePageTestScript.TC_0010_verifyCity(java.lang.ref...)</span>
-                <span class="method-start">3400193 ms</span>
+                <span class="method-start">3850894 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3422686 ms</span>
+                <span class="method-start">3876906 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">3423407 ms</span>
+                <span class="method-start">3877699 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0011_verifyMoreHighlightAndAttractionLinks(public void com.tripmasters.framework.testScript.HomePageTestScript.TC_0011_verifyMoreHighlightAndAt...)</span>
-                <span class="method-start">3448561 ms</span>
+                <span class="method-start">3906281 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3472137 ms</span>
+                <span class="method-start">3928430 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">3472717 ms</span>
+                <span class="method-start">3930071 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0012_verifyOtherVacationPackages(public void com.tripmasters.framework.testScript.HomePageTestScript.TC_0012_verifyOtherVacationPacka...)</span>
-                <span class="method-start">3495028 ms</span>
+                <span class="method-start">3957572 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3530611 ms</span>
+                <span class="method-start">3996482 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">3531182 ms</span>
+                <span class="method-start">3998072 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0013_verifyPopularVacationPackages(public void com.tripmasters.framework.testScript.HomePageTestScript.TC_0013_verifyPopularVacationPac...)</span>
-                <span class="method-start">3552462 ms</span>
+                <span class="method-start">4026915 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3562765 ms</span>
+                <span class="method-start">4040095 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tripmasters.framework.testScript.BookingPageTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">3563344 ms</span>
+                <span class="method-start">4040879 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0014_verifySpotlightLink(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0014_verifySpotlightLink(j...)</span>
-                <span class="method-start">3585631 ms</span>
+                <span class="method-start">4064709 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3627773 ms</span>
+                <span class="method-start">4107217 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tripmasters.framework.testScript.HomePageTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">3628414 ms</span>
+                <span class="method-start">4108302 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0015_verifyStartAgainLink(public void com.tripmasters.framework.testScript.HomePageTestScript.TC_0015_verifyStartAgainLink(jav...)</span>
-                <span class="method-start">3651291 ms</span>
+                <span class="method-start">4134175 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3734352 ms</span>
+                <span class="method-start">4218692 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">3734977 ms</span>
+                <span class="method-start">4219441 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0016_verifyFooterText(public void com.tripmasters.framework.testScript.HomePageTestScript.TC_0016_verifyFooterText(java.la...)</span>
-                <span class="method-start">3756871 ms</span>
+                <span class="method-start">4247237 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3756964 ms</span>
+                <span class="method-start">4247385 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tripmasters.framework.testScript.BookingPageTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">3757713 ms</span>
+                <span class="method-start">4248690 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0017_validateTripSummarywithMultipleCitiesforExploreAsiaPage(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0017_validateTripSummarywi...)</span>
-                <span class="method-start">3779897 ms</span>
+                <span class="method-start">4277462 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4141882 ms</span>
+                <span class="method-start">4629612 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">4142714 ms</span>
+                <span class="method-start">4630630 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0018_bookingDetailswithPremiumEcomomy(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0018_bookingDetailswithPre...)</span>
-                <span class="method-start">4165739 ms</span>
+                <span class="method-start">4658783 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4322260 ms</span>
+                <span class="method-start">4814295 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">4322825 ms</span>
+                <span class="method-start">4816561 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0019_withoutAirBookingForSingleCity(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0019_withoutAirBookingForS...)</span>
-                <span class="method-start">4347224 ms</span>
+                <span class="method-start">4852817 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4347227 ms</span>
+                <span class="method-start">4852834 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">4347836 ms</span>
+                <span class="method-start">4856270 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0020_withoutAirBookingForMultipleCity(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0020_withoutAirBookingForM...)</span>
-                <span class="method-start">4371992 ms</span>
+                <span class="method-start">4886470 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4372005 ms</span>
+                <span class="method-start">4886474 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">4372583 ms</span>
+                <span class="method-start">4887383 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_0021_tripSummarymultipleCities(public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0021_tripSummarymultipleCi...)</span>
-                <span class="method-start">4398210 ms</span>
+                <span class="method-start">4916344 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4561843 ms</span>
+                <span class="method-start">5075601 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
