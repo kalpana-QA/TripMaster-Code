@@ -729,7 +729,7 @@ else if(childType.equals("newageseven")) {
 			String val=cell.getText();
 			String dateString=date.toString();
 		if (val.equals(dateString)) {
-		Thread.sleep(20000);
+		Thread.sleep(10000);
 		clickOnElement(BookingLocators.getdate(dateString));
 		break;
 		}
@@ -1110,4 +1110,17 @@ public boolean verifyTravelByTrain() {
 	}
 	return result;
 }
+
+
+
+public String getSelectedDate() {
+	
+	WebElement datepick = driver.findElement(BookingLocators.selectdate());
+	System.out.println("Selected arrival  date is:- "+ datepick.getAttribute("value"));
+	String defaultdate = datepick.getAttribute("value");
+	return defaultdate;
+}
+
+
+
 }

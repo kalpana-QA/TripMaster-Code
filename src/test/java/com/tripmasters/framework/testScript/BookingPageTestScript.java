@@ -30,23 +30,24 @@ public class BookingPageTestScript extends TestBase {
 	private static String actualsecondCityHotel;
 
 	
-	@Test(groups = { "smoke" }, priority = 1 , retryAnalyzer = com.tripmasters.framework.Listeners.Retry.class)
+	@Test(groups = { "smoke" }, priority = 1)
 	public void TC_0001_bookingSingleRoomWithThreeAdults(Method method) throws Exception {
 	    ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0001_bookingSingleRoomWithThreeAdults");
 		
 	    test.log(LogStatus.INFO, "Entered the URL: http://www.tripmasters.com/");
 		
-	    
+	    Thread.sleep(5000);
 	    bookingPage.clickOnBuildYourVacationDropDown();
 		test.log(LogStatus.INFO, "Tap on Build your vacation dropdown.");
+		PageBase.waitForElement(5);
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
 		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
-		String date = bookingPage.selectValueFromCalendar(211, 4);
+		bookingPage.selectValueFromCalendar(215, 4);
 		
-	
-		test.log(LogStatus.INFO,   "User selects arrival date '" + date + "'from calendar");
+		String selecteddate = bookingPage.getSelectedDate();
+		test.log(LogStatus.INFO,   "User selects arrival date '" + selecteddate + "'from calendar");
 		bookingPage.selectStayingTime("4");
 		test.log(LogStatus.INFO, "User entered \"4\" nights staying time");	
 		bookingPage.selectNoMoreCitiesBtn();
@@ -112,6 +113,7 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.clicktoContinuePage();
 		test.log(LogStatus.INFO, "Tap to Continue & User redirected to Payment Page");
 		test.log(LogStatus.INFO, "Scrolled Down");
+		PageBase.waitForElement(10);
 		if(TestBase.flag_Mob){
 			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1NameiOS(), expectedFirstTravellerInfo);
 			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler2NameiOS(), expectedSecondTravellerInfo);
@@ -121,14 +123,16 @@ public class BookingPageTestScript extends TestBase {
 		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
 		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
 		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler3Name(), expectedThirdTravellerInfo);
-		}
+	}
 		bookingPage.tripSummary();
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
 		//Logs.info("Flights & passenger details verified successfully on PaymentPage");
 	}
 	
+		
+
+	@Test(groups= {"smoke"},priority=2 ,alwaysRun = true)
 	
-		@Test(groups= {"smoke"},priority = 2,alwaysRun = true)
 		public void TC_0002_bookingSingleRoomtwoAdultOneChild(Method method) throws Exception {
 			ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0002_bookingSingleRoomtwoAdultOneChild");
 			test.log(LogStatus.INFO, "Entered the URL: http://www.tripmasters.com/");
@@ -137,14 +141,15 @@ public class BookingPageTestScript extends TestBase {
 			bookingPage.clickOnBuildYourVacationDropDown();
 			test.log(LogStatus.INFO, "Tap on Build your vacation dropdown.");
 			PageBase.waitForElement(3);
+			PageBase.waitForElement(5);
 			bookingPage.fillLeavingFromDetails("New York City (all Airports),  NY");
 			test.log(LogStatus.INFO, "User entered \"New York City (all Airports),  NY\" into leaving from field");
 			bookingPage.fillGoingToCityDetails("London (England)");
 			test.log(LogStatus.INFO, "User entered \"London(England)\" into Going to from field");
-			String date = bookingPage.selectValueFromCalendar(214 ,4);
+			bookingPage.selectValueFromCalendar(214 ,4);
 			
-			
-			test.log(LogStatus.INFO,   "User selects arrival date '" + date + "'from calendar");
+			String selecteddate = bookingPage.getSelectedDate();
+			test.log(LogStatus.INFO,   "User selects arrival date '" + selecteddate + "'from calendar");
 			bookingPage.selectStayingTime("6");
 			test.log(LogStatus.INFO, "User entered \"6\" nights staying time");	
 			bookingPage.clickOnAddCityBtn();
@@ -238,6 +243,8 @@ public class BookingPageTestScript extends TestBase {
 			test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Traveller");
 			
 			bookingPage.getTripinclusionContinueButton();
+			PageBase.waitForElement(10);
+			
 			test.log(LogStatus.INFO, "Scrolled Down.");
 			bookingPage.clicktoContinuePage();
 			test.log(LogStatus.INFO, "Tap on Continue Button & User redirected to the Payment Page");
@@ -258,13 +265,13 @@ public class BookingPageTestScript extends TestBase {
 		
 		bookingPage.clickOnBuildYourVacationDropDown();
 		test.log(LogStatus.INFO, "Tap on Build your vacation dropdown.");
-		PageBase.waitForElement(3);
+		PageBase.waitForElement(5);
 		bookingPage.fillLeavingFromDetails("Seattle SEA (WA), US");
 		test.log(LogStatus.INFO, "User entered \"Seattle, WA\" into leaving from field");
-		String date = bookingPage.selectValueFromCalendar(85 ,0);
+		bookingPage.selectValueFromCalendar(117 ,0);
 		
-		
-		test.log(LogStatus.INFO,   "User selects arrival date '" + date + "'from calendar");
+		String selecteddate = bookingPage.getSelectedDate();
+		test.log(LogStatus.INFO,   "User selects arrival date '" + selecteddate + "'from calendar");
 		bookingPage.fillGoingToCityDetails("Dublin (Ireland)");
 		test.log(LogStatus.INFO, "User entered \"Dublin (Ireland)\" into Going to from field");
 		bookingPage.selectStayingTime("3");
@@ -407,7 +414,6 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User selects \"DOB:01/01/2000\" for Traveller3 Date of Birth");
 		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Traveller3");
 		test.log(LogStatus.INFO, "Scrolled Down.");
-	//	expectedFourthTravellerInfo = passengerInfoPage.fillTravellerDetailsForMultipleRooms("Room2Child1");
 		expectedFourthTravellerInfo =passengerInfoPage.fillSecondTravellerDetailsChildMob("Erwin", "George", "Male", "01/01/2013","237|US", "Child");
 		test.log(LogStatus.INFO, "User enters \"Erwin\" as Traveller4 First Name");
 		test.log(LogStatus.INFO, "User enters \"George\" as Traveller4 Last Name");
@@ -416,7 +422,8 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Traveller4");
 		bookingPage.getTripinclusionContinueButton();
 		test.log(LogStatus.INFO, "User filled all the passenger details successfully");
-
+		PageBase.waitForElement(10);
+		
 		if(TestBase.flag_Mob) {
 			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1NameiOS(), expectedFirstTravellerInfo);
 			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler2NameiOS(), expectedSecondTravellerInfo);
@@ -444,13 +451,15 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Scrolled Down");
 		test.log(LogStatus.INFO, "User tap on first package on Explore Slider");
 		test.log(LogStatus.INFO, "Redirect to the package named "+ explorelinkname);
+		PageBase.waitForElement(5);
 		bookingPage.fillLeavingonExplorepage("Washington (all Airports), DC");
 		test.log(LogStatus.INFO, "Scrolled Down");
 		test.log(LogStatus.INFO, "User entered \"Washington (all Airports), DC\" into leaving from field");
-		String date = bookingPage.selectValueFromCalendar(182 ,0);
-		test.log(LogStatus.INFO,   "User selects arrival date '" + date + "'from calendar");
-
 		
+		bookingPage.selectValueFromCalendar(122 ,0);
+		String selecteddate = bookingPage.getSelectedDate();
+		test.log(LogStatus.INFO,   "User selects arrival date '" + selecteddate + "'from calendar");
+			
 		bookingPage.selectGuestDetails("1|2");
 		//test.log(LogStatus.INFO, "User tap on Options.");
 		test.log(LogStatus.INFO, "User select \" One Room for Two Adults\" from Guest list");
@@ -504,6 +513,8 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User selects \"Gender:Male\" for Second Traveller Last Name");
 		test.log(LogStatus.INFO, "User selects \"DOB:01/01/1994\" for Second Traveller's Date of Birth");
 		test.log(LogStatus.INFO, "User selects \"Passport details as:US\" for Second Traveller");
+		PageBase.waitForElement(10);
+		
 		bookingPage.getTripinclusionContinueButton();
 	
 		bookingPage.clicktoContinuePage();
@@ -511,7 +522,7 @@ public class BookingPageTestScript extends TestBase {
 		
 		test.log(LogStatus.INFO, "Tap to Continue & User redirected to Payment Page");
 		if(TestBase.flag_Mob){
-			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1NameiOS(), expectedFirstTravellerInfo);
+		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1NameiOS(), expectedFirstTravellerInfo);
 			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler2NameiOS(), expectedSecondTravellerInfo);
 		}
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
@@ -536,15 +547,15 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.clickOnReorderCitiesLink();
 		
 		test.log(LogStatus.INFO, "User tap on Reorder cities link");
+		PageBase.waitForElement(5);
 		bookingPage.fillLeavingFromDetailsOnEuropePage("Chicago CHI (All Airports)(IL), US");
 		
 		//String date = PageBase.selectNewDateFromCalendar(165);
 		test.log(LogStatus.INFO, "User entered \"Chicago (All Airports), IL\" into leaving from field");
-		String date = bookingPage.selectValueFromCalendar(195 ,2);
-		test.log(LogStatus.INFO,   "User selects arrival date '" + date + "'from calendar");
-
-		
-	//	test.log(LogStatus.INFO,   "User selects arrival date '" + date + "'from calendar");
+		bookingPage.selectValueFromCalendar(105 ,2);
+		String selecteddate = bookingPage.getSelectedDate();
+		test.log(LogStatus.INFO,   "User selects arrival date '" + selecteddate + "'from calendar");
+			//	test.log(LogStatus.INFO,   "User selects arrival date '" + date + "'from calendar");
 		
 		PageBase.scrollDownForMob(2);
 		test.log(LogStatus.INFO, "Scrolled Down.");
@@ -644,7 +655,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Scrolled Down");
 		
 		test.log(LogStatus.INFO, "User tap on Explore Asia Link");
-		homePage.verifyHighLightsandAttractions();
+		//homePage.verifyHighLightsandAttractions();
 		test.log(LogStatus.INFO, "Verify Highlights option is available on Homepage. ");
 		String firstHighLight = homePage.verifyfirsthighlightandAttraction();
 		test.log(LogStatus.INFO, "Verify First Highlight option is available on page");
@@ -664,7 +675,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Scrolled Down");
 		
 		test.log(LogStatus.INFO, "Tap on Build your own itinerary");
-		
+		PageBase.waitForElement(5);
 
 		bookingPage.fillLeavingFromDetails("New York City (all Airports),  NY");
 		test.log(LogStatus.INFO, "User entered \"New York City (all Airports),  NY\" into leaving from field");
@@ -681,8 +692,8 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "User entered \"4\" nights staying time for Frankfurt");
 		String date = bookingPage.selectValueFromCalendar(216 ,4);
 		System.out.println("date is "+ date);	
-		test.log(LogStatus.INFO,   "User selects arrival date '" + date + "'from calendar");
-
+		String selecteddate = bookingPage.getSelectedDate();
+		test.log(LogStatus.INFO,   "User selects arrival date '" + selecteddate + "'from calendar");
 		bookingPage.selectNoMoreCitiesBtn();
 		test.log(LogStatus.INFO, "Tap on Next");
 		test.log(LogStatus.INFO, "User tap on Options to select rooms and traveler.");
@@ -745,13 +756,16 @@ public class BookingPageTestScript extends TestBase {
 		
 		bookingPage.getTripinclusionContinueButton();
 		bookingPage.clicktoContinuePage();
+		PageBase.waitForElement(10);
+		
 		test.log(LogStatus.INFO, "Tap to Continue & User redirected to Payment Page");
 				if(TestBase.flag_Mob){
-			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1NameiOS(), expectedFirstTravellerInfo);
+					Thread.sleep(5000);
+		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1NameiOS(), expectedFirstTravellerInfo);
 			//PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler2NameiOS(), expectedSecondTravellerInfo);
 		}else{
-			//PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
-			//PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
+		//	PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
+		//	PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
 		}
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
 		
@@ -767,28 +781,27 @@ public class BookingPageTestScript extends TestBase {
 		
 		homePage.topdeals();
 		test.log(LogStatus.INFO, "User tap on Top Deals");
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		homePage.validateTopDealsPage();
 		test.log(LogStatus.INFO, "Verifies that User is on top deal page");
 		homePage.validatetopDealsList();
 		test.log(LogStatus.INFO, "Verifies the top deals list of the week");
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		test.log(LogStatus.INFO, "Scrolled Down");
 		
 		 String firsttopdeal = homePage.clickOnCustomizeit();
 		test.log(LogStatus.INFO, "Tap on Customize it button of " + firsttopdeal);
 		PageBase.scrollDown();
 		test.log(LogStatus.INFO, "Scrolled Down");
-		
+		PageBase.waitForElement(5);
 		bookingPage.fillLeavingFromDetails("New York City (all Airports),  NY");
 		test.log(LogStatus.INFO, "User entered \"New York City (all Airports),  NY\" into leaving from field");
 
-		String date = bookingPage.selectValueFromCalendar(154 ,1);
+		bookingPage.selectValueFromCalendar(95 ,1);
 		
-		
-		test.log(LogStatus.INFO,   "User selects arrival date'" + date + "'from calendar");
-
-		bookingPage.selectGuestDetails_dealsPage("2|Other");
+		String selecteddate = bookingPage.getSelectedDate();
+		test.log(LogStatus.INFO,   "User selects arrival date '" + selecteddate + "'from calendar");
+				bookingPage.selectGuestDetails_dealsPage("2|Other");
 		//test.log(LogStatus.INFO, "User tap on Options");
 		test.log(LogStatus.INFO, "Tap on Rooms input");
 		
@@ -822,7 +835,7 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Tap on Browse Hotels Button");
 
 		bookingPage.selectFirstHotel();
-
+		PageBase.waitForElement(5);
 		ExpectedHotel = bookingPage.browseSelectHotel();
 		test.log(LogStatus.INFO, "Select particular hotel from Hotel Options");
 		test.log(LogStatus.INFO, "Scrolled Down");
@@ -879,6 +892,8 @@ public class BookingPageTestScript extends TestBase {
 		bookingPage.getTripinclusionContinueButton();
 		
 		bookingPage.clicktoContinuePage();
+		PageBase.waitForElement(10);
+		
 		test.log(LogStatus.INFO, "Tap on Continue Button & User redirected to the Payment Page");
 		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
 		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
@@ -903,11 +918,11 @@ public class BookingPageTestScript extends TestBase {
 		 bookingPage.fillLeavingFromDetails("New York City (all Airports),  NY");
 		 test.log(LogStatus.INFO, "User entered \"New York City (all Airports),  NY\" into leaving from field");
 		
-		 String date = bookingPage.selectValueFromCalendar(217,4);
+		 String date = bookingPage.selectValueFromCalendar(227,4);
 			
-			
-			test.log(LogStatus.INFO,   "User selects arrival date '" + date + "'from calendar");
-		 
+		String selecteddate = bookingPage.getSelectedDate();
+		test.log(LogStatus.INFO,   "User selects arrival date '" + selecteddate + "'from calendar");
+		
 		 bookingPage.fillGoingToCityDetails("Rome (Italy)");
 		 test.log(LogStatus.INFO, "User entered \"Rome (Italy)\" into going to field");
 		 
@@ -1035,6 +1050,8 @@ public class BookingPageTestScript extends TestBase {
 				
 			bookingPage.getTripinclusionContinueButton();
 			bookingPage.clicktoContinuePage();
+			PageBase.waitForElement(10);
+			
 			test.log(LogStatus.INFO, "Tap on Continue Button & User redirected to the Payment Page");
 			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
 			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
@@ -1052,15 +1069,16 @@ public class BookingPageTestScript extends TestBase {
 		
 		bookingPage.clickOnBuildYourVacationDropDown();
 		test.log(LogStatus.INFO, "User tap on Build your vacation dropdown");
+		PageBase.waitForElement(5);
 		bookingPage.fillLeavingFromDetails("Washington (all Airports), DC");
 		test.log(LogStatus.INFO, "User entered \"Washington (all Airports), DC\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("London (England)");
 		test.log(LogStatus.INFO, "User entered \"London (England)\" into Going to from field");
-		String date = bookingPage.selectValueFromCalendar(89 ,0);
+		String date = bookingPage.selectValueFromCalendar(99 ,0);
 		
 		System.out.println("date is "+ date);	
-		test.log(LogStatus.INFO,   "User selects arrival date'" + date + "'from calendar");
-		
+		String selecteddate = bookingPage.getSelectedDate();
+		test.log(LogStatus.INFO,   "User selects arrival date '" + selecteddate + "'from calendar");
 		
 		
 		bookingPage.selectStayingTime("3");
@@ -1117,12 +1135,14 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Scrolled Down");
 		test.log(LogStatus.INFO, "User tap on continue button");
 //		//bookingPage.tripSummary();
+		PageBase.waitForElement(10);
+		
 		bookingPage.validateTripPage();
 		test.log(LogStatus.INFO, "Validate that user is on TripInclusion Page");
 		
 	}
 	
-	@Test(groups= {"smoke"},priority=17)
+	@Test(groups= {"smok"},priority=17)
 	public void TC_0017_validateTripSummarywithMultipleCitiesforExploreAsiaPage(Method method) throws Exception {
 		ExtentTest test=ExtentTestManager.startTest(method.getName(), "TC_0017_validateTripSummarywithMultipleCitiesforExploreAsiaPage");
 		test.log(LogStatus.INFO, "Entered the URL: http://www.tripmasters.com/");
@@ -1133,15 +1153,16 @@ public class BookingPageTestScript extends TestBase {
 		test.log(LogStatus.INFO,"User tap on explore Asia Link");
 		bookingPage.clickOnBuildYourVacationDropDown();
 		test.log(LogStatus.INFO, "User tap on Create your vacation dropdown");
-		PageBase.waitForElement(3);
+		PageBase.waitForElement(5);
 		bookingPage.fillLeavingFromDetails("New York City (all Airports),  NY");
 		test.log(LogStatus.INFO, "User entered \"New York City (all Airports),  NY\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Delhi (India)");
 		
-		 String date = bookingPage.selectValueFromCalendar(180 ,3);
+		 String date = bookingPage.selectValueFromCalendar(210 ,3);
 			
 		System.out.println("date is "+ date);	
-			test.log(LogStatus.INFO,   "User selects arrival date '" + date + "'from calendar");
+		String selecteddate = bookingPage.getSelectedDate();
+		test.log(LogStatus.INFO,   "User selects arrival date '" + selecteddate + "'from calendar");
 		
 		test.log(LogStatus.INFO, "User entered \"Delhi (India)\" into Going to from field");
 		bookingPage.selectStayingTime("4");
@@ -1223,6 +1244,7 @@ public class BookingPageTestScript extends TestBase {
 		//bookingPage.getTripinclusionContinueButton();
 		test.log(LogStatus.INFO, "Scrolled Down");
 		
+		PageBase.waitForElement(10);
 		
 		
 		test.log(LogStatus.INFO, "User tap on continue button");
@@ -1281,14 +1303,15 @@ public class BookingPageTestScript extends TestBase {
 		
 		bookingPage.clickOnBuildYourVacationDropDown();
 		test.log(LogStatus.INFO, "User tap on Build your vacation dropdown");
+		PageBase.waitForElement(5);
 		bookingPage.fillLeavingFromDetails("New York, Newark, NJ");
 		test.log(LogStatus.INFO, "User entered \"New York, Newark, NJ\" into leaving from field");
 		bookingPage.fillGoingToCityDetails("Berlin (Germany)");
 		test.log(LogStatus.INFO, "User entered \"Berlin (Germany)\" into Going to from field");
 		String date = bookingPage.selectValueFromCalendar(215 ,4);
 		
-		
-		test.log(LogStatus.INFO,   "User selects arrival date'" + date + "'from calendar");
+		String selecteddate = bookingPage.getSelectedDate();
+		test.log(LogStatus.INFO,   "User selects arrival date '" + selecteddate + "'from calendar");
 		bookingPage.selectStayingTime("12");
 		test.log(LogStatus.INFO, "User entered \"12\" nights staying time");
 		test.log(LogStatus.INFO, "Booking details Source & Destination filled successfully ");
@@ -1343,7 +1366,7 @@ public class BookingPageTestScript extends TestBase {
 
 		bookingPage.selectFirstHotel();
         test.log(LogStatus.INFO, "Select particular hotel from Hotel Options");
-		ExpectedHotel = bookingPage.browseSelectHotel();
+	//	ExpectedHotel = bookingPage.browseSelectHotel();
 		test.log(LogStatus.INFO, "Validate selected hotel name is displayed");
 		test.log(LogStatus.INFO, "Scrolled Down.");
 		bookingPage.clicktoContinuePage();
@@ -1382,12 +1405,14 @@ public class BookingPageTestScript extends TestBase {
 		
 		bookingPage.clicktoContinuePage();
 		bookingPage.getTripinclusionContinueButton();
+		PageBase.waitForElement(10);
+		
 		test.log(LogStatus.INFO, "Tap on Continue Button & User redirected to the Payment Page");
 		if(TestBase.flag_Mob){
 			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1NameiOS(), expectedFirstTravellerInfo);
 			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler2NameiOS(), expectedSecondTravellerInfo);
 		}else{
-		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
+			PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler1Name(), expectedFirstTravellerInfo);
 		PageBase.verifyTravellerDetails(BookingLocators.getverifyTraveler2Name(), expectedSecondTravellerInfo);
 		}
 		test.log(LogStatus.INFO, "Flights & passenger details verified successfully on PaymentPage");
@@ -1410,8 +1435,8 @@ public class BookingPageTestScript extends TestBase {
 			
 			String date = bookingPage.selectValueFromCalendar(214 ,4);
 			
-			
-			test.log(LogStatus.INFO,   "User selects arrival date '" + date + "'from calendar");
+			String selecteddate = bookingPage.getSelectedDate();
+			test.log(LogStatus.INFO,   "User selects arrival date '" + selecteddate + "'from calendar");
 			
 			
 			bookingPage.fillGoingToCityDetails("Delhi (India)");

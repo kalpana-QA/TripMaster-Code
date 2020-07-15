@@ -218,9 +218,10 @@ public class BookingLocators {
 	
 	private static By selectRoomtwoChildAgeseven = By.xpath("(//ul[@id='ui-id-3']//li)[6]");
 	
+	private static By selectdate = By.xpath("//input[@id='InDate1'] | //input[@id='qArrDate'] | //input[@id='xtxtBYArriving']");
 	
 	
-	
+
 	
 	/**
 	 * @return the emailId
@@ -902,5 +903,9 @@ public static By clickondate() {
 	return getdate;
 }
 
-//selectguestminus
+public static By selectdate() {
+	// TODO Auto-generated method stub
+	return selectdate;
+}
+
 }

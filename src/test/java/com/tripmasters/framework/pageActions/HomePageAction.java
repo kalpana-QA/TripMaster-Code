@@ -132,6 +132,8 @@ public  void validateTopDealsPage() {
 		
 		Assert.assertTrue(flag);
 		}
+		//Assert.assertTrue(flag);
+		
 	}
 
 //Method created to validate list of the week @author Satyam
@@ -141,16 +143,21 @@ public void validatetopDealsList(){
 List<WebElement> topDeals = driver.findElements(By.className("pMpkTitle"));
 
 System.out.println(topDeals.size());
-
+boolean flag = false;
 for (WebElement webElement : topDeals) {
     String name = webElement.getText();
     System.out.println(name);
-    boolean flag = false;
+   
 	if(driver.getPageSource().contains(name)) {
 		 flag = true;
 		Assert.assertTrue(flag);
     
 }
+	
+//	else {
+//		
+//		Assert.assertTrue(flag);
+//	}
 }
 }
 

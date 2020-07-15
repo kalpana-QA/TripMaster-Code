@@ -69,6 +69,7 @@ public class TestBase {
 					 options.addArguments("ignore-certificate-errors");
 					 options.setAcceptInsecureCerts(true);
 					System.setProperty("webdriver.chrome.driver", chromeDriverFilePath);
+					
 					driver = new ChromeDriver(options);
 					
 					//Dimension d=new Dimension(1382,744);
@@ -92,21 +93,22 @@ public class TestBase {
 				}
 			}
 			
-		else if(platform.equalsIgnoreCase("Mobile")){
+		else if(platform.equalsIgnoreCase("Android")){
 				if (browser.equalsIgnoreCase("Chrome")) {
 					capabilities = new DesiredCapabilities();
 
 					System.out.println("chromeDriverFilePath : " + chromeDriverFilePath);
 
-					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
+				//	capabilities.setCapability("chromedriverExecutable", "/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac");
 					capabilities.setCapability("platformName", "Android");
 					capabilities.setCapability("platformVersion", "10");
 
-					capabilities.setCapability("deviceName", "OnePlus 7");
+					capabilities.setCapability("deviceName", "emulator-5554");
 
 					capabilities.setCapability("browserName", "Chrome");
+					capabilities.setCapability("showChromedriverLog", "true");
 
-
+					//capabilities.setCapability("automationName", "uiautomator2");
 					//lambdaTest
 					
 
@@ -148,7 +150,8 @@ public class TestBase {
                     //capabilities.setCapability("name", "Bstack-[Java] Sample Test");
                     
                   //  driver =new RemoteWebDriver(new URL(URL), capabilities);
-
+					System.setProperty("webdriver.chrome.driver", "/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac");
+					
 					url = new URL("http:127.0.0.1:4723/wd/hub");
 
 					driver = new AndroidDriver<MobileElement>(url, capabilities);

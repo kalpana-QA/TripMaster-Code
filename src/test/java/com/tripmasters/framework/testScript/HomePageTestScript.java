@@ -89,7 +89,7 @@ public class HomePageTestScript extends TestBase {
 	}
 
 	 @Test(groups = {"smoke"},priority=13)
-	public void TC_0013_verifyPopularVacationPackages(Method method) {
+	public void TC_0013_verifyPopularVacationPackages(Method method) throws Exception {
 		ExtentTest test = ExtentTestManager.startTest(method.getName(), "VerifyPopularVacationPackages_TC_13");
 		test.log(LogStatus.INFO, "Entered the URL: http://www.tripmasters.com/");
 		
@@ -98,6 +98,7 @@ public class HomePageTestScript extends TestBase {
 		test.log(LogStatus.INFO, "Tap on Explore europe link");
 		test.log(LogStatus.INFO, "Scrolled Down.");
 		test.log(LogStatus.INFO, "Tap on Popular Vacation Packages");
+		Thread.sleep(5000);
 		//Logs.info("Clicked on Popular Vacation Packages");
 		String europePageTitle = homePage.getPageTitle();
 		System.out.println(europePageTitle);
