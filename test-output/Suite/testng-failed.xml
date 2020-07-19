@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.tripmasters.framework.Listeners.TestListener"/>
     <listener class-name="com.tripmasters.framework.Listeners.AnnotationTransformer"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)" parallel="methods">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
     <groups>
       <run>
-        <include name="smoke"/>
-        <include name="regression"/>
+        <include name="smok"/>
       </run>
     </groups>
     <classes>
       <class name="com.tripmasters.framework.testScript.BookingPageTestScript">
         <methods>
+          <include name="TC_0001_bookingSingleRoomWithThreeAdults" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>

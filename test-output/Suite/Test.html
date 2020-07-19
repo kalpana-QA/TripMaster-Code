@@ -55,13 +55,13 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>20/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jul 10 10:17:33 IST 2020</td>
+<td>Started on:</td><td>Sat Jul 11 18:38:25 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>5076 seconds (5076690 ms)</td>
+<tr><td>Total time:</td><td>158 seconds (158285 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>regression smoke </td>
+<td>Included groups:</td><td>smok </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
@@ -75,145 +75,96 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tripmasters.framework.testScript.BookingPageTestScript.TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities()'><b>TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.tripmasters.framework.reports.Logs.error(Logs.java:60)
-	at com.tripmasters.framework.base.PageBase.selectOptionByText(PageBase.java:251)
-	at com.tripmasters.framework.pageActions.PassengerInfoPageAction.fillTravellerDetailsForMultipleRooms(PassengerInfoPageAction.java:204)
-	at com.tripmasters.framework.testScript.BookingPageTestScript.TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(BookingPageTestScript.java:389)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace561306162", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace561306162'><pre>java.lang.NullPointerException
-	at com.tripmasters.framework.reports.Logs.error(Logs.java:60)
-	at com.tripmasters.framework.base.PageBase.selectOptionByText(PageBase.java:251)
-	at com.tripmasters.framework.pageActions.PassengerInfoPageAction.fillTravellerDetailsForMultipleRooms(PassengerInfoPageAction.java:204)
-	at com.tripmasters.framework.testScript.BookingPageTestScript.TC_0003_bookingTwoRoomThreeAdultAndOneChildWithMultipleCities(BookingPageTestScript.java:389)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+<td title='com.tripmasters.framework.testScript.BookingPageTestScript.TC_0001_bookingSingleRoomWithThreeAdults()'><b>TC_0001_bookingSingleRoomWithThreeAdults</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0001_bookingSingleRoomWithThreeAdults(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>org.openqa.selenium.InvalidArgumentException: invalid argument: invalid locator
+  (Session info: chrome=80.0.3987.87)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Satyam_iQA&apos;, ip: &apos;fe80:0:0:0:1091:1a0:1468:ee19%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.5&apos;, java.version: &apos;13.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, databaseEnabled: false, desired: {browserName: Chrome, deviceName: emulator-5554, platformName: android, platformVersion: 10, showChromedriverLog: true}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 10, showChromedriverLog: true, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 4d37f863-6054-4b8a-ab29-d8773b0c4d35
+*** Element info: {Using=id, value=nTXMLSession}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.tripmasters.framework.pageActions.BookingPageAction.getSessionid(BookingPageAction.java:205)
+	at com.tripmasters.framework.testScript.BookingPageTestScript.TC_0001_bookingSingleRoomWithThreeAdults(BookingPageTestScript.java:71)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1455785402", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1455785402'><pre>org.openqa.selenium.InvalidArgumentException: invalid argument: invalid locator
+  (Session info: chrome=80.0.3987.87)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Satyam_iQA&apos;, ip: &apos;fe80:0:0:0:1091:1a0:1468:ee19%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.5&apos;, java.version: &apos;13.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, databaseEnabled: false, desired: {browserName: Chrome, deviceName: emulator-5554, platformName: android, platformVersion: 10, showChromedriverLog: true}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 10, showChromedriverLog: true, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 4d37f863-6054-4b8a-ab29-d8773b0c4d35
+*** Element info: {Using=id, value=nTXMLSession}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.tripmasters.framework.pageActions.BookingPageAction.getSessionid(BookingPageAction.java:205)
+	at com.tripmasters.framework.testScript.BookingPageTestScript.TC_0001_bookingSingleRoomWithThreeAdults(BookingPageTestScript.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
 </pre></div></td>
-<td>654</td>
-<td>com.tripmasters.framework.testScript.BookingPageTestScript@543e710e</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.BookingPageTestScript.TC_0001_bookingSingleRoomWithThreeAdults()'><b>TC_0001_bookingSingleRoomWithThreeAdults</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0001_bookingSingleRoomWithThreeAdults(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>386</td>
-<td>com.tripmasters.framework.testScript.BookingPageTestScript@543e710e</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.BookingPageTestScript.TC_0002_bookingSingleRoomtwoAdultOneChild()'><b>TC_0002_bookingSingleRoomtwoAdultOneChild</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0002_bookingSingleRoomtwoAdultOneChild(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>247</td>
-<td>com.tripmasters.framework.testScript.BookingPageTestScript@543e710e</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.BookingPageTestScript.TC_0004_bookingFlightAndSingleRoomWithTwoAdults_FromFirstPackages()'><b>TC_0004_bookingFlightAndSingleRoomWithTwoAdults_FromFirstPackages</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0004_bookingFlightAndSingleRoomWithTwoAdults_FromFirstPackages(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>311</td>
-<td>com.tripmasters.framework.testScript.BookingPageTestScript@543e710e</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.BookingPageTestScript.TC_0005_FlightbookingjourneywithPaxmandatoryfieldvalidation()'><b>TC_0005_FlightbookingjourneywithPaxmandatoryfieldvalidation</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0005_FlightbookingjourneywithPaxmandatoryfieldvalidation(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>312</td>
-<td>com.tripmasters.framework.testScript.BookingPageTestScript@543e710e</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.BookingPageTestScript.TC_0006_bookingFlightsWithmultipleCities()'><b>TC_0006_bookingFlightsWithmultipleCities</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0006_bookingFlightsWithmultipleCities(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>265</td>
-<td>com.tripmasters.framework.testScript.BookingPageTestScript@543e710e</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.BookingPageTestScript.TC_0007_bookingFlightAndTwoRoomsWithAdultsAndChilds_FromTopDealPackages()'><b>TC_0007_bookingFlightAndTwoRoomsWithAdultsAndChilds_FromTopDealPackages</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0007_bookingFlightAndTwoRoomsWithAdultsAndChilds_FromTopDealPackages(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>395</td>
-<td>com.tripmasters.framework.testScript.BookingPageTestScript@543e710e</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.BookingPageTestScript.TC_0008_bookingFlightMultipleCitiesAndTwoRoomsWithAdultsAndChilds_FromEuropePage()'><b>TC_0008_bookingFlightMultipleCitiesAndTwoRoomsWithAdultsAndChilds_FromEuropePage</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0008_bookingFlightMultipleCitiesAndTwoRoomsWithAdultsAndChilds_FromEuropePage(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>364</td>
-<td>com.tripmasters.framework.testScript.BookingPageTestScript@543e710e</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.BookingPageTestScript.TC_0009_arrival_dateChanging_FromTopOptions()'><b>TC_0009_arrival_dateChanging_FromTopOptions</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0009_arrival_dateChanging_FromTopOptions(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>422</td>
-<td>com.tripmasters.framework.testScript.BookingPageTestScript@543e710e</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.HomePageTestScript.TC_0010_verifyCity()'><b>TC_0010_verifyCity</b><br>Test class: com.tripmasters.framework.testScript.HomePageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.HomePageTestScript.TC_0010_verifyCity(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>26</td>
-<td>com.tripmasters.framework.testScript.HomePageTestScript@15bfd87</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.HomePageTestScript.TC_0011_verifyMoreHighlightAndAttractionLinks()'><b>TC_0011_verifyMoreHighlightAndAttractionLinks</b><br>Test class: com.tripmasters.framework.testScript.HomePageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.HomePageTestScript.TC_0011_verifyMoreHighlightAndAttractionLinks(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>22</td>
-<td>com.tripmasters.framework.testScript.HomePageTestScript@15bfd87</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.HomePageTestScript.TC_0012_verifyOtherVacationPackages()'><b>TC_0012_verifyOtherVacationPackages</b><br>Test class: com.tripmasters.framework.testScript.HomePageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.HomePageTestScript.TC_0012_verifyOtherVacationPackages(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>38</td>
-<td>com.tripmasters.framework.testScript.HomePageTestScript@15bfd87</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.HomePageTestScript.TC_0013_verifyPopularVacationPackages()'><b>TC_0013_verifyPopularVacationPackages</b><br>Test class: com.tripmasters.framework.testScript.HomePageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.HomePageTestScript.TC_0013_verifyPopularVacationPackages(java.lang.reflect.Method)</td>
-<td></td>
-<td>13</td>
-<td>com.tripmasters.framework.testScript.HomePageTestScript@15bfd87</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.BookingPageTestScript.TC_0014_verifySpotlightLink()'><b>TC_0014_verifySpotlightLink</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0014_verifySpotlightLink(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>42</td>
-<td>com.tripmasters.framework.testScript.BookingPageTestScript@543e710e</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.HomePageTestScript.TC_0015_verifyStartAgainLink()'><b>TC_0015_verifyStartAgainLink</b><br>Test class: com.tripmasters.framework.testScript.HomePageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.HomePageTestScript.TC_0015_verifyStartAgainLink(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>84</td>
-<td>com.tripmasters.framework.testScript.HomePageTestScript@15bfd87</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.HomePageTestScript.TC_0016_verifyFooterText()'><b>TC_0016_verifyFooterText</b><br>Test class: com.tripmasters.framework.testScript.HomePageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.HomePageTestScript.TC_0016_verifyFooterText(java.lang.reflect.Method)</td>
-<td></td>
-<td>0</td>
-<td>com.tripmasters.framework.testScript.HomePageTestScript@15bfd87</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.BookingPageTestScript.TC_0017_validateTripSummarywithMultipleCitiesforExploreAsiaPage()'><b>TC_0017_validateTripSummarywithMultipleCitiesforExploreAsiaPage</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0017_validateTripSummarywithMultipleCitiesforExploreAsiaPage(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>352</td>
-<td>com.tripmasters.framework.testScript.BookingPageTestScript@543e710e</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.BookingPageTestScript.TC_0018_bookingDetailswithPremiumEcomomy()'><b>TC_0018_bookingDetailswithPremiumEcomomy</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0018_bookingDetailswithPremiumEcomomy(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>155</td>
-<td>com.tripmasters.framework.testScript.BookingPageTestScript@543e710e</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.BookingPageTestScript.TC_0019_withoutAirBookingForSingleCity()'><b>TC_0019_withoutAirBookingForSingleCity</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0019_withoutAirBookingForSingleCity(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>0</td>
-<td>com.tripmasters.framework.testScript.BookingPageTestScript@543e710e</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.BookingPageTestScript.TC_0020_withoutAirBookingForMultipleCity()'><b>TC_0020_withoutAirBookingForMultipleCity</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0020_withoutAirBookingForMultipleCity(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>0</td>
-<td>com.tripmasters.framework.testScript.BookingPageTestScript@543e710e</td></tr>
-<tr>
-<td title='com.tripmasters.framework.testScript.BookingPageTestScript.TC_0021_tripSummarymultipleCities()'><b>TC_0021_tripSummarymultipleCities</b><br>Test class: com.tripmasters.framework.testScript.BookingPageTestScript<br>Parameters: public void com.tripmasters.framework.testScript.BookingPageTestScript.TC_0021_tripSummarymultipleCities(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>159</td>
-<td>com.tripmasters.framework.testScript.BookingPageTestScript@543e710e</td></tr>
+<td>127</td>
+<td>com.tripmasters.framework.testScript.BookingPageTestScript@72967906</td></tr>
 </table><p>
 </body>
 </html>

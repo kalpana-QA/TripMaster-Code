@@ -95,17 +95,29 @@ public class TestBase {
 		else if(platform.equalsIgnoreCase("Android")){
 				if (browser.equalsIgnoreCase("Chrome")) {
 					capabilities = new DesiredCapabilities();
-
-					System.out.println("chromeDriverFilePath : " + chromeDriverFilePath);
-
-					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
+					
+					
 					capabilities.setCapability("platformName", "Android");
 					capabilities.setCapability("platformVersion", "10");
 
-					capabilities.setCapability("deviceName", "f75b7d5c");
-					capabilities.setCapability("automationName", "UiAutomator2");
+					capabilities.setCapability("deviceName", "emulator-5554");
 
 					capabilities.setCapability("browserName", "Chrome");
+					capabilities.setCapability("showChromedriverLog", "true");
+
+
+					
+
+//					System.out.println("chromeDriverFilePath : " + chromeDriverFilePath);
+//
+//					capabilities.setCapability("chromedriverExecutable", chromeDriverFilePath);
+//					capabilities.setCapability("platformName", "Android");
+//					capabilities.setCapability("platformVersion", "10");
+//
+//					capabilities.setCapability("deviceName", "f75b7d5c");
+//					capabilities.setCapability("automationName", "UiAutomator2");
+//
+//					capabilities.setCapability("browserName", "Chrome");
 					//'automationName=UiAutomator2'
 
 					//lambdaTest

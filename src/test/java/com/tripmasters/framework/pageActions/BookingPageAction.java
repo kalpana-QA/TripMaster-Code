@@ -199,7 +199,8 @@ return selectedcabin;
 	
 	
 	//Get Session id
-	public String getSessionid() {
+	public String getSessionid() throws InterruptedException {
+		Thread.sleep(20000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebElement element = driver.findElement(By.id("nTXMLSession"));
 		js.executeScript("arguments[0].setAttribute('type', '')",element);

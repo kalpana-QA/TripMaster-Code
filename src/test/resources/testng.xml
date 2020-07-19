@@ -11,8 +11,8 @@
 	<run>
 
 
-	  <include name="smoke"></include>
-	  <include name="regression"></include>	
+	  <include name="smok"></include>
+<!-- 	  <include name="regression"></include>	 -->
 <!--  	  <include name="testdemo"></include> -->
 
 	</run>

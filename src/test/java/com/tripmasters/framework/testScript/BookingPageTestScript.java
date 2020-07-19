@@ -30,7 +30,7 @@ public class BookingPageTestScript extends TestBase {
 	private static String actualsecondCityHotel;
 
 	
-	@Test(groups = { "smoke" }, priority = 1)
+	@Test(groups = { "smok" }, priority = 1)
 	public void TC_0001_bookingSingleRoomWithThreeAdults(Method method) throws Exception {
 	    ExtentTest test = ExtentTestManager.startTest(method.getName(), "TC_0001_bookingSingleRoomWithThreeAdults");
 		
