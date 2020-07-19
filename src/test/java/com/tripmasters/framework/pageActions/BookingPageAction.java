@@ -68,6 +68,8 @@ public class BookingPageAction extends PageBase {
 	}
 	
 	public void selectStayingTime_EuropePage() throws Exception{
+	
+		PageBase.waitForElement(5);
 		clearAndSetValues(BookingLocators.getstayingDrpdown(), "4 nts");
 		WebElement dropdown= driver.findElement(By.xpath("//ul[@id='ui-id-4']"));
 		List<WebElement>list =dropdown.findElements(By.tagName("li"));
@@ -808,7 +810,7 @@ public class BookingPageAction extends PageBase {
 
 	public void fillLeavingFromDetails_BYOPage(String leavingFrom) throws Exception {
 		clearAndSetValues(BookingLocators.getleavingTextboxBYO_Page(), leavingFrom);
-	
+		PageBase.waitForElement(5);
 		WebElement select = driver.findElement(By.xpath("//ul[@id='ui-id-10']//li//a//span"));
 		select.click();
 
@@ -839,7 +841,13 @@ public class BookingPageAction extends PageBase {
 		return defaultdate;
 	}
 	
-	
+	public String getSelectedDate() {
+		
+		WebElement datepick = driver.findElement(BookingLocators.selectdate());
+		System.out.println("Selected arrival  date is:- "+ datepick.getAttribute("value"));
+		String defaultdate = datepick.getAttribute("value");
+		return defaultdate;
+	}
 
 	public void selectGuestDetails_BYOPage(String guestInfo) throws Exception {
 		clickUsingJavaScript(BookingLocators.getselectGuestRoomOptionsDrpdown_BYOPage());
@@ -1013,6 +1021,7 @@ public class BookingPageAction extends PageBase {
 		waitForElement(15);
 		clickUsingJavaScript(BookingLocators.getBrowseHotelsLink_TopDealsPage());
 		waitForElement(2);
+		Thread.sleep(5000);
 		if(!TestBase.flag_Mob){
 			String actualhotel = driver.findElement(BookingLocators.getFirstHotel()).getText();
 			System.out.println(actualhotel);

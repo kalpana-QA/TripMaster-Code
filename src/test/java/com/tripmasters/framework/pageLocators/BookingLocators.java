@@ -9,13 +9,13 @@ public class BookingLocators {
 	private static By doneButton = By.xpath("//div[@class='dvMdialogDone']/p[text()='Done']");
 	private static By selectFlightOption = By.xpath("(//a[@name='chkFlight'])[1] | //a[@id='chkFlightOpt1_UA|48|1']");
 	//private static By selectButtonInFlightOption1 = By.xpath("(//img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/Select1.png')])[1]");
-	private static By selectButtonInFlightOption1 = By.xpath("//div[@id='dropShadow1']//tr//a//*[text()='Select']");
+	private static By selectButtonInFlightOption1 = By.xpath("//div[@id='dropShadow1']//tr//a//*[text()='Select'] | //table[@class='tblOption']/tbody/tr[4]/img");
 	private static By selectbutton = By.xpath("//div/a[contains(text(),'Select')]");
-	private static By addCityBtn = By.xpath("//input[@id='inpAddCty'] | //span[text()='ADD DESTINATION']|//span[contains(.,'Add City')] | //p[@id='pMaddcity']");
+	private static By addCityBtn = By.xpath("//input[@id='inpAddCty'] | //span[text()='ADD DESTINATION']|//span[contains(.,'Add City')] | //p[@id='pMaddcity']  | //input[@class='inpAddCty'] | //input[@id='1,2']");
 	private static By noMoreCitiesBtn = By.xpath("//span[text()='Next'] | //input[@id='inpNoMore'] | //span[contains(.,'No more cities. Continue')] | //span[@class = 'spMnextbutt']");
 	private static By continueBtn = By.xpath("//div[@class='dvContinueButton']//span[contains(.,'Continue')] | //p[@id='pMcont']/span[contains(.,'Continue')]");
 	private static By continueLink = By.xpath("//a[@id='aContWithPriceValidation']");
-	private static By continueImage = By.xpath("//img[@id='imgPriceIt'] | //img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/btn_continue.png')]");
+	private static By continueImage = By.xpath("//img[@id='imgPriceIt'] | //img[contains(@src,'https://www.tripmasters.com/general/tripmasters/DefaultImages/btn_continue.png')] | //span[@class='btnContinue']");
 	private static By paymentContinueBtn = By.xpath("//a[contains(@id,'PriceValidation')]");
 	private static By validatingPricesPopupText = By.xpath("//div[@id='divLoading']//div[contains(.,'Validating prices...')]");
 	
@@ -222,6 +222,8 @@ public class BookingLocators {
 	public static By secondTravelerGenderDropdownMob = By.xpath("//select[@id='txtCPAX_Gender2']");
 	public static By secondTravelerDOBMob = By.xpath("//input[@id='txtCPAX_DOB2']");
 	public static By passportDrpdownSecondTravellerChildMob = By.xpath("//select[@id='txtCPAX_Nationality2']");
+	public static By selectdate = By.xpath("//input[@id='InDate1'] | //input[@id='qArrDate'] | //input[@id='xtxtBYArriving']");
+	
 	/**
 	 * @return the emailId
 	 */
@@ -950,6 +952,11 @@ public static By getpassportDrpdownSecondTravellerChildMob() {
 	public static By getselectRoom1ChildBYO_Page() {
 		// TODO Auto-generated method stub
 		return selectRoom1ChildBYO_Page;
+	}
+	
+	public static By selectdate() {
+		// TODO Auto-generated method stub
+		return selectdate;
 	}
 }
 

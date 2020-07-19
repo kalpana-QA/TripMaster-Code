@@ -59,7 +59,7 @@ public class TestBase {
 					ChromeOptions options=new ChromeOptions();
 					 options.addArguments("ignore-certificate-errors");
 					 options.setAcceptInsecureCerts(true);
-					System.setProperty("webdriver.chrome.driver", "/Users/iqa/Downloads/chromedriver");
+					System.setProperty("webdriver.chrome.driver", "/Users/iqa/Desktop/drivers/chromedriver");
 					driver = new ChromeDriver(options);
 					
 					//Dimension d=new Dimension(1382,744);
