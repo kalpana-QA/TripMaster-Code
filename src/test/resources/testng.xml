@@ -10,7 +10,7 @@
 	<test name="Test" >
 	<groups>
 	<run>
-		<include name="smoke"></include>
+		<include name="smok"></include>
 <!-- 		<include name="testdemo"></include> -->
 	</run>
    </groups>

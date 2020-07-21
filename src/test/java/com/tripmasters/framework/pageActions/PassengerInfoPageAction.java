@@ -237,7 +237,7 @@ public class PassengerInfoPageAction extends PageBase {
     	String fullNameR2C1SingleTravlr=firstNameR2C1SingleTravlr +" "+ secondNameR2C1SingleTravlr;
     	list.add(fullNameR2C1SingleTravlr);
 	    list.add(selectOptionByText(PassengerInformationLocators.getgenderR2C1SingleTrvlr(), "Male"));
-		list.add(clearAndSetValues(PassengerInformationLocators.getdobR2C1SingleTrvlr(), "01/01/2000"));
+		list.add(clearAndSetValues(PassengerInformationLocators.getdobR2C1SingleTrvlr(), "01/01/2011"));
 		selectOptionByValue(PassengerInformationLocators.getpassportR2C1SingleTrvlr(), "237|US");
 	}
 		return list;
