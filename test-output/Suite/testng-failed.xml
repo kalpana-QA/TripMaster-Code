@@ -16,7 +16,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="TC_0009_dateChanging" invocation-numbers="0"/>
+          <include name="TC_0008_bookingFlightAndHotelwithMultipleCitiesForEuropePage" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.tripmasters.framework.testScript.BookingPageTestScript -->
     </classes>

@@ -95,7 +95,7 @@ public class BookingLocators {
 	private static By thirdremoveCitylink = By.xpath("//div//span[@id='cty3'] | //span[@id='spClose3']");
 	private static By edititinerary = By.xpath("//div//a[contains(text(),'Edit Itinerary')]");
 	private static By goingToTextboxThird = By.xpath("//*[@id='qNACity3']");
-	private static By stayingDrpdowntwo = By.xpath("//select[@id='qSTCity2']  | //input[@id='qSTCity2Txt']");
+	private static By stayingDrpdowntwo = By.xpath("//select[@id='qSTCity2']  | //input[@id='qSTCity2Txt'] | //select[@id='StayNite2']");
 	private static By stayingDrpdownthree = By.xpath("//select[@id='qSTCity3']");
 	private static By changedArriveDate = By.xpath("//div[contains(@id,'divDayOpt4')]//div[contains(@class,'divDayOptionDate')]");
 	private static By pickCalendarData = By.xpath("//table[@class='ui-datepicker-calendar']//tbody//td");
@@ -104,7 +104,7 @@ public class BookingLocators {
 
 	private static By leavingTextbox = By.xpath("//input[@id='qLeaveNA']");
 	private static By goingToTextbox = By.xpath("//input[contains(@id,'qNACity1')]");
-	private static By stayingDrpdown = By.xpath("//select[@id='qSTCity1'] | //input[@id='qSTCity1Txt']");
+	private static By stayingDrpdown = By.xpath("//select[@id='qSTCity1'] | //input[@id='qSTCity1Txt'] | //select[@id='StayNite1']");
 	private static By selectGuestDrpdown = By.xpath("//select[@id='xiRoomsAndPax']");
 	private static By selectChildDrpdown = By.xpath("//select[@id='xiChildren']");
 	private static By selectChildRoom2Drpdown = By.xpath("//select[@id='xRoom2_iChildren']");

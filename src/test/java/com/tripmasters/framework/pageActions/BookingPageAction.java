@@ -182,7 +182,9 @@ public class BookingPageAction extends PageBase {
 			//clickUsingJavaScript(BookingLocators.getbackToItineraryOption());
 			//***************
 			waitForElement(2);
-			clickUsingJavaScript(BookingLocators.getcontinueLink());
+		//	clickUsingJavaScript(BookingLocators.getcontinueLink());
+			WebElement wb = driver.findElement(BookingLocators.getcontinueLink());
+			wb.click();
 			waitForElement(5);
 		}
 		return flightvalue;
@@ -206,7 +208,8 @@ public class BookingPageAction extends PageBase {
 
 	public  void clicktoContinuePage() throws Exception {
      if(!TestBase.flag_Mob){
-			clickUsingJavaScript(BookingLocators.getcontinueImage());
+    	 driver.findElement(BookingLocators.getcontinueImage()).click();
+			//clickUsingJavaScript(BookingLocators.getcontinueImage());
      }
 	}
 	
@@ -354,6 +357,7 @@ public class BookingPageAction extends PageBase {
 	
 	public  String browseSelectHotel() {
 		String expectedhotel = driver.findElement(BookingLocators.getExpectedHotel()).getText();
+		System.out.print("Expected is "+expectedhotel);
 		return expectedhotel;
 	}
 
@@ -848,6 +852,15 @@ public class BookingPageAction extends PageBase {
 		String defaultdate = datepick.getAttribute("value");
 		return defaultdate;
 	}
+	
+public String getSelectedDateAsia() {
+		
+		WebElement datepick = driver.findElement(By.name("qArrDate"));
+		System.out.println("Selected arrival  date is:- "+ datepick.getAttribute("value"));
+		String defaultdate = datepick.getAttribute("value");
+		return defaultdate;
+	}
+
 
 	public void selectGuestDetails_BYOPage(String guestInfo) throws Exception {
 		clickUsingJavaScript(BookingLocators.getselectGuestRoomOptionsDrpdown_BYOPage());
@@ -950,7 +963,19 @@ public class BookingPageAction extends PageBase {
 	}
 
 	public void clickToRemoveSecondCityHotel() {
-		clickUsingJavaScript(BookingLocators.getClickToRemoveScndCityHotel());
+		
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        
+        js.executeScript("window.scrollBy(0,1300)");
+		
+        
+    	WebElement element = driver.findElement(By.xpath("//div[@data-cityno='2']//div//a[contains(text(),'Remove')]"));
+		element.click();
+
+		
+		//clickUsingJavaScript(BookingLocators.getClickToRemoveScndCityHotel());
 	}
 
 	public void clickToYesOnDialogBox() {
@@ -1020,8 +1045,8 @@ public class BookingPageAction extends PageBase {
 	public String browseHotelsButton_EuropePage() throws Exception {
 		waitForElement(15);
 		clickUsingJavaScript(BookingLocators.getBrowseHotelsLink_TopDealsPage());
-		waitForElement(2);
-		Thread.sleep(5000);
+		waitForElement(10);
+		Thread.sleep(10000);
 		if(!TestBase.flag_Mob){
 			String actualhotel = driver.findElement(BookingLocators.getFirstHotel()).getText();
 			System.out.println(actualhotel);

@@ -152,6 +152,25 @@ public class PassengerInfoPageAction extends PageBase {
 			list.add(clearAndSetValues(PassengerInformationLocators.getdobR1T2(), "01/01/2000"));
 			selectOptionByValue(PassengerInformationLocators.getpassportR1T2(), "237|US");
 		}
+	   
+	   else if(RoomTravelerInfo.equalsIgnoreCase("Room1Traveller2Child"))
+		{
+			String firstNameR1T2 = clearAndSetValues(PassengerInformationLocators.getfnameR1T2(), "George");
+			String secondNameR1T2 = clearAndSetValues(PassengerInformationLocators.getlnameR1T2(), "darwin");
+			String fullNameR1T2 = firstNameR1T2 + " " + secondNameR1T2;
+			list.add(fullNameR1T2);
+			if(TestBase.flag_Mob) {
+				list.add(selectOptionByText(PassengerInformationLocators.getR1T2genderiOS(), "Male"));
+			}else {
+				list.add(selectOptionByText(PassengerInformationLocators.getgenderR1T2(), "Male"));
+			}
+			list.add(clearAndSetValues(PassengerInformationLocators.getdobR1T2(), "01/01/2013"));
+			selectOptionByValue(PassengerInformationLocators.getpassportR1T2(), "237|US");
+		}
+	   
+	   
+	   
+	   
 	   else if(RoomTravelerInfo.equalsIgnoreCase("Room2Traveller1"))
 		{
 			if(TestBase.flag_Mob) {

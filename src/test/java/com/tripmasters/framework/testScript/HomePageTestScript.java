@@ -124,7 +124,12 @@ public class HomePageTestScript extends TestBase {
 		bookingPage.fillGoingToCityDetails("Delhi (India)");
 		test.log(LogStatus.INFO, "User entered \"Delhi (India)\" into Going to from field");
 		String selectDate=bookingPage.selectValueFromCalendar(90,1);
-		test.log(LogStatus.INFO,   "User selects '" + selectDate + "'from calendar");
+		
+		
+		System.out.println("date is "+ selectDate);	
+		String selecteddate = bookingPage.getSelectedDate();
+		test.log(LogStatus.INFO,   "User selects arrival date '" + selecteddate + "'from calendar");
+		
 		bookingPage.selectStayingTime("4");
 		test.log(LogStatus.INFO, "Select staying time :4 nights");
 		bookingPage.selectNoMoreCitiesBtn();
