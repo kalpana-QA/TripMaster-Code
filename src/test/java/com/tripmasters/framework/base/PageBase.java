@@ -221,7 +221,7 @@ public class PageBase {
 
 		try {
 			WebElement selectField = driver.findElement(element);
-			//wait.until(ExpectedConditions.elementToBeClickable(selectField));
+		//	wait.until(ExpectedConditions.elementToBeClickable(selectField));
 			highlightElement(selectField);
 			Select option = new Select(selectField);
 			option.selectByValue(valueOfOption);
@@ -404,7 +404,7 @@ public class PageBase {
 	}
 
 	/**
-	 * Scroll page down to full of its hight on mobile with defined repeatation
+	 * Scroll page down to full of its height on mobile with defined repetition
 	 * 
 	 * @author Mrinal
 	 * @throws Exception

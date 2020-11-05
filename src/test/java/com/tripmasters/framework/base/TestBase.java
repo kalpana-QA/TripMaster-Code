@@ -170,9 +170,9 @@ public class TestBase {
 			{
 				if (browser.equalsIgnoreCase("Safari")) {
 					capabilities = new DesiredCapabilities();
-					capabilities.setCapability("deviceName", "iPhone 11");
+					capabilities.setCapability("deviceName", "iPhone XR");
 					capabilities.setCapability("platformName", "iOS");
-					capabilities.setCapability("platformVersion", "13.3");
+					capabilities.setCapability("platformVersion", "12.4");
 					capabilities.setCapability(CapabilityType.BROWSER_NAME, "Safari");
 					// IOSDriver
 					url = new URL("http://127.0.0.1:4723/wd/hub");
@@ -235,16 +235,13 @@ public class TestBase {
 
 	@AfterMethod(alwaysRun = true)
 	public static void tearDown() {
-		// gn.extent.flush();
-		// driver.quit();
-		// GenerateReport2.startReport(null, null);
-		// GenerateReport2.getResult(null);
-		if (driver != null) {
+		
+		//if (driver != null) {
 			//Logs.info("Closing browser after TestClass");
-		//driver.quit();
-		} else {
+	//	driver.quit();
+	//	} else {
 			//Logs.error("Driver is null at AfterClass (TestBase)");
-		}
+//		}
 
 	}
 

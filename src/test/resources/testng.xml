@@ -13,8 +13,8 @@
 <!--    <include name="smoke"></include>   -->
 <!--  <include name="regression"></include>	 -->
 	
-	  <include name="smok"></include>
-<!-- 	  <include name="regression"></include>	  -->
+	  <include name="smoke"></include>
+	  <include name="regression"></include>	 
 	</run>
    </groups>
    

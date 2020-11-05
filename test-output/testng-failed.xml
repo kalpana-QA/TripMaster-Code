@@ -8,7 +8,8 @@
   <test thread-count="1" name="Test(failed)" parallel="methods">
     <groups>
       <run>
-        <include name="smok"/>
+        <include name="smoke"/>
+        <include name="regression"/>
       </run>
     </groups>
     <classes>

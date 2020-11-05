@@ -72,7 +72,7 @@ public class BookingLocators {
 	private static By selectFirstHotel = By.xpath("(//td[@class='RoomTypeHotelListBottom m-srd-td1']//img)[1] | //a[@class='h-100 btnyellowcont pb-1 font-weight-bold'][1] | (//a[@class='btn btnyellowselect'])[1]");
 	
 	private static By firstHotel = By.xpath("//a[@class='hotelHeadTitle'][1] | (//a[@class='hotelHeadTitle text-white'])[1]/h5");
-	private static By verifyHotel = By.xpath("(//a[contains(@class,'hotel')])[1] | //a[@id='Prod_173668' and @class='m-hotel'] | (//a[@class='hotelHeadTitle text-white'])[1]//h5[1]");
+	private static By verifyHotel = By.xpath("(//a[contains(@class,'hotel')])[1]");
 	private final static By firstFlightDetails = By.xpath("//div[@id='divSegmentDetails1']//tbody//td");
 	private final static By actualFlightDetails = By
 			.xpath("//div[@id='seg1flight1']//div[@class='divFligth-Bottom-Left textGrey10'] | //div[@id='segBottomInfo']//div[@class='col-12'][1]");
@@ -95,7 +95,7 @@ public class BookingLocators {
 	private static By thirdremoveCitylink = By.xpath("//div//span[@id='cty3'] | //span[@id='spClose3']");
 	private static By edititinerary = By.xpath("//div//a[contains(text(),'Edit Itinerary')]");
 	private static By goingToTextboxThird = By.xpath("//*[@id='qNACity3']");
-	private static By stayingDrpdowntwo = By.xpath("//select[@id='qSTCity2']");
+	private static By stayingDrpdowntwo = By.xpath("//select[@id='qSTCity2'] | //select[@id='StayNite2']");
 	private static By stayingDrpdownthree = By.xpath("//select[@id='qSTCity3']");
 	private static By changedArriveDate = By.xpath("//div[contains(@id,'divDayOpt4')]//div[contains(@class,'divDayOptionDate')]");
 	private static By pickCalendarData = By.xpath("//table[@class='ui-datepicker-calendar']//tbody//td");
@@ -104,7 +104,7 @@ public class BookingLocators {
 
 	private static By leavingTextbox = By.xpath("//input[@id='qLeaveNA'] | //input[@id='iDepCityTxt']");
 	private static By goingToTextbox = By.xpath("//input[contains(@id,'qNACity')]");
-	private static By stayingDrpdown = By.xpath("//select[@id='qSTCity1']");
+	private static By stayingDrpdown = By.xpath("//select[@id='qSTCity1'] | //select[@id='StayNite1']");
 	private static By selectGuestDrpdown = By.xpath("//select[@id='xiRoomsAndPax'] | //input[@id='xiRoomsAndPax']");
 	private static By selectChildDrpdown = By.xpath("//select[@id='xiChildren'] | //input[@id='xiChildren']");
 	private static By selectChildRoom2Drpdown = By.xpath("//select[@id='xRoom2_iChildren'] | //input[@id='xRoom2_iChildren']");
@@ -184,8 +184,8 @@ public class BookingLocators {
 	private static By browseHotelsForSecondCity = By.xpath("(//a[@class='componentSSlink btnyellowcont mb-2 ml-auto mr-auto'])[2]");
 	private static By exploreLink = By.xpath("(//p[@class='pMproduct']/a)[1]");
 	private static By viewPricebtn = By.xpath("//div[contains(text(),'View Price')]");
-	private static By secondCityhotelName = By.xpath("(//div[@class='col-12 pl-0']/a)[4] | ((//div[@class='col-10'])[3]//a)[1]");
-	private static By removeSecondCityHotel = By.xpath("(//div[@class='col-4']/a)[7] | (//div[@class='col-4']//a[contains(text(),Remove)])[3]");
+	private static By secondCityhotelName = By.xpath("(//div[@class='col-12 pl-0']/a)[4] | ((//div[@class='col-10'])[3]//a)[1] | (//div[@class='col-12 pl-0']/a)[2]");
+	private static By removeSecondCityHotel = By.xpath("(//div[@class='col-4']/a)[7] | (//div[@class='col-4']//a[contains(text(),Remove)])[3] | (//div[@class='col-4']/a)[2] | (//div[@class='col-4']/a)[1]");
 	private static By removeSecondCityHotelYesBtn = By.xpath("//button[@id='remYes']");
 	
 	//=======locators By vaishli======
@@ -220,13 +220,20 @@ public class BookingLocators {
 	
 	private static By selectdate = By.xpath("//input[@id='InDate1'] | //input[@id='qArrDate'] | //input[@id='xtxtBYArriving']");
 	
-	
+	private static By changeNumOfNights = By.xpath("//div[@class='dvMchange']");
+
 
 	
 	/**
 	 * @return the emailId
 	 */
 
+public static By getNumOfNights() {
+		
+		return changeNumOfNights;
+	}
+	
+	
 	
 
 public static By getdate(String selectdate) {
@@ -907,5 +914,13 @@ public static By selectdate() {
 	// TODO Auto-generated method stub
 	return selectdate;
 }
+
+
+
+
+
+
+
+
 
 }

@@ -27,7 +27,7 @@ public class HomePageLocators {
 	private static By FirstHighLightandAttraction = By.xpath("(//div[@class='dvMbEachHigh'])[1]");
 	private static By title = By.xpath("//div[@class='dvMheadLogo']/img");
 	private static By topdeals = By.xpath("//div[@id='dvTopDeals']");
-	private static By suggestedVacationPackageOption = By.xpath("(//div[@class='dvEachSuggItin']//img)[11]");
+	private static By suggestedVacationPackageOption = By.xpath("(//div[@class='dvEachSuggImg'])[1]");
 	private static By firstHighLightsBtn = By.xpath("(//div[@class='dvMbEachHigh']/img)[1] | //div[@class='dvMbEachHigh'] | (//div[@class='dvMbEachHigh'])[1]");
 	private static By clickOnBuildYourOwnVacation = By.xpath("//div[@class='dvGoUrl']/a | (//a[@href='/asia/Design_Your_Own_Trip.aspx'])[2] | //a[contains(text(),' Customize your Itinerary')] | //div[@class='dvGoUrl']");
 	private static By clickOnCustomizeit = By.xpath("(//div[@class='dvMCustomize'])[1]");
